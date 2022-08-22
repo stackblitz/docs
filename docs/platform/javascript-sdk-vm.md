@@ -84,7 +84,7 @@ Updates project files. Returns a promise resolving to `null`.
 | `diff.create`  | Yes      | Object | Object with file paths as keys and contents as values |
 | `diff.destroy` | Yes      | Array  | File paths of the files to delete                     |
 
-:::secondary
+:::info Note
 When modifying existing files, the new content of the modified files must be provided in full.
 :::
 

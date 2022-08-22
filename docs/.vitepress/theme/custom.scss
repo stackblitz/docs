@@ -11,6 +11,16 @@
     white-space: nowrap;
   }
 }
+
+img {
+  margin: 16px 0;
+  &.icon {
+    width: auto;
+    max-height: 16px;
+    margin: 0;
+  }
+}
+
 .float-right {  // might not need / possible relic from docusaurus
   margin-top: 0;
   margin-bottom: 1.5rem;

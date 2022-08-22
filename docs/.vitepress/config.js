@@ -66,7 +66,7 @@ export default {
       { text: 'Guide', items: linkItems.guide },
       { text: 'Open in StackBlitz', items: linkItems.open_in_stackblitz },
       { text: 'Runtime Envs', items: linkItems.runtime_envs },
-      { text: 'JavaScript SDK', link: '/sdk' },
+      { text: 'JavaScript SDK', link: '/platform/javascript-sdk' },
       { text: 'Enterprise Edition (EE)', link: '/enterprise' },
     ],
     sidebar: [

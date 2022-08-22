@@ -10,13 +10,13 @@ Depending on the environment, StackBlitz IDE includes slightly different feature
 
 | Feature                    | EngineBlock                                               | WebContainers                                             |
 | -------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
-| Native Node.js environment | <img src="/img/icons/times-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
+| Native Node.js environment | <img src="/img/icons/times-solid.svg" class="icon" /> | <img src="/img/icons/check-solid.svg" class="icon" /> |
 | Supported frameworks       | front-end                                                 | front-end & back-end                                      |
-| Editor                     | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
-| Preview                    | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
-| Console                    | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/times-solid.svg" className="icon" /> |
-| Shareable Preview URL      | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/times-solid.svg" className="icon" /> |
-| Terminal                   | <img src="/img/icons/times-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
+| Editor                     | <img src="/img/icons/check-solid.svg" class="icon" /> | <img src="/img/icons/check-solid.svg" class="icon" /> |
+| Preview                    | <img src="/img/icons/check-solid.svg" class="icon" /> | <img src="/img/icons/check-solid.svg" class="icon" /> |
+| Console                    | <img src="/img/icons/check-solid.svg" class="icon" /> | <img src="/img/icons/times-solid.svg" class="icon" /> |
+| Shareable Preview URL      | <img src="/img/icons/check-solid.svg" class="icon" /> | <img src="/img/icons/times-solid.svg" class="icon" /> |
+| Terminal                   | <img src="/img/icons/times-solid.svg" class="icon" /> | <img src="/img/icons/check-solid.svg" class="icon" /> |
 
 You can see these differences in practice by comparing this React project as running in:
 
