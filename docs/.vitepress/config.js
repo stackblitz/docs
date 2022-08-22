@@ -54,6 +54,7 @@ const linkItems = {
 export default {
   title: 'StackBlitz Developers',
   description: 'Docs | Guides | Tutorials',
+  ignoreDeadLinks: true,
   themeConfig: {
     siteTitle: 'StackBlitz Developers',
     logo: 'img/sb-dev-logo.svg',
