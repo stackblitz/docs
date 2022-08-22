@@ -54,10 +54,9 @@ const linkItems = {
 export default {
   title: 'StackBlitz Developers',
   description: 'Docs | Guides | Tutorials',
-  // lastUpdated: true,
   themeConfig: {
     siteTitle: 'StackBlitz Developers',
-    // lastUpdatedText: 'Updated Date',
+    logo: 'img/sb-dev-logo.svg',
     editLink: {
       pattern: 'https://stackblitz.com/code/github/vuejs/vitepress/edit/main/docs/:path',
       text: 'Edit this page'
