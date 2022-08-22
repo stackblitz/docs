@@ -1,5 +1,17 @@
 :root {
   --vp-c-brand: #00bbff;
   --vp-c-brand-dark: #009bd3;
-  --vp-c-bg-mute: #f8f8f8;
+  --vp-c-bg-light-mute: #f8f8f8;
+}
+.vp-doc td,
+.vp-doc th {
+  font-size: 14px;
+  line-height: 1.5;
+  &.no-break {
+    white-space: nowrap;
+  }
+}
+.float-right {  // might not need / possible relic from docusaurus
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }

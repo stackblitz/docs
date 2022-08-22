@@ -1,61 +1,63 @@
 const linkItems = {
   enterprise: [
-    { text: 'Overview', link: '/w' },
+    { text: 'Overview', link: '/enterprise' },
     {
       text: 'Installation',
       items: [
-        { text: 'Quickstart on Bare Metal', link: '/w' },
-        { text: 'Quickstart on GCP (Non-GKE)', link: '/w' },
-        { text: 'Quickstart (Existing Cluster)', link: '/w' },
-        { text: 'Administrator Guide', link: '/w' },
-        { text: 'Air Gapped Installs', link: '/w' },
+        { text: 'Quickstart on Bare Metal', link: '/enterprise/installation/quickstart' },
+        { text: 'Quickstart on GCP (Non-GKE)', link: '/enterprise/installation/quickstart-gcp' },
+        { text: 'Quickstart (Existing Cluster)', link: '/enterprise/installation/quickstart-existing-cluster' },
+        { text: 'Administrator Guide', link: '/enterprise/installation/administrator-guide' },
+        { text: 'Air Gapped Installs', link: '/enterprise/installation/air-gapped-installs' },
       ]
     },
-    { text: 'Configuring DNS & TLS', link: '/w' },
-    { text: 'Configuring Firewall Rules', link: '/w' },
-    { text: 'Setting up SSO', link: '/w' },
-    { text: 'Setting up SSO with Okta', link: '/w' },
-    { text: 'Setting up SSO with ADFS', link: '/w' },
-    { text: 'Connect NPM registry', link: '/w' },
-    { text: 'Starter Projects', link: '/w' },
-    { text: 'User Management', link: '/w' },
-    { text: 'Aggregating Logs', link: '/w' },
-    { text: 'Data Migration', link: '/w' },
+    { text: 'Configuring DNS & TLS', link: '/enterprise/configuring-dns' },
+    { text: 'Configuring Firewall Rules', link: '/enterprise/configuring-firewall-rules' },
+    { text: 'Setting up SSO', link: '/enterprise/sso' },
+    { text: 'Setting up SSO with Okta', link: '/enterprise/okta-sso' },
+    { text: 'Setting up SSO with ADFS', link: '/enterprise/adfs-sso' },
+    { text: 'Connect NPM registry', link: '/enterprise/npm' },
+    { text: 'Starter Projects', link: '/platform/starter-projects' },
+    { text: 'User Management', link: '/enterprise/user-management' },
+    { text: 'Aggregating Logs', link: '/enterprise/log-aggregation' },
+    { text: 'Data Migration', link: '/enterprise/data-migration' },
   ],
   guide: [
-    { text: 'What is StackBlitz', link: '/w' },
-    { text: 'Getting started', link: '/w' },
-    { text: 'Starter projects', link: '/w' },
-    { text: 'Importing', link: '/w' },
-    { text: 'Embedding', link: '/w' },
-    { text: 'Keyboard shortcuts', link: '/w' },
-    { text: 'IDE: what\'s on your screen', link: '/w' },
+    { text: 'What is StackBlitz', link: '/platform/what-is-stackblitz' },
+    { text: 'Getting started', link: '/platform/getting-started' },
+    { text: 'Starter projects', link: '/platform/project-starters' },
+    { text: 'Importing projects', link: '/platform/importing-projects' },
+    { text: 'Embedding projects', link: '/platform/embedding' },
+    { text: 'Keyboard shortcuts', link: '/platform/keyboard-shortcuts' },
+    { text: 'IDE: what\'s on your screen', link: '/platform/ide-whats-on-your-screen' },
   ],
   open_in_stackblitz: [
-    { text: 'Launching projects from GitHub', link: '/w' },
-    { text: 'Creating projects with the SDK', link: '/w' },
-    { text: 'Bug reproductions', link: '/w' },
+    { text: 'Launching projects from GitHub', link: '/guide/open-from-github' },
+    { text: 'Creating projects with the SDK', link: '/guide/create-with-sdk' },
+    { text: 'Bug reproductions', link: '/guide/bug-reproductions' },
   ],
   runtime_envs: [
-    { text: 'Available environments', link: '/w' },
-    { text: 'Browser support', link: '/w' },
-    { text: 'Browser configuration', link: '/w' },
-    { text: 'Project configuration', link: '/w' },
-    { text: 'Turbo package manager', link: '/w' },
+    { text: 'Available environments', link: '/platform/available-environments' },
+    { text: 'Browser support', link: '/platform/browser-support' },
+    { text: 'Browser configuration', link: '/platform/third-party-blocker' },
+    { text: 'Project configuration', link: '/platform/project-config' },
+    { text: 'Turbo package manager', link: '/platform/turbo' },
   ],
   stackblitz_api: [
-    { text: 'JavaScript SDK', link: '/w' },
-    { text: 'JavaScript SDK VM', link: '/w' },
-    { text: 'POST API', link: '/w' },
-    { text: 'WebContainer API', link: '/w' },
+    { text: 'JavaScript SDK', link: '/platform/javascript-sdk' },
+    { text: 'JavaScript SDK VM', link: '/platform/javascript-sdk-vm' },
+    { text: 'POST API', link: '/platform/post-api' },
+    { text: 'WebContainer API', link: '/platform/webcontainer-api' },
   ]
 };
 
 export default {
   title: 'StackBlitz Developers',
   description: 'Docs | Guides | Tutorials',
+  // lastUpdated: true,
   themeConfig: {
     siteTitle: 'StackBlitz Developers',
+    // lastUpdatedText: 'Updated Date',
     editLink: {
       pattern: 'https://stackblitz.com/code/github/vuejs/vitepress/edit/main/docs/:path',
       text: 'Edit this page'
@@ -65,7 +67,7 @@ export default {
       { text: 'Open in StackBlitz', items: linkItems.open_in_stackblitz },
       { text: 'Runtime Envs', items: linkItems.runtime_envs },
       { text: 'JavaScript SDK', link: '/sdk' },
-      { text: 'Enterprise Edition (EE)', link: '/ee' },
+      { text: 'Enterprise Edition (EE)', link: '/enterprise' },
     ],
     sidebar: [
       {
@@ -76,21 +78,25 @@ export default {
       {
         text: 'Open in StackBlitz',
         collapsible: true,
+        collapsed: true,
         items: linkItems.open_in_stackblitz,
       },
       {
         text: 'Runtime Environments',
         collapsible: true,
+        collapsed: true,
         items: linkItems.runtime_envs,
       },
       {
         text: 'StackBlitz API',
         collapsible: true,
+        collapsed: true,
         items: linkItems.stackblitz_api,
       },
       {
         text: 'Enterprise Edition (EE)',
         collapsible: true,
+        collapsed: true,
         items: linkItems.enterprise,
       },
     ]
