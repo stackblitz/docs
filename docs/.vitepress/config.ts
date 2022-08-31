@@ -3,15 +3,38 @@ import { defineConfig } from 'vitepress';
 import * as links from './links';
 
 export default defineConfig({
+  // Metadata
   lang: 'en-US',
   title: 'StackBlitz Docs',
   description: 'Docs | Guides | Tutorials',
-  ignoreDeadLinks: true,
-  outDir: '../build',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/img/sb-dev-logo.svg' }],
+    /*
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: ogTitle }],
+    ['meta', { property: 'og:image', content: ogImage }],
+    ['meta', { property: 'og:url', content: ogUrl }],
+    ['meta', { property: 'og:description', content: ogDescription }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:site', content: '@vite_js' }],
+    ['meta', { name: 'theme-color', content: '#646cff' }]
+    */
+  ],
+
+  // Build
   cleanUrls: 'with-subfolders',
+  outDir: '../build',
+  ignoreDeadLinks: true,
+
+  // Theme
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
-    logo: 'img/sb-dev-logo.svg',
+    logo: '/img/sb-dev-logo.svg',
+    algolia: {
+      appId: 'YCVDUYWLVC',
+      apiKey: '8fe79cd865807082f50083ddd5647b0b',
+      indexName: 'stackblitz',
+    },
     editLink: {
       pattern: 'https://stackblitz.com/code/github/stackblitz/docs/edit/main/:path',
       text: 'Edit this page on StackBlitz',

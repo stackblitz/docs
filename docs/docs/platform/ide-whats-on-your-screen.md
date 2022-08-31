@@ -29,7 +29,7 @@ The Menu Bar is where you perform general operations on your StackBlitz project.
 
 The Activity Bar allows you to select a view to display in the [Side Bar](#side-bar) from the available:
 
-<a target="_blank" href="/doc_images/stackblitz_ui_elements/activity-bar.png"><img src="/doc_images/stackblitz_ui_elements/activity-bar.png" className="float-right" style={{height: 200}} /></a>
+<a target="_blank" href="/doc_images/stackblitz_ui_elements/activity-bar.png"><img src="/doc_images/stackblitz_ui_elements/activity-bar.png" className="float-right" style="height: 200" /></a>
 
 - [Project](#project-side-bar)
 - [Search](#search-side-bar)
@@ -43,7 +43,7 @@ When you open a StackBlitz project, the Side Bar displays the _Project_ view. Yo
 
 #### Project Side Bar
 
-<figure className="float-left" style={{width: 200}}>
+<figure className="float-left" style="width: 200">
     <a target="_blank" href="/doc_images/stackblitz_ui_elements/side-bar.png"><img src="/doc_images/stackblitz_ui_elements/side-bar.png" /></a>
     <figcaption>screenshot: Project Side Bar</figcaption>
 </figure>
