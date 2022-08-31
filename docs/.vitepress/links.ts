@@ -30,7 +30,7 @@ export const api = [
 ];
 
 export const enterprise = [
-  { text: 'Overview', link: '/docs/enterprise' },
+  { text: 'Overview', link: '/docs/enterprise/overview' },
   {
     text: 'Installation',
     items: [

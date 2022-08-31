@@ -1,8 +1,18 @@
-:root {
+:root.dark {
   --vp-c-brand: #00bbff;
   --vp-c-brand-dark: #009bd3;
   --vp-c-bg-light-mute: #f8f8f8;
+  --vp-c-bg: #1c1f25;
+  --vp-c-bg-alt: #131519;
+  --vp-code-block-bg: #131519;
 }
+
+// Fix hardcoded background color of the Nav component.
+// Needs to be a color that matches --vp-c-bg but with partial opacity (for the glass effect).
+:root.dark .VPNavBar.has-sidebar .content {
+  background-color: #1c1f25b4;
+} 
+
 .vp-doc td,
 .vp-doc th {
   font-size: 14px;

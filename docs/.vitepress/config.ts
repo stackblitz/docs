@@ -23,36 +23,43 @@ export default defineConfig({
       { text: 'JavaScript SDK', link: links.api[0].link },
       { text: 'Enterprise Edition', link: links.enterprise[0].link! },
     ],
-    sidebar: [
-      {
-        text: 'User Guide',
-        collapsible: true,
-        items: links.userGuide,
-      },
-      {
-        text: 'Open in StackBlitz',
-        collapsible: true,
-        collapsed: true,
-        items: links.developerGuide,
-      },
-      {
-        text: 'Runtime Environments',
-        collapsible: true,
-        collapsed: true,
-        items: links.environment,
-      },
-      {
-        text: 'StackBlitz API',
-        collapsible: true,
-        collapsed: true,
-        items: links.api,
-      },
-      {
-        text: 'Enterprise Edition',
-        collapsible: true,
-        collapsed: true,
-        items: links.enterprise,
-      },
-    ],
+    sidebar: {
+      // Custom sidebar for Enterprise pages
+      '/docs/enterprise/': [
+        {
+          text: 'Enterprise Edition',
+          collapsible: false,
+          collapsed: false,
+          items: links.enterprise,
+        },
+      ],
+      // Other sections all use the same sidebar
+      '/docs/': [
+        {
+          text: 'User Guide',
+          collapsible: true,
+          collapsed: false,
+          items: links.userGuide,
+        },
+        {
+          text: 'Open in StackBlitz',
+          collapsible: true,
+          collapsed: false,
+          items: links.developerGuide,
+        },
+        {
+          text: 'Runtime Environments',
+          collapsible: true,
+          collapsed: false,
+          items: links.environment,
+        },
+        {
+          text: 'StackBlitz API',
+          collapsible: true,
+          collapsed: false,
+          items: links.api,
+        },
+      ],
+    },
   },
 });

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
 		"build": "vitepress build docs",
-		"format": "prettier --write '**/*.{md,ts}'",
+		"format": "prettier --write '**/*.{js,ts,css,scss}'",
     "serve": "vitepress serve docs",
     "start": "vitepress dev docs"
   },
@@ -14,8 +14,8 @@
     "vue": "^3.2.38"
   },
   "prettier": {
+    
     "printWidth": 100,
-    "proseWrap": "never",
     "semi": true,
     "singleQuote": true,
     "useTabs": false
