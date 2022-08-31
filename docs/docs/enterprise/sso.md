@@ -2,13 +2,11 @@
 title: Setting up SSO
 ---
 
-# Setting up SSO
-
 StackBlitz is excited to offer SAML-based Single Sign on (SSO) to organizations using StackBlitz Enterprise Edition (EE). To enable this you need to be logged in as an admin. If you are also a company IdP admin, we can get started! If not, you will need to coordinate with whoever manages your identity provider (IdP).
 
 StackBlitz's SAML integration relies on a user level token. To ensure consistent delivery of SAML services we recommend using an admin service account email for the admin account such as `IT@yourcompany.com` to avoid email collisions with other users.
 
-:::info
+:::note
 
 - After SAML is enabled, all non-admin members in StackBlitz must log in with SAML. Admins can still log in with a password as needed.
 - Only StackBlitz Admins have the superpowers to enable SAML for the organization.

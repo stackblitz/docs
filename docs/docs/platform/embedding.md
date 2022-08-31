@@ -2,8 +2,6 @@
 title: Embedding projects
 ---
 
-# Embedding projects
-
 ## What are StackBlitz embeds?
 
 A StackBlitz embed allows you to display our editor with your code into sites for documentation, blog posts, and any sites that support embedded content. By using the StackBlitz SDK, you can customize your embedded StackBlitz project to display the editor, preview, file explorer, and more.

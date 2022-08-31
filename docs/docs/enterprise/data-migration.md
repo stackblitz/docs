@@ -1,8 +1,7 @@
 ---
 title: Migrating StackBlitz Data
+sidebar_label: Data Migration
 ---
-
-# Migrating StackBlitz Data
 
 By default, StackBlitz Enterprise Edition (EE) will deploy a basic PostgreSQL container instance for persisting user and project data. This provides trial users with the fastest possible deployment experience but is not well-suited for production use.
 
@@ -10,12 +9,12 @@ For production deployments, we suggest an external PostgreSQL solution with mana
 
 ## Prerequisites
 
-- `kubectl` access to the Kubernetes cluster where StackBlitz is installed. On [embedded installs](/enterprise/installation/quickstart), `kubectl` is fully configured already, so a login shell on the host (usually via SSH or console) is sufficient.
-- Network reachability from your cluster node(s) to the target instance of PostgreSQL, which by default listens on TCP port 5432.
+* `kubectl` access to the Kubernetes cluster where StackBlitz is installed. On [embedded installs](https://developer.stackblitz.com/docs/enterprise/installation/quickstart/), `kubectl` is fully configured already, so a login shell on the host (usually via SSH or console) is sufficient.
+* Network reachability from your cluster node(s) to the target instance of PostgreSQL, which by default listens on TCP port 5432.
 
-:::warning
+:::important
 
-Most of the commands in this guide require you to provide the Kubernetes [namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) where StackBlitz is installed. If you followed the [embedded installation procedure](/enterprise/installation/quickstart), your namespace is `default`. If you installed into an existing Kubernetes cluster your namespace is `stackblitz`, unless a custom value was provided during installation.
+Most of the commands in this guide require you to provide the Kubernetes [namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) where StackBlitz is installed. If you followed the [embedded installation procedure](https://developer.stackblitz.com/docs/enterprise/Installation/quickstart), your namespace is `default`. If you installed into an existing Kubernetes cluster your namespace is `stackblitz`, unless a custom value was provided during installation.
 
 :::
 
@@ -52,7 +51,7 @@ psql \
 -d postgres'
 ```
 
-:::warning
+:::important
 
 The restore will create the `stackblitz_production` database and connect to it before restoring. If the DB already exists, it will drop it and create it again before restoring. In case it doesn't exist, we connect to the default `postgres` DB first. You **must** provide a username which is allowed to create, read, and write databases, tables, and indexes on the target PostgreSQL instance.
 
@@ -77,3 +76,4 @@ You can get the current release sequence value by checking the release history p
 This command will output values for `stackblitz_enc_key_settings`, `stackblitz_enc_key`, and if set, `stackblitz_enc_custom_key`. If the value of `stackblitz_enc_key_settings` is `stackblitz_default_generated`, your encryption key is the value of `stackblitz_enc_key`, otherwise it's the value of `stackblitz_enc_custom_key`.
 
 Once you have the old encryption key, go to the KOTS admin dashboard, and select "Custom Key" in the "Key Settings" field. Paste the old encryption key into the "Custom Encryption Key" field that appears, then save and deploy the new configuration.
+

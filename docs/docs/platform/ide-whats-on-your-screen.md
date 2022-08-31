@@ -2,8 +2,6 @@
 title: "IDE: what's on your screen"
 ---
 
-# "IDE: what's on your screen"
-
 This page provides an overview of the terms we use to describe each of the pieces of the user interface (UI) available to you in StackBlitz projects.
 
 <figure>
@@ -11,7 +9,7 @@ This page provides an overview of the terms we use to describe each of the piece
     <figcaption>Overview of the StackBlitz IDE user interface elements</figcaption>
 </figure>
 
-## Menu Bar
+### Menu Bar
 
 The Menu Bar is where you perform general operations on your StackBlitz project. It includes:
 
@@ -27,11 +25,11 @@ The Menu Bar is where you perform general operations on your StackBlitz project.
     <figcaption>screenshot: Menu Bar</figcaption>
 </figure>
 
-## Activity Bar
+### Activity Bar
 
 The Activity Bar allows you to select a view to display in the [Side Bar](#side-bar) from the available:
 
-<a target="_blank" href="/doc_images/stackblitz_ui_elements/activity-bar.png"><img src="/doc_images/stackblitz_ui_elements/activity-bar.png" class="float-right" style="height:200px" /></a>
+<a target="_blank" href="/doc_images/stackblitz_ui_elements/activity-bar.png"><img src="/doc_images/stackblitz_ui_elements/activity-bar.png" className="float-right" style={{height: 200}} /></a>
 
 - [Project](#project-side-bar)
 - [Search](#search-side-bar)
@@ -39,13 +37,13 @@ The Activity Bar allows you to select a view to display in the [Side Bar](#side-
 - [Ports in use](#ports-in-use-side-bar) ([WebContainers](/docs/platform/available-environments) projects only)
 - [Settings](#settings-side-bar) (some differences between [environments](/docs/platform/available-environments) – [see the settings description](#settings-side-bar) for details)
 
-## Side Bar
+### Side Bar
 
 When you open a StackBlitz project, the Side Bar displays the _Project_ view. You can open a different view by clicking on the icons in the [Side Bar](#side-bar).
 
 #### Project Side Bar
 
-<figure class="float-left" style="width:200px">
+<figure className="float-left" style={{width: 200}}>
     <a target="_blank" href="/doc_images/stackblitz_ui_elements/side-bar.png"><img src="/doc_images/stackblitz_ui_elements/side-bar.png" /></a>
     <figcaption>screenshot: Project Side Bar</figcaption>
 </figure>
@@ -76,7 +74,7 @@ In the [EngineBlock](/docs/platform/available-environments) environment the _Set
 - Reload trigger, which specifies what triggers the app to update in the [Preview](#preview). The "Edit (auto)" option picks up updates automatically whenever you stop typing in the editor for about one second, the "Save" option only updates when you save the file, and the "Keystroke" option updates whenever you press a key in the editor.
 - Clear console on HMR – when the "Reload mechanism" is set to "Hot Reload", this option allows you to keep the [Console](#console) messages between updates ("Disabled") or to automatically clear them ("Enabled") as if you have manually run `console.clear()` in your code.
 
-## Editor
+### Editor
 
 The Editor section of the IDE displays the content of the currently selected file. You can perform several actions in the Editor's top-right side such as format code with [Prettier](https://prettier.io) or manage the file tabs if you have several open.
 
@@ -85,7 +83,7 @@ The Editor section of the IDE displays the content of the currently selected fil
     <figcaption>screenshot: Editor</figcaption>
 </figure>
 
-## Terminal
+### Terminal
 
 The Terminal allows you to run commands, such as `ls`, `mkdir`, `npm start`, `node index.js`, and others – the same way you would on your local machine. **NOTE:** the terminal is only available in the [WebContainers](/docs/platform/available-environments) projects.
 
@@ -94,9 +92,9 @@ The Terminal allows you to run commands, such as `ls`, `mkdir`, `npm start`, `no
     <figcaption>screenshot: Terminal</figcaption>
 </figure>
 
-## Preview
+### Preview
 
-<figure class="float-right" style="width:300px">
+<figure className="float-right" style={{width: 300}}>
     <a target="_blank" href="/doc_images/stackblitz_ui_elements/preview.png"><img src="/doc_images/stackblitz_ui_elements/preview.png" /></a>
     <figcaption>screenshot: Preview</figcaption>
 </figure>
@@ -105,9 +103,9 @@ The Preview displays the application or webside that you are building in the [Ed
 
 In case you prefer to view your app in a separate window, you can use the "Open in New Window" button located above the Preview. It will close the Preview and open your app in a separate browser tab instead.
 
-## Console
+### Console
 
-<figure class="float-right" style="width:300px">
+<figure className="float-right" style={{width: 300}}>
     <a target="_blank" href="/doc_images/stackblitz_ui_elements/console.png"><img src="/doc_images/stackblitz_ui_elements/console.png" /></a>
     <figcaption>screenshot: Console</figcaption>
 </figure>

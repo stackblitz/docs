@@ -2,9 +2,7 @@
 title: Administrator Guide
 ---
 
-# Administrator Guide
-
-:::info
+:::note
 
 This document covers in-depth custom installation and cluster operations. For a more gentle introduction to the installation process, please check out the [Quickstart](/docs/enterprise/installation/quickstart).
 
@@ -41,14 +39,13 @@ If you need to use your existing deployment pipeline (i.e. internal image regist
 
 StackBlitz Enterprise has a built-in troubleshooting tool. On the admin console, click on the Troubleshoot tab, and you can download a support bundle. By default this will run through a series of prebuilt analyzers to help identify potential issues. If you’re unable to remediate the issue you can deliver the support bundle to our support team, we can help identify any problems with your StackBlitz Enterprise installation.
 
+
 ## Automating Day-2 Operations
 
 ### Leveraging an Internal Registry
-
 Once the StackBlitz Admin Console is installed you can configure it so that StackBlitz images will be retagged and pushed to your internal registry for further scanning, etc. YAML will be rewritten so that images will be pulled from the specified internal registry at runtime.
 
 ### Storage
-
 Optionally, you can provide a Postgres server. If you choose to bring your own Postgres server, it should be at least Postgres 10.4. If you don’t bring your own, the installer will provision Postgres as a Stateful set in your cluster.
 
 ## Additional tools and processes
@@ -60,6 +57,7 @@ To start, you’ll need to bootstrap the process by deploying our Admin Console.
 ### Initial Configuration
 
 Once the admin console is running, visit https://localhost:8800 and upload your license. StackBlitz Enterprise is delivered as ready-to-run YAML, but you might need to make some changes for your specific environment. In the Admin Console, click “Config”. This will show a form where you can provide your settings. These will be written as Kubernetes secrets in the deployment manifests.
+
 
 ### Config options
 
@@ -75,12 +73,12 @@ Allows you to pick which database to use. By default, an embedded postgres will 
 
 An embedded minio is used as bucket by default. You can also provide your own s3 compatible bucket to be used.
 
-You can also configure the bucket names to be used for turbo, bundle hydration caching and image storage.
+You can also configure the bucket names to be used for turbo, bundle hydration caching and image storage. 
 
 #### TLS settings
 
 Here you can provide the certificate to be used for domain you are hosting the app on.
 
-#### Kubernetes settings
+#### Kubernetes settings 
 
 Here you can define the namespace you installed the application in. For embedded installs, the default should be fine. For 'existing cluster' installs, you should provide the namespace.

@@ -2,8 +2,6 @@
 title: Getting started
 ---
 
-# Getting started
-
 Discover how you can start using StackBlitz now!
 
 ## Picking a starter project
@@ -22,7 +20,8 @@ Some frameworks also provide short URLs that you can use to create new StackBlit
 
 ## Importing code
 
-No starter project for your favorite framework? Or do you want to import your own code?
+No starter project for your favorite framework?
+Or do you want to import your own code?
 
 Read more on [how to import projects](/docs/platform/importing-projects/) from your own files, or from GitHub repositories.
 

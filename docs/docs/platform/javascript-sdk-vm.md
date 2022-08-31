@@ -1,10 +1,10 @@
 ---
-title: JavaScript SDK VM
+title: 'SDK: controlling embeds'
 ---
 
-# JavaScript SDK VM
-
-:::info Note These methods only apply to projects embedded on a page. :::
+:::secondary
+These methods only apply to projects embedded on a page.
+:::
 
 All of the embed methods of the [StackBlitz JS SDK][sdk_docs] automatically connect to the embedded StackBlitz <abbr title="Virtual Machine">VM</abbr>, giving you programmatic access to the embedded project.
 
@@ -82,7 +82,9 @@ Updates project files. Returns a promise resolving to `null`.
 | `diff.create`  | Yes      | Object | Object with file paths as keys and contents as values |
 | `diff.destroy` | Yes      | Array  | File paths of the files to delete                     |
 
-:::info Note When modifying existing files, the new content of the modified files must be provided in full. :::
+:::secondary
+When modifying existing files, the new content of the modified files must be provided in full.
+:::
 
 Example:
 
@@ -129,9 +131,9 @@ console.log(files); // { 'index.js': '…', 'package.json': '…', … }
 
 Opens one or several files in tabs and/or split panes. Returns a promise resolving to `null`.
 
-| Argument | Required | Type | Description |
-| --- | --- | --- | --- |
-| `path` | Yes | [OpenFileOption][] (String or array of strings) | Path(s) of file(s) to open |
+| Argument | Required | Type                                            | Description                |
+| -------- | -------- | ----------------------------------------------- | -------------------------- |
+| `path`   | Yes      | [OpenFileOption][] (String or array of strings) | Path(s) of file(s) to open |
 
 Example:
 

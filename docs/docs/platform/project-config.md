@@ -2,8 +2,6 @@
 title: Project configuration
 ---
 
-# Project configuration
-
 Projects based on WebContainers can be configured:
 
 1. [with project files](#with-project-files) (`package.json` or `.stackblitzrc`);
@@ -131,7 +129,9 @@ For example, the following URL will run the `"test"` script defined in `package.
 https://stackblitz.com/edit/project-id?terminal=test
 ```
 
-:::important The `terminal` parameter only accepts existing keys from the `package.json`’s `scripts` field. Projects which need more control should use configuration in the project files directly. :::
+:::important
+The `terminal` parameter only accepts existing keys from the `package.json`’s `scripts` field. Projects which need more control should use configuration in the project files directly.
+:::
 
 You can also run several scripts sequentially using comma-separated values. For instance, if a project defines a `"build"` script and a `"serve"` script, and both are needed to render a web page, you could use:
 

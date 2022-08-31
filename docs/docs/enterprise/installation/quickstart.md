@@ -2,15 +2,13 @@
 title: Quickstart on Bare Metal
 ---
 
-# Quickstart on Bare Metal
-
 :::tip
 
-For in-depth custom installation setup and cluster operations, please check out the **[Administrator Guide](/enterprise/installation/administrator-guide)**.
+For in-depth custom installation setup and cluster operations, please check out the **[Administrator Guide](/docs/enterprise/installation/administrator-guide)**.
 
 :::
 
-StackBlitz Enterprise is a Kubernetes application. You can install the software on an [existing cluster](/enterprise/installation/administrator-guide#existing-cluster-installation) or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.
+StackBlitz Enterprise is a Kubernetes application. You can install the software on an [existing cluster](/docs/enterprise/installation/administrator-guide#existing-cluster-installation) or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.
 
 ## Getting started on bare metal (embedded)
 
@@ -28,7 +26,7 @@ Getting started on bare metal (no existing Kubernetes cluster):
   - 6443
 - Run the kots intaller command: `curl -sSL https://k8s.kurl.sh/stackblitz | sudo bash`
 
-:::warning
+:::important
 
 Copy the generated password from the terminal output after installation. It's required for accessing the Admin Console and won't be shown again.
 
@@ -53,6 +51,6 @@ Once this step completes, you should be presented with EE site configuration scr
 
 ![EE Console](/doc_images/ee-console-config.png)
 
-After filling out the configuration fields, click "Continue". Your StackBlitz EE instance is now booted and ready for **[DNS configuration](/enterprise/configuring-dns)**.
+After filling out the configuration fields, click "Continue". Your StackBlitz EE instance is now booted and ready for **[DNS configuration](/docs/enterprise/configuring-dns)**.
 
 <br />

@@ -2,8 +2,6 @@
 title: Importing projects
 ---
 
-# Importing projects
-
 ## Upload from your computer
 
 With your desired StackBlitz project open, drag and drop any files and folder you want to import:
@@ -41,9 +39,11 @@ You can provide an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts)
 
 `stackblitz.com/fork/github/{GH_USERNAME}/{REPO_NAME}?terminal={NPM_SCRIPT_NAME}`
 
-:::tip Example The following URL will open the `vitesse` repository of the `antfu` user, install the NPM dependencies, and run `npm run dev` command in the terminal:
+:::tip Example
+The following URL will open the `vitesse` repository of the `antfu` user, install the NPM dependencies, and run `npm run dev` command in the terminal:
 
-`stackblitz.com/github/antfu/vitesse?terminal=dev` :::
+`stackblitz.com/github/antfu/vitesse?terminal=dev`
+:::
 
 ### Setting up the imported project’s title
 
@@ -55,17 +55,23 @@ To customize the title of the imported project, add the `title` query parameter 
 
 ## Importing private projects
 
-:::info Note Importing private GitHub repos is a feature available with our memberships. If you're interested in being a member, check details on our [StackBlitz Cloud](https://stackblitz.com/membership) page. :::
+:::note
+Importing private GitHub repos is a feature available with our memberships. If you're interested in being a member, check details on our [StackBlitz Cloud](https://stackblitz.com/membership) page.
+:::
 
-**1.** Go to your dashboard and open a new JavaScript blank project ![Dashboard for JavaScript Blank Project](/doc_images/private-repo-starter.png)
+**1.** Go to your dashboard and open a new JavaScript blank project
+![Dashboard for JavaScript Blank Project](/doc_images/private-repo-starter.png)
 
-**2.** Click on 'Connect repository' on the top left **3.** Click on the 'importing from an existing repository' link ![Connect and import GitHub repo](/doc_images/connect-to-existing-repo.png)
+**2.** Click on 'Connect repository' on the top left
+**3.** Click on the 'importing from an existing repository' link
+![Connect and import GitHub repo](/doc_images/connect-to-existing-repo.png)
 
-**4.** Paste your full GitHub repo URL ![Paste GitHub repo URL to import](/doc_images/import-existing-repo.png)
+**4.** Paste your full GitHub repo URL
+![Paste GitHub repo URL to import](/doc_images/import-existing-repo.png)
 
 The video below outlines a workaround to edit collaboratively in a private repo:
 
-<iframe src="https://www.loom.com/embed/54c9f65e05494b00b6aa1bb9e0bbe7ab" width="100%" height="400px" />
+<iframe src="https://www.loom.com/embed/54c9f65e05494b00b6aa1bb9e0bbe7ab" style="width: 100%; height: 400px;"></iframe>
 
 ## StackBlitz API
 

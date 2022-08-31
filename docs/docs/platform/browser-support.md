@@ -2,8 +2,6 @@
 title: Browser support
 ---
 
-# Browser support
-
 Last update: July 2022
 
 TL;DR: For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state.
@@ -52,8 +50,8 @@ In addition to this, there might be [other runtime incompatibilities](#runtime-d
 
 Safari recently shipped support for `SharedArrayBuffer` and cross-origin isolation. However, it is still lacking a few other features that prevent us from shipping a working environment:
 
-- [Atomics.waitAsync](https://github.com/tc39/proposal-atomics-wait-async)
-- [Lookbehind in regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
+* [Atomics.waitAsync](https://github.com/tc39/proposal-atomics-wait-async)
+* [Lookbehind in regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
 
 (Note that none of above can be pollyfilled).
 

@@ -2,8 +2,6 @@
 title: User Management
 ---
 
-# User Management
-
 ## Grant Admin Access to SSO Accounts
 
 After successful installation, StackBlitz EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using [custom starter projects](/docs/platform/starter-projects).
@@ -26,7 +24,7 @@ Upon signing in, navigate to the Admin Panel using the link in the dashboard's h
 
 ### 3. Grant admin access to your SSO account
 
-On the Admin Panel dashboard, hover over the "Manage" tab and click on "Users":
+On the Admin Panel dashboard, hover over the "Manage" tab and click on "Users": 
 
 ![Manage Users Link](/doc_images/ee/manage-users/manage-users-link.png)
 

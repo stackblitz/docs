@@ -2,8 +2,6 @@
 title: Browser configuration
 ---
 
-# Browser configuration
-
 Most of the time, WebContainers run fine [in supported browsers](/docs/platform/browser-support/). However, some browsers have default content restrictions, like third-party cookie and Service Worker blocking, that can prevent StackBlitz’s WebContainers from running properly. Here’s how you can work around the most common issues.
 
 ## Why do I need to add exceptions for StackBlitz?

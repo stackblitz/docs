@@ -2,8 +2,6 @@
 title: Turbo package manager
 ---
 
-# Turbo package manager
-
 WebContainers-based projects use Turbo as package manager. Turbo is our custom NPM client and it works similarly to `npm` and `yarn`. For many commands, you can invoke `npm` or `yarn` directly and they will work as usual:
 
 ```shell

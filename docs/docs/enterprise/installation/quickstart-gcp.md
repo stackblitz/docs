@@ -2,11 +2,9 @@
 title: Quickstart on GCP (Non-GKE)
 ---
 
-# Quickstart on GCP (Non-GKE)
-
 :::tip
 
-For in-depth custom installation setup and cluster operations, please check out the **[Administrator Guide](/enterprise/installation/administrator-guide)**.
+For in-depth custom installation setup and cluster operations, please check out the **[Administrator Guide](/docs/enterprise/installation/administrator-guide)**.
 
 :::
 

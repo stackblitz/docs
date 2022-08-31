@@ -2,15 +2,17 @@
 title: Quickstart (Existing Cluster)
 ---
 
-# Quickstart (Existing Cluster)
-
 :::tip
 
-For in-depth custom installation setup and cluster operations, please check out the **[Administrator Guide](/enterprise/installation/administrator-guide)**.
+For in-depth custom installation setup and cluster operations, please check out the **[Administrator Guide](/docs/enterprise/installation/administrator-guide)**.
 
 :::
 
-StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster. Alternatively, if you don't have Kubernetes set up for your organization, you can use our installer that has an embedded production-ready Kubernetes distribution packaged with it. You can view the [Quickstart on Bare Metal](/enterprise/installation/quickstart) for a quick way to get up and running without Kubernetes. Installing on an existing cluster is the recommended way of installing StackBlitz Enterprise. For installing StackBlitz in environments with restricted network access, see [Air-Gapped Installs](/enterprise/installation/air-gapped-installs).
+StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster. Alternatively, if
+you don't have Kubernetes set up for your organization, you can use our installer that has an embedded production-ready Kubernetes distribution packaged with it.
+You can view the [Quickstart on Bare Metal](/docs/enterprise/installation/quickstart) for a quick way to get up and running without Kubernetes. Installing on
+an existing cluster is the recommended way of installing StackBlitz Enterprise. For installing StackBlitz in environments with restricted network access, see
+[Air-Gapped Installs](/docs/enterprise/installation/air-gapped-installs).
 
 ## Getting started on an Existing Cluster
 
@@ -20,10 +22,13 @@ Minimum Cluster Requirements:
 - 32 GB Memory
 - 200 GB Storage
 - `kubectl` access to the cluster
-- Internet access from the cluster (see [Configuring Firewall Rules](/enterprise/configuring-firewall-rules) for the list of hostnames/ips that require internet access for installation, updates and licensing)
+- Internet access from the cluster (see [Configuring Firewall Rules](/docs/enterprise/configuring-firewall-rules) for the list of hostnames/ips that require internet access for installation, updates and licensing)
 - A machine with `kubectl` access to the cluster.
 
-:::important If your cluster does not allow access to the external internet, you will need to perform an [Air-Gapped Install](/enterprise/installation/air-gapped-installs). Contact [enterprise@stackblitz.com](mailto:enterprise@stackblitz.com) if you need air-gapped installations enabled on your license. :::
+:::important
+If your cluster does not allow access to the external internet, you will need to perform an [Air-Gapped Install](/docs/enterprise/installation/air-gapped-installs).
+Contact [enterprise@stackblitz.com](mailto:enterprise@stackblitz.com) if you need air-gapped installations enabled on your license.
+:::
 
 Recommended Cluster Requirements:
 
@@ -75,7 +80,9 @@ Navigate to [http://localhost:8800](http://localhost:8800) to access the Admin C
 
 ![Admin Console Login](/doc_images/admin-console-login.png)
 
-:::tip To access the Admin Console again, run `kubectl kots admin-console --namespace stackblitz` (replacing `stackblitz` with your namespace) :::
+:::tip
+To access the Admin Console again, run `kubectl kots admin-console --namespace stackblitz` (replacing `stackblitz` with your namespace)
+:::
 
 ## License registration
 
@@ -85,4 +92,4 @@ Drag and drop your license file onto the webpage to upload it. Once this step co
 
 ![EE Console](/doc_images/ee-console-config.png)
 
-See the [Config Options in the Administrator Guide](http://local.stackblitz.com:3000/installation/administrator-guide#config-options) for more details on each configuration option. After filling out the configuration fields, click "Continue". Your configuration will be saved and the Admin Console will deploy your configuration and begin to pull and run the images for StackBlitz. After your instance is up and running, you will need to [Configure DNS Settings](http://local.stackblitz.com:3000/configuring-dns) to point your DNS zones at the IP/CNAME of your ingress.
+See the [Config Options in the Administrator Guide](http://local.stackblitz.com:3000/docs/enterprise/installation/administrator-guide#config-options) for more details on each configuration option. After filling out the configuration fields, click "Continue". Your configuration will be saved and the Admin Console will deploy your configuration and begin to pull and run the images for StackBlitz. After your instance is up and running, you will need to [Configure DNS Settings](http://local.stackblitz.com:3000/docs/enterprise/configuring-dns) to point your DNS zones at the IP/CNAME of your ingress.

@@ -2,14 +2,13 @@
 title: Setting up SSO with ADFS
 ---
 
-# Setting up SSO with ADFS
-
 StackBlitz is excited to offer SAML-based Single Sign on (SSO) to organizations using Active Directory Federation Service (ADFS). To enable this you need to be logged in as an admin within StackBlitz. If you are also an admin for ADFS and have the ability to create Relying Party Trusts, we can get started! If not, you will need to coordinate with whoever manages your organization's ADFS.
 
-:::info
+:::note
 
 - Depending on your version of Windows and ADFS, these instructions may differ slightly from your experience
-- Each user account must have a unique email address. Use a service account email address (like IT@yourcompany.com) to ensure that the admin account doesn't cause email collisions for SSO users. After SAML is enabled, all non-admin members in StackBlitz must log in with SAML. The super admin user can still log in with a password as needed.
+- Each user account must have a unique email address. Use a service account email address (like IT@yourcompany.com) to ensure that the admin account doesn't cause email collisions for SSO users.
+After SAML is enabled, all non-admin members in StackBlitz must log in with SAML. The super admin user can still log in with a password as needed.
 - Only StackBlitz Admins have the superpowers to enable SAML for the organization.
 - StackBlitz offers just in time provisioning. This means that if a user logs into StackBlitz for the first time using SSO, an account will automatically be created.
 
@@ -47,13 +46,13 @@ On the "Ready to Add Trust" screen, review your selections and press "Next" to c
 
 On this screen you will add two(2) rules: Stackblitz Attributes and Name ID. Click "Add Rule" to begin the rule wizard. Create the following rules:
 
-**Stackblitz Attributes**
+__Stackblitz Attributes__
 
 Claim rule template: Send LDAP Attribures as Claims
 
 ![Stackblitz Attributes Rule](/doc_images/ee/adfs-sso/stackblitz-attributes.png)
 
-**Name ID**
+__Name ID__
 
 Claim rule template: Transform an Incoming Claim
 
@@ -82,3 +81,15 @@ Unable to log in after following these steps? Verify the following information:
 - Make sure you've put a check the "enabled" box on the auth setting page
 - Verify that your claim rules match the screenshots above exactly
 - Make sure the super admin account user's email doesn't collide with an ADFS user's email
+
+
+
+
+
+
+
+
+
+
+
+

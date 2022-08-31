@@ -2,9 +2,9 @@
 title: Air Gapped Installs
 ---
 
-# Air Gapped Installs
-
-StackBlitz supports air gapped installations for networks that have restricted outbound network access. Air gapped installs will not require outbound network access, but application and license updates will need to be applied manually.
+StackBlitz supports air gapped installations for networks that have restricted outbound network access.
+Air gapped installs will not require outbound network access, but application and license updates
+will need to be applied manually.
 
 ## Installing to an Existing Cluster
 
@@ -39,7 +39,8 @@ kubectl kots admin-console push-images ./kotsadm.tar.gz your.registry.hostname/y
   --registry-password readwrite-password
 ```
 
-:::tip If you wish to audit the StackBlitz application images before installing, you may also push the StackBlitz application bundle to your registry now as well by running the `push-images` command again with the StackBlitz bundle instead of the kotsadm bundle (all other options remain the same). :::
+:::tip
+If you wish to audit the StackBlitz application images before installing, you may also push the StackBlitz application bundle to your registry now as well by running the `push-images` command again with the StackBlitz bundle instead of the kotsadm bundle (all other options remain the same).
 
 Next, begin the installation process by installing the Admin Console to your cluster, providing the details for your container registry:
 
@@ -77,7 +78,8 @@ Check the [Administrator Guide](/docs/enterprise/installation/administrator-guid
 
 For installations where the browser is unable to provide the license and bundle, the CLI can be used instead. To complete an installation using the license and bundle, run the following command:
 
-:::tip If you've already uploaded the StackBlitz application images previously, add the `--disable-image-push` option
+:::tip
+If you've already uploaded the StackBlitz application images previously, add the `--disable-image-push` option
 
 ```sh
 kubectl kots install app-name \
@@ -92,6 +94,7 @@ kubectl kots install app-name \
   --registry-password rw-password
 ```
 
+
 If you have already provided your license using the browser, you can use the `kots upstream upgrade` command instead. To extract a new bundle to your registry and upload the release to Admin Console, run the following command:
 
 ```sh
@@ -104,4 +107,5 @@ kubectl kots upstream upgrade stackblitz \
   -n <admin console namespace>
 ```
 
-This will create a new release in the Admin Panel, where you can review the changes and update any configuration if necessary before deplying. Optionally, the `--deploy` flag can be added to the previous command to deploy the release automatically.
+This will create a new release in the Admin Panel, where you can review the changes and update any configuration if necessary before deplying.
+Optionally, the `--deploy` flag can be added to the previous command to deploy the release automatically.

@@ -2,8 +2,6 @@
 title: Starter projects
 ---
 
-# Starter projects
-
 This page covers what starter projects are, where to find them, and how to create a new starter.
 
 ## What are starter projects?
