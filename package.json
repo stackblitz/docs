@@ -1,19 +1,15 @@
 {
-  "name": "stackblitz-developers",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "stackblitz-docs",
+  "version": "0.0.0",
   "scripts": {
+    "start": "vitepress dev docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:serve": "vitepress serve docs"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "sass": "^1.54.5",
-    "vitepress": "^1.0.0-alpha.10",
-    "vue": "^3.2.37"
+    "sass": "^1.54.7",
+    "vitepress": "^1.0.0-alpha.13",
+    "vue": "^3.2.38"
   }
 }
