@@ -2,14 +2,22 @@
   "name": "stackblitz-docs",
   "version": "0.0.0",
   "scripts": {
-    "start": "vitepress dev docs",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+		"build": "vitepress build docs",
+		"format": "prettier --write '**/*.{md,ts}'",
+    "serve": "vitepress serve docs",
+    "start": "vitepress dev docs"
   },
   "devDependencies": {
+    "prettier": "^2.7.1",
     "sass": "^1.54.7",
     "vitepress": "^1.0.0-alpha.13",
     "vue": "^3.2.38"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "proseWrap": "never",
+    "semi": true,
+    "singleQuote": true,
+    "useTabs": false
   }
 }
