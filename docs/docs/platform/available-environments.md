@@ -2,6 +2,8 @@
 title: Available environments
 ---
 
+# Available environments
+
 There are two kinds of environments that run projects in StackBlitz: **EngineBlock** and **WebContainers**. Each project in StackBlitz is tied to one or the other.
 
 Depending on the environment, StackBlitz IDE includes slightly different features and user interface elements. See an overview of both environments in the table below. If you'd like to learn more about them, please specifically consult the section on [EngineBlock](#engineblock) or [WebContainers](#webcontainers).

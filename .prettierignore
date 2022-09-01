@@ -1,2 +1,5 @@
 # Prettier strugles with tables, `:::` notice blocks, etc.
 *.md
+
+# Built files
+build

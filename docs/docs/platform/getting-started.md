@@ -2,6 +2,8 @@
 title: Getting started
 ---
 
+# Getting started
+
 Discover how you can start using StackBlitz now!
 
 ## Picking a starter project

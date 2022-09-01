@@ -2,8 +2,8 @@
   "name": "stackblitz-docs",
   "version": "0.0.0",
   "scripts": {
-		"build": "vitepress build docs",
-		"format": "prettier --write '**/*.{js,ts,css,scss}'",
+    "build": "vitepress build docs",
+    "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
     "serve": "vitepress serve docs",
     "start": "vitepress dev docs"
   },
@@ -14,7 +14,6 @@
     "vue": "^3.2.38"
   },
   "prettier": {
-    
     "printWidth": 100,
     "semi": true,
     "singleQuote": true,

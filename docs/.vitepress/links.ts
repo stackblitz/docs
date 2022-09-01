@@ -1,3 +1,46 @@
+export const homeLinks = [
+  {
+    icon: 'embed',
+    title: 'Embedding',
+    description:
+      'Include the power of StackBlitz in your own code. Customize the UI and experience for your users.',
+    url: '/docs/platform/embedding',
+  },
+  {
+    icon: 'import',
+    title: 'Importing',
+    description:
+      'Upload from local, import from GitHub, and programmatically open files, folders and projects.',
+    url: '/docs/platform/importing-projects',
+  },
+  {
+    icon: 'sdk',
+    title: 'JavaScript SDK',
+    description:
+      'Create and embed StackBlitz projects in your docs, examples and blog posts with only a few lines of code.',
+    url: '/docs/platform/javascript-sdk',
+  },
+  {
+    title: 'StackBlitz API',
+    description:
+      'Create, import, customize and embed StackBlitz projects into your code. Expand functionality with programmatic access to the VM.',
+    url: '/docs/platform/javascript-sdk',
+    large: true,
+    bgImgLight: '/img/home-bg-platform-api-light.png',
+    bgImgDark: '/img/home-bg-platform-api-dark.png',
+  },
+  {
+    title: 'Enterprise',
+    description:
+      'Run StackBlitz behind your firewall, on new or existing Kubernetes clusters, with options for air gapping and SSO.',
+    url: '/docs/enterprise',
+    large: true,
+    invert: true,
+    bgImgLight: '/img/home-bg-enterprise-light.png',
+    bgImgDark: '/img/home-bg-enterprise-dark.png',
+  },
+];
+
 export const userGuide = [
   { text: 'What is StackBlitz', link: '/docs/platform/what-is-stackblitz' },
   { text: 'Getting started', link: '/docs/platform/getting-started' },

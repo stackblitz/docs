@@ -1,16 +1,34 @@
 :root {
-  --vp-c-bg-light-mute: #f8f8f8;
-  --vp-c-brand: hsl(200 80% 38%); // or #00e6ff ?
+  scroll-padding-top: 120px;
+}
+
+:root:not(.dark) {
+  --vp-c-brand: hsl(200 80% 38%);
+  --vp-c-brand-light: hsl(195 85% 42%);
+  --vp-c-brand-lighter: hsl(190 90% 48%);
   --vp-c-brand-dark: hsl(200 80% 32%);
+  --vp-c-brand-darker: hsl(200 70% 24%);
 }
 
 :root.dark {
-  --vp-c-brand: #00bbff; // or #00e6ff ?
-  --vp-c-brand-dark: #009bd3;
+  // Backgrounds
   --vp-c-bg: hsl(220 14% 13%);
   --vp-c-bg-alt: hsl(220 14% 9%);
   --vp-c-bg-soft: hsl(220 14% 17%);
   --vp-c-bg-mute: hsl(220 14% 20%);
+
+  // Highlight color (links, some borders or hover effects)
+  --vp-c-brand: hsl(190 100% 48%);
+  --vp-c-brand-light: hsl(185 100% 54%);
+  --vp-c-brand-lighter: hsl(180 100% 60%);
+  --vp-c-brand-dark: hsl(190 100% 42%);
+  --vp-c-brand-darker: hsl(190 100% 36%);
+
+  // If we want to make the dividers blueish too
+  //--vp-c-divider: var(--vp-c-divider-light-1);
+  //--vp-c-divider-light: var(--vp-c-divider-light-2);
+  //--vp-c-divider-inverse: var(--vp-c-divider-dark-1);
+  //--vp-c-divider-inverse-light: var(--vp-c-divider-dark-2);
 }
 
 // Fix hardcoded background color of the Nav component.
@@ -19,11 +37,13 @@
   :root.dark .VPNav.no-sidebar,
   :root.dark .VPNavBar.has-sidebar .content {
     background-color: hsl(220 14% 13% / 0.7);
+    --vp-c-black: #1a1a1ab3;
   }
 }
 
 // Wrap code examples
-.vp-doc [class*="language-"] pre, .vp-doc [class*="language-"] code {
+.vp-doc [class*='language-'] pre,
+.vp-doc [class*='language-'] code {
   white-space: pre-wrap;
   // break contiguous strings if there was no break opportunity (e.g. whitespace, hyphens or slashes)
   word-break: break-word;
