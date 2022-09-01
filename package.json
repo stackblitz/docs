@@ -5,6 +5,7 @@
     "build": "vitepress build docs",
     "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
     "serve": "vitepress serve docs",
+    "dev": "vitepress dev docs",
     "start": "vitepress dev docs"
   },
   "devDependencies": {
