@@ -72,3 +72,10 @@ img {
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
+
+.VPNavBarMenuLink {
+  --vp-nav-height-mobile: 1.32;
+  @media screen and (max-width: 1140px) {
+    font-size: 12px !important;
+  }
+}
