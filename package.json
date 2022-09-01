@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "build": "vitepress build docs",
+    "dev": "vitepress dev docs",
     "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
     "serve": "vitepress serve docs",
-    "dev": "vitepress dev docs",
     "start": "vitepress dev docs"
   },
   "devDependencies": {
