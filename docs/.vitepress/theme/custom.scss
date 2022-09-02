@@ -79,3 +79,33 @@ img {
     font-size: 12px !important;
   }
 }
+
+figure {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+figcaption {
+  padding: 16px 24px;
+  font-size: 15px;
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-alt);
+}
+img + .sub-link + figcaption {
+  margin-top: 12px;
+}
+
+img + .sub-link {
+  display: inline-block;
+  transform: translateY(-6px);
+  font-size: 12px;
+  span.neutral {
+    margin-left: 4px;
+    color: var(--vp-c-brand);
+    transition: ease 0.2s color;
+  }
+  &:hover,
+  &:hover span.neutral {
+    color: var(--vp-c-brand-light);
+  }
+}

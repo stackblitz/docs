@@ -21,9 +21,11 @@ In the following guide, we will answer all of these questions.
 One of the ways to make your code example stand out in your docs or your repository's readme file is to use our call-to-action buttons.
 
 <figure>
-    <img alt="open-in-stackblitz.svg button" src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" /> <a style="font-size:12px" href="https://developer.stackblitz.com/img/open_in_stackblitz.svg" target="_blank">Direct URL</a>
+    <img alt="open-in-stackblitz.svg button" src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" />
+    <a class="sub-link" href="https://developer.stackblitz.com/img/open_in_stackblitz.svg" target="_blank">Direct URL</a>
     <br />
-    <img alt="open-in-stackblitz_small.svg button" src="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" /> <a style="font-size:12px" href="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" target="_blank">Direct URL</a>
+    <img alt="open-in-stackblitz_small.svg button" src="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" />
+    <a class="sub-link" href="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" target="_blank">Direct URL</a>
     <figcaption>
         💡 You can either host on your servers or use our image URLs directly.
     </figcaption>
