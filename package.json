@@ -9,6 +9,7 @@
     "start": "vitepress dev docs"
   },
   "devDependencies": {
+    "@vue/tsconfig": "^0.1.3",
     "prettier": "^2.7.1",
     "sass": "^1.54.7",
     "vitepress": "^1.0.0-alpha.13",

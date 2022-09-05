@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { computed } from 'vue';
 import './GridLink.scss';
 
 const props = defineProps<{
@@ -13,27 +13,27 @@ const props = defineProps<{
   url: string;
 }>();
 
-const style = reactive({
+const style = computed(() => ({
   '--bg-img-dark': props.bgImgDark ? `url(${props.bgImgDark})` : undefined,
   '--bg-img-light': props.bgImgLight ? `url(${props.bgImgLight})` : undefined,
-});
+}));
 </script>
 
 <template>
   <a
     :class="{
       GridLink: true,
-      'GridLink--large': props.large,
-      'GridLink--invert': props.invert,
+      'GridLink--large': large,
+      'GridLink--invert': invert,
     }"
     :style="style"
-    :href="props.url"
+    :href="url"
   >
-    <strong class="GridLink-title" :data-icon="props.icon">
-      {{ props.title }}
+    <strong class="GridLink-title" :data-icon="icon">
+      {{ title }}
     </strong>
     <span class="GridLink-description">
-      {{ props.description }}
+      {{ description }}
     </span>
   </a>
 </template>

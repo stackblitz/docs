@@ -1,16 +1,5 @@
 {
-  "compilerOptions": {
-    "target": "ES2018",
-    "moduleResolution": "node",
-    "jsx": "preserve",
-    "paths": {
-      "$/*": ["./docs/.vitepress/*"]
-    }
-  },
-  "vueCompilerOptions": {
-    "experimentalAllowTypeNarrowingInInlineHandlers": true
-    //"experimentalDisableTemplateSupport": true
-  },
+  "extends": "@vue/tsconfig/tsconfig.json",
   "include": ["docs/.vitepress/**/*", "docs/**/*.md"],
   "exclude": ["node_modules/"]
 }
