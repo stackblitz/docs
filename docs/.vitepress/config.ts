@@ -42,11 +42,10 @@ export default defineConfig({
       text: 'Edit this page on StackBlitz',
     },
     nav: [
-      { text: 'User Guide', link: links.userGuide[0].link },
-      { text: 'Open in StackBlitz', link: links.developerGuide[0].link },
-      { text: 'Runtime Environments', link: links.environment[0].link },
-      { text: 'JavaScript SDK', link: links.api[0].link },
-      { text: 'Enterprise Edition', link: links.enterprise[0].link! },
+      { text: 'Guide', link: links.userGuide[0].link },
+      { text: 'Open Source', link: links.openSourceGuide[0].link },
+      { text: 'API', link: links.api[0].link },
+      { text: 'Enterprise', link: links.enterprise[0].link! },
     ],
     sidebar: {
       // Custom sidebar for Enterprise pages
@@ -67,10 +66,10 @@ export default defineConfig({
           items: links.userGuide,
         },
         {
-          text: 'Open in StackBlitz',
+          text: 'Open Source Guide',
           collapsible: true,
           collapsed: false,
-          items: links.developerGuide,
+          items: links.openSourceGuide,
         },
         {
           text: 'Runtime Environments',

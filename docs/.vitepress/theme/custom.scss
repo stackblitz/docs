@@ -41,6 +41,14 @@
   }
 }
 
+.VPNavBarMenu .VPNavBarMenuLink {
+  min-height: var(--vp-nav-height-mobile);
+  line-height: 1.32;
+  @media (min-width: 960px) {
+    min-height: var(--vp-nav-height-desktop);
+  }
+}
+
 // Wrap code examples
 .vp-doc [class*='language-'] pre,
 .vp-doc [class*='language-'] code {
@@ -71,13 +79,6 @@ img {
   // might not need / possible relic from docusaurus
   margin-top: 0;
   margin-bottom: 1.5rem;
-}
-
-.VPNavBarMenuLink {
-  --vp-nav-height-mobile: 1.32;
-  @media screen and (max-width: 1140px) {
-    font-size: 12px !important;
-  }
 }
 
 figure {
