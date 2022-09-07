@@ -9,6 +9,8 @@ export default defineConfig({
   description: 'Docs | Guides | Tutorials',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/img/sb-dev-logo.svg' }],
+    // TODO: remove before making public
+    ['meta', { name: 'robots', content: 'noindex,nofollow,noarchive' }],
     /*
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: ogTitle }],
