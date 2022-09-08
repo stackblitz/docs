@@ -51,7 +51,7 @@ export const userGuide = [
   { text: "IDE: what's on your screen", link: '/docs/platform/ide-whats-on-your-screen' },
 ];
 
-export const developerGuide = [
+export const openSourceGuide = [
   { text: 'Launching projects from GitHub', link: '/docs/guide/open-from-github' },
   { text: 'Creating projects with the SDK', link: '/docs/guide/create-with-sdk' },
   { text: 'Bug reproductions', link: '/docs/guide/bug-reproductions' },
