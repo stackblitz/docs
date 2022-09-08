@@ -43,7 +43,6 @@ export default defineConfig({
     },
     nav: [
       { text: 'Guide', link: links.userGuide[0].link },
-      { text: 'Open Source', link: links.openSourceGuide[0].link },
       { text: 'API', link: links.api[0].link },
       { text: 'Enterprise', link: links.enterprise[0].link! },
     ],
