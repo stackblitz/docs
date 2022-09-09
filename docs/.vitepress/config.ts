@@ -42,7 +42,7 @@ export default defineConfig({
       text: 'Edit this page on StackBlitz',
     },
     nav: [
-      { text: 'Guide', link: links.userGuide[0].link },
+      { text: 'Guides', link: links.userGuide[0].link },
       { text: 'API', link: links.api[0].link },
       { text: 'Enterprise', link: links.enterprise[0].link! },
     ],
