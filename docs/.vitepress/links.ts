@@ -98,3 +98,60 @@ export const enterprise = [
   { text: 'Aggregating Logs', link: '/docs/enterprise/log-aggregation' },
   { text: 'Data Migration', link: '/docs/enterprise/data-migration' },
 ];
+
+export const footerSections = [
+  {
+    title: 'Workspaces',
+    items: [
+      { text: 'Popular', link: 'https://stackblitz.com/?starters=popular' },
+      { text: 'Frontend', link: 'https://stackblitz.com/?starters=frontend' },
+      { text: 'Backend', link: 'https://stackblitz.com/?starters=backend' },
+      { text: 'Fullstack', link: 'https://stackblitz.com/?starters=fullstack' },
+      { text: 'Vite', link: 'https://stackblitz.com/?starters=vite' },
+      { text: 'Docs, Blogs & Slides', link: 'https://stackblitz.com/?starters=docs' },
+      { text: 'Vanilla', link: 'https://stackblitz.com/?starters=vanilla' },
+    ],
+  },
+  {
+    title: 'Start a new Project',
+    items: [
+      { text: 'From a Workspace', link: 'https://stackblitz.com/?starters=popular' },
+      {
+        text: 'From a GitHub Repo',
+        link: 'https://developer.stackblitz.com/docs/platform/importing-projects#import-from-github',
+      },
+      {
+        text: 'From your computer',
+        link: 'https://developer.stackblitz.com/docs/platform/importing-projects#upload-from-your-computer',
+      },
+    ],
+  },
+  {
+    title: 'Product',
+    items: [
+      { text: 'Docs', link: 'https://developer.stackblitz.com/' },
+      { text: 'Enterprise', link: 'https://stackblitz.com/enterprise' },
+      { text: 'Pricing', link: 'https://stackblitz.com/membership' },
+      { text: 'Case Studies', link: 'https://stackblitz.com/case-studies/google' },
+    ],
+  },
+  {
+    title: 'Company',
+    items: [
+      { text: 'Blog', link: 'https://blog.stackblitz.com/' },
+      { text: 'Careers', link: 'https://stackblitz.com/careers' },
+      { text: 'Community', link: 'https://discord.gg/stackblitz' },
+      { text: 'Enterprise Sales', link: 'https://stackblitz.com/enterprise-contact' },
+      { text: 'Privacy', link: 'https://stackblitz.com/privacy-policy' },
+      { text: 'Terms of Service', link: 'https://stackblitz.com/terms-of-service' },
+    ],
+  },
+  {
+    title: 'Connect',
+    items: [
+      { text: 'GitHub', link: 'https://github.com/stackblitz/core' },
+      { text: 'Twitter', link: 'https://twitter.com/stackblitz' },
+      { text: 'Discord', link: 'https://discord.gg/stackblitz' },
+    ],
+  },
+];
