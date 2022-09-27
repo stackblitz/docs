@@ -43,21 +43,11 @@ export default defineConfig({
     },
     nav: [
       { text: 'Guides', link: links.userGuide[0].link },
-      { text: 'API', link: links.api[0].link },
+      { text: 'API Docs', link: links.api[0].link },
       { text: 'Enterprise', link: links.enterprise[0].link! },
     ],
     sidebar: {
-      // Custom sidebar for Enterprise pages
-      '/docs/enterprise/': [
-        {
-          text: 'Enterprise Edition',
-          collapsible: false,
-          collapsed: false,
-          items: links.enterprise,
-        },
-      ],
-      // Other sections all use the same sidebar
-      '/docs/': [
+      '/guide/': [
         {
           text: 'User Guide',
           collapsible: true,
@@ -70,6 +60,8 @@ export default defineConfig({
           collapsed: false,
           items: links.openSourceGuide,
         },
+      ],
+      '/api/': [
         {
           text: 'Runtime Environments',
           collapsible: true,
@@ -81,6 +73,14 @@ export default defineConfig({
           collapsible: true,
           collapsed: false,
           items: links.api,
+        },
+      ],
+      '/enterprise/': [
+        {
+          text: 'Enterprise Edition',
+          collapsible: false,
+          collapsed: false,
+          items: links.enterprise,
         },
       ],
     },

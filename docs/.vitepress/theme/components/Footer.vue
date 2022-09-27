@@ -42,7 +42,7 @@ footer {
 
   @media (min-width: 1240px) {
     padding: 90px 40px;
-    max-width: 1420px;
+    max-width: calc(var(--vp-layout-max-width) + 16px);
   }
 }
 
