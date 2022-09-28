@@ -1,13 +1,17 @@
 :root {
-  scroll-padding-top: 120px;
+  scroll-padding-top: calc(var(--vp-nav-height-desktop) + 30px);
 }
 
 :root:not(.dark) {
+  // Highlight color (links, some borders or hover effects)
   --vp-c-brand: hsl(200 80% 38%);
   --vp-c-brand-light: hsl(195 85% 42%);
   --vp-c-brand-lighter: hsl(190 90% 48%);
   --vp-c-brand-dark: hsl(200 80% 32%);
   --vp-c-brand-darker: hsl(200 70% 24%);
+  // Custom highlight colors (used on home page)
+  --sb-foreground-highlight: hsl(210 90% 50%);
+  --sb-foreground-highlight-high: hsl(190 100% 35%);
 }
 
 :root.dark {
@@ -24,6 +28,9 @@
   --vp-c-brand-lighter: hsl(180 100% 60%);
   --vp-c-brand-dark: hsl(190 100% 42%);
   --vp-c-brand-darker: hsl(190 100% 36%);
+  // Custom highlight colors (used on home page)
+  --sb-foreground-highlight: hsl(190, 91%, 69%);
+  --sb-foreground-highlight-high: hsl(165, 100%, 60%);
 
   // If we want to make the dividers blueish too
   //--vp-c-divider: var(--vp-c-divider-light-1);
