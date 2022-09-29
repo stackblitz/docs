@@ -34,7 +34,7 @@ const backgroundStyle = computed(() => ({
 </template>
 
 <style scoped lang="scss">
-@import './vars';
+@import '../styles/vars';
 
 .CardLink {
   --icon-color: var(--vp-c-brand-lighter);

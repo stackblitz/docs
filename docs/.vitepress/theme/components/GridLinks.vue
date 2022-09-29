@@ -16,7 +16,7 @@ defineProps<{ links: any[] }>();
 </template>
 
 <style scoped lang="scss">
-@import './vars';
+@import '../styles/vars';
 
 .GridLinks {
   display: grid;

@@ -6,12 +6,15 @@ import BooksIcon from './BooksIcon.vue';
   <header>
     <BooksIcon class="icon" />
     <h1>StackBlitz Documentation</h1>
-    <p>Some text on what StackBlitz is or what docs are.</p>
+    <p>
+      Discover how to make use of StackBlitz, an online development environment for frontend,
+      Node.js and the JavaScript ecosystem.
+    </p>
   </header>
 </template>
 
 <style scoped lang="scss">
-@import './vars';
+@import '../styles/vars';
 
 header {
   position: relative;
@@ -29,7 +32,7 @@ header {
   }
 }
 
-$icon-mask: linear-gradient(to bottom, #fff9 10%, #fffa 30%,  #fff0 74%);
+$icon-mask: linear-gradient(to bottom, #fff9 10%, #fffa 30%, #fff0 74%);
 
 header .icon {
   width: 160px;
