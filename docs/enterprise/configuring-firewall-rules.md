@@ -1,12 +1,14 @@
 ---
 title: Configuring Firewall Rules
 ---
-Depending on the network configuration, some installs need to have a complete list of expected outbound network traffic in order to
-open ports in firewalls and allowed hosts and IP addresses for outbound connectivity.
 
-When StackBlitz is installed with Replicated, it can be downloaded from the Internet or packaged up and delivered in an airgap pacakge. For IP based firewalls rules you can get the needed IPs from [this list of Services and IPs](https://raw.githubusercontent.com/replicatedhq/ips/master/ip_addresses.json).
+# {{ $frontmatter.title }}
 
-No outbound internet access is required for airgapped installations, and no installations of StackBlitz ever require inbound access.
+Depending on the network configuration, some installs need to have a complete list of expected outbound network traffic (in order to open ports in firewalls) and allowed hosts and IP addresses for outbound connectivity.
+
+When StackBlitz is installed with Replicated, it can be downloaded from the Internet or packaged up and delivered in an air gap package. For the IP-based firewall rules, you can get the needed IPs from [this list of Services and IPs](https://raw.githubusercontent.com/replicatedhq/ips/master/ip_addresses.json).
+
+No outbound Internet access is required for air-gapped installations, and no installations of StackBlitz ever require inbound access.
 
 | Host | Existing Cluster Installation | Embedded Cluster Installation |Description |
 |---|---|---|---|

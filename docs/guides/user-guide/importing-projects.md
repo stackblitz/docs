@@ -2,11 +2,11 @@
 title: Importing projects
 ---
 
-# Importing projects
+# {{ $frontmatter.title }}
 
 ## Upload from your computer
 
-With your desired StackBlitz project open, drag and drop any files and folder you want to import:
+With your desired StackBlitz project open, drag and drop any files or a folder you want to import:
 
 <img
   alt="Animation of dragging files from a local folder onto the StackBlitz editor sidebar"
@@ -15,7 +15,7 @@ With your desired StackBlitz project open, drag and drop any files and folder yo
 
 ## Import from GitHub
 
-You can run any public repo on GitHub by providing the username and repo name in the URL like so:
+You can run any public GitHub repository on StackBlitz by adding the username and repo name to the URL like so:
 
 `stackblitz.com/github/{GH_USERNAME}/{REPO_NAME}`
 
@@ -23,13 +23,15 @@ You can run any public repo on GitHub by providing the username and repo name in
 
 ![Public Repo Import from GitHub](/doc_images/import-from-github.png)
 
-And you can also optionally specify a branch, tag, or commit:
+If you want, you can also specify a branch, tag, or commit:
 
 `.../github/{GH_USERNAME}/{REPO_NAME}/tree/{TAG|BRANCH|COMMIT}`
 
-Whenever you push commits to GitHub, the corresponding StackBlitz project automatically updates with the latest changes — ensuring your GitHub repo remains the code’s source of truth.
+Whenever you push commits to GitHub, the corresponding StackBlitz project automatically updates with the latest changes ensuring that the code in your GitHub repository remains the source of truth.
 
-The GitHub importer imports any projects with a `package.json`, but note that unsupported technologies will not run. This includes backend languages not supported by Node.js (like PHP, Python or Java), databases like MySQL and PostgreSQL that require a binary server process, and some specific npm packages which are not fully compatible with WebContainers yet.
+:::note
+While you can import from GitHub any projects with a `package.json`, the unsupported technologies will not run. This includes backend languages not supported by Node.js (like PHP, Python, or Java), databases like MySQL and PostgreSQL that require a binary server process, and some specific npm packages which are not fully compatible with WebContainers yet.
+:::
 
 ### Defining a launch command
 
@@ -37,44 +39,57 @@ Oftentimes, the first thing you do when opening a project is to launch a command
 
 Usually, these kinds of commands exist in the `scripts` section of your project's `package.json` file and you would manually type `npm run dev` to execute them.
 
-You can provide an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) to run automatically when the editor opens with the `terminal` query parameter:
+Using StackBlitz, you can provide an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) to run automatically when the editor opens with the `terminal` query parameter:
 
-`stackblitz.com/fork/github/{GH_USERNAME}/{REPO_NAME}?terminal={NPM_SCRIPT_NAME}`
+`stackblitz.com/fork/github/{gh_username}/{repo_name}?terminal={npm_script_name}`
 
 :::tip Example
-The following URL will open the `vitesse` repository of the `antfu` user, install the NPM dependencies, and run `npm run dev` command in the terminal:
+The following URL will open the `vitesse` repository of the `antfu` user, install the npm dependencies, and run `npm run dev` command in the terminal:
 
-`stackblitz.com/github/antfu/vitesse?terminal=dev`
+[stackblitz.com/github/antfu/vitesse?terminal=dev](http://www.stackblitz.com/github/antfu/vitesse?terminal=dev)
+
+Click on it and see the effect yourself!
 :::
 
-### Setting up the imported project’s title
+### Changing the title of the imported project
 
-By default, the GitHub importer will set the project's title based on the GitHub project owner's name and repository name.
+When importing a project from GitHub, the project title will default to the GitHub project owner's name and repository name.
 
-To customize the title of the imported project, add the `title` query parameter to the import URL like so:
+You can customize the title of the imported project by adding the `title` query parameter to the URL like so:
 
-`stackblitz.com/fork/github/{GH_USERNAME}/{REPO_NAME}?title={CUSTOM_TITLE}`
+`stackblitz.com/fork/github/{gh_username}/{repo_name}?title={custom title}`
+
+For instance, the URL from the previous section would now become:
+
+[stackblitz.com/github/antfu/vitesse?title=Hello](https://stackblitz.com/github/antfu/vitesse?title=Hello)
+
+:::tip
+You can chain the URL query parameters by adding the & sing between them, for example:
+
+[stackblitz.com/github/antfu/vitesse?title=Hello](https://stackblitz.com/github/antfu/vitesse?title=Hello&terminal=dev)
+:::
 
 ## Importing private projects
 
-:::info
-Importing private GitHub repos is a feature available with our memberships. If you're interested in being a member, check details on our [StackBlitz Cloud](https://stackblitz.com/membership) page.
+:::note
+Importing private GitHub repos is a feature available with our memberships. If you're interested in becoming a member, check details on our [StackBlitz Membership](https://stackblitz.com/membership) page.
 :::
 
-**1.** Go to your dashboard and open a new JavaScript blank project
+**1.** Go to your dashboard and open a new JavaScript blank project.
 ![Dashboard for JavaScript Blank Project](/doc_images/private-repo-starter.png)
 
-**2.** Click on 'Connect repository' on the top left
-**3.** Click on the 'importing from an existing repository' link
+**2.** Click on 'Connect repository' on the top left.
+
+**3.** Click on the 'importing from an existing repository' link.
 ![Connect and import GitHub repo](/doc_images/connect-to-existing-repo.png)
 
-**4.** Paste your full GitHub repo URL
+**4.** Paste your full GitHub repo URL.
 ![Paste GitHub repo URL to import](/doc_images/import-existing-repo.png)
 
 The video below outlines a workaround to edit collaboratively in a private repo:
 
 <iframe src="https://www.loom.com/embed/54c9f65e05494b00b6aa1bb9e0bbe7ab" style="width: 100%; height: 400px;"></iframe>
 
-## StackBlitz API
+## Importing or creating projects with StackBlitz API
 
-You can create new StackBlitz projects programmatically from any data source using our [POST API](/guide/post-api) or the [openProject](/guide/javascript-sdk#sdkopenprojectproject-opts) & [embedProject](/guide/javascript-sdk#sdkembedprojectelementorid-project-embedopts) methods in our [JavaScript SDK](/guide/javascript-sdk).
+You can create new StackBlitz projects programmatically from any data source using our [POST API](/docs/platform/post-api) or the [openProject](/docs/platform/javascript-sdk#sdkopenprojectproject-opts) and [embedProject](/docs/platform/javascript-sdk#sdkembedprojectelementorid-project-embedopts) methods in our [JavaScript SDK](/docs/platform/javascript-sdk).

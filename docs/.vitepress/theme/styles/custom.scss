@@ -11,15 +11,27 @@
   --vp-c-brand-darker: hsl(200 70% 24%);
   // Custom highlight colors (used on home page)
   --sb-foreground-highlight: hsl(210 90% 50%);
-  --sb-foreground-highlight-high: hsl(190 100% 35%);
+  --sb-foreground-highlight-high: hsl(190 100% 50%);
 }
 
 :root.dark {
+  // Tweak the color palette for blacks and dark grays
+  --vp-c-black: hsl(220 20% 9%);
+  --vp-c-black-pure: hsl(220, 24%, 4%);
+  --vp-c-black-soft: hsl(220 16% 13%);
+  --vp-c-black-mute: hsl(220 14% 17%);
+  --vp-c-gray: hsl(220 8% 56%);
+  --vp-c-gray-dark-1: hsl(220 10% 39%);
+  --vp-c-gray-dark-2: hsl(220 12% 28%);
+  --vp-c-gray-dark-3: hsl(220 12% 23%);
+  --vp-c-gray-dark-4: hsl(220 14% 17%);
+  --vp-c-gray-dark-5: hsl(220 16% 13%);
+
   // Backgrounds
   --vp-c-bg: hsl(220 14% 13%);
-  --vp-c-bg-alt: hsl(220 14% 9%);
+  --vp-c-bg-alt: hsl(220 20% 9%);
   --vp-c-bg-soft: hsl(220 14% 17%);
-  --vp-c-bg-mute: hsl(220 14% 20%);
+  --vp-c-bg-mute: hsl(220 12% 23%);
   --vp-custom-block-info-bg: hsl(220 14% 17%);
 
   // Highlight color (links, some borders or hover effects)
@@ -82,7 +94,7 @@
 }
 
 img {
-  margin: 16px 0;
+  margin: 8px 0;
   &.icon {
     width: auto;
     max-height: 16px;
@@ -90,38 +102,32 @@ img {
   }
 }
 
-.float-right {
-  // might not need / possible relic from docusaurus
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+@media (min-width: 600px) {
+  .float-left {
+    float: left;
+    max-width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .float-right {
+    float: right;
+    max-width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+  }
 }
 
 figure {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 figcaption {
-  padding: 16px 24px;
-  font-size: 15px;
+  padding: .75rem 1.25rem;
+  font-size: 87%;
   border-radius: 8px;
-  background-color: var(--vp-c-bg-alt);
-}
-img + .sub-link + figcaption {
-  margin-top: 12px;
-}
-
-img + .sub-link {
-  display: inline-block;
-  transform: translateY(-6px);
-  font-size: 12px;
-  span.neutral {
-    margin-left: 4px;
-    color: var(--vp-c-brand);
-    transition: ease 0.2s color;
-  }
-  &:hover,
-  &:hover span.neutral {
-    color: var(--vp-c-brand-light);
-  }
+  background-color: var(--vp-c-bg-soft);
 }

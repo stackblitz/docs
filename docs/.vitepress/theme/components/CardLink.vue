@@ -37,8 +37,9 @@ const backgroundStyle = computed(() => ({
 @import '../styles/vars';
 
 .CardLink {
-  --icon-color: var(--vp-c-brand-lighter);
   --icon-color: var(--sb-foreground-highlight);
+  --border-highlight-color: var(--sb-foreground-highlight-high);
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -63,13 +64,13 @@ const backgroundStyle = computed(() => ({
 
   &:hover {
     --icon-color: currentColor !important;
-    border-color: var(--sb-foreground-highlight-high);
+    border-color: var(--border-highlight-color);
     transform: translateY(-2px);
   }
 
   &:focus-visible {
     --icon-color: currentColor !important;
-    outline: solid 2px var(--sb-foreground-highlight-high);
+    outline: solid 2px var(--border-highlight-color);
     outline-offset: -2px;
   }
 }
@@ -164,7 +165,7 @@ const backgroundStyle = computed(() => ({
       left: 0;
       width: 0;
       height: 2px;
-      background-color: var(--vp-c-brand-light);
+      background-color: var(--border-highlight-color);
       transition: width 0.1s ease;
     }
     &:hover .CardLink-title::after,

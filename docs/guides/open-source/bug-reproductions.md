@@ -2,9 +2,9 @@
 title: Bug reproductions
 ---
 
-# Bug reproductions
+# {{ $frontmatter.title }}
 
-### Issue-reporting workflow
+## Issue-reporting workflow
 
 > A well-described issue is immensely helpful when developing a software product, and a minimal reproduction is one of the most useful part of the conversation.
 
@@ -42,10 +42,12 @@ jobs:
           labels: 'pending triage'
 ```
 
-#### How to help users in creating a reproduction?
+## How to help users in creating a reproduction?
 
 In order to reduce the friction when creating a bug reproduction, you can create a starter project that your users will be able to instantly launch, edit, and add to the issue.
 
 💡 Read all about running projects from GitHub in the [GitHub Importer Guide](/docs/guide/open-from-github).
 
-:::info How can we improve this guide? Haven't found an answer to your question? [Let us know!](mailto:devrel@stackblitz.com) :::
+:::info How can we improve this guide?
+Haven't found an answer to your question? [Let us know!](mailto:devrel@stackblitz.com)
+:::

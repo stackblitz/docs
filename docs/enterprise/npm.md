@@ -1,12 +1,12 @@
 ---
-title: Connect NPM registry
+title: Connect npm registry
 ---
 
-# Connect NPM registry
+# {{ $frontmatter.title }}
 
-StackBlitz is excited to offer custom npm registry support to organizations using StackBlitz Enterprise Edition (EE). To enable this you need to be logged in as an admin. If your npm registry requires authentication, you may need to coordinate with whoever manages your npm administration before proceeding.
+StackBlitz is excited to offer custom npm registry support to organizations using StackBlitz Enterprise Edition (EE). To enable this feature, you need to be logged in as an admin. If your npm registry requires authentication, you may need to coordinate with the manager of your npm administration before proceeding.
 
-By default, StackBlitz EE points at the public npm registry. You can configure StackBlitz EE to point at your own internal registry, even if authentication is required. Additionally, StackBlitz's npm integration is designed to work with 3rd party registries like Artifactory.
+By default, StackBlitz EE points at the public npm registry. You can configure StackBlitz EE to point at your own internal registry, even if authentication is required. Additionally, StackBlitz npm integration is designed to work with the third party registries like Artifactory.
 
 ## Linking your registry
 

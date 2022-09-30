@@ -2,10 +2,7 @@
 title: Launching projects from GitHub
 ---
 
-# Launching projects from GitHub
-
-<!-- relic? -->
-<!-- import Video from '@site/src/components/Video'; -->
+# {{ $frontmatter.title }}
 
 When providing an example for your users to open, there are several things to consider:
 
@@ -18,18 +15,16 @@ In the following guide, we will answer all of these questions.
 
 ### The “Open in StackBlitz” button
 
-One of the ways to make your code example stand out in your docs or your repository's readme file is to use our call-to-action buttons.
+One of the ways to make your code example stand out in your docs or your repository's readme file is to use our CTA (call-to-action) buttons.
 
-<figure>
-    <img alt="open-in-stackblitz.svg button" src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" />
-    <a class="sub-link" href="https://developer.stackblitz.com/img/open_in_stackblitz.svg" target="_blank">Direct URL</a>
-    <br />
-    <img alt="open-in-stackblitz_small.svg button" src="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" />
-    <a class="sub-link" href="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" target="_blank">Direct URL</a>
-    <figcaption>
-        💡 You can either host on your servers or use our image URLs directly.
-    </figcaption>
-</figure>
+| Button preview | Direct URL |
+| --- | --- |
+| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz.svg" /> | <a href="/img/open_in_stackblitz.svg" target="_blank">open_in_stackblitz.svg</a> |
+| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz_small.svg" /> | <a href="/img/open_in_stackblitz_small.svg" target="_blank">open_in_stackblitz_small.svg</a> |
+
+::: tip
+You can either host on your servers or use our image URLs directly.
+:::
 
 In order to display the button in a **markdown file**, use the following code - remember to replace the last URL with your example’s path:
 
@@ -41,7 +36,10 @@ If you want to display the button in an **HTML markup**, use the following code:
 
 ```html
 <a href="https://stackblitz.com/github/___YOUR_PATH___">
-  <img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt="Open in StackBlitz" />
+  <img
+    alt="Open in StackBlitz"
+    src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+  />
 </a>
 ```
 
@@ -78,7 +76,7 @@ Since the StackBlitz git importer is able to work with various GitHub paths, you
 
 Oftentimes such a folder will consist of subfolders with several different variations of a project (for instance, [https://github.com/remix-run/react-router/tree/main/examples](https://github.com/remix-run/react-router/tree/main/examples/basic))
 
-:::info
+:::note
 Make sure you don’t use a relative path to the main project in your examples’ `package.json` dependencies. Since what will be imported is only the content of the example’s folder, the example won’t have an access to the external paths.
 :::
 
@@ -93,7 +91,8 @@ By default, the GitHub importer will set the project's title based on the GitHub
 To customize it, add the `title` argument to the URL like so:
 
 ```markdown
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title='Hello World' )
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title='Hello World'
+)
 ```
 
 As you see, the title has now changed from “Next.js Hello World Example” to “Hello World”:
@@ -106,7 +105,7 @@ As you see, the title has now changed from “Next.js Hello World Example” to 
 
 Usually, in your project’s `package.json` file there is a script that you would instruct your users to run in order to, for instance, launch a development server. Suppose your `package.json` includes such `dev` script:
 
-```tsx
+```json
 {
 	"scripts": {
 		"dev": "vite"
@@ -117,11 +116,11 @@ Usually, in your project’s `package.json` file there is a script that you woul
 In order to run an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) automatically when the editor opens, you can either:
 
 - provide the `terminal` query parameter:
-  ```tsx
+  ```
   ?terminal=dev
   ```
 - create the `.stackblitzrc` file with the `startCommand` option:
-  ```tsx
+  ```json
   {
     "startCommand": "npm run dev"
   }

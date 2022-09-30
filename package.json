@@ -20,5 +20,8 @@
     "semi": true,
     "singleQuote": true,
     "useTabs": false
+  },
+  "dependencies": {
+    "@stackblitz/sdk": "^1.8.0"
   }
 }

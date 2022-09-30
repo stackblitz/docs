@@ -23,4 +23,4 @@ When using VS Code, we recommend:
 We use Vitepress and the Vitepress default theme, with a few customizations in `docs/.vitepress/theme`:
 
 - We override some of the `--vp-c-*` CSS variables to use StackBlitz colors.
-- We may have custom components in `docs/.vitepress/theme/components`.
+- We may have custom components in `docs/.vitepress/components`.

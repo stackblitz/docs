@@ -1,7 +1,7 @@
 export const userGuide = [
   { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
   { text: 'Getting started', link: '/guides/user-guide/getting-started' },
-  { text: 'Starter projects', link: '/guides/user-guide/project-starters' },
+  { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
   { text: 'Available environments', link: '/guides/user-guide/available-environments' },
   { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
   { text: 'Embedding projects', link: '/guides/user-guide/embedding' },
@@ -33,6 +33,7 @@ export const enterprise = [
   { text: 'Overview', link: '/enterprise/overview' },
   {
     text: 'Installation',
+    link: '/enterprise/installation/quickstart',
     items: [
       { text: 'Quickstart on Bare Metal', link: '/enterprise/installation/quickstart' },
       { text: 'Quickstart on GCP (Non-GKE)', link: '/enterprise/installation/quickstart-gcp' },

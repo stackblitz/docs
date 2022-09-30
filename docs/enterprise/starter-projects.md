@@ -2,17 +2,17 @@
 title: Starter Projects
 ---
 
-# Starter Projects
+# {{ $frontmatter.title }}
 
 :::info
-Creating, updating and managing starter projects is currently only available in [StackBlitz Enterprise Edition](/enterprise/overview).
+Creating, updating and managing starter projects is currently only available in [StackBlitz Enterprise Edition](/docs/enterprise).
 :::
 
 When working on a team, you'll likely want to customize the default starter projects that show up on the StackBlitz dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
 
 ## Creating new starter projects
 
-Before starting, make sure that your account [has been granted admin privileges](/enterprise/user-management). This enables you to customize which starter projects show up on your team's dashboard.
+Before starting, make sure that your account [has been granted admin privileges](/docs/enterprise/user-management). This enables you to customize which starter projects show up on your team's dashboard.
 
 Once your account has been granted admin access, you can create new starter projects that show up on your team's dashboard with the following steps:
 
@@ -33,7 +33,7 @@ At the time of this writing these include:
 
 In your newly forked project, you can now start adding dependencies and creating files/folders relevant to your starter project.
 
-If you have existing files and folders on your local computer that you wish to use, [drag and drop them](http://localhost:3000/guide/importing-projects#upload-from-your-computer) into the editor and they'll automatically be imported.
+If you have existing files and folders on your local computer that you wish to use, [drag and drop them](http://localhost:3000/docs/platform/importing-projects#upload-from-your-computer) into the editor and they'll automatically be imported.
 
 ### 3. Give your project a unique slug
 
@@ -51,7 +51,7 @@ So if we're creating a custom starter project for our company's internal design 
 
 To make this template available to your team, go to your StackBlitz dashboard and click the "Customize starter projects" link at the top right above the starter projects section:
 
-> If you don't see this link, your account likely needs to be [granted admin privileges](/enterprise/user-management).
+> If you don't see this link, your account likely needs to be [granted admin privileges](/docs/enterprise/user-management).
 
 ![EE Console](/doc_images/customize-project-link.png)
 
@@ -63,7 +63,7 @@ Then, in the sidebar of that page paste in the project's slug ID and click "add"
 
 When you navigate back to your dashboard, you should now see your starter project listed! Any time you and your team members click this link, it will automatically create a fresh fork of your starter project.
 
-# Updating your starter projects
+## Updating your starter projects
 
 To update the code of your starter projects, navigate to the starter project's URL and make the desired changes.
 
