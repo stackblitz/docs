@@ -33,7 +33,7 @@ At the time of this writing these include:
 
 In your newly forked project, you can now start adding dependencies and creating files/folders relevant to your starter project.
 
-If you have existing files and folders on your local computer that you wish to use, [drag and drop them](http://localhost:3000/docs/platform/importing-projects#upload-from-your-computer) into the editor and they'll automatically be imported.
+If you have existing files and folders on your local computer that you wish to use, [drag and drop them](/guides/user-guide/importing-projects#upload-from-your-computer) into the editor and they'll automatically be imported.
 
 ### 3. Give your project a unique slug
 

@@ -57,7 +57,7 @@ A plain object representing npm packages and their versions, to be installed at 
 :::info Environment differences
 ProjectDependencies are only used in the [EngineBlock environment][available_env_docs]. For WebContainers, please provide a `package.json` file instead.
 
-Read more about [the recommended ways to specify project dependencies](/docs/platform/javascript-sdk-dependencies/) for each runtime environment.
+Read more about [the recommended ways to specify project dependencies](/platform/api/javascript-sdk-dependencies) for each runtime environment.
 :::
 
 ## <var>ProjectSettings</var> {#projectsettings}

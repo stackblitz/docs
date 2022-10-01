@@ -1,5 +1,5 @@
 ---
-title: 'Controlling embeds with the SDK’s VM interface'
+title: Controlling embeds with the SDK’s VM interface
 ---
 
 # {{ $frontmatter.title }}

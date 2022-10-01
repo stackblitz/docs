@@ -4,9 +4,9 @@ title: Managing dependencies with the SDK
 
 # {{ $frontmatter.title }}
 
-When creating new projects with the [`sdk.openProject`](/docs/platform/javascript-sdk/#openproject) and [`sdk.embedProject`](/docs/platform/javascript-sdk/#embedproject) methods, you can specify which npm dependencies should be installed on startup.
+When creating new projects with the [`sdk.openProject`](/platform/api/javascript-sdk#openproject) and [`sdk.embedProject`](/platform/api/javascript-sdk#embedproject) methods, you can specify which npm dependencies should be installed on startup.
 
-The expected way to specify dependencies depends on the [runtime environment](/docs/platform/available-environments/).
+The expected way to specify dependencies depends on the [runtime environment](/guides/user-guide/available-environments).
 
 :::info Reminder
 Projects created with the `template: 'node'` option will use the WebContainers environment (currently on stackblitz.com only). Projects created with a different `template` value will use the EngineBlock environment (available on stackblitz.com and StackBlitz Enterprise Edition).
@@ -14,7 +14,7 @@ Projects created with the `template: 'node'` option will use the WebContainers e
 
 ## With WebContainers
 
-For WebContainers project, our [Turbo package manager](/docs/platform/turbo/) will install `dependencies` and `devDependencies` from the project’s `package.json` file, much like `npm`, `pnpm` or `yarn` would.
+For WebContainers project, our [Turbo package manager](/platform/webcontainers/turbo-package-manager) will install `dependencies` and `devDependencies` from the project’s `package.json` file, much like `npm`, `pnpm` or `yarn` would.
 
 For those projects, you can provide your dependencies directly in the `package.json` file, and ignore the `project.dependencies` option. Here’s an example:
 

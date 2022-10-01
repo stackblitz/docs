@@ -237,7 +237,7 @@ sdk.embedProject(
 );
 ```
 
-[embedoptions]: /docs/platform/api/javascript-sdk-options#embedoptions
-[openoptions]: /docs/platform/api/javascript-sdk-options#openoptions
-[project]: /docs/platform/api/javascript-sdk-options#project
-[sdk_vm_docs]: /docs/platform/api/javascript-sdk-vm
+[embedoptions]: /platform/api/javascript-sdk-options#embedoptions
+[openoptions]: /platform/api/javascript-sdk-options#openoptions
+[project]: /platform/api/javascript-sdk-options#project
+[sdk_vm_docs]: /platform/api/javascript-sdk-vm
