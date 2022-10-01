@@ -1,8 +1,8 @@
 ---
-title: 'SDK: controlling embeds'
+title: 'Controlling embeds with the SDK’s VM interface'
 ---
 
-# SDK: controlling embeds
+# {{ $frontmatter.title }}
 
 :::info
 These methods only apply to projects embedded on a page.
@@ -18,7 +18,12 @@ Use the VM to:
 
 ## Getting access to the VM
 
-**[SDK demo: using the VM](https://stackblitz.com/edit/sdk-vm)**
+:::tip DEMO
+Check this demo of using the VM:
+
+- [TypeScript demo](https://stackblitz.com/edit/sdk-vm)
+- [JavaScript demo](https://stackblitz.com/edit/sdk-vm-js)
+:::
 
 ### With <var>embed</var> methods
 
@@ -263,10 +268,10 @@ Example:
 await vm.preview.setUrl('/about');
 ```
 
-[env_docs]: /guide/available-environments/
-[openfileoption]: /guide/javascript-sdk/#openfileoption
-[projectdependencies]: /guide/javascript-sdk/#projectdependencies
-[projectfiles]: /guide/javascript-sdk/#projectfiles
-[sdk_docs]: /guide/javascript-sdk/
-[uithemeoption]: /guide/javascript-sdk/#uithemeoption
-[uiviewoption]: /guide/javascript-sdk/#uiviewoption
+[env_docs]: /guides/user-guide/available-environments
+[openfileoption]: /platform/api/javascript-sdk-options#openfileoption
+[projectdependencies]: /platform/api/javascript-sdk-options#projectdependencies
+[projectfiles]: /platform/api/javascript-sdk-options#projectfiles
+[sdk_docs]: /platform/api/javascript-sdk
+[uithemeoption]: /platform/api/javascript-sdk-options#uithemeoption
+[uiviewoption]: /platform/api/javascript-sdk-options#uiviewoption

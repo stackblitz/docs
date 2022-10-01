@@ -2,9 +2,11 @@
 title: POST API
 ---
 
-# POST API
+# Creating a project with a POST request
 
-Create new projects by POSTing the desired project data from a form— useful when you don't/can't use our JavaScript SDK.
+Create new projects by POSTing the desired project data from a form. This method is useful when you don't or can't use our JavaScript SDK.
+
+This page will guide you through the setup. You can also take a look at [the demo project](#demo) at the end.
 
 ## Required Form Fields
 
@@ -51,3 +53,9 @@ Observable.fromEvent(button, 'click')
 
 </body></html>
 ```
+
+## Demo
+
+:::tip DEMO
+Check this [demo of using POST API to create a project](https://stackblitz.com/edit/sdk-create-via-post-api).
+:::

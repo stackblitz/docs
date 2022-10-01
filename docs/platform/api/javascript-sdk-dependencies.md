@@ -1,12 +1,12 @@
 ---
-title: 'SDK: managing dependencies'
+title: Managing dependencies with the SDK
 ---
 
-# SDK: managing dependencies
+# {{ $frontmatter.title }}
 
-When creating new projects with the [`sdk.openProject`](/guide/javascript-sdk/#openproject) and [`sdk.embedProject`](/guide/javascript-sdk/#embedproject) methods, you can specify which npm dependencies should be installed on startup.
+When creating new projects with the [`sdk.openProject`](/docs/platform/javascript-sdk/#openproject) and [`sdk.embedProject`](/docs/platform/javascript-sdk/#embedproject) methods, you can specify which npm dependencies should be installed on startup.
 
-The expected way to specify dependencies depends on the [runtime environment](/guide/available-environments/).
+The expected way to specify dependencies depends on the [runtime environment](/docs/platform/available-environments/).
 
 :::info Reminder
 Projects created with the `template: 'node'` option will use the WebContainers environment (currently on stackblitz.com only). Projects created with a different `template` value will use the EngineBlock environment (available on stackblitz.com and StackBlitz Enterprise Edition).
@@ -14,7 +14,7 @@ Projects created with the `template: 'node'` option will use the WebContainers e
 
 ## With WebContainers
 
-For WebContainers project, our [Turbo package manager](/guide/turbo/) will install `dependencies` and `devDependencies` from the project’s `package.json` file, much like `npm`, `pnpm` or `yarn` would.
+For WebContainers project, our [Turbo package manager](/docs/platform/turbo/) will install `dependencies` and `devDependencies` from the project’s `package.json` file, much like `npm`, `pnpm` or `yarn` would.
 
 For those projects, you can provide your dependencies directly in the `package.json` file, and ignore the `project.dependencies` option. Here’s an example:
 
@@ -45,11 +45,16 @@ const project = {
 sdk.openProject(project);
 ```
 
+:::tip DEMO
+Check this complete Angular project:
+
+- [TypeScript demo](https://stackblitz.com/edit/sdk-webcontainers-dependencies-ts)
+- [JavaScript demo](https://stackblitz.com/edit/sdk-webcontainers-dependencies-js)
+:::
+
 ## With EngineBlock
 
-For EngineBlock projects, provide dependencies using the `project.dependencies` option. The `package.json` file will not be used to resolve dependencies, and you don’t have to provide a `package.json` file in the `project.files` data.
-
-However, it can be useful to still include a `package.json` file in your project because end users might prefer to edit their dependencies in the code rather than use the “Dependencies” sidebar UI. For that reason, we recommend providing dependencies in both `project.dependencies` and in `package.json` when generating your project.
+For EngineBlock projects, provide dependencies using the `project.dependencies` option. The `package.json` file will not be used to resolve dependencies, but it is still highly recommended to provide one so that your project can continue to work as expected when downloaded with the right `devDependencies` and `scripts`. You can customize `devDependencies` and other properties of `package.json`, but dependencies for EngineBlock are always resolved using `project.dependencies` instead of `package.json`.
 
 ### Dependencies plus package.json
 
@@ -94,7 +99,12 @@ const project = {
 sdk.openProject(project);
 ```
 
-And for a more complete demo, [check out this Angular example](https://stackblitz.com/edit/sdk-angular-dependencies?file=project.ts).
+:::tip DEMO
+Check this complete Angular project:
+
+- [TypeScript demo](https://stackblitz.com/edit/sdk-angular-dependencies?file=project.ts)
+- [JavaScript demo](https://stackblitz.com/edit/sdk-angular-dependencies-js)
+:::
 
 ### Inherited dependencies
 

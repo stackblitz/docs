@@ -1,64 +1,70 @@
 ---
-title: Browser support
+title: WebContainers Browser Support
 ---
 
-#  Browser support
+# {{ $frontmatter.title }}
 
-Last update: July 2022
+_Last update: September 2022_
 
-TL;DR: For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state.
+**TL;DR** For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state. If you have issues with supported browsers, check the your browser config (see the page on [Cookie Blockers](/docs/platform/third-party-blocker)). If your issue is specifically with Brave, read the page on [running in Brave](/docs/platform/brave-support).
 
-If you have issues with supported browsers, check the entries under "Troubleshooting" (e.g. [Running in Brave](/guide/brave-support) or [Cookie Blockers](/guide/third-party-blocker)).
+:::warning Note
+There is a reported Chrome regression on Macbooks with M1 chip, which also affects the speed of some larger projects on WebContainers. Learn more about this issue in these bug reports: [issue 1228686](https://bugs.chromium.org/p/chromium/issues/detail?id=1228686) and [issue 1356099](https://bugs.chromium.org/p/chromium/issues/detail?id=1356099).
+:::
 
 ## Web Platform requirements
 
-StackBlitz requires some of the latest additions to the Web Platform to work correctly when running WebContainers-based projects. Chiefly among them are **[`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)** and **[cross-origin isolation](https://developer.mozilla.org/en-US/docs/Web/API/crossOriginIsolated)**.
+StackBlitz requires some of the latest additions to the Web Platform to work correctly when running WebContainers-based projects. Most important among them are **[`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)** and **[cross-origin isolation](https://developer.mozilla.org/en-US/docs/Web/API/crossOriginIsolated)**.
 
-`SharedArrayBuffer`s (SABs) allow simultaneous access to a chunk of memory from multiple different workers. This is a powerful feature that was [disabled temporarily](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer#security_requirements) in light of potential security issues. Cross-origin isolation is the key to enabling SABs: by properly configuring some headers and controlling which resources are served to browsers, a site can be considered `crossOriginIsolated`, that is, secure enough to use SABs. Both features are enabled in Chromium-based browsers (Chrome, Brave, Edge) and Firefox.
+`SharedArrayBuffer`s (SABs) allow simultaneous access to a chunk of memory from multiple different workers. This is a powerful feature that was [disabled temporarily](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer#security_requirements) in light of potential security issues. Cross-origin isolation is the key to enabling SABs: by properly configuring some of the headers and controlling which resources are served to browsers, a site can be considered `crossOriginIsolated` or, in other words, secure enough to use SABs. Both features are enabled in Chromium-based browsers (Chrome, Brave, Edge) and Firefox.
 
-However, for cross-origin isolation work for our use case, we need the ability to embed arbitrary resources. More accurately, we need the ability for _you_ to embed arbitrary resources: we want you to be able to write and test your web application seamlessly, regardless of which images, scripts, etc. you include in it. For this to work, we are tracking with interest a [new mode](https://github.com/WICG/credentiallessness) of cross-origin isolation that allows this.
+However, for cross-origin isolation to work for our use case, you need to be able to embed arbitrary resources: to be able to write and test your web application seamlessly, regardless of which images or scripts you choose to include. For this to work, a [new mode](https://github.com/WICG/credentiallessness) of cross-origin isolation that allows this is needed.
 
-Unfortunately, this feature is only enabled in Chromium-based browsers. We are following current specifications and talking to browser implementors to bring support to other browsers as soon as possible.
+Unfortunately, this feature is only enabled in Chromium-based browsers. We are following current specifications and continuing our talks with browser implementors to bring support to other browsers as soon as possible.
 
-You can read more about cross-origin isolation in [our blog](https://blog.stackblitz.com/posts/cross-browser-with-coop-coep/).
+You can read more about [cross-origin isolation on our blog](https://blog.stackblitz.com/posts/cross-browser-with-coop-coep/).
 
 ## Runtime differences
 
-Note that there might be minor differences in the behavior of WebContainers in browsers that are not based on Chromium. After all, WebContainers strive for maximum compatibility with Node.js, which is itself based on top of [V8](https://v8.dev/), Chromium's own JavaScript engine. Node.js very much relies on some specific features of V8, which are not part of established JavaScript standards. Hence, it is easier to achieve a higher degree of compatibility in a Chromium-based browser, which _also_ runs on top of V8.
+Note that there might be minor differences in the behavior of WebContainers in browsers that are not based on Chromium. After all, WebContainers strive for maximum compatibility with Node.js, which itself is based on [V8](https://v8.dev/), Chromium's own JavaScript engine. Node.js very much relies on some specific features of V8, which are not part of the established JavaScript standards. Because of that, it is easier to achieve a higher degree of compatibility in a Chromium-based browser, which _also_ runs on top of V8.
 
 ## Chrome
 
-WebContainers are fully supported in Chrome and most Chromium-based browsers (including Brave, Edge, Vivaldi, etc.).
+WebContainers are fully supported in Chrome and most Chromium-based browsers including Brave, Edge, Vivaldi, and others.
 
 However, if you enabled blocking third-party cookies in Chrome preferences, this may prevent WebContainers from working out of the box.
 
-If you think you’re running into this issue, check out [how to configure Chrome to run WebContainers](/guide/third-party-blocker).
+If you think you’re running into this issue, check out [how to configure Chrome to run WebContainers](/docs/platform/third-party-blocker).
+
+:::warning Note
+There is a reported Chrome regression on Macbooks with M1 chip, which also affects the speed of some larger projects on WebContainers. Learn more about this issue in these bug reports: [issue 1228686](https://bugs.chromium.org/p/chromium/issues/detail?id=1228686) and [issue 1356099](https://bugs.chromium.org/p/chromium/issues/detail?id=1356099).
+:::
 
 ## Brave
 
-Brave is a Chromium-based browser, and supports WebContainers well, but it ships with more aggressive third-party blocking by default which tends to stop WebContainers from running.
+Brave is a Chromium-based browser and supports WebContainers well but it ships with a more aggressive third-party blocking by default which tends to stop WebContainers from running.
 
-Learn [how to configure Brave to run WebContainers](/guide/brave-support/).
+Learn [how to configure Brave to run WebContainers](/docs/platform/brave-support/).
 
 ## Firefox
 
-We have alpha support for Firefox. Please try it and [provide feedback](https://github.com/stackblitz/webcontainer-core/issues/new/choose)!
+We have alpha support for Firefox. Please try it and [share feedback with us](https://github.com/stackblitz/webcontainer-core/issues/new/choose)!
 
-As mentioned above, Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview window** within the StackBlitz editor. Third party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
+As mentioned above, Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview window** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
 In addition to this, there might be [other runtime incompatibilities](#runtime-differences) as detailed above.
 
 ## Safari
 
-Safari recently shipped support for `SharedArrayBuffer` and cross-origin isolation. However, it is still lacking a few other features that prevent us from shipping a working environment:
+Safari recently shipped support for `SharedArrayBuffer` and cross-origin isolation. However, it is still lacking a few other features which prevents us from shipping a working environment such as:
 
 * [Atomics.waitAsync](https://github.com/tc39/proposal-atomics-wait-async)
 * [Lookbehind in regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
 
-(Note that none of above can be pollyfilled).
+Note that none of above can be pollyfilled.
 
 ## Embedding
 
-Projects based on WebContainers can be [embedded](/guide/embedding) as any other StackBlitz project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project, since we no longer control the headers under which the _embedding_ content is served.
+Projects based on WebContainers can be [embedded](/docs/platform/embedding) as any other StackBlitz project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
 
 For that reason, we only support embedding WebContainers-based projects in **Chromium-based browsers**.

@@ -31,7 +31,7 @@ The Menu Bar is where you perform general operations on your StackBlitz project.
 
 ### Activity Bar
 
-<a target="_blank" href="/doc_images/stackblitz_ui_elements/activity-bar.png" className="float-right">
+<a target="_blank" href="/doc_images/stackblitz_ui_elements/activity-bar.png" class="float-right">
   <img alt="" src="/doc_images/stackblitz_ui_elements/activity-bar.png" width="48" />
 </a>
 
@@ -49,7 +49,7 @@ When you open a StackBlitz project, the Sidebar defaults to the _Project_ icon's
 
 #### Project Sidebar
 
-<figure className="float-left" style="width: 200px">
+<figure class="float-left" style="width: 200px">
     <a target="_blank" href="/doc_images/stackblitz_ui_elements/side-bar.png"><img src="/doc_images/stackblitz_ui_elements/side-bar.png" /></a>
     <figcaption>Screenshot: Project sidebar</figcaption>
 </figure>
@@ -102,7 +102,7 @@ The Terminal allows you to run commands, such as `ls`, `mkdir`, `npm start`, `no
 
 ### Preview
 
-<figure className="float-right" style="width: 300px">
+<figure class="float-right" style="width: 300px">
     <a target="_blank" href="/doc_images/stackblitz_ui_elements/preview.png"><img src="/doc_images/stackblitz_ui_elements/preview.png" /></a>
     <figcaption>Screenshot: Preview</figcaption>
 </figure>
@@ -113,7 +113,7 @@ If you prefer to view your app in a separate window, you can use the "Open in Ne
 
 ### Console
 
-<figure className="float-right" style="width: 300px">
+<figure class="float-right" style="width: 300px">
     <a target="_blank" href="/doc_images/stackblitz_ui_elements/console.png"><img src="/doc_images/stackblitz_ui_elements/console.png" /></a>
     <figcaption>Screenshot: Console</figcaption>
 </figure>

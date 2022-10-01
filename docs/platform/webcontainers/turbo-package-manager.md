@@ -1,25 +1,27 @@
 ---
-title: Turbo package manager
+title: Turbo Package Manager
 ---
 
-# Turbo package manager
+# {{ $frontmatter.title }}
 
-WebContainers-based projects use Turbo as package manager. Turbo is our custom NPM client and it works similarly to `npm` and `yarn`. For many commands, you can invoke `npm` or `yarn` directly and they will work as usual:
+WebContainers-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. For many commands, you can invoke `npm` or `yarn` directly and they will work as usual:
 
-```shell
+```sh
 # install dependencies
-yarn
+npm install
 
 # add a dependency
-npm add lodash
+npm install lodash
 
 # run `start` script
-yarn start
+npm start
 ```
 
 You can check all supported options with `turbo --help`.
 
-Note that Turbo relies on the [`package-lock.json` file format](https://docs.npmjs.com/cli/v7/configuring-npm/package-lock-json) from `npm` to read and write lockfiles. In particular, it uses the `lockfileVersion: 2` format [introduced in v7](https://docs.npmjs.com/cli/v7/configuring-npm/package-lock-json#lockfileversion). When a valid `package-lock.json` is present, the installation process will be much faster.
+:::info
+Turbo relies on the [package-lock.json file format](https://docs.npmjs.com/cli/v7/configuring-npm/package-lock-json) from npm to read and write lockfiles. In particular, it uses the `lockfileVersion: 2` format [introduced in v7](https://docs.npmjs.com/cli/v7/configuring-npm/package-lock-json#lockfileversion). When a valid `package-lock.json` is present, the installation process will be much faster.
+:::
 
 ## Configuring Turbo
 
@@ -30,13 +32,16 @@ Turbo has many settings that can be configured in `.turborc.json`. Turbo reads a
 
 Some of the available options are:
 
-```javascript
+```js
 {
   // the default log level for the CLI
   "loglevel": "info",
 
   // whether to show progress indicators
-  "progress": true
+  "progress": true,
+
+  //detect the usage of non-supported packages at installation time and swap them
+  "disablePolyfills": true
 }
 ```
 
@@ -46,9 +51,9 @@ Some of the available options are:
 
 <span id="turbo-sh-install-scripts"></span>
 
-Turbo **does not run install scripts** for your dependencies. This increases the security of the installation process, and prevents spurious errors due to the differences between the underlying platform (WebContainers) and a local environment.
+Turbo **does not run install scripts** for your dependencies. This increases the security of the installation process, and prevents the spurious errors arising from the differences between the underlying platform (WebContainers) and a local environment.
 
-One of the main use cases of install scripts is driving the compilation of native addons. We instead favor usage of [WebAssembly polyfills](#webassembly-polyfills).
+One of the main use cases of install scripts is driving the compilation of native add-ons. We instead favor usage of [WebAssembly polyfills](#webassembly-polyfills).
 
 ## WebAssembly Polyfills
 
@@ -56,11 +61,11 @@ One of the main use cases of install scripts is driving the compilation of nativ
 
 <span id="turbo-sh-polyfills"></span>
 
-WebContainers cannot use packages based on native addons, but they absolutely can use packages based on WebAssembly (e.g. `esbuild-wasm` instead of `esbuild`)! Using WebAssembly-based packages increases the portability and security of your code.
+While WebContainers cannot use packages based on native add-ons, they absolutely can use packages based on WebAssembly (for instance, `esbuild-wasm` instead of `esbuild`). Using WebAssembly-based packages increases the portability and security of your code.
 
-However, sometimes, packages using native code are deep within your dependency tree, e.g. an image processing tool used by your bundler. Replacing those packages would not be feasible without significantly altering the configuration of your project. The Turbo registry is able to **detect the usage of non-supported packages at installation time and swap them** for you.
+However, sometimes, packages using native code are deep within your dependency tree like, for instance, an image processing tool used by your bundler. Replacing those packages would not be feasible without significantly altering the configuration of your project. The Turbo registry is able to **detect the usage of non-supported packages at installation time and swap them** for you.
 
-You can disable this behavior by setting `disablePolyfills: true` in `.turborc.json`. Note that whenever this replacement occurs you will get an explicit log:
+You can disable this behavior by setting `disablePolyfills: true` in `.turborc.json`. Note that whenever this replacement occurs, you will get an explicit log:
 
 ```
 ❯ turbo
@@ -79,7 +84,7 @@ success Install finished in 2.468s
 
 ### Missing Versions
 
-It is worth noting that if the requested version is missing `turbo` will install the original package instead. It's likely that your application will not work properly because a polyfill could not be installed where it's required. In cases like this, `turbo` will report this as a warning:
+It is worth noting that if the requested version is missing, `turbo` will install the original package instead. It's likely that your application will not work properly because a polyfill could not be installed where it's required. In cases like this, `turbo` will report this as a warning:
 
 ```
 ❯ turbo
@@ -97,7 +102,7 @@ success Updated "package.json"
 success Install finished in 2.132s
 ```
 
-If you run into issues, please open a ticket on [GitHub](https://github.com/stackblitz/webcontainer-core).
+If you run into issues, please submit an issue on [GitHub](https://github.com/stackblitz/webcontainer-core/issues/new?assignees=&labels=&template=bug_report.yml).
 
 ## node-sass
 
@@ -105,11 +110,11 @@ If you run into issues, please open a ticket on [GitHub](https://github.com/stac
 
 <span id="turbo-sh-node-sass"></span>
 
-LibSass and packages that built on top of it, including `node-sass` are officially deprecated. While it receives maintenance updates, and there are no plans to add new CSS or SASS features. The team recommends to migrate your project to [Dart Sass](https://sass-lang.com/dart-sass). For more information check out [this page](https://sass-lang.com/blog/libsass-is-deprecated).
+LibSass and packages that are built on top of it, including `node-sass`, are officially deprecated. While it receives maintenance updates, there are no plans to add new CSS or SASS features. The team recommends to migrate your project to [Dart Sass](https://sass-lang.com/dart-sass). For more information check out [the SASS blog post](https://sass-lang.com/blog/libsass-is-deprecated).
 
-For that reason, `turbo` excludes `node-sass` and it's dependencies from installation, unless some dependencies are used by other dependencies in the graph.
+For that reason, `turbo` excludes `node-sass` and its dependencies from installation, unless some are used by other dependencies in the graph.
 
-If you're using `node-sass` you might see output like this:
+If you're using `node-sass` you might see an output like this:
 
 ```
 ❯ yarn
@@ -132,11 +137,11 @@ success Updated "package.json"
 success Install finished in 5.551s
 ```
 
-The migration is straight forward for the most parts. Dart Sass exposes the same JS API but if you're using the CLI you might need to change a few flags.
+The migration is straightforward for the most parts. Dart Sass exposes the same JS API but if you're using the CLI, you might need to change a few flags.
 
 ### How do I migrate to Dart Sass?
 
-1. Change `node-sass` to `sass` in your `package.json`
+1. In your project's `package.json`, change `node-sass` to `sass`.
 2. If you're using the SassC CLI in one of your npm scripts, then you might need to change `node-sass` to `sass` as well. For example:
 
    ```
@@ -151,5 +156,5 @@ The migration is straight forward for the most parts. Dart Sass exposes the same
 
    For more information check out the [Dart Sass Command-Line Interface](https://sass-lang.com/documentation/cli/dart-sass).
 
-3. If you're using a 3rd party library which uses `node-sass` you may want to ask the maintainer to migrate to `sass`.
-4. Because LibSass has is deprecated and has some behavioral variations from the Sass spec, you may need to make minor changes to your stylesheet if you migrate to Dart Sass. Here's a [list of major compatibility issues](https://github.com/sass/libsass/issues?q=is%3Aopen+is%3Aissue+label%3A%22Compatibility+-+P1+%E2%9A%A0%EF%B8%8F%22).
+3. If you're using a third-party library which depends on `node-sass`, you may want to ask the maintainer to migrate to `sass`.
+4. Because LibSass is deprecated and has some behavioral variations from the Sass spec, you may need to make minor changes to your stylesheet if you migrate to Dart Sass. Here's a [list of major compatibility issues](https://github.com/sass/libsass/issues?q=is%3Aopen+is%3Aissue+label%3A%22Compatibility+-+P1+%E2%9A%A0%EF%B8%8F%22).

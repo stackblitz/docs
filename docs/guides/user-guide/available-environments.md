@@ -2,21 +2,25 @@
 title: Available environments
 ---
 
+<script setup lang="ts">
+  import SupportIcon from '../../.vitepress/theme/components/SupportIcon.vue';
+</script>
+
 # {{ $frontmatter.title }}
 
 There are two kinds of environments that run projects in StackBlitz: **EngineBlock** and **WebContainers**. Each project in StackBlitz is tied to one or the other.
 
 Depending on the environment, StackBlitz IDE includes slightly different features and User Interface elements. See an overview of both environments in the table below - or you can directly consult the section on [EngineBlock](#engineblock) or [WebContainers](#webcontainers).
 
-| Feature                    | EngineBlock                                               | WebContainers                                             |
-| -------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
-| Native Node.js environment | <img src="/img/icons/times-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
-| Supported frameworks       | front-end                                                 | front-end & back-end                                      |
-| Editor                     | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
-| Preview                    | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
-| Console                    | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/times-solid.svg" className="icon" /> |
-| Shareable Preview URL      | <img src="/img/icons/check-solid.svg" className="icon" /> | <img src="/img/icons/times-solid.svg" className="icon" /> |
-| Terminal                   | <img src="/img/icons/times-solid.svg" className="icon" /> | <img src="/img/icons/check-solid.svg" className="icon" /> |
+| Feature | EngineBlock | WebContainers |
+| --- | --- | --- |
+| Native Node.js environment | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| Supported frameworks | <SupportIcon value="star-half" label="" /> Front-end | <SupportIcon value="star" label="" /> Front-end & back-end |
+| Editor | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
+| Preview | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
+| Shareable Preview URL | <YepNope value="yes" label="Supported" /> | <SupportIcon value="no" label="Not supported" /> |
+| Console | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
+| Terminal | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 
 To explore these differences in practice, we took a React project and turned it into:
 

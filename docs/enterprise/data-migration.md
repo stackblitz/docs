@@ -63,7 +63,7 @@ This guide assumes the sole goal of migrating from the embedded PostgreSQL insta
 
 You can get the encryption key value from your existing StackBlitz deployment via the KOTS CLI:
 
-```bash
+```sh
 kubectl kots get config -n <your stackblitz namespace> --sequence <current release sequence number> --appslug stackblitz | grep -A1 'stackblitz_enc'
 ```
 

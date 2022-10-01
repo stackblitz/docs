@@ -16,8 +16,16 @@ export const openSourceGuide = [
 ];
 
 export const api = [
-  { text: 'JavaScript SDK', link: '/platform/api/javascript-sdk' },
-  { text: 'JavaScript SDK VM', link: '/platform/api/javascript-sdk-vm' },
+  {
+    text: 'JavaScript SDK',
+    link: '/platform/api/javascript-sdk',
+    items: [
+      { text: 'SDK overview', link: '/platform/api/javascript-sdk' },
+      { text: 'Options reference', link: '/platform/api/javascript-sdk-options' },
+      { text: 'Controlling embeds', link: '/platform/api/javascript-sdk-vm' },
+      { text: 'Managing dependencies', link: '/platform/api/javascript-sdk-dependencies' },
+    ],
+  },
   { text: 'POST API', link: '/platform/api/post-api' },
   { text: 'WebContainer API', link: '/platform/api/webcontainer-api' },
 ];

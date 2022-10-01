@@ -2,11 +2,9 @@
 title: Project configuration
 ---
 
-# Project configuration
+Projects based on WebContainers can be configured in the following ways:
 
-Projects based on WebContainers can be configured:
-
-1. [with project files](#with-project-files) (`package.json` or `.stackblitzrc`);
+1. [with project files](#with-project-files) (`package.json` or `.stackblitzrc`),
 2. [with URL parameters](#with-url-parameters).
 
 ## With project files
@@ -18,14 +16,14 @@ Projects can be configured using the `stackblitz` field in the `package.json` fi
   "name": "lib-example",
   "version": "1.0.0",
   "license": "MIT",
-  ...
+  /// ...
   "stackblitz": {
     "startCommand": "npm start"
   }
 }
 ```
 
-Alternatively, use a `.stackblitzrc` file at the root of the project. The expected format is valid JSON (without comments). This may look like:
+Alternatively, you can use a `.stackblitzrc` file at the root of the project. The expected format is valid JSON (without comments). This may look like:
 
 ```json
 {
@@ -63,15 +61,15 @@ To disable this behavior, set `installDependencies` to `false`.
   </tr>
   <tr>
     <td>Default</td>
-    <td>Inferred from the contents of <code>package.json</code></td>
+    <td>Based on the contents of <code>package.json</code></td>
   </tr>
 </table>
 
 A terminal command to be executed when opening the project, after installing npm dependencies.
 
-If not specified, StackBlitz will look at the project’s root `package.json` (if any), and select a command to run using the following criteria:
+If not specified, StackBlitz will look at the project’s root `package.json` (if present) and select a command to run using the following criteria:
 
-1. We may select a framework-specific command in some special cases;
+1. Select a framework-specific command in some special cases;
 2. Or, if `package.json` defines a `"dev"` script: execute `npm run dev`;
 3. Or, if `package.json` defines a `"start"` script: execute `npm start`.
 
@@ -90,17 +88,19 @@ To disable this behavior, set `startCommand` to `false` (which means: "do nothin
   </tr>
 </table>
 
-The `compileTrigger` option controls how file changes in the editor are written to the WebContainers in-memory filesystem. Note that writing to this in-memory filesystem does not mean that changes are persisted on `stackblitz.com` (this requires a separate “Save” action from users).
+The `compileTrigger` option controls how file changes in the editor are written to the WebContainers in-memory filesystem. Note that writing to this in-memory filesystem does not mean that changes are persisted on `stackblitz.com` - this requires a separate “Save” action from users.
+
+This option can be useful if your project runs a development server (such as Vite or webpack-dev-server), which compiles user code whenever source files change.
 
 The available settings are:
 
 - `"auto"` (default): changes are synced automatically when modified, after a short delay;
 - `"keystroke"`: changes are synced immediately, on every edit;
-- `"save"`: changes are synced when users manually save the project (using the “Save” button or a keyboard shortcut).
+- `"save"`: changes are synced when users manually save the project using the “Save” button or a keyboard shortcut.
 
-This option can be useful if your project runs a development server (such as Vite or webpack-dev-server), which compiles user code whenever source files change.
-
-The default `"auto"` setting can show the result of changes as users type, giving a nice reactive feel to project demos. But this also means that the development server or compiler used in the project may receive invalid code as users type. Since not all dev servers and compilers are resilient to invalid input, you may want to set `compileTrigger` to `"save"` instead to limit errors.
+:::info When should I use “save”?
+The default `"auto"` setting enables showing changes as user types, which may provide a nice reactive feel to project demos. However, this also means that the development server or compiler used in the project may receive invalid code before the user finished typing. Since not all dev servers and compilers are resilient to invalid input, you may want to set `compileTrigger` to `"save"` instead to limit errors.
+:::
 
 ### <var>env</var>
 
@@ -121,18 +121,18 @@ A map of default environment variables that will be set in each top-level shell 
 
 ### <var>terminal</var>
 
-Use the `terminal` parameter in the project URL’s query string to select one or several scripts from `package.json` to run on project load.
+Use the `terminal` parameter in the project’s URL query string to select one or several scripts from `package.json` to run on project load.
 
 This can be useful when a project doesn’t define a custom `startCommand`, or if you want to share a link that runs a different script that the one specified in `startCommand`.
 
-For example, the following URL will run the `"test"` script defined in `package.json`, on project load:
+For example, the following URL will run the `"test"` script, defined in `package.json`, on project load:
 
 ```
 https://stackblitz.com/edit/project-id?terminal=test
 ```
 
 :::warning
-The `terminal` parameter only accepts existing keys from the `package.json`’s `scripts` field. Projects which need more control should use configuration in the project files directly.
+The `terminal` parameter only accepts existing keys from the `scripts` field in `package.json`. Projects which need more control should use [configuration in the project files](#with-project-files) directly.
 :::
 
 You can also run several scripts sequentially using comma-separated values. For instance, if a project defines a `"build"` script and a `"serve"` script, and both are needed to render a web page, you could use:

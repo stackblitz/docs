@@ -28,7 +28,7 @@ You can either host on your servers or use our image URLs directly.
 
 In order to display the button in a **markdown file**, use the following code - remember to replace the last URL with your example’s path:
 
-```markdown
+```md
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/___YOUR_PATH___)
 ```
 
@@ -58,7 +58,7 @@ Depending on the _“action”_ specified in the import URL (see the section abo
 
 Consider a link like this one - a StackBlitz project loaded from a GitHub repository:
 
-```markdown
+```md
 [https://stackblitz.com/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
 ```
 
@@ -66,7 +66,7 @@ In this case, StackBlitz imports the repository but does not give the _write_ ac
 
 To save users from seeing the page reload, we recommend always providing the link that will already load a fresh copy by including the `/fork` before the GitHub part of the URL:
 
-```markdown
+```md
 [https://stackblitz.com/fork/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
 ```
 
@@ -76,7 +76,7 @@ Since the StackBlitz git importer is able to work with various GitHub paths, you
 
 Oftentimes such a folder will consist of subfolders with several different variations of a project (for instance, [https://github.com/remix-run/react-router/tree/main/examples](https://github.com/remix-run/react-router/tree/main/examples/basic))
 
-:::note
+:::info Note
 Make sure you don’t use a relative path to the main project in your examples’ `package.json` dependencies. Since what will be imported is only the content of the example’s folder, the example won’t have an access to the external paths.
 :::
 
@@ -84,20 +84,24 @@ Make sure you don’t use a relative path to the main project in your examples�
 
 By default, the GitHub importer will set the project's title based on the GitHub username and the repository name. As you see below, the name of the project is "Next.js Hello World Example” (in the top center):
 
-`https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world`
+```
+https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world
+```
 
 ![A default title when importing a GitHub project](/doc_images/guide/Github_Importer_default_title.png)
 
 To customize it, add the `title` argument to the URL like so:
 
-```markdown
+```md
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title='Hello World'
 )
 ```
 
 As you see, the title has now changed from “Next.js Hello World Example” to “Hello World”:
 
-`https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title=Hello World`
+```
+https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title=Hello World
+```
 
 ![A custom title when importing a GitHub project](/doc_images/guide/Github_Importer_custom_title.png)
 

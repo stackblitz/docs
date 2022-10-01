@@ -29,7 +29,7 @@ If you want, you can also specify a branch, tag, or commit:
 
 Whenever you push commits to GitHub, the corresponding StackBlitz project automatically updates with the latest changes ensuring that the code in your GitHub repository remains the source of truth.
 
-:::note
+:::info Note
 While you can import from GitHub any projects with a `package.json`, the unsupported technologies will not run. This includes backend languages not supported by Node.js (like PHP, Python, or Java), databases like MySQL and PostgreSQL that require a binary server process, and some specific npm packages which are not fully compatible with WebContainers yet.
 :::
 
@@ -71,7 +71,7 @@ You can chain the URL query parameters by adding the & sing between them, for ex
 
 ## Importing private projects
 
-:::note
+:::info Note
 Importing private GitHub repos is a feature available with our memberships. If you're interested in becoming a member, check details on our [StackBlitz Membership](https://stackblitz.com/membership) page.
 :::
 

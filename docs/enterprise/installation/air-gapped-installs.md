@@ -27,7 +27,7 @@ If you need to create a support bundle for troubleshooting, you can also downloa
 
 On a workstation that has `kubectl` access to the cluster, run `kubectl kots version` to check if `kots` is installed. If  it needs to be installed, you can run:
 
-```bash
+```sh
 curl https://kots.io/install | bash
 ```
 

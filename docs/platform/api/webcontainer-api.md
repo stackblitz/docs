@@ -2,7 +2,7 @@
 title: WebContainer API
 ---
 
-# WebContainer API
+# {{ $frontmatter.title }}
 
 WebContainer API allows for running WebContainers headlessly. It is currently in the pre-release alpha stage and accessed by invite only.
 
