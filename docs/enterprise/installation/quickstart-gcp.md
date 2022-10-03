@@ -5,7 +5,7 @@ title: Quickstart on GCP (Non-GKE)
 # {{ $frontmatter.title }}
 
 :::tip
-For an in-depth custom installation setup and cluster operations, please follow the **[Administrator Guide](/docs/enterprise/installation/administrator-guide)**.
+For an in-depth custom installation setup and cluster operations, please follow the **[Administrator Guide](/enterprise/installation/administrator-guide)**.
 :::
 
 StackBlitz Enterprise is a Kubernetes application. You can install the software on an existing cluster or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.

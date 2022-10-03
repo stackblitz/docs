@@ -77,7 +77,7 @@ Once you've submitted your credentials and uploaded your air gapped bundle, the 
 
 ![Air Gap Image Mirroring](/doc_images/airgapped-mirror-images.png)
 
-Check the [Administrator Guide](/docs/enterprise/installation/administrator-guide#config-options) for more details on how to configure all of the options in the Admin Console.
+Check the [Administrator Guide](/enterprise/installation/administrator-guide#config-options) for more details on how to configure all of the options in the Admin Console.
 
 ![Console Config](/doc_images/ee-console-config.png)
 

@@ -5,14 +5,14 @@ title: Starter Projects
 # {{ $frontmatter.title }}
 
 :::info
-Creating, updating and managing starter projects is currently only available in [StackBlitz Enterprise Edition](/docs/enterprise).
+Creating, updating and managing starter projects is currently only available in [StackBlitz Enterprise Edition](/enterprise/overview).
 :::
 
 When working on a team, you'll likely want to customize the default starter projects that show up on the StackBlitz dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
 
 ## Creating new starter projects
 
-Before starting, make sure that your account [has been granted admin privileges](/docs/enterprise/user-management). This enables you to customize which starter projects show up on your team's dashboard.
+Before starting, make sure that your account [has been granted admin privileges](/enterprise/user-management). This enables you to customize which starter projects show up on your team's dashboard.
 
 Once your account has been granted admin access, you can create new starter projects that show up on your team's dashboard with the following steps:
 
@@ -51,7 +51,7 @@ So if we're creating a custom starter project for our company's internal design 
 
 To make this template available to your team, go to your StackBlitz dashboard and click the "Customize starter projects" link at the top right above the starter projects section:
 
-> If you don't see this link, your account likely needs to be [granted admin privileges](/docs/enterprise/user-management).
+> If you don't see this link, your account likely needs to be [granted admin privileges](/enterprise/user-management).
 
 ![EE Console](/doc_images/customize-project-link.png)
 

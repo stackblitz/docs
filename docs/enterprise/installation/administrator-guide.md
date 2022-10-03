@@ -5,7 +5,7 @@ title: Administrator Guide
 # {{ $frontmatter.title }}
 
 :::info
-This document covers in-depth custom installation and cluster operations. For a more gentle introduction to the installation process, please check out the [Quickstart](/docs/enterprise/installation/quickstart).
+This document covers in-depth custom installation and cluster operations. For a more gentle introduction to the installation process, please check out the [Quickstart](/enterprise/installation/quickstart).
 :::
 
 StackBlitz Enterprise is a Kubernetes application. You can install the software on an existing cluster or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.
