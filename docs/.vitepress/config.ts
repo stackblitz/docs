@@ -24,7 +24,7 @@ export default defineConfig({
   ],
 
   // Build
-  cleanUrls: 'with-subfolders',
+  cleanUrls: 'without-subfolders',
   outDir: '../build',
   // Prevent builds when content has dead links
   ignoreDeadLinks: false,
