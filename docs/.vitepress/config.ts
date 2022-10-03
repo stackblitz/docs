@@ -26,7 +26,8 @@ export default defineConfig({
   // Build
   cleanUrls: 'with-subfolders',
   outDir: '../build',
-  ignoreDeadLinks: true,
+  // Prevent builds when content has dead links
+  ignoreDeadLinks: false,
 
   // Theme
   themeConfig: {

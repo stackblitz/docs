@@ -31,14 +31,13 @@ If you have an existing cluster, you can run the following command from a workst
  kubectl kots install stackblitz
 ```
 
-This will install the kots (Kubernetes off-the-shelf software) plugin on the workstation, then install the StackBlitz Enterprise Admin Console on the cluster, and set up a port forward on the ClusterIP to enable you to access the admin from `localhost:8800`. From here, you’ll be walked through the preflight checks, configuration, and initial deployment of the application.
+This will install the kots (Kubernetes off-the-shelf software) plugin on the workstation, then install the StackBlitz Enterprise Admin Console on the cluster, and set up a port forward on the ClusterIP to enable you to access the admin from `http://localhost:8800`. From here, you’ll be walked through the preflight checks, configuration, and initial deployment of the application.
 
 Please please see our advanced existing cluster installation instructions if you need to use your existing deployment pipeline (for instance, internal image registry, version control system), make custom configuration tweaks and/or deploy to multiple or remote environments.
 
 # Troubleshooting
 
 StackBlitz Enterprise has a built-in troubleshooting tool. On the admin console, click on the Troubleshoot tab, and you can download a support bundle. By default, this will run through a series of prebuilt analyzers to help identify potential issues. If you’re unable to remediate the issue, you can deliver the support bundle to our support team and we can help you identify any problems with the StackBlitz Enterprise installation.
-
 
 ## Automating Day-2 Operations
 
@@ -56,8 +55,7 @@ To start, you’ll need to bootstrap the process by deploying our Admin Console.
 
 ### Initial Configuration
 
-Once the admin console is running, visit https://localhost:8800 and upload your license. StackBlitz Enterprise is delivered as ready-to-run YAML, but you might need to make some changes for your specific environment. In the Admin Console, click “Config”. This will show a form where you can provide your settings. These will be written as Kubernetes secrets in the deployment manifests.
-
+Once the admin console is running, visit `http://localhost:8800` and upload your license. StackBlitz Enterprise is delivered as ready-to-run YAML, but you might need to make some changes for your specific environment. In the Admin Console, click “Config”. This will show a form where you can provide your settings. These will be written as Kubernetes secrets in the deployment manifests.
 
 ### Config options
 

@@ -76,7 +76,7 @@ After choosing and submitting, you will see the following screen:
   • Go to http://localhost:8800 to access the Admin Console
 ```
 
-Navigate to [http://localhost:8800](http://localhost:8800) to access the Admin Console. You will be prompted to log in using the password you chose before.
+Navigate to `http://localhost:8800` to access the Admin Console. You will be prompted to log in using the password you chose before.
 
 ![Admin Console Login](/doc_images/admin-console-login.png)
 
