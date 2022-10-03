@@ -4,7 +4,7 @@ title: WebContainers Browser Support
 
 # {{ $frontmatter.title }}
 
-_Last update: September 2022_
+_Last update: October 2022_
 
 **TL;DR** For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state. If you have issues with supported browsers, [check your browser configuration](/platform/webcontainers/browser-config). If your issue is specifically with Brave, read the page on [running in Brave](/platform/webcontainers/browser-config-brave).
 
@@ -56,7 +56,7 @@ In addition to this, there might be [other runtime incompatibilities](#runtime-d
 
 ## Safari
 
-Safari recently shipped support for `SharedArrayBuffer` and cross-origin isolation. However, it is still lacking a few other features which prevents us from shipping a working environment such as:
+Safari recently shipped support for `SharedArrayBuffer` and cross-origin isolation in a somewhat [buggy state](https://bugs.webkit.org/show_bug.cgi?id=238442). In addition to this, it is still lacking a few other features which prevents us from shipping a working environment such as:
 
 * [Atomics.waitAsync](https://github.com/tc39/proposal-atomics-wait-async)
 * [Lookbehind in regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions)
