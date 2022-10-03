@@ -26,7 +26,7 @@ One of the ways to make your code example stand out in your docs or your reposit
 You can either host on your servers or use our image URLs directly.
 :::
 
-In order to display the button in a **markdown file**, use the following code - remember to replace the last URL with your example’s path:
+In order to display the button in a **Markdown file**, use the following code - remember to replace the last URL with your example’s path:
 
 ```md
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/___YOUR_PATH___)

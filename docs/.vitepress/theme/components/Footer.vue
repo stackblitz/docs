@@ -23,11 +23,11 @@ const sections: Section[] = [
       { text: 'From a Workspace', link: 'https://stackblitz.com/?starters=popular' },
       {
         text: 'From a GitHub Repo',
-        link: 'https://developer.stackblitz.com/guide/importing-projects#import-from-github',
+        link: '/guides/user-guide/importing-projects#import-from-github',
       },
       {
         text: 'From your computer',
-        link: 'https://developer.stackblitz.com/guide/importing-projects#upload-from-your-computer',
+        link: '/guides/user-guide/importing-projects#upload-from-your-computer',
       },
     ],
   },

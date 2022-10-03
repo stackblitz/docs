@@ -13,11 +13,11 @@ For production deployments, we suggest an external PostgreSQL solution with mana
 
 You will need:
 
-* `kubectl` access to the Kubernetes cluster where StackBlitz is installed. On [embedded installs](https://developer.stackblitz.com/docs/enterprise/installation/quickstart/), `kubectl` is fully configured already, so a login shell on the host (usually via SSH or console) is sufficient.
+* `kubectl` access to the Kubernetes cluster where StackBlitz is installed. On [embedded installs](/enterprise/installation/quickstart), `kubectl` is fully configured already, so a login shell on the host (usually via SSH or console) is sufficient.
 * Network reachability from your cluster node(s) to the target instance of PostgreSQL, which by default listens on TCP port 5432.
 
 :::info
-Most of the commands in this guide require you to provide the Kubernetes [namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) where StackBlitz is installed. If you followed the [embedded installation procedure](https://developer.stackblitz.com/docs/enterprise/Installation/quickstart), your namespace is `default`. If you installed into an existing Kubernetes cluster your namespace is `stackblitz`, unless a custom value was provided during installation.
+Most of the commands in this guide require you to provide the Kubernetes [namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) where StackBlitz is installed. If you followed the [embedded installation procedure](/enterprise/installation/quickstart), your namespace is `default`. If you installed into an existing Kubernetes cluster your namespace is `stackblitz`, unless a custom value was provided during installation.
 :::
 
 ## Database Export

@@ -28,11 +28,12 @@ There is no greater buzzkill than having to fiddle with the deployment and build
 
 ### Delightful docs
 
-Add interactive examples [from a GitHub repository](https://developer.stackblitz.com/docs/guide/open-from-github/) or [hook up an existing StackBlitz project](https://developer.stackblitz.com/docs/guide/create-with-sdk/) to your docs, blog, or website. Help your users fall in love with your project right from the first try.
+Add interactive examples [from a GitHub repository](/guides/open-source/open-from-github) or [hook up an existing StackBlitz project](/guides/open-source/create-with-sdk) to your docs, blog, or website. Help your users fall in love with your project right from the first try.
 
 ### Interactive playgrounds
 
-Create a [project starter](https://developer.stackblitz.com/docs/platform/starter-projects/) or boilerplate code and let your users taste the full power of your project. Wanna take this a step further? Keep it on a [custom domain](https://stackblitz.new) so your users can access it even more easily.
+Create a [project starter](/guides/user-guide/starter-projects) or boilerplate code and let your users taste the full power of your project. Wanna take this a step further? Keep it on a [custom domain](https://stackblitz.new) so your users can access it even more easily.
+
 <!-- 
 ### Entire programming workflow
 
@@ -40,15 +41,16 @@ One click and our WebStudio spins up a whole code editor with git integration an
 
 ### Quick demos
 
-Working on a blog post or a conference talk? [Create a StackBlitz project that you can quickly share](https://developer.stackblitz.com/docs/platform/embedding/). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
+Working on a blog post or a conference talk? [Create a StackBlitz project that you can quickly share](/guides/user-guide/embedding). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
 
 ### Effective bug reproductions
 
-Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its [own StackBlitz reproduction](https://developer.stackblitz.com/docs/guide/bug-reproductions/) so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
+Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its [own StackBlitz reproduction](/guides/open-source/bug-reproductions) so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
 
 ### Build whole educational experiences
 
-You like the idea of running Node.js in the browser and feel inspired to build your own editor? No worries. Our [WebContainers API](https://developer.stackblitz.com/docs/platform/webcontainer-api/) allows you to use our technology to power your own playgrounds.
+You like the idea of running Node.js in the browser and feel inspired to build your own editor? No worries. Our [WebContainers API](/platform/api/webcontainer-api) allows you to use our technology to power your own playgrounds.
+
 <!-- 
 ### Straightforward docs editing
 
