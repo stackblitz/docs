@@ -111,7 +111,7 @@ For a more extensive example [see this Gist](https://gist.github.com/sulco/df406
 - a preconfigured custom setup dedicated to specific technology such as `angular-cli` or `create-react-app`,
 - `node`, a WebContainers environment where you decide how your app example will be built, for instance with Vite or webpack.
 
-You can find the [full list of available templates here](/docs/platform/javascript-sdk#supported-project-types).
+You can find the [full list of available templates here](/platform/api/javascript-sdk#supported-project-types).
 
 ```js
 {

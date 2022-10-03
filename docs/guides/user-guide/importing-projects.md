@@ -92,4 +92,4 @@ The video below outlines a workaround to edit collaboratively in a private repo:
 
 ## Importing or creating projects with StackBlitz API
 
-You can create new StackBlitz projects programmatically from any data source using our [POST API](/docs/platform/post-api) or the [openProject](/docs/platform/javascript-sdk#sdkopenprojectproject-opts) and [embedProject](/docs/platform/javascript-sdk#sdkembedprojectelementorid-project-embedopts) methods in our [JavaScript SDK](/docs/platform/javascript-sdk).
+You can create new StackBlitz projects programmatically from any data source using our [POST API](/platform/api/post-api) or the [openProject](/platform/api/javascript-sdk#openproject) and [embedProject](/platform/api/javascript-sdk#embedproject) methods in our [JavaScript SDK](/platform/api/javascript-sdk).

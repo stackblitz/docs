@@ -6,7 +6,7 @@ title: User Management
 
 ## Grant Admin Access to SSO Accounts
 
-After successful installation, StackBlitz EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using [custom starter projects](/docs/platform/starter-projects).
+After successful installation, StackBlitz EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using [custom starter projects](/guides/user-guide/starter-projects).
 
 You can do this with the following steps:
 

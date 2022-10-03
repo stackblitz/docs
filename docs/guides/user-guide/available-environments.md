@@ -45,4 +45,4 @@ As for the sharing options, you can share only the editor link as the preview re
 
 This environment has a terminal that supports various common commands you would run locally.
 
-WebContainers are currently supported by Chromium-based browsers and [in Firefox, with some caveats](/docs/platform/browser-support/).
+WebContainers are currently supported by Chromium-based browsers and [in Firefox, with some caveats](/platform/webcontainers/browser-support).

@@ -34,11 +34,6 @@ Add interactive examples [from a GitHub repository](/guides/open-source/open-fro
 
 Create a [project starter](/guides/user-guide/starter-projects) or boilerplate code and let your users taste the full power of your project. Wanna take this a step further? Keep it on a [custom domain](https://stackblitz.new) so your users can access it even more easily.
 
-<!-- 
-### Entire programming workflow
-
-One click and our WebStudio spins up a whole code editor with git integration and hot-reloading preview. Now all you need for your dev work is just a browser. -->
-
 ### Quick demos
 
 Working on a blog post or a conference talk? [Create a StackBlitz project that you can quickly share](/guides/user-guide/embedding). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
@@ -50,11 +45,6 @@ Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where
 ### Build whole educational experiences
 
 You like the idea of running Node.js in the browser and feel inspired to build your own editor? No worries. Our [WebContainers API](/platform/api/webcontainer-api) allows you to use our technology to power your own playgrounds.
-
-<!-- 
-### Straightforward docs editing
-
-Every project deserves collaborative documentation. Typo fixes have never been easier - click, see what you edit as you edit, and submit a PR when you're satisfied. All in the browser. -->
 
 ### Rapid prototyping
 
