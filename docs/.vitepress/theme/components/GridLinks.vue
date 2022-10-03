@@ -28,6 +28,10 @@ defineProps<{ links: any[] }>();
 
   @media (min-width: $bp-medium) {
     grid-template-columns: 1fr 1fr;
+
+    .GridLinks-item > a {
+      height: 100%;
+    }
   }
   @media (min-width: $bp-large) {
     grid-template-columns: repeat(6, 1fr);

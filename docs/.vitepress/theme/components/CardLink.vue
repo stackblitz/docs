@@ -37,15 +37,18 @@ const backgroundStyle = computed(() => ({
 @import '../styles/vars';
 
 .CardLink {
-  --icon-color: var(--vp-c-brand-lighter);
   --icon-color: var(--sb-foreground-highlight);
+  --border-highlight-color: var(--sb-foreground-highlight-high);
+  --card-padding-base: 20px 24px 24px;
+  --card-padding-large: 20px 24px 24px;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100%;
+  min-height: 144px;
   border-radius: 8px;
   border: solid 2px hsl(200 30% 40% / 0.15);
-  padding: 20px 24px 24px;
+  padding: var(--card-padding-base);
   // Bit of a specificity battle going on with theme styles
   color: var(--vp-c-text-2);
   text-decoration: none;
@@ -54,22 +57,27 @@ const backgroundStyle = computed(() => ({
   transform: translateZ(0); // fixes opacity flicker when other elements are hovered :|
 
   @media (min-width: $bp-medium) {
-    padding: 32px 40px 36px;
+    --card-padding-base: 28px 36px 32px;
+    --card-padding-large: 28px 36px 32px;
   }
   @media (min-width: $bp-large) {
-    padding: 32px 48px 36px;
+    --card-padding-large: 44px 60px;
+  }
+  @media (min-width: $bp-xlarge) {
+    --card-padding-base: 32px 48px 36px;
+    --card-padding-large: 60px 72px;
     border-radius: 12px;
   }
 
   &:hover {
     --icon-color: currentColor !important;
-    border-color: var(--sb-foreground-highlight-high);
+    border-color: var(--border-highlight-color);
     transform: translateY(-2px);
   }
 
   &:focus-visible {
     --icon-color: currentColor !important;
-    outline: solid 2px var(--sb-foreground-highlight-high);
+    outline: solid 2px var(--border-highlight-color);
     outline-offset: -2px;
   }
 }
@@ -148,7 +156,7 @@ const backgroundStyle = computed(() => ({
 // on large screens only
 @media (min-width: $bp-large) {
   .CardLink--large {
-    padding: 60px 72px;
+    padding: var(--card-padding-large);
 
     .CardLink-title {
       margin-bottom: 22px;
@@ -164,7 +172,7 @@ const backgroundStyle = computed(() => ({
       left: 0;
       width: 0;
       height: 2px;
-      background-color: var(--vp-c-brand-light);
+      background-color: var(--border-highlight-color);
       transition: width 0.1s ease;
     }
     &:hover .CardLink-title::after,

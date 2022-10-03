@@ -3,19 +3,21 @@ title: Migrating StackBlitz Data
 sidebar_label: Data Migration
 ---
 
+# {{ $frontmatter.title }}
+
 By default, StackBlitz Enterprise Edition (EE) will deploy a basic PostgreSQL container instance for persisting user and project data. This provides trial users with the fastest possible deployment experience but is not well-suited for production use.
 
-For production deployments, we suggest an external PostgreSQL solution with managed backups and security enhancements (e.g. PostgreSQL for Amazon RDS, or Azure Database for PostgreSQL). Once an external database is available, migrating your data away from the embedded database is simple.
+For production deployments, we suggest an external PostgreSQL solution with managed backups and security enhancements (for instance, PostgreSQL for Amazon RDS, or Azure Database for PostgreSQL). Once an external database is available, migrating your data away from the embedded database is simple.
 
 ## Prerequisites
 
-* `kubectl` access to the Kubernetes cluster where StackBlitz is installed. On [embedded installs](https://developer.stackblitz.com/enterprise/installation/quickstart/), `kubectl` is fully configured already, so a login shell on the host (usually via SSH or console) is sufficient.
+You will need:
+
+* `kubectl` access to the Kubernetes cluster where StackBlitz is installed. On [embedded installs](/enterprise/installation/quickstart), `kubectl` is fully configured already, so a login shell on the host (usually via SSH or console) is sufficient.
 * Network reachability from your cluster node(s) to the target instance of PostgreSQL, which by default listens on TCP port 5432.
 
-:::warning
-
-Most of the commands in this guide require you to provide the Kubernetes [namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) where StackBlitz is installed. If you followed the [embedded installation procedure](https://developer.stackblitz.com/enterprise/Installation/quickstart), your namespace is `default`. If you installed into an existing Kubernetes cluster your namespace is `stackblitz`, unless a custom value was provided during installation.
-
+:::info
+Most of the commands in this guide require you to provide the Kubernetes [namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) where StackBlitz is installed. If you followed the [embedded installation procedure](/enterprise/installation/quickstart), your namespace is `default`. If you installed into an existing Kubernetes cluster your namespace is `stackblitz`, unless a custom value was provided during installation.
 :::
 
 ## Database Export
@@ -52,28 +54,27 @@ psql \
 ```
 
 :::warning
-
 The restore will create the `stackblitz_production` database and connect to it before restoring. If the DB already exists, it will drop it and create it again before restoring. In case it doesn't exist, we connect to the default `postgres` DB first. You **must** provide a username which is allowed to create, read, and write databases, tables, and indexes on the target PostgreSQL instance.
-
 :::
 
 ## Encryption Key
 
-Generally, this guide assumes the sole goal of migrating from the embedded PostgreSQL instance to an externally managed one. For users wanting to reinstall StackBlitz itself while retaining or migrating existing user & project data, the procedure mostly remains the same, except that StackBlitz's encryption key **must** be carried forward as well.
+This guide assumes the sole goal of migrating from the embedded PostgreSQL instance to an externally managed one. For users wanting to reinstall StackBlitz itself while retaining or migrating existing user and project data, the procedure mostly remains the same, except that StackBlitz's encryption key **must** be carried forward as well.
 
 You can get the encryption key value from your existing StackBlitz deployment via the KOTS CLI:
 
-```
+```sh
 kubectl kots get config -n <your stackblitz namespace> --sequence <current release sequence number> --appslug stackblitz | grep -A1 'stackblitz_enc'
 ```
 
 :::tip
-
-You can get the current release sequence value by checking the release history panel in the KOTS admin dashboard, or with the following KOTS CLI command: `kubectl kots get versions stackblitz -n <your StackBlitz namespace>`. The top sequence number shown should be current.
-
+You can get the current release sequence value by checking the release history panel in the KOTS admin dashboard, or with the following KOTS CLI command: `kubectl kots get versions stackblitz -n <your StackBlitz namespace>`. The current sequence number will be shown on the top.
 :::
 
-This command will output values for `stackblitz_enc_key_settings`, `stackblitz_enc_key`, and if set, `stackblitz_enc_custom_key`. If the value of `stackblitz_enc_key_settings` is `stackblitz_default_generated`, your encryption key is the value of `stackblitz_enc_key`, otherwise it's the value of `stackblitz_enc_custom_key`.
+This command will output values for `stackblitz_enc_key_settings`, `stackblitz_enc_key`, and if set, `stackblitz_enc_custom_key`.
 
-Once you have the old encryption key, go to the KOTS admin dashboard, and select "Custom Key" in the "Key Settings" field. Paste the old encryption key into the "Custom Encryption Key" field that appears, then save and deploy the new configuration.
+If the value of `stackblitz_enc_key_settings` is `stackblitz_default_generated`, your encryption key is the value of `stackblitz_enc_key`. 
 
+Otherwise, it's the value of `stackblitz_enc_custom_key`.
+
+Once you have the old encryption key, navigate to the KOTS admin dashboard, and select "Custom Key" in the "Key Settings" field. Paste the old encryption key into the "Custom Encryption Key" field that appears, then save and deploy the new configuration.

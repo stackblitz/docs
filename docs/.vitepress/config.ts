@@ -5,49 +5,51 @@ import * as links from './links';
 export default defineConfig({
   // Metadata
   lang: 'en-US',
-  title: 'StackBlitz Docs',
-  description: 'Docs | Guides | Tutorials',
+  title: 'StackBlitz Documentation',
+  description:
+    'Discover how to use of StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/img/sb-dev-logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/img/favicon.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'StackBlitz Documentation' }],
+    ['meta', { property: 'og:image', content: '/img/stackblitz-docs-social.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:site', content: '@stackblitz' }],
+    /*
+    ['meta', { property: 'og:url', content: '' }],
+    ['meta', { property: 'og:description', content: '' }],
+    */
     // TODO: remove before making public
     ['meta', { name: 'robots', content: 'noindex,nofollow,noarchive' }],
-    /*
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: ogTitle }],
-    ['meta', { property: 'og:image', content: ogImage }],
-    ['meta', { property: 'og:url', content: ogUrl }],
-    ['meta', { property: 'og:description', content: ogDescription }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:site', content: '@vite_js' }],
-    ['meta', { name: 'theme-color', content: '#646cff' }]
-    */
   ],
 
   // Build
   cleanUrls: 'with-subfolders',
   outDir: '../build',
-  ignoreDeadLinks: true,
+  // Prevent builds when content has dead links
+  ignoreDeadLinks: false,
 
   // Theme
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
-    logo: '/img/sb-dev-logo.svg',
+    logo: '/img/stackblitz-docs-logo.svg',
     algolia: {
       appId: 'YCVDUYWLVC',
       apiKey: '8fe79cd865807082f50083ddd5647b0b',
       indexName: 'stackblitz',
     },
     editLink: {
-      pattern: 'https://stackblitz.com/code/github/stackblitz/docs/edit/main/:path',
-      text: 'Edit this page on StackBlitz',
+      pattern: 'https://github.com/stackblitz/docs/edit/main/docs/:path',
+      text: 'Edit this page on GitHub',
     },
     nav: [
       { text: 'Guides', link: links.userGuide[0].link },
-      { text: 'API Docs', link: links.api[0].link },
+      { text: 'API', link: links.api[0].link },
+      { text: 'WebContainers', link: links.webcontainers[0].link },
       { text: 'Enterprise', link: links.enterprise[0].link! },
     ],
     sidebar: {
-      '/guide/': [
+      '/guides/': [
         {
           text: 'User Guide',
           collapsible: true,
@@ -61,18 +63,20 @@ export default defineConfig({
           items: links.openSourceGuide,
         },
       ],
-      '/api/': [
-        {
-          text: 'Runtime Environments',
-          collapsible: true,
-          collapsed: false,
-          items: links.environment,
-        },
+      '/platform/api/': [
         {
           text: 'StackBlitz API',
           collapsible: true,
           collapsed: false,
           items: links.api,
+        },
+      ],
+      '/platform/webcontainers/': [
+        {
+          text: 'WebContainers',
+          collapsible: true,
+          collapsed: false,
+          items: links.webcontainers,
         },
       ],
       '/enterprise/': [

@@ -1,38 +1,47 @@
 export const userGuide = [
-  { text: 'What is StackBlitz', link: '/guide/what-is-stackblitz' },
-  { text: 'Getting started', link: '/guide/getting-started' },
-  { text: 'Starter projects', link: '/guide/project-starters' },
-  { text: 'Importing projects', link: '/guide/importing-projects' },
-  { text: 'Embedding projects', link: '/guide/embedding' },
-  { text: 'Keyboard shortcuts', link: '/guide/keyboard-shortcuts' },
-  { text: 'IDE: what’s on your screen', link: '/guide/ide-whats-on-your-screen' },
+  { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
+  { text: 'Getting started', link: '/guides/user-guide/getting-started' },
+  { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
+  { text: 'Available environments', link: '/guides/user-guide/available-environments' },
+  { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
+  { text: 'Embedding projects', link: '/guides/user-guide/embedding' },
+  { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
+  { text: 'Keyboard shortcuts', link: '/guides/user-guide/keyboard-shortcuts' },
 ];
 
 export const openSourceGuide = [
-  { text: 'Launching projects from GitHub', link: '/guide/open-from-github' },
-  { text: 'Creating projects with the SDK', link: '/guide/create-with-sdk' },
-  { text: 'Bug reproductions', link: '/guide/bug-reproductions' },
-];
-
-export const environment = [
-  { text: 'Available environments', link: '/api/available-environments' },
-  { text: 'Browser support', link: '/api/browser-support' },
-  { text: 'Browser configuration', link: '/api/third-party-blocker' },
-  { text: 'Project configuration', link: '/api/project-config' },
-  { text: 'Turbo package manager', link: '/api/turbo' },
+  { text: 'Launching projects from GitHub', link: '/guides/open-source/open-from-github' },
+  { text: 'Creating projects with the SDK', link: '/guides/open-source/create-with-sdk' },
+  { text: 'Bug reproductions', link: '/guides/open-source/bug-reproductions' },
 ];
 
 export const api = [
-  { text: 'JavaScript SDK', link: '/api/javascript-sdk' },
-  { text: 'JavaScript SDK VM', link: '/api/javascript-sdk-vm' },
-  { text: 'POST API', link: '/api/post-api' },
-  { text: 'WebContainer API', link: '/api/webcontainer-api' },
+  {
+    text: 'JavaScript SDK',
+    link: '/platform/api/javascript-sdk',
+    items: [
+      { text: 'SDK overview', link: '/platform/api/javascript-sdk' },
+      { text: 'Options reference', link: '/platform/api/javascript-sdk-options' },
+      { text: 'Controlling embeds', link: '/platform/api/javascript-sdk-vm' },
+      { text: 'Managing dependencies', link: '/platform/api/javascript-sdk-dependencies' },
+    ],
+  },
+  { text: 'POST API', link: '/platform/api/post-api' },
+  { text: 'WebContainer API', link: '/platform/api/webcontainer-api' },
+];
+
+export const webcontainers = [
+  { text: 'Browser support', link: '/platform/webcontainers/browser-support' },
+  { text: 'Browser configuration', link: '/platform/webcontainers/browser-config' },
+  { text: 'Project configuration', link: '/platform/webcontainers/project-config' },
+  { text: 'Turbo package manager', link: '/platform/webcontainers/turbo-package-manager' },
 ];
 
 export const enterprise = [
   { text: 'Overview', link: '/enterprise/overview' },
   {
     text: 'Installation',
+    link: '/enterprise/installation/quickstart',
     items: [
       { text: 'Quickstart on Bare Metal', link: '/enterprise/installation/quickstart' },
       { text: 'Quickstart on GCP (Non-GKE)', link: '/enterprise/installation/quickstart-gcp' },

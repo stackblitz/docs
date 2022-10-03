@@ -2,7 +2,7 @@
 title: Starter Projects
 ---
 
-# Starter Projects
+# {{ $frontmatter.title }}
 
 :::info
 Creating, updating and managing starter projects is currently only available in [StackBlitz Enterprise Edition](/enterprise/overview).
@@ -33,7 +33,7 @@ At the time of this writing these include:
 
 In your newly forked project, you can now start adding dependencies and creating files/folders relevant to your starter project.
 
-If you have existing files and folders on your local computer that you wish to use, [drag and drop them](http://localhost:3000/guide/importing-projects#upload-from-your-computer) into the editor and they'll automatically be imported.
+If you have existing files and folders on your local computer that you wish to use, [drag and drop them](/guides/user-guide/importing-projects#upload-from-your-computer) into the editor and they'll automatically be imported.
 
 ### 3. Give your project a unique slug
 
@@ -63,7 +63,7 @@ Then, in the sidebar of that page paste in the project's slug ID and click "add"
 
 When you navigate back to your dashboard, you should now see your starter project listed! Any time you and your team members click this link, it will automatically create a fresh fork of your starter project.
 
-# Updating your starter projects
+## Updating your starter projects
 
 To update the code of your starter projects, navigate to the starter project's URL and make the desired changes.
 

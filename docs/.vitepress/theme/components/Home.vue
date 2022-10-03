@@ -10,35 +10,35 @@ const topLinks = [
     title: 'Get Started',
     description:
       'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
-    url: '/guide/what-is-stackblitz',
+    url: '/guides/user-guide/what-is-stackblitz',
   },
   {
     icon: 'embed',
     title: 'StackBlitz for Open Source',
     description:
       'Follow guides on creating interactive playgrounds, transforming your documentation, improving bug reproductions, and using StackBlitz for tech education.',
-    url: '/guide/open-from-github',
+    url: '/guides/open-source/open-from-github',
   },
   {
     icon: 'sdk',
     title: 'API Reference',
     description:
       'Unlock the potential of WebContainers with our JavaScript SDK. Embed  GitHub repos, create new projects, and build new educational experiences, all programmatically.',
-    url: '/api/javascript-sdk',
+    url: '/platform/api/javascript-sdk',
   },
   {
     icon: 'embed',
     title: 'WebContainers',
     description:
       'Consult the documentation on browser support, package managers, project configuration, performance, and troubleshooting.',
-    url: '/api/available-environments',
+    url: '/platform/webcontainers/browser-support',
   },
   {
     icon: 'embed',
     title: 'Browser Support',
     description:
       'Tweak your browser with this step-by-step guide to unleash the full power of WebContainers!',
-    url: '/api/browser-support',
+    url: '/platform/webcontainers/browser-support',
   },
   {
     icon: 'embed',
