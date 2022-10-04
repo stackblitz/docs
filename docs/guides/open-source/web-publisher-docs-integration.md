@@ -60,7 +60,8 @@ https://pr.new/github.com/{repo owner's username}/{repo}/edit/{branch}/{repo fil
 
 :::tip
 You can use the **Web Publisher URL generator** to compose your link:
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/edit/vue-c2wltp?file=src/App.vue)
+
+<iframe src="https://stackblitz.com/edit/vue-c2wltp?embed=1&file=src/App.vue&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:350px;border:1px solid var(--vp-custom-block-tip-border);border-radius:10px"></iframe>
 :::
 
 The table below presents these URL components with examples dissecting a Web Publisher link to our docs page:
