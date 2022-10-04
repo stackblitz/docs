@@ -46,7 +46,7 @@ jobs:
 
 In order to reduce the friction when creating a bug reproduction, you can create a starter project that your users will be able to instantly launch, edit, and add to the issue.
 
-💡 Read all about running projects from GitHub in the [GitHub Importer Guide](/guides/open-source/open-from-github).
+💡 Read all about running projects from GitHub in the [GitHub Importer Guide](/guides/integration/open-from-github).
 
 :::info How can we improve this guide?
 Haven't found an answer to your question? [Let us know!](mailto:devrel@stackblitz.com)

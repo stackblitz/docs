@@ -4,15 +4,15 @@ export const userGuide = [
   { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
   { text: 'Available environments', link: '/guides/user-guide/available-environments' },
   { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
-  { text: 'Embedding projects', link: '/guides/user-guide/embedding' },
   { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
   { text: 'Keyboard shortcuts', link: '/guides/user-guide/keyboard-shortcuts' },
 ];
 
-export const openSourceGuide = [
-  { text: 'Launching projects from GitHub', link: '/guides/open-source/open-from-github' },
-  { text: 'Creating projects with the SDK', link: '/guides/open-source/create-with-sdk' },
-  { text: 'Bug reproductions', link: '/guides/open-source/bug-reproductions' },
+export const integrationGuide = [
+  { text: 'Embedding projects', link: '/guides/integration/embedding' },
+  { text: 'Launching projects from GitHub', link: '/guides/integration/open-from-github' },
+  { text: 'Creating projects with the SDK', link: '/guides/integration/create-with-sdk' },
+  { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
 ];
 
 export const api = [

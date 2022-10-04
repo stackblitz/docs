@@ -28,7 +28,7 @@ There is no greater buzzkill than having to fiddle with the deployment and build
 
 ### Delightful docs
 
-Add interactive examples [from a GitHub repository](/guides/open-source/open-from-github) or [hook up an existing StackBlitz project](/guides/open-source/create-with-sdk) to your docs, blog, or website. Help your users fall in love with your project right from the first try.
+Add interactive examples [from a GitHub repository](/guides/integration/open-from-github) or [hook up an existing StackBlitz project](/guides/integration/create-with-sdk) to your docs, blog, or website. Help your users fall in love with your project right from the first try.
 
 ### Interactive playgrounds
 
@@ -36,11 +36,11 @@ Create a [project starter](/guides/user-guide/starter-projects) or boilerplate c
 
 ### Quick demos
 
-Working on a blog post or a conference talk? [Create a StackBlitz project that you can quickly share](/guides/user-guide/embedding). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
+Working on a blog post or a conference talk? [Create a StackBlitz project that you can quickly share](/guides/integration/embedding). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
 
 ### Effective bug reproductions
 
-Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its [own StackBlitz reproduction](/guides/open-source/bug-reproductions) so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
+Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its [own StackBlitz reproduction](/guides/integration/bug-reproductions) so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
 
 ### Build whole educational experiences
 
