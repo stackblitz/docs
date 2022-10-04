@@ -22,6 +22,7 @@ Open Source projects can provide a custom URL as a convenient starting point for
 - [Docusaurus](https://docusaurus.io/): **[docusaurus.new](https://docusaurus.new/)**
 - [Eleventy](https://www.11ty.dev/): **[11ty.new](https://11ty.new)** or **[eleventy.new](https://eleventy.new)**
 - [Faker](https://fakerjs.dev): **[fakerjs.dev/new](https://fakerjs.dev/new)**
+- [Histoire](https://histoire.dev): **[histoire.dev/new](https://histoire.dev/new)**
 - [Hydrogen](https://hydrogen.shopify.dev/): **[hydrogen.new](https://hydrogen.new)**
 - [NativeScript](https://nativescript.org/):
   - TypeScript: **[nativescript.new](https://nativescript.new)**
@@ -35,7 +36,7 @@ Open Source projects can provide a custom URL as a convenient starting point for
 - [Node.js](https://nodejs.org/): **[node.new](https://node.new)**
 - [Nodemon](https://nodemon.io/): **[node.new/nodemon](http://node.new/nodemon)**
 - [Nx](https://nx.dev/): **[node.new/nx](https://node.new/nx)**
-- [Qwik](https://qwik.builder.io/): **[qwik.new](http://qeik.new/)**
+- [Qwik](https://qwik.builder.io/): **[qwik.new](http://qwik.new/)**
 - [Rakkas](https://rakkasjs.org): **[rakkasjs.org/new](https://rakkasjs.org/new)**
 - [Remix](https://remix.run/): **[remix.new](https://remix.new)**
 - [Slidev](https://sli.dev): **[sli.dev/new](https://sli.dev/new)**
@@ -43,7 +44,7 @@ Open Source projects can provide a custom URL as a convenient starting point for
 - [Storybook](https://storybook.js.org/): **[storybook.new](https://storybook.new)**
 - [SvelteKit](https://kit.svelte.dev/): **[sveltekit.new](https://sveltekit.new)**
 - [Vite](https://vitejs.dev/): **[vite.new](https://vite.new)** (and [more](https://vitejs.dev/guide/#trying-vite-online))
-<!-- - [VitePress](https://vitepress.vuejs.org/): **[vitepress.new](https://vitepress.new)** -->
+- [VitePress](https://vitepress.vuejs.org/): **[vitepress.new](https://vitepress.new)**
 - [Vitest](https://vitest.dev/): **[vitest.new](https://vitest.new)**
 
 ## Adding a new starter project
