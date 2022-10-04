@@ -10,6 +10,7 @@ export const userGuide = [
 ];
 
 export const openSourceGuide = [
+  { text: 'Web Publisher docs integration', link: '/guides/open-source/web-publisher-docs-integration' },
   { text: 'Launching projects from GitHub', link: '/guides/open-source/open-from-github' },
   { text: 'Creating projects with the SDK', link: '/guides/open-source/create-with-sdk' },
   { text: 'Bug reproductions', link: '/guides/open-source/bug-reproductions' },
