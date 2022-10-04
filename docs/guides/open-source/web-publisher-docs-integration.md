@@ -32,36 +32,38 @@ You will be redirected to the Web Studio editor and you can continue your work.
 
 This section will guide you step by step through integrating Web Publisher to your docs.
 
-### 1. Setup check
+### 1. Repo compatibility check
 
 Before you begin, verify your toolchain works in WebContainers. To do this, add `pr.new` to the beginning of your docs repository GitHub URL. 
 
-::: tip EXAMPLE
+:::info Example
 This is the GitHub address of the StackBlitz docs repo:
+
 `https://github.com/stackblitz/docs/`
 
-To verify if it runs in WebContainers, we'll add `pr.new` to the beginning of the URL:
+To check if this repo runs in WebContainers, we'll add `pr.new` to the beginning of the URL:
+
 `https://pr.new/github.com/stackblitz/docs/`
 :::
 
-If you see that **the preview loads correctly**, your dev server runs properly in WebContainers, which means that your repo is compatible.
+If you see that **the preview loads correctly**, this means that your dev server runs properly in WebContainers and your repo is compatible.
 
 <!-- add screen recording -->
 
 ### 2. Specify the Web Publisher editing link
 
-Create a URL that will specify which file the Web Publisher should feature in the editor and which path to render in the preview. Web Publisher links follow this pattern:
+Let's compose a URL that will specify which file the Web Publisher should feature in the editor and which path to render in the preview. Web Publisher links follow this pattern:
 
 ```
 https://pr.new/github.com/{repo owner's username}/{repo}/edit/{branch}/{repo file path}
 ```
 
 :::tip
-This can be a lot to take in so we prepared a **Web Publisher link generator**: 
+You can use the **Web Publisher URL generator** to compose your link:
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/edit/vue-c2wltp?file=src/App.vue)
 :::
 
-To see these URL components with examples, consult this table that dissects a link editing our docs page:
+The table below presents these URL components with examples dissecting a Web Publisher link to our docs page:
 
 | Element | Example | Notes |
 | ------- | ------- | ----- | 
@@ -74,15 +76,11 @@ To see these URL components with examples, consult this table that dissects a li
 | `?initialPath=` | `?initialPath=` | Query param to specify which URL path should be rendered in the preview  |
 | `{URL path}` | `guides/user-guide/what-is-stackblitz`| - |
 
-The final Web Publisher editing link will be as follows:
+Put together, the Web Publisher editing link is as follows:
 
 ```
 https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md?&view=editor
 ```
-
-:::tip
-Additionally, you can specify if you want the 
-:::
 
 ### 3. Customize the link
 
@@ -93,23 +91,23 @@ To specify the first parameter, add `?` at the end of the base link. Connect the
 ### `initialPath`
 
 <p>
-    <b>Default behavior</b> the Preview window renders the homepage as not always the file path or file name is the same as the rendered route<br/>
-    <b>Argument</b> A route to be rendered<br/>
-    <b>Example</b> <code>`initialPath=guides/user-guide/what-is-stackblitz`</code><br/>
+    <b>Default behavior:</b> the Preview window renders the homepage as not always the file path or file name is the same as the rendered route.<br/>
+    <b>Argument:</b> A route to be rendered.<br/>
+    <b>Example:</b> <code>initialPath=guides/user-guide/what-is-stackblitz</code><br/>
 </p>
 
 ### `view`
 
 <p>
-    <b>Default behavior:</b> Web Publisher features the Editor and the Preview <br/>
-    <b>Argument:</b> `editor` | `preview` | `default`<br/>
-    <b>Example:</b> <code>`view=editor`</code><br/>
+    <b>Default behavior:</b> Web Publisher features the Editor and the Preview. <br/>
+    <b>Argument:</b> <code>editor</code> | <code>preview</code> | <code>default</code><br/>
+    <b>Example:</b> <code>view=editor</code><br/>
 </p>
 
 
 ### 4. Configure "edit this page"
 
-To enable edits on the docs sites created by generators, you will need to change the default settings. Consult the table below to find which files you need to change.
+To enable edits on the sites created via generators, you need to change the default settings. Consult the table below to find which files to change.
 
 | Library | File to change | What to change |
 | ------- | -------------- | -------------- |
@@ -126,12 +124,12 @@ To enable edits on the docs sites created by generators, you will need to change
 
 ## Compatibility Mode
 
-In some cases, you may notice "Compatibility Mode on":
+In some cases, you may notice the "Compatibility Mode on" banner:
 <!-- screenshot -->
 
 This mode comes on when Web Publisher is viewed on Safari.
 
-Safari currently doesn't support WebContainers but but you can still run publisher and make commits. In this mode, we just show a rendered version of your markdown file instead of **WHAT????**.
+[Safari currently doesn't support WebContainers](https://blog.stackblitz.com/posts/cross-browser-with-coop-coep/) but but you can still run Web Publisher and submit Pull Requests. In this mode, we show a rendered version of your markdown file instead of **WHAT????**.
 
 ## Planned Features
 
