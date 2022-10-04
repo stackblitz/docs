@@ -4,7 +4,7 @@ title: Embedding projects
 
 # {{ $frontmatter.title }}
 
-Embedding is one way to display a StackBlitz editor in a documentation page, a blog post, or any other page. This page walks you through manual embedding in iframes. You can also do it [programmatically by using our SDK](/platform/api/javascript-sdk).
+Embedding is one way to display a StackBlitz editor in a documentation page, a blog post, or any other page. This page walks you through manual embedding in iframes. You can also do it [programmatically by using our SDK](/guides/integration/create-with-sdk).
 
 ## Embedding StackBlitz project on a page
 

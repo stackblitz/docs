@@ -65,6 +65,6 @@ Note that none of above can be pollyfilled.
 
 ## Embedding
 
-Projects based on WebContainers can be [embedded](/guides/user-guide/embedding) as any other StackBlitz project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
+Projects based on WebContainers can be [embedded](/guides/integration/embedding) as any other StackBlitz project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
 
 For that reason, we only support embedding WebContainers-based projects in **Chromium-based browsers**.

@@ -57,10 +57,10 @@ export default defineConfig({
           items: links.userGuide,
         },
         {
-          text: 'Open Source Guide',
+          text: 'Integration Guide',
           collapsible: true,
           collapsed: false,
-          items: links.openSourceGuide,
+          items: links.integrationGuide,
         },
       ],
       '/platform/api/': [

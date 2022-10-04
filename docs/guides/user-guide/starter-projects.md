@@ -49,4 +49,4 @@ Open Source projects can provide a custom URL as a convenient starting point for
 
 ## Adding a new starter project
 
-If you'd like to see a new starter, please follow the directions on [this page in the Open Source guide](/guides/open-source/open-from-github#set-up-the-main-starter-url).
+If you'd like to see a new starter, please follow the directions on [this page in the integration guide](/guides/integration/open-from-github#set-up-the-main-starter-url).

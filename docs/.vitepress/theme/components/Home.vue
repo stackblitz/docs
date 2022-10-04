@@ -14,10 +14,10 @@ const topLinks = [
   },
   {
     icon: 'embed',
-    title: 'StackBlitz for Open Source',
+    title: 'Integrating StackBlitz',
     description:
       'Follow guides on creating interactive playgrounds, transforming your documentation, improving bug reproductions, and using StackBlitz for tech education.',
-    url: '/guides/open-source/open-from-github',
+    url: '/guides/integration/open-from-github',
   },
   {
     icon: 'sdk',
