@@ -9,6 +9,11 @@
 /docs/enterprise/installation/quickstart-existing-cluster/   /enterprise/installation/quickstart-existing-cluster
 /docs/enterprise/installation/quickstart-gcp/   /enterprise/installation/quickstart-gcp
 /docs/enterprise/installation/quickstart/   /enterprise/installation/quickstart
+/docs/enterprise/Installation/administrator-guide/   /enterprise/installation/administrator-guide
+/docs/enterprise/Installation/air-gapped-installs/   /enterprise/installation/air-gapped-installs
+/docs/enterprise/Installation/quickstart-existing-cluster/   /enterprise/installation/quickstart-existing-cluster
+/docs/enterprise/Installation/quickstart-gcp/   /enterprise/installation/quickstart-gcp
+/docs/enterprise/Installation/quickstart/   /enterprise/installation/quickstart
 /docs/enterprise/legal/oss-licenses/   /enterprise/legal/oss-licenses
 /docs/enterprise/log-aggregation/   /enterprise/log-aggregation
 /docs/enterprise/npm/   /enterprise/npm
