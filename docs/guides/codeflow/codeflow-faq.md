@@ -10,7 +10,7 @@ This page addresses the frequently asked questions concerning: current features,
 
 ### Can I run Vim?
 
-This is perhaps the most frequently-asked question with regards to StackBlitz features. We have good news. You can run Vim now. Enable the extension in Codeflow and experience the escape room that is Vim.
+This is perhaps the most frequently-asked question with regards to StackBlitz features - and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3). We have good news. You can run Vim now. Enable the extension in Codeflow and experience the escape room that is Vim.
 
 ### How does it work?
 

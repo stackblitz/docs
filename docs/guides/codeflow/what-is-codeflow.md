@@ -28,11 +28,11 @@ Unlike StackBlitz, legacy online IDEs run on remote servers and stream the resul
 
 **StackBlitz solves these problems by doing all computing inside your browser**. This leverages decades of speed and security innovations but also **unlocks key development and debugging benefits**.
 
-Lastly, StackBlitz is capable of running Node.js inside the browser.
+Lastly, StackBlitz is capable of running Node.js inside the browser so you can use the web to build the web.
 
 ## Explore
 
-Excited to get started?
+Excited to get started? Try these:
 - HERE A LINK TO SOMETHING THAT CAN DEMO CODEFLOW - can be a docs page
 - HERE A LINK TO SOMETHING THAT CAN DEMO PR.NEW - can be a docs page
 - HERE A LINK TO SOMETHING THAT CAN DEMO REVIEWING A PR - can be a docs page, can be a special pr on github
