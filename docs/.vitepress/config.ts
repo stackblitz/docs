@@ -62,6 +62,12 @@ export default defineConfig({
           collapsed: false,
           items: links.integrationGuide,
         },
+        {
+          text: 'Codeflow Guide',
+          collapsible: true,
+          collapsed: false,
+          items: links.codeflowGuide,
+        },
       ],
       '/platform/api/': [
         {

@@ -15,6 +15,11 @@ export const integrationGuide = [
   { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
 ];
 
+export const codeflowGuide = [
+  { text: 'What is Codeflow?', link: '/guides/codeflow/what-is-codeflow' },
+  { text: 'Codeflow FAQ', link: '/guides/codeflow/codeflow-faq' },
+];
+
 export const api = [
   {
     text: 'JavaScript SDK',
