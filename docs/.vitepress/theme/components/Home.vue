@@ -23,7 +23,7 @@ const topLinks = [
     icon: 'sdk',
     title: 'API Reference',
     description:
-      'Embed GitHub repos, create new projects, build educational experiences, all programmatically, with JS SDK.',
+      'Embed GitHub repos, create new projects, build educational experiences, all programmatically with our SDK.',
     url: '/platform/api/javascript-sdk',
   },
   {
