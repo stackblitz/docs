@@ -39,8 +39,8 @@ export default defineConfig({
       indexName: 'stackblitz',
     },
     editLink: {
-      pattern: 'https://github.com/stackblitz/docs/edit/main/docs/:path',
-      text: 'Edit this page on GitHub',
+      pattern: 'https://pr.new/stackblitz/docs/edit/main/docs/:path',
+      text: 'Edit this page',
     },
     nav: [
       { text: 'Guides', link: links.userGuide[0].link },
