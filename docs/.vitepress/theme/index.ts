@@ -11,13 +11,18 @@ import './styles/index.scss';
 
   Not sure if this is the right place to add runtime logic like this for
   vitepress sites, but it seems to work in the prod build.
+
+  Also, I needed to add the globalThis check because it seems like Vitepress
+  imports this file at build time in node, and DOM API calls broke the build.
 */
-// document.body.addEventListener('click', function(e: any) {
-//   if(e.target.classList.contains('edit-link-button')){
-//     e.target.href = e.target.href + '?initialPath=' + document.location.pathname
-//   }
-// }, true); 
-console.log('hello there')
+if (!!globalThis.window) {
+  document.body.addEventListener('click', function(e: any) {
+    if(e.target.classList.contains('edit-link-button')){
+      e.target.href = e.target.href + '?initialPath=' + document.location.pathname
+    }
+  }, true);
+}
+
 export default {
   ...DefaultTheme,
 };
