@@ -26,7 +26,9 @@ Stay in your flow state.
 
 Unlike StackBlitz, legacy online IDEs run on remote servers and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
 
-**StackBlitz solves these problems by doing all compute inside your browser**. This leverages decades of speed and security innovations and also **unlocks key development and debugging benefits**.
+**StackBlitz solves these problems by doing all computing inside your browser**. This leverages decades of speed and security innovations but also **unlocks key development and debugging benefits**.
+
+Lastly, StackBlitz is capable of running Node.js inside the browser.
 
 ## Explore
 
@@ -46,7 +48,6 @@ Excited to get started?
 
 ## Learn more
 - HERE A LINK TO FAQs
-
 
 ## Get involved
 
