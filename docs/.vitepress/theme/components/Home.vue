@@ -16,21 +16,21 @@ const topLinks = [
     icon: 'embed',
     title: 'Integrating StackBlitz',
     description:
-      'Follow guides on creating interactive playgrounds, transforming your documentation, improving bug reproductions, and using StackBlitz for tech education.',
+      'Follow guides on building interactive playgrounds, improving bug repros, and using StackBlitz for tech education.',
     url: '/guides/integration/open-from-github',
   },
   {
     icon: 'sdk',
     title: 'API Reference',
     description:
-      'Unlock the potential of WebContainers with our JavaScript SDK. Embed  GitHub repos, create new projects, and build new educational experiences, all programmatically.',
+      'Embed GitHub repos, create new projects, build educational experiences, all programmatically with our SDK.',
     url: '/platform/api/javascript-sdk',
   },
   {
     icon: 'embed',
     title: 'WebContainers',
     description:
-      'Consult the documentation on browser support, package managers, project configuration, performance, and troubleshooting.',
+      'Learn about browser support, package managers, project config, performance, and troubleshooting.',
     url: '/platform/webcontainers/browser-support',
   },
   {
@@ -52,7 +52,7 @@ const topLinks = [
 const externalLinks = [
   {
     title: 'StackBlitz Blog',
-    description: 'Stay up to date with our news and developers’ insights.',
+    description: 'Stay up to date with our news, read tech posts from our engineers, and join in celebrating our community.',
     url: 'https://blog.stackblitz.com/',
     large: true,
     bgImgLight: '/img/link-bg-bolt-light.jpg',
