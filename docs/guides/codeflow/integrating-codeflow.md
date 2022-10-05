@@ -4,16 +4,12 @@ title: Integrating Codeflow
 
 # {{ $frontmatter.title }}
 
-<!-- I feel like these should be separate pages in the integration section - one page per product -->
-
 This page walks you through integrating Codeflow into your project.
 
-## How to integrate StackBlitz staging bot
-(steps)
+## What is Codeflow?
 
-## How to integrate Codeflow
-(steps)
+## How to integrate Codeflow into your project
+<!-- steps with screenshots -->
 
-### codeflow.json
+### `codeflow.json`
 
-## How to integrate Web Publisher into your docs and blogs
