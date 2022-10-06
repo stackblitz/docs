@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 import * as data from '../docs/data';
+import { GTAG_INIT, GTAG_URL } from './analytics';
 
 export default defineConfig({
   // Metadata
@@ -21,6 +22,8 @@ export default defineConfig({
     */
     // TODO: remove before making public
     ['meta', { name: 'robots', content: 'noindex,nofollow,noarchive' }],
+    ['script', { src: GTAG_URL, async: '' }],
+    ['script', {}, GTAG_INIT],
   ],
 
   srcDir: 'docs',
