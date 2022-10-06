@@ -6,7 +6,7 @@ title: FAQ
 
 This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.
 
-## Current features
+## Features - current and future
 
 ### Can I run Vim?
 
@@ -14,9 +14,14 @@ This is perhaps the most frequently-asked question with regards to StackBlitz fe
 
 ### How does it work?
 
-
 ### Is it stable?
 It is in beta version available through the [early access program](ADD LINK). It will enter general availability in early 2023.
+
+### What features are you planning to implement?
+
+### Is multiplayer mode in the works?
+
+### Can I run private repositories?
 
 ## Security 
 
@@ -26,7 +31,3 @@ It is in beta version available through the [early access program](ADD LINK). It
 ## Pricing and access
 
 ### Is Codeflow free?
-
-### 
-
-## Planned features

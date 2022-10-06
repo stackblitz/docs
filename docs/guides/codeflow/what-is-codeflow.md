@@ -7,18 +7,18 @@ title: What is Codeflow?
 Codeflow is a one-click integration with GitHub for seamless coding workflows. 
 
 <!-- ideally these would be tiles or something else with little gifs THAT START PLAYING ONLY WHEN HOVERED ON -->
-Now you can switch contexts seamlessly:
+StackBlitz now helps you switch contexts seamlessly:
 - **Codeflow**: a fully fledged desktop-grade dev environment capable of running your whole workflow - from production-level dev work to reviewing pull requests
 - **pr.new**: spin up a live environment to open any repository, contribute to any Open Source project, or view any PR by adding "pr.new"  to the beginning of the GitHub URL
 - **Web Publisher**: edit your docs or blog with a live preview of the changes
-- **StackBlitz staging bot**: providing a one-click link to spin up a whole environment for pull requests and issues
+- **StackBlitz staging bot**: a vigilant friend providing a one-click link to spin up a whole environment for pull requests and issues
 
 Stay in your flow state.
 
 ## Key features
-- **unmatched security**: all development is happening in your browser tab, including running Node.js, git, package managers (npm, yarn, pnpm), and local extensions
-- **shockingly fast**: the entire dev environment spins up in miliseconds - even reinstalling `node_modules` is as simple as refreshing the page, with pnpm running up to four times as fast as locally
-- **works online and offline**: continue your work even when you lose the Internet connection midway
+- **unmatched security**: all development is happening in your browser tab, including running Node.js, git, package managers (npm, yarn, pnpm), and local extensions.
+- **shockingly fast**: the entire dev environment spins up in miliseconds - even reinstalling `node_modules` is as simple as refreshing the page, with pnpm running up to four times as fast as locally!
+- **works online and offline**: continue your work even when you lose the Internet connection midway.
 - **your environment is always online**: your apps never go to sleep and have no bandwidth limits - share the URL with as many friends, colleagues, and communities as you’d like!
 - **always free for Open Source**: you're the future of the web development and we love you.
 
