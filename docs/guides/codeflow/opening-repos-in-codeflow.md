@@ -1,5 +1,5 @@
 ---
-title: Opening repos in Codeflow
+title: Opening repositories in Codeflow
 ---
 
 # {{ $frontmatter.title }}
