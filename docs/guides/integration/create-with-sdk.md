@@ -4,7 +4,7 @@ title: Creating projects with the SDK
 
 <script setup lang="ts">
 import sdk from '@stackblitz/sdk';
-import InlineButton from '../../.vitepress/theme/components/InlineButton.vue';
+import InlineButton from '@theme/components/InlineButton.vue';
 
 function openProjectDemo() {
   sdk.openProject(

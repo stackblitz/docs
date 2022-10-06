@@ -3,7 +3,7 @@ title: Available environments
 ---
 
 <script setup lang="ts">
-  import SupportIcon from '../../.vitepress/theme/components/SupportIcon.vue';
+  import SupportIcon from '@theme/components/SupportIcon.vue';
 </script>
 
 # {{ $frontmatter.title }}

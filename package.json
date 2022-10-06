@@ -2,11 +2,11 @@
   "name": "stackblitz-docs",
   "version": "0.0.0",
   "scripts": {
-    "build": "vitepress build docs",
-    "dev": "vitepress dev docs",
+    "build": "vitepress build",
+    "dev": "vitepress dev",
     "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
-    "serve": "vitepress serve docs",
-    "start": "vitepress dev docs"
+    "serve": "vitepress serve",
+    "start": "vitepress dev"
   },
   "dependencies": {
     "@stackblitz/sdk": "^1.8.0",

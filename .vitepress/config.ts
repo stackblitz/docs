@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress';
 
-import * as links from './links';
+import * as data from '../docs/data';
 
 export default defineConfig({
   // Metadata
@@ -23,9 +23,11 @@ export default defineConfig({
     ['meta', { name: 'robots', content: 'noindex,nofollow,noarchive' }],
   ],
 
+  srcDir: 'docs',
+  outDir: 'build',
+
   // Build
   cleanUrls: 'without-subfolders',
-  outDir: '../build',
   // Prevent builds when content has dead links
   ignoreDeadLinks: false,
 
@@ -43,10 +45,10 @@ export default defineConfig({
       text: 'Edit this page on GitHub',
     },
     nav: [
-      { text: 'Guides', link: links.userGuide[0].link },
-      { text: 'API', link: links.api[0].link },
-      { text: 'WebContainers', link: links.webcontainers[0].link },
-      { text: 'Enterprise', link: links.enterprise[0].link! },
+      { text: 'Guides', link: data.userGuideLinks[0].link },
+      { text: 'API', link: data.apiLinks[0].link },
+      { text: 'WebContainers', link: data.webcontainersLinks[0].link },
+      { text: 'Enterprise', link: data.enterpriseLinks[0].link! },
     ],
     sidebar: {
       '/guides/': [
@@ -54,13 +56,13 @@ export default defineConfig({
           text: 'User Guide',
           collapsible: true,
           collapsed: false,
-          items: links.userGuide,
+          items: data.userGuideLinks,
         },
         {
           text: 'Integration Guide',
           collapsible: true,
           collapsed: false,
-          items: links.integrationGuide,
+          items: data.integrationGuideLinks,
         },
       ],
       '/platform/api/': [
@@ -68,7 +70,7 @@ export default defineConfig({
           text: 'StackBlitz API',
           collapsible: true,
           collapsed: false,
-          items: links.api,
+          items: data.apiLinks,
         },
       ],
       '/platform/webcontainers/': [
@@ -76,7 +78,7 @@ export default defineConfig({
           text: 'WebContainers',
           collapsible: true,
           collapsed: false,
-          items: links.webcontainers,
+          items: data.webcontainersLinks,
         },
       ],
       '/enterprise/': [
@@ -84,7 +86,7 @@ export default defineConfig({
           text: 'Enterprise Edition',
           collapsible: false,
           collapsed: false,
-          items: links.enterprise,
+          items: data.enterpriseLinks,
         },
       ],
     },
