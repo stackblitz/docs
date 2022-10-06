@@ -1,5 +1,6 @@
 ---
 title: Getting started
+description: This page outlines how you can start using our StackBlitz editor.
 ---
 
 # {{ $frontmatter.title }}

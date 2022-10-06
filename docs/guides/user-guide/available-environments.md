@@ -1,5 +1,6 @@
 ---
 title: Available environments
+description: "There are two kinds of environments that run projects in StackBlitz: EngineBlock and WebContainers. Each project in StackBlitz is tied to one or the other."
 ---
 
 <script setup lang="ts">
