@@ -5,20 +5,18 @@ import * as data from '../docs/data';
 export default defineConfig({
   // Metadata
   lang: 'en-US',
-  title: 'StackBlitz Documentation',
+  title: 'StackBlitz Docs',
   description:
-    'Discover how to use of StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
+    'Discover how to use StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/img/favicon.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'StackBlitz Documentation' }],
+    ['meta', { property: 'og:title', content: 'StackBlitz Docs' }],
     ['meta', { property: 'og:image', content: '/img/stackblitz-docs-social.png' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:site', content: '@stackblitz' }],
-    /*
-    ['meta', { property: 'og:url', content: '' }],
-    ['meta', { property: 'og:description', content: '' }],
-    */
+    ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
+    ['meta', { name: 'twitter:site', content: '@StackBlitz' }],
+    ['meta', { name: 'twitter:image', content: '/img/stackblitz-docs-social.png' }],
     // TODO: remove before making public
     ['meta', { name: 'robots', content: 'noindex,nofollow,noarchive' }],
   ],
