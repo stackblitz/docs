@@ -1,5 +1,6 @@
 ---
 title: "IDE: what’s on your screen"
+description: This page provides an overview of the terms we use to describe each of the pieces of the UI available to you in StackBlitz projects.
 ---
 
 # {{ $frontmatter.title }}

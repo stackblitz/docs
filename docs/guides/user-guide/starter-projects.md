@@ -1,5 +1,6 @@
 ---
 title: Starter projects
+description: Starter projects are online playgrounds, typically built by the core team of a given project and run on StackBlitz.
 ---
 
 # {{ $frontmatter.title }}
