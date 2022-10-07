@@ -17,7 +17,7 @@ const subtitle = computed(() => {
 </script>
 
 <template>
-  <a class="link" :href="link">
+  <a class="link" :href="link" rel="noopener" target="_blank">
     <img v-if="icon" alt="" :src="icon" class="icon" />
     <span v-else class="default-icon"></span>
     <span class="text">
