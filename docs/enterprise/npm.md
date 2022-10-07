@@ -12,7 +12,7 @@ By default, StackBlitz EE points at the public npm registry. You can configure S
 
 In the StackBlitz Admin panel header, hover over "Settings" and click on "npm". This will take you to the "NPM Settings" page:
 
-![NPM Config](/doc_images/npm-config.png)
+![NPM Config](./assets/npm-config.png)
 
 To start, check the "enabled" box. Then, fill in the URL of your npm registry.
 

@@ -41,11 +41,11 @@ At the top of the editor, choose a unique name for this starter project. This wi
 
 For example, a forked Angular project will have a slug that looks like this:
 
-![EE Console](/doc_images/ee-title-1.png)
+![EE Console](./assets/ee-title-1.png)
 
 So if we're creating a custom starter project for our company's internal design system, we might rename it to this:
 
-![EE Console](/doc_images/ee-title-2.png)
+![EE Console](./assets/ee-title-2.png)
 
 ### 4. Add your new starter project to the dashboard
 
@@ -53,11 +53,11 @@ To make this template available to your team, go to your StackBlitz dashboard an
 
 > If you don't see this link, your account likely needs to be [granted admin privileges](/enterprise/user-management).
 
-![EE Console](/doc_images/customize-project-link.png)
+![StackBlitz dashboard with a “Customize starter projects” link in the “Create a new project” section](./assets/customize-project-link.png)
 
 Then, in the sidebar of that page paste in the project's slug ID and click "add":
 
-![EE Console](/doc_images/add-starter.gif)
+![Animation of adding a starter project using a project’s slug](./assets/add-starter.gif)
 
 > Protip: On this page, you can also drag to reorder the starter projects as they will appear on the dashboard.
 

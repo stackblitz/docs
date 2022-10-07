@@ -18,7 +18,7 @@ StackBlitz SAML integration relies on a user-level token. To ensure consistent d
 
 Begin by logging into your StackBlitz admin account and then click on "Setup Authentication". This will take you to the "Auth Settings" page:
 
-![SAML Config](/doc_images/saml-config.png)
+![SAML Config](./assets/saml-config.png)
 
 This page can also be accessed directly at `https://editor.<Your StackBlitz Domain>/admin/auth_settings`.
 
@@ -26,11 +26,11 @@ This page can also be accessed directly at `https://editor.<Your StackBlitz Doma
 
 Once you have the StackBlitz Auth Settings page open, you'll need to log in to Okta and access the Admin dashboard to create an application. Using the sidebar on the admin dashboard, navigate to `Applications` > `Applications` and select the `Create App Integration` button. Choose `SAML 2.0` as the type of application.
 
-![Create a SAML App](/doc_images/okta-integration.png)
+![Create a SAML App]./assets/okta-sso/okta-integration.png)
 
 Next, fill out the `App name` for the SAML integration. This is what the App will be called within Okta. We recommend using the value `StackBlitz`. You can optionally upload a logo for the app as well.
 
-![Create an App Integration in Okta](/doc_images/okta-integration-2.png)
+![Create an App Integration in Okta](./assets/okta-sso/okta-integration-2.png)
 
 On the next page, you'll need to fill out a few options using values from the Auth Settings page in the StackBlitz admin dashboard.
 
@@ -38,11 +38,11 @@ On the next page, you'll need to fill out a few options using values from the Au
 - For `Audience URI (SP Entity ID)`, choose an identifier for the SAML application. We recommend using `stackblitz`. Use the same value in your StackBlitz SAML settings for `Issuer (Service Provider Entity ID)`.
 - In the `Attribute Statements (optional)` section, you must configure the `email` and `name` attributes for your users. We recommend using `user.email` for the `email` attribute, and `user.firstName + " " + user.lastName` for the `name` attribute.
 
-![Configure SAML Integration in Okta](/doc_images/okta-integration-3.png)
+![Configure SAML Integration in Okta](./assets/okta-sso/okta-integration-3.png)
 
 Proceed to create the SAML integration. YOu'll be prompted with the screen below. You'll need to use the values from this screen to configure the SAML integration within StackBlitz.
 
-![Okta SAML config for StackBlitz](/doc_images/okta-integration-4.png)
+![Okta SAML config for StackBlitz](./assets/okta-sso/okta-integration-4.png)
 
 ### Configuring StackBlitz SAML Settings for Okta
 
@@ -53,7 +53,7 @@ In your StackBlitz SAML Settings, configure the following values:
 - For `Issuer (Service Provider Entity ID)`, make sure to use the same value that was specified for `Audience URI (SP Entity ID)` when creating the SAML app in Okta.
 - Optionally, you can specify a custom `Integration Name` (for instance, "Okta") to change the text on the login pages of StackBlitz to say `Sign In With <Integration Name>`.
 
-![Okta SAML config in StackBlitz Admin Panel](/doc_images/okta-integration-5.png)
+![Okta SAML config in StackBlitz Admin Panel](./assets/okta-sso/okta-integration-5.png)
 
 Finally, ensure the `Enabled` checkbox for SAML Settings is checked and hit the `Save Auth Settings` button. StackBlitz should now be configured to log in with Okta. Once users or groups have been assigned to the StackBlitz SAML app within Okta, you should be able to log out of the admin panel and log in via Okta!
 
@@ -63,15 +63,15 @@ In order to provide the best user experience for your developers, we recommend p
 
 To provide a group of users access to StackBlitz, navigate to the StackBlitz App page within the Okta admin panel and select assignments tab. Then click on the `Assign` dropdown and select `Assign to Groups`.
 
-![Okta SAML config in StackBlitz Admin Panel](/doc_images/okta-integration-6.png)
+![Okta SAML config in StackBlitz Admin Panel](./assets/okta-sso/okta-integration-6.png)
 
 Select a group that encompasses all potential users of the application. If there are no specific groups representing your user base, we recomend using the default Okta group `Everyone`. Click `Assign` next to the group you'd like to assign the application to.
 
-![Okta SAML config in StackBlitz Admin Panel](/doc_images/okta-integration-7.png)
+![Okta SAML config in StackBlitz Admin Panel](./assets/okta-sso/okta-integration-7.png)
 
 Once completed, you should be able see the group in the `Assignments` section of the SAML app.
 
-![Created App Assignment in Okta](/doc_images/okta-integration-8.png)
+![Created App Assignment in Okta](./assets/okta-sso/okta-integration-8.png)
 
 If you need a more customized assignment for your installation, reach out to your Okta administrator for assistance.
 

@@ -18,7 +18,7 @@ StackBlitz is excited to offer SAML-based Single Sign-on (SSO) to organizations 
 
 Begin by logging into your StackBlitz admin account and click on "Setup Authentication". This will take you to the "Auth Settings" page:
 
-![SAML Config](/doc_images/saml-config.png)
+![SAML Config](./assets/saml-config.png)
 
 This page can also be accessed directly at `https://editor.<Your StackBlitz Domain>/admin/auth_settings`.
 
@@ -28,13 +28,13 @@ Please take note of the "Assertion Customer Service URL" as it will be used in t
 
 Begin by logging into your ADFS host to open the ADFS Management tool. In the left-hand navigation bar, choose "Relying Party Trusts", then "Add Relying Party Trust..." from the right-hand navigation.
 
-![ADFS Relying Party Trust Wizard](/doc_images/ee/adfs-sso/adfs-party-trust-wizard.png)
+![ADFS Relying Party Trust Wizard](./assets/adfs-sso/adfs-party-trust-wizard.png)
 
 Leave "claims aware" selected and press "Start" to begin configuration. On the following screen, select "Enter data on the relying party manually" and press "Next" to continue.
 
 Enter a display name for the relying party trust. This is an arbitrary value that is only used to identify the trust entry in the ADFS Management console. We recommend setting it to the URL of your StackBlitz installation. Once you've chosen a display name, click "Next." On the next screen, leave the encryption settings the same and click "Next" again.
 
-![Configure URL](/doc_images/ee/adfs-sso/party-trust-url.png)
+![Configure URL](./assets/adfs-sso/party-trust-url.png)
 
 Choose "Enable support for the SAML 2.0 WebSSO protocol" and enter the "Assertion Customer Service URL" value you noted earlier from the StackBlitz Auth Settings page into the "Relying party SAML 2.0 SSO service URL" field. Click "Next."
 
@@ -46,17 +46,13 @@ On the "Ready to Add Trust" screen, review your selections and press "Next" to c
 
 On this screen you will add two (2) rules: StackBlitz Attributes and Name ID. Click "Add Rule" to begin the rule wizard. Create the following rules:
 
-![StackBlitz Attributes Rule](/doc_images/ee/adfs-sso/stackblitz-attributes.png)
-
 Claim rule template: Send LDAP Attribures as Claims
 
-![StackBlitz Attributes Rule](/doc_images/ee/adfs-sso/stackblitz-attributes.png)
-
-![Name ID Rule](/doc_images/ee/adfs-sso/name-id.png)
+![StackBlitz Attributes Rule](./assets/adfs-sso/stackblitz-attributes.png)
 
 Claim rule template: Transform an Incoming Claim
 
-![Name ID Rule](/doc_images/ee/adfs-sso/name-id.png)
+![Name ID Rule](./assets/adfs-sso/name-id.png)
 
 Once you've added both rules, click "OK" to close the Rules editor.
 

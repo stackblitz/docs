@@ -22,20 +22,20 @@ The credentials for the default admin account should have been provided to you b
 
 Upon signing in, navigate to the Admin Panel using the link in the dashboard's header:
 
-![Admin Link](/doc_images/ee/manage-users/admin-link.png)
+![Admin Link](./assets/manage-users/admin-link.png)
 
 ### 3. Grant admin access to your SSO account
 
 On the Admin Panel dashboard, hover over the "Manage" tab and click on "Users":
 
-![Manage Users Link](/doc_images/ee/manage-users/manage-users-link.png)
+![Manage Users Link](./assets/manage-users/manage-users-link.png)
 
 You can use the "Filters" sidebar to search for your account by either your email address or username:
 
-![Find User](/doc_images/ee/manage-users/find-user.png)
+![Find User](./assets/manage-users/find-user.png)
 
 Once you've located your account, click the "Edit" link and upgrade your account to be an admin user:
 
-![Make Admin](/doc_images/ee/manage-users/make-admin.gif)
+![Make Admin](./assets/manage-users/make-admin.gif)
 
 With this step completed, you can now sign out of the default admin account and sign in using your SSO account which now has admin access. Your account can now customize your team's starter projects as well as grant admin access to additional SSO accounts.
