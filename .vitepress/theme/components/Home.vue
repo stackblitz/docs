@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Footer from './Footer.vue';
-import GridLinks from './GridLinks.vue';
+import CardGrid from './CardGrid.vue';
 import HomeIntro from './HomeIntro.vue';
 
 defineProps<{
@@ -13,11 +13,11 @@ defineProps<{
 <template>
   <div class="top-section">
     <HomeIntro />
-    <GridLinks :links="topLinks" />
+    <CardGrid :links="topLinks" />
   </div>
   <div class="external-links">
     <h2>Learn More</h2>
-    <GridLinks :links="externalLinks" />
+    <CardGrid :links="externalLinks" />
   </div>
   <Footer :sections="footerSections" />
 </template>

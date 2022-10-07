@@ -5,11 +5,8 @@ defineProps<{ links: any[] }>();
 </script>
 
 <template>
-  <ul class="GridLinks">
-    <li
-      v-for="link in links"
-      :class="{ 'GridLinks-item': true, 'GridLinks-item--large': link.large }"
-    >
+  <ul class="grid">
+    <li v-for="link in links" :class="{ item: true, item_large: link.large }">
       <CardLink v-bind="link" />
     </li>
   </ul>
@@ -18,7 +15,7 @@ defineProps<{ links: any[] }>();
 <style scoped lang="scss">
 @import '../styles/vars';
 
-.GridLinks {
+.grid {
   display: grid;
   max-width: 1280px;
   margin: 0 auto;
@@ -29,16 +26,16 @@ defineProps<{ links: any[] }>();
   @media (min-width: $bp-medium) {
     grid-template-columns: 1fr 1fr;
 
-    .GridLinks-item > a {
+    .item > a {
       height: 100%;
     }
   }
   @media (min-width: $bp-large) {
     grid-template-columns: repeat(6, 1fr);
-    .GridLinks-item {
+    .item {
       grid-column: span 2;
     }
-    .GridLinks-item--large {
+    .item_large {
       grid-column: span 3;
     }
   }
