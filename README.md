@@ -2,6 +2,8 @@
 
 Welcome to the home of the [StackBlitz documentation site](https://developer.stackblitz.com)!
 
+Our docs site was built with [VitePress](https://vitepress.vuejs.org/) 💙
+
 ## What is StackBlitz?
 StackBlitz is an **instant fullstack web IDE for the JavaScript ecosystem**. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
 
@@ -74,7 +76,9 @@ Use Web Publisher for small content updates for a pleasant editing experience:
 
 
 ### Developing with StackBlitz Codeflow
-Use StackBlitz Codeflow for bigger content updates. Codeflow will spin up the entire dev environment with a running dev server. To access it, [click this button](https://stackblitz.com/~/github.com/stackblitz/docs).
+Use StackBlitz Codeflow for bigger content updates. Codeflow will spin up the entire dev environment with a running dev server. When using Codeflow, please remember to commit and push your changes frequently.
+
+To access it, [click this button](https://stackblitz.com/~/github.com/stackblitz/docs).
 
 <!-- TODO add button -->
 
@@ -92,10 +96,7 @@ npm start
 
 ### Editor setup
 
-We recommend the following extensions:
-
-- Installing the [Vue Language Features extension (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar).
-- Using [Volar’s Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471) (aka disabling the built-in TypeScript and JavaScript Language Features extension for the current workspace).
+We have already equipped this repository with the suggested extension ([Vue Language Features extension (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)). Additionally, you can use [Volar’s Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471) (aka disabling the built-in TypeScript and JavaScript Language Features extension for the current workspace).
 
 
 ---
