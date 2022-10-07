@@ -40,10 +40,10 @@ export default defineConfig({
       apiKey: '8fe79cd865807082f50083ddd5647b0b',
       indexName: 'stackblitz',
     },
-    //editLink: {
-    // pattern: 'https://github.com/stackblitz/docs/edit/main/docs/:path',
-    // text: 'Edit this page on GitHub',
-    //},
+    editLink: {
+    pattern: 'https://github.com/stackblitz/docs/edit/main/docs/:path',
+    text: 'Edit this page on GitHub',
+    },
     nav: [
       { text: 'Guides', link: data.userGuideLinks[0].link },
       { text: 'API', link: data.apiLinks[0].link },
