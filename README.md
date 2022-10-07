@@ -22,9 +22,9 @@ There are numerous ways to contribute to docs:
 - **Fix typos**
   - Use [Web Publisher](#content-updates-with-web-publisher) for a quick typo fix!
 - **Create demos**
-  - but before you do, please read our [contributing guide](CONTRIBUTING.md).
+  - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read our [contributing guide](CONTRIBUTING.md) and reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
 - **Fix an issue**
-  - but before you do, please read our [contributing guide](CONTRIBUTING.md).
+  - You see an issue that's of interest to you? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
 
 Thank you for making our docs better!
 
