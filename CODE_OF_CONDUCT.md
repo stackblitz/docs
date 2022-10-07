@@ -28,7 +28,7 @@ Examples of **unacceptable behavior** by participants include:
 - Someone’s refusal to explain or debate social justice concepts
 - Criticisms of racist, sexist, cissexist, or otherwise oppressive behavior or assumptions
 
-In community communication, we do not appreciate any form of aggression (passive aggression included) — please don't post stuff if you can't be kind and empathetic. Be proactive about owning your mistakes and apologizing if you have a feeling or know that you impacted someone in a negative way.
+In community communication, we do not appreciate any form of aggression (passive aggression included) — please don't post if you can't be kind and empathetic. Be proactive about owning your mistakes and apologizing if you have a feeling or know that you impacted someone in a negative way.
 
 ## Attribution
 This Code of Conduct is adapted from:
