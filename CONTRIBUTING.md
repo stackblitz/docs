@@ -18,7 +18,7 @@ We believe that communication is the lifeblood of any Open Source project. Pleas
 There are numerous ways to contribute to docs:
 - **Share feedback**
   - Each docs page features a feedback tool at the bottom - you can use it to let us know what you think!
-  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com/stackblitz/docs/issues) and if not, feel free to [create one](https://github.com/withastro/docs/issues/new).
+  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com/stackblitz/docs/issues) and if not, feel free to [create one](https://github.com/stackblitz/docs/issues/new).
 - **Share ideas**
   - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
 - **Fix typos**
@@ -64,7 +64,7 @@ If what you want to say doesn't really fall into actionable "problem" or "improv
 
 Except for small typo fixes and content updaets, the starting point for contributing is always an issue. 
 
-**If you see that something is wrong**, you can [check to see if the issue already exists](https://github.com/stackblitz/docs/issues), and if it does, leave a comment saying you'd like to work on it and when you have time to do that - and our team member will assign you. In case the issue doesn't yet exist, feel free to [create one](https://github.com/withastro/docs/issues/new). Before doing that, please see [what makes a good issue](#what-makes-a-good-issue). A docs team member will triage incoming issues and assign labels.
+**If you see that something is wrong**, you can [check to see if the issue already exists](https://github.com/stackblitz/docs/issues), and if it does, leave a comment saying you'd like to work on it and when you have time to do that - and our team member will assign you. In case the issue doesn't yet exist, feel free to [create one](https://github.com/stackblitz/docs/issues/new). Before doing that, please see [what makes a good issue](#what-makes-a-good-issue). A docs team member will triage incoming issues and assign labels.
 
 **If you don't have any specific issue you'd like to work on**, you can browse available ones. Please note that we use [issue labels](#issue-labels-we-use) so you can modify your search. After you've found an issue you'd like to work on, leave a comment and tell us when you have time to do that. A docs team member will assign you.
 

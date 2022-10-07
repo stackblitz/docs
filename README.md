@@ -18,7 +18,7 @@ Thank you for visiting this repository. We love our community and we appreciate 
 There are numerous ways to contribute to docs:
 - **Share feedback**
   - Each docs page features a feedback tool at the bottom - you can use it to let us know what you think!
-  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com/stackblitz/docs/issues) and if not, feel free to [create one](https://github.com/withastro/docs/issues/new).
+  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com/stackblitz/docs/issues) and if not, feel free to [create one](https://github.com/stackblitz/docs/issues/new).
 - **Share ideas**
   - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
 - **Fix typos**
