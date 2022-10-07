@@ -1,14 +1,14 @@
 # PR Description
 
-## This PR fixes the issue number: 
+This PR fixes the issue number: 
 
-## Summary of my changes and explanation of my decisions
+### Summary of my changes and explanation of my decisions
 
 - 
 -
 -
 
-# Self-check:
+### Self-check
 
 Please check all that apply:
 
@@ -16,7 +16,7 @@ Please check all that apply:
 - [ ] I have reviewed my code or content update and edited it to the best of my abilities
 - [ ] I have commented my code, particularly in hard-to-understand areas; my comments are concise
 
-# Contributors list
+### Contributors list
 
 Would you like your contribution to be celebrated? Please check all that apply:
 
