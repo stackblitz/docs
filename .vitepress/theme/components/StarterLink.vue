@@ -31,13 +31,14 @@ const subtitle = computed(() => {
 @import '../styles/vars';
 
 .link {
+  --default-icon: url(/icons/fa-link.svg);
   display: flex;
   flex-direction: row;
   align-items: center;
   min-height: 64px;
   border-radius: 8px;
   border: solid 2px hsl(200 30% 40% / 0.15);
-  padding: 10px 28px 10px 20px;
+  padding: 10px 24px 10px 18px;
   gap: 16px;
   text-align: left;
   color: var(--vp-c-text-2);
@@ -70,10 +71,8 @@ const subtitle = computed(() => {
   width: 24px;
   height: 24px;
   background-color: currentColor;
-  -webkit-mask-image: url(/icons/fa-display-code.svg);
-  -webkit-mask-size: 24px 24px;
-  mask-image: url(/icons/fa-display-code.svg);
-  mask-size: 24px 24px;
+  -webkit-mask: var(--default-icon) center/contain no-repeat;
+  mask: var(--default-icon) center/contain no-repeat;
 }
 
 .text {
