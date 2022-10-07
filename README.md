@@ -15,18 +15,44 @@ Thank you for visiting this repository. We love our community and we appreciate 
 
 There are numerous ways to contribute to docs:
 - **Share feedback**
-  - Each docs page features a feedback tool at the bottom - let us know what you think!
-  - If you see something broken or think a page, a section, or an example could be better. You can also [check if there's an issue for that already](https://github.com/stackblitz/docs/issues) and if not, [create one](https://github.com/withastro/docs/issues/new/choose).
+  - Each docs page features a feedback tool at the bottom - you can use it to let us know what you think!
+  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com/stackblitz/docs/issues) and if not, feel free to [create one](https://github.com/withastro/docs/issues/new).
 - **Share ideas**
-  - We want our docs to be delightful - if you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions)
+  - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
 - **Fix typos**
   - Use [Web Publisher](#content-updates-with-web-publisher) for a quick typo fix!
 - **Create demos**
   - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read our [contributing guide](CONTRIBUTING.md) and reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
 - **Fix an issue**
-  - You see an issue that's of interest to you? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
+  - You see an issue you'd like to worn on? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
+- **Reviews**
+  - Please feel free to check existing PRs and issues. Share your loving feedback, help the other contributor approach the task in a better way, spot lurking bugs, errors, and mistakes. You can use pr.new to that end - in the URL of the issue or PR, swap "github.com" with "pr.new" to spin up the environment and the preview.
 
 Thank you for making our docs better!
+
+### What makes good issue
+
+When creating an issue, please include:
+- a descriptive title,
+- a link to what this issue refers to (a page, an example, a section),
+- if applicable, a screenshot or screen recording,
+- explanation of why you think it is an issue,
+- if you have an idea, a possible solution,
+- ideally, external links that explain any advanced or lesser-known topics so others can learn from your issue.
+
+Please raise issues in situations like the following:
+- confusing, overwhelming, or incorrect explanation,
+- outdated examples,
+- vague or missing content,
+- demo or page request,
+- compromised accessibility,
+- anything broken: demo, page, url, image,
+
+If what you want to say doesn't really fall into actionable "problem" or "improvement", you can **start a new Discussion topic**. For example, feel free to ask:
+- Could we split this page into multiple smaller steps?
+- This navigation item doesn't fit where it is - could we move it somewhere else?
+- How could we make the docs site more (adjective)?
+
 
 ---
 
