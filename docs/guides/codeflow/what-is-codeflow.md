@@ -33,8 +33,8 @@ Lastly, StackBlitz is capable of running Node.js inside the browser so you can u
 Excited to try it yourself? Try these:
 - Take Web Publisher for a spin by adding your name to [ilovecodeflow.com](https://ilovecodeflow.com/)!
 - Explore how we built [this docs site](https://pr.new/github.com/stackblitz/docs) in Codeflow IDE!
-- Review [this suspicious PR](https://github.com/stackblitz/docs/pull/33) in Codeflow IDE 🕵️ 
-- See our CodeflowApp bot in action on [a PR]() or [an issue]()!
+- Review [this suspicious PR](https://pr.new/stackblitz/docs/pull/33) in Codeflow IDE 🕵️ 
+- See our CodeflowApp bot in action on [a PR](https://github.com/stackblitz/docs/pull/33#issuecomment-1272628321) or [an issue](https://github.com/stackblitz/docs/pull/33#issuecomment-1272628321)!
 
 ## Learn
 
