@@ -10,24 +10,44 @@ This page covers package managers supported in Codeflow IDE and configuration of
 
 <!--@include: ./parts/supported-packages.md-->
 
-## Enabling pnpm overrides
+## pnpm overrides
 
-As per [pnpm documentation](https://pnpm.io/package_json#pnpmoverrides), this option "allows you to instruct pnpm to override any dependency in the dependency graph. This is useful to enforce all your packages to use a single version of a dependency, backport a fix, or replace a dependency with a fork."
+Codeflow IDE allows users to specify which packages they want to override in `package.json` and where the packages are located. A pnpm override is what is going to be installed when you run pnpm i instead of what is defined in a package.json file.
 
-Codeflow IDE allows users to specify which packages they want to override in `package.json` and where the packages would be present. A pnpm override is what is going to be installed when you run pnpm i instead of what is defined in a package.json file.
+:::info pnpm override
+A [pnpm override](https://pnpm.io/package_json#pnpmoverrides) "instructs pnpm to override a dependency in the dependency graph. This is useful to enforce all your packages to use a single version of a dependency, backport a fix, or replace a dependency with a fork."
+:::
 
-Follow the following steps to configure pnpm overrides for your project.
+### pnpm override use case scenario
 
-### 1. In the project's root directory, create `.stackblitz` folder in your root directory.
+For example, an issue is submitted to Vite with a StackBlitz reproduction.
+1. A maintainer opens the issue in Codeflow IDE. Codeflow IDE pulls the reproduction that is defined in the issue, puts it in a reproduction folder, and
+reads the `codeflow.json` file. 
+2. If that file defines an override, Codeflow adds them to the repro’s `package.json` file. So, for example, instead of pulling Vite from npm, it will link the local vite project into that reproduction instead.
+3. The maintainer can then run `pnpm i` in the repro and pnpm will install the dependencies defined in the override.
 
-### 2. Inside this folder, create a file called `codeflow.json`.
+:::tip TL;DR
+Using pnpm override, you can fix a bug and immediately try it out in the reproduction the user provided.
+:::
 
-### 
+### Enabling pnpm overrides
 
+To set up pnpm overrides, follow these steps:
 
+1. In the project's root directory, create `.stackblitz` folder in your root directory.
 
-## Integrating StackBlitz Staging Bot
-<!-- steps with screenshots -->
+2. Inside this folder, create a file called `codeflow.json`.
 
-## Opting Out of StackBlitz Staging Bot
-<!-- steps with screenshots -->
+3. In the file, specify the overrides by providing a key-vaue pair of the dependency to override and the folder where it is located.
+
+```json
+// .stackblitz/codeflow.json
+
+{
+    "pnpm": {
+        "overrides": {
+            "vite": "./packages/vite"
+        }
+    }
+}
+```

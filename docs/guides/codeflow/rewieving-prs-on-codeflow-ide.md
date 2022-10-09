@@ -1,5 +1,5 @@
 ---
-title: Reviewing PRs on Codeflow
+title: Reviewing PRs on Codeflow IDE
 ---
 
 # {{ $frontmatter.title }}

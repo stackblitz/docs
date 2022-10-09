@@ -8,7 +8,7 @@ This page addresses the frequently asked questions concerning: current features,
 
 [[toc]]
 
-## Features - current and future
+## Features
 
 ### Can I run Vim?
 
@@ -18,11 +18,11 @@ This is perhaps the most frequently-asked question with regards to StackBlitz fe
 
 <!--@include: ./parts/supported-packages.md-->
 
-### Which runtime do you support?
+### Which runtime does Codeflow support?
 
 Just like WebContainers, Codeflow runs on Node.js 16.
 
-### Is it stable?
+### Is Codeflow stable?
 It is in the beta version available through the [early access program](ADD LINK). It will enter general availability in early 2023.
 
 ### Do I have to be signed in to use Codeflow IDE? 
