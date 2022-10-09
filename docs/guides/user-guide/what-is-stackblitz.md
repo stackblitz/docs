@@ -38,6 +38,14 @@ Create a [project starter](/guides/user-guide/starter-projects) or boilerplate c
 
 Working on a blog post or a conference talk? [Create a StackBlitz project that you can quickly share](/guides/integration/embedding). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
 
+### Entire programming workflow
+
+One click and our Codeflow IDE spins up a whole code editor with git integration and hot-reloading preview. Now all you need for your dev work is just a browser.
+
+### Straightforward docs editing
+
+Every project deserves collaborative documentation. Typo fixes have never been easier - click, see what you edit as you edit, and submit a PR when you’re satisfied. All in the browser, thanks to Web Publisher.
+
 ### Effective bug reproductions
 
 Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its [own StackBlitz reproduction](/guides/integration/bug-reproductions) so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
