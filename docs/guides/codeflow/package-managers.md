@@ -4,40 +4,26 @@ title: Package Managers
 
 # {{ $frontmatter.title }}
 
-This page walks you through reviewing PRs on Codeflow.
+This page covers package managers supported in Codeflow IDE and configuration of pnpm overrides.
 
+## Packages supported in Codeflow IDE
 
+<!--@include: ./parts/supported-packages.md-->
 
+## Enabling pnpm overrides
 
-1. Create `.stackblitz` folder in your root directory
-2. Inside this folder, create two files: `stackblitz.json` and `codeflow.json`
+As per [pnpm documentation](https://pnpm.io/package_json#pnpmoverrides), this option "allows you to instruct pnpm to override any dependency in the dependency graph. This is useful to enforce all your packages to use a single version of a dependency, backport a fix, or replace a dependency with a fork."
 
-stackblitz.json is a 1:1 replacement for .stackblitzrc so you no longer need the .rc file in your root dir. If you do, however, the .rc file takes precedence. However, the stackblitz.json is a recommended path moving forward.
+Codeflow IDE allows users to specify which packages they want to override in `package.json` and where the packages would be present. A pnpm override is what is going to be installed when you run pnpm i instead of what is defined in a package.json file.
 
-codeflow.json
-- bot
-- pnpm
+Follow the following steps to configure pnpm overrides for your project.
 
+### 1. In the project's root directory, create `.stackblitz` folder in your root directory.
 
-bot:
-we enable the bot by default
-if you install it in your repositories, it will be triggered by WHAT 
+### 2. Inside this folder, create a file called `codeflow.json`.
 
-To disable it:
-in the codeflow.json, you'll write
+### 
 
-"bot": {
-    "issues": {
-        "enabled": false
-    }
-} 
-
-
-pnpm:
-pnpm has a cool feature where you can override existing packages
-in the codeflow.json we allow users to say which packages they want to override in package.json and what folders they would be present
-
-### `codeflow.json`
 
 
 ## Integrating StackBlitz Staging Bot

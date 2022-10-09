@@ -16,11 +16,7 @@ This is perhaps the most frequently-asked question with regards to StackBlitz fe
 
 ### Which package managers do you support?
 
-Currently, we support the following package managers:
-- **pnpm**: fully supported
-- **npm**: partially supported
-- **Yarn**: partially supported
-- **private registries**: soon
+<!--@include: ./parts/supported-packages.md-->
 
 ### Which runtime do you support?
 
@@ -63,3 +59,4 @@ Yes! Please check our list of [planned features](#what-features-are-you-planning
 ## Pricing and access
 
 ### Is Codeflow free?
+Codeflow IDE is free for Open Source projects and public repositories an will remain this way forever.
