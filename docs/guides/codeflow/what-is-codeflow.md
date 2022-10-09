@@ -7,10 +7,10 @@ title: What is Codeflow?
 <!--@include: ./parts/codeflow.md-->
 
 StackBlitz now helps you switch contexts seamlessly:
-- <!--@include: ./parts/codeflow-ide.md-->
-- <!--@include: ./parts/web-publisher.md-->
-- <!--@include: ./parts/pr-new.md-->
-- <!--@include: ./parts/codeflowapp-bot.md-->
+- 💻 <!--@include: ./parts/codeflow-ide.md-->
+- 📝 <!--@include: ./parts/web-publisher.md-->
+- 🪄 <!--@include: ./parts/pr-new.md-->
+- 🤖 <!--@include: ./parts/codeflowapp-bot.md-->
 
 
 ## Key features
@@ -30,13 +30,20 @@ Lastly, StackBlitz is capable of running Node.js inside the browser so you can u
 
 ## Explore
 
-Excited to get started? Try these:
-- HERE A LINK TO SOMETHING THAT CAN DEMO CODEFLOW - can be a docs page
-- HERE A LINK TO SOMETHING THAT CAN DEMO PR.NEW - can be a docs page
-- HERE A LINK TO SOMETHING THAT CAN DEMO REVIEWING A PR - can be a docs page, can be a special pr on github
-- HERE A LINK TO SOMETHING THAT CAN DEMO WEB PUBLISHER - can be a docs page
-- HERE A LINK TO SOMETHING THAT CAN DEMO STAGING BOT - can be a docs page
+Excited to try it yourself? Try these:
+- Take Web Publisher for a spin by adding your name to [ilovecodeflow.com](https://ilovecodeflow.com/)!
+- Explore how we built [this docs site](https://pr.new/github.com/stackblitz/docs) in Codeflow IDE!
+- Review [this suspicious PR]() in Codeflow IDE 🕵️ 
+- See our CodeflowApp bot in action on [a PR]() or [an issue]()!
 
+## Learn
+
+Understand the Codeflow better! Read about:
+- Working in [Codeflow IDE](./working-in-codeflow-ide).
+- Updating content [with Web Publisher](./content-updates-with-web-publisher).
+- Using the short URL [pr.new](./using-pr-new).
+- Getting help from [CodeflowApp bot](./integrating-codeflowapp-bot).
+- Check out our **[Frequently Asked Questions page](./codeflow-faq)**.
 
 ## Add Codeflow to your project
 
@@ -45,8 +52,9 @@ Follow these handy integration guides to link your project to Codeflow:
 - 📝 [Web Publisher](./integrating-web-publisher) integration guide
 - 🤖 [CodeflowApp bot](./integrating-codeflowapp-bot) integration guide
 
-## Learn more
-- Check out our **[Frequently Asked Questions page](./codeflow-faq)**.
+## Feedback? Ideas? Dreams?
+
+Let us know what you think!
 - **Ask questions** on [GitHub Discussions](https://github.com/stackblitz/docs/discussions/new?category=Q-A).
 - **Request a new docs page** or a more thorough explanation using our [GitHub Discussions](https://github.com/stackblitz/docs/discussions/new?category=ideas)!
 

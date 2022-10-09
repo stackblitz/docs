@@ -16,7 +16,7 @@ It is designed for enabling you to quickly spin up the entire environment withou
 
 :::tip Fun fact
 
-At StackBlitz, we have been using Codeflow IDE in our daily development, including PR reviews. In fact, this docs site was built using Codeflow IDE - with typo corrections done through Web Publisher.
+At StackBlitz, we have been using Codeflow IDE in our daily internal development to create and maintain our OSS libraries and docs, including PR reviews. In fact, this docs site was built entirely using Codeflow IDE (with typo corrections done through Web Publisher).
 
 → If you're curious what our experience has been like, check out this blog post 👀
 
@@ -47,7 +47,7 @@ You can open the live Preview in a separate tab or window for more comfort.
 
 Depending on the framework, **some changes may cause the dev server to stop running**, which may cause the Preview to either not respond to new updates or feature an error screen ("Unable to connect to `local.webcontainer.io`"). 
 
-Check in the terminal if the dev server is still running. To restart it, click in the terminal window and:
+Check in the terminal if the dev server is still running. If you want to restart it, click in the terminal window and:
 
 1. press the "up arrow" button to bring up the start command,
 2. press enter to run that command,
@@ -55,13 +55,7 @@ Check in the terminal if the dev server is still running. To restart it, click i
 
 ## Reopening the Preview panel 
 
-If you close the Preview by accident, you can reopen it in two ways:
-- **in a new tab:** in the terminal, scroll all the way down and click on the link in the "→ Local: `http://localhost:PORT_NUMBER`"
-- **as a split screen**: click the terminal window and:
-    1. press `ctrl+c` to "kill" the server, 
-    2. press the "up arrow" button to bring up the start command,
-    3. press enter to run that command,
-    4. in the popup notification in the bottom right corner, choose to open the Preview.
+If you close the Preview by accident, you can reopen it by selecting in the left-side navigation bar the icon of a plug entitled "Ports in use". You can open the Preview in a separate tab or as a split screen.
 
 ## Saving changes
 
@@ -78,7 +72,9 @@ Moreover, you will also see that dot on the tab in your browser do you remember 
 
 ## Making a PR with pr.new with changes in a project
 
-Let's add a file to this docs repository.
+Let's add a file to this test docs repository.
+
+
 
 ### 1. In the GitHub URL of the repository, replace "github.com" with "pr.new".
 
