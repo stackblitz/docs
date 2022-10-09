@@ -4,7 +4,7 @@ title: Integrating Codeflow IDE
 
 # {{ $frontmatter.title }}
 
-This page walks you through integrating Codeflow IDE into your project - either by adding a button that opens the repository or by installing CodeflowApp staging bot.
+This page covers integrating Codeflow IDE into your project - either by adding a button that opens the repository or by installing CodeflowApp staging bot.
 
 ## What is Codeflow IDE?
 

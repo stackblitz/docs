@@ -4,7 +4,7 @@ title: Integrating CodeflowApp Bot
 
 # {{ $frontmatter.title }}
 
-This page walks you through integrating CodeflowApp Bot into your project.
+This page covers integrating CodeflowApp Bot into your project.
 
 ## What is CodeflowApp Bot?
 
