@@ -7,10 +7,10 @@ title: What is Codeflow?
 <!--@include: ./parts/codeflow.md-->
 
 StackBlitz now helps you switch contexts seamlessly:
-- 💻 <!--@include: ./parts/codeflow-ide.md-->
-- 📝 <!--@include: ./parts/web-publisher.md-->
-- 🪄 <!--@include: ./parts/pr-new.md-->
-- 🤖 <!--@include: ./parts/codeflowapp-bot.md-->
+- <!--@include: ./parts/codeflow-ide.md-->
+- <!--@include: ./parts/web-publisher.md-->
+- <!--@include: ./parts/pr-new.md-->
+- <!--@include: ./parts/codeflowapp-bot.md-->
 
 
 ## Key features
@@ -31,10 +31,10 @@ Lastly, StackBlitz is capable of running Node.js inside the browser so you can u
 ## Explore
 
 Excited to try it yourself? Try these:
-- Take Web Publisher for a spin by adding your name to [ilovecodeflow.com](https://ilovecodeflow.com/)!
-- Explore how we built [this docs site](https://pr.new/github.com/stackblitz/docs) in Codeflow IDE!
-- Review [this suspicious PR](https://pr.new/stackblitz/docs/pull/33) in Codeflow IDE 🕵️ 
-- See our CodeflowApp bot in action on [a PR](https://github.com/stackblitz/docs/pull/33#issuecomment-1272628321) or [an issue](https://github.com/stackblitz/docs/pull/33#issuecomment-1272628321)!
+- 📝 Take Web Publisher for a spin by adding your name to [ilovecodeflow.com](https://ilovecodeflow.com/)!
+- 💻 Explore how we built [this docs site](https://pr.new/github.com/stackblitz/docs) in Codeflow IDE!
+- 🕵️ Review [this suspicious PR](https://pr.new/stackblitz/docs/pull/33) in Codeflow IDE
+- 🤖 See our CodeflowApp bot in action on [a PR](https://github.com/stackblitz/docs/pull/33#issuecomment-1272628321) or [an issue](https://github.com/stackblitz/docs/pull/33#issuecomment-1272628321)!
 
 ## Learn
 
@@ -54,7 +54,7 @@ Follow these handy integration guides to link your project to Codeflow:
 
 ## Feedback? Ideas? Dreams?
 
-Let us know what you think!
+Let us know what you think:
 - **Ask questions** on [GitHub Discussions](https://github.com/stackblitz/docs/discussions/new?category=Q-A).
 - **Request a new docs page** or a more thorough explanation using our [GitHub Discussions](https://github.com/stackblitz/docs/discussions/new?category=ideas)!
 
