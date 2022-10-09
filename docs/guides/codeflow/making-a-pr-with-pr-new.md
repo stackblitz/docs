@@ -12,13 +12,15 @@ This page walks you through using pr.new to contribute to any Open Source projec
 
 ## How does pr.new work?
 
-Although initially planned to be a tool for enabling faster pull requests, pr.new can be used on any repository, issue, branch or a PR.
+Although initially planned to be a tool for enabling faster pull requests, pr.new can be used on any repository, issue, branch, or PR.
 
 By replacing github.com with pr.new in the repository URL, you will open Codeflow with files ready to be edited. If the repository runs on WebContainers, a dev server will start so you can verify your changes in real time.
 
 ::: info
-If you use pr.new on a GitHub URL with a filepath,  Web Publisher will open instead of Codeflow. You can still choose to open Codeflow by clicking on the "Open in IDE" button.
+If you use pr.new on a GitHub URL ending with path to a specific file, Web Publisher will open instead of Codeflow for an easier editing experience. You can still choose to open Codeflow by clicking on the "Open in IDE" button.
 :::
+
+If you open a branch that has an associated open pull request, a "pull request review mode" will be immediately triggered and you will see diffs. You can switch to the standard file view by choosing a "file" icon on the left vertical nav bar.
 
 ## Making a PR with pr.new with changes in a project
 

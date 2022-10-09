@@ -1,1 +1,1 @@
-During the beta, Codeflow IDE doesn't offer persistence so please remember that you need to commit your changes before closing the page. This feature is included in our product roadmap.
+During the beta, Codeflow IDE doesn't offer change persistence between the sessions. Please **remember to commit and push** your changes before closing the page. This feature is included in our product roadmap.
