@@ -48,7 +48,7 @@ To check if this repo runs in WebContainers, we'll add `pr.new` to the beginning
 
 If you see that **the preview loads correctly**, this means that your dev server runs properly in WebContainers and your repo is compatible.
 
-<!-- add screen recording -->
+<!-- TODO: add screen recording -->
 
 ### 2. Specify the Web Publisher editing link
 

@@ -14,11 +14,12 @@ This page covers integrating CodeflowApp Bot into your project.
 
 To integrate CodeflowApp bot, you will install it using GitHub UI. Follow this step by step guide:
 
+<!-- TODO: add steps -->
+
+
 1. Visit [CodeflowApp profile on GitHub Apps](https://github.com/apps/codeflowapp)
 2. Click ""
 TBA
-
-
 
 - SELECT THE REPOS YOU WANT TO GIVE ACCESS TO. This is what we recommend. If you choose “all in org”, the pr bot will install on all repos in your org.
 - Installing bot ensures every commit to default branch and any pull request branches are pre-cloned for instant bootup times. (Note: this is something anyone integrating publisher should have installed on their repo).

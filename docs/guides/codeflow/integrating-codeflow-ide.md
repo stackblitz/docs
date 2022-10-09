@@ -14,6 +14,8 @@ This page covers integrating Codeflow IDE into your project - either by adding a
 
 To help your users quickly spin up the entire environment with your project, you can add a CTA (call-to-action) button on your website or in the README file. 
 
+<!-- TODO: add buttons -->
+
 | Button preview | Direct URL |
 | --- | --- |
 | <img alt="Open in StackBlitz" src="/img/open_in_stackblitz.svg" /> | <a href="/img/open_in_stackblitz.svg" target="_blank">open_in_stackblitz.svg</a> |

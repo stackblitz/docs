@@ -39,7 +39,7 @@ Go to the repository of the page and open the file you want to edit in the "edit
 
 In the Preview panel on the right side, navigate to the page you want to edit. It will live update as you type.
 
-<!-- add gif -->
+<!-- TODO: add gif -->
 
 :::tip
 Alternatively, you can also use our Web Publisher link generator, which will also immediately feature the edited page in the Preview:
@@ -52,13 +52,13 @@ Welcome to Web Publisher, a friendly publishing tool for content updates on blog
 
 Let us give you a quick tour around this tool.
 
-<!-- screenshot of the whole screen -->
+<!-- TODO: screenshot of the whole screen -->
 
 ### Top navigation bar
 
 On the left side, you see the information about which file you're editing and in which repository.
 
-<!-- screenshot -->
+<!-- TODO: screenshot -->
 
 On the right side, you see three buttons:
 - **"Open in the IDE"**, which redirects to [Codeflow IDE](./working-in-codeflow-ide), which is helpful when you want to work on a few files or add images.
@@ -69,6 +69,8 @@ On the right side, you see three buttons:
 
 Editor is where you will introduce your changes - it is located on the left side or takes a whole space. Note that if specified so in the link, Web Publisher will open with the editor on full screen.
 
+<!-- TODO: screenshot -->
+
 In the top left corner, you will see the name of the file you're editing.
 
 In the top right corner, you will see an icon that either expands the Editor view or switches back to split screen.
@@ -76,6 +78,8 @@ In the top right corner, you will see an icon that either expands the Editor vie
 ### Live Preview
 
 Live Preview is where you can verify the changes you've introduced as it updates as you type or with a little delay. It is located on the left side or takes a whole space. Note that if specified so in the link, Web Publisher will open with the Preview on full screen.
+
+<!-- TODO: screenshot -->
 
 In the top left corner, you will see the name of the panel ("Preview") and an icon that allows you to trigger a refresh if the changes you introduced are not updating.
 

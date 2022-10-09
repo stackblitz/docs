@@ -18,6 +18,8 @@ This short URL enables magical experiences by choosing just the right tools for 
 
 Below you will learn what to expect in different use cases.
 
+<!-- TODO: graph -->
+
 ### Opening a GitHub repository
 
 To open a GitHub repository with pr.new, open it on GitHub and in the browser's address tab, swap `github.com` with `pr.new`.
