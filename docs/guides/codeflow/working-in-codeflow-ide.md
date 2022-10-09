@@ -94,3 +94,8 @@ Follow these steps:
 6. Finally, you can submit your pull request by clicking on the "Open New PR" button 🥳
 
 ## Reviewing a PR with Codeflow IDE 
+
+Let's look at this suspicious PR[ilovecodeflow.com](https://github.com/stackblitz/ilovecodeflow.com).
+
+Follow these steps:
+1. Open the link in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
