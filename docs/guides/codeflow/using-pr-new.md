@@ -4,7 +4,7 @@ title: Using pr.new
 
 # {{ $frontmatter.title }}
 
-Open Source contributions have never been easier! 🥰 
+Open Source contributions have never been easier 🥰 
 
 This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
 
@@ -38,6 +38,6 @@ You will be redirected to [Codeflow IDE](./working-in-codeflow-ide) in the ["PR 
 
 ### Opening a file
 
-To edit a markdown file with pr.new, open it in the GitHub repository and click "edit". Now, in the browser's address tab, swap `github.com` with `pr.new`.
+To edit a file with pr.new, open it in the GitHub repository and click "edit". Now, in the browser's address tab, swap `github.com` with `pr.new`.
 
-You will be redirected to [Web Publisher]() for a more pleasant editing experience. You can still choose to open Codeflow by clicking on the "Open in IDE" button. 
+You will be redirected to [Web Publisher](./content-updates-with-web-publisher) for a more pleasant editing experience. You can still choose to open Codeflow by clicking on the "Open in IDE" button. 

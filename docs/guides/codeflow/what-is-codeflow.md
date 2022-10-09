@@ -42,7 +42,7 @@ Excited to get started? Try these:
 
 Follow these handy integration guides to link your project to Codeflow:
 - 💻 [Codeflow IDE](./integrating-codeflow-ide) integration guide
-- 📝 [Web Publisher](docs/guides/integration/integrating-web-publisher) integration guide
+- 📝 [Web Publisher](./integrating-web-publisher) integration guide
 - 🤖 [CodeflowApp bot](./integrating-codeflowapp-bot) integration guide
 
 ## Learn more

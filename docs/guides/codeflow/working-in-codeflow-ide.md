@@ -75,7 +75,25 @@ Moreover, you will also see that dot on the tab in your browser do you remember 
 
 :::
 
-## Making a PR with Codeflow IDE
 
+## Making a PR with pr.new with changes in a project
+
+Let's add a file to this docs repository.
+
+### 1. In the GitHub URL of the repository, replace "github.com" with "pr.new".
+
+<!-- gifs -->
+
+### 2. Introduce changes.
+
+<!-- gifs -->
+
+### 3. Commit the changes.
+
+<!-- gifs -->
+
+### 4. Make a pull request.
+
+<!-- gifs -->
 
 ## Reviewing a PR with Codeflow IDE 

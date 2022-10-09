@@ -17,11 +17,13 @@ export const integrationGuide = [
 
 export const codeflowGuide = [
   { text: 'What is Codeflow?', link: '/guides/codeflow/what-is-codeflow' },
-  { text: 'Working in Codeflow IDE', link: '/guides/codeflow/working-in-codeflow-ide' },
   { text: 'Using pr.new', link: '/guides/codeflow/using-pr-new' },
+  { text: 'Content updates with Web Publisher', link: '/guides/codeflow/content-updates-with-web-publisher' },
+  { text: 'Working in Codeflow IDE', link: '/guides/codeflow/working-in-codeflow-ide' },
   { text: 'Reviewing PRs on Codeflow IDE', link: '/guides/codeflow/rewieving-prs-on-codeflow-ide' },
   { text: 'Package Managers', link: '/guides/codeflow/package-managers' },
   { text: 'Integrating Codeflow IDE', link: '/guides/codeflow/integrating-codeflow-ide' },
+  { text: 'Integrating Web Publisher', link: '/guides/codeflow/integrating-web-publisher' },
   { text: 'Integrating CodeflowApp bot', link: '/guides/codeflow/integrating-codeflowapp-bot' },
   { text: 'Codeflow FAQ', link: '/guides/codeflow/codeflow-faq' },
 ];
