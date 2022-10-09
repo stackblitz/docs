@@ -64,7 +64,7 @@ reads the `codeflow.json` file.
 2. If that file defines an override, Codeflow adds them to the repro’s `package.json` file. So, for example, instead of pulling Vite from npm, it will link the local vite project into that reproduction instead.
 3. The maintainer can then run `pnpm i` in the repro and pnpm will install the dependencies defined in the override.
 
-:::tip TL;DR
+:::info TL;DR
 Using pnpm override, you can fix a bug and immediately try it out in the reproduction the user provided.
 :::
 
