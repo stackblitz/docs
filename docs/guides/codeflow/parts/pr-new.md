@@ -1,1 +1,1 @@
-**pr.new** is a short URL that can be used on any repository to explore code, branch, and issue, to review a PR, or even to edit a markdown file, all in a live environment with a realtime preview.
+**pr.new** is a short URL that can be used on any repository to explore code, branch, and issue, to review a PR, or even to edit a file, all in a live environment with a realtime preview.
