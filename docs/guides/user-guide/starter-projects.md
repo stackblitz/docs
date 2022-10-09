@@ -16,7 +16,7 @@ This page covers what starter projects are, where to find them, and how to creat
 
 Starter projects are online playgrounds, typically built by the core team of a given project and run on StackBlitz. They are used in project documentation or found under [a custom link](#new-domains). You can find some of them on our dashboard.
 
-![Project Starter Dashboard](/doc_images/project-starters.png)
+![Project Starter Dashboard](./assets/project-starters.png)
 
 ## .new domains
 

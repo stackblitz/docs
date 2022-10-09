@@ -13,11 +13,11 @@ If you wish to immediately embed your project on your page check a page on manua
 
 To start coding, navigate to the [StackBlitz homepage](https://stackblitz.com/). If you are not logged in, scroll down a bit to find a list of starter projects to choose from:
 
-![Project Starter Dashboard](/doc_images/project-starters-public.png)
+![Project Starter Dashboard](./assets/project-starters-public.png)
 
 If you _are_ logged in, you should see your personal dashboard with a very similar list of starter projects:
 
-![Project Starter Dashboard](/doc_images/project-starters.png)
+![Project Starter Dashboard](./assets/project-starters.png)
 
 You can explore the different categories (for instance, “Popular”, “Frontend”, “Fullstack”) to find a technology stack that you’d like to try out.
 
@@ -33,7 +33,7 @@ Worry not! With StackBlitz, you can [import projects](/guides/user-guide/importi
 
 Once you’ve chosen or uploaded a project, you should see a StackBlitz editor, which automatically compiles the project’s code to show a result on in the Preview panel on the right. Now, make some changes to the code and see live updates in the Preview!
 
-![The StackBlitz editor showing the React TypeScript starter project](/doc_images/getting-started-editor.png)
+![The StackBlitz editor showing the React TypeScript starter project](./assets/getting-started-editor.png)
 
 Intrigued by all the things you see on your screen? Take a tour of [the different parts of the editor](/guides/user-guide/ide-whats-on-your-screen).
 

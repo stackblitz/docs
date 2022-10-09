@@ -62,7 +62,7 @@ In the next example, we will show how to generate this project:
 
 <img
   width="1000"
-  src="/doc_images/sdk-project-dependencies.png"
+  src="./assets/sdk-project-dependencies.png"
   alt="Screenshot of a project showing three packages in the “Dependencies” section of the sidebar, and an editor tab with the same dependencies in a package.json file."
 />
 
