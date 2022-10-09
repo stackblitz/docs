@@ -83,17 +83,14 @@ Let's add a file to [ilovecodeflow.com](https://github.com/stackblitz/ilovecodef
 
 Follow these steps:
 
-1. In the GitHub URL of the repository, replace "github.com" with "pr.new".
-2. Introduce changes - for instance, 
-
-<!-- gifs -->
-
-### 3. Commit the changes.
-
-<!-- gifs -->
-
-### 4. Make a pull request.
-
-<!-- gifs -->
+1. Open the link in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
+2. Open the Preview by clicking on the popup notification in the bottom right corner.
+3. Introduce some changes - for instance, in the `/src/pages/LoveNote.astro` file change the emojis.
+4. Verify the changes in the Preview on the right.
+5. Depending on your role:
+    - commit the changes by selecting "Source Control" icon in the left vertical navigation bar, clicking "Create & Push Branch", and naming the branch; or
+    - fork the repository.
+6. Click on "Commit & Push" to send the changes to GitHub.
+6. Finally, you can submit your pull request by clicking on the "Open New PR" button 🥳
 
 ## Reviewing a PR with Codeflow IDE 
