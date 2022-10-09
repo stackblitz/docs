@@ -24,7 +24,7 @@ However, some edits require modifying a few files. In this case, you can switch 
 
 To do so, click on the "Open in IDE" button in the top right corner of the page:
 
-![](/public/doc_images/guide/edit-in-IDE-button.png)
+<!-- TODO: add screenshot -->
 
 You will be redirected to the Web Studio editor and you can continue your work.
 

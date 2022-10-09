@@ -36,7 +36,7 @@ You will be redirected to [Codeflow IDE](./working-in-codeflow-ide) where you ca
 
 To review a PR with pr.new, open the submitted pull request on GitHub and in the browser's address tab, swap `github.com` with `pr.new`.
 
-You will be redirected to [Codeflow IDE](./working-in-codeflow-ide) in the ["PR review mode"](./rworking-in-codeflow-ide#reviewing-a-pr-with-codeflow-ide) where you will see diffs. You can switch to the standard file view by choosing a "file" icon in the left vertical nav bar.
+You will be redirected to [Codeflow IDE](./working-in-codeflow-ide) in the ["PR review mode"](./working-in-codeflow-ide#reviewing-a-pr-with-codeflow-ide) where you will see diffs. You can switch to the standard file view by choosing a "file" icon in the left vertical nav bar.
 
 ### Opening a file
 
