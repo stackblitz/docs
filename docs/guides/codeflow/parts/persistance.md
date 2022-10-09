@@ -1,0 +1,1 @@
+During the beta, Codeflow IDE doesn't offer persistence so please remember that you need to commit your changes before closing the page. This feature is included in our product roadmap.

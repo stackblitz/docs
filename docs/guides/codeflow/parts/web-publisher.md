@@ -1,0 +1,1 @@
+**Web Publisher** is a publishing tool that allows for editing docs or blog with a realtime preview of the changes.

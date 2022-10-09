@@ -7,7 +7,8 @@ title: Making a PR with pr.new
 This page walks you through using pr.new to contribute to any Open Source project.
 
 ## What is pr.new?
-pr.new is a short URL that works with every repository and allows you to spin up its entire environment. You no longer need to clone the repo and install dependencies - we will do it for you.
+
+<!--@include: ./parts/pr-new.md-->
 
 ## How does pr.new work?
 

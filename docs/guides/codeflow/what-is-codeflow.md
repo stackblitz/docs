@@ -4,16 +4,14 @@ title: What is Codeflow?
 
 # {{ $frontmatter.title }}
 
-Codeflow is a one-click integration with GitHub for seamless coding workflows. 
+<!--@include: ./parts/codeflow.md-->
 
-<!-- ideally these would be tiles or something else with little gifs THAT START PLAYING ONLY WHEN HOVERED ON -->
 StackBlitz now helps you switch contexts seamlessly:
-- **Codeflow**: a fully fledged desktop-grade dev environment capable of running your whole workflow - from production-level dev work to reviewing pull requests
-- **pr.new**: spin up a live environment to open any repository, contribute to any Open Source project, or view any PR by adding "pr.new"  to the beginning of the GitHub URL
-- **Web Publisher**: edit your docs or blog with a live preview of the changes
-- **StackBlitz staging bot**: a vigilant friend providing a one-click link to spin up a whole environment for pull requests and issues
+- <!--@include: ./parts/codeflow-ide.md-->
+- <!--@include: ./parts/web-publisher.md-->
+- <!--@include: ./parts/pr-new.md-->
+- <!--@include: ./parts/codeflowapp-bot.md-->
 
-Stay in your flow state.
 
 ## Key features
 - **unmatched security**: all development is happening in your browser tab, including running Node.js, git, package managers (npm, yarn, pnpm), and local extensions.

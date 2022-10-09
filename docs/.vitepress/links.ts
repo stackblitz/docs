@@ -17,6 +17,9 @@ export const integrationGuide = [
 
 export const codeflowGuide = [
   { text: 'What is Codeflow?', link: '/guides/codeflow/what-is-codeflow' },
+  { text: 'Integrating Codeflow IDE', link: '/guides/codeflow/integrating-codeflow-ide' },
+  { text: 'Integrating CodeflowApp bot', link: '/guides/codeflow/integrating-codeflowapp-bot' },
+
   { text: 'Codeflow FAQ', link: '/guides/codeflow/codeflow-faq' },
 ];
 

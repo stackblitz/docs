@@ -12,12 +12,39 @@ This page addresses the frequently asked questions concerning: current features,
 
 This is perhaps the most frequently-asked question with regards to StackBlitz features - and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3). We have good news. You can run Vim now. Enable the extension in Codeflow and experience the escape room that is Vim.
 
-### How does it work?
+### Which package managers do you support?
+
+Currently, we support the following package managers:
+- PNPM fully supported
+- NPM/Yarn partially supported
+- No private registries (yet)
+
+### Which runtime do you support?
+
+Just like WebContainers, Codeflow runs on Node.js 16.
 
 ### Is it stable?
-It is in beta version available through the [early access program](ADD LINK). It will enter general availability in early 2023.
+It is in the beta version available through the [early access program](ADD LINK). It will enter general availability in early 2023.
+
+### Do I have to be signed in to use Codeflow IDE? 
+
+Yes, only during the beta. Starting Q1 2023, you'll be able to open public repos without being logged in.
+
+### Does my code persist between sessions?
+
+<!--@include: ./parts/persistance.md-->
 
 ### What features are you planning to implement?
+
+In the following months, we will focus on implementing the following features:
+- Codeflow IDE:
+    - **change persistance between sessions** - you will be able to close the page, close the browser, and your changes will still be there when you reconvene,
+    - **multiplayer mode** - the best setup for pair-programming,
+    - **private registries** enabled in the enterprise version,
+- Web Publisher:
+    - something,
+- CodeflowApp bot:
+    - something.
 
 ### Is multiplayer mode in the works?
 

@@ -1,0 +1,1 @@
+**pr.new** is a short URL that spins up a live environment for any repository helping you contribute to any Open Source project or to view any PR - all you need is to add "pr.new" to the beginning of the repository URL on GitHub.
