@@ -129,4 +129,4 @@ To enable edits on the sites created via generators, you need to change the defa
 
 ## Planned Features
 
-**TOMEK?**
+To learn about our product roadmap, check the corresponding question on our [FAQ page](./codeflow-faq).

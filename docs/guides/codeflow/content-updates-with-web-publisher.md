@@ -15,9 +15,9 @@ This page covers using Web Publisher to update your blog posts, docs, or wiki pa
 ## Editing a page in Web Publisher
 
 To edit a page, you need to find its corresponding file on GitHub. You can do it in four ways: 
-- "Edit in Web Publisher" button,
-- "Edit this page on GitHub" link,
-- through a GitHub repository.
+- ["Edit in Web Publisher"](#edit-in-web-publisher-button) button,
+- ["Edit this page on GitHub"](#edit-this-page-on-github) link,
+- [through a GitHub repository](#through-github).
 
 ### "Edit in Web Publisher" button
 
@@ -94,7 +94,7 @@ If the name of the edited file ends in `.md`, this is a Markdown file and it may
 
 ## Submitting your changes
 
-You've introduced your edits and you're ready to submit them for the review. 
+You've introduced the edits and you're ready to submit them for the review. 
 
 :::warning IMPORTANT:
 Before you send them to the owner of the page, please double check the text for typos, stylistic errors, links that don't work, and so on. Make sure that your edits are top-notch and are actually helpful.
@@ -106,7 +106,7 @@ Ready to submit? Follow these steps:
 2. In the dropdown window, click on "Commit proposed changes". Web Publisher will "push changes", which means that your edits are being sent to GitHub. In fact, Web Publisher first creates a fork (which means a copy) of the GitHub the repository, saves the changes and only them sends them to GitHub.
 3. A new browser tab will open with a form to "Open a pull request". Fill it out, including the description of the changes you made and explaining your reasoning and motivation behind them. Please keep the information that the pull request was made with Web Publisher (already pre-filled).
 
-Congratulations! You've submitted your edits!
+Congratulations! You've submitted the edits 🥳
 
 ## Compatibility Mode
 
