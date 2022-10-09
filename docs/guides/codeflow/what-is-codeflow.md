@@ -14,11 +14,11 @@ StackBlitz now helps you switch contexts seamlessly:
 
 
 ## Key features
-- **unmatched security**: all development is happening in your browser tab, including running Node.js, git, package managers (npm, yarn, pnpm), and local extensions.
-- **shockingly fast**: the entire dev environment spins up in miliseconds - even reinstalling `node_modules` is as simple as refreshing the page, with pnpm running up to four times as fast as locally!
-- **works online and offline**: continue your work even when you lose the Internet connection midway.
-- **your environment is always online**: your apps never go to sleep and have no bandwidth limits - share the URL with as many friends, colleagues, and communities as you’d like!
-- **always free for Open Source**: you're the future of the web development and we love you.
+- 🔒 **unmatched security**: all development is happening in your browser tab, including running Node.js, git, package managers (npm, yarn, pnpm), and local extensions.
+- ⚡️ **shockingly fast**: the entire dev environment spins up in miliseconds - even reinstalling `node_modules` is as simple as refreshing the page, with pnpm running up to four times as fast as locally!
+- 💻 **works online and offline**: continue your work even when you lose the Internet connection midway.
+- 🔥 **your environment is always online**: your apps never go to sleep and have no bandwidth limits - share the URL with as many friends, colleagues, and communities as you’d like!
+- 🆓 **always free for Open Source**: you're the future of the web development and we love you.
 
 ## What about other online IDEs?
 
