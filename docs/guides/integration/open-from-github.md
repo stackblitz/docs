@@ -50,7 +50,7 @@ Projects loaded from GitHub follow this URL template: “stackblitz.com” + “
 - [https://stackblitz.com/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
 - [https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic)
 
-![Opening a GitHub project visual schema](/doc_images/guide/Opening_a_Github_Project.png)
+![Opening a GitHub project visual schema](./assets/Opening_a_Github_Project.png)
 
 ### Open directly or fork?
 
@@ -88,7 +88,7 @@ By default, the GitHub importer will set the project's title based on the GitHub
 https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world
 ```
 
-![A default title when importing a GitHub project](/doc_images/guide/Github_Importer_default_title.png)
+![A default title when importing a GitHub project](./assets/Github_Importer_default_title.png)
 
 To customize it, add the `title` argument to the URL like so:
 
@@ -103,7 +103,7 @@ As you see, the title has now changed from “Next.js Hello World Example” to 
 https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title=Hello World
 ```
 
-![A custom title when importing a GitHub project](/doc_images/guide/Github_Importer_custom_title.png)
+![A custom title when importing a GitHub project](./assets/Github_Importer_custom_title.png)
 
 ### Launching a script on project load
 

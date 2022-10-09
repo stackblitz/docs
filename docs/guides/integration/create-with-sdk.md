@@ -145,7 +145,7 @@ Now that you have the content of your project defined, it is useful to provide s
 
 This is how the title and description look inside a StackBlitz project:
 
-<img alt="Example of Title and Description displayed in StackBlitz editor" src="/doc_images/guide/metadata.png" style="width:450px" />
+<img alt="Example of Title and Description displayed in StackBlitz editor" src="./assets/metadata.png" style="width:450px" />
 
 ## Options: Customizing your project
 

@@ -12,7 +12,7 @@ How can we encourage users to provide bug reproductions in a smart way?
 
 You can use GitHub's [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) for that, but what's even more engaging is their new [issue forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms) feature. For instance, this is how Vite team is using it:
 
-![Filing an issue in Vite repository](/doc_images/guide/Vite_issues_template.gif)
+![Filing an issue in Vite repository](./assets/Vite_issues_template.gif)
 
 You can also configure a GitHub workflow where assigning a specific label to the issue automatically adds a relevant comment asking for a reproduction. Here's an [example from the Vite repository](https://github.com/vitejs/vite/blob/1248b62b9d09b10ce5ea7703d907d69d2167fdca/.github/workflows/issue-labeled.yml#L31):
 

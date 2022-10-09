@@ -8,15 +8,15 @@ description: This page provides an overview of the terms we use to describe each
 This page provides an overview of the terms we use to describe each of the pieces of the user interface (UI) available to you in StackBlitz projects.
 
 <figure>
-    <a target="_blank" href="/doc_images/stackblitz_ui_elements.png"><img alt="Overview of the StackBlitz IDE user interface elements" src="/doc_images/stackblitz_ui_elements.png" /></a>
+    <a target="_blank" href="./assets/editor-ui/overview.png"><img alt="Overview of the StackBlitz IDE user interface elements" src="./assets/editor-ui/overview.png" /></a>
     <figcaption>Overview of the StackBlitz IDE user interface elements</figcaption>
 </figure>
 
 ### Menu Bar
 
 <figure>
-  <a target="_blank" href="/doc_images/stackblitz_ui_elements/menu-bar.png">
-    <img alt="Menu Bar screenshot" src="/doc_images/stackblitz_ui_elements/menu-bar.png" height="40" />
+  <a target="_blank" href="./assets/editor-ui/menu-bar.png">
+    <img alt="Menu Bar screenshot" src="./assets/editor-ui/menu-bar.png" height="40" />
   </a>
   <figcaption>Screenshot: Menu Bar</figcaption>
 </figure>
@@ -32,8 +32,8 @@ The Menu Bar is where you perform general operations on your StackBlitz project.
 
 ### Activity Bar
 
-<a target="_blank" href="/doc_images/stackblitz_ui_elements/activity-bar.png" class="float-right">
-  <img alt="" src="/doc_images/stackblitz_ui_elements/activity-bar.png" width="48" />
+<a target="_blank" href="./assets/editor-ui/activity-bar.png" class="float-right">
+  <img alt="" src="./assets/editor-ui/activity-bar.png" width="48" />
 </a>
 
 The Activity Bar allows you to select a view to display in the [sidebar](#side-bar) from the available:
@@ -51,8 +51,8 @@ When you open a StackBlitz project, the Sidebar defaults to the _Project_ icon's
 #### Project Sidebar
 
 <figure class="float-left" style="width: 200px">
-  <a target="_blank" href="/doc_images/stackblitz_ui_elements/side-bar.png">
-    <img alt="Screenshot of the sidebar" src="/doc_images/stackblitz_ui_elements/side-bar.png" />
+  <a target="_blank" href="./assets/editor-ui/side-bar.png">
+    <img alt="Screenshot of the sidebar" src="./assets/editor-ui/side-bar.png" />
   </a>
   <figcaption>Screenshot: Project sidebar</figcaption>
 </figure>
@@ -81,13 +81,13 @@ In the [EngineBlock][] environment the _Settings_ sidebar allows you to also cus
 
 - **Reload mechanism** – when the code updates, it specifies if the changes be applied without reloading the preview window ("Hot reload"), using the [HMR mechanism](https://webpack.js.org/concepts/hot-module-replacement/) or should the preview window be reloaded ("Page reload"). "Hot reload" usually offers a better development experience but keep in mind that if your app relies on the global event handlers (like `setInterval`), they may persist between the updates.
 - **Reload trigger**, which specifies what triggers the app to update in the [Preview](#preview). The "Edit (auto)" option picks up updates automatically whenever you stop typing in the editor for about one second, the "Save" option only updates when you save the file, and the "Keystroke" option updates whenever you press a key in the editor.
-- **Clear console on HMR** – when the "Reload mechanism" is set to "Hot Reload", this option allows you to keep the [Console](#console) messages between updates ("Disabled") or to automatically clear them ("Enabled") as if you have manually run `console.clear()` in your code.
+- **Clear console on reload** – when the "Reload mechanism" is set to "Hot Reload", this option allows you to keep the [Console](#console) messages between updates ("Disabled") or to automatically clear them ("Enabled") as if you have manually run `console.clear()` in your code.
 
 ### Editor
 
 <figure style="width: 400px">
-  <a target="_blank" href="/doc_images/stackblitz_ui_elements/editor.png">
-    <img alt="Screenshot of the editor" src="/doc_images/stackblitz_ui_elements/editor.png"/>
+  <a target="_blank" href="./assets/editor-ui/editor.png">
+    <img alt="Screenshot of the editor" src="./assets/editor-ui/editor.png"/>
   </a>
   <figcaption>Screenshot: Editor</figcaption>
 </figure>
@@ -97,8 +97,8 @@ The Editor section of the IDE displays the content of the currently selected fil
 ### Terminal
 
 <figure style="width: 400px">
-  <a target="_blank" href="/doc_images/stackblitz_ui_elements/terminal.png">
-    <img alt="Screenshot of the terminal" src="/doc_images/stackblitz_ui_elements/terminal.png" />
+  <a target="_blank" href="./assets/editor-ui/terminal.png">
+    <img alt="Screenshot of the terminal" src="./assets/editor-ui/terminal.png" />
   </a>
   <figcaption>Screenshot: Terminal</figcaption>
 </figure>
@@ -110,8 +110,8 @@ The Terminal allows you to run commands, such as `ls`, `mkdir`, `npm start`, `no
 ### Preview
 
 <figure class="float-right" style="width: 300px">
-  <a target="_blank" href="/doc_images/stackblitz_ui_elements/preview.png">
-    <img lang="Screenshot of the preview pane" src="/doc_images/stackblitz_ui_elements/preview.png" />
+  <a target="_blank" href="./assets/editor-ui/preview.png">
+    <img lang="Screenshot of the preview pane" src="./assets/editor-ui/preview.png" />
   </a>
   <figcaption>Screenshot: Preview</figcaption>
 </figure>
@@ -123,8 +123,8 @@ If you prefer to view your app in a separate window, you can use the "Open in Ne
 ### Console
 
 <figure class="float-right" style="width: 300px">
-  <a target="_blank" href="/doc_images/stackblitz_ui_elements/console.png">
-    <img alt="Screenshot of the console" src="/doc_images/stackblitz_ui_elements/console.png" />
+  <a target="_blank" href="./assets/editor-ui/console.png">
+    <img alt="Screenshot of the console" src="./assets/editor-ui/console.png" />
   </a>
   <figcaption>Screenshot: Console</figcaption>
 </figure>
