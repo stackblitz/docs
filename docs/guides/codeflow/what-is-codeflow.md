@@ -38,14 +38,17 @@ Excited to get started? Try these:
 - HERE A LINK TO SOMETHING THAT CAN DEMO STAGING BOT - can be a docs page
 
 
-## Add to your project
-- HERE A LINK TO CODEFLOW INTEGRATION GUIDE
-- HERE A LINK TO WEB PUBLISHER INTEGRATION GUIDE
-- HERE A LINK TO STAGING BOT INTEGRATION GUIDE
+## Add Codeflow to your project
 
+Follow these handy integration guides to link your project to Codeflow:
+- 💻 [Codeflow IDE](./integrating-codeflow-ide) integration guide
+- 📝 [Web Publisher](docs/guides/integration/integrating-web-publisher) integration guide
+- 🤖 [CodeflowApp bot](./integrating-codeflowapp-bot) integration guide
 
 ## Learn more
-- HERE A LINK TO FAQs
+- Check out our **[Frequently Asked Questions page](./codeflow-faq)**.
+- **Ask questions** on [GitHub Discussions](https://github.com/stackblitz/docs/discussions/new?category=Q-A).
+- **Request a new docs page** or a more thorough explanation using our [GitHub Discussions](https://github.com/stackblitz/docs/discussions/new?category=ideas)!
 
 ## Get involved
 

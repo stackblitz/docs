@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: Codeflow FAQ
 ---
 
 # {{ $frontmatter.title }}
