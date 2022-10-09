@@ -95,7 +95,11 @@ Follow these steps:
 
 ## Reviewing a PR with Codeflow IDE 
 
-Let's look at this suspicious PR[ilovecodeflow.com](https://github.com/stackblitz/ilovecodeflow.com).
+Let's look at [this suspicious PR](https://github.com/stackblitz/docs/pull/33).
 
 Follow these steps:
 1. Open the link in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
+2. Codeflow IDE will spin up in the "PR Review mode". Open the Preview by clicking on the popup notification in the bottom right corner.
+3. Compare changes made. You can also see them rendered in the Preview if you navigate to the edited page - in this case, the "What is StackBlitz" page.
+4. You can add comments by clicking on the "+" icons, read other comments, or start a review.
+5. If you no longer want to see the changes in the "PR Review mode", close the relevant files.
