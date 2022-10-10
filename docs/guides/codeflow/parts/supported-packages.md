@@ -1,6 +1,1 @@
-
-Currently, Codeflow IDE supports the following package managers:
-- **pnpm**: fully supported,
-- **npm**: partially supported,
-- **Yarn**: partially supported,
-- **private registries**: coming soon.
+Currently, Codeflow IDE supports multiple package managers including pnpm, npm, and Yarn.

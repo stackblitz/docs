@@ -16,7 +16,7 @@ This is perhaps the most frequently-asked question with regards to StackBlitz fe
 
 ### Which repos can/not be opened in Codeflow IDE?
 
-Codeflow IDE should be able to open any repo. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
+Codeflow IDE should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
 
 ### Does any company use Codeflow IDE for their daily development work?
 
@@ -37,7 +37,7 @@ Any file type can be opened in Web Publisher.
 Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which are compatible with Node.js 16.
 
 ### Is Codeflow stable?
-It is in the beta version currently and it will enter general availability in early 2023.
+Codeflow is in beta. It is planned to enter general availability in early 2023.
 
 ### Do I have to be signed in to use Codeflow IDE? 
 
@@ -45,7 +45,7 @@ Yes, only during the beta. Starting Q1 2023, you'll be able to open public repos
 
 ### To open a repo in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
 
-You need to sign into stackblitz *using* GitHub.
+You need to sign in to StackBlitz *using* GitHub.
 
 ### Does my code persist between sessions?
 
