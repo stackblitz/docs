@@ -37,7 +37,7 @@ Any file type can be opened in Web Publisher.
 Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which are compatible with Node.js 16.
 
 ### Is Codeflow stable?
-Codeflow is in beta. It is planned to enter general availability in early 2023.
+Codeflow is currently a beta version, however, general availability can be expected in early 2023.
 
 ### Do I have to be signed in to use Codeflow IDE? 
 
@@ -56,7 +56,7 @@ You need to sign in to StackBlitz *using* GitHub.
 In the following months, we will focus on implementing the following features:
 - **Codeflow IDE:**
     - **change persistence between sessions** - you will be able to close the page, close the browser, and your changes will still be there when you reconvene,
-    - **multiplayer mode** - the best setup for pair-programming,
+    - **real-time collaboration** - the best setup for pair-programming,
     - **private registries** enabled on our team SaaS plans on stackblitz.com (initially, not on-prem)
 - **Web Publisher:**
     - something,
