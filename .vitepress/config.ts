@@ -32,6 +32,7 @@ export default defineConfig({
     //},
     nav: [
       { text: 'Guides', link: data.userGuideLinks[0].link },
+      { text: 'Codeflow', link: data.codeflow[0].link },
       { text: 'API', link: data.apiLinks[0].link },
       { text: 'WebContainers', link: data.webcontainersLinks[0].link },
       { text: 'Enterprise', link: data.enterpriseLinks[0].link! },
@@ -50,11 +51,13 @@ export default defineConfig({
           collapsed: false,
           items: data.integrationGuideLinks,
         },
+      ],
+      '/codeflow/': [
         {
-          text: 'Codeflow Guide',
-          collapsible: true,
+          text: 'Codeflow',
+          collapsible: false,
           collapsed: false,
-          items: data.codeflowLinks,
+          items: data.codeflow,
         },
       ],
       '/platform/api/': [
