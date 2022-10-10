@@ -5,7 +5,7 @@ description: Starter projects are online playgrounds, typically built by the cor
 
 <script setup lang="ts">
 import StarterGrid from '@theme/components/StarterGrid.vue';
-import { dotNewLinks } from '../../data'
+import { dotNewLinks } from './starters';
 </script>
 
 # {{ $frontmatter.title }}

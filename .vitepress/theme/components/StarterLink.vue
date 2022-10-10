@@ -3,6 +3,7 @@ import { computed } from 'vue';
 
 const props = defineProps<{
   icon: string;
+  iconInvert?: boolean;
   title: string;
   link: string;
 }>();
@@ -18,7 +19,7 @@ const subtitle = computed(() => {
 
 <template>
   <a class="link" :href="link" rel="noopener" target="_blank">
-    <img v-if="icon" alt="" :src="icon" class="icon" />
+    <img v-if="icon" alt="" :src="icon" class="icon" :class="{ icon_invert: iconInvert }" />
     <span v-else class="default-icon"></span>
     <span class="text">
       <span class="title">{{ title }}</span>
@@ -64,6 +65,10 @@ const subtitle = computed(() => {
   height: 24px;
   object-fit: contain;
   object-position: center;
+}
+
+:root.dark .icon_invert {
+  filter: invert(1) hue-rotate(0.5turn);
 }
 
 .default-icon {
