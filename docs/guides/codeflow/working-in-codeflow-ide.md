@@ -34,33 +34,36 @@ If you are not logged into StackBlitz, while this product is in beta, you will b
 
 ## Running dev server
 
-As soon as the page loads, Codeflow IDE will clone the repository, install the dependencies and, if the project is compatible with WebContainers, in the bottom right corner you will see a popup notification asking if you'd like to see the preview:
+As soon as the page loads, Codeflow IDE will clone the repository and install the dependencies. If the project is compatible with WebContainers, in the bottom right corner you will see a popup notification asking if you'd like to see the preview:
 
 > A service is available on port 5173
 
-If you choose "Open Preview", a Preview will appear on the split screen. By default, Preview updates whenever you save the file.
+If you choose "Open Preview", a realtime Preview will appear on the split screen. By default, Preview updates whenever you save the file.
 
 :::tip 
 You can open the Preview in a separate tab or window if you find that more comfortable.
 ::: 
 
+## Troubleshooting the Preview
+
 ### Preview doesn't work
 
-If the Preview doesn't work, please see [this page for troubleshooting](/platform/webcontainers/browser-support). Oftentimes, that's caused by browser configuration or browser incompatibility.
+If the Preview doesn't work, oftentimes browser configuration or browser incompatibility is the culprit. Please see [this page for troubleshooting](/platform/webcontainers/browser-support). 
 
-### Preview stopped working 
+### Preview stopped working / is not responding
 
 Please note that, depending on the framework, **some changes may cause the dev server to stop running**, which in turn causes the Preview to either not respond to new updates or show an error screen ("Unable to connect to `local.webcontainer.io`"). 
 
 Check in the terminal if the dev server is still running. If you want to restart it, click in the terminal window and:
 
-1. press the "up arrow" button to bring up the start command,
-2. press enter to run that command,
-3. in the popup notification in the bottom right corner, choose to open the Preview.
+1. press `ctrl`+`c` to "kill" the server,
+2. press the "up arrow" button to bring up the start command,
+3. press enter to run that command,
+4. in the popup notification in the bottom right corner, choose to open the Preview.
 
 ### Reopening the Preview panel 
 
-If you close the Preview by accident, you can reopen it by selecting in the left-side navigation bar the icon of a plug entitled "Ports in use". You can open the Preview in a separate tab or as a split screen.
+If you close the Preview by accident, you can reopen it by selecting the icon of a plug entitled "Ports in use" from the left-side navigation bar. Note that you can open the Preview in a separate tab or as a split screen.
 
 ## Saving changes
 
