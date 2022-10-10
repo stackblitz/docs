@@ -72,7 +72,7 @@ Whenever a file is changed, you will see a white dot next to its tab in the edit
 
 <img lang="en" src="./assets/codeflow-ide-white-dots-cut.png" alt="CodeflowApp bot in action" style="width: 400px"/>
 
-Moreover, you will also see that dot on the tab in your browser do you remember that you have unsaved changes.
+Moreover, you will also see that dot on the tab in your browser to remind you that you have unsaved changes.
 
 :::warning
 
