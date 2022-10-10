@@ -14,12 +14,12 @@ This page covers integrating Codeflow IDE into your project - either by [adding 
 
 To help your users quickly spin up the entire environment with your project, you can add a CTA (call-to-action) button on your website or in the README file. 
 
-<!-- TODO: add buttons -->
-
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz.svg" /> | <a href="/img/open_in_stackblitz.svg" target="_blank">open_in_stackblitz.svg</a> |
-| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz_small.svg" /> | <a href="/img/open_in_stackblitz_small.svg" target="_blank">open_in_stackblitz_small.svg</a> |
+| <img alt="Edit in Web Publisher" src="./assets/button-edit-in-web-publisher-icon-medium.svg" /> | <a href="./assets/button-edit-in-web-publisher-icon-medium.svg" target="_blank">button-edit-in-web-publisher-icon-medium.svg</a> |
+| <img alt="Edit in Web Publisher" src="./assets/button-edit-in-web-publisher-icon-small.svg" /> | <a href="./assets/button-edit-in-web-publisher-icon-small.svg" target="_blank">button-edit-in-web-publisher-icon-small.svg</a> |
+| <img alt="Open in Codeflow" src="./assets/button-open-in-codeflow-medium.svg" /> | <a href="./assets/button-open-in-codeflow-medium.svg" target="_blank">button-open-in-codeflow-medium.svg</a> |
+| <img alt="Open in Codeflow" src="./assets/button-open-in-codeflow-small.svg" /> | <a href="./assets/button-open-in-codeflow-small.svg" target="_blank">button-open-in-codeflow-small.svg</a> |
 
 ::: tip
 You can either host the images on your servers or directly use our image URLs.
@@ -28,7 +28,7 @@ You can either host the images on your servers or directly use our image URLs.
 In order to display the button in a **Markdown file**, use the following code - remember to update the last URL with the project repository path:
 
 ```md
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https:///___GH_ACCOUNT__/___GH_REPOSITORY___)
+[![Open in Codeflow](https://developer.stackblitz.com/codeflow/assets/button-open-in-codeflow-medium.svg)](https:///___GH_ACCOUNT__/___GH_REPOSITORY___)
 ```
 
 Or, in HTML:
@@ -36,8 +36,8 @@ Or, in HTML:
 ```html
 <a href="https:///___GH_ACCOUNT__/___GH_REPOSITORY___">
   <img
-    alt="Open in StackBlitz"
-    src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+    alt="Open in Codeflow"
+    src="https://developer.stackblitz.com/codeflow/assets/button-open-in-codeflow-medium.svg"
   />
 </a>
 ```
@@ -93,6 +93,8 @@ To set up pnpm overrides, follow these steps:
 ## CodeflowApp bot
 
 <!--@include: ./parts/codeflowapp-bot.md-->
+
+<img lang="en" src="./assets/codeflowapp-pr.png" alt="CodeflowApp bot in action" style="width: 400px"/>
 
 To integrate the bot, please follow the instructions on [Integrating CodeflowApp bot](./integrating-codeflowapp-bot.md).
 

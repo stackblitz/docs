@@ -12,9 +12,11 @@ Web Publisher is a page editing tool that makes docs contribution stress-free, i
 
 <!-- screenshot of Web Publisher -->
 
-Web Publisher features a live preview that live updates as you introduce your edits and, once you are ready, creates a fork and a pull request for you. You don't need to have the local environment set up, clone the repository, install dependencies, or run the server to see the changes. 
+Web Publisher features a live preview that live updates as you introduce your edits and, once you are ready, creates a fork and a pull request for you. You don't need to have the local environment set up, clone the repository, install dependencies, or run the server to see the changes.
 
-All you need to edit the docs in Web Publisher is a GitHub account.
+<img lang="en" src="./assets/wp-whole.png" alt="Web Publisher" style="width: 600px"/>
+
+All you need to edit the docs in Web Publisher is a StackBlitz account.
 
 ## Modifying multiple files
 
@@ -24,7 +26,7 @@ However, some edits require modifying a few files. In this case, you can switch 
 
 To do so, click on the "Open in IDE" button in the top right corner of the page:
 
-<!-- TODO: add screenshot -->
+<img lang="en" src="./assets/wp-top-nav-bar-small-right.png" alt="Nav Bar" style="height: 30px"/>
 
 You will be redirected to the Web Studio editor and you can continue your work.
 
@@ -46,9 +48,9 @@ To check if this repo runs in WebContainers, we'll add `pr.new` to the beginning
 `https://pr.new/github.com/stackblitz/docs/`
 :::
 
-If you see that **the preview loads correctly**, this means that your dev server runs properly in WebContainers and your repo is compatible.
+If you see that **the preview loads correctly** (see below), this means that your dev server runs properly in WebContainers and your repo is compatible.
 
-<!-- TODO: add screen recording -->
+<img lang="en" src="./assets/codeflow-ide-opening-repo.gif" alt="Opening a repo in Codeflow IDE" />
 
 ### 2. Specify the Web Publisher editing link
 
@@ -117,23 +119,6 @@ Follow [this integration guide](./integrating-codeflowapp-bot.md) to integrate C
 
 To enable edits on the sites created via generators, you need to change the default settings. Consult the table below to find which files to change.
 
-| Library | File to change | What to change |
-| ------- | -------------- | -------------- |
-| Astro | - | - |
-| Docusaurus | - | - |
-| Eleventy | - | - | 
-| Gatsby | Doesn't work in StackBlitz - yet! | N/A |
-| Hugo | - | - |
-| Jekyll | - | - |
-| SvelteKit | - | - |
-| VitePress | - | - | 
-| VuePress | - | - | 
-
-
 ## Compatibility Mode
 
 <!--@include: ./parts/wp-compatibility-mode.md-->
-
-## Planned Features
-
-To learn about our product roadmap, check the corresponding question on our [FAQ page](./codeflow-faq).
