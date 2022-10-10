@@ -37,12 +37,14 @@ To disable the bot:
 ```json
 // .stackblitz/codeflow.json
 
-"bot": {
-    "issues": {
-        "enabled": false
-    },
-    "pullRequests": {
-        "enabled": false
+{
+    "bot": {
+        "issues": {
+            "enabled": false
+        },
+        "pullRequests": {
+            "enabled": false
+        }
     }
 }
 ```
