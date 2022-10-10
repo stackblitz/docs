@@ -59,13 +59,15 @@ On the left side, you'll find the information about which file you're editing an
 <!-- TODO: screenshot -->
 
 On the right side, you'll find three buttons:
-- **"Open in the IDE"**, which redirects to [Codeflow IDE](./working-in-codeflow-ide) - helpful when you want to add images or work on a few files.
+- **"Open in IDE"**, which redirects to [Codeflow IDE](./working-in-codeflow-ide) - helpful when you want to add images or work on a few files.
 - **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
 - **Your Profile**, which opens a new browser tab with your StackBlitz profile page.
 
 ### Editor
 
-Editor is where you will introduce your changes - it is located on the left side or, if the expanded view is enabled, takes a whole center space. Note that it is possible to specify in the link that Web Publisher will load with the editor on full screen.
+Editor is where you will introduce your changes - it is located on the left side or, if the expanded view is enabled, takes a whole center space. 
+
+Note that it is possible to specify in the link that Web Publisher will load with the editor on full screen.
 
 <!-- TODO: screenshot -->
 
@@ -75,7 +77,9 @@ In the top right corner, you will see an icon that either expands the Editor vie
 
 ### Live Preview
 
-Live Preview is where you can verify the changes you've introduced. It updates as you type (or with a little delay). It is located on the right side or, if the expanded view is enabled, takes a whole center space. Note that it is possible to specify in the link that Web Publisher will load with the Preview on full screen.
+Live Preview is where you can verify the changes you've introduced. It updates as you type (or with a little delay). It is located on the right side or, if the expanded view is enabled, takes a whole center space.
+
+Note that it is possible to specify in the link that Web Publisher will load with the Preview on full screen.
 
 <!-- TODO: screenshot -->
 

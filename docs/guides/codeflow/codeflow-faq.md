@@ -12,7 +12,7 @@ This page addresses the frequently asked questions concerning: current features,
 
 ### Can I run Vim?
 
-This is perhaps the most frequently-asked question with regards to StackBlitz features - and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3). We have good news. You can run Vim now. Enable the extension in Codeflow and experience the escape room that is Vim.
+This is perhaps the most frequently-asked question with regards to StackBlitz features - and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3). We have good news: you can run Vim in Codeflow IDE by enabling the extension! 🥳
 
 ### Which repos can/not be opened in Codeflow IDE?
 
@@ -34,10 +34,10 @@ Any file type can be opened in Web Publisher.
 
 ### Which runtime does Codeflow support?
 
-Just like WebContainers, Codeflow runs on Node.js 16.
+Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which are compatible with Node.js 16.
 
 ### Is Codeflow stable?
-It is in the beta version available through the [early access program](ADD LINK). It will enter general availability in early 2023.
+It is in the beta version currently and it will enter general availability in early 2023.
 
 ### Do I have to be signed in to use Codeflow IDE? 
 

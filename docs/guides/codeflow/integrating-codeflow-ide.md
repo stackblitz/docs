@@ -4,7 +4,7 @@ title: Integrating Codeflow IDE
 
 # {{ $frontmatter.title }}
 
-This page covers integrating Codeflow IDE into your project - either by [adding a button that opens the repository](#open-in-codeflow-button) or by [installing CodeflowApp staging bot](#codeflowapp-staging-bot). It also covers the [package manager configuration](#package-managers-supported-in-codeflow-ide), including pnpm overrides.
+This page covers integrating Codeflow IDE into your project - either by [adding a button that opens the repository](#open-in-codeflow-button) or by [installing CodeflowApp bot](#codeflowapp-bot). It also covers the [package manager configuration](#package-managers-supported-in-codeflow-ide), including pnpm overrides.
 
 ## What is Codeflow IDE?
 
@@ -72,11 +72,11 @@ Using pnpm override, you can fix a bug and immediately try it out in the reprodu
 
 To set up pnpm overrides, follow these steps:
 
-1. In the project's root directory, create `.stackblitz` folder in your root directory.
+1. In the project's root directory, create `.stackblitz` directory.
 
-2. Inside this folder, create a file called `codeflow.json`.
+2. Inside it, create a file called `codeflow.json`.
 
-3. In the file, specify the overrides by providing a key-vaue pair of the dependency to override and the folder where it is located.
+3. In the file, specify the overrides by providing a key-vaue pair of the dependency to override and the folder where it is located. Please note that the location is relative to the root of the project.
 
 ```json
 // .stackblitz/codeflow.json
@@ -90,7 +90,7 @@ To set up pnpm overrides, follow these steps:
 }
 ```
 
-## CodeflowApp staging bot
+## CodeflowApp bot
 
 <!--@include: ./parts/codeflowapp-bot.md-->
 
