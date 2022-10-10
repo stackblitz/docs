@@ -89,10 +89,10 @@ export const homeTopLinks = [
   },
   {
     icon: '/icons/fa-browser.svg',
-    title: 'Integrating StackBlitz',
+    title: 'Codeflow',
     description:
-      'Follow guides on building interactive playgrounds, improving bug repros, and using StackBlitz for tech education.',
-    url: '/guides/integration/open-from-github',
+      'One click opens a full in-browser IDE for your repos, issues, and PRs. No more cloning, installing, stashing!',
+    url: '/codeflow/what-is-codeflow',
   },
   {
     icon: '/icons/fa-brackets-curly.svg',
@@ -110,10 +110,10 @@ export const homeTopLinks = [
   },
   {
     icon: '/icons/fa-life-ring.svg',
-    title: 'Browser Support',
+    title: 'Integrating StackBlitz',
     description:
-      'Tweak your browser with this step-by-step guide to unleash the full power of WebContainers!',
-    url: '/platform/webcontainers/browser-support',
+      'Follow guides on building interactive playgrounds, improving bug repros, and using StackBlitz for tech education.',
+    url: '/guides/integration/open-from-github',
   },
   {
     icon: '/icons/fa-users.svg',
