@@ -72,7 +72,7 @@ Not yet! Private registries are in the project roadmap for Q1/Q2 '23, initially 
 
 ### Can I run private repositories?
 
-Yes. Private repositories are available for free during beta through 2022. Starting Q1 '23 private repositories will require subscription. Contact us if you’re interested in learning more about pricing.
+Yes. Private repositories are available for free during beta through 2022. Starting Q1 '23 private repositories will require a subscription. Contact us if you’re interested in learning more about pricing.
 
 ## Security 
 
