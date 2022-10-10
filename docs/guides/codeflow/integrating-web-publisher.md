@@ -20,7 +20,7 @@ All you need to edit the docs in Web Publisher is a GitHub account.
 
 Web Publisher allows you to edit a single page. 
 
-However, some edits require modifying a few files. In this case, you can switch to the Web Studio environment, which will run the whole repository.
+However, some edits require modifying a few files. In this case, you can switch to the Codeflow IDE environment, which will run the whole repository.
 
 To do so, click on the "Open in IDE" button in the top right corner of the page:
 
