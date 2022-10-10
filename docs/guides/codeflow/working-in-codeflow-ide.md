@@ -38,7 +38,7 @@ As soon as the page loads, Codeflow IDE will clone the repository and install th
 
 > A service is available on port 5173
 
-If you choose "Open Preview", a realtime Preview will appear on the split screen. By default, Preview updates whenever you save the file.
+If you choose "Open Preview", a realtime preview will appear on the split screen. By default, the preview updates whenever you save a file.
 
 :::tip 
 You can open the Preview in a separate tab or window if you find that more comfortable.

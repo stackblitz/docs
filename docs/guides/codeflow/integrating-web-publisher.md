@@ -4,11 +4,11 @@ title: Web Publisher docs integration
 
 # {{ $frontmatter.title }}
 
-This page covers integrating Web Publisher into your docs to decrease the barrier in docs contributions.
+This page covers integrating Web Publisher into your docs to lower the barrier for contributing to documentations.
 
 ## What is Web Publisher?
 
-Web Publisher is a page editing tool that makes docs contribution stress-free, even for the folks who are not tech-savvy.
+Web Publisher is a page editing tool that makes docs contribution stress-free, including those of us who are not technical.
 
 <!-- screenshot of Web Publisher -->
 

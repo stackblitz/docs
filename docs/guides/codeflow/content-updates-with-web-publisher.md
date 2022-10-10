@@ -4,7 +4,7 @@ title: Content Updates with Web Publisher
 
 # {{ $frontmatter.title }}
 
-Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, even for those of us who are not entirely tech-savvy!
+Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
 
 This page covers using Web Publisher to update your blog posts, docs, or wiki pages.
 
