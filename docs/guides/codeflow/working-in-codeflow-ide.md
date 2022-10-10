@@ -86,7 +86,7 @@ Let's add a file to [ilovecodeflow.com](https://github.com/stackblitz/ilovecodef
 
 Follow these steps:
 
-1. Open the link in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
+1. Open the link in a new tab. In the GitHub URL of the repository, replace `github.com` with `pr.new`.
 2. Open the Preview by clicking on the popup notification in the bottom right corner.
 3. Introduce some changes - for instance, in the `/src/pages/LoveNote.astro` file change the emojis.
 4. Verify the changes in the Preview on the right.
