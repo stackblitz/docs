@@ -23,7 +23,7 @@ There is no greater buzzkill than having to fiddle with the deployment and build
 - **your apps are always online**: your apps never go to sleep and have no bandwidth limits - share the URL with as many friends, colleagues, and communities as you’d like!
 - **seamless debugging** with Chrome Dev Tools for both front- and backend apps!
 
-![Preiew & debug](https://miro.medium.com/max/2000/1*O4pHdrbL-LUPKSktS0XxRA.gif)
+![Preview & debug](./assets/what-is-sb-intro.gif)
 
 ## What is StackBlitz used for?
 

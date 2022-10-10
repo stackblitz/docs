@@ -18,9 +18,9 @@ If you observe any odd behavior when running StackBlitz projects like a command 
 
 For instance, in Chrome, click the lock icon in the navigation bar:
 
-<img alt="Clicking the lock icon in the navigation bar shows a menu with a “Cookies” entry." src="/doc_images/chrome-show-cookies.png" width="800" />
+<img alt="Clicking the lock icon in the navigation bar shows a menu with a “Cookies” entry." src="./assets/chrome-show-cookies.png" width="800" />
 
-<img alt="A modal dialog titled “Cookies in use” shows that cookies for a couple subdomains of stackblitz.io and webcontainer.io were blocked. Select a domain and click “Allow” to add an exception." src="/doc_images/chrome-blocked-cookies.png" width="800" />
+<img alt="A modal dialog titled “Cookies in use” shows that cookies for a couple subdomains of stackblitz.io and webcontainer.io were blocked. Select a domain and click “Allow” to add an exception." src="./assets/chrome-blocked-cookies.png" width="800" />
 
 If that is the case, choose to “Allow” cookies for those third-party domains. After that, the browser will prompt you to reload the page and you will be able to run the current project.
 
@@ -39,11 +39,11 @@ https://[*.]local.webcontainer.io
 
 For instance, in Chrome, go to [chrome://settings/cookies](chrome://settings/cookies) and add those exceptions in the “Sites that can always use cookies” section.
 
-<img alt="Chrome cookie settings with an empty list of “Sites that can always use cookies”." src="/doc_images/chrome-settings-cookies-1.png" width="800" />
+<img alt="Chrome cookie settings with an empty list of “Sites that can always use cookies”." src="./assets/chrome-settings-cookies-1.png" width="800" />
 
-<img alt="Chrome cookie settings showing a modal dialog for adding a site to list of third-party cookie exceptions." src="/doc_images/chrome-settings-cookies-2.png" width="800" />
+<img alt="Chrome cookie settings showing a modal dialog for adding a site to list of third-party cookie exceptions." src="./assets/chrome-settings-cookies-2.png" width="800" />
 
-<img alt="Chrome cookie settings with exceptions for stackblitz.io and local.webcontainer.io domains." src="/doc_images/chrome-settings-cookies-3.png" width="800" />
+<img alt="Chrome cookie settings with exceptions for stackblitz.io and local.webcontainer.io domains." src="./assets/chrome-settings-cookies-3.png" width="800" />
 
 ## Enabling WebAssembly
 
@@ -56,6 +56,6 @@ stackblitz.com
 
 For instance, in Edge you can do that in [edge://settings/privacy](edge://settings/privacy) → “Enhance your security on the web” → “Exceptions”.
 
-<img alt="Edge privacy settings showing the “Enhance your security on the web” section." src="/doc_images/edge-settings-enhanced-security-1.png" width="800" />
+<img alt="Edge privacy settings showing the “Enhance your security on the web” section." src="./assets/edge-settings-enhanced-security-1.png" width="800" />
 
-<img alt="Edge privacy settings showing two entries added under the label “Enhanced security is turned off for these sites”." src="/doc_images/edge-settings-enhanced-security-2.png" width="800" />
+<img alt="Edge privacy settings showing two entries added under the label “Enhanced security is turned off for these sites”." src="./assets/edge-settings-enhanced-security-2.png" width="800" />

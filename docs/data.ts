@@ -67,42 +67,42 @@ export const enterpriseLinks = [
 
 export const homeTopLinks = [
   {
-    icon: 'embed',
+    icon: '/icons/fa-file-import.svg',
     title: 'Get Started',
     description:
       'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
     url: '/guides/user-guide/what-is-stackblitz',
   },
   {
-    icon: 'embed',
+    icon: '/icons/fa-browser.svg',
     title: 'Integrating StackBlitz',
     description:
       'Follow guides on building interactive playgrounds, improving bug repros, and using StackBlitz for tech education.',
     url: '/guides/integration/open-from-github',
   },
   {
-    icon: 'sdk',
+    icon: '/icons/fa-brackets-curly.svg',
     title: 'API Reference',
     description:
       'Embed GitHub repos, create new projects, build educational experiences, all programmatically with our SDK.',
     url: '/platform/api/javascript-sdk',
   },
   {
-    icon: 'embed',
+    icon: '/icons/fa-gear.svg',
     title: 'WebContainers',
     description:
       'Learn about browser support, package managers, project config, performance, and troubleshooting.',
     url: '/platform/webcontainers/browser-support',
   },
   {
-    icon: 'embed',
+    icon: '/icons/fa-life-ring.svg',
     title: 'Browser Support',
     description:
       'Tweak your browser with this step-by-step guide to unleash the full power of WebContainers!',
     url: '/platform/webcontainers/browser-support',
   },
   {
-    icon: 'embed',
+    icon: '/icons/fa-users.svg',
     title: 'Enterprise Edition',
     description:
       'Run StackBlitz behind your firewall, on new or existing Kubernetes clusters, with options for air gapping and SSO.',

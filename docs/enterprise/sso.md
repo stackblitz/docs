@@ -19,7 +19,7 @@ StackBlitz SAML integration relies on a user-level token. To ensure consistent d
 
 Begin by logging into your StackBlitz admin account and then click on "Setup Authentication". This will take you to the "Auth Settings" page:
 
-![SAML Config](/doc_images/saml-config.png)
+![SAML Config](./assets/saml-config.png)
 
 To start, check the "enabled" box on the SAML settings form.
 
