@@ -105,8 +105,15 @@ To specify the first parameter, add `?` at the end of the base link. Connect the
     <b>Example:</b> <code>view=editor</code><br/>
 </p>
 
+### 4. Optional: Installing CodeflowApp bot
 
-### 4. Configure "edit this page"
+<!--@include: ./parts/codeflowapp-bot.md-->
+
+<!--@include: ./parts/installing-codeflowapp.md-->
+
+Follow [this integration guide](./integrating-codeflowapp-bot.md) to integrate CodeflowApp bot into your project.
+
+### 5. Configure "edit this page"
 
 To enable edits on the sites created via generators, you need to change the default settings. Consult the table below to find which files to change.
 
