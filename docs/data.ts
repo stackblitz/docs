@@ -15,18 +15,18 @@ export const integrationGuideLinks = [
   { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
 ];
 
-export const codeflowLinks = [
-  { text: 'What is Codeflow?', link: '/guides/codeflow/what-is-codeflow' },
-  { text: 'Using pr.new', link: '/guides/codeflow/using-pr-new' },
+export const codeflow = [
+  { text: 'What is Codeflow?', link: '/codeflow/what-is-codeflow' },
+  { text: 'Using pr.new', link: '/codeflow/using-pr-new' },
   {
     text: 'Content updates with Web Publisher',
-    link: '/guides/codeflow/content-updates-with-web-publisher',
+    link: '/codeflow/content-updates-with-web-publisher',
   },
-  { text: 'Working in Codeflow IDE', link: '/guides/codeflow/working-in-codeflow-ide' },
-  { text: 'Integrating Codeflow IDE', link: '/guides/codeflow/integrating-codeflow-ide' },
-  { text: 'Integrating Web Publisher', link: '/guides/codeflow/integrating-web-publisher' },
-  { text: 'Integrating CodeflowApp bot', link: '/guides/codeflow/integrating-codeflowapp-bot' },
-  { text: 'Codeflow FAQ', link: '/guides/codeflow/codeflow-faq' },
+  { text: 'Working in Codeflow IDE', link: '/codeflow/working-in-codeflow-ide' },
+  { text: 'Integrating Codeflow IDE', link: '/codeflow/integrating-codeflow-ide' },
+  { text: 'Integrating CodeflowApp bot', link: '/codeflow/integrating-codeflowapp-bot' },
+  { text: 'Integrating Web Publisher', link: '/codeflow/integrating-web-publisher' },
+  { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },
 ];
 
 export const apiLinks = [

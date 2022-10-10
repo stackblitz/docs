@@ -10,7 +10,7 @@ This page covers what to expect when using Codeflow IDE.
 
 ## What is Codeflow IDE?
 
-<!--@include: ./parts/codeflow-ide.md-->
+<!-- @include: ./parts/codeflow-ide.md -->
 
 It is designed for enabling you to quickly spin up the entire environment without the hassle of cloning and installing dependencies.
 
@@ -55,7 +55,6 @@ If the Preview doesn't work, oftentimes browser configuration or browser incompa
 Please note that, depending on the framework, **some changes may cause the dev server to stop running**, which in turn causes the Preview to either not respond to new updates or show an error screen ("Unable to connect to `local.webcontainer.io`"). 
 
 Check in the terminal if the dev server is still running. If you want to restart it, click in the terminal window and:
-
 1. press `ctrl`+`c` to "kill" the server,
 2. press the "up arrow" button to bring up the start command,
 3. press enter to run that command,
