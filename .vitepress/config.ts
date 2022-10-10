@@ -26,10 +26,10 @@ export default defineConfig({
     siteTitle: 'StackBlitz Docs',
     logo: '/img/stackblitz-docs-logo.svg',
     algolia: getAlgoliaConfig(process.env),
-    //editLink: {
-    // pattern: 'https://github.com/stackblitz/docs/edit/main/docs/:path',
-    // text: 'Edit this page on GitHub',
-    //},
+    editLink: {
+      pattern: 'https://pr.new/stackblitz/docs/edit/main/docs/:path',
+      text: 'Edit this page',
+    },
     nav: [
       { text: 'Guides', link: data.userGuideLinks[0].link },
       { text: 'Codeflow', link: data.codeflow[0].link },
