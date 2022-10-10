@@ -1,7 +1,8 @@
-import { defineConfig } from 'vitepress';
-
+import dotenv from 'dotenv';
+import { defineConfig, type HeadConfig } from 'vitepress';
 import * as data from '../docs/data';
-import { GTAG_INIT, GTAG_URL } from './analytics';
+
+dotenv.config();
 
 export default defineConfig({
   srcDir: 'docs',
@@ -18,28 +19,13 @@ export default defineConfig({
   title: 'StackBlitz Docs',
   description:
     'Discover how to use StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
-  head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/img/favicon.png' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'StackBlitz Docs' }],
-    ['meta', { property: 'og:image', content: 'https://developer.stackblitz.com/img/stackblitz-docs-social.png' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
-    ['meta', { name: 'twitter:site', content: '@StackBlitz' }],
-    ['meta', { name: 'twitter:image', content: 'https://developer.stackblitz.com/img/stackblitz-docs-social.png' }],
-    ['script', { src: GTAG_URL, async: '' }],
-    ['script', {}, GTAG_INIT],
-  ],
+  head: getHeadTags(process.env),
 
   // Theme
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
     logo: '/img/stackblitz-docs-logo.svg',
-    algolia: {
-      appId: 'YCVDUYWLVC',
-      apiKey: '8fe79cd865807082f50083ddd5647b0b',
-      indexName: 'stackblitz',
-    },
+    algolia: getAlgoliaConfig(process.env),
     //editLink: {
     // pattern: 'https://github.com/stackblitz/docs/edit/main/docs/:path',
     // text: 'Edit this page on GitHub',
@@ -92,3 +78,52 @@ export default defineConfig({
     },
   },
 });
+
+function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
+  const tags: HeadConfig[] = [
+    ['link', { rel: 'icon', type: 'image/png', href: '/img/favicon.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'StackBlitz Docs' }],
+    [
+      'meta',
+      {
+        property: 'og:image',
+        content: 'https://developer.stackblitz.com/img/stackblitz-docs-social.png',
+      },
+    ],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
+    ['meta', { name: 'twitter:site', content: '@StackBlitz' }],
+    [
+      'meta',
+      {
+        name: 'twitter:image',
+        content: 'https://developer.stackblitz.com/img/stackblitz-docs-social.png',
+      },
+    ],
+  ];
+
+  if (env.VITE_GTM_ID) {
+    tags.push([
+      'script',
+      { src: `https://www.googletagmanager.com/gtag/js?id=${env.VITE_GTM_ID}`, async: '' },
+    ]);
+    tags.push([
+      'script',
+      {},
+      `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag('js',new Date),gtag('config','${env.VITE_GTM_ID}',{anonymize_ip:true})`,
+    ]);
+  }
+
+  return tags;
+}
+
+function getAlgoliaConfig(env: NodeJS.ProcessEnv) {
+  if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
+    return {
+      indexName: 'stackblitz',
+      appId: env.VITE_ALGOLIA_ID,
+      apiKey: env.VITE_ALGOLIA_KEY,
+    };
+  }
+}

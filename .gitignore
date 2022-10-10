@@ -1,3 +1,9 @@
-.netlify
 build
 node_modules
+
+# Local env
+.env
+.env.*
+
+# Netlify testing
+.netlify
