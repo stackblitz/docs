@@ -44,4 +44,4 @@ To edit a single file with pr.new, visit it in the GitHub repository and click t
 
 You will be redirected to [Web Publisher](./content-updates-with-web-publisher) for a more pleasant editing experience.
 
-If you prefer to work in a full environment, click on the "Open in IDE" button and you will be redirected to Codeflow IDE.
+If you prefer to work in a full environment, click on the "Open in IDE" button and you will be redirected to [Codeflow IDE](./working-in-codeflow-ide)
