@@ -4,7 +4,7 @@ title: Integrating Codeflow IDE
 
 # {{ $frontmatter.title }}
 
-This page covers integrating Codeflow IDE into your project - either by adding a button that opens the repository or by installing CodeflowApp staging bot.
+This page covers integrating Codeflow IDE into your project - either by [adding a button that opens the repository](#open-in-codeflow-button) or by [installing CodeflowApp staging bot](#codeflowapp-staging-bot). It also covers the [package manager configuration](#package-managers-supported-in-codeflow-ide), including pnpm overrides.
 
 ## What is Codeflow IDE?
 
@@ -44,7 +44,7 @@ Or, in HTML:
 
 If the user is logged in at GitHub and StackBlitz (in beta), Codeflow IDE will open up. No further configuration is needed. 
 
-## Packages supported in Codeflow IDE
+## Package Managers supported in Codeflow IDE
 
 <!--@include: ./parts/supported-packages.md-->
 
