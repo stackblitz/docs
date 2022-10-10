@@ -10,6 +10,10 @@ This page covers integrating CodeflowApp Bot into your project.
 
 <!--@include: ./parts/codeflowapp-bot.md-->
 
+Once integrated, it will appear on your PRs and issues containing StackBlitz reproduction:
+
+<img lang="en" src="./assets/codeflowapp-pr.png" alt="CodeflowApp bot in action" style="width: 400px"/>
+
 ## Integrating CodeflowApp Bot
 
 To integrate CodeflowApp bot, you will install it using GitHub UI. Follow this step by step guide:

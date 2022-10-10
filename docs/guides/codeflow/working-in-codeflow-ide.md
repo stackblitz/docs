@@ -69,7 +69,8 @@ If you close the Preview by accident, you can reopen it by selecting the icon of
 
 Whenever a file is changed, you will see a white dot next to its tab in the editor. 
 
-<!-- TODO: add screenshot -->
+
+<img lang="en" src="./assets/codeflow-ide-white-dots-cut.png" alt="CodeflowApp bot in action" style="width: 400px"/>
 
 Moreover, you will also see that dot on the tab in your browser do you remember that you have unsaved changes.
 
