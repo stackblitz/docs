@@ -71,15 +71,15 @@ After running the `kubectl kots install` command above, the Admin Console will b
 
 If you've already uploaded the StackBlitz air gap bundle, check the box next to "Disable Pushing Images to Registry" to skip the image mirroring step.
 
-![Air Gap Registry Config](/doc_images/ee/airgap-installation/kots-docker-screen.png)
+![Air Gap Registry Config](../assets/airgap-installation/kots-docker-screen.png)
 
 Once you've submitted your credentials and uploaded your air gapped bundle, the images will be mirrorred to your container registry and you will be prompted to configure your application.
 
-![Air Gap Image Mirroring](/doc_images/airgapped-mirror-images.png)
+![Air Gap Image Mirroring](../assets/airgapped-mirror-images.png)
 
 Check the [Administrator Guide](/enterprise/installation/administrator-guide#config-options) for more details on how to configure all of the options in the Admin Console.
 
-![Console Config](/doc_images/ee-console-config.png)
+![Console Config](../assets/ee-console-config.png)
 
 ### Using the CLI
 

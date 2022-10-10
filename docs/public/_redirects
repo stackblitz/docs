@@ -1,3 +1,7 @@
+# Older redirects, can maybe be removed?
+/docs/platform  /
+/docs/platform/supported-frameworks  /guides/user-guide/starter-projects
+
 # Redirect old URL patterns
 /docs/enterprise   /enterprise/overview
 /docs/enterprise/adfs-sso/   /enterprise/adfs-sso
