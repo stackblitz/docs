@@ -10,9 +10,7 @@ This page covers integrating Web Publisher into your docs to lower the barrier f
 
 Web Publisher is a page editing tool that makes docs contribution stress-free, including those of us who are not technical.
 
-<!-- screenshot of Web Publisher -->
-
-Web Publisher features a live preview that live updates as you introduce your edits and, once you are ready, creates a fork and a pull request for you. You don't need to have the local environment set up, clone the repository, install dependencies, or run the server to see the changes.
+Web Publisher features a **preview that live updates** as you introduce your edits. **Once you are ready, Web Publisher commits changes, creates a fork and a pull request for you.** You don't need to have the local environment set up, clone the repository, install dependencies, or run the server to see the changes. All this is happening inside your browser.
 
 <img lang="en" src="./assets/wp-whole.png" alt="Web Publisher" style="width: 600px"/>
 
@@ -54,42 +52,30 @@ If you see that **the preview loads correctly** (see below), this means that you
 
 ### 2. Specify the Web Publisher editing link
 
-Let's compose a URL that will specify which file the Web Publisher should feature in the editor and which path to render in the preview. Web Publisher links follow this pattern:
+Let's compose a URL that will specify which file the Web Publisher should feature in the editor and which path to render in the preview. You can use the link generator below or build the link yourself.
 
-```
-https://pr.new/github.com/{repo owner's username}/{repo}/edit/{branch}/{repo file path}
-```
+:::tip Web Publisher link generator
+Alternatively, you can use the **Web Publisher link generator** to compose your link:
 
-:::tip
-You can use the **Web Publisher URL generator** to compose your link:
-
-<iframe src="https://stackblitz.com/edit/vue-c2wltp?embed=1&file=src/App.vue&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:350px;border:1px solid var(--vp-custom-block-tip-border);border-radius:10px"></iframe>
+<iframe src="https://stackblitz.com/edit/vue-c2wltp?embed=1&file=src/App.vue&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:450px;border:1px solid var(--vp-custom-block-tip-border);border-radius:10px"></iframe>
 :::
 
-The table below presents these URL components with examples dissecting a Web Publisher link to our docs page:
+Web Publisher links follow this pattern:
 
-| Element | Example | Notes |
-| ------- | ------- | ----- | 
-| `https://pr.new/` | `https://pr.new/` | - |
-| `github.com/` | `github.com/` | - | 
-| `{repo owner's username}/` | `stackblitz/` | - |
-| `{repo}/` | `docs/` | - | 
-| `{branch}/` | `main/` | - | 
-| `{repo file path}/` | `docs/guides/user-guide/what-is-stackblitz.md`| File path to the specific file in the repo to be edited. |
-| `?initialPath=` | `?initialPath=` | Query param to specify which URL path should be rendered in the preview  |
-| `{URL path}` | `guides/user-guide/what-is-stackblitz`| - |
 
-Put together, the Web Publisher editing link is as follows:
+`https://pr.new/github.com/{repo-owner's-username}/{repo}/edit/{branch}/{file-path-in-the-repo}`
 
-```
-https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md?initialPath=docs/guides/user-guide/what-is-stackblitz&view=editor
-```
 
-### 3. Customize the link
+For example, here is a Web Publisher link to our docs page:
 
-Now that you have the base link, you can further customize user's experience with query parameters. 
+`https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md`
 
+### Customize the link
+Now that you have the base link, you can further **customize user experience with query parameters**. 
+
+:::info
 To specify the first parameter, add `?` at the end of the base link. Connect the subsequent ones with `&`. 
+:::
 
 ### `initialPath`
 

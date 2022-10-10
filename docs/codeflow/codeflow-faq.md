@@ -51,21 +51,6 @@ You need to sign in to StackBlitz *using* GitHub.
 
 <!--@include: ./parts/persistance.md-->
 
-### What features are you planning to implement?
-
-In the following months, we will focus on implementing the following features:
-- **Codeflow IDE:**
-    - **change persistence between sessions** - you will be able to close the page, close the browser, and your changes will still be there when you reconvene,
-    - **real-time collaboration** - the best setup for pair-programming,
-    - **private registries** enabled on our team SaaS plans on stackblitz.com (initially, not on-prem)
-- **Web Publisher:**
-    - something,
-- **CodeflowApp bot:**
-    - something.
-
-### Is multiplayer mode in the works?
-Yes! Please check our list of [planned features](#what-features-are-you-planning-to-implement).
-
 ### Can I run private registries?
 
 Not yet! Private registries are in the project roadmap for Q1/Q2 '23, initially not on-prem but instead enabled on our team SaaS plans on stackblitz.com.
