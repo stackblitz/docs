@@ -21,8 +21,9 @@ To edit a page, you need to find its corresponding file on GitHub. You can do it
 
 ### "Edit in Web Publisher" button
 
+<img lang="en" class="float-left" src="./assets/button-edit-in-web-publisher-medium.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/>
+
 If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕
-<!-- TODO: add button -->
 
 :::tip Request the button!
 If the page doesn't feature our button, you can suggest to the page admins to include it - here's our [Web Publisher integration guide](./integrating-web-publisher).
@@ -42,23 +43,25 @@ Follow these steps:
 3. Replace `github.com` with `pr.new` and you will be redirected to Web Publisher.
 4. In the Preview panel on the right side, navigate to the page you want to edit.
 
-<!-- TODO: add gif -->
+
+<img lang="en" src="./assets/wp-opening-from-gh.gif" alt="Opening Web Publisher through GitHub" />
+
 
 ## On your screen
 
 Welcome to Web Publisher, a friendly publishing tool for content updates on blogs, docs, wikis, and other pages.
 
-Let us give you a quick tour around this tool.
+<img lang="en" src="./assets/wp-whole.png" alt="Web Publisher" style="width: 600px"/>
 
-<!-- TODO: screenshot of the whole screen -->
+Let us give you a quick tour around this tool.
 
 ### Top navigation bar
 
-On the left side, you'll find the information about which file you're editing and in which repository.
+<img lang="en" src="./assets/wp-top-nav-bar-small.png" alt="Top nav bar"/>
 
-<!-- TODO: screenshot -->
+On the **left side**, you'll find the information about which file you're editing and in which repository.
 
-On the right side, you'll find three buttons:
+On the **right side**, you'll find three buttons:
 - **"Open in IDE"**, which redirects to [Codeflow IDE](./working-in-codeflow-ide) - helpful when you want to add images or work on a few files.
 - **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
 - **Your Profile**, which opens a new browser tab with your StackBlitz profile page.
@@ -69,11 +72,11 @@ Editor is where you will introduce your changes - it is located on the left side
 
 Note that it is possible to specify in the link that Web Publisher will load with the editor on full screen.
 
-<!-- TODO: screenshot -->
+<img lang="en" src="./assets/wp-editor-window-cut.png" alt="Editor window" style="width: 600px"/>
 
-In the top left corner, you will see the name of the file you're editing.
+In the **top left corner**, you will see the name of the file you're editing.
 
-In the top right corner, you will see an icon that either expands the Editor view or switches back to split screen.
+In the **top right corner**, you will see an icon that either expands the Editor view or switches back to split screen.
 
 ### Live Preview
 
@@ -81,7 +84,7 @@ Live Preview is where you can verify the changes you've introduced. It updates a
 
 Note that it is possible to specify in the link that Web Publisher will load with the Preview on full screen.
 
-<!-- TODO: screenshot -->
+<img lang="en" src="./assets/wp-preview-window-cut.png" alt="Preview window" style="width: 600px"/>
 
 In the top left corner, you will see the name of the panel ("Preview") and an arrow icon that allows you to trigger a refresh if the changes you introduced are not updating.
 
@@ -113,6 +116,8 @@ Ready to submit? Follow these steps:
 3. A new browser tab will open with a form to "Open a pull request" (which means "suggest changes to the owner of the page"). Fill it out, including the description of the changes you made and explanation of your reasoning and motivation behind it. Please keep the information that the pull request was made with Web Publisher (already pre-filled).
 
 Congratulations! You've submitted the edits 🥳
+
+<img lang="en" src="./assets/wp-submitting-to-github.gif" alt="Opening Web Publisher through GitHub" />
 
 ## Compatibility Mode
 
