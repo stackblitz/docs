@@ -55,7 +55,7 @@ You need to sign into stackblitz *using* GitHub.
 
 In the following months, we will focus on implementing the following features:
 - **Codeflow IDE:**
-    - **change persistance between sessions** - you will be able to close the page, close the browser, and your changes will still be there when you reconvene,
+    - **change persistence between sessions** - you will be able to close the page, close the browser, and your changes will still be there when you reconvene,
     - **multiplayer mode** - the best setup for pair-programming,
     - **private registries** enabled on our team SaaS plans on stackblitz.com (initially, not on-prem)
 - **Web Publisher:**
