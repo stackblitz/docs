@@ -18,13 +18,15 @@ This page addresses the frequently asked questions concerning: current features,
 - CodeflowApp bot for issues and PR, and 
 - a short URL that chooses the right tool for you.
 
-[Read more on our intro page.](./what-is-codeflow.md)
+[Read more on Codeflow intro page.](./what-is-codeflow.md)
 
 ### Is StackBlitz editor the same as Codeflow IDE?
 
 **StackBlitz editor** allows you for spinning up quick demos, embedding your projects in your docs, and building project starters. 
 
 <!--@include: ./parts/codeflow-ide.md-->
+
+[Learn more about the full potential of StackBlitz on StackBlitz intro page.](/guides/user-guide/what-is-stackblitz.md)
 
 ### Is Codeflow stable?
 Codeflow is currently a beta version, however, general availability can be expected in early 2023.
