@@ -84,5 +84,5 @@ Since we’re executing the code entirely in the browser's sandbox, Codeflow IDE
 
 ### Is Codeflow free?
 
-Codeflow IDE is free for Open Source projects and public repositories an will remain this way forever. This includes private repositories. Please reach out to [devrel@stackblitz.com](mailto:devrel@stackblitz.com) and we’ll get your organization hooked up with free private repos! 
+Codeflow IDE is free for Open Source projects and public repositories and will remain this way forever. This includes private repositories. Please reach out to [devrel@stackblitz.com](mailto:devrel@stackblitz.com) and we’ll get your organization hooked up with free private repos! 
 
