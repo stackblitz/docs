@@ -80,7 +80,7 @@ The table below presents these URL components with examples dissecting a Web Pub
 Put together, the Web Publisher editing link is as follows:
 
 ```
-https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md?&view=editor
+https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md?initialPath=docs/guides/user-guide/what-is-stackblitz&view=editor
 ```
 
 ### 3. Customize the link
