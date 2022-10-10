@@ -68,7 +68,7 @@ Yes! Please check our list of [planned features](#what-features-are-you-planning
 
 ### Can I run private registries?
 
-Not yet! Private repositories are in the project roadmap for Q1/Q2 '23, initially not on-prem but instead enabled on our team SaaS plans on stackblitz.com.
+Not yet! Private registries are in the project roadmap for Q1/Q2 '23, initially not on-prem but instead enabled on our team SaaS plans on stackblitz.com.
 
 ### Can I run private repositories?
 
