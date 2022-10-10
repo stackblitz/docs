@@ -43,7 +43,7 @@ It is in the beta version available through the [early access program](ADD LINK)
 
 Yes, only during the beta. Starting Q1 2023, you'll be able to open public repos without being logged in.
 
-### To open a repo in Codeflow IDE, I need to be signed into StackBlitz and GitHub? Or only one of them?
+### To open a repo in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
 
 You need to sign into stackblitz *using* GitHub.
 
