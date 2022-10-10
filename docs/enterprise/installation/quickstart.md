@@ -47,6 +47,6 @@ Drag and drop your license file onto the webpage to upload it. License verificat
 
 Once this step completes, you will be presented with EE site configuration screen. It should look like this:
 
-![EE Console](/doc_images/ee-console-config.png)
+![EE Console](../assets/ee-console-config.png)
 
 After filling out the configuration fields, click "Continue". Your StackBlitz EE instance is now booted and ready for **[DNS configuration](/enterprise/configuring-dns)**.

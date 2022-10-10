@@ -78,7 +78,7 @@ After choosing and submitting, you will see the following screen:
 
 Navigate to `http://localhost:8800` to access the Admin Console. You will be prompted to log in using the password you chose before.
 
-![Admin Console Login](/doc_images/admin-console-login.png)
+![Admin Console Login](../assets/admin-console-login.png)
 
 :::tip
 To access the Admin Console again, run `kubectl kots admin-console --namespace yournamespace` (replacing `yournamespace` with your namespace).
@@ -90,6 +90,6 @@ After logging in to the Admin Console, you'll be prompted for a License.
 
 Drag and drop your license file onto the webpage to upload it. Once this step completes, you will be presented with EE site configuration screen. It should look like this:
 
-![EE Console](/doc_images/ee-console-config.png)
+![EE Console](../assets/ee-console-config.png)
 
 See the [Config Options in the Administrator Guide](/enterprise/installation/administrator-guide#config-options) for more details on each configuration option. After filling out the configuration fields, click "Continue". Your configuration will be saved. The Admin Console will deploy your configuration and begin to pull and run the images for StackBlitz. After your instance is up and running, you will need to [Configure DNS Settings](/enterprise/configuring-dns) to point your DNS zones at the IP/CNAME of your ingress.

@@ -10,7 +10,7 @@ With your desired StackBlitz project open, drag and drop any files or a folder y
 
 <img
   alt="Animation of dragging files from a local folder onto the StackBlitz editor sidebar"
-  src="https://i.imgur.com/7F9r1xw.gif"
+  src="./assets/import-drag-and-drop-files.gif"
 />
 
 ## Import from GitHub
@@ -19,9 +19,9 @@ You can run any public GitHub repository on StackBlitz by adding the username an
 
 `stackblitz.com/github/{GH_USERNAME}/{REPO_NAME}`
 
-![Public GitHub Repo](/doc_images/github-public-repo.png)
+![Public GitHub Repo](./assets/github-public-repo.png)
 
-![Public Repo Import from GitHub](/doc_images/import-from-github.png)
+![Public Repo Import from GitHub](./assets/import-from-github.png)
 
 If you want, you can also specify a branch, tag, or commit:
 
@@ -76,15 +76,18 @@ Importing private GitHub repos is a feature available with our memberships. If y
 :::
 
 **1.** Go to your dashboard and open a new JavaScript blank project.
-![Dashboard for JavaScript Blank Project](/doc_images/private-repo-starter.png)
+
+![Dashboard for JavaScript Blank Project](./assets/private-repo-starter.png)
 
 **2.** Click on 'Connect repository' on the top left.
 
 **3.** Click on the 'importing from an existing repository' link.
-![Connect and import GitHub repo](/doc_images/connect-to-existing-repo.png)
+
+![Connect and import GitHub repo](./assets/connect-to-existing-repo.png)
 
 **4.** Paste your full GitHub repo URL.
-![Paste GitHub repo URL to import](/doc_images/import-existing-repo.png)
+
+![Paste GitHub repo URL to import](./assets/import-existing-repo.png)
 
 The video below outlines a workaround to edit collaboratively in a private repo:
 
