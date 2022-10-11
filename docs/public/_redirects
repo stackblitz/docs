@@ -1,6 +1,12 @@
-# Older redirects, can maybe be removed?
-/docs/platform  /
-/docs/platform/supported-frameworks  /guides/user-guide/starter-projects
+# Redirect bare section paths to their first page
+/codeflow   /codeflow/what-is-codeflow
+/enterprise   /enterprise/overview
+/guides   /guides/user-guide/what-is-stackblitz
+/guides/user-guide  /guides/user-guide/what-is-stackblitz
+/guides/integration   /guides/integration/embedding
+/platform   /
+/platform/api   /platform/api/javascript-sdk
+/platform/webcontainers   /platform/webcontainers/browser-support
 
 # Redirect old URL patterns
 /docs/enterprise   /enterprise/overview
@@ -47,3 +53,7 @@
 /docs/platform/turbo/   /platform/webcontainers/turbo-package-manager
 /docs/platform/webcontainer-api/   /platform/api/webcontainer-api
 /docs/platform/what-is-stackblitz/   /guides/user-guide/what-is-stackblitz
+
+# Older redirects, can maybe be removed?
+/docs/platform  /
+/docs/platform/supported-frameworks  /guides/user-guide/starter-projects
