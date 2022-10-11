@@ -27,7 +27,7 @@ If reproduction URL is present, CodeflowApp will comment with a "Fix this issue"
 
 To install the CodeflowApp bot on a repository, you will install it using GitHub UI.
 
-1. Visit [CodeflowApp profile on GitHub Marketplace](https://github.com/marketplace/codeflowapp)
+1. Visit [CodeflowApp profile page](https://stackblitz.com/install-github-app)
 2. Select the account or organization, as well as the repositories you want the bot to have access to. 
   -  If you choose “all in Organization”, CodeflowApp bot will be installed on all repositories in your organization.
   - Please don't worry - if you change your mind, you can change the bot access or completely disable it!
