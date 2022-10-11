@@ -31,7 +31,7 @@ This page addresses the frequently asked questions concerning: current features,
 ### Is Codeflow stable?
 Codeflow is currently a beta version, however, general availability can be expected in early 2023.
 
-## Features
+## Capabilities & Limitations
 
 ### Can I run Vim?
 
@@ -59,7 +59,7 @@ Any file type can be opened in Web Publisher.
 
 ### Which runtime does Codeflow support?
 
-Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which are compatible with Node.js 16.
+Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which currently support **Node.js 16**.
 
 ### Does any company use Codeflow IDE for their daily development work?
 
