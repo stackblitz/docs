@@ -57,12 +57,11 @@ Let us give you a quick tour around this tool.
 
 ### Top navigation bar
 
-<img lang="en" src="./assets/wp-top-nav-bar-small.png" alt="Top nav bar"/>
+<img lang="en" src="./assets/wp-top-nav-bar-u.png" alt="Top nav bar"/>
 
 On the **left side**, you'll find the information about which file you're editing and in which repository.
 
-On the **right side**, you'll find three buttons:
-- **"Open in IDE"**, which redirects to [Codeflow IDE](./working-in-codeflow-ide) - helpful when you want to add images or work on a few files.
+On the **right side**, you'll find two buttons:
 - **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
 - **Your Profile**, which opens a new browser tab with your StackBlitz profile page.
 
@@ -72,11 +71,15 @@ Editor is where you will introduce your changes - it is located on the left side
 
 Note that it is possible to specify in the link that Web Publisher will load with the editor on full screen.
 
-<img lang="en" src="./assets/wp-editor-window-cut.png" alt="Editor window" style="width: 600px"/>
+<img lang="en" src="./assets/wp-editor-view.png" alt="Editor window" style="width: 600px"/>
 
 In the **top left corner**, you will see the name of the file you're editing.
 
-In the **top right corner**, you will see an icon that either expands the Editor view or switches back to split screen.
+<img lang="en" src="./assets/wp-open-in-ide-popup.png" alt="Editor window" style="width: 200px"/>
+
+In the **top right corner**, you will see two icons:
+- the "..." icon which opens a popup with the **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
+- an icon of a two-pointed arrow that either expands the Editor view or switches back to split screen.
 
 ### Live Preview
 
