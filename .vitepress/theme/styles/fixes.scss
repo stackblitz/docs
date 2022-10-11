@@ -1,0 +1,26 @@
+// Fix hardcoded background color of the Nav component.
+// Needs to be a color that matches --vp-c-bg but with partial opacity (for the glass effect).
+@media (min-width: 960px) {
+  :root.dark .VPNav.no-sidebar,
+  :root.dark .VPNavBar.has-sidebar .content {
+    background-color: hsl(220 14% 13% / 0.7);
+  }
+}
+
+// Fix enormous line-height of navbar items
+.VPNavBarMenu .VPNavBarMenuLink {
+  min-height: var(--vp-nav-height-mobile);
+  line-height: 1.32;
+  @media (min-width: 960px) {
+    min-height: var(--vp-nav-height-desktop);
+  }
+}
+
+// Don't clip text in the outline
+.VPDocAsideOutline .outline-link {
+  white-space: normal;
+  text-overflow: initial;
+  padding: 5px 0;
+  font-size: 13px;
+  line-height: 18px;
+}
