@@ -30,7 +30,15 @@ If you're curious about this short URL, learn about the [full potential of "pr.n
 
 If you are not logged into StackBlitz, while this product is in beta, you will be prompted to login or create a new account.
 
-## Troubleshooting the Preview
+## Troubleshooting
+
+### Out of memory error
+
+It may happen that having a few Codeflow IDE or StackBlitz projects open at the same time may cause your browser to run out of memory. In this case, you will see the following popup:
+
+<img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have Codeflow IDE, Web Publisher or StackBlitz editor open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
+
+<!-- @include: ../parts/error-out-of-memory.md -->
 
 ### Preview doesn't work
 
