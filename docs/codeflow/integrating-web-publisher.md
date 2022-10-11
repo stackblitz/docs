@@ -57,7 +57,7 @@ Let's compose a URL that will specify which file the Web Publisher should featur
 :::tip Web Publisher link generator
 Alternatively, you can use the **Web Publisher link generator** to compose your link:
 
-<iframe src="https://stackblitz.com/edit/vue-c2wltp?embed=1&file=src/App.vue&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:450px;border:1px solid var(--vp-custom-block-tip-border);border-radius:10px"></iframe>
+<iframe src="https://stackblitz.com/edit/vue-c2wltp?embed=1&file=src/App.vue&hideExplorer=1&hideNavigation=1&view=preview&ctl=1" style="width:100%;height:450px;border:1px solid var(--vp-custom-block-tip-border);border-radius:10px"></iframe>
 :::
 
 Web Publisher links follow this pattern:
@@ -101,9 +101,22 @@ To specify the first parameter, add `?` at the end of the base link. Connect the
 
 Follow [this integration guide](./integrating-codeflowapp-bot.md) to integrate CodeflowApp bot into your project.
 
-### 5. Configure "edit this page"
+<!-- ### 5. Configure "edit this page"
 
-To enable edits on the sites created via generators, you need to change the default settings. Consult the table below to find which files to change.
+To enable edits on the sites created via generators, you need to change the default settings. Consult the table below to find which files to change. -->
+
+## "Edit in Web Publisher" button
+
+To help your users easily find their way to Web Publisher on your site or repo, you can add a CTA (call-to-action) button on your website or in the README file. 
+
+| Button preview | Direct URL |
+| --- | --- |
+| <img alt="Edit in Web Publisher" src="./assets/button-edit-in-web-publisher-icon-medium.svg" /> | <a href="./assets/button-edit-in-web-publisher-icon-medium.svg" target="_blank">button-edit-in-web-publisher-icon-medium.svg</a> |
+| <img alt="Edit in Web Publisher" src="./assets/button-edit-in-web-publisher-icon-small.svg" /> | <a href="./assets/button-edit-in-web-publisher-icon-small.svg" target="_blank">button-edit-in-web-publisher-icon-small.svg</a> |
+
+::: tip
+You can either host the images on your servers or directly use our image URLs.
+:::
 
 ## Compatibility Mode
 

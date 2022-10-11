@@ -30,20 +30,6 @@ If you're curious about this short URL, learn about the [full potential of "pr.n
 
 If you are not logged into StackBlitz, while this product is in beta, you will be prompted to login or create a new account.
 
-<!-- TODO add screenshot of the logging popup -->
-
-## Running dev server
-
-As soon as the page loads, Codeflow IDE will clone the repository and install the dependencies. If the project is compatible with WebContainers, in the bottom right corner you will see a popup notification asking if you'd like to see the preview:
-
-> A service is available on port 5173
-
-If you choose "Open Preview", a realtime preview will appear on the split screen. By default, the preview updates whenever you save a file.
-
-:::tip 
-You can open the Preview in a separate tab or window if you find that more comfortable.
-::: 
-
 ## Troubleshooting the Preview
 
 ### Preview doesn't work
@@ -106,3 +92,12 @@ Follow these steps:
 3. Compare suggested changes with the original file. You can also see the edits rendered in the Preview panel if you navigate to the edited page - in this case, the "What is StackBlitz" page.
 4. You can add comments by clicking on the "+" icons, read other comments, or start a review.
 5. If you no longer want to see the changes in the "PR Review mode", close the relevant files.
+
+## Using the CodeflowApp bot
+
+<!--@include: ./parts/codeflowapp-bot.md-->
+
+<img lang="en" src="./assets/codeflowapp-pr.jpg" alt="CodeflowApp bot in action" style="width: 400px"/>
+
+To integrate the bot, please follow the instructions on [Integrating CodeflowApp bot](./integrating-codeflowapp-bot.md).
+
