@@ -11,7 +11,7 @@ This page covers integrating CodeflowApp Bot into your GitHub repositories.
 <!--@include: ./parts/codeflowapp-bot.md-->
 
 ### Pull requests
-Once integrated, it will comment on every PR with a link to instantly run & review it:
+Once integrated, it will comment on every PR with a link to instantly run and review it:
 
 <img lang="en" src="./assets/codeflowapp-pr.jpg" alt="CodeflowApp bot in action" style="max-width: 550px"/>
 
@@ -25,11 +25,11 @@ If reproduction URL is present, CodeflowApp will comment with a "Fix this issue"
 
 ## Installing the CodeflowApp Bot
 
-To install the CodeflowApp bot on a repository, you will install it using GitHub's UI.
+To install the CodeflowApp bot on a repository, you will install it using GitHub UI.
 
-1. Visit [CodeflowApp profile on GitHub Marketplace](https://github.com/amarketplace/codeflowapp)
-2. Select the account or organization, as well as the repositories you want to enable the bot in. 
-  -  If you choose “all in Organization”, CodeflowApp bot will install on all repositories in your organization.
+1. Visit [CodeflowApp profile on GitHub Marketplace](https://github.com/marketplace/codeflowapp)
+2. Select the account or organization, as well as the repositories you want the bot to have access to. 
+  -  If you choose “all in Organization”, CodeflowApp bot will be installed on all repositories in your organization.
   - Please don't worry - if you change your mind, you can change the bot access or completely disable it!
 
 <!--@include: ./parts/installing-codeflowapp.md-->
@@ -84,11 +84,8 @@ Using pnpm override, you can fix a bug and immediately try it out in the reprodu
 ### Enabling pnpm overrides
 
 To set up pnpm overrides, follow these steps:
-
 1. In the project's root directory, create `.stackblitz` directory.
-
 2. Inside it, create a file called `codeflow.json`.
-
 3. In the file, specify the overrides by providing a key-vaue pair of the dependency to override and the folder where it is located. Please note that the location is relative to the root of the project.
 
 ```json

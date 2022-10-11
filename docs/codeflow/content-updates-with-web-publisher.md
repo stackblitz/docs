@@ -106,10 +106,10 @@ If the name of the edited file ends in `.md`, this is a Markdown file and it may
 You've introduced the edits and you're ready to submit them for the review. 
 
 :::warning IMPORTANT:
-Before you send them to the owner of the page, please double check the text for typos, stylistic errors, links that don't work, and so on. Make sure that your edits are top-notch and are actually helpful.
+Before you send the changes to the owner of the page, please double check the text for typos, stylistic errors, links that don't work, and so on. Make sure that your edits are top-notch and are actually helpful.
 :::
 
-Ready to submit? Follow these steps:
+**Ready to submit? Follow these steps:**
 
 1. In the top right corner, click on the green button that reads "Propose changes".
 2. In the dropdown window, click on "Commit proposed changes". Web Publisher will "push changes", which means that your edits are being sent to GitHub. In fact, Web Publisher first creates "a fork" (which means "a copy") of the GitHub repository, saves the changes and only them sends them to GitHub.
