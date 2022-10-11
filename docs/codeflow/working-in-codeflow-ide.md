@@ -30,34 +30,6 @@ If you're curious about this short URL, learn about the [full potential of "pr.n
 
 If you are not logged into StackBlitz, while this product is in beta, you will be prompted to login or create a new account.
 
-## Troubleshooting
-
-### Out of memory error
-
-It may happen that having a few Codeflow IDE or StackBlitz projects open at the same time may cause your browser to run out of memory. In this case, you will see the following popup:
-
-<img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have Codeflow IDE, Web Publisher or StackBlitz editor open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
-
-<!-- @include: ../parts/error-out-of-memory.md -->
-
-### Preview doesn't work
-
-If the Preview doesn't work, oftentimes browser configuration or browser incompatibility is the culprit. Please see [this page for troubleshooting](/platform/webcontainers/browser-support). 
-
-### Preview stopped working / is not responding
-
-Please note that, depending on the framework, **some changes may cause the dev server to stop running**, which in turn causes the Preview to either not respond to new updates or show an error screen ("Unable to connect to `local.webcontainer.io`"). 
-
-Check in the terminal if the dev server is still running. If you want to restart it, click in the terminal window and:
-1. press `ctrl`+`c` to "kill" the server,
-2. press the "up arrow" button to bring up the start command,
-3. press enter to run that command,
-4. in the popup notification in the bottom right corner, choose to open the Preview.
-
-### Reopening the Preview panel 
-
-If you close the Preview by accident, you can reopen it by selecting the icon of a plug entitled "Ports in use" from the left-side navigation bar. Note that you can open the Preview in a separate tab or as a split screen.
-
 ## Saving changes
 
 Whenever a file is changed, you will see a white dot next to its tab in the editor. 
@@ -109,3 +81,31 @@ Follow these steps:
 
 To integrate the bot, please follow the instructions on [Integrating CodeflowApp bot](./integrating-codeflowapp-bot.md).
 
+
+## Troubleshooting
+
+### Out of memory error
+
+It may happen that having a few Codeflow IDE or StackBlitz projects open at the same time may cause your browser to run out of memory. In this case, you will see the following popup:
+
+<img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have Codeflow IDE, Web Publisher or StackBlitz editor open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
+
+<!-- @include: ../parts/error-out-of-memory.md -->
+
+### Preview doesn't work
+
+If the Preview doesn't work, oftentimes browser configuration or browser incompatibility is the culprit. Please see [this page for troubleshooting](/platform/webcontainers/browser-support). 
+
+### Preview stopped working / is not responding
+
+Please note that, depending on the framework, **some changes may cause the dev server to stop running**, which in turn causes the Preview to either not respond to new updates or show an error screen ("Unable to connect to `local.webcontainer.io`"). 
+
+Check in the terminal if the dev server is still running. If you want to restart it, click in the terminal window and:
+1. press `ctrl`+`c` to "kill" the server,
+2. press the "up arrow" button to bring up the start command,
+3. press enter to run that command,
+4. in the popup notification in the bottom right corner, choose to open the Preview.
+
+### Reopening the Preview panel 
+
+If you close the Preview by accident, you can reopen it by selecting the icon of a plug entitled "Ports in use" from the left-side navigation bar. Note that you can open the Preview in a separate tab or as a split screen.
