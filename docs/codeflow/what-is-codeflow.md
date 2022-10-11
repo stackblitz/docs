@@ -47,7 +47,7 @@ You can also check our **[Frequently Asked Questions page](./codeflow-faq)**.
 ## Add Codeflow to your project
 
 Follow these handy integration guides to link your project to Codeflow within minutes:
-- 💻 [Codeflow IDE](./integrating-codeflow-ide) integration guide
+- 💻 [Using pr.new](./using-pr-new) integration guide
 - 📝 [Web Publisher](./integrating-web-publisher) integration guide
 - 🤖 [CodeflowApp bot](./integrating-codeflowapp-bot) integration guide
 
