@@ -24,7 +24,7 @@ export default defineConfig({
   // Theme
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
-    logo: '/img/stackblitz-docs-logo.svg',
+    logo: '/img/theme/docs-logo.svg',
     algolia: getAlgoliaConfig(process.env),
     editLink: {
       pattern: 'https://pr.new/stackblitz/docs/edit/main/docs/:path',
@@ -90,14 +90,14 @@ export default defineConfig({
 
 function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
   const tags: HeadConfig[] = [
-    ['link', { rel: 'icon', type: 'image/png', href: '/img/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/img/theme/favicon.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'StackBlitz Docs' }],
     [
       'meta',
       {
         property: 'og:image',
-        content: 'https://developer.stackblitz.com/img/stackblitz-docs-social.png',
+        content: 'https://developer.stackblitz.com/img/theme/docs-social.png',
       },
     ],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
@@ -107,7 +107,7 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
       'meta',
       {
         name: 'twitter:image',
-        content: 'https://developer.stackblitz.com/img/stackblitz-docs-social.png',
+        content: 'https://developer.stackblitz.com/img/theme/docs-social.png',
       },
     ],
   ];
