@@ -51,7 +51,7 @@ Yes. Private repositories are available for free during beta through 2022. Start
 
 ### Can I run any Git repository?
 
-We only support GitHub due to our OAuth token integrations. The git CLI does have the ability to fetch/push to GitLab, Bitbucket and others with access tokens. SSH is not supprted. Pr.new with git servers hosted outside of GitHub.com is not supported.
+At this moment we only support GitHub.com repositories.
 
 ### Which files can be opened in Web Publisher?
 
