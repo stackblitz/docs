@@ -1,5 +1,5 @@
 ---
-title: What is StackBlitz?
+title: What is StackBlitz? Hello!
 description: StackBlitz is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by WebContainers, the first WebAssembly-based operating system which boots Node.js environment in milliseconds, securely within your browser tab.
 ---
 
