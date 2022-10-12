@@ -21,7 +21,7 @@ To edit a page, you need to find its corresponding file on GitHub. You can do it
 
 ### "Edit in Web Publisher" button
 
-<img lang="en" class="float-left" src="./assets/button-edit-in-web-publisher-medium.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/>
+<img lang="en" class="float-left" src="/img/button-edit-in-web-publisher-medium.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/>
 
 If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕
 

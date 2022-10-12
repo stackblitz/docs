@@ -50,8 +50,8 @@ To help your users quickly spin up the entire environment with your project, you
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in Codeflow" src="./assets/button-open-in-codeflow-medium.svg" /> | <a href="./assets/button-open-in-codeflow-medium.svg" target="_blank">button-open-in-codeflow-medium.svg</a> |
-| <img alt="Open in Codeflow" src="./assets/button-open-in-codeflow-small.svg" /> | <a href="./assets/button-open-in-codeflow-small.svg" target="_blank">button-open-in-codeflow-small.svg</a> |
+| <img alt="Open in Codeflow" src="/img/button-open-in-codeflow-medium.svg" /> | <a href="/img/button-open-in-codeflow-medium.svg" target="_blank">button-open-in-codeflow-medium.svg</a> |
+| <img alt="Open in Codeflow" src="/img/button-open-in-codeflow-small.svg" /> | <a href="/img/button-open-in-codeflow-small.svg" target="_blank">button-open-in-codeflow-small.svg</a> |
 
 ::: tip
 You can either host the images on your servers or directly use our image URLs.
