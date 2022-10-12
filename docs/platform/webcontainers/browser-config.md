@@ -20,7 +20,7 @@ For instance, in Chrome, click the lock icon in the navigation bar:
 
 <img alt="Clicking the lock icon in the navigation bar shows a menu with a “Cookies” entry." src="./assets/chrome-show-cookies.png" width="800" />
 
-<img alt="A modal dialog titled “Cookies in use” shows that cookies for a couple subdomains of stackblitz.io and webcontainer.io were blocked. Select a domain and click “Allow” to add an exception." src="./assets/chrome-blocked-cookies.png" width="800" />
+<img alt="A modal dialog titled “Cookies in use” shows that cookies for a couple subdomains of stackblitz.com and webcontainer.io were blocked. Select a domain and click “Allow” to add an exception." src="./assets/chrome-blocked-cookies.png" width="800" />
 
 If that is the case, choose to “Allow” cookies for those third-party domains. After that, the browser will prompt you to reload the page and you will be able to run the current project.
 
@@ -33,7 +33,7 @@ Alternatively, follow the procedure below to unblock any StackBlitz project.
 To allow all StackBlitz projects to use third-party cookies, go to your browser’s cookie preferences, and add exceptions for the following URL patterns:
 
 ```
-https://[*.]stackblitz.io
+https://[*.]stackblitz.com
 https://[*.]local.webcontainer.io
 ```
 
@@ -43,7 +43,7 @@ For instance, in Chrome, go to [chrome://settings/cookies](chrome://settings/coo
 
 <img alt="Chrome cookie settings showing a modal dialog for adding a site to list of third-party cookie exceptions." src="./assets/chrome-settings-cookies-2.png" width="800" />
 
-<img alt="Chrome cookie settings with exceptions for stackblitz.io and local.webcontainer.io domains." src="./assets/chrome-settings-cookies-3.png" width="800" />
+<img alt="Chrome cookie settings with exceptions for stackblitz.com and local.webcontainer.io domains." src="./assets/chrome-settings-cookies-3.png" width="800" />
 
 ## Enabling WebAssembly
 
