@@ -49,6 +49,10 @@ Codeflow IDE should be able to open any repository. When it comes to *running* i
 
 Yes. Private repositories are available for free during beta through 2022. Starting Q1 '23 private repositories will require a subscription. Contact us if you’re interested in learning more about pricing.
 
+### Can I run any Git repository?
+
+At this moment we only support GitHub.com repositories.
+
 ### Which files can be opened in Web Publisher?
 
 Any file type can be opened in Web Publisher.
