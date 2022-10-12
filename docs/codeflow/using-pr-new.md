@@ -60,7 +60,7 @@ You can either host the images on your servers or directly use our image URLs.
 In order to display the button in a **Markdown file**, use the following code - remember to update the last URL with the project repository path:
 
 ```md
-[![Open in Codeflow](https://developer.stackblitz.com/codeflow/assets/button-open-in-codeflow-medium.svg)](https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___)
+[![Open in Codeflow](https://developer.stackblitz.com/img/button-open-in-codeflow-medium.svg)](https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___)
 ```
 
 Or, in HTML:
@@ -69,7 +69,7 @@ Or, in HTML:
 <a href="https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___">
   <img
     alt="Open in Codeflow"
-    src="https://developer.stackblitz.com/codeflow/assets/button-open-in-codeflow-medium.svg"
+    src="https://developer.stackblitz.com/img/button-open-in-codeflow-medium.svg"
   />
 </a>
 ```
