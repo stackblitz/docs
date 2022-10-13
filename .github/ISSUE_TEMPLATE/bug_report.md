@@ -3,7 +3,7 @@ name: Bug report
 about: "Thank you for helping us improve \U0001F64F"
 title: 'BUG: '
 labels: triage
-assignees: ''
+assignees: sylwiavargas
 
 ---
 
