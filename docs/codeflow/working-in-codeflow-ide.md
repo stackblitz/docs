@@ -91,6 +91,10 @@ It may happen that having a few Codeflow IDE or StackBlitz projects open at the 
 
 <!-- @include: ../parts/error-out-of-memory.md -->
 
+### Can't switch to a remote branch
+
+Currently, when you load your repository, Codeflow only pulls in the branch you are trying to open or the default one. For now, to switch to a remote branch you can either fetch the branches (by running `git fetch` in the terminal) or immediately open the desired branch through its URL by following this pattern: `http://pr.new/github/${owner}/${repo}/tree/${branchName}`
+
 ### Preview doesn't work
 
 If the Preview doesn't work, oftentimes browser configuration or browser incompatibility is the culprit. Please see [this page for troubleshooting](/platform/webcontainers/browser-support). 
