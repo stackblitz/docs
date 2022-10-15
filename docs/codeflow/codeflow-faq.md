@@ -53,6 +53,10 @@ Yes. Private repositories are available for free during beta through 2022. Start
 
 At this moment we only support GitHub.com repositories.
 
+### Can I run monorepos? Does Codeflow support workspaces?
+
+Yes! Please see the walkthrough at [the "Working in Codeflow IDE" page](/codeflow/working-in-codeflow-ide#running-monorepos-in-codeflow-ide).
+
 ### Which files can be opened in Web Publisher?
 
 Any file type can be opened in Web Publisher.
