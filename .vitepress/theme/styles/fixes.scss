@@ -24,13 +24,3 @@
   font-size: 13px;
   line-height: 18px;
 }
-
-// removes default color, border and background-color transition
-.VPNavBarAppearance button.VPSwitch {
-  transition: none;
-}
-
-// removes default background-color transition but keeps transform
-button.VPSwitch span.check {
-  transition: background-color 0s, transform 0.25s;
-}
