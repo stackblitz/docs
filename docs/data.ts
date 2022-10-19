@@ -48,6 +48,7 @@ export const webcontainersLinks = [
   { text: 'Browser configuration', link: '/platform/webcontainers/browser-config' },
   { text: 'Project configuration', link: '/platform/webcontainers/project-config' },
   { text: 'Turbo package manager', link: '/platform/webcontainers/turbo-package-manager' },
+  { text: 'Troubleshooting', link: '/platform/webcontainers/troubleshooting' },
 ];
 
 export const enterpriseLinks = [
