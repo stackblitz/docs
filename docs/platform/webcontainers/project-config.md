@@ -125,7 +125,7 @@ A map of default environment variables that will be set in each top-level shell 
 
 Use the `terminal` parameter in the project’s URL query string to select one or several scripts from `package.json` to run on project load.
 
-This can be useful when a project doesn’t define a custom `startCommand`, or if you want to share a link that runs a different script that the one specified in `startCommand`.
+This can be useful when a project doesn’t define a custom `startCommand`, or if you want to share a link that runs a different script then the one specified in `startCommand`.
 
 For example, the following URL will run the `"test"` script, defined in `package.json`, on project load:
 
