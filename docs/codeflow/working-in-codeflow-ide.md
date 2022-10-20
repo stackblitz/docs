@@ -64,7 +64,7 @@ Follow these steps:
 
 ## Reviewing a PR with Codeflow IDE 
 
-Let's look at [this suspicious PR](https://pr.new/stackblitz/docs/pull/40).
+Let's look at [this suspicious PR](https://github.com/stackblitz/docs/pull/40).
 
 Follow these steps:
 1. Open the link in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
