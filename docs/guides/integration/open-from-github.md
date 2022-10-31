@@ -138,8 +138,6 @@ Make sure you keep the `package-lock.json` file in your project to optimize the 
 
 If the `package-lock.json` file exists in the imported project, a package manager doesn't have to do the work needed to resolve dependencies, which takes significant amount of time during the installation process.
 
-Make sure you keep the `package-lock.json` file in your project to optimize the launching speed.
-
 ### Set up the main starter URL
 
 Create a custom URL that immediately opens the live environment.
