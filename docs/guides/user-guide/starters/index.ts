@@ -55,11 +55,9 @@ export const dotNewLinks = [
   {
 
     title: 'Feathers',
-
     link: 'https://feathers.new',
-
     icon: feathersLogo,
-
+    iconInvert: true,
   },
   {
     title: 'Faker',
