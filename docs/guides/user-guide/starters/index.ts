@@ -3,6 +3,7 @@ import astroLogo from './astro.svg';
 import cfworkersLogo from './cfworkers.svg';
 import docusaurusLogo from './docusaurus.svg';
 import eleventyLogo from './eleventy.svg';
+import feathersLogo from './feathers.svg';
 import fakerLogo from './faker.svg';
 import hydrogenLogo from './hydrogen.svg';
 import ladleLogo from './ladle.svg';
@@ -50,6 +51,15 @@ export const dotNewLinks = [
     link: 'https://11ty.new/' /* or https://eleventy.new */,
     icon: eleventyLogo,
     iconInvert: true,
+  },
+  {
+
+    title: 'Feathers',
+
+    link: 'https://feathers.new',
+
+    icon: feathersLogo,
+
   },
   {
     title: 'Faker',
