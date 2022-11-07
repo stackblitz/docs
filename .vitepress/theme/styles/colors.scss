@@ -12,6 +12,10 @@
   // Custom highlight colors (used on home page)
   --sb-foreground-highlight: hsl(210 90% 50%);
   --sb-foreground-highlight-high: hsl(190 100% 50%);
+
+  // Contrast fixes
+  --vp-custom-block-info-text: hsl(220 10% 36%);
+  --vp-custom-block-warning-text: hsl(45, 90%, 28%);
 }
 
 :root.dark {
@@ -43,6 +47,10 @@
   // Custom highlight colors (used on home page)
   --sb-foreground-highlight: hsl(190, 91%, 69%);
   --sb-foreground-highlight-high: hsl(165, 100%, 60%);
+
+  // Contrast fixes
+  --vp-custom-block-info-text: hsl(220 50% 85%);
+  --vp-custom-block-danger-text: hsl(340, 100%, 66%);
 
   // If we want to make the dividers blueish too
   //--vp-c-divider: var(--vp-c-divider-light-1);

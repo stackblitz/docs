@@ -70,3 +70,16 @@
     color: var(--vp-c-text-2);
   }
 }
+
+.vp-doc .footnotes-sep {
+  margin: 44px 0 32px;
+  border-top: 1px solid var(--vp-c-divider-light);
+}
+
+.vp-doc .footnotes {
+  p {
+    margin: .75em 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
