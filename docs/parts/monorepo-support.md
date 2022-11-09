@@ -21,7 +21,7 @@ workspace-project
 
 To define a workspace, add the `workspaces` field to the `package.json`:
 
-```
+```json
 "workspaces": [
   "packages/*"
 ],
