@@ -29,7 +29,7 @@ To define a workspace, add the `workspaces` field to the `package.json`:
 
 This refers to every sub-directory inside `packages` which contains a `package.json`.
 
-Check [npm documentation](https://docs.npmjs.com/cli/v7/using-npm/workspaces) for more information or [this npm-based monorepo demo](https://stackblitz.com/edit/node-4cygsf?file=README.md) for reference. 
+Check the [npm documentation](https://docs.npmjs.com/cli/v7/using-npm/workspaces) for more information or [this npm-based monorepo demo](https://stackblitz.com/edit/node-4cygsf?file=README.md) for reference. 
 
 ### pnpm
 
