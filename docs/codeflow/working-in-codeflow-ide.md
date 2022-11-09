@@ -93,7 +93,7 @@ It may happen that having a few Codeflow IDE or StackBlitz projects open at the 
 
 ### Can't switch to a remote branch
 
-Currently, when you load your repository, Codeflow only pulls in the branch you are trying to open or the default one. For now, to switch to a remote branch you can either fetch the branches (by running `git fetch` in the terminal) or immediately open the desired branch through its URL by following this pattern: `http://pr.new/github/${owner}/${repo}/tree/${branchName}`
+Currently, when you load your repository, Codeflow only pulls in the branch you are trying to open or the default one. To switch to a remote branch you can either fetch the branches (by running `git fetch` in the terminal) or immediately open the desired branch through its URL by following this pattern: `https://pr.new/github/${owner}/${repo}/tree/${branchName}`
 
 ### Preview doesn't work
 
