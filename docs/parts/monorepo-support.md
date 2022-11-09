@@ -66,5 +66,5 @@ To define a workspace with yarn, add the `workspaces` field to our `package.json
 This refers to every sub-directory inside `packages` which contains a `package.json`.
 
 :::info
-Note that a yarn workspace looks somewhat identical to an npm workspace. For the most parts that's true, but yarn also has [`nohoist`](https://classic.yarnpkg.com/blog/2018/02/15/nohoist).
+Note that a yarn workspace looks somewhat identical to an npm workspace. For the most part that's true, but yarn also adds useful features such as [`nohoist`](https://classic.yarnpkg.com/blog/2018/02/15/nohoist).
 :::
