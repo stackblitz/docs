@@ -51,13 +51,13 @@ You can use the following URL query parameters to customize the appearance and f
 | Parameter |               Value               |               Description               |
 |-----------|-----------------------------------|-----------------------------------------|
 |`ctl`| `0`/`1` | Prompts users to “click to load” the embed. |
-| `devToolsHeight` | `0` - `100` | Sets the height of [the console][ui_docs] in the editor preview. |
+| `devtoolsheight` | `0` - `100` | Sets the height of [the console][ui_docs] in the editor preview. |
 | `embed` |  `0`/`1` | Forces embed view regardless of screen size. |
 | `file` | file path | Specifies the default file to have open in the editor. |
-| `hideDevTools` |  `0`/`1` | Hides [the console][ui_docs] in the editor preview. |
+| `hidedevtools` |  `0`/`1` | Hides [the console][ui_docs] in the editor preview. |
 | `hideExplorer` |  `0`/`1` | Hides the [file explorer pane][ui_docs] in embed view. |
 | `hideNavigation` | `0`/`1` | Hides the preview’s URL bar. |
-| `initialPath` | URL path | Specifies the initial URL path (URI encoded) the preview should open. |
+| `initialpath` | URL path | Specifies the initial URL path (URI encoded) the preview should open. |
 | `showSidebar` | `0`/`1` | Shows the sidebar in embed view (large viewports only) |
 | `terminal` | string | Specifies the npm script to run on project load ([WebContainers-based projects][available_env_docs] only). |
 | `terminalHeight` | `0` - `100` | Sets the height of [the terminal][ui_docs]. |
