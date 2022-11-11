@@ -1,36 +1,36 @@
 # StackBlitz Docs
 
-Welcome to the home of the [StackBlitz documentation site](https://developer.stackblitz.com)!
+Добро пожаловать в дом [сайт документации StackBlitz](https://developer.stackblitz.com)!
 
-Our docs site was built with [VitePress](https://vitepress.vuejs.org/) 💙
+Наш сайт docs был создан с помощью [VitePress](https://vitepress.vuejs.org/) 💙.
 
-## What is StackBlitz?
-StackBlitz is an **instant fullstack web IDE for the JavaScript ecosystem**. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+## Что такое StackBlitz?
+StackBlitz - это **постоянная fullstack web IDE для экосистемы JavaScript**. Он работает на базе [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), первой операционной системы на базе WebAssembly, которая **загружает среду Node.js за миллисекунды**, безопасно внутри вкладки вашего браузера.
 
-Now you can use the web to build the web.
+Теперь вы можете использовать сеть для создания сети.
 
 ---
 
-## Let's make the docs better!
+## Давайте сделаем документы лучше!
 
-Thank you for visiting this repository. We love our community and we appreciate your time.
+Спасибо, что посетили это хранилище. Мы любим наше сообщество и ценим ваше время.
 
-There are numerous ways to contribute to docs:
-- **Share feedback**
-  - Each docs page features a feedback tool at the bottom - you can use it to let us know what you think!
-  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com/stackblitz/docs/issues) and if not, feel free to [create one](https://github.com/stackblitz/docs/issues/new).
-- **Share ideas**
-  - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
-- **Fix typos**
-  - Use [Web Publisher](#content-updates-with-web-publisher) for a quick typo fix!
-- **Create demos**
-  - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read our [contributing guide](CONTRIBUTING.md) and reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
-- **Fix an issue**
-  - You see an issue you'd like to worn on? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
-- **Reviews**
-  - Please feel free to check existing PRs and issues. Share your loving feedback, help the other contributor approach the task in a better way, spot lurking bugs, errors, and mistakes. You can use pr.new to that end - in the URL of the issue or PR, swap "github.com" with "pr.new" to spin up the environment and the preview.
+Существует множество способов внести свой вклад в разработку документов:
+- **Поделитесь отзывами**
+  - Внизу каждой страницы документов есть инструмент обратной связи - вы можете использовать его, чтобы сообщить нам своё мнение!
+  - Если вы видите, что что-то сломано или считаете, что какой-либо раздел может быть лучше или менее запутанным, пожалуйста, [проверьте, есть ли уже соответствующий вопрос](https://github.com/stackblitz/docs/issues), а если нет, не стесняйтесь [создать его](https://github.com/stackblitz/docs/issues/new).
+- **Делитесь идеями**
+  - Мы хотим, чтобы наши доктора были восхитительны. Если у вас есть идея по улучшению, свяжитесь с нами на [GitHub discussions](https://github.com/stackblitz/docs/discussions).
+- **Исправить опечатки**
+  - Используйте [Web Publisher](#content-updates-with-web-publisher) для быстрого исправления опечаток!
+- **Создание демо-версий**
+  - Мы хотели бы помочь нашим пользователям увидеть наши методы SDK в действии. Вы хотите создать демо-версию Vanilla JS или TS? Перед этим, пожалуйста, прочитайте наше руководство [contributing guide](CONTRIBUTING.md) и свяжитесь с нами на [GitHub discussions](https://github.com/stackblitz/docs/discussions).
+- **Устранить проблему**
+  - Вы видите проблему, над которой хотели бы поработать? Попросите, чтобы вам поручили исправить это. Перед началом работы, пожалуйста, прочитайте наше [руководство по внесению вклада] (CONTRIBUTING.md).
+- **Обзоры**
+  - Пожалуйста, не стесняйтесь проверять существующие PR и проблемы. Делитесь своими любящими отзывами, помогайте другому участнику лучше подойти к задаче, выявляйте скрытые ошибки, погрешности и промахи. Для этого можно использовать pr.new - в URL выпуска или PR подставьте "github.com". с "pr.new" чтобы запустить среду и предварительный просмотр.
 
-Thank you for making our docs better!
+Спасибо, что делаете наши документы лучше!
 
 ### What makes good issue
 
