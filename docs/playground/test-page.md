@@ -4,30 +4,30 @@ head:
   - ['meta', { name: 'robots', content: 'noindex,nofollow' }]
 ---
 
-# Vitepress test page
+# Страница испытаний витепресса
 
-Use this page to conveniently test theming and Markdown handling changes.
+Используйте эту страницу для удобного тестирования изменений в тематике и обработке Markdown.
 
 ## Custom containers
 
 ::: info
-This is an info box.
+Это информационный блок.
 :::
 
 ::: tip
-This is a tip.
+Это совет.
 :::
 
 ::: warning
-This is a warning.
+Это предупреждение.
 :::
 
 ::: danger
-This is a dangerous warning.
+Это опасное предупреждение.
 :::
 
 ::: details
-This is a details block.
+Это блок деталей.
 :::
 
 ::: details Click me to view the code
@@ -36,27 +36,27 @@ console.log('Hello, VitePress!')
 ```
 :::
 
-## Footnotes
+## Сноски
 
-We can use footnotes[^1]. Multi-paragraph footnotes require indentation[^2] to signal that the text is part of the footnote and not part of the main body of text.
+Мы можем использовать сноски[^1]. Сноски на несколько абзацев требуют отступа[^2], чтобы показать, что текст является частью сноски, а не частью основного текста.
 
-[^1]: Footnote: an explanatory or documenting note or comment at the bottom of a page, referring to a specific part of the text on the page.
+[^1]: Сноска: пояснительная или документирующая заметка или комментарий внизу страницы, отсылающий к определенной части текста на странице.
 
 [^2]:
-    In the written form of many languages, an indentation or indent is an empty space at the beginning of a line to signal the start of a new paragraph.
+    В письменной форме многих языков отступ или абзац - это пустое место в начале строки, сигнализирующее о начале нового абзаца.
     
-    Many computer languages have adopted this technique to designate "paragraphs" or other logical blocks in the program. 
+    Во многих компьютерных языках этот прием используется для обозначения "абзацев". или другие логические блоки в программе. 
 
-## Code highlights
+## Основные моменты кода
 
 ```js{1,4,6-8}
-export default { // Highlighted
+export default { // Выделено
   data () {
     return {
       msg: `Highlighted!
-      This line isn't highlighted,
-      but this and the next 2 are.`,
-      motd: 'VitePress is awesome',
+      Эта строка не выделена,
+      но этот и два следующих - да.`,
+      motd: 'VitePress - это потрясающе',
       lorem: 'ipsum'
     }
   }

@@ -1,8 +1,8 @@
 
-In your browser's console, you may see the following error:
-> RangeError: WebAssembly.instantiate(): Out of memory: wasm memory
+В консоли браузера вы можете увидеть следующую ошибку:
+> RangeError: WebAssembly.instantiate(): Из памяти: память о ватмане
 
-When too much memory is allocated to browser processes, browsers will run out of memory. This can happen if you open too many StackBlitz projects at the same time. This includes our editor, Codeflow IDE, and Web Publisher - or if a page features too many StackBlitz embeds running at the same time.
+Когда процессам браузера выделяется слишком много памяти, она заканчивается. Это может произойти, если одновременно открыть слишком много проектов StackBlitz. Это касается нашего редактора, IDE Codeflow и Web Publisher - или если на странице слишком много одновременно работающих вложений StackBlitz.
 
-**To free up memory, close other StackBlitz projects in other tabs or windows, and refresh the page.**
+**Чтобы освободить память, закройте другие проекты StackBlitz в других вкладках или окнах и обновите страницу.**.
 

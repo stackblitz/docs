@@ -1,21 +1,21 @@
 ---
-title: What is StackBlitz?
-description: StackBlitz is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by WebContainers, the first WebAssembly-based operating system which boots Node.js environment in milliseconds, securely within your browser tab.
+title: Что такое StackBlitz?
+description: StackBlitz - это мгновенная fullstack web IDE для экосистемы JavaScript. Он работает на базе WebContainers, первой операционной системы на базе WebAssembly, которая загружает среду Node.js за миллисекунды, безопасно в вашей вкладке браузера.
 ---
 
 # {{ $frontmatter.title }}
 
-StackBlitz is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+StackBlitz - это **постоянная fullstack web IDE** для экосистемы JavaScript. Он работает на базе [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), первой операционной системы на базе WebAssembly, которая **загружает среду Node.js за миллисекунды**, безопасно внутри вкладки вашего браузера.
 
-Now you can use the web to build the web.
+Теперь вы можете использовать сеть для создания сети.
 
-## Why should I use StackBlitz?
+## Почему я должен использовать StackBlitz?
 
-StackBlitz is secure, shareable, and satisfying.
+StackBlitz безопасен, доступен для совместного использования и приносит удовлетворение.
 
-There is no greater buzzkill than having to fiddle with the deployment and build tools config before you can start coding. **StackBlitz takes care of all of the setup**: from forking and installing dependencies to configuring build tools and hot reloading. Working on StackBlitz feels exactly like working on your local dev environment - minus the frustrating parts.
+Нет большего неудобства, чем необходимость возиться с конфигурацией инструментов развертывания и сборки, прежде чем вы сможете приступить к кодированию. **StackBlitz берет на себя все заботы по настройке**: от форка и установки зависимостей до настройки инструментов сборки и горячей перезагрузки. Работа на StackBlitz похожа на работу в вашей локальной среде разработки - за вычетом неприятных моментов.
 
-### Key features:
+### Основные характеристики:
 
 - **unmatched security**: all development is happening in your browser tab, including running Node.js and git
 - **surprisingly fast**: the entire dev environment spins up in miliseconds - even reinstalling `node_modules` is as simple as refreshing the page
