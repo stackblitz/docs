@@ -32,79 +32,79 @@ StackBlitz - это **постоянная fullstack web IDE для экосис
 
 Спасибо, что делаете наши документы лучше!
 
-### What makes good issue
+### Что делает хороший выпуск
 
-When creating an issue, please include:
-- a descriptive title,
-- a link to what this issue refers to (a page, an example, a section),
-- if applicable, a screenshot or screen recording,
-- explanation of why you think it is an issue,
-- if you have an idea, a possible solution,
-- ideally, external links that explain any advanced or lesser-known topics so others can learn from your issue.
+При создании проблемы, пожалуйста, укажите:
+- описательное название,
+- ссылка на то, к чему относится данный вопрос (страница, пример, раздел),
+- если применимо, снимок экрана или запись экрана,
+- объяснение того, почему вы считаете это проблемой,
+- если у вас есть идея, возможное решение,
+- в идеале - внешние ссылки, объясняющие какие-либо продвинутые или малоизвестные темы, чтобы другие могли изучить ваш вопрос.
 
-Please raise issues in situations like the following:
-- confusing, overwhelming, or incorrect explanation,
-- outdated examples,
-- vague or missing content,
-- demo or page request,
-- compromised accessibility,
-- anything broken: demo, page, url, image,
+Пожалуйста, поднимайте вопросы в ситуациях, подобных следующей:
+- запутанное, чрезмерное или неправильное объяснение,
+- устаревшие примеры,
+- нечеткое или отсутствующее содержание,
+- демонстрация или запрос страницы,
+- скомпрометированная доступность,
+- все сломанное: демо, страница, url, изображение,
 
-If what you want to say doesn't really fall into actionable "problem" or "improvement", you can **start a new Discussion topic**. For example, feel free to ask:
-- Could we split this page into multiple smaller steps?
-- This navigation item doesn't fit where it is - could we move it somewhere else?
-- How could we make the docs site more (adjective)?
+Если то, что вы хотите сказать, на самом деле не относится к решаемой "проблеме". или "улучшение", вы можете **начать новую тему для обсуждения**. Например, не стесняйтесь спрашивать:
+- Можно ли разделить эту страницу на несколько небольших шагов?
+- Этот элемент навигации не помещается на своем месте - не могли бы мы переместить его в другое место?
+- Как мы могли бы сделать сайт документации более (прилагательное)?
 
 
 ---
 
-## Development
+## Разработка
 
-There are three ways to interact with this repository:
-- For **a small content update**, you can use [Web Publisher](#content-updates-with-web-publisher). 
-- If you want **to explore and develop** this site, use [StackBlitz Codeflow](#developing-with-stackblitz-codeflow). 
-- Alternatively, you can [run the docs locally](#developing-locally).
+Существует три способа взаимодействия с этим хранилищем:
+- Для ** небольшого обновления содержимого** можно использовать [Web Publisher](#content-updates-with-web-publisher). 
+- Если вы хотите **изучать и развивать** этот сайт, используйте [StackBlitz Codeflow](#developing-with-stackblitz-codeflow). 
+- В качестве альтернативы вы можете [запустить документацию локально](#developing-locally).
 
-### Content updates with Web Publisher
+### Обновление контента с помощью Web Publisher
 
-Use Web Publisher for small content updates for a pleasant editing experience:
+Используйте Web Publisher для небольших обновлений контента для приятного редактирования:
 
-1. Open the page on our [docs site](developer.stackblitz.com), scroll down, and click "edit this page".
-2. Update the document in the editor on the left and see the rendered change in the preview window on the right.
-3. Once you're done, in the top right corner click on the green button that says "Propose changes".
-4. You will be redirected to a GitHub PR template page prepared for you to submit a PR.
+1. Откройте страницу на нашем сайте [docs](developer.stackblitz.com), прокрутите вниз и нажмите "редактировать эту страницу".
+2. Обновите документ в редакторе слева и посмотрите изменения в окне предварительного просмотра справа.
+3. После того как вы закончите, в правом верхнем углу нажмите на зеленую кнопку с надписью "Предложить изменения".
+4. Вы будете перенаправлены на страницу шаблона GitHub PR, подготовленную для отправки PR.
 
 
-### Developing with StackBlitz Codeflow
-Use StackBlitz Codeflow for bigger content updates. Codeflow will spin up the entire dev environment with a running dev server. When using Codeflow, please remember to commit and push your changes frequently.
+### Разработка с помощью StackBlitz Codeflow
+Используйте StackBlitz Codeflow для более крупных обновлений контента. Codeflow запустит всю среду разработки с работающим сервером разработки. При использовании Codeflow, пожалуйста, не забывайте часто фиксировать и продвигать свои изменения.
 
-To access it, [click this button](https://stackblitz.com/~/github.com/stackblitz/docs).
+Чтобы получить к нему доступ, [нажмите эту кнопку](https://stackblitz.com/~/github.com/stackblitz/docs).
 
-Alternatively, add “pr.new” to the beginning of this GitHub repo URL.
+Или же добавьте "pr.new" в начало URL этого репозитория на GitHub.
 
-### Developing locally
-You can also explore and develop this site locally.
+### Развитие на местном уровне
+Вы также можете изучать и развивать этот сайт на местном уровне.
 
-After cloning the repository, run the docs site in development mode with:
+После клонирования репозитория запустите сайт docs в режиме разработки с помощью:
 
 ```sh
 npm install
 npm start
 ```
 
-### Editor setup
+### Настройка редактора
 
-We have already equipped this repository with the suggested extension ([Vue Language Features extension (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)). Additionally, you can use [Volar’s Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471) (aka disabling the built-in TypeScript and JavaScript Language Features extension for the current workspace).
+Мы уже оснастили это хранилище предложенным расширением ([Vue Language Features extension (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)). Кроме того, вы можете использовать [Volar's Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471) (он же отключение встроенного расширения TypeScript и JavaScript Language Features для текущего рабочего пространства).
 
-### Enable Algolia and Google Tag Manager
+### Включите Algolia и Google Tag Manager
 
-For production, the docs expect the following environment variables to be defined:
+Для производства, согласно документации, должны быть определены следующие переменные окружения:
 
 - `VITE_ALGOLIA_ID`: Algolia `appId`.
 - `VITE_ALGOLIA_KEY`: Algolia `apiKey`.
 - `VITE_GTM_ID`: Google Tag Manager id.
 
-They can be defined in CI server configuration, or in a `.env` file:
+Они могут быть определены в конфигурации сервера CI или в файле `.env`:
 
 ```sh
 # .env
@@ -115,11 +115,11 @@ VITE_GTM_ID='******'
 
 ---
 
-## Join our community
+## Присоединяйтесь к нашему сообществу
 
-- [Participate in a discussion](https://github.com/stackblitz/docs/discussions)
-- [Join our Discord](https://discord.gg/EQ7uJQxC)
-- Read our [blog](https://blog.stackblitz.com/) and see what we have been up to in our [monthly update posts](https://blog.stackblitz.com/categories/monthly-updates/)!
-- Share your StackBlitz projects on [Twitter](https://twitter.com/stackblitz)!
-- Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!
+- [Участвовать в обсуждении](https://github.com/stackblitz/docs/discussions)
+- [Присоединяйтесь к нашему Discord](https://discord.gg/EQ7uJQxC)
+- Читайте наш [блог](https://blog.stackblitz.com/) и узнайте, чем мы занимались в наших [ежемесячных обновленных постах](https://blog.stackblitz.com/categories/monthly-updates/)!
+- Поделитесь своими проектами StackBlitz на [Twitter](https://twitter.com/stackblitz)!
+- Свяжитесь с нашим защитником разработчиков в [Twitter](https://twitter.com/sylwiavargas) или по [электронной почте](mailto:devrel@stackblitz.com) со своими идеями, мечтами и пожеланиями StackBlitz!
 
