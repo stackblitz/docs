@@ -1,10 +1,10 @@
 ---
-title: What is Codeflow?
+title: Что такое Codeflow?
 ---
 
-:::warning Note: StackBlitz Codeflow is currently in Beta
+:::warning Примечание: StackBlitz Codeflow в настоящее время находится в бета-версии
 
-Please review our [FAQ](/codeflow/codeflow-faq#capabilities-limitations) for current limitations and [let us know](https://github.com/stackblitz/webcontainer-core/issues) if you find bugs!
+Пожалуйста, просмотрите наш [FAQ](/codeflow/codeflow-faq#capabilities-limitations) для текущих ограничений и [сообщите нам](https://github.com/stackblitz/webcontainer-core/issues), если вы найдёте ошибки!
 
 :::
 
@@ -12,14 +12,14 @@ Please review our [FAQ](/codeflow/codeflow-faq#capabilities-limitations) for cur
 
 <!--@include: ./parts/codeflow.md-->
 
-StackBlitz now helps you switch contexts seamlessly:
+StackBlitz теперь помогает плавно переключаться между контекстами:
 - <!--@include: ./parts/codeflow-ide.md-->
 - <!--@include: ./parts/web-publisher.md-->
 - <!--@include: ./parts/pr-new.md-->
 - <!--@include: ./parts/codeflowapp-bot.md-->
 
 
-## Key features
+## Основные характеристики
 - 🔒 **unmatched security**: all development is happening in your browser tab, including running Node.js, git, package managers (npm, yarn, pnpm), and local extensions.
 - ⚡️ **shockingly fast**: the entire dev environment spins up in milliseconds - even reinstalling `node_modules` is as simple as refreshing the page, with pnpm running up to four times as fast as locally!
 - 💻 **works online and offline**: continue your work even when you lose the Internet connection midway.
