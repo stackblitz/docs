@@ -4,6 +4,7 @@ import cfworkersLogo from './cfworkers.svg';
 import docusaurusLogo from './docusaurus.svg';
 import eleventyLogo from './eleventy.svg';
 import fakerLogo from './faker.svg';
+import feathersLogo from './feathers.svg';
 import hydrogenLogo from './hydrogen.svg';
 import ladleLogo from './ladle.svg';
 import nativescriptLogo from './nativescript.svg';
@@ -55,6 +56,12 @@ export const dotNewLinks = [
     title: 'Faker',
     link: 'https://fakerjs.dev/new',
     icon: fakerLogo,
+  },
+  {
+    title: 'Feathers',
+    link: 'https://feathers.new',
+    icon: feathersLogo,
+    iconInvert: true,
   },
   {
     title: 'Hydrogen',

@@ -15,13 +15,15 @@ Depending on the environment, StackBlitz IDE includes slightly different feature
 
 | Feature | EngineBlock | WebContainers |
 | --- | --- | --- |
-| Native Node.js environment | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 | Supported frameworks | <SupportIcon value="star-half" label="" /> Front-end | <SupportIcon value="star" label="" /> Front-end & back-end |
-| Editor | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
-| Preview | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
-| Shareable Preview URL | <YepNope value="yes" label="Supported" /> | <SupportIcon value="no" label="Not supported" /> |
-| Console | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
-| Terminal | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| Supported package managers | <SupportIcon value="star-half" label="" /> Turbo v1 | <SupportIcon value="star" label="" /> Turbo v2, pnpm, yarn v1 |
+| Full Node.js environment | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| Classic editor | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
+| [Codeflow IDE](/codeflow/working-in-codeflow-ide) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| [Web Publisher](/codeflow/content-updates-with-web-publisher) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| Shareable preview URL | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
+| [Console](/guides/user-guide/ide-whats-on-your-screen#console) | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
+| [Terminal](/guides/user-guide/ide-whats-on-your-screen#terminal) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 
 To explore these differences in practice, we took a React project and turned it into:
 
@@ -47,3 +49,5 @@ As for the sharing options, you can share only the editor link as the preview re
 This environment has a terminal that supports various common commands you would run locally.
 
 WebContainers are currently supported by Chromium-based browsers and [in Firefox, with some caveats](/platform/webcontainers/browser-support).
+
+Our [Codeflow IDE](/codeflow/what-is-codeflow) runs on the WebContainers runtime.

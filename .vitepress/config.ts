@@ -1,4 +1,6 @@
 import dotenv from 'dotenv';
+/* @ts-expect-error */
+import mdFootnote from 'markdown-it-footnote';
 import { defineConfig, type HeadConfig } from 'vitepress';
 import * as data from '../docs/data';
 
@@ -84,6 +86,12 @@ export default defineConfig({
           items: data.enterpriseLinks,
         },
       ],
+    },
+  },
+
+  markdown: {
+    config: (md) => {
+      md.use(mdFootnote);
     },
   },
 });
