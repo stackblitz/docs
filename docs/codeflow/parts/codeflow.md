@@ -1,1 +1,1 @@
-Codeflow is a one-click integration with GitHub for seamless coding workflows.
+Codeflow - это интеграция с GitHub в один клик для создания бесшовных рабочих процессов кодирования.

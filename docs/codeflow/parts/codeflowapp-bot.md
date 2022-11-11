@@ -1,1 +1,1 @@
-**CodeflowApp** is a friendly bot, which provides a one-click link that spins up the whole environment for pull requests and issues. No more context-switching or branch-checkouts, just a new browser tab with a full IDE and a dev server running.
+**CodeflowApp** - это дружественный бот, который предоставляет ссылку в один клик, раскручивающую всю среду для pull requests и issues. Больше никаких контекстных переключений или переходов по веткам, только новая вкладка браузера с полной IDE и запущенным dev-сервером.

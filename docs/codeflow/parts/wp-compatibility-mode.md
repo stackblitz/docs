@@ -1,7 +1,7 @@
-In some cases, you may notice the "Compatibility Mode on" banner.
+В некоторых случаях вы можете заметить баннер "Режим совместимости включён".
 <!-- screenshot -->
 
-This mode is enabled when Web Publisher is viewed on Safari.
-[Safari currently doesn't support WebContainers](/platform/webcontainers/browser-support#safari), which is the technology at the basis of Web Publisher. 
+Этот режим включается, когда Web Publisher просматривается в Safari.
+[Safari в настоящее время не поддерживает WebContainers](/platform/webcontainers/browser-support#safari), которая является технологией, лежащей в основе Web Publisher. 
 
-That being said, **you can still run Web Publisher and submit Pull Requests**. In this mode, Web Publisher only renders a Markdown-to-HTML conversion. Your app itself it not being run, so there is no app-specific styling, and if you’re using some kind of components in your Markdown, they won’t be compiled.
+Тем не менее, **вы все еще можете запускать Web Publisher и отправлять Pull Requests**. В этом режиме Web Publisher выполняет только преобразование Markdown в HTML. Само приложение не запускается, поэтому нет стилизации, специфичной для приложения, и если вы используете какие-то компоненты в Markdown, они не будут скомпилированы.
