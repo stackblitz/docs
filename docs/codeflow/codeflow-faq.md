@@ -12,50 +12,50 @@ title: Codeflow FAQ
 
 ### Что такое Codeflow?
 
-<!--@include: ./parts/codeflow.md--> Codeflow consists of four tools: 
+<!--@include: ./parts/codeflow.md--> Codeflow состоит из четырех инструментов: 
 - Codeflow IDE, 
-- Web Publisher for content edits, 
-- CodeflowApp bot for issues and PR, and 
-- a short URL that chooses the right tool for you.
+- Web Publisher для редактирования содержимого, 
+- Бот CodeflowApp для решения вопросов и PR, а также 
+- короткий URL-адрес, по которому выбирается нужный вам инструмент.
 
-[Read more on Codeflow intro page.](./what-is-codeflow.md)
+[Подробнее на вводной странице Codeflow.](./what-is-codeflow.md)
 
-### Is StackBlitz editor the same as Codeflow IDE?
+### Является ли редактор StackBlitz тем же самым, что и IDE Codeflow?
 
-**StackBlitz editor** allows you for spinning up quick demos, embedding your projects in your docs, and building project starters. 
+Редактор **StackBlitz** позволяет быстро создавать демо-версии, встраивать проекты в документацию и создавать стартеры проектов. 
 
 <!--@include: ./parts/codeflow-ide.md-->
 
-[Learn more about the full potential of StackBlitz on StackBlitz intro page.](/guides/user-guide/what-is-stackblitz.md)
+[Узнайте больше о полном потенциале StackBlitz на ознакомительной странице StackBlitz.](/guides/user-guide/what-is-stackblitz.md)
 
-### Is Codeflow stable?
-Codeflow is currently a beta version, however, general availability can be expected in early 2023.
+### Является ли Codeflow стабильным?
+В настоящее время Codeflow является бета-версией, однако общую доступность можно ожидать в начале 2023 года.
 
-## Capabilities & Limitations
+## Возможности и ограничения
 
-### Can I run Vim?
+### Могу ли я запустить Vim?
 
-This is perhaps the most frequently-asked question with regards to StackBlitz features - and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3). We have good news: you can run Vim in Codeflow IDE by enabling the extension! 🥳
+Это, пожалуй, самый часто задаваемый вопрос относительно возможностей StackBlitz - и [один из самых старых вопросов в нашем репозитории](https://github.com/stackblitz/core/issues/3). У нас хорошие новости: вы можете запускать Vim в Codeflow IDE, включив расширение! 🥳
 
-### Does my code persist between sessions?
+### Сохраняется ли мой код между сессиями?
 
 <!--@include: ./parts/persistance.md-->
 
-### Which repos can/not be opened in Codeflow IDE?
+### Какие репозитории можно/нельзя открывать в Codeflow IDE?
 
-Codeflow IDE should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
+Codeflow IDE должна иметь возможность открыть любой репозиторий. Когда дело доходит до *запуска*, ваш инструментарий должен быть совместим с WebContainers.
 
-### Can I run private repositories?
+### Могу ли я запустить частные репозитории?
 
-Yes. Private repositories are available for free during beta through 2022. Starting Q1 '23 private repositories will require a subscription. Contact us if you’re interested in learning more about pricing.
+Да. Частные репозитории доступны бесплатно во время бета-версии до 2022 года. Начиная с 1 квартала '23 частные репозитории будут требовать подписки. Свяжитесь с нами, если вы хотите узнать больше о ценах.
 
-### Can I run any Git repository?
+### Могу ли я запустить любой репозиторий Git?
 
-At this moment we only support GitHub.com repositories.
+На данный момент мы поддерживаем только репозитории GitHub.com.
 
-### Which files can be opened in Web Publisher?
+### Какие файлы можно открыть в Web Publisher?
 
-Any file type can be opened in Web Publisher.
+В Web Publisher можно открыть файл любого типа.
 
 ### Which package managers do you support?
 
