@@ -1,27 +1,27 @@
 ---
-title: Content Updates with Web Publisher
+title: Обновление контента с помощью Web Publisher
 ---
 
 # {{ $frontmatter.title }}
 
-Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
+Обновление контента? Небольшое исправление опечатки? Не беспокойтесь - Web Publisher делает этот опыт приятным, включая тех из нас, кто не является техническим специалистом!
 
-This page covers using Web Publisher to update your blog posts, docs, or wiki pages.
+На этой странице рассказывается об использовании Web Publisher для обновления записей в блоге, документов или страниц вики.
 
-## What is Web Publisher?
+## Что такое веб-издатель?
 
 <!--@include: ./parts/web-publisher.md-->
 
-## Editing a page in Web Publisher
+## Редактирование страницы в Web Publisher
 
-To edit a page, you need to find its corresponding file on GitHub. You can do it in three ways: 
-- ["Edit in Web Publisher"](#edit-in-web-publisher-button) button,
-- ["Edit this page on GitHub"](#edit-this-page-on-github) link,
-- [through a GitHub repository](#through-github).
+Чтобы отредактировать страницу, необходимо найти соответствующий файл на GitHub. Вы можете сделать это тремя способами: 
+- ["Редактировать в Web Publisher"](#edit-in-web-publisher-button) кнопка,
+- ["Редактировать эту страницу на GitHub"] (#edit-this-page-on-github) ссылка,
+- [через репозиторий GitHub](#through-github).
 
-### "Edit in Web Publisher" button
+### "Редактирование в Web Publisher" кнопка
 
-<img lang="en" class="float-left" src="/img/edit_in_web_publisher.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/>
+<img lang="en" class="float-left" src="/img/edit_in_web_publisher.svg" alt="Кнопка "Редактировать в веб-издателе" style="width: 150px; margin-top: 4%;"/>
 
 If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕
 

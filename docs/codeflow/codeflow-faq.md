@@ -4,13 +4,13 @@ title: Codeflow FAQ
 
 # {{ $frontmatter.title }}
 
-This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.
+На этой странице рассматриваются часто задаваемые вопросы: текущие возможности, безопасность, планируемые возможности, цены и доступ.
 
 [[toc]]
 
-## General
+## Общий
 
-### What is Codeflow?
+### Что такое Codeflow?
 
 <!--@include: ./parts/codeflow.md--> Codeflow consists of four tools: 
 - Codeflow IDE, 
