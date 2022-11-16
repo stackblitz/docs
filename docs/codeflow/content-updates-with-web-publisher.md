@@ -26,14 +26,14 @@ title: Обновление контента с помощью Web Publisher
 If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕
 
 :::tip Request the button!
-If the page doesn't feature our button, you can suggest to the page admins to include it - here's our [Web Publisher integration guide](./integrating-web-publisher).
+Если на странице нет нашей кнопки, вы можете предложить администраторам страницы включить ее - вот наше руководство по интеграции [Web Publisher](./integrating-web-publisher).
 :::
 
-### "Edit this page on GitHub" link
+### "Редактировать эту страницу на GitHub" ссылка
 
-Many pages feature a link that says "Edit this page on GitHub". If that's also the case with the page you want to edit, click the link. On the page that opened, replace `github.com` with `pr.new` - and you will be redirected to Web Publisher.
+На многих страницах есть ссылка "Редактировать эту страницу на GitHub". Если это относится и к странице, которую вы хотите отредактировать, щелкните ссылку. На открывшейся странице замените `github.com` на `pr.new` - и вы будете перенаправлены в Web Publisher.
 
-In the Preview panel on the right side, open the page you want to edit. You will see the edits you introduce as you type (or with a little delay).
+На панели предварительного просмотра справа откройте страницу, которую нужно отредактировать. Вы увидите внесенные вами правки по мере набора текста (или с небольшой задержкой).
 
 ### Through GitHub 
 
