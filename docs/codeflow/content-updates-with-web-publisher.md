@@ -23,7 +23,7 @@ title: Обновление контента с помощью Web Publisher
 
 <img lang="en" class="float-left" src="/img/edit_in_web_publisher.svg" alt="Кнопка "Редактировать в веб-издателе" style="width: 150px; margin-top: 4%;"/>
 
-If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕
+Если на странице есть наша кнопка, это то, что нужно! Нажмите на него, и вы будете перенаправлены на наш дружественный инструмент публикации 💕
 
 :::tip Request the button!
 Если на странице нет нашей кнопки, вы можете предложить администраторам страницы включить ее - вот наше руководство по интеграции [Web Publisher](./integrating-web-publisher).
@@ -35,93 +35,93 @@ If the page features our button, that's it! Click on it and you will be redirect
 
 На панели предварительного просмотра справа откройте страницу, которую нужно отредактировать. Вы увидите внесенные вами правки по мере набора текста (или с небольшой задержкой).
 
-### Through GitHub 
+### Через GitHub 
 
-Follow these steps:
-1. Go to the repository of the page. 
-2. Find the file you want to edit. Find the "Edit" icon (of a pencil) and click on it. 
-3. Replace `github.com` with `pr.new` and you will be redirected to Web Publisher.
-4. In the Preview panel on the right side, navigate to the page you want to edit.
-
-
-<img lang="en" src="./assets/wp-opening-from-gh.gif" alt="Opening Web Publisher through GitHub" />
+Выполните следующие действия:
+1. Перейдите в хранилище страницы. 
+2. Найдите файл, который вы хотите отредактировать. Найдите "Редактировать" значок (карандаш) и нажмите на него. 
+3. Замените `github.com` на `pr.new` и вы будете перенаправлены на Web Publisher.
+4. На панели предварительного просмотра справа перейдите к странице, которую вы хотите отредактировать.
 
 
-## On your screen
+<img lang="en" src="./assets/wp-opening-from-gh.gif" alt="Открытие Web Publisher через GitHub" />
 
-Welcome to Web Publisher, a friendly publishing tool for content updates on blogs, docs, wikis, and other pages.
+
+## На вашем экране
+
+Добро пожаловать в Web Publisher, дружественный инструмент публикации для обновления контента в блогах, документах, вики и других страницах.
 
 <img lang="en" src="./assets/wp-whole.png" alt="Web Publisher" style="width: 600px"/>
 
-Let us give you a quick tour around this tool.
+Давайте проведем краткий экскурс по этому инструменту.
 
-### Top navigation bar
+### Верхняя панель навигации
 
-<img lang="en" src="./assets/wp-top-nav-bar-u.png" alt="Top nav bar"/>
+<img lang="en" src="./assets/wp-top-nav-bar-u.png" alt="Верхняя панель навигации"/>
 
-On the **left side**, you'll find the information about which file you're editing and in which repository.
+На **левой стороне** вы найдёте информацию о том, какой файл вы редактируете и в каком хранилище.
 
-On the **right side**, you'll find two buttons:
-- **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
-- **Your Profile**, which opens a new browser tab with your StackBlitz profile page.
+На **правой стороне** вы найдёте две кнопки:
+- **"Предложить изменения "**, который открывает выпадающий список с кнопкой "сделать запрос на вытягивание". (что означает отправку изменений владельцу репозитория).
+- **Ваш профиль**, после чего откроется новая вкладка браузера со страницей вашего профиля StackBlitz.
 
-### Editor
+### Редактор
 
-Editor is where you will introduce your changes - it is located on the left side or, if the expanded view is enabled, takes a whole center space. 
+Редактор - это место, где вы будете вносить свои изменения - он расположен слева или, если включен расширенный вид, занимает все центральное пространство. 
 
-Note that it is possible to specify in the link that Web Publisher will load with the editor on full screen.
+Обратите внимание, что в ссылке можно указать, что Web Publisher будет загружать редактор на полный экран.
 
 <img lang="en" src="./assets/wp-editor-view.png" alt="Editor window" style="width: 600px"/>
 
-In the **top left corner**, you will see the name of the file you're editing.
+В **левом верхнем углу** вы увидите название редактируемого файла.
 
 <img lang="en" src="./assets/wp-open-in-ide-popup.png" alt="Editor window" style="width: 200px"/>
 
-In the **top right corner**, you will see two icons:
-- the "..." icon which opens a popup with the **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
-- an icon of a two-pointed arrow that either expands the Editor view or switches back to split screen.
+В **правом верхнем углу** вы увидите два значка:
+- "..." иконка, которая открывает всплывающее окно с кнопкой **"Открыть в Codeflow IDE "**, перенаправляющей на [Codeflow IDE](./working-in-codeflow-ide) - это полезно, когда вы хотите добавить изображения или поработать над несколькими файлами.
+- значок в виде двуконечной стрелки, которая либо расширяет вид редактора, либо переключает обратно на разделённый экран.
 
-### Live Preview
+### Предпросмотр в прямом эфире
 
-Live Preview is where you can verify the changes you've introduced. It updates as you type (or with a little delay). It is located on the right side or, if the expanded view is enabled, takes a whole center space.
+Живой предварительный просмотр - это место, где вы можете проверить внесенные изменения. Он обновляется по мере ввода текста (или с небольшой задержкой). Он расположен справа или, если включен расширенный вид, занимает все центральное пространство.
 
-Note that it is possible to specify in the link that Web Publisher will load with the Preview on full screen.
+Обратите внимание, что в ссылке можно указать, что Web Publisher будет загружать предварительный просмотр на полный экран.
 
 <img lang="en" src="./assets/wp-preview-window-cut.png" alt="Preview window" style="width: 600px"/>
 
-In the top left corner, you will see the name of the panel ("Preview") and an arrow icon that allows you to trigger a refresh if the changes you introduced are not updating.
+В левом верхнем углу вы увидите название панели ("Предварительный просмотр") и значок со стрелкой, который позволяет вызвать обновление, если внесенные вами изменения не обновляются.
 
-In the top right corner, you will see three icons:
-- **"Terminal"** which opens a terminal window at the bottom where you can see the terminal output, including possible errors (these might be helpful when reporting an issue).
-- **"Open in new tab"** which opens a new browser tab with the Preview in case you want to see it full screen.
-- **"Expand the view"** or **"Switch back to split screen"** icon.
+В правом верхнем углу вы увидите три значка:
+- **"Terminal "**, который открывает окно терминала внизу, где вы можете увидеть вывод терминала, включая возможные ошибки (это может быть полезно при сообщении о проблеме).
+- **"Открыть в новой вкладке "**, которая открывает новую вкладку браузера с предварительным просмотром, если вы хотите увидеть его во весь экран.
+- **"Расширить обзор "** или **"Переключиться обратно на разделённый экран "**.
 
-## Updating the content
+## Обновление содержания
 
-Use the Editor to update the content and see verify your changes look on the page in the Preview.
+Используйте редактор для обновления содержимого и проверьте, как ваши изменения выглядят на странице в режиме предварительного просмотра.
 
 :::tip New to Markdown?
-If the name of the edited file ends in `.md`, this is a Markdown file and it may feature "strange" characters. Don't worry, here's a [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/) that will help you decipher and use them effectively!
+Если имя редактируемого файла заканчивается на `.md`, то это файл Markdown, и он может иметь "странные" свойства. персонажи. Не волнуйтесь, вот [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/), который поможет вам расшифровать и эффективно использовать их!
 :::
 
-## Submitting your changes
+## Представление ваших изменений
 
-You've introduced the edits and you're ready to submit them for the review. 
+Вы внесли правки и готовы отправить их на рецензию. 
 
 :::warning IMPORTANT:
-Before you send the changes to the owner of the page, please double check the text for typos, stylistic errors, links that don't work, and so on. Make sure that your edits are top-notch and are actually helpful.
+Прежде чем отправить изменения владельцу страницы, пожалуйста, дважды проверьте текст на наличие опечаток, стилистических ошибок, неработающих ссылок и так далее. Убедитесь, что ваши правки первоклассны и действительно полезны.
 :::
 
-**Ready to submit? Follow these steps:**
+**Готовы подать заявку? Выполните следующие действия:**
 
-1. In the top right corner, click on the green button that reads "Propose changes".
-2. In the dropdown window, click on "Commit proposed changes". Web Publisher will "push changes", which means that your edits are being sent to GitHub. In fact, Web Publisher first creates "a fork" (which means "a copy") of the GitHub repository, saves the changes and only them sends them to GitHub.
-3. A new browser tab will open with a form to "Open a pull request" (which means "suggest changes to the owner of the page"). Fill it out, including the description of the changes you made and explanation of your reasoning and motivation behind it. Please keep the information that the pull request was made with Web Publisher (already pre-filled).
+1. В правом верхнем углу нажмите на зеленую кнопку с надписью "Предложить изменения".
+2. В выпадающем окне нажмите "Зафиксировать предложенные изменения". Web Publisher будет "продвигать изменения", что означает, что ваши правки отправляются на GitHub. Фактически, Web Publisher сначала создает "вилку". (что означает "копия") репозитория GitHub, сохраняет изменения и только потом отправляет их в GitHub.
+3. В новой вкладке браузера откроется форма "Open a pull request" ("Открыть запрос"). (что означает "предложить изменения владельцу страницы"). Заполните его, включая описание изменений, которые вы внесли, и объяснение причин и мотивов, побудивших вас к этому. Пожалуйста, сохраните информацию о том, что запрос был сделан с помощью Web Publisher (уже предварительно заполнена).
 
-Congratulations! You've submitted the edits 🥳
+Поздравляю! Вы отправили правки 🥳.
 
 <img lang="en" src="./assets/wp-submitting-to-github.gif" alt="Opening Web Publisher through GitHub" />
 
-## Compatibility Mode
+## Режим совместимости
 
 <!--@include: ./parts/wp-compatibility-mode.md-->
