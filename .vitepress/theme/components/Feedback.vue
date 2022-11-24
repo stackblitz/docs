@@ -26,31 +26,26 @@ function onButtonClick(value: FeedbackState.YES | FeedbackState.NO) {
   });
 }
 
+function encode(data: Record<string, string>) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
+
 // We send a form to Netlify: https://docs.netlify.com/forms/setup/
 function submitForm() {
   isSending.value = true;
-  const formData = new FormData();
-  formData.append('form-name', 'doc-feedback');
-  formData.append('page', route.path);
-  formData.append('wasHelpful', currentState.value);
-  formData.append('feedback', feedback.value);
-
-  // The form doesn't contain `File` but FormDataEntryValue can be `string | File`
-  // To make TS happy we covert all values to string
-  const convertedFormEntries = Array.from(formData, ([key, value]) => [
-    key,
-    typeof value === 'string' ? value : value.name,
-  ]);
-
   fetch('/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(convertedFormEntries).toString(),
+    body: encode({
+      'form-name': 'doc-feedback',
+      page: route.path,
+      wasHelpful: currentState.value,
+      feedback: feedback.value,
+    }),
   })
     .then((res) => {
-      if (!res.ok) {
-        return Promise.reject(res);
-      }
       currentState.value = FeedbackState.END;
       feedback.value = '';
       hasError.value = false;
@@ -90,7 +85,14 @@ watch(
     </template>
 
     <template v-else-if="currentState === FeedbackState.YES || currentState === FeedbackState.NO">
-      <form class="form" @submit.prevent="submitForm" data-netlify="true">
+      <form
+        class="form"
+        name="doc-feedback"
+        method="post"
+        @submit.prevent="submitForm"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="doc-feedback" />
         <label class="title label" for="feedback">
           <template v-if="currentState === FeedbackState.YES"> What was most helpful? </template>
           <template v-else> What should we improve? </template>
