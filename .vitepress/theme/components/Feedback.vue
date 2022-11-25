@@ -21,7 +21,7 @@ function onButtonClick(value: FeedbackState.YES | FeedbackState.NO) {
   currentState.value = value;
   sendEvent({
     eventName: 'feedback_helpful',
-    pageTitle: route.data.title,
+    pagePath: route.path,
     value,
   });
 }
@@ -45,13 +45,12 @@ function submitForm() {
       feedback: feedback.value,
     }),
   })
-    .then((res) => {
+    .then(() => {
       currentState.value = FeedbackState.END;
       feedback.value = '';
       hasError.value = false;
     })
     .catch((error) => {
-      currentState.value = FeedbackState.END;
       hasError.value = true;
     })
     .finally(() => {
@@ -76,15 +75,15 @@ watch(
       <p class="title">Was this page helpful?</p>
       <div class="buttonContainer">
         <button class="button" @click="onButtonClick(FeedbackState.YES)">
-          <span class="icon thumsUp"></span> Yes
+          <span class="icon thumbsUp"></span> Yes
         </button>
         <button class="button" @click="onButtonClick(FeedbackState.NO)">
-          <src class="icon thumsDown"></src>No
+          <src class="icon thumbsDown"></src>No
         </button>
       </div>
     </template>
 
-    <template v-else-if="currentState === FeedbackState.YES || currentState === FeedbackState.NO">
+    <template v-else-if="[FeedbackState.YES, FeedbackState.NO].includes(currentState)">
       <form
         class="form"
         name="doc-feedback"
@@ -110,15 +109,13 @@ watch(
         <p v-if="hasError" class="error">Sorry, something went wrong. Please try it again later.</p>
       </form>
     </template>
-    <template v-if="currentState === FeedbackState.END">
+    <template v-else-if="currentState === FeedbackState.END">
       <p class="end">Thank you for helping improve StackBlitz documentation! &#9829;</p>
     </template>
   </div>
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars';
-
 .feedbackContainer {
   margin-block-start: 50px;
   display: flex;
@@ -172,15 +169,14 @@ watch(
   width: 16px;
   height: 16px;
   background-color: white;
-  transition: background-color 0.1s ease, opacity 0.1s ease;
 }
 
-.thumsUp {
+.thumbsUp {
   -webkit-mask: url('/icons/fa-thumbs-up.svg') center/contain no-repeat;
   mask: url('/icons/fa-thumbs-up.svg') center/contain no-repeat;
 }
 
-.thumsDown {
+.thumbsDown {
   -webkit-mask: url('/icons/fa-thumbs-down.svg') center/contain no-repeat;
   mask: url('/icons/fa-thumbs-down.svg') center/contain no-repeat;
 }

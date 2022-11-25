@@ -7,14 +7,14 @@ declare global {
 // https://developers.google.com/tag-platform/gtagjs/reference
 interface Event {
   eventName: string;
-  pageTitle: string;
+  pagePath: string;
   value: string;
 }
 
-export function sendEvent({ eventName, pageTitle, value }: Event) {
+export function sendEvent({ eventName, pagePath, value }: Event) {
   if (typeof window.gtag !== 'undefined') {
     window.gtag('event', eventName, {
-      page_title: pageTitle,
+      page_path: pagePath,
       value,
     });
   }
