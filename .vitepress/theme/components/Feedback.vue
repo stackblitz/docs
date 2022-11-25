@@ -122,12 +122,8 @@ watch(
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  min-height: 64px;
   gap: 30px;
-  text-align: left;
-  text-decoration: none;
   background-color: var(--vp-c-bg);
-  transition: box-shadow 0.1s ease, transform 0.1s ease;
 }
 
 .buttonContainer {
@@ -150,7 +146,7 @@ watch(
   align-items: center;
   gap: 10px;
   background-color: #0b7099;
-  color: #e1e2e2;
+  color: #fff;
   border-radius: 6px;
   padding: 4px 10px;
 
@@ -168,7 +164,7 @@ watch(
   display: block;
   width: 16px;
   height: 16px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .thumbsUp {
