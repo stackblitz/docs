@@ -10,7 +10,7 @@ defineProps<{
   <span
     :class="['root', className]"
     :aria-hidden="hidden"
-    :style="{ '--size': `clamp(${size || 18}px, 8px, 100px)` }"
+    :style="{ '--size': `clamp(8px, ${size || 18}px, 100px)` }"
   ></span>
 </template>
 
