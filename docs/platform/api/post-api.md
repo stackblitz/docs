@@ -1,5 +1,9 @@
 ---
 title: POST API
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/post-api.png
 ---
 
 # Creating a project with a POST request

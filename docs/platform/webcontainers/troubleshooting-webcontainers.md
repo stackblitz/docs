@@ -1,5 +1,9 @@
 ---
 title: Troubleshooting WebContainers
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/webcontainer-troubleshooting.png
 ---
 
 # {{ $frontmatter.title }}

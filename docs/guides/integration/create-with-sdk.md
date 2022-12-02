@@ -1,5 +1,9 @@
 ---
 title: Creating projects with the SDK
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/creating-projects-with-the-sdk.png
 ---
 
 <script setup lang="ts">

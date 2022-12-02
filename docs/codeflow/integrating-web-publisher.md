@@ -1,5 +1,9 @@
 ---
 title: Web Publisher docs integration
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/integrating-web_publisher.png
 ---
 
 # {{ $frontmatter.title }}

@@ -1,5 +1,9 @@
 ---
 title: Running in Brave
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/webcontainer-running-in-brave.png
 ---
 
 # Running in Brave

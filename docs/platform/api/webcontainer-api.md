@@ -1,5 +1,9 @@
 ---
 title: WebContainer API
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/webcontainer-api.png
 ---
 
 # {{ $frontmatter.title }}

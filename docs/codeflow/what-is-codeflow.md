@@ -1,5 +1,9 @@
 ---
 title: What is Codeflow?
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/what-is-codeflow.png
 ---
 
 :::warning Note: StackBlitz Codeflow is currently in Beta

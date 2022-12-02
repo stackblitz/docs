@@ -1,6 +1,10 @@
 ---
 title: Migrating StackBlitz Data
 sidebar_label: Data Migration
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/enterprise-data-migration.png
 ---
 
 # {{ $frontmatter.title }}

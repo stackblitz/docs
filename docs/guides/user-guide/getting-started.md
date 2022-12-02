@@ -1,6 +1,10 @@
 ---
 title: Getting started
 description: This page outlines how you can start using our StackBlitz editor.
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/getting-started.png
 ---
 
 # {{ $frontmatter.title }}

@@ -1,5 +1,9 @@
 ---
 title: Using pr.new
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/using-pr_new.png
 ---
 
 # {{ $frontmatter.title }}

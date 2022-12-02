@@ -1,5 +1,9 @@
 ---
 title: WebContainers Browser Support
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/webcontainer-browser-support.png
 ---
 
 # {{ $frontmatter.title }}

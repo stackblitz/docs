@@ -1,5 +1,9 @@
 ---
 title: Configuring DNS & TLS
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/enterprise-configuring-dns-tls.png
 ---
 
 # {{ $frontmatter.title }}

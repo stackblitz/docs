@@ -1,5 +1,9 @@
 ---
 title: Codeflow FAQ
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/codeflow-faq.png
 ---
 
 # {{ $frontmatter.title }}

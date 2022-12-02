@@ -1,5 +1,9 @@
 ---
 title: Integrating CodeflowApp Bot
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/integrating-codeflowapp-bot.png
 ---
 
 # {{ $frontmatter.title }}

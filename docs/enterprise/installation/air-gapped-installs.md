@@ -1,5 +1,9 @@
 ---
 title: Air Gapped Installs
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/og/enterprise-installation-air-gapped-installs.png
 ---
 
 # {{ $frontmatter.title }}
