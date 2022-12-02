@@ -1,5 +1,9 @@
 ---
 layout: page
+head:
+  - - meta
+    - name: og:image
+      content: https://developer.stackblitz.com/img/theme/docs-social.png
 ---
 
 <script setup lang="ts">

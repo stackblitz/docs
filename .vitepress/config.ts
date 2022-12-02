@@ -101,13 +101,6 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
     ['link', { rel: 'icon', type: 'image/png', href: '/img/theme/favicon.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'StackBlitz Docs' }],
-    [
-      'meta',
-      {
-        property: 'og:image',
-        content: 'https://developer.stackblitz.com/img/theme/docs-social.png',
-      },
-    ],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
     ['meta', { name: 'twitter:site', content: '@StackBlitz' }],
