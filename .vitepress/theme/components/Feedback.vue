@@ -78,7 +78,7 @@ watch(
           <span class="icon thumbsUp"></span> Yes
         </button>
         <button class="button" @click="onButtonClick(FeedbackState.NO)">
-          <src class="icon thumbsDown"></src>No
+          <span class="icon thumbsDown"></span>No
         </button>
       </div>
     </template>
