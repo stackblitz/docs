@@ -145,8 +145,8 @@ watch(
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #0b7099;
-  color: #fff;
+  background-color: var(--vp-c-brand);
+  color: var(--vp-c-bg);
   border-radius: 6px;
   padding: 4px 10px;
 
@@ -156,7 +156,7 @@ watch(
   }
 
   &:hover {
-    background-color: #085877;
+    background-color: var(--vp-c-brand-dark);
   }
 }
 
@@ -164,7 +164,7 @@ watch(
   display: block;
   width: 16px;
   height: 16px;
-  background-color: #fff;
+  background-color: var(--vp-c-bg);
 }
 
 .thumbsUp {
