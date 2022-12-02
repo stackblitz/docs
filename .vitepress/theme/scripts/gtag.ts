@@ -1,9 +1,3 @@
-declare global {
-  interface Window {
-    gtag?: (eventName: string, options: Record<string, unknown>) => void;
-  }
-}
-
 // https://developers.google.com/tag-platform/gtagjs/reference
 interface Event {
   eventName: string;
