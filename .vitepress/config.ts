@@ -104,13 +104,6 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
     ['meta', { name: 'twitter:site', content: '@StackBlitz' }],
-    [
-      'meta',
-      {
-        name: 'twitter:image',
-        content: 'https://developer.stackblitz.com/img/theme/docs-social.png',
-      },
-    ],
   ];
 
   if (env.VITE_GTM_ID) {
