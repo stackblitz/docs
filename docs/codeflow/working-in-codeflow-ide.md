@@ -1,9 +1,7 @@
 ---
 title: Working in Codeflow IDE
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/working-in-codeflow-ide.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/working-in-codeflow-ide.png'}]
 ---
 
 # {{ $frontmatter.title }}

@@ -2,9 +2,7 @@
 title: Starter projects
 description: Starter projects are online playgrounds, typically built by the core team of a given project and run on StackBlitz.
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/starter-projects.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/starter-projects.png'}]
 ---
 
 <script setup lang="ts">

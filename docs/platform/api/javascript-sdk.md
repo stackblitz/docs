@@ -1,9 +1,7 @@
 ---
 title: JavaScript SDK
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/javascript-sdk.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/javascript-sdk.png'}]
 ---
 
 # {{ $frontmatter.title }}

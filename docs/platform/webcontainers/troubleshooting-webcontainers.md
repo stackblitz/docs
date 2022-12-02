@@ -1,9 +1,7 @@
 ---
 title: Troubleshooting WebContainers
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/webcontainer-troubleshooting.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-troubleshooting.png'}]
 ---
 
 # {{ $frontmatter.title }}

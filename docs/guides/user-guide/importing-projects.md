@@ -1,9 +1,7 @@
 ---
 title: Importing projects
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/importing-projects.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/importing-projects.png'}]
 ---
 
 # {{ $frontmatter.title }}

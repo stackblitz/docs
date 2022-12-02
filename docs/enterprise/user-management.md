@@ -1,9 +1,7 @@
 ---
 title: User Management
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/enterprise-user-management.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-user-management.png'}]
 ---
 
 # {{ $frontmatter.title }}

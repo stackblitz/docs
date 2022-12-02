@@ -1,9 +1,7 @@
 ---
 title: Content Updates with Web Publisher
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/content-updates-with-web_publisher.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/content-updates-with-web_publisher.png'}]
 ---
 
 # {{ $frontmatter.title }}

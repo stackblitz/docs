@@ -1,9 +1,7 @@
 ---
 title: Turbo Package Manager
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/webcontainer-turbo-package-manager.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-turbo-package-manager.png'}]
 ---
 
 # {{ $frontmatter.title }}

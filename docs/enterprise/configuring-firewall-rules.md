@@ -1,9 +1,7 @@
 ---
 title: Configuring Firewall Rules
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/enterprise-configuring-firewall-rules.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-configuring-firewall-rules.png'}]
 ---
 
 # {{ $frontmatter.title }}

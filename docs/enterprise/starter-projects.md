@@ -1,9 +1,7 @@
 ---
 title: Starter Projects
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/enterprise-starter-projects.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-starter-projects.png'}]
 ---
 
 # {{ $frontmatter.title }}

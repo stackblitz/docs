@@ -1,9 +1,7 @@
 ---
 title: Quickstart on GCP (Non-GKE)
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-gcp.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-gcp.png'}]
 ---
 
 # {{ $frontmatter.title }}

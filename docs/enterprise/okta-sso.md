@@ -1,9 +1,7 @@
 ---
 title: Setting up SSO with Okta
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/enterprise-setting-up-sso-with-okta.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-setting-up-sso-with-okta.png'}]
 ---
 
 # {{ $frontmatter.title }}

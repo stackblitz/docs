@@ -2,9 +2,7 @@
 title: StackBlitz Enterprise Edition (EE)
 sidebar_label: Overview
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/enterprise-overview.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-overview.png'}]
 ---
 
 # {{ $frontmatter.title }}

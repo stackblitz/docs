@@ -1,9 +1,7 @@
 ---
 title: Setting up SSO
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/enterprise-setting-up-sso.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-setting-up-sso.png'}]
 ---
 
 # {{ $frontmatter.title }}

@@ -2,9 +2,7 @@
 title: Available environments
 description: "There are two kinds of environments that run projects in StackBlitz: EngineBlock and WebContainers. Each project in StackBlitz is tied to one or the other."
 head:
-  - - meta
-    - name: og:image
-      content: https://developer.stackblitz.com/img/og/available-environments.png
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/available-environments.png'}]
 ---
 
 <script setup lang="ts">
