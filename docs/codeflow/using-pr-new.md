@@ -4,9 +4,9 @@ title: Using pr.new
 
 # {{ $frontmatter.title }}
 
-Open Source contributions have never been easier 🥰 
-
 This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
+
+Built to make open source contributions as easy as possible. 🥰
 
 ## What is pr.new?
 
@@ -14,9 +14,7 @@ This page covers using pr.new to open, view, and contribute to any project throu
 
 ## How does pr.new work?
 
-This short URL enables magical experiences by choosing just the right tools for the job.
-
-Below you will learn what to expect in different scenarios.
+Behind the scenes, this short URL will choose different tools in different scenarios:
 
 <!-- TODO: graph -->
 
