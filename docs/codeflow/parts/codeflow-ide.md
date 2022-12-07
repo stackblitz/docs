@@ -1,1 +1,1 @@
-**Codeflow IDE** is a fully fledged desktop-grade dev environment capable of running your whole workflow - from production-level dev work to reviewing pull requests.
+**Codeflow IDE** - это полноценная среда разработки настольного уровня, способная выполнять весь ваш рабочий процесс - от разработки на уровне производства до рассмотрения запросов на поставку.

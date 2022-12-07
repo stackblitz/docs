@@ -1,21 +1,21 @@
 ---
-title: Launching projects from GitHub
+title: Запуск проектов с GitHub
 ---
 
 # {{ $frontmatter.title }}
 
-When providing an example for your users to open, there are several things to consider:
+При предоставлении примера для открытия пользователями необходимо учитывать несколько моментов:
 
-- How to display the link?
-- What is the actual URL?
-- Where to place the code within the repository?
-- How to configure the project to give people the best experience?
+- Как отобразить ссылку?
+- Каков фактический URL?
+- Где разместить код в репозитории?
+- Как настроить проект, чтобы дать людям наилучший опыт?
 
-In the following guide, we will answer all of these questions.
+В следующем руководстве мы ответим на все эти вопросы.
 
-### The “Open in StackBlitz” button
+### Кнопка "Открыть в StackBlitz"
 
-One of the ways to make your code example stand out in your docs or your repository's readme file is to use our CTA (call-to-action) buttons.
+Один из способов выделить пример кода в документации или файле readme вашего хранилища - использовать наши кнопки CTA (call-to-action).
 
 | Button preview | Direct URL |
 | --- | --- |
@@ -23,16 +23,16 @@ One of the ways to make your code example stand out in your docs or your reposit
 | <img alt="Open in StackBlitz" src="/img/open_in_stackblitz_small.svg" /> | <a href="/img/open_in_stackblitz_small.svg" target="_blank">open_in_stackblitz_small.svg</a> |
 
 ::: tip
-You can either host on your servers or use our image URLs directly.
+Вы можете разместить их на своих серверах или использовать наши URL-адреса изображений напрямую.
 :::
 
-In order to display the button in a **Markdown file**, use the following code - remember to replace the last URL with your example’s path:
+Чтобы отобразить кнопку в **Markdown-файле**, используйте следующий код - не забудьте заменить последний URL на путь вашего примера:
 
 ```md
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/___YOUR_PATH___)
 ```
 
-If you want to display the button in an **HTML markup**, use the following code:
+Если вы хотите отобразить кнопку в **HTML-разметке**, используйте следующий код:
 
 ```html
 <a href="https://stackblitz.com/github/___YOUR_PATH___">
@@ -43,71 +43,71 @@ If you want to display the button in an **HTML markup**, use the following code:
 </a>
 ```
 
-### Project URL
+### URL проекта
 
-Projects loaded from GitHub follow this URL template: “stackblitz.com” + “github” + “GitHub username” + “repository name” (and possibly a path to a specific directory, commit, tag or branch), for instance:
+Проекты, загруженные с GitHub, следуют этому шаблону URL: "stackblitz.com" + "github" + "имя пользователя GitHub" + "имя репозитория" (и, возможно, путь к определенному каталогу, коммиту, тегу или ветке), например:
 
 - [https://stackblitz.com/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
 - [https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic)
 
 ![Opening a GitHub project visual schema](./assets/Opening_a_Github_Project.png)
 
-### Open directly or fork?
+### Открывать напрямую или вилкой?
 
-Depending on the _“action”_ specified in the import URL (see the section above), the importer will either open the repository or make a fresh copy.
+В зависимости от _"действия"_, указанного в URL импорта (см. раздел выше), импортер либо откроет хранилище, либо создаст свежую копию.
 
-Consider a link like this one - a StackBlitz project loaded from a GitHub repository:
+Рассмотрим ссылку, подобную этой - проект StackBlitz, загруженный из репозитория GitHub:
 
 ```md
 [https://stackblitz.com/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
 ```
 
-In this case, StackBlitz imports the repository but does not give the _write_ access to it. When the user makes some changes to the code and tries to save it, the page will reload, and they will get their own copy of the project with the changes applied.
+В этом случае StackBlitz импортирует хранилище, но не дает к нему доступ на _запись_. Когда пользователь внесет изменения в код и попытается сохранить его, страница перезагрузится, и он получит свою собственную копию проекта с внесенными изменениями.
 
-To save users from seeing the page reload, we recommend always providing the link that will already load a fresh copy by including the `/fork` before the GitHub part of the URL:
+Чтобы избавить пользователей от необходимости видеть перезагрузку страницы, мы рекомендуем всегда указывать ссылку, которая уже загружает свежую копию, включив `/fork` перед частью URL GitHub:
 
 ```md
 [https://stackblitz.com/fork/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
 ```
 
-### Organizing the project in your repository
+### Организация проекта в вашем репозитории
 
-Since the StackBlitz git importer is able to work with various GitHub paths, you can place your example project in any directory, but the common convention is to have a `/examples` or `/templates` folder in your project’s repository.
+Поскольку StackBlitz git importer может работать с различными путями GitHub, вы можете разместить свой проект примера в любой директории, но общепринятым является наличие папки `/examples` или `/templates` в репозитории вашего проекта.
 
-Oftentimes such a folder will consist of subfolders with several different variations of a project (for instance, [https://github.com/remix-run/react-router/tree/main/examples](https://github.com/remix-run/react-router/tree/main/examples/basic))
+Часто такая папка состоит из вложенных папок с несколькими различными вариантами проекта (например, [https://github.com/remix-run/react-router/tree/main/examples](https://github.com/remix-run/react-router/tree/main/examples/basic)).
 
 :::info Note
-Make sure you don’t use a relative path to the main project in your examples’ `package.json` dependencies. Since what will be imported is only the content of the example’s folder, the example won’t have an access to the external paths.
+Убедитесь, что вы не используете относительный путь к основному проекту в `package.json` зависимостях ваших примеров. Поскольку будет импортировано только содержимое папки примера, пример не будет иметь доступа к внешним путям.
 :::
 
-### Customizing the `title`
+### Настройка `заголовка`
 
-By default, the GitHub importer will set the project's title based on the GitHub username and the repository name. As you see below, the name of the project is "Next.js Hello World Example” (in the top center):
+По умолчанию импортер GitHub устанавливает название проекта на основе имени пользователя GitHub и имени репозитория. Как вы видите ниже, название проекта - "Next.js Hello World Example" (в центре вверху):
 
 ```
 https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world
 ```
 
-![A default title when importing a GitHub project](./assets/Github_Importer_default_title.png)
+![Заголовок по умолчанию при импорте проекта GitHub](./assets/Github_Importer_default_title.png)
 
-To customize it, add the `title` argument to the URL like so:
+Чтобы настроить его, добавьте аргумент `title` в URL следующим образом:
 
 ```md
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title='Hello World'
 )
 ```
 
-As you see, the title has now changed from “Next.js Hello World Example” to “Hello World”:
+Как вы видите, заголовок теперь изменился с "Next.js Hello World Example" на "Hello World":
 
 ```
 https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?title=Hello World
 ```
 
-![A custom title when importing a GitHub project](./assets/Github_Importer_custom_title.png)
+![Пользовательский заголовок при импорте проекта GitHub](./assets/Github_Importer_custom_title.png)
 
-### Launching a script on project load
+### Запуск скрипта при загрузке проекта
 
-Usually, in your project’s `package.json` file there is a script that you would instruct your users to run in order to, for instance, launch a development server. Suppose your `package.json` includes such `dev` script:
+Обычно в файле `package.json` вашего проекта содержится скрипт, который вы поручаете запустить пользователям, чтобы, например, запустить сервер разработки. Предположим, что ваш `package.json` включает такой скрипт `dev`:
 
 ```json
 {
@@ -117,13 +117,13 @@ Usually, in your project’s `package.json` file there is a script that you woul
 }
 ```
 
-In order to run an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) automatically when the editor opens, you can either:
+Чтобы запустить [npm скрипт](https://docs.npmjs.com/cli/v8/using-npm/scripts) автоматически при открытии редактора, вы можете либо:
 
-- provide the `terminal` query parameter:
+- предоставить параметр запроса `терминал`:
   ```
   ?terminal=dev
   ```
-- create the `.stackblitzrc` file with the `startCommand` option:
+- создать файл `.stackblitzrc` с опцией `startCommand`:
   ```json
   {
     "startCommand": "npm run dev"
@@ -132,30 +132,30 @@ In order to run an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts)
 
 ## Tips & best practices
 
-### Keep the `package-lock.json` file
+### Сохраните файл `package-lock.json`
 
-Make sure you keep the `package-lock.json` file in your project to optimize the launching speed.
+Убедитесь, что вы сохранили файл `package-lock.json` в вашем проекте для оптимизации скорости запуска.
 
-If the `package-lock.json` file exists in the imported project, a package manager doesn't have to do the work needed to resolve dependencies, which takes significant amount of time during the installation process.
+Если файл `package-lock.json` существует в импортируемом проекте, менеджеру пакетов не нужно выполнять работу по разрешению зависимостей, которая занимает значительное количество времени в процессе установки.
 
-### Set up the main starter URL
+### Настройте основной стартовый URL
 
-Create a custom URL that immediately opens the live environment.
+Создайте пользовательский URL-адрес, который сразу же открывает живую среду.
 
-Great job: you've set up the starter project that your users can instantly spin up. Now whenever you'd like to quickly demo your framework, you can visit your docs or a "readme.md" file, click the "Open in StackBlitz" button, and load a project.
+Отличная работа: вы создали стартовый проект, который ваши пользователи могут мгновенно запустить. Теперь, когда вы захотите быстро продемонстрировать свой фреймворк, вы можете обратиться к документации или файлу "readme.md". файл, нажмите кнопку "Открыть в StackBlitz". и загрузите проект.
 
-_But how about we make this even more convenient?_
+Но как насчет того, чтобы сделать это еще более удобным?
 
-To reduce the friction for the people who start with your library from scratch, **set up a simple URL that immediately opens the live environment**!
+Чтобы уменьшить трудности для людей, которые начинают работать с вашей библиотекой с нуля, **установите простой URL, который сразу открывает живую среду**!
 
-For instance, let's assume your project's homepage is `awesome-lib.com` you can:
+Например, предположим, что домашней страницей вашего проекта является `awesome-lib.com`:
 
-- provide an `awesome-lib.new` domain that redirects to the `stackblitz.com/fork/github/awesome-lib/examples/starter` address
-- or set up a `/new` path on your current domain, which will also redirect to the starter.
+- предоставить домен `awesome-lib.new`, который перенаправляет на адрес `stackblitz.com/fork/github/awesome-lib/examples/starter`.
+- или установите путь `/new` на вашем текущем домене, который также будет перенаправлять на стартовый.
 
-Either `awesome-lib.new` or `awesome-lib.com/new` are both quite handy ways to have your project running in a browser in no time!
+Либо `awesome-lib.new`, либо `awesome-lib.com/new` - оба удобные способы быстро запустить ваш проект в браузере!
 
-Here are some examples of how others are doing it:
+Вот несколько примеров того, как это делают другие:
 
 - [sveltekit.new](https://sveltekit.new/)
 - [vitest.new](https://vitest.new/)

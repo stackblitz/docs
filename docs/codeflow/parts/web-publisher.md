@@ -1,1 +1,1 @@
-**Web Publisher** is a publishing tool that makes editing docs or blogs pleasant thanks to a realtime preview of the changes.
+**Web Publisher** - это инструмент для публикации, который делает редактирование документов или блогов приятным благодаря предварительному просмотру изменений в реальном времени.

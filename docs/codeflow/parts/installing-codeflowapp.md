@@ -1,3 +1,3 @@
 :::tip
-Installing CodeflowApp ensures every commit to default branch and any pull request branches are pre-cloned for instant bootup times. Your project will run faster on Codeflow.
+Установка CodeflowApp гарантирует, что каждый коммит в ветку по умолчанию и все ветки запросов на перенос будут предварительно клонированы для мгновенной загрузки. Ваш проект будет работать быстрее на Codeflow.
 :::
