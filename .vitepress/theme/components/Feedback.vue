@@ -71,6 +71,9 @@ watch(
 
 <template>
   <div class="feedbackContainer">
+    <form name="doc-feedback" data-netlify="true" hidden>
+      <textarea name="feedback"></textarea>
+    </form>
     <template v-if="currentState === FeedbackState.START">
       <p class="title">Was this page helpful?</p>
       <div class="buttonContainer">
@@ -82,7 +85,6 @@ watch(
         </button>
       </div>
     </template>
-
     <template v-else-if="[FeedbackState.YES, FeedbackState.NO].includes(currentState)">
       <form
         class="form"
