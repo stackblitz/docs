@@ -73,6 +73,8 @@ watch(
   <div class="feedbackContainer">
     <form name="doc-feedback" data-netlify="true" hidden>
       <textarea name="feedback"></textarea>
+      <input name="wasHelpful" />
+      <input name="page" />
     </form>
     <template v-if="currentState === FeedbackState.START">
       <p class="title">Was this page helpful?</p>
