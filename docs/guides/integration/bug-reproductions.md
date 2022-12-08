@@ -1,5 +1,7 @@
 ---
 title: Bug reproductions
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/bug-reproductions.png'}]
 ---
 
 # {{ $frontmatter.title }}

@@ -1,5 +1,7 @@
 ---
 title: Controlling embeds with the SDK’s VM interface
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-controlling-embeds.png'}]
 ---
 
 # {{ $frontmatter.title }}

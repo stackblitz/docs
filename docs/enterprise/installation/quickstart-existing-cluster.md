@@ -1,5 +1,7 @@
 ---
 title: Quickstart (Existing Cluster)
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-existing-cluster.png'}]
 ---
 
 # {{ $frontmatter.title }}

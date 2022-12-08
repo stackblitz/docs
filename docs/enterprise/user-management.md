@@ -1,5 +1,7 @@
 ---
 title: User Management
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-user-management.png'}]
 ---
 
 # {{ $frontmatter.title }}

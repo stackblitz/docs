@@ -1,5 +1,7 @@
 ---
 title: Launching projects from GitHub
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/launching-projects-from-github.png'}]
 ---
 
 # {{ $frontmatter.title }}

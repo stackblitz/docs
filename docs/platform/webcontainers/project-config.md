@@ -1,5 +1,7 @@
 ---
 title: Project configuration
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-project-configuration.png'}]
 ---
 
 # {{ $frontmatter.title }}

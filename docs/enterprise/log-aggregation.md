@@ -1,6 +1,8 @@
 ---
 title: Aggregating Logs
 sidebar_label: Aggregating Logs
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-aggregating-logs.png'}]
 ---
 
 # {{ $frontmatter.title }}

@@ -1,5 +1,7 @@
 ---
 layout: page
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/theme/docs-social.png'}]
 ---
 
 <script setup lang="ts">

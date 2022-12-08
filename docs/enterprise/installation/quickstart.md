@@ -1,5 +1,7 @@
 ---
 title: Quickstart on Bare Metal
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-bare-metal.png'}]
 ---
 
 # {{ $frontmatter.title }}

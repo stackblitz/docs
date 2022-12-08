@@ -1,5 +1,7 @@
 ---
 title: POST API
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/post-api.png'}]
 ---
 
 # Creating a project with a POST request

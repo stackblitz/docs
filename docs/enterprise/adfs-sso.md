@@ -1,5 +1,7 @@
 ---
 title: Setting up SSO with ADFS
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-setting-up-sso-with-adfs.png'}]
 ---
 
 # {{ $frontmatter.title }}

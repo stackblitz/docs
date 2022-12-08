@@ -1,5 +1,7 @@
 ---
 title: Configuring your browser to run WebContainers
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-configuration.png'}]
 ---
 
 # {{ $frontmatter.title }}

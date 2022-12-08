@@ -1,5 +1,7 @@
 ---
 title: Embedding projects
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/embedding-projects.png'}]
 ---
 
 # {{ $frontmatter.title }}

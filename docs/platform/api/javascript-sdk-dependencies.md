@@ -1,5 +1,7 @@
 ---
 title: Managing dependencies with the SDK
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-managing-dependencies.png'}]
 ---
 
 # {{ $frontmatter.title }}

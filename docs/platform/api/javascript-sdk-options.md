@@ -1,5 +1,7 @@
 ---
 title: SDK Options Reference
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-options-reference.png'}]
 ---
 
 # {{ $frontmatter.title }}

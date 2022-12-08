@@ -1,5 +1,7 @@
 ---
 title: Administrator Guide
+head:
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-administration-guide.png'}]
 ---
 
 # {{ $frontmatter.title }}
