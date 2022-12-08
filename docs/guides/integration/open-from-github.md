@@ -157,7 +157,7 @@ Either `awesome-lib.new` or `awesome-lib.com/new` are both quite handy ways to h
 
 Here are some examples of how others are doing it:
 
-- [astro.new](https://astro.new/); eg: [astro.new/blog?on=stackblitz](https://astro.new/blog?on=stackblitz)
+- [astro.new](https://astro.new/); for example: [astro.new/blog?on=stackblitz](https://astro.new/blog?on=stackblitz)
 - [sveltekit.new](https://sveltekit.new/)
 - [vitest.new](https://vitest.new/)
 - [vite.new](https://vite.new) + some variations: [vite.new/react](https://vite.new/react), [vite.new/vue](https://vite.new/vue), etc.
