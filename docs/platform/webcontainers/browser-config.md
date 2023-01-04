@@ -1,6 +1,8 @@
 ---
 title: Configuring your browser to run WebContainers
+description: Most of the time, WebContainers run fine in supported browsers. However, some browsers have default content restrictions, like third-party cookie and Service Worker blocking, that can prevent StackBlitz WebContainers from running properly. 
 head:
+  - ['meta', {property: 'og:title', content: 'Configuring your browser to run WebContainers'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-configuration.png'}]
 ---
 

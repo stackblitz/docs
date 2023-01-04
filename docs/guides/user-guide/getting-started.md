@@ -2,6 +2,7 @@
 title: Getting started
 description: This page outlines how you can start using our StackBlitz editor.
 head:
+  - ['meta', {property: 'og:title', content: 'Getting started'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/getting-started.png'}]
 ---
 
