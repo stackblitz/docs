@@ -1,6 +1,6 @@
 ---
 title: SDK Options Reference
-description: This page provides the available options for StackBlitz SDK projects.
+description: Modify your StackBlitz project with SDK options.
 head:
   - ['meta', {property: 'og:title', content: 'SDK Options Reference'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-options-reference.png'}]
