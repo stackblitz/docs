@@ -1,6 +1,8 @@
 ---
 title: Setting up SSO with ADFS
+description: StackBlitz is excited to offer SAML-based Single Sign-on (SSO) to organizations using Active Directory Federation Service (ADFS).
 head:
+  - ['meta', {property: 'og:title', content: 'Setting up SSO with ADFS'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-setting-up-sso-with-adfs.png'}]
 ---
 

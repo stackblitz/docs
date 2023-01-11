@@ -1,6 +1,8 @@
 ---
 title: Using pr.new
+description: This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
 head:
+  - ['meta', {property: 'og:title', content: 'Using pr.new'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/using-pr_new.png'}]
 ---
 

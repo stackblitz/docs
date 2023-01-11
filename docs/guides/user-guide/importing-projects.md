@@ -1,6 +1,8 @@
 ---
 title: Importing projects
+description: This page outlines how you can import projects to StackBlitz.
 head:
+  - ['meta', {property: 'og:title', content: 'Importing projects'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/importing-projects.png'}]
 ---
 

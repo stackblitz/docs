@@ -2,6 +2,7 @@
 title: "IDE: what’s on your screen"
 description: This page provides an overview of the terms we use to describe each of the pieces of the UI available to you in StackBlitz projects.
 head:
+  - ['meta', {property: 'og:title', content: 'IDE: what’s on your screen'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/ide-whats-on-your-screen.png'}]
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: Project configuration
+description: "Projects based on WebContainers can be configured in the following ways: 1. with project files (`package.json` or `.stackblitzrc`), 2. with URL parameters#with-url-parameters."
 head:
+  - ['meta', {property: 'og:title', content: 'Project configuration'}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-project-configuration.png'}]
 ---
 
