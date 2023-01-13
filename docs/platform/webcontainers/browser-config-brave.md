@@ -14,11 +14,11 @@ WebContainers work in Brave almost out of the box. However, it might require a s
 
 By default, Brave’s “Shields” feature blocks [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and cookies from third-party domains.
 
-When you visit a WebContainers-enabled project on [stackblitz.com](https://www.stackblitz.com/), StackBlitz tries to register a Service Worker for the domain `<project_name>.stackblitz.io`. Since it’s considered a third-party domain, Brave will reject it.
+When you visit a WebContainers-enabled project on [stackblitz.com](https://stackblitz.com/), StackBlitz tries to register a Service Worker for the domain `<project_name>.stackblitz.io`. Since it’s considered a third-party domain, Brave will reject it.
 
 ## Allowing third-party Service Workers
 
-1. Visit a WebContainers-based project, for instance https://www.stackblitz.com/edit/nextjs. The project’s boot sequence might stay stuck on the “Running start command” step:
+1. Visit a WebContainers-based project, for instance https://stackblitz.com/edit/nextjs. The project’s boot sequence might stay stuck on the “Running start command” step:
 
 ![Screenshot of Brave on a WebContainers project with the Brave Shields feature on. Loading the project’s web server is stuck on the last step.](./assets/brave-stuck-project.png)
 
