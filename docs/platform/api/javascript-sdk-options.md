@@ -2,7 +2,7 @@
 title: &title SDK Options Reference
 description: Modify your StackBlitz project with SDK options.
 head:
-  - ['meta', {property: og:title, content: *title}] 
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-options-reference.png'}]
 ---
 
