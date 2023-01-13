@@ -111,26 +111,30 @@ https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?ti
 
 ### Launching a script on project load
 
-Usually, in your project’s `package.json` file there is a script that you would instruct your users to run in order to, for instance, launch a development server. Suppose your `package.json` includes such `dev` script:
+StackBlitz will look in your project’s `package.json` file for a [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) to run on project load. By default, it looks for a script named `"dev"` first, then for a script named `"start"`.
+
+We recommend setting up your project’s `package.json` to use the `"dev"` or `"start"` script to launch a development server:
 
 ```json
 {
 	"scripts": {
+    "build": "vite build",
 		"dev": "vite"
 	}
 }
 ```
 
-In order to run an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) automatically when the editor opens, you can either:
+If you want to run a different script or command, you can use one of the following methods:
 
-- provide the `terminal` query parameter:
+- When linking to your project on StackBlitz, use the `startScript` query parameter:
   ```
-  ?terminal=dev
+  ?startScript=build
   ```
-- create the `.stackblitzrc` file with the `startCommand` option:
+
+- Or create a `.stackblitzrc` file with the `startCommand` option:
   ```json
   {
-    "startCommand": "npm run dev"
+    "startCommand": "npm run build"
   }
   ```
 

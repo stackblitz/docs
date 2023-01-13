@@ -63,7 +63,7 @@ You can use the following URL query parameters to customize the appearance and f
 | `hideNavigation` | `0`/`1` | Hides the preview’s URL bar. |
 | `initialpath` | URL path | Specifies the initial URL path (URI encoded) the preview should open. |
 | `showSidebar` | `0`/`1` | Shows the sidebar in embed view (large viewports only) |
-| `terminal` | string | Specifies the npm script to run on project load ([WebContainers-based projects][available_env_docs] only). |
+| `startScript` | string | Specifies the npm script to run on project load ([WebContainers-based projects][available_env_docs] only). |
 | `terminalHeight` | `0` - `100` | Sets the height of [the terminal][ui_docs]. |
 | `theme` | `light` - `dark` | Sets the color theme of the editor UI. |
 | `view` | `editor` - `preview` | Specifies which view to open by default. |

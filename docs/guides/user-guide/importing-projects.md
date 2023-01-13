@@ -43,14 +43,14 @@ Oftentimes, the first thing you do when opening a project is to launch a command
 
 Usually, these kinds of commands exist in the `scripts` section of your project's `package.json` file and you would manually type `npm run dev` to execute them.
 
-Using StackBlitz, you can provide an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) to run automatically when the editor opens with the `terminal` query parameter:
+Using StackBlitz, you can provide an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) to run automatically when the editor opens with the `startScript` query parameter:
 
-`stackblitz.com/fork/github/{gh_username}/{repo_name}?terminal={npm_script_name}`
+`stackblitz.com/fork/github/{gh_username}/{repo_name}?startScript={npm_script_name}`
 
 :::tip Example
 The following URL will open the `vitesse` repository of the `antfu` user, install the npm dependencies, and run `npm run dev` command in the terminal:
 
-[stackblitz.com/github/antfu/vitesse?terminal=dev](http://www.stackblitz.com/github/antfu/vitesse?terminal=dev)
+[stackblitz.com/github/antfu/vitesse?startScript=dev](https://stackblitz.com/github/antfu/vitesse?startScript=dev)
 
 Click on it and see the effect yourself!
 :::
@@ -68,9 +68,9 @@ For instance, the URL from the previous section would now become:
 [stackblitz.com/github/antfu/vitesse?title=Hello](https://stackblitz.com/github/antfu/vitesse?title=Hello)
 
 :::tip
-You can chain the URL query parameters by adding the & sing between them, for example:
+You can chain the URL query parameters by adding the `&` sign between them, for example:
 
-[stackblitz.com/github/antfu/vitesse?title=Hello](https://stackblitz.com/github/antfu/vitesse?title=Hello&terminal=dev)
+[stackblitz.com/github/antfu/vitesse?title=Hello](https://stackblitz.com/github/antfu/vitesse?title=Hello&startScript=dev)
 :::
 
 ## Importing private projects
