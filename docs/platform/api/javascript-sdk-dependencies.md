@@ -37,7 +37,7 @@ const packageJson = `{
 }`;
 
 const project = {
-  title: &title 'Node serve demo',
+  title: 'Node serve demo',
   description: 'Node.js server demo using the "serve" package',
   template: 'node',
   files: {
@@ -87,7 +87,7 @@ const PACKAGE_JSON = {
 };
 
 const project = {
-  title: &title 'My cool project',
+  title: 'My cool project',
   description: 'Example animation project',
   template: 'javascript',
   // REQUIRED: specify dependencies

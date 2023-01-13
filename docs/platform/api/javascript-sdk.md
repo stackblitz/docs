@@ -180,7 +180,7 @@ Example:
 ```js
 sdk.openProject(
   {
-    title: &title 'JS Starter',
+    title: 'JS Starter',
     description: 'Blank starter project for building ES6 apps.',
     template: 'javascript',
     files: {
@@ -220,7 +220,7 @@ Example:
 sdk.embedProject(
   'embed',
   {
-    title: &title 'Node Starter',
+    title: 'Node Starter',
     description: 'A basic Node.js project',
     template: 'node',
     files: {

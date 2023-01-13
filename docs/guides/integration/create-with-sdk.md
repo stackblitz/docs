@@ -66,7 +66,7 @@ StackBlitzSDK.openProject(
       'index.js': `alert('Woohoo! We can start documenting!')`,
     },
     template: 'javascript',
-    title: &title `My First Docs!`,
+    title: `My First Docs!`,
     description: `This is an example of my first doc!`,
   },
 
@@ -142,7 +142,7 @@ Now that you have the content of your project defined, it is useful to provide s
 
 ```js
 {
-  title: &title `My First Docs!`,
+  title: `My First Docs!`,
   description: `This is an example of my first doc!`
 }
 ```
