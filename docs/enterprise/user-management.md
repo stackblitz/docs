@@ -1,8 +1,8 @@
 ---
-title: User Management
+title: &title User Management
 description: After successful installation, StackBlitz EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using custom starter projects.
 head:
-  - ['meta', {property: 'og:title', content: 'User Management'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-user-management.png'}]
 ---
 

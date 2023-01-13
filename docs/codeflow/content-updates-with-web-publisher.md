@@ -1,8 +1,8 @@
 ---
-title: Content Updates with Web Publisher
+title: &title Content Updates with Web Publisher
 description: Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
 head:
-  - ['meta', {property: 'og:title', content: 'Content Updates with Web Publisher'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/content-updates-with-web_publisher.png'}]
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: Launching projects from GitHub
+title: &title Launching projects from GitHub
 description: When providing an example for your users to open, there are several things to consider.
 head:
-  - ['meta', {property: 'og:title', content: 'Launching projects from GitHub'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/launching-projects-from-github.png'}]
 ---
 

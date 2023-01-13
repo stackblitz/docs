@@ -1,8 +1,8 @@
 ---
-title: POST API
+title: &title POST API
 description: Create new projects by POSTing the desired project data from a form. This method is useful when you don't or can't use our JavaScript SDK.
 head:
-  - ['meta', {property: 'og:title', content: 'POST API'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/post-api.png'}]
 ---
 

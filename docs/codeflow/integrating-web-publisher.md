@@ -1,8 +1,8 @@
 ---
-title: Web Publisher docs integration
+title: &title Web Publisher docs integration
 description: This page covers integrating Web Publisher into your docs to lower the barrier for contributing to documentations.
 head:
-  - ['meta', {property: 'og:title', content: 'Web Publisher docs integration'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/integrating-web_publisher.png'}]
 ---
 

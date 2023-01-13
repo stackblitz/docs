@@ -1,8 +1,8 @@
 ---
-title: Embedding projects
+title: &title Embedding projects
 description: Embedding is one way to display a StackBlitz editor in a documentation page, a blog post, or any other page. This page covers manual embedding in iframes. 
 head:
-  - ['meta', {property: 'og:title', content: 'Embedding projects'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/embedding-projects.png'}]
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: Creating projects with the SDK
+title: &title Creating projects with the SDK
 description: This page will guide you through the SDK setup and available options.
 head:
-  - ['meta', {property: 'og:title', content: 'Creating projects with the SDK'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/creating-projects-with-the-sdk.png'}]
 ---
 
@@ -66,7 +66,7 @@ StackBlitzSDK.openProject(
       'index.js': `alert('Woohoo! We can start documenting!')`,
     },
     template: 'javascript',
-    title: `My First Docs!`,
+    title: &title `My First Docs!`,
     description: `This is an example of my first doc!`,
   },
 
@@ -142,7 +142,7 @@ Now that you have the content of your project defined, it is useful to provide s
 
 ```js
 {
-  title: `My First Docs!`,
+  title: &title `My First Docs!`,
   description: `This is an example of my first doc!`
 }
 ```
