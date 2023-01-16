@@ -1,8 +1,8 @@
 ---
-title: Creating projects with the SDK
+title: &title Creating projects with the SDK
 description: This page will guide you through the SDK setup and available options.
 head:
-  - ['meta', {property: 'og:title', content: 'Creating projects with the SDK'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/creating-projects-with-the-sdk.png'}]
 ---
 

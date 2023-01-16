@@ -1,9 +1,9 @@
 ---
-title: StackBlitz Enterprise Edition (EE)
+title: &title StackBlitz Enterprise Edition (EE)
 description: Welcome! Let's get started setting up StackBlitz Enterprise Edition.
 sidebar_label: Overview
 head:
-  - ['meta', {property: 'og:title', content: 'StackBlitz Enterprise Edition (EE)'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-overview.png'}]
 ---
 

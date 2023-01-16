@@ -1,8 +1,8 @@
 ---
-title: Air Gapped Installs
+title: &title Air Gapped Installs
 description: StackBlitz supports air gapped installations for networks that have restricted outbound network access.
 head:
-  - ['meta', {property: 'og:title', content: 'Air Gapped Installs'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-air-gapped-installs.png'}]
 ---
 

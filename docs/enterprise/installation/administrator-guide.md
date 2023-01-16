@@ -1,8 +1,8 @@
 ---
-title: Administrator Guide
+title: &title Administrator Guide
 description: This document covers in-depth custom installation and cluster operations.
 head:
-  - ['meta', {property: 'og:title', content: 'Administrator Guide'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-administration-guide.png'}]
 ---
 

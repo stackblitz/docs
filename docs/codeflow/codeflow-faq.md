@@ -1,8 +1,8 @@
 ---
-title: Codeflow FAQ
+title: &title Codeflow FAQ
 description: 'This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.'
 head:
-  - ['meta', {property: 'og:title', content: 'Codeflow FAQ'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/codeflow-faq.png'}]
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: Troubleshooting WebContainers
+title: &title Troubleshooting WebContainers
 description: This page helps you troubleshoot issues with WebContainers.
 head:
-  - ['meta', {property: 'og:title', content: 'Troubleshooting WebContainers'}]
+  - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-troubleshooting.png'}]
 ---
 
