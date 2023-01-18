@@ -87,7 +87,6 @@ Follow these steps:
 
 To integrate the bot, please follow the instructions on [Integrating CodeflowApp bot](./integrating-codeflowapp-bot.md).
 
-
 ## Troubleshooting
 
 ### Out of memory error
@@ -97,6 +96,10 @@ It may happen that having a few Codeflow IDE or StackBlitz projects open at the 
 <img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have Codeflow IDE, Web Publisher or StackBlitz editor open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
 
 <!-- @include: ../parts/error-out-of-memory.md -->
+
+### Can't switch to a remote branch
+
+Currently, when you load your repository, Codeflow only pulls in the branch you are trying to open or the default one. To switch to a remote branch you can either fetch the branches (by running `git fetch` in the terminal) or immediately open the desired branch through its URL by following this pattern: `https://pr.new/github/${owner}/${repo}/tree/${branchName}`
 
 ### Preview doesn't work
 
@@ -115,3 +118,9 @@ Check in the terminal if the dev server is still running. If you want to restart
 ### Reopening the Preview panel 
 
 If you close the Preview by accident, you can reopen it by selecting the icon of a plug entitled "Ports in use" from the left-side navigation bar. Note that you can open the Preview in a separate tab or as a split screen.
+
+## Running monorepos in Codeflow IDE
+
+Codeflow IDE supports workspaces. Follow a walkthrough below to get your monorepo running in Codeflow. <!-- @include: ../parts/monorepo-support.md -->
+
+
