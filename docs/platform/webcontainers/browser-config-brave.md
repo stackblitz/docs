@@ -1,9 +1,11 @@
 ---
 title: &title Running in Brave
-description: WebContainers work in Brave almost out of the box. However, it might require a small configuration change.
+description: &description WebContainers work in Brave almost out of the box. However, it might require a small configuration change.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-running-in-brave.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # Running in Brave

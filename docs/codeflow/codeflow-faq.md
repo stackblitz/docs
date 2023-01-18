@@ -1,9 +1,11 @@
 ---
 title: &title Codeflow FAQ
-description: 'This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.'
+description: &description 'This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.'
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/codeflow-faq.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}
