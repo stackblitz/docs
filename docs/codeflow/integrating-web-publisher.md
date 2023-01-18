@@ -1,9 +1,11 @@
 ---
 title: &title Web Publisher docs integration
-description: This page covers integrating Web Publisher into your docs to lower the barrier for contributing to documentations.
+description: &description This page covers integrating Web Publisher into your docs to lower the barrier for contributing to documentations.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/integrating-web_publisher.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

@@ -1,9 +1,11 @@
 ---
 title: &title WebContainers Browser Support
-description: For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state.
+description: &description For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-support.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

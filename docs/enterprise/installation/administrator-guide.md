@@ -1,9 +1,11 @@
 ---
 title: &title Administrator Guide
-description: This document covers in-depth custom installation and cluster operations.
+description: &description This document covers in-depth custom installation and cluster operations.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-administration-guide.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

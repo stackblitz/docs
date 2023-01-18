@@ -1,9 +1,11 @@
 ---
 title: &title Using pr.new
-description: This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
+description: &description This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/using-pr_new.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

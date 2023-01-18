@@ -1,9 +1,11 @@
 ---
 title: &title Launching projects from GitHub
-description: When providing an example for your users to open, there are several things to consider.
+description: &description When providing an example for your users to open, there are several things to consider.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/launching-projects-from-github.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

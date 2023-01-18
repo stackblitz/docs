@@ -1,9 +1,11 @@
 ---
 title: &title Importing projects
-description: This page outlines how you can import projects to StackBlitz.
+description: &description This page outlines how you can import projects to StackBlitz.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/importing-projects.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

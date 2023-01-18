@@ -1,9 +1,11 @@
 ---
 title: &title Creating projects with the SDK
-description: This page will guide you through the SDK setup and available options.
+description: &description This page will guide you through the SDK setup and available options.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/creating-projects-with-the-sdk.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 <script setup lang="ts">
@@ -19,7 +21,7 @@ function openProjectDemo() {
       },
       template: 'javascript',
       title: `My First Docs!`,
-      description: `This is an example of my first doc!`,
+      description: &description `This is an example of my first doc!`,
     },
     {
       newWindow: true,
@@ -67,7 +69,7 @@ StackBlitzSDK.openProject(
     },
     template: 'javascript',
     title: `My First Docs!`,
-    description: `This is an example of my first doc!`,
+    description: &description `This is an example of my first doc!`,
   },
 
   // Options
@@ -143,7 +145,7 @@ Now that you have the content of your project defined, it is useful to provide s
 ```js
 {
   title: `My First Docs!`,
-  description: `This is an example of my first doc!`
+  description: &description `This is an example of my first doc!`
 }
 ```
 

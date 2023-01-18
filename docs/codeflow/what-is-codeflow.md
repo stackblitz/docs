@@ -1,9 +1,11 @@
 ---
 title: &title What is Codeflow?
-description: Codeflow is a one-click integration with GitHub for seamless coding workflows.
+description: &description Codeflow is a one-click integration with GitHub for seamless coding workflows.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/what-is-codeflow.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 :::warning Note: StackBlitz Codeflow is currently in Beta

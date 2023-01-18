@@ -1,9 +1,11 @@
 ---
 title: &title JavaScript SDK
-description: The StackBlitz JavaScript SDK lets you programmatically create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts. 
+description: &description The StackBlitz JavaScript SDK lets you programmatically create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts. 
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/javascript-sdk.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}
@@ -181,7 +183,7 @@ Example:
 sdk.openProject(
   {
     title: 'JS Starter',
-    description: 'Blank starter project for building ES6 apps.',
+    description: &description 'Blank starter project for building ES6 apps.',
     template: 'javascript',
     files: {
       'index.html': `<div id="app"></div>`,
@@ -221,7 +223,7 @@ sdk.embedProject(
   'embed',
   {
     title: 'Node Starter',
-    description: 'A basic Node.js project',
+    description: &description 'A basic Node.js project',
     template: 'node',
     files: {
       'index.js': `console.log('Hello World!)';`,

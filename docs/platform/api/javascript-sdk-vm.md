@@ -1,9 +1,11 @@
 ---
 title: &title Controlling embeds with the SDK’s VM interface
-description: All of the embed methods of the StackBlitz JS SDK automatically connect to the embedded StackBlitz VM, giving you programmatic access to the embedded project.
+description: &description All of the embed methods of the StackBlitz JS SDK automatically connect to the embedded StackBlitz VM, giving you programmatic access to the embedded project.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-controlling-embeds.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

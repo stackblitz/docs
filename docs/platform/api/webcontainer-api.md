@@ -1,9 +1,11 @@
 ---
 title: &title WebContainer API
-description: WebContainer API allows for running WebContainers headlessly. It is currently in the pre-release alpha stage and accessed by invite only.
+description: &description WebContainer API allows for running WebContainers headlessly. It is currently in the pre-release alpha stage and accessed by invite only.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-api.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}

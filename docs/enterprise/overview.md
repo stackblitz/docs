@@ -1,10 +1,12 @@
 ---
 title: &title StackBlitz Enterprise Edition (EE)
-description: Welcome! Let's get started setting up StackBlitz Enterprise Edition.
+description: &description Welcome! Let's get started setting up StackBlitz Enterprise Edition.
 sidebar_label: Overview
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-overview.png'}]
+  - ['meta', {name: 'twitter:title', content: *title}]
+  - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}
