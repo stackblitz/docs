@@ -40,7 +40,7 @@ const packageJson = `{
 
 const project = {
   title: 'Node serve demo',
-  description: &description 'Node.js server demo using the "serve" package',
+  description: 'Node.js server demo using the "serve" package',
   template: 'node',
   files: {
     'package.json': packageJson,
@@ -90,7 +90,7 @@ const PACKAGE_JSON = {
 
 const project = {
   title: 'My cool project',
-  description: &description 'Example animation project',
+  description: 'Example animation project',
   template: 'javascript',
   // REQUIRED: specify dependencies
   dependencies: PACKAGE_JSON.dependencies,

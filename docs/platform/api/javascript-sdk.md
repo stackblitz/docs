@@ -183,7 +183,7 @@ Example:
 sdk.openProject(
   {
     title: 'JS Starter',
-    description: &description 'Blank starter project for building ES6 apps.',
+    description: 'Blank starter project for building ES6 apps.',
     template: 'javascript',
     files: {
       'index.html': `<div id="app"></div>`,
@@ -223,7 +223,7 @@ sdk.embedProject(
   'embed',
   {
     title: 'Node Starter',
-    description: &description 'A basic Node.js project',
+    description: 'A basic Node.js project',
     template: 'node',
     files: {
       'index.js': `console.log('Hello World!)';`,

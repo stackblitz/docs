@@ -21,7 +21,7 @@ function openProjectDemo() {
       },
       template: 'javascript',
       title: `My First Docs!`,
-      description: &description `This is an example of my first doc!`,
+      description: `This is an example of my first doc!`,
     },
     {
       newWindow: true,
@@ -69,7 +69,7 @@ StackBlitzSDK.openProject(
     },
     template: 'javascript',
     title: `My First Docs!`,
-    description: &description `This is an example of my first doc!`,
+    description: `This is an example of my first doc!`,
   },
 
   // Options
@@ -145,7 +145,7 @@ Now that you have the content of your project defined, it is useful to provide s
 ```js
 {
   title: `My First Docs!`,
-  description: &description `This is an example of my first doc!`
+  description: `This is an example of my first doc!`
 }
 ```
 
