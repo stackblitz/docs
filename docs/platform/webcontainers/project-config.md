@@ -125,24 +125,24 @@ A map of default environment variables that will be set in each top-level shell 
 
 ## With URL parameters
 
-### <var>terminal</var>
+### <var>startScript</var>
 
-Use the `terminal` parameter in the project’s URL query string to select one or several scripts from `package.json` to run on project load.
+Use the `startScript` parameter in the project’s URL query string to select one or several scripts from `package.json` to run on project load.
 
 This can be useful when a project doesn’t define a custom `startCommand`, or if you want to share a link that runs a different script than the one specified in `startCommand`.
 
 For example, the following URL will run the `"test"` script, defined in `package.json`, on project load:
 
 ```
-https://stackblitz.com/edit/project-id?terminal=test
+https://stackblitz.com/edit/project-id?startScript=test
 ```
 
 :::warning
-The `terminal` parameter only accepts existing keys from the `scripts` field in `package.json`. Projects which need more control should use [configuration in the project files](#with-project-files) directly.
+The `startScript` parameter only accepts existing keys from the `scripts` field in `package.json`. Projects which need more control should use [configuration in the project files](#with-project-files) directly.
 :::
 
 You can also run several scripts sequentially using comma-separated values. For instance, if a project defines a `"build"` script and a `"serve"` script, and both are needed to render a web page, you could use:
 
 ```
-https://stackblitz.com/edit/project-id?terminal=build,serve
+https://stackblitz.com/edit/project-id?startScript=build,serve
 ```
