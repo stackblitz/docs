@@ -1,12 +1,3 @@
-// Fix hardcoded background color of the Nav component.
-// Needs to be a color that matches --vp-c-bg but with partial opacity (for the glass effect).
-@media (min-width: 960px) {
-  :root.dark .VPNav.no-sidebar,
-  :root.dark .VPNavBar.has-sidebar .content {
-    background-color: hsl(220 14% 13% / 0.7);
-  }
-}
-
 // Fix enormous line-height of navbar items
 .VPNavBarMenu .VPNavBarMenuLink {
   min-height: var(--vp-nav-height-mobile);
