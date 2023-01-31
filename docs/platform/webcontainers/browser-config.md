@@ -14,7 +14,7 @@ While [all supported browsers](/platform/webcontainers/browser-support) can run 
 
 You can work around those issues by adding exceptions for StackBlitz domains in your browser’s settings. Here’s how.
 
-## Why does StackBlitz need special treatment?
+## Why do I need to add exceptions for StackBlitz?
 
 WebContainers use a combination of browser technologies, such as [Service Worker][MDN_SERVICE_WORKER] and [WebAssembly][MDN_WEB_ASSEMBLY], across several domains. Each running project has its own domain and needs to install a Service Worker for that domain to work properly.
 
