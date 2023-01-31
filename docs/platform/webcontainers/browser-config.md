@@ -40,9 +40,7 @@ To allow all StackBlitz projects to use third-party cookies, go to your browser�
 
 ```
 https://[*.]stackblitz.io
-https://[*.]local.webcontainer.io
-https://[*.]local-credentialless.webcontainer.io
-https://[*.]local-corp.webcontainer.io
+https://[*.]webcontainer.io
 ```
 
 For instance, in Chrome, go to [chrome://settings/cookies](chrome://settings/cookies) and add those exceptions in the “Sites that can always use cookies” section.
