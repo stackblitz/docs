@@ -81,16 +81,20 @@ Brave will reload the page, and you should get a working project:
 
 ## Edge: enabling WebAssembly {#edge-webassembly}
 
-Some browsers might disallow usage of [WebAssembly][MDN_WEB_ASSEMBLY] by default. For instance, Microsoft Edge does that when “Enhance your security on the web” is selected. To allow StackBlitz projects to run, add an exception for the following sites:
+Microsoft Edge disables usage of [WebAssembly][MDN_WEB_ASSEMBLY] when you set its “Enhance your security on the web” option to “Strict”.
+
+To allow StackBlitz projects to run, either set this option to “Balanced” or add exceptions for a couple domains used by StackBlitz projects.
+
+1. Go to [edge://settings/privacy](edge://settings/privacy) → “Enhance your security on the web”.
+
+<img alt="Edge privacy settings showing the “Enhance your security on the web” section." src="./assets/edge-settings-enhanced-security-1.png" width="800" />
+
+2. Then click “Exceptions”, and add exceptions for the following domains:
 
 ```
 stackblitz.com
 [*.]staticblitz.com
 ```
-
-For instance, in Edge you can do that in [edge://settings/privacy](edge://settings/privacy) → “Enhance your security on the web” → “Exceptions”.
-
-<img alt="Edge privacy settings showing the “Enhance your security on the web” section." src="./assets/edge-settings-enhanced-security-1.png" width="800" />
 
 <img alt="Edge privacy settings showing two entries added under the label “Enhanced security is turned off for these sites”." src="./assets/edge-settings-enhanced-security-2.png" width="800" />
 
