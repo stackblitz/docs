@@ -12,7 +12,7 @@ head:
 
 _Last update: October 2022_
 
-**TL;DR** For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state. If you have issues with supported browsers, [check your browser configuration](/platform/webcontainers/browser-config). If your issue is specifically with Brave, read the page on [running in Brave](/platform/webcontainers/browser-config-brave).
+**TL;DR** For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state. If you have issues with supported browsers, [check your browser configuration](/platform/webcontainers/browser-config).
 
 :::warning Note
 There is a reported Chrome regression on Macbooks with M1 chip, which also affects the speed of some larger projects on WebContainers. Learn more about this issue in these bug reports: [issue 1228686](https://bugs.chromium.org/p/chromium/issues/detail?id=1228686) and [issue 1356099](https://bugs.chromium.org/p/chromium/issues/detail?id=1356099).
@@ -40,7 +40,7 @@ WebContainers are fully supported in Chrome and most Chromium-based browsers inc
 
 However, if you enabled blocking third-party cookies in Chrome preferences, this may prevent WebContainers from working out of the box.
 
-If you think you’re running into this issue, check out [how to configure Chrome to run WebContainers](/platform/webcontainers/browser-config).
+If you think you’re running into this issue, check out [how to configure Chrome to run WebContainers](/platform/webcontainers/browser-config#chrome-service-workers).
 
 :::warning Note
 There is a reported Chrome regression on Macbooks with M1 chip, which also affects the speed of some larger projects on WebContainers. Learn more about this issue in these bug reports: [issue 1228686](https://bugs.chromium.org/p/chromium/issues/detail?id=1228686) and [issue 1356099](https://bugs.chromium.org/p/chromium/issues/detail?id=1356099).
@@ -50,7 +50,7 @@ There is a reported Chrome regression on Macbooks with M1 chip, which also affec
 
 Brave is a Chromium-based browser and supports WebContainers well but it ships with a more aggressive third-party blocking by default which tends to stop WebContainers from running.
 
-Learn [how to configure Brave to run WebContainers](/platform/webcontainers/browser-config-brave).
+Learn [how to configure Brave to run WebContainers](/platform/webcontainers/browser-config#brave-service-workers).
 
 ## Firefox
 

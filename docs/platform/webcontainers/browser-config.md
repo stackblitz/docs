@@ -1,6 +1,6 @@
 ---
 title: &title Configuring your browser to run WebContainers
-description: &description Most of the time, WebContainers run fine in supported browsers. However, some browsers have default content restrictions, like third-party cookie and Service Worker blocking, that can prevent StackBlitz WebContainers from running properly. 
+description: &description Some browser settings can stop WebContainers from running correctly. You can work around those issues by adding exceptions for StackBlitz domains in your browser’s settings.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-configuration.png'}]
@@ -10,15 +10,19 @@ head:
 
 # {{ $frontmatter.title }}
 
-Most of the time, WebContainers run fine [in supported browsers](/platform/webcontainers/browser-support). However, some browsers have default content restrictions, like third-party cookie and Service Worker blocking, that can prevent StackBlitz WebContainers from running properly. Here’s how you can troubleshoot and work around the most common issues.
+While [all supported browsers](/platform/webcontainers/browser-support) can run WebContainers, some browser options can stop WebContainers from running correctly.
 
-## Why do I need to add exceptions?
+You can work around those issues by adding exceptions for StackBlitz domains in your browser’s settings. Here’s how.
 
-WebContainers use a combination of different technologies, such as [Service Worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and [WebAssembly](https://developer.mozilla.org/docs/WebAssembly), across several domains. Each running project has its own domain, and needs to install a Service Worker for that domain to work properly.
+## Why does StackBlitz need special treatment?
+
+WebContainers use a combination of browser technologies, such as [Service Worker][MDN_SERVICE_WORKER] and [WebAssembly][MDN_WEB_ASSEMBLY], across several domains. Each running project has its own domain and needs to install a Service Worker for that domain to work properly.
 
 In some browsers, this feature is blocked by “third-party cookie” or “third-party storage” restrictions. These are legitimate restrictions when the third-party domain is an ad server or a tracking server, but in the case of WebContainers the third-party domain is where your project code runs.
 
-## Allowing Service Workers for all StackBlitz projects
+## Chrome: enabling Service Workers {#chrome-service-workers}
+
+If you use the “Block Third Party Cookies” option in Chrome, you will need to add exceptions for StackBlitz projects.
 
 To allow all StackBlitz projects to use Service Workers, go to your browser’s cookie preferences, and add exceptions for the following URL patterns:
 
@@ -35,11 +39,11 @@ For instance, in Chrome, go to [chrome://settings/cookies](chrome://settings/coo
 
 <img alt="Chrome cookie settings with exceptions for stackblitz.io and local.webcontainer.io domains." src="./assets/chrome-settings-cookies-3.png" width="800" />
 
-## Allowing Service Workers for a single project
+:::details Advanced: enabling Service Workers for a single project
 
 If you don’t want to allow Service Workers and third-party cookies for all StackBlitz projects, you can add exceptions for individual projects instead.
 
-Note that this may not be very practical, because the exact domain for a project can change between sessions, especially in [Codeflow IDE](/docs/codeflow/working-in-codeflow-ide/).
+Note that this may not be very practical, because the exact domain for a project can change between sessions, especially in [Codeflow IDE](/codeflow/working-in-codeflow-ide).
 
 In Chrome, click the lock icon in the navigation bar:
 
@@ -51,9 +55,33 @@ If that is the case, choose to “Allow” cookies for those third-party domains
 
 Note that the list of blocked domains might look different for you. In particular, a `xyz.local.webcontainer.io` domain might not be present. WebContainers-based projects use different domains dynamically, depending on what the runtime is doing (for instance, whether it is serving HTTP content or not), so you might need to check the list of blocked domains later if you see something off again.
 
-## Enabling WebAssembly
+:::
 
-Some browsers might disallow usage of WebAssembly by default. For instance, Microsoft Edge does that when “Enhance your security on the web” is selected. To allow StackBlitz projects to run, add an exception for the following sites:
+## Brave: enabling Service Workers {#brave-service-workers}
+
+By default, Brave’s “Shields” feature blocks [Service Workers][MDN_SERVICE_WORKER] and cookies from third-party domains.
+
+To allow WebContainers to run in Brave, you will need to add an exception for StackBlitz:
+
+1. Visit a WebContainers-based project, for instance https://stackblitz.com/edit/nextjs. The project’s boot sequence might stay stuck on the “Running start command” step:
+
+![Screenshot of Brave on a WebContainers project with the Brave Shields feature on. Loading the project’s web server is stuck on the last step.](./assets/brave-stuck-project.png)
+
+2. Click on the “Shields” icon at the right of the address bar, then click on “Advanced View”.
+
+<img alt="Screenshot showing the Shields configuration popup for stackblitz.com." src="./assets/brave-shields-popup.png" width="380" />
+
+3. In the advanced view, change the “Cross-site cookies blocked” option to “All cookies allowed”.
+
+![Screenshot showing the advanced view of the Shields configuration popup, with a drop-down selector for cross-site cookie permissions.](./assets/brave-shields-details.png)
+
+Brave will reload the page, and you should get a working project:
+
+![Screenshot of Brave on a WebContainers project with the Brave Shields feature tweaked to allow third-party cookies and Service Workers. Loading the web server works, and shows the default page for Next.js’s starter project.](./assets/brave-working-project.png)
+
+## Edge: enabling WebAssembly {#edge-webassembly}
+
+Some browsers might disallow usage of [WebAssembly][MDN_WEB_ASSEMBLY] by default. For instance, Microsoft Edge does that when “Enhance your security on the web” is selected. To allow StackBlitz projects to run, add an exception for the following sites:
 
 ```
 stackblitz.com
@@ -65,3 +93,7 @@ For instance, in Edge you can do that in [edge://settings/privacy](edge://settin
 <img alt="Edge privacy settings showing the “Enhance your security on the web” section." src="./assets/edge-settings-enhanced-security-1.png" width="800" />
 
 <img alt="Edge privacy settings showing two entries added under the label “Enhanced security is turned off for these sites”." src="./assets/edge-settings-enhanced-security-2.png" width="800" />
+
+
+[MDN_SERVICE_WORKER]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+[MDN_WEB_ASSEMBLY]: https://developer.mozilla.org/en-US/docs/WebAssembly
