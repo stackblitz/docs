@@ -9,9 +9,9 @@
     "start": "vitepress dev"
   },
   "dependencies": {
-    "@stackblitz/sdk": "^1.8.0",
-    "vitepress": "^1.0.0-alpha.27",
-    "vue": "^3.2.41"
+    "@stackblitz/sdk": "^1.8.2",
+    "vitepress": "^1.0.0-alpha.44",
+    "vue": "^3.2.45"
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.12",
@@ -19,8 +19,8 @@
     "@vue/tsconfig": "^0.1.3",
     "dotenv": "^16.0.3",
     "markdown-it-footnote": "^3.0.3",
-    "prettier": "^2.7.1",
-    "sass": "^1.56.0"
+    "prettier": "^2.8.3",
+    "sass": "^1.57.1"
   },
   "prettier": {
     "printWidth": 100,
