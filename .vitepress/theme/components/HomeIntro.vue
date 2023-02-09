@@ -5,7 +5,7 @@ import BooksIcon from './BooksIcon.vue';
 <template>
   <header>
     <BooksIcon class="icon" />
-    <h1>StackBlitz Documentation</h1>
+    <h1>StackBlitz DOCS DEMO for Bill and Felipe</h1>
     <p>
       Discover how to use StackBlitz, an online development environment for frontend, Node.js and
       the JavaScript ecosystem.
