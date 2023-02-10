@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-_Last update: October 2022_
+_Last update: February 2023_
 
 **TL;DR** For WebContainers, we support desktop Chromium-based browsers out of the box, and Firefox in alpha state. If you have issues with supported browsers, [check your browser configuration](/platform/webcontainers/browser-config).
 
