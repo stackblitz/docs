@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cross-Origin-Resource-Policy = "cross-origin"
