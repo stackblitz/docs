@@ -119,10 +119,10 @@ We recommend setting up your project’s `package.json` to use the `"dev"` or `"
 
 ```json
 {
-	"scripts": {
+  "scripts": {
     "build": "vite build",
-		"dev": "vite"
-	}
+    "dev": "vite"
+  }
 }
 ```
 
