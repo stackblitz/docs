@@ -58,6 +58,12 @@ Projects loaded from GitHub follow this URL template: “stackblitz.com” + “
 
 ![Opening a GitHub project visual schema](./assets/Opening_a_Github_Project.png)
 
+::: tip
+These are equivalent.  
+https://stackblitz.com/github/USERNAME/REPOSITORY_NAME  
+https://stackblitz.com/github.com/USERNAME/REPOSITORY_NAME
+:::
+
 ### Open directly or fork?
 
 Depending on the _“action”_ specified in the import URL (see the section above), the importer will either open the repository or make a fresh copy.
