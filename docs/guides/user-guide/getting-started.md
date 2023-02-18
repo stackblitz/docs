@@ -12,7 +12,7 @@ head:
 
 This page outlines how you can start using our StackBlitz editor.
 
-If you wish to immediately embed your project on your page check a page on manual [embeds](/guides/integration/embedding) and [SDK embeds](/platform/api/javascript-sdk). If you wish to learn how to import your project from GitHub, check the the page on [importing projects](/guides/user-guide/importing-projects).
+If you wish to immediately embed your project on your page check a page on manual [embeds](/guides/integration/embedding) and [SDK embeds](/platform/api/javascript-sdk). If you wish to learn how to import your project from GitHub, check the page on [importing projects](/guides/user-guide/importing-projects).
 
 ## Picking a starter project
 
@@ -36,7 +36,7 @@ Worry not! With StackBlitz, you can [import projects](/guides/user-guide/importi
 
 ## Using the StackBlitz editor
 
-Once you’ve chosen or uploaded a project, you should see a StackBlitz editor, which automatically compiles the project’s code to show a result on in the Preview panel on the right. Now, make some changes to the code and see live updates in the Preview!
+Once you’ve chosen or uploaded a project, you should see a StackBlitz editor, which automatically compiles the project’s code to show a result in the Preview panel on the right. Now, make some changes to the code and see live updates in the Preview!
 
 ![The StackBlitz editor showing the React TypeScript starter project](./assets/getting-started-editor.png)
 
