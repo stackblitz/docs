@@ -1,6 +1,6 @@
 ---
 title: &title WebContainer API
-description: &description WebContainer API allows for running WebContainers headlessly. It is currently in the pre-release alpha stage and accessed by invite only.
+description: &description WebContainer API allows for running WebContainers headlessly.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-api.png'}]
@@ -10,8 +10,12 @@ head:
 
 # {{ $frontmatter.title }}
 
-WebContainer API allows for running WebContainers headlessly. It is currently in the pre-release alpha stage and accessed by invite only.
+**The public WebContainer API has been released.** Now you too can use our browser-based runtime for executing Node.js applications and operating system commands, which runs entirely inside the browser tab.
 
-To see an example of the headless WebContainer in action, see the talk by Rich Harris about [building the new SvelteKit tutorial](https://www.youtube.com/watch?v=pFah4QqiUAg&t=4581s) or explore [the tutorial](https://learn.svelte.dev/tutorial/welcome-to-svelte) yourself.
+[![A screenshot of the WebContainers docs platform](./assets/wc-api-page.png)](https://webcontainers.io)
 
-Request your invitation through [this form](https://docs.google.com/forms/d/e/1FAIpQLSertiZLl-za0ZHxsWbd2IrISVft2OpPglykEHpEllPSfnZIUg/viewform).
+Head over to the [WebContainers docs](https://webcontainers.io) to learn more, see the API reference, follow tutorials, reference the commercial use case - or, try it out yourself with this minimalistic starter:
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://webcontainer.new)
+
+We're excited to see what you'll build!
