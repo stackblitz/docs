@@ -1,6 +1,6 @@
 ---
 title: &title WebContainer API
-description: &description WebContainer API allows for running WebContainers headlessly. It is currently in the pre-release alpha stage and accessed by invite only.
+description: &description WebContainer API allows for running WebContainers headlessly.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-api.png'}]
@@ -10,7 +10,9 @@ head:
 
 # {{ $frontmatter.title }}
 
-The public WebContainer API has been released. Now you too can use our browser-based runtime for executing Node.js applications and operating system commands, which runs entirely inside the browser tab.
+**The public WebContainer API has been released.** Now you too can use our browser-based runtime for executing Node.js applications and operating system commands, which runs entirely inside the browser tab.
+
+[![A screenshot of the WebContainers docs platform](./assets/wc-api-page.png)](https://webcontainers.io)
 
 Head over to the [WebContainers docs](https://webcontainers.io) to learn more, see the API reference, follow tutorials, reference the commercial use case - or, try it out yourself with this minimalistic starter:
 
