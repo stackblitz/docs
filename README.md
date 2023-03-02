@@ -9,6 +9,10 @@ StackBlitz is an **instant fullstack web IDE for the JavaScript ecosystem**. It'
 
 Now you can use the web to build the web.
 
+In fact, why not edit this docs in Codeflow IDE?
+
+<a href="https://stackblitz.com/~/github.com/stackblitz/webcontainer-docs"><img style="display:inline" src="https://developer.stackblitz.com/img/open_in_codeflow.svg" alt="Open in Codeflow"></a>
+
 ---
 
 ## Let's make the docs better!
