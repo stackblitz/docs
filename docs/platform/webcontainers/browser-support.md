@@ -62,7 +62,7 @@ In addition to this, there might be [other runtime incompatibilities](#runtime-d
 
 ## Safari
 
-Starting with Safari 16.4 TP, WebContainers fully work in Safari.
+Starting with Safari 16.4 TP,  WebContainers are in beta for Safari.
 
 Older versions of the browser are still lacking a few other features necessary for WebContainers to run, such as:
 
