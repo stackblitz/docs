@@ -12,7 +12,7 @@ head:
 
 _Last update: February 2023_
 
-**TL;DR** For WebContainers, we support desktop Chromium-based browsers out of the box, Safari 16.4 TP, and Firefox in alpha state. If you have issues with supported browsers, [check your browser configuration](/platform/webcontainers/browser-config).
+**TL;DR** For WebContainers, we support desktop Chromium-based browsers out of the box, as well as Safari 16.4 TP and Firefox, which both are in alpha state. If you have issues with supported browsers, [check your browser configuration](/platform/webcontainers/browser-config).
 
 :::warning Note
 There is a reported Chrome regression on Macbooks with M1 chip, which also affects the speed of some larger projects on WebContainers. Learn more about this issue in these bug reports: [issue 1228686](https://bugs.chromium.org/p/chromium/issues/detail?id=1228686) and [issue 1356099](https://bugs.chromium.org/p/chromium/issues/detail?id=1356099).
