@@ -47,6 +47,10 @@ This is perhaps the most frequently-asked question with regards to StackBlitz fe
 
 <!--@include: ./parts/persistance.md-->
 
+### Can I change the Node version?
+
+The Node version is locked so currently, there is no ability to change the Node version.
+
 ### Which repos can/not be opened in Codeflow IDE?
 
 Codeflow IDE should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
