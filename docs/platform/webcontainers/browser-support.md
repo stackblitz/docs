@@ -1,6 +1,6 @@
 ---
 title: &title WebContainers Browser Support
-description: &description For WebContainers, we support desktop Chromium-based browsers out of the box, as well as Safari 16.4 TP and Firefox, which both are in alpha state.
+description: &description For WebContainers, we support desktop Chromium-based browsers out of the box, as well as Safari 16.4 TP and Firefox, which both are in beta.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-support.png'}]
