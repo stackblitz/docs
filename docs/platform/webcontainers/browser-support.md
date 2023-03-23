@@ -54,7 +54,7 @@ Learn [how to configure Brave to run WebContainers](/platform/webcontainers/brow
 
 ## Firefox
 
-We have alpha support for Firefox. Please try it and [share feedback with us](https://github.com/stackblitz/webcontainer-core/issues/new/choose)!
+We have beta support for Firefox. Please try it and [share feedback with us](https://github.com/stackblitz/webcontainer-core/issues/new/choose)!
 
 As mentioned above, Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview window** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
