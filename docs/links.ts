@@ -1,3 +1,6 @@
+// --------------------------------
+// Link Groups / Sidebar
+
 type LinkGroup =
   'api'|
   'codeflow'|
@@ -129,6 +132,9 @@ export const linkGroup = (activeLinkGroup: LinkGroup | LinkGroup[]) => (
   }))
 );
 
+// --------------------------------
+// Home
+
 export const homeTopLinks = [
   {
     icon: '/icons/fa-file-import.svg',
@@ -194,6 +200,9 @@ export const homeExternalLinks = [
     bgImgDark: '/img/theme/link-bg-squares-dark.png',
   },
 ];
+
+// --------------------------------
+// Footer
 
 export const footerSections = [
   {
