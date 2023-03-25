@@ -290,8 +290,11 @@
   margin-block-start: 12px;
 }
 
-.VPSidebarItem.level-0.collapsed {
-  padding: 0 !important;
+.VPSidebarItem.level-0 {
+  padding-bottom: 12px !important;
+  &.collapsed {
+    padding: 0 !important;
+  }
 }
 
 // --------------------------------
