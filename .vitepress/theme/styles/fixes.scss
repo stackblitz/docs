@@ -407,7 +407,8 @@ h2 + .custom-block {
 }
 
 .vp-doc p > a,
-.vp-doc li > a {
+.vp-doc li > a,
+.vp-doc td > a {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
