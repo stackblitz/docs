@@ -92,10 +92,13 @@
 }
 
 // New body styles
-.vp-doc p {
-  margin: 24px 0;
+.vp-doc p,
+.vp-doc li {
   font-size: 15px;
   line-height: 1.8;
+}
+.vp-doc p {
+  margin: 24px 0;
 }
 
 .vp-doc p a {
@@ -403,11 +406,12 @@ h2 + .custom-block {
   padding-top: 0;
 }
 
-.vp-doc p > a {
+.vp-doc p > a,
+.vp-doc li > a {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
-  transition: none;
+  transition: text-underline-offset 0.1s ease;
   :root.dark & {
     color: rgb(131, 222, 255);
   }
@@ -415,7 +419,7 @@ h2 + .custom-block {
   :root.dark &:hover {
     color: var(--vp-c-text-1);
     text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
   }
 }
 
