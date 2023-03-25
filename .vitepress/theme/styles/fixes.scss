@@ -411,7 +411,8 @@ h2 + .custom-block {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
-  transition: text-underline-offset 0.1s ease;
+  transition: 0.1s ease;
+  transition-property: color, text-underline-offset;
   :root.dark & {
     color: rgb(131, 222, 255);
   }
