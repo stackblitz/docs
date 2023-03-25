@@ -1,5 +1,6 @@
 :root {
   scroll-padding-top: calc(var(--vp-nav-height-desktop) + 30px);
+  --content-max-width: 1480px;
 }
 
 :root:not(.dark) {
