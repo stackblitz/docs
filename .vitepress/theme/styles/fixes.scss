@@ -403,6 +403,22 @@ h2 + .custom-block {
   padding-top: 0;
 }
 
+.vp-doc p > a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: none;
+  :root.dark & {
+    color: rgb(131, 222, 255);
+  }
+  &:hover,
+  :root.dark &:hover {
+    color: var(--vp-c-text-1);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+}
+
 .vp-doc .custom-block p {
   margin: 2px 0 0;
   font-size: 14px;
