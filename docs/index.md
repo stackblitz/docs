@@ -8,7 +8,7 @@ head:
 <script setup lang="ts">
 import Home from '@theme/components/Home.vue';
 
-import { homeTopLinks, homeExternalLinks, footerSections } from './data';
+import { homeTopLinks, homeExternalLinks, footerSections } from './links';
 </script>
 
 <Home
