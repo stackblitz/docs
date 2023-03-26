@@ -6,6 +6,7 @@ export const userGuideLinks = [
   { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
   { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
   { text: 'Keyboard shortcuts', link: '/guides/user-guide/keyboard-shortcuts' },
+  { text: 'Command Line Utilities', link: '/guides/user-guide/command-line-utilities' },
 ];
 
 export const integrationGuideLinks = [
