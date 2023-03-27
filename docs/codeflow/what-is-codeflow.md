@@ -11,13 +11,13 @@ head:
 
 # {{ $frontmatter.title }}
 
+<!--@include: ./parts/codeflow.md-->
+
 :::warning Note: StackBlitz Codeflow is currently in Beta
 
 Please review our [FAQ](/codeflow/codeflow-faq#capabilities-limitations) for current limitations and [let us know](https://github.com/stackblitz/webcontainer-core/issues) if you find bugs!
 
 :::
-
-<!--@include: ./parts/codeflow.md-->
 
 StackBlitz now helps you switch contexts seamlessly:
 - <!--@include: ./parts/codeflow-ide.md-->
