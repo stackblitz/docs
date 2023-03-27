@@ -91,7 +91,7 @@
   }
 }
 
-// New body styles
+// Body styles
 .vp-doc p,
 .vp-doc li {
   font-size: 15px;
@@ -103,6 +103,11 @@
 
 .vp-doc p a {
   display: inline-block;
+}
+
+.vp-doc p > img {
+  margin: 44px 0;
+  border-radius: 6px;
 }
 
 .vp-doc pre code {
@@ -124,6 +129,41 @@
     left: -28px;
     padding: 0 18px;
     transform: scale(0.94);
+  }
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  width: max-content;
+}
+.vp-doc h1 + p,
+.vp-doc h2 + p {
+  margin-top: 0;
+}
+.vp-doc h2 {
+  padding-top: 0 !important;
+}
+
+.vp-doc p > a,
+.vp-doc li > a,
+.vp-doc td > a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: 0.1s ease;
+  transition-property: color, text-underline-offset;
+  :root.dark & {
+    color: rgb(131, 222, 255);
+  }
+  &:hover,
+  :root.dark &:hover {
+    color: var(--vp-c-text-1);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
   }
 }
 
@@ -354,7 +394,7 @@
 // Custom Blocks
 
 .vp-doc .custom-block {
-  margin: 44px 0;
+  margin: 52px 0;
   padding: 32px 32px;
   padding-left: 76px;
   border: none;
@@ -413,29 +453,6 @@
 
 h2 + .custom-block {
   margin-top: 32px !important;
-}
-
-.vp-doc h2 {
-  padding-top: 0;
-}
-
-.vp-doc p > a,
-.vp-doc li > a,
-.vp-doc td > a {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
-  transition: 0.1s ease;
-  transition-property: color, text-underline-offset;
-  :root.dark & {
-    color: rgb(131, 222, 255);
-  }
-  &:hover,
-  :root.dark &:hover {
-    color: var(--vp-c-text-1);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
-  }
 }
 
 .vp-doc .custom-block p {
