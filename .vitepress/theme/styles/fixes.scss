@@ -300,6 +300,18 @@
   }
 }
 
+// Link section heading alignment
+.VPSidebarItem .item h2.text {
+  padding-left: 16px;
+  color: var(--vp-c-text-2) !important;
+  transition: none;
+}
+.VPSidebarItem .item:hover h2.text,
+.VPSidebarItem:not(.collapsed) .item h2.text {
+  color: var(--vp-c-text-1) !important;
+}
+
+// Smaller, quicker caret
 .VPSidebarItem .caret {
   transform: scale(0.8);
 }
@@ -361,6 +373,7 @@
     --vp-custom-block-tip-text: rgb(0, 125, 111);
     --vp-custom-block-warning-text: rgb(202, 135, 0);
     --vp-custom-block-warning-border: rgb(255, 200, 0);
+    --vp-custom-block-warning-bg: rgba(255, 200, 0, 0.032);
   }
   :root.dark & {
     --vp-custom-block-tip-text: hsl(165 100% 60%);
