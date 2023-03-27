@@ -11,7 +11,7 @@ export default defineConfig({
   outDir: 'build',
 
   // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
-  cleanUrls: 'without-subfolders',
+  cleanUrls: true,
 
   // Prevent builds when content has dead links
   ignoreDeadLinks: false,
