@@ -152,8 +152,11 @@
   margin-top: 40px !important;
 }
 
+.vp-doc p > strong > a,
 .vp-doc p > a,
+.vp-doc li > strong > a,
 .vp-doc li > a,
+.vp-doc td > strong > a,
 .vp-doc td > a {
   text-decoration: underline;
   text-underline-offset: 2px;
