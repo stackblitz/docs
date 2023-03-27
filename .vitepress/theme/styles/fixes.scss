@@ -105,8 +105,9 @@
   display: inline-block;
 }
 
-.vp-doc p > img {
-  margin: 44px 0;
+.vp-doc p > img,
+.vp-doc > div > img {
+  margin: 40px 0;
   border-radius: 6px;
 }
 
