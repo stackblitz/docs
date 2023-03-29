@@ -12,7 +12,7 @@ head:
 
 When providing an example for your users to open, there are several things to consider:
 
-- How to display the link?
+- How to display the linkqsdfdfmjqsdkfj?
 - What is the actual URL?
 - Where to place the code within the repository?
 - How to configure the project to give people the best experience?
