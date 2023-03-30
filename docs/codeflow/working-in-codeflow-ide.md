@@ -30,7 +30,7 @@ At StackBlitz, we have been using Codeflow IDE in our daily internal development
 
 To open a GitHub repository in Codeflow IDE, swap "github.com" with "pr.new" in the repository URL. 
 
-:::details Intrigued by "pr.new"?  👀
+:::info Intrigued by "pr.new"?  👀
 If you're curious about this short URL, learn about the [full potential of "pr.new"](./using-pr-new).
 :::
 
