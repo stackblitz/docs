@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 /* @ts-expect-error */
 import mdFootnote from 'markdown-it-footnote';
 import { defineConfig, type HeadConfig } from 'vitepress';
-import { defaultGroupLink, linkGroup } from '../docs/links';
+import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
 
@@ -40,12 +40,12 @@ export default defineConfig({
       { text: 'Enterprise', link: defaultGroupLink('enterprise') },
     ],
     sidebar: {
-      '/guides/': linkGroup(['userGuide', 'integrationGuide']),
-      '/codeflow/': linkGroup('codeflow'),
-      '/platform/api/': linkGroup('api'),
-      '/platform/webcontainers/': linkGroup('webcontainers'),
-      '/enterprise/': linkGroup('enterprise'),
-    }
+      '/guides/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
+      '/codeflow/': sidebarLinks('main', ['codeflow']),
+      '/platform/api/': sidebarLinks('main', ['api']),
+      '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),
+      '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
+    },
   },
 
   markdown: {
