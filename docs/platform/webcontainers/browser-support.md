@@ -25,9 +25,8 @@ WebContainers are supported in all recent desktop browsers (fully in Chrome and 
 
 ### Mobile browsers
 
-- Chrome, Chromium-based browsers and Firefox on Android: beta support. Depending on your device, large projects may run into memory limitations.
-- Safari on iOS 16.4: experimental support. Many projects may run into memory limitations and other compatibility issues.
-- Other browsers on iOS: given that all browsers on iOS use the Safari engine, we expect them to have experimental support for WebContainers starting with iOS 16.4. But there may be added technical limitations and performance restrictions for third-party browsers. If you want to try out WebContainers on iOS, we recommend trying Safari. 
+- Android: beta support for Chrome, Chromium-based browsers and Firefox. Depending on your device, large projects may run into memory limitations.
+- iOS and iPadOS: not supported yet. WebContainers can theoretically work on iOS 16.4 and later, but memory limitations for web apps in Safari for iOS and iPadOS are currently too strict to run most WebContainers-based projects.
 
 ## Web Platform requirements
 
