@@ -72,7 +72,7 @@ We have beta support for Firefox. Please try it and [share feedback with us](htt
 
 Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
-Because Firefox and Node.js use different JavaScript engines (SpiderMonkey and V8), there is a small risk of running into [JS engine differences](#js-engine-differences).
+Because Firefox and Node.js use different JavaScript engines (SpiderMonkey and V8, respectively), there is a small risk of running into [JS engine differences](#js-engine-differences).
 
 ## Safari
 
