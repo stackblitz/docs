@@ -63,7 +63,7 @@ When Firefox’s Enhanced Tracking Protection is configured in “Custom” mode
 
 You can work around this issue in a couple ways:
 
-1. Use the “Strict” mode instead of “Custom” mode. It’s slightly more permissive than “Custom” mode with very strict options, so if you’d rather not, you can…
+1. Use the “Strict” mode instead of “Custom” mode. It’s important to note that it's slightly more permissive than “Custom” mode with very strict options. If this is not something you'd like to allow, you can...
 2. Add exceptions to cookie blocking for a couple domains used to run StackBlitz projects.
 
 First, visit `about:preferences#privacy` to check what your current settings look like. 
