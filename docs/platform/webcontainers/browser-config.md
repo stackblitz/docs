@@ -87,7 +87,7 @@ https://webcontainer.io
   width="1024"
 />
 
-Don’t forget to click “Save Changes”. Then you should be able to reload the tab with your StackBlitz project, and hopefully everything should work now!
+Don’t forget to click “Save Changes”. Then you should be able to reload the tab with your StackBlitz project, and hopefully everything should work!
 
 ## Brave: enabling Service Workers {#brave-service-workers}
 
