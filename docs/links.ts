@@ -2,20 +2,20 @@
 // Link Groups / Sidebar
 
 type LinkGroup =
-  'api'|
-  'codeflow'|
-  'enterprise'|
-  'integrationGuide'|
-  'userGuide'|
-  'webcontainers';
+  | 'api'
+  | 'codeflow'
+  | 'enterprise'
+  | 'integrationGuide'
+  | 'userGuide'
+  | 'webcontainers';
 
 interface LinkItem {
   text: string;
   link: string;
-  items?: LinkItem[]
+  items?: LinkItem[];
 }
 
-const groupLinks: {[key in LinkGroup]: LinkItem[]} = {
+const groupLinks: Record<LinkGroup, LinkItem[]> = {
   userGuide: [
     { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
     { text: 'Getting started', link: '/guides/user-guide/getting-started' },
@@ -93,7 +93,7 @@ const groupLinks: {[key in LinkGroup]: LinkItem[]} = {
   ],
 };
 
-const linkGroups: {[key in LinkGroup]: {text: string, items: LinkItem[]}} = {
+const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
   userGuide: {
     text: 'User Guide',
     items: groupLinks.userGuide,
@@ -122,15 +122,21 @@ const linkGroups: {[key in LinkGroup]: {text: string, items: LinkItem[]}} = {
 
 export const defaultGroupLink = (linkGroup: LinkGroup) => groupLinks[linkGroup][0].link;
 
-export const linkGroup = (activeLinkGroup: LinkGroup | LinkGroup[]) => (
-  Object.keys(linkGroups).map((linkGroup: string) => ({
-    ...linkGroups[linkGroup as LinkGroup],
-    collapsible: true,
-    collapsed: typeof activeLinkGroup === 'string' 
-      ? activeLinkGroup !== linkGroup
-      : !activeLinkGroup.includes(linkGroup as LinkGroup)
-  }))
-);
+export const sidebarLinks = (
+  sidebar: 'main' | 'enterprise',
+  activeLinkGroups: LinkGroup[] = []
+) => {
+  if (sidebar === 'enterprise') {
+    return [linkGroups.enterprise];
+  }
+
+  return Object.entries(linkGroups)
+    .filter(([key]) => key !== 'enterprise')
+    .map(([key, data]) => ({
+      ...data,
+      collapsed: !activeLinkGroups.includes(key as LinkGroup),
+    }));
+};
 
 // --------------------------------
 // Home
@@ -204,7 +210,7 @@ export const homeExternalLinks = [
 // --------------------------------
 // Footer
 
-export const footerSections = [
+export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
   {
     title: 'Workspaces',
     items: [
