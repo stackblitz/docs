@@ -80,7 +80,7 @@ We have beta support for Safari on macOS, starting with Safari 16.4. Please try 
 
 Safari does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
-Because Safari and Node.js use different JavaScript engines (JavaScriptCore and V8), there is a small risk of running into [JS engine differences](#js-engine-differences).
+Because Safari and Node.js use different JavaScript engines (JavaScriptCore and V8, respectively), there is a small risk of running into [JS engine differences](#js-engine-differences).
 
 Older Safari versions are not suported. They lack a few necessary Web Platform features, such as [`Atomics.waitAsync`](https://github.com/tc39/proposal-atomics-wait-async) and [lookbehind in regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions), which cannot be polyfilled.
 
