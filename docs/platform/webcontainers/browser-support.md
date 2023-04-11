@@ -2,7 +2,7 @@
 title: &title WebContainers Browser Support
 description: &description WebContainers are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
 head:
-  - ['meta', {property: 'og:title', content: *title}] 
+  - ['meta', {property: 'og:title', content: *title}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-support.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
@@ -26,7 +26,7 @@ WebContainers are supported in all recent desktop browsers (fully in Chrome and 
 ### Mobile browsers
 
 - Android: beta support for Chrome, Chromium-based browsers and Firefox. Depending on your device, large projects may run into memory limitations.
-- iOS and iPadOS: not supported yet. WebContainers can theoretically work on iOS 16.4 and later, but memory limitations for web apps in Safari for iOS and iPadOS are currently too strict to run most WebContainers-based projects.
+- iOS and iPadOS: beta support for Safari since iOS 16.4. Large projects may run into memory limitations because the memory usage for a web page on a mobile device is more constrained. In this case, we recommend switching to a Desktop browser that is less constrained and has more memory.
 
 ## Web Platform requirements
 
