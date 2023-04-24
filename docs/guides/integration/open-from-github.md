@@ -146,6 +146,11 @@ If you want to run a different script or command, you can use one of the followi
   }
   ```
 
+If your project has multiple folders with their own `package.json` files, you can specify which folder should open by using the `configPath` query parameter:
+```
+?configPath=packages/docs
+```
+
 ## Tips & best practices
 
 ### Keep the `package-lock.json` file
