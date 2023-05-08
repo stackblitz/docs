@@ -3,7 +3,7 @@ title: &title "Collections"
 description: &description If you'd like to group projects together, you could create a Collection. This feature is helpful when you like to create a list of your demos or inspiring projects you've forked, or can be used as your developer portfolio.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/ide-whats-on-your-screen.png'}]
+  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/collections.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
