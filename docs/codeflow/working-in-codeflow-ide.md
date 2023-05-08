@@ -34,7 +34,27 @@ To open a GitHub repository in Codeflow IDE, swap "github.com" with "pr.new" in 
 If you're curious about this short URL, learn about the [full potential of "pr.new"](./using-pr-new).
 :::
 
-If you are not logged into StackBlitz, while this product is in beta, you will be prompted to login or create a new account.
+If you are not logged into StackBlitz, while this product is in beta, you will be prompted to log in or create a new account.
+
+
+## Migrating your local VSCode settings
+
+To migrate the settings from your local VSCode, follow these steps:
+
+1. In VSCode open the Settings tab (you can use `cmd` + `,` key binding on MacOS or `alt` + `,` on Windows or Linux).
+2. Click on the "Open Settings (JSON)" button, located on the top right side:
+
+![Settings view](./assets/settings-view-json-highlightened.png)
+
+3. Copy the contents of this tab - these are your settings:
+
+![Settings view in JSON](./assets/settings-json.png)
+
+4. Repeat these actions in [Codeflow](https://pr.new): open the settings tab (you can use `cmd` + `,` key binding on MacOS or `alt` + `,` on Windows or Linux), open the JSON view, paste the copied settings.
+
+The gif below demonstrates these steps:
+
+![Migrating settings](./assets/vsc-to-sb-settings.webp)
 
 ## Saving changes
 
