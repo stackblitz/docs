@@ -41,8 +41,8 @@ If you are not logged into StackBlitz, while this product is in beta, you will b
 
 To migrate the settings from your local VSCode to Codeflow IDE, follow these steps:
 
-1. In VSCode open the Settings tab (you can use `cmd` + `,` key binding on MacOS or `alt` + `,` on Windows or Linux).
-2. Click on the "Open Settings (JSON)" button, located on the top right side:
+1. In VSCode open the Settings tab (`cmd` + `,` on MacOS or `alt` + `,` on Windows and Linux).
+2. Click on the "Open Settings (JSON)" button, located on the top right side of the view:
 
 ![Settings view](./assets/settings-view-json-highlightened.png)
 
