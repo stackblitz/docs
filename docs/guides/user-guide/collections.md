@@ -16,11 +16,11 @@ If you'd like to group projects together, you could create a Collection. This fe
 
 To get started, go to the "Collection" sidebar item from the StackBlitz Dashboard view:
 
-![Dashboard](./assets/dashboard-Collections-highlightened.png)
+![Dashboard](./assets/dashboard-collections-highlightened.png)
 
 This menu item will open an empty Collections page:
 
-![Collections](./assets/Collections-empty.png)
+![Collections](./assets/collections-empty.png)
 
 If you click on the "New" button, you will see a modal prompting you to create a new Collection:
 
