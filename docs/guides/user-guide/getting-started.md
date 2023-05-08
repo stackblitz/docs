@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-This page outlines how you can use StackBlitz to create quick demos or bug reproductions in StackBlitz classic editor, to group your projects into Collections, or to open a GitHub repository in Codeflow IDE.
+This page outlines how you can use StackBlitz to create quick demos or bug reproductions in StackBlitz classic editor or to open a GitHub repository in Codeflow IDE.
 
 If you wish to immediately embed your project on your page check a page on manual [embeds](/guides/integration/embedding) and [SDK embeds](/platform/api/javascript-sdk). If you wish to learn how to import your project from GitHub, check the page on [importing projects](/guides/user-guide/importing-projects).
 
@@ -50,25 +50,6 @@ Alternatively, you can also use StackBlitz classic editor to [open an existing G
 
 If you'd like to group projects together, you could create a Collection. This feature is helpful when you like to create a list of your demos or inspirational projects you've forked, or can be used as your developer portfolio.
 
-To get started, go to the "Collection" sidebar item:
-
-![Collections](./assets/collections-empty.png)
-
-If you click on the "New" button, you will see a modal prompting you to create a new Collection:
-
-![Collections modal](./assets/new-collection-modal.png)
-
-Having created it, you will be redirected to its page:
-
-![Empty collection](./assets/empty-collection.png)
-
-Now you can choose projects that you want to add to this Collection:
-
-![Adding projects to a collection](./assets/adding-projects-to-a-collection.png)
-
-:::tip Share your Collection!
-You can share your Collection with friends by either posting it automatically on Twitter or copying its URL. To do so, use the "Share" button on the chosen Collection page.
-:::
 
 ## Opening a GitHub repository in Codeflow IDE
 
