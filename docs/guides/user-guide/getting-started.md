@@ -48,7 +48,7 @@ Alternatively, you can also use StackBlitz classic editor to [open an existing G
 
 ## Grouping your projects into Collections
 
-If you'd like to group projects together, you could create a Collection. This feature is helpful when you like to create a list of your demos or inspirational projects you've forked, or can be used as your developer portfolio.
+If you'd like to group projects together, you could [create a Collection](/guides/user-guide/collections). This feature is helpful when you like to create a list of your demos or inspirational projects you've forked or can be used as your developer portfolio.
 
 
 ## Opening a GitHub repository in Codeflow IDE
