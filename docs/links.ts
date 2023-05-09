@@ -23,6 +23,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'Available environments', link: '/guides/user-guide/available-environments' },
     { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
     { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
+    { text: 'Collections', link: '/guides/user-guide/collections' },
     { text: 'Keyboard shortcuts', link: '/guides/user-guide/keyboard-shortcuts' },
   ],
   integrationGuide: [
