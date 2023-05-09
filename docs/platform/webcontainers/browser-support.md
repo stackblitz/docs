@@ -56,6 +56,10 @@ However, if you enabled blocking third-party cookies in Chrome preferences, this
 
 If you think you’re running into this issue, check out [how to configure Chrome to run WebContainers](/platform/webcontainers/browser-config#chrome-service-workers).
 
+:::warning Note
+MacBooks with Apple Silicon chips experience a reported regression on Chrome (before 112) and Firefox (before 114). In our case, it affects the speed of some larger projects on WebContainers. Learn more about this issue in these bug reports: [issue 1228686](https://bugs.chromium.org/p/chromium/issues/detail?id=1228686), [issue 1356099](https://bugs.chromium.org/p/chromium/issues/detail?id=1356099) and [bug 1809405](https://bugzilla.mozilla.org/show_bug.cgi?id=1809405).
+:::
+
 ## Brave
 
 Brave is a Chromium-based browser and supports WebContainers well but it ships with a more aggressive third-party blocking by default which tends to stop WebContainers from running.
