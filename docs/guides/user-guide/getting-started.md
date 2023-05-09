@@ -50,6 +50,12 @@ Alternatively, you can also use StackBlitz classic editor to [open an existing G
 
 If you'd like to group projects together, you could [create a Collection](/guides/user-guide/collections). This feature is helpful when you like to create a list of your demos or inspirational projects you've forked or can be used as your developer portfolio.
 
+## Managing projects on your Dashboard
+
+Selecting multiple projects allows you to add them all to an existing [Collection](/guides/user-guide/collections) or delete them. To do so, select a few projects by clicking on the project logo, which will trigger a pop-up menu:
+
+![A few selected projects with a pop-up menu with options "Add to collection" and "Delete projects"](./assets/batch-action.png)
+
 
 ## Opening a GitHub repository in Codeflow IDE
 
