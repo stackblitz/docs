@@ -1,5 +1,5 @@
 ---
-title: &title Codeflow FAQ
+title: &title Royal Caribean FQAs
 description: &description 'This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.'
 head:
   - ['meta', {property: 'og:title', content: *title}] 
