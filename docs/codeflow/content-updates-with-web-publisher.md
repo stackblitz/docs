@@ -7,6 +7,10 @@ head:
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
+<script setup lang="ts">
+  import Video from '@theme/components/Video.vue'
+</script>
+
 
 # {{ $frontmatter.title }}
 
@@ -52,8 +56,8 @@ Follow these steps:
 4. In the Preview panel on the right side, navigate to the page you want to edit.
 
 
-<img lang="en" src="./assets/wp-opening-from-gh.gif" alt="Opening Web Publisher through GitHub" />
-
+<!-- <img lang="en" src="./assets/wp-opening-from-gh.gif" alt="Opening Web Publisher through GitHub" /> -->
+<Video src="./assets/wp-opening-from-gh.mp4" />
 
 ## On your screen
 
@@ -65,7 +69,10 @@ Let us give you a quick tour around this tool.
 
 ### Top navigation bar
 
-<img lang="en" src="./assets/wp-top-nav-bar-u.png" alt="Top nav bar"/>
+<Video src="./assets/wp-opening-from-gh.mp4" />
+
+
+<!-- <img lang="en" src="./assets/wp-top-nav-bar-u.png" alt="Top nav bar"/> -->
 
 On the **left side**, you'll find the information about which file you're editing and in which repository.
 
