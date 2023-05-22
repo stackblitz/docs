@@ -79,7 +79,7 @@ In this case, StackBlitz imports the repository but does not give the _write_ ac
 To save users from seeing the page reload, we recommend always providing the link that will already load a fresh copy by including the `/fork` before the GitHub part of the URL:
 
 ```md
-[https://stackblitz.com/fork/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
+[https://stackblitz.com/fork/github/astro-js/astro-theme-starter](https://stackblitz.com/fork/github/astro-js/astro-theme-starter)
 ```
 
 ### Organizing the project in your repository
