@@ -12,6 +12,15 @@ This page outlines commonly asked questions and answers about StackBlitz.
 
 ## Capabilities & Limitations
 
+### Can I use Vim bindings?
+
+Our Codeflow editor is built on top of VS Code so you can enable the VIM extension:
+
+1. Open a github repository in Codeflow (like this: pr.new/vitejs/vite)
+2. Navigate to the "Extensions" pane
+3. Search for "Vim"
+4. Click on the VIM extension and then click the "enable" button.
+
 ### How do I create code snippets?
 
 Click on the Settings icon in the activity bar to the left of your screen. The Settings sidebar will pop open and you will see User snippets and Workspace snippets. User snippets are available for any of your projects. Workspace snippets are only available in the current project you create them in.
@@ -28,9 +37,11 @@ Any projects in `https://stackblitz.com/?starters=fullstack`, `..?starters=backe
 
 Please note that the terminal is only available for WebContainer-based projects. You can use the keyboard binding `^` `` ` `` (the caret and the back quote keys) to toggle the terminal.
 
-### Can I run Angular unit tests in StackBlitz?
+### Can I run unit tests in StackBlitz?
 
-This is possible inside WebContainer-based projects, but not Engineblock-based projects. The easiest way to start is by navigating to node.new, which is create a WebContainer-based project automatically!
+You can use [Jasmine](https://jasmine.github.io/), a unit testing tool for JavaScript.
+
+It is also possible to run Angular unit tests inside WebContainer-based projects, but not Engineblock-based projects. The easiest way to start is by navigating to node.new, which creates a WebContainer-based project automatically!
 
 ### Can I use Postman or something similar for testing?
 
@@ -68,9 +79,10 @@ The current state of Codeflow does not support users being able to set their own
 
 ### How do I view my invoice?
 
-You can go directly to https://stackblitz.com/settings/membership and click the 'View Invoices' button to view your invoice history. You can view [this video](./assets/view-invoice.mp4) to see how it's done!
+You can go directly to https://stackblitz.com/settings/membership and click the 'View Invoices' button to view your invoice history.
 
-<!--- Need to figure out what plugin is needed in VitePress to add videos (./assets/view-invoice.mp4) -->
+<!--- Need to figure out what plugin is needed in VitePress to add videos (./assets/view-invoice.mp4). Add this sentence once confirmed:  You can view [this video](./assets/view-invoice.mp4) to see how it's done!
+ -->
 
 ## Membership Plans
 
