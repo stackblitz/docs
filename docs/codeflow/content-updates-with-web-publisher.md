@@ -71,7 +71,15 @@ On the **left side**, you'll find the information about which file you're editin
 
 On the **right side**, you'll find two buttons:
 - **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
-- **Your Profile**, which opens a new browser tab with your StackBlitz profile page.
+- **Your Profile picture**, which opens a dropdown list with some usefull links:
+   1. **"Your profile"** which opens a new browser tab with your StackBlitz profile page.
+   2. **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
+   3. **"Edit on Github"** which redirects to Github edit page.
+   4. **"Documentation"** which redirects to [StackBlitz docs page](https://developer.stackblitz.com/).
+   5. **"See a bug? File an issue"** which redirects to [WebContainer core repo](https://github.com/stackblitz/webcontainer-core/issues/new/choose) where you can fulfil an issue describing the bug.
+
+<img lang="en" src="./assets/wp-profile-dropdown.png" alt="Profile dropdown" style="width: 400px"/>
+
 
 ### Editor
 
@@ -82,12 +90,6 @@ Note that it is possible to specify in the link that Web Publisher will load wit
 <img lang="en" src="./assets/wp-editor-view.png" alt="Editor window" style="width: 600px"/>
 
 In the **top left corner**, you will see the name of the file you're editing.
-
-<img lang="en" src="./assets/wp-open-in-ide-popup.png" alt="Editor window" style="width: 200px"/>
-
-In the **top right corner**, you will see two icons:
-- the "..." icon which opens a popup with the **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
-- an icon of a two-pointed arrow that either expands the Editor view or switches back to split screen.
 
 ### Live Preview
 
