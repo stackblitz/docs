@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.
+This page IS NOW BROKEN
 
 [[toc]]
 
