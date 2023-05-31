@@ -10,16 +10,7 @@ head:
 
 This page outlines commonly asked questions and answers about StackBlitz.
 
-## Capabilities & Limitations
-
-### Can I use Vim bindings?
-
-Our Codeflow editor is built on top of VS Code so you can enable the VIM extension:
-
-1. Open a github repository in Codeflow (like this: pr.new/vitejs/vite)
-2. Navigate to the "Extensions" pane
-3. Search for "Vim"
-4. Click on the VIM extension and then click the "enable" button.
+# General FAQs
 
 ### How do I create code snippets?
 
@@ -27,29 +18,9 @@ Click on the Settings icon in the activity bar to the left of your screen. The S
 
 Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) featured on Twitter that shows you how to create and use code snippets in StackBlitz.
 
-### How do I know if my project is EngineBlock or WebContainers-based?
-
-All WebContainers projects will have a terminal in the project. You can find what environments are available for EngineBlock and WebContainers projects in our [docs](https://developer.stackblitz.com/guides/user-guide/available-environments).
-
-Any projects in `https://stackblitz.com/?starters=fullstack`, `..?starters=backend`, `..?starters=vite` will be WebContainer/Node projects with a terminal.
-
-### Why can't I see my terminal?
-
-Please note that the terminal is only available for WebContainer-based projects. You can use the keyboard binding `^` `` ` `` (the caret and the back quote keys) to toggle the terminal.
-
-### Can I run unit tests in StackBlitz?
-
-You can use [Jasmine](https://jasmine.github.io/), a unit testing tool for JavaScript.
-
-It is also possible to run Angular unit tests inside WebContainer-based projects, but not Engineblock-based projects. The easiest way to start is by navigating to node.new, which creates a WebContainer-based project automatically!
-
 ### Can I use Postman or something similar for testing?
 
 [Postman](https://www.postman.com/automated-testing/) and similar tools will not work since the server is unreachable outside of the browser. As an alternative, you could run a node program that makes requests for testing.
-
-### Can I develop ElectronJS apps on StackBlitz?
-
-Since Electron is a native app, this cannot be supported since StackBlitz runs entirely within the browser.
 
 ### What are the deploy options available on StackBlitz?
 
@@ -63,28 +34,23 @@ The three pathways we current support are:
 
 ### Are MongoDB and Mongoose supported?
 
-Currently, database connections are not supported in StackBlitz. If you'd like to request something new to be added to StackBlitz, you can fill out fill out a [Feature Request issue](https://github.com/stackblitz/core/issues/new?assignees=&labels=Status%3A+Triage%2C+Type%3A+Feature+Request&template=feature-request.md&title=) on our GitHub repository or share your thoughts in our [Discord server](https://discord.gg/stackblitz)! 
-
-### Can I change the TypeScript version in my project?
-
-The current TypeScript starter uses EngineBlock technology, which has a fixed TypeScript version. EngineBlock is great for lightweight frontends, but does not run Node.js itself and will be limited to things like TypeScript versioning.
-
-Webcontainer, however does run Node.js itself in the browser and does not have this limitation. You can simply `npm install` any TypeScript version as you would locally.
-
-### Can I change the Node version in my project?
-
-The current state of Codeflow does not support users being able to set their own Node version.
-
-## Billing and Invoices
+Currently, database connections are not supported in StackBlitz. If you'd like to request something new to be added to StackBlitz, you can fill out fill out a [Feature Request issue](https://github.com/stackblitz/core/issues/new?assignees=&labels=Status%3A+Triage%2C+Type%3A+Feature+Request&template=feature-request.md&title=) on our GitHub repository or share your thoughts in our [Discord server](https://discord.gg/stackblitz)!
 
 ### How do I view my invoice?
 
 You can go directly to https://stackblitz.com/settings/membership and click the 'View Invoices' button to view your invoice history.
 
+If you need your invoice for Enterprise Server, please contact your Customer Success Engineer for details.
 <!--- Need to figure out what plugin is needed in VitePress to add videos (./assets/view-invoice.mp4). Add this sentence once confirmed:  You can view [this video](./assets/view-invoice.mp4) to see how it's done!
  -->
 
-## Membership Plans
+# Product FAQs
+
+## Personal Plan
+
+## Personal+ Plan
+
+## Teams Plans
 
 ### What is the Teams plan?
 
@@ -97,12 +63,67 @@ The Teams plan (currently in Beta) is a paid membership offering that allows use
 
 If you're interested in Teams Beta, come onboard with us for a private technology preview of this plan! You can sign up [here](https://stackblitz.com/beta-teams-signup).
 
-### I see that WebContainer API is free to use, but a license is required. Can I use the WebContainer API for commercial purposes?
-
-We are thrilled to offer free access for most users! For those with high levels of commercial usage, we do apply a nominal charge for API requests beyond 10,000 per month, at a highly competitive rate of $0.10 per API call.
+## Enterprise Server (Formerly known as Enterprise Edition)
 
 ### I want to purchase the enterprise edition for WebContainer. Where can I do that?
 
-Bringing Webcontainer to EE (enterprise edition) is in the works, but not currently available. You can reach out to enterprise@stackblitz.com for details.
+Bringing Webcontainer to Enterprise Server is in the works, but not currently available. You can reach out to enterprise@stackblitz.com for details.
 
 We do offer [WebContainer API](webcontainers.io) licenses for organizations wanting to use WebContainer technology for production usage in a for-profit setting. Check out [webcontainers.io](webcontainers.io) for more information!
+
+# Technology FAQs
+
+## Classic Editor (Engineblock projects)
+
+### Can I change the TypeScript version in my project?
+
+The current TypeScript starter uses EngineBlock technology, which has a fixed TypeScript version. EngineBlock is great for lightweight frontends, but does not run Node.js itself and will be limited to things like TypeScript versioning.
+
+Webcontainer, however does run Node.js itself in the browser and does not have this limitation. You can simply `npm install` any TypeScript version as you would locally.
+
+## Classic Editor (WebContainer projects)
+
+### How do I know if my project is WebContainers-based?
+
+All WebContainers projects will have a terminal in the project. You can find what environments are available for EngineBlock and WebContainers projects in our [docs](https://developer.stackblitz.com/guides/user-guide/available-environments).
+
+Any projects in `https://stackblitz.com/?starters=fullstack`, `..?starters=backend`, `..?starters=vite` will be WebContainer/Node projects with a terminal.
+
+### Can I change the Node version in my project?
+
+The current state of Codeflow does not support users being able to set their own Node version.
+
+### Why can't I see my terminal?
+
+Please note that the terminal is only available for WebContainer-based projects. You can use the keyboard binding `^` `` ` `` (the caret and the back quote keys) to toggle the terminal.
+
+### Can I run unit tests in StackBlitz?
+
+You can use [Jasmine](https://jasmine.github.io/), a unit testing tool for JavaScript.
+
+It is also possible to run Angular unit tests inside WebContainer-based projects, but not Engineblock-based projects. The easiest way to start is by navigating to node.new, which creates a WebContainer-based project automatically!
+
+### Can I develop ElectronJS apps on StackBlitz?
+
+Since Electron is a native app, this cannot be supported since StackBlitz runs entirely within the browser.
+
+## Codeflow Editor
+
+### Can I use Vim bindings?
+
+Our Codeflow editor is built on top of VS Code so you can enable the VIM extension:
+
+1. Open a github repository in Codeflow (like this: pr.new/vitejs/vite)
+2. Navigate to the "Extensions" pane
+3. Search for "Vim"
+4. Click on the VIM extension and then click the "enable" button.
+
+## Web Publisher
+
+## Classic Editor SDK
+
+## WebContainer API
+
+### I see that WebContainer API is free to use, but a license is required. Can I use the WebContainer API for commercial purposes?
+
+We are thrilled to offer free access for most users! For those with high levels of commercial usage, we do apply a nominal charge for API requests beyond 10,000 per month, at a highly competitive rate of $0.10 per API call.
