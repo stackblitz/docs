@@ -11,8 +11,8 @@ assignees: sylwiavargas
 
 Please provide us with the details of the extension you want to see added.
 
-- Link to the VS Code marketplace: 
--  If it's not on the VS Code marketplace, provide an alternative link:
+- Link to the VS Code marketplace:
+- If it's not on the VS Code marketplace, provide an alternative link:
 
 ## Your use case
 
