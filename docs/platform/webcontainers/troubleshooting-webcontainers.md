@@ -25,4 +25,4 @@ With the release of native npm support, the `npm` command in a terminal no longe
  1. remove your `package-lock.json` file, re-run `npm install`, and save your project; or
  2. run `npm install --legacy-peer-deps`.
 
-Your project should still load fine as when StackBlitz detect this error it will re-run the installation step with `npm install --legacy-peer-deps`.
+Even without any specific action on your part, your project should still load fine - when this error is detected, StackBlitz will re-run the installation step with `npm install --legacy-peer-deps`.
