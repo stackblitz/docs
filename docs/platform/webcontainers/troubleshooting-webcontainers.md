@@ -20,9 +20,9 @@ The solution to this is to use an alternative to the native addon which is eithe
 
 ## Fixing `npm ERR! code ERESOLVE`
 
-With the release of native npm, using `npm` in a terminal no longer use [`turbo`](turbo-package-manager.md) but instead uses the real [npm](https://github.com/npm/cli). There are a few differences in how `npm` and `turbo` resolve dependencies and one of them is how they work with peer dependencies. `npm install` might now fail on your project with an error saying `code ERESOLVE` or `Conflicting peer dependency`. You can easily fix this error by either:
+With the release of native npm support, the `npm` command in a terminal no longer defaults to [`turbo`](turbo-package-manager.md) under the hood but instead uses the real [npm](https://github.com/npm/cli). There are a few differences in how `npm` and `turbo` resolve dependencies and one of them is how they work with peer dependencies. In particular, `npm install` might now fail in your project with an error saying `code ERESOLVE` or `Conflicting peer dependency`. To fix this error, you can either:
 
- 1. Removing your `package-lock.json` file, re-running `npm install` and save your project
- 2. Running `npm install --legacy-peer-deps`
+ 1. remove your `package-lock.json` file, re-run `npm install`, and save your project; or
+ 2. run `npm install --legacy-peer-deps`.
 
 Your project should still load fine as when StackBlitz detect this error it will re-run the installation step with `npm install --legacy-peer-deps`.
