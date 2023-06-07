@@ -10,6 +10,12 @@ head:
 
 # {{ $frontmatter.title }}
 
+:::warning
+Starting on January 1, 2024, turbo will no longer be supported and will be removed. We now offer built-in support for npm, pnpm, and yarn v1.
+
+Support for native package managers out-of-the-box offers a lot of benefits. All features of your favorite package manager will be immediately available.
+:::
+
 WebContainers-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. For many commands, you can invoke `npm` or `yarn` directly and they will work as usual:
 
 ```sh
