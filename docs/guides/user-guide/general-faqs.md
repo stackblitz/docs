@@ -12,17 +12,13 @@ This page outlines commonly asked questions and answers about StackBlitz.
 
 # General FAQs
 
-### How do I create code snippets?
-
-Click on the Settings icon in the activity bar to the left of your screen. The Settings sidebar will pop open and you will see User snippets and Workspace snippets. User snippets are available for any of your projects. Workspace snippets are only available in the current project you create them in.
-
 Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) featured on Twitter that shows you how to create and use code snippets in StackBlitz.
 
 ### Can I use Postman or something similar for testing?
 
 [Postman](https://www.postman.com/automated-testing/) and similar tools will not work since the server is unreachable outside of the browser. As an alternative, you could run a node program that makes requests for testing.
 
-### What are the deploy options available on StackBlitz?
+### What are the deploy options available on StackBlitz? 
 
 The three pathways we current support are:
 
@@ -32,9 +28,9 @@ The three pathways we current support are:
 
 3. If you are using Codeflow, you can push code directly into GitHub and then use the [Netlify](https://github.com/apps/netlify) or [Vercel](https://vercel.com/docs/concepts/git/vercel-for-github) GitHub bots to deploy your site.
 
-### Are MongoDB and Mongoose supported?
+### Are MongoDB, Mongoose, Postgres or MySQL supported?
 
-Currently, database connections are not supported in StackBlitz. If you'd like to request something new to be added to StackBlitz, you can fill out fill out a [Feature Request issue](https://github.com/stackblitz/core/issues/new?assignees=&labels=Status%3A+Triage%2C+Type%3A+Feature+Request&template=feature-request.md&title=) on our GitHub repository or share your thoughts in our [Discord server](https://discord.gg/stackblitz)!
+Currently, direct TCP database connections are not supported. However,  an API based database provider like [Neon](https://neon.tech/) (a serverless Postgres DB, accessible via API calls) may provide an alternative approach.
 
 ### How do I view my invoice?
 
@@ -48,9 +44,13 @@ If you need your invoice for Enterprise Server, please contact your Customer Suc
 
 ## Personal Plan
 
+### What is the Personal Plan?
+
 ## Personal+ Plan
 
-## Teams Plans
+### What is the Personal+ Plan?
+
+## Teams Plan
 
 ### What is the Teams plan?
 
@@ -63,7 +63,9 @@ The Teams plan (currently in Beta) is a paid membership offering that allows use
 
 If you're interested in Teams Beta, come onboard with us for a private technology preview of this plan! You can sign up [here](https://stackblitz.com/beta-teams-signup).
 
-## Enterprise Server (Formerly known as Enterprise Edition)
+## Enterprise Server
+
+### What is the Enterprise Server offering?
 
 ### I want to purchase the enterprise edition for WebContainer. Where can I do that?
 
@@ -75,6 +77,13 @@ We do offer [WebContainer API](webcontainers.io) licenses for organizations want
 
 ## Classic Editor (Engineblock projects)
 
+### What is the Classic Editor for Engineblock projects?
+
+### How do I create code snippets?
+
+Code snippets are available in our Classic Editor for both Engineblock and WebContainer projects. Click on the Settings icon in the activity bar to the left of your screen. The Settings sidebar will pop open and you will see User snippets and Workspace snippets. User snippets are available for any of your projects. Workspace snippets are only available in the current project you create them in.
+
+
 ### Can I change the TypeScript version in my project?
 
 The current TypeScript starter uses EngineBlock technology, which has a fixed TypeScript version. EngineBlock is great for lightweight frontends, but does not run Node.js itself and will be limited to things like TypeScript versioning.
@@ -82,6 +91,8 @@ The current TypeScript starter uses EngineBlock technology, which has a fixed Ty
 Webcontainer, however does run Node.js itself in the browser and does not have this limitation. You can simply `npm install` any TypeScript version as you would locally.
 
 ## Classic Editor (WebContainer projects)
+
+### What is the Classic Editor for WebContaienr projects?
 
 ### How do I know if my project is WebContainers-based?
 
@@ -109,6 +120,8 @@ Since Electron is a native app, this cannot be supported since StackBlitz runs e
 
 ## Codeflow Editor
 
+### What is the Codeflow Editor?
+
 ### Can I use Vim bindings?
 
 Our Codeflow editor is built on top of VS Code so you can enable the VIM extension:
@@ -120,9 +133,15 @@ Our Codeflow editor is built on top of VS Code so you can enable the VIM extensi
 
 ## Web Publisher
 
+### What is Web Publisher?
+
 ## Classic Editor SDK
 
+### What is the Classic Editor SDK?
+
 ## WebContainer API
+
+### What is the WebContainer API?
 
 ### I see that WebContainer API is free to use, but a license is required. Can I use the WebContainer API for commercial purposes?
 
