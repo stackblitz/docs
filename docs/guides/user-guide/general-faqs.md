@@ -46,9 +46,15 @@ If you need your invoice for Enterprise Server, please contact your Customer Suc
 
 ### What is the Personal Plan?
 
+The Personal Plan is a free account that allows you to create unlimited public projects in both Classic and Codeflow editors. All you need to do is sign in with your GitHub account!
+
 ## Personal+ Plan
 
 ### What is the Personal+ Plan?
+
+The Personal+ Plan (formerly known as the Astronaut Plan) allows users to create unlimited private projects in both Classic and Codeflow editors, as well as unlimited file uploads. Personal+ users can also use Codeflow technology for private repositories.
+
+This plan is ideal for individual contributors, students, or developers working on singular projects, or engineering candidates. Users focusing on bug reproductions, fast prototyping, and sharing projects will find this plan sufficient.
 
 ## Teams Plan
 
@@ -56,16 +62,27 @@ If you need your invoice for Enterprise Server, please contact your Customer Suc
 
 The Teams plan (currently in Beta) is a paid membership offering that allows users to share features amongst members of their GitHub organization. Features and highlights of this plan include:
 
-- Instant integration with your GitHub repos for seamless in-browser pull request creation and review
-- Full VS Code in the browser (the classic StackBlitz editor is also included)
-- A unified security model for sharing StackBlitz projects and repos across your team
-- A single billing and user management interface based around your existing GitHub organization
+- Codeflow access for all users in the GitHub organization (in-browser VS Code)
+- Instant integration with your GitHub organization’s repos for seamless in-browser editing
+    - Utilizing GitHub organization makes it super easy for all users in the organization to use the Codeflow editor and Codeflow bot to create and review pull requests.
+- A unified security model for sharing StackBlitz projects and GitHub repos
+- User management and billing linked to your GitHub organization
+    - Easy to use interface within the StackBlitz dashboard (easy to toggle users for access/no access, all-in-one monthly payment).
 
 If you're interested in Teams Beta, come onboard with us for a private technology preview of this plan! You can sign up [here](https://stackblitz.com/beta-teams-signup).
 
 ## Enterprise Server
 
 ### What is the Enterprise Server offering?
+
+Enterprise Server is a membership offering that's best fit for organizations who want to use StackBlitz behind their firewall. Benefits include:
+
+- Private NPM registry integration
+- Custom SSO integration
+- On-prem installation support
+- Dedicated Customer Success Engineer
+
+Check out the [Enterprise page](https://stackblitz.com/enterprise) for details and set up a call with our Enterprise team!
 
 ### I want to purchase the enterprise edition for WebContainer. Where can I do that?
 
@@ -78,6 +95,11 @@ We do offer [WebContainer API](webcontainers.io) licenses for organizations want
 ## Classic Editor (Engineblock projects)
 
 ### What is the Classic Editor for Engineblock projects?
+
+The Classic Editor utilizes Engineblock and WeBcontainer technologies to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+
+Engineblock projects are distinguishable as they do not have a terminal.
+
 
 ### How do I create code snippets?
 
@@ -92,7 +114,11 @@ Webcontainer, however does run Node.js itself in the browser and does not have t
 
 ## Classic Editor (WebContainer projects)
 
-### What is the Classic Editor for WebContaienr projects?
+### What is the Classic Editor for WebContainer projects?
+
+The Classic Editor utilizes Engineblock and WeBcontainer technologies to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+
+Since WebContainer technology allows Node.js to run inside the browser, WebContainer projects will always have a terminal available.
 
 ### How do I know if my project is WebContainers-based?
 
@@ -122,6 +148,8 @@ Since Electron is a native app, this cannot be supported since StackBlitz runs e
 
 ### What is the Codeflow Editor?
 
+The Codeflow Editor utilizes our Codeflow technology to bring VSC code into the browser. This editor is capable of running full development workflows, including pushing commits and creating pull requests to GitHub. This bypasses the need to clone a repository or install dependencies on your local machine. If you haven't already, you can check out Codeflow [here](https://stackblitz.com/codeflow)!
+
 ### Can I use Vim bindings?
 
 Our Codeflow editor is built on top of VS Code so you can enable the VIM extension:
@@ -135,9 +163,22 @@ Our Codeflow editor is built on top of VS Code so you can enable the VIM extensi
 
 ### What is Web Publisher?
 
+Web Publisher is a single file editor and publishing tools that can be used for smaller or text-based changes such as editiong documentation or blogs. Web Publisher uses Codeflow technology that allows users to create, push, and publish changes all in their browser. The GitHub integration creates a seamless workflow that's fit for developers and non-coding folks alike!
+
+This environment is ideal for:
+- No-tech or low-tech users
+- Text or formatting changes in documentation or blogs
+- Quick fixes that don't require dependency or compilation changes
+
+You can learn more about Web Publisher [here](https://developer.stackblitz.com/codeflow/content-updates-with-web-publisher).
+
 ## Classic Editor SDK
 
 ### What is the Classic Editor SDK?
+
+Our SDK (software development kit) allows users to create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts. Projects are controlled by using the SDK's VM (virtual machine) interface. The VM can be used to control the UI of an embedded StackBlitz project, change the currently open file(s), and read and write files frmo the project's virtual filesystem.
+
+Details on embed options can be found [here](https://developer.stackblitz.com/platform/api/javascript-sdk).
 
 ## WebContainer API
 
