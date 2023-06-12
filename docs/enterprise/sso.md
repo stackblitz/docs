@@ -56,6 +56,9 @@ Please note: these attributes are case-sensitive and and must be entered exactly
 
 - StackBlitz offers "Just-in-time" provisioning. If a user logs into StackBlitz for the first time using SSO, an account will automatically be created as long as that email address does not already exist in StackBlitz.
 - Please ensure that the email addresses in the IdP are what your users will be using to log into StackBlitz.
+- Admin accounts should not be made with an individual work email that will be used to create a separate user account later. Should this happen, we recommend the following steps:
+  - Log in as admin
+  - Navigate to https://editor.stackblitz.netflix.net/users/edit to change your email address to a different one. It will show the same screen as the changing email/password when first logging in as an admin, but you only need to change your email.
 
 ### Troubleshooting
 

@@ -43,7 +43,7 @@ Please please see our advanced existing cluster installation instructions if you
 
 # Troubleshooting
 
-StackBlitz Enterprise has a built-in troubleshooting tool. On the admin console, click on the Troubleshoot tab, and you can download a support bundle. By default, this will run through a series of prebuilt analyzers to help identify potential issues. If you’re unable to remediate the issue, you can deliver the support bundle to our support team and we can help you identify any problems with the StackBlitz Enterprise installation.
+StackBlitz Enterprise has a built-in troubleshooting tool. On the admin console, click on the Troubleshoot tab, and you can download a support bundle. By default, this will run through a series of prebuilt analyzers to help identify potential issues. If you’re unable to remediate the issue, you can deliver the support bundle to our support team via your upload link and we can help you identify any problems with the StackBlitz Enterprise installation.
 
 ## Automating Day-2 Operations
 
