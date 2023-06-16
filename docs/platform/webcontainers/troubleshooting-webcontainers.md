@@ -2,7 +2,7 @@
 title: &title Troubleshooting WebContainers
 description: &description This page helps you troubleshoot issues with WebContainers.
 head:
-  - ['meta', {property: 'og:title', content: *title}] 
+  - ['meta', {property: 'og:title', content: *title}]
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-troubleshooting.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
@@ -27,3 +27,19 @@ With the release of native npm support, the `npm` command in a terminal no longe
  3. Run `npm install --force` to bypass the conflicts.
 
 Your project should load without your action, at least if dependencies are automatically installed. If an error is detected, StackBlitz will automatically re-run the installation step with `npm install --legacy-peer-deps`. You can find more information on how to configure your project [here](https://developer.stackblitz.com/platform/webcontainers/project-config).
+
+## Chrome: Infinite reload when dev tools are opened
+
+If you have your preview in a separate tab and you open Chrome dev tools, you can observe an infinite reload loop after a refresh. This is usually caused by having the `Update on reload` checkbox checked in `Application > Service Workers`.
+
+<img alt="Chrome DevTools with the Application tab selected showing the Service Workers section with the Update on reload checkbox checked" src="./assets/chrome-update-on-reload.png" width="800" />
+
+To fix this issue, simply disable that option.
+
+:::info
+
+At this time, it is not possible to install your own service workers with webcontainer as our own service worker is used as a core component of the networking stack.
+
+Having this option enabled mean it update webcontainer's service worker on every page refresh.
+
+:::
