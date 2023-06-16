@@ -96,9 +96,9 @@ We do offer [WebContainer API](webcontainers.io) licenses for organizations want
 
 ### What is the Classic Editor for Engineblock projects?
 
-The Classic Editor utilizes Engineblock and WeBcontainer technologies to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+Different projects that use the Classic Editor utilize Engineblock technology to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
 
-Engineblock projects are distinguishable as they do not have a terminal.
+Engineblock projects are distinguishable from WebContainer-based projects as they do not have a terminal.
 
 
 ### How do I create code snippets?
@@ -116,9 +116,9 @@ Webcontainer, however does run Node.js itself in the browser and does not have t
 
 ### What is the Classic Editor for WebContainer projects?
 
-The Classic Editor utilizes Engineblock and WeBcontainer technologies to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+Different projects that use the Classic Editor utilize WebContainer technology to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
 
-Since WebContainer technology allows Node.js to run inside the browser, WebContainer projects will always have a terminal available.
+Since WebContainer technology allows Node.js to run inside the browser, WebContainer projects will always have a terminal available. To learn about WebContainers, visit our docs [here](https://developer.stackblitz.com/platform/webcontainers/browser-support).
 
 ### How do I know if my project is WebContainers-based?
 
@@ -148,7 +148,7 @@ Since Electron is a native app, this cannot be supported since StackBlitz runs e
 
 ### What is the Codeflow Editor?
 
-The Codeflow Editor utilizes our Codeflow technology to bring VSC code into the browser. This editor is capable of running full development workflows, including pushing commits and creating pull requests to GitHub. This bypasses the need to clone a repository or install dependencies on your local machine. If you haven't already, you can check out Codeflow [here](https://stackblitz.com/codeflow)!
+The Codeflow Editor brings VSC code into the browser. This editor is capable of running full development workflows, including pushing commits and creating pull requests to GitHub. Other features of the Codeflow editor include a terminal, npm package manager, and the ability to add extensions. This bypasses the need to clone a repository or install dependencies on your local machine. If you haven't already, you can check out Codeflow [here](https://stackblitz.com/codeflow)!
 
 ### Can I use Vim bindings?
 
@@ -176,13 +176,25 @@ You can learn more about Web Publisher [here](https://developer.stackblitz.com/c
 
 ### What is the Classic Editor SDK?
 
-Our SDK (software development kit) allows users to create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts. Projects are controlled by using the SDK's VM (virtual machine) interface. The VM can be used to control the UI of an embedded StackBlitz project, change the currently open file(s), and read and write files frmo the project's virtual filesystem.
+Our JavaScript SDK (software development kit) allows users to create Classic Editor projects to be opened in a new window or embedded in your docs, example pages, or blog posts. The SDK can be used to control the UI of an embedded StackBlitz project, change the currently open file(s), and read and write files frmo the project's virtual filesystem.
 
 Details on embed options can be found [here](https://developer.stackblitz.com/platform/api/javascript-sdk).
 
 ## WebContainer API
 
 ### What is the WebContainer API?
+
+The WebContainer API allows developers to create fullstack Node.js environments in the browser with WebContainer technology. WebContainer technology powers StackBlitz products like Codeflow and [Web Publisher](https://developer.stackblitz.com/codeflow/content-updates-with-web-publisher).
+
+Organizations wanting to use the API for production usage in a for-profit setting are required to purchase a WebContainer API License. With this license, organizations have access to:
+
+- Higher API rate limits
+- Direct access to the StackBlitz dev team to optimize performance, prioritize bug fixes, and influence the API roadmap.
+
+This product is ideal for organizations wanting to build completely custom user interfaces powered by Node.js without needed in use virtual machines, servers, or docker containers.
+
+WebContainer API docs can be found [here](https://webcontainers.io/).
+
 
 ### I see that WebContainer API is free to use, but a license is required. Can I use the WebContainer API for commercial purposes?
 
