@@ -127,3 +127,17 @@ VITE_GTM_ID='******'
 - Share your StackBlitz projects on [Twitter](https://twitter.com/stackblitz)!
 - Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!
 
+## TASK FOR AUTOPILOT
+1. Create github actions:
+1.1. Documentation
+1.1.0 Analyze documentation from Stackblitz. Generate summary and "play" with stylings
+1.1.0.1 Provide analisys report and strategies for making most effective indexing docs, make queries
+1.1.0.2 Make ALGOL Search Engine actions
+1.1.0.3 If you plan to use additional AI agents -- use free inference by HF or someone else, until we ensure you will not spend all the money while process chunks.
+1.1.1 For each type of file delelop segmentation strategy and lifecycle management, ranking, decomission, tiering. As a reference OpenAI guide tailored to Embeddings will be ok.
+1.1.2.1 Implement the naive case with splitting mardown documents part by part + outline + metadata + summary  
+> [!DISCLAIMER] Основные моменты по реализации тасков:
+> - FOR EVERY TASK/GROUP COMMIT LINKS TO ISSUES/PRs
+> - FOR EVERY TASK IF YOU THINK IT MUST BE BROKEN DOWN TO PIECES (SUBTASKS) - DO IT WITHOUT ASKING ADDITIONAL PERMISSION.
+> - DO NOT MASSIVE PRS. ONLY IF THE REASON IS VERY IMPORTANT.
+## 
