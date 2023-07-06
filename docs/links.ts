@@ -59,6 +59,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'WebContainer API', link: '/platform/api/webcontainer-api' },
   ],
   webcontainers: [
+    { text: 'Roadmap', link: '/platform/webcontainers/roadmap' },
     { text: 'Browser support', link: '/platform/webcontainers/browser-support' },
     { text: 'Browser configuration', link: '/platform/webcontainers/browser-config' },
     { text: 'Project configuration', link: '/platform/webcontainers/project-config' },
