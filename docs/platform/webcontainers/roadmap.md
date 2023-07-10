@@ -23,7 +23,7 @@ If you have a feature request, please check [our github issue tracker](https://g
 This roadmap only includes large features. Minor bug fixes or features will not be reflected here.
 :::
 
-## 🚧 In development
+## 🚧 In Development
 
  * **Node 18** (Github: https://github.com/stackblitz/webcontainer-core/issues/560)
  * **WASI** (Github: https://github.com/stackblitz/webcontainer-core/issues/705)
