@@ -20,7 +20,7 @@ On this page, you'll find information about what is currently being worked on, p
 If you have a feature request, please check [our github issue tracker](https://github.com/stackblitz/webcontainer-core/issues) to create a new issue or comment to an existing one.
 
 :::info
-This roadmap only includes large features, minor bug fixes or features will not be reflected here
+This roadmap only includes large features. Minor bug fixes or features will not be reflected here.
 :::
 
 ## 🚧 In development
