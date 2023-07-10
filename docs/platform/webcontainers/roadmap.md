@@ -28,7 +28,7 @@ This roadmap only includes large features. Minor bug fixes or features will not 
  * **Node 18** (Github: https://github.com/stackblitz/webcontainer-core/issues/560)
  * **WASI** (Github: https://github.com/stackblitz/webcontainer-core/issues/705)
  * **Reducing memory usage** (Github: https://github.com/stackblitz/webcontainer-core/issues/1120)
- * **NPM Registries** (Github: https://github.com/stackblitz/webcontainer-core/issues/21)
+ * **Private / Custom Registries** (Github: https://github.com/stackblitz/webcontainer-core/issues/21)
 
 ## 🦄 Future
 
