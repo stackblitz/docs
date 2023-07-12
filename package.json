@@ -9,7 +9,7 @@
     "start": "vitepress dev"
   },
   "dependencies": {
-    "@stackblitz/sdk": "^1.8.2",
+    "@stackblitz/sdk": "^1.9.0",
     "vitepress": "^1.0.0-alpha.44",
     "vue": "^3.2.45"
   },
