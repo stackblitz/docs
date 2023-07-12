@@ -11,7 +11,7 @@
   "dependencies": {
     "@stackblitz/sdk": "^1.9.0",
     "vitepress": "^1.0.0-alpha.44",
-    "vue": "^3.2.45"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@types/node": "^16.18.3",
