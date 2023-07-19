@@ -69,6 +69,10 @@ Then, in the sidebar of that page paste in the project's slug ID and click "add"
 
 When you navigate back to your dashboard, you should now see your starter project listed! Any time you and your team members click this link, it will automatically create a fresh fork of your starter project.
 
+You can also add previously opened projects to your starter projects. Navigate to the main dashboard and click on the three vertical dots to the right of the project. Click on `+ add to starter projects` to add that specific project to your starter projects.
+
+![StackBlitz dashboard with "+ add to starter projects" link highlighted in the "Projects" section](./assets/starterproject_viadots.png)
+
 ## Updating your starter projects
 
 To update the code of your starter projects, navigate to the starter project's URL and make the desired changes.
