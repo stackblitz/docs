@@ -75,9 +75,24 @@ Allows you to pick which database to use. By default, an embedded Postgres will 
 
 #### Storage
 
-An embedded Minio is used as bucket by default. You can also provide your own S3-compatible bucket to be used.
+An embedded Minio is used as the storage bucket by default. You have the option to provide your own S3-compatible bucket to be used. You can also configure the bucket names to be used for Turbo, bundle hydration caching, and image storage. 
 
-You can also configure the bucket names to be used for Turbo, bundle hydration caching, and image storage. 
+Here are steps to create and integrate your S3 bucket into your StackBlitz app:
+1. Log into your AWS account and open the Amazon S3 console.
+2. Click on Buckets in the left navigation pane to see the "Create bucket" button on the right-hand side of your screen.
+
+:::info First time creating an S3 bucket? 
+Check out the [AWS Docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html) for a detailed rundown of how to set up your first bucket.
+:::
+3. Once you've set up your s3 bucket, click into the bucket and navigate to the Permissions tab at the top. Here, you'll be setting your permissions such as Object Ownership, ACL (Access control list), CORS (Cross-origin resource sharing), and more. You may need to consult with your Security team on these permissions.
+
+![AWS S3 console with the Permissions tab highlighted in red](../assets/s3_permissions.png)
+
+4. Once your permissions are set up, you'll need to grab the AWS S3 Access Key ID and AWS S3 Secret Access Key to put into the StackBlitz Admin Console at http://localhost:8800. In your admin console, please navigate to the Config tab to see the fields below:
+
+![Config tab in the StackBlitz Admin Console with the S3 auth token fields highlighted in red](../assets/s3_kotsadm_authtoken.jpg)
+
+5. Make sure to click 'Save Config' at the very bottom!
 
 #### TLS settings
 
