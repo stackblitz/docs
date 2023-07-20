@@ -88,7 +88,7 @@ Check out the [AWS Docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/
 
 ![AWS S3 console with the Permissions tab highlighted in red](../assets/s3_permissions.png)
 
-4. Once your permissions are set up, you'll need to grab the AWS S3 Access Key ID and AWS S3 Secret Access Key to put into the StackBlitz Admin Console at http://localhost:8800. In your admin console, please navigate to the Config tab to see the fields below:
+4. Once your permissions are set up, you'll need to grab the AWS S3 Access Key ID and AWS 0S3 Secret Access Key to put into the StackBlitz Admin Console at `http://localhost:8800`. In your admin console, please navigate to the Config tab to see the fields below:
 
 ![Config tab in the StackBlitz Admin Console with the S3 auth token fields highlighted in red](../assets/s3_kotsadm_authtoken.jpg)
 
