@@ -20,7 +20,7 @@ Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) fea
 
 ### What are the deploy options available on StackBlitz? 
 
-The three pathways we current support are:
+We support three pathways:
 
 1. If you are in any non-Codeflow StackBlitz project, you can download the project to your local machine by clicking the button right underneath the "Share" dialogue and deploy manually.
 
