@@ -86,7 +86,7 @@ Check out the [Enterprise page](https://stackblitz.com/enterprise) for details a
 
 ### I want to purchase the enterprise edition for WebContainers. Where can I do that?
 
-Bringing Webcontainer to Enterprise Server is in the works, but not currently available. You can reach out to enterprise@stackblitz.com for details.
+Bringing WebContainers to Enterprise Server is in the works, but not currently available. You can reach out to enterprise@stackblitz.com for details.
 
 We do offer [WebContainer API](webcontainers.io) licenses for organizations wanting to use WebContainer technology for production usage in a for-profit setting. Check out [webcontainers.io](webcontainers.io) for more information!
 
