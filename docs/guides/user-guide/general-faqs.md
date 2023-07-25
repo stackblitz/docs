@@ -84,7 +84,7 @@ Enterprise Server is a membership offering that's best fit for organizations who
 
 Check out the [Enterprise page](https://stackblitz.com/enterprise) for details and set up a call with our Enterprise team!
 
-### I want to purchase the enterprise edition for WebContainer. Where can I do that?
+### I want to purchase the enterprise edition for WebContainers. Where can I do that?
 
 Bringing Webcontainer to Enterprise Server is in the works, but not currently available. You can reach out to enterprise@stackblitz.com for details.
 
