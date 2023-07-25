@@ -116,7 +116,7 @@ Webcontainer, however does run Node.js itself in the browser and does not have t
 
 ### What is the Classic Editor for WebContainer projects?
 
-Different projects that use the Classic Editor utilize WebContainer technology to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+Different projects that use the Classic Editor utilize WebContainers technology to run. As the original StackBlitz UI, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
 
 Since WebContainer technology allows Node.js to run inside the browser, WebContainer projects will always have a terminal available. To learn about WebContainers, visit our docs [here](https://developer.stackblitz.com/platform/webcontainers/browser-support).
 
