@@ -110,7 +110,7 @@ Code snippets are available in our Classic Editor for both Engineblock and WebCo
 
 The current TypeScript starter uses EngineBlock technology, which has a fixed TypeScript version. EngineBlock is great for lightweight frontends, but does not run Node.js itself and will be limited to things like TypeScript versioning.
 
-Webcontainer, however does run Node.js itself in the browser and does not have this limitation. You can simply `npm install` any TypeScript version as you would locally.
+WebContainers, however, do run Node.js itself in the browser and do not have this limitation. You can simply `npm install` any TypeScript version as you would locally.
 
 ## Classic Editor (WebContainer projects)
 
