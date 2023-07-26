@@ -75,24 +75,34 @@ Allows you to pick which database to use. By default, an embedded Postgres will 
 
 #### Storage
 
-An embedded Minio is used as the storage bucket by default. You have the option to provide your own S3-compatible bucket to be used. You can also configure the bucket names to be used for Turbo, bundle hydration caching, and image storage. 
+We support the following for storage options:
+- External AWS S3
+- External Microsoft Azure Blob Storage
+- External Google Cloud Storage
+- Embedded minio (The option to provide your own S3-compatible bucket to be used.) 
 
-Here are steps to create and integrate your S3 bucket into your StackBlitz app:
-1. Log into your AWS account and open the Amazon S3 console.
-2. Click on Buckets in the left navigation pane to see the "Create bucket" button on the right-hand side of your screen.
+Go into your preferred cloud provider and create four **uniquely-named** buckets/containers. Each bucket/container you create should correspond with the different buckets you'll need:
+  - Turbo Bucket Name
+  - Bundle Bucket Name
+  - NGCC Bucket Name
+  - User Content Bucket Name
 
-:::info First time creating an S3 bucket? 
-Check out the [AWS Docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html) for a detailed rundown of how to set up your first bucket.
+*Note: The bucket names above are related to their functions and all four are required. Although there is no formal naming convention, we recommend including the function name in your newly created buckets/containers. You can reference the default values listed under each bucket input field below:
+
+![Bucket names and default values under Storage Options in kots dashboard.](../assets/stackblitz_storageoptions_bucketnames.png)
+
+:::info First time creating a bucket/container? Check out these handy links for instructions on how to create your first bucket, based on your cloud provider:
+
+- [AWS S3 Docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html)
+- [Google Cloud Storage Docs](https://cloud.google.com/storage/docs/creating-buckets)
+- [Microsoft Azure Blob Storage Docs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
 :::
-3. Once you've set up your s3 bucket, click into the bucket and navigate to the Permissions tab at the top. Here, you'll be setting your permissions such as Object Ownership, ACL (Access control list), CORS (Cross-origin resource sharing), and more. You may need to consult with your Security team on these permissions.
 
-![AWS S3 console with the Permissions tab highlighted in red](../assets/s3_permissions.png)
+Based on your cloud provider, you will be required to provide IDs and/or keys. The required input fields will appear once you choose your cloud provider under Storage Backend. If you are using AWS S3, you can disregard the `Minio Access Key` and `Minio Secret Key` input fields.
 
-4. Once your permissions are set up, you'll need to grab the AWS S3 Access Key ID and AWS 0S3 Secret Access Key to put into the StackBlitz Admin Console at `http://localhost:8800`. In your admin console, please navigate to the Config tab to see the fields below:
+![AWS External S3 storage backend option in kots dashboard with corresponding input fields for IDs and keys.](../assets/stackblitz_storageoptionS3fields.png)
 
-![Config tab in the StackBlitz Admin Console with the S3 auth token fields highlighted in red](../assets/s3_kotsadm_authtoken.jpg)
-
-5. Make sure to click 'Save Config' at the very bottom!
+If your DevOps provisioning process is challenging, the embedded Minio storage option is offered with the caveat that this is a temporary setup while your actual resources are being provisioned. We do not recommend this option for long-term or production use.
 
 #### TLS settings
 
