@@ -81,7 +81,7 @@ After clicking save, the starter project will automatically be updated and any s
 
 ## How to create a "polymer-based" (Static HTML/CSS/JS) project preset in Enterprise
 
-### What it is
+### What is a "polymer-based" project?
 
 StackBlitz supports a specific type of [EngineBlock-based](https://developer.stackblitz.com/guides/user-guide/available-environments) project which uses a Service Worker to have the browser serve project files as-is and back to itself in the preview.
 
