@@ -89,7 +89,7 @@ This can be useful for making simple HTML, CSS and JavaScript demos with no npm 
 
 Here's an example on stackblitz.com: [https://stackblitz.com/edit/web-platform](https://stackblitz.com/edit/web-platform).
 
-### Creating a "polymer-base" project in StackBlitz EE
+### Creating a "polymer-based" project in StackBlitz EE
 
 To be able to use the StackBlitz SDK to create projects with the `template: 'polymer'` option (which selects the `polymer` preset), the target EE instance must have a project with the slug `polymer-base` and the preset `polymer`.
 
