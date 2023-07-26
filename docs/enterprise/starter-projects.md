@@ -77,7 +77,7 @@ You can also add previously opened projects to your starter projects. Navigate t
 
 To update the code of your starter projects, navigate to the starter project's URL and make the desired changes.
 
-After clicking save, the starter project will automatically be updated and any subsequent forks will be based on the new version of the project.
+After clicking the "Save" button, the starter project will automatically be updated and any subsequent forks will be based on the new version of the project.
 
 ## How to create a "polymer-based" (Static HTML/CSS/JS) project preset in Enterprise
 
