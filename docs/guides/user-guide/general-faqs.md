@@ -12,7 +12,9 @@ This page outlines commonly asked questions and answers about StackBlitz.
 
 # General FAQs
 
-Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) featured on Twitter that shows you how to create and use code snippets in StackBlitz.
+### Can I make code snippets?
+
+Yes, you can! Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) featured on Twitter that shows you how to create and use code snippets in StackBlitz.
 
 ### Can I use Postman or something similar for testing?
 
@@ -20,13 +22,17 @@ Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) fea
 
 ### What are the deploy options available on StackBlitz? 
 
-We support three pathways:
+We support four pathways:
 
 1. If you are in any non-Codeflow StackBlitz project, you can download the project to your local machine by clicking the button right underneath the "Share" dialogue and deploy manually.
 
 2. If you are using an EngineBlock project, you can deploy directly via our [Firebase integration](https://developer.stackblitz.com/guides/user-guide/ide-whats-on-your-screen#firebase-sidebar).
 
-3. If you are using Codeflow, you can push code directly into GitHub and then use the [Netlify](https://github.com/apps/netlify) or [Vercel](https://vercel.com/docs/concepts/git/vercel-for-github) GitHub bots to deploy your site.
+3. If you are using the Classic Editor, you can click the Connnect Repository button on the top left to easily connect with your desired repository.
+
+![Connect repository button on StackBlitz editor](./assets/stackblitz_connecttorepobutton.png)
+
+4. If you are using Codeflow, you can push code directly into GitHub and then use the [Netlify](https://github.com/apps/netlify) or [Vercel](https://vercel.com/docs/concepts/git/vercel-for-github) GitHub bots to deploy your site.
 
 ### Are MongoDB, Mongoose, Postgres or MySQL supported?
 
