@@ -69,8 +69,45 @@ Then, in the sidebar of that page paste in the project's slug ID and click "add"
 
 When you navigate back to your dashboard, you should now see your starter project listed! Any time you and your team members click this link, it will automatically create a fresh fork of your starter project.
 
+You can also add previously opened projects to your starter projects. Navigate to the main dashboard and click on the three vertical dots to the right of the project. Click on `+ add to starter projects` to add that specific project to your starter projects.
+
+![StackBlitz dashboard with "+ add to starter projects" link highlighted in the "Projects" section](./assets/starterproject_viadots.png)
+
 ## Updating your starter projects
 
 To update the code of your starter projects, navigate to the starter project's URL and make the desired changes.
 
-After clicking save, the starter project will automatically be updated and any subsequent forks will be based on the new version of the project.
+After clicking the "Save" button, the starter project will automatically be updated and any subsequent forks will be based on the new version of the project.
+
+## How to create a "polymer-based" (Static HTML/CSS/JS) project preset in Enterprise
+
+### What is a "polymer-based" project?
+
+StackBlitz supports a specific type of [EngineBlock-based](https://developer.stackblitz.com/guides/user-guide/available-environments) project which uses a Service Worker to have the browser serve project files as-is and back to itself in the preview.
+
+This can be useful for making simple HTML, CSS and JavaScript demos with no npm dependencies and no JavaScript code transpilation.
+
+Here's an example on stackblitz.com: [https://stackblitz.com/edit/web-platform](https://stackblitz.com/edit/web-platform).
+
+### Creating a "polymer-based" project in StackBlitz EE
+
+To be able to use the StackBlitz SDK to create projects with the `template: 'polymer'` option (which selects the `polymer` preset), the target EE instance must have a project with the slug `polymer-base` and the preset `polymer`.
+
+Database seeds for StackBlitz EE don't create this project currently, so let's make one.
+
+The steps below require having admin rights to your StackBlitz EE instance, because we'll use the admin panel to tweak the created project.
+
+1. In the current StackBlitz project, go to `index.ts` and change the `const origin = "…"` value to point to your EE instance.
+2. In the preview iframe, click the "Create static HTML project" button.
+
+This should create a temporary project (not yet saved to the database) using the `javascript` preset. If you see an error in the preview window at this stage, that's normal and should not be a problem.
+
+3. On this temporary project in your StackBlitz EE instance, click the “Fork” button to save this project to the database.
+4. Edit the forked project's slug to: `polymer-base`.
+5. Finally, go to `https://{your-instance}/admin/projects/polymer-base/edit` and change the value of the “Preset” field from `esm` to `polymer`, and save the project.
+
+You should now have a project with the `polymer` preset and whose slug is `polymer-base`. Don't touch this project in the future (you can make it “frozen” in the [project settings](/guides/user-guide/ide-whats-on-your-screen#settings-sidebar) in the editor to prevent accidental changes) to make sure the SDK functionality works well.
+
+You can add this project to the list of starters on `https://{your-instance}/starters`.
+
+If you want to use a different project slug than `polymer-base`, for example `static-html`, so that forked projects are named `static-html-yzn94i` rather than `polymer-yzn94i`, we recommend forking the `polymer-base` project, naming the fork `static-html`, and using that fork in the starters list instead of the `polymer-base` project.

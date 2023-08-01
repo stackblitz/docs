@@ -22,6 +22,12 @@ StackBlitz SAML integration relies on a user-level token. To ensure consistent d
 
 ### Navigate to Auth Settings Page Within the Admin Panel
 
+:::warning IMPORTANT: 
+Admin accounts should not be made with an individual work email that will be used to create a separate user account later. Should this happen, we recommend the following steps:
+  - Log in as admin
+  - Navigate to https://editor.stackblitz.[COMPANY.COM]/users/edit to change your email address to a different one. It will show the same screen as the changing email/password when first logging in as an admin, but you only need to change your email.
+:::
+
 Begin by logging into your StackBlitz admin account and then click on "Setup Authentication". This will take you to the "Auth Settings" page:
 
 ![SAML Config](./assets/saml-config.png)
