@@ -30,5 +30,6 @@ defineProps<{ links: any[] }>();
 
 .item > a {
   height: 100%;
+  text-decoration: none;
 }
 </style>

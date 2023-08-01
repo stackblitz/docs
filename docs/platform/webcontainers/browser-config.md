@@ -31,7 +31,7 @@ https://[*.]stackblitz.io
 https://[*.]webcontainer.io
 ```
 
-For instance, in Chrome, go to [chrome://settings/cookies](chrome://settings/cookies) and add those exceptions in the “Sites that can always use cookies” section.
+For instance, in Chrome, go to `chrome://settings/cookies` and add those exceptions in the “Sites that can always use cookies” section.
 
 <img alt="Chrome cookie settings with an empty list of “Sites that can always use cookies”." src="./assets/chrome-settings-cookies-1.png" width="800" />
 
@@ -56,6 +56,38 @@ If that is the case, choose to “Allow” cookies for those third-party domains
 Note that the list of blocked domains might look different for you. In particular, a `xyz.local.webcontainer.io` domain might not be present. WebContainers-based projects use different domains dynamically, depending on what the runtime is doing (for instance, whether it is serving HTTP content or not), so you might need to check the list of blocked domains later if you see something off again.
 
 :::
+
+## Firefox: enabling Service Workers {#firefox-service-workers}
+
+When Firefox’s Enhanced Tracking Protection is configured in “Custom” mode with the cookie blocking option set to “All cross-site cookies”, Firefox will block the Service Workers used by WebContainers.
+
+You can work around this issue in a couple ways:
+
+1. Use the “Strict” mode instead of “Custom” mode. It’s important to note that it's slightly more permissive than “Custom” mode with very strict options. If this is not something you'd like to allow, you can...
+2. Add exceptions to cookie blocking for the domains used to run StackBlitz projects.
+
+To do so, visit `about:preferences#privacy` to check what your current settings look like. 
+
+<img
+  alt="The Firefox “Privacy & Security” settings page showing that Enhanced Tracking Protection is set to “Custom”, and to “Cookies: All cross-site cookies (may cause websites to break)”."
+  src="./assets/firefox-settings-cookies-1.png"
+  width="1024"
+/>
+
+To add exceptions for StackBlitz, scroll down to the “Cookies and Site Data” section, click on “Manage Exceptions…”, and add exceptions for the following sites:
+
+```
+https://stackblitz.io
+https://webcontainer.io
+```
+
+<img
+  alt="The Cookies and site data exceptions management window in Firefox settings. It shows a couple entries for stackblitz.io and webcontainer.io, both with the value “Allow”."
+  src="./assets/firefox-settings-cookies-2.png"
+  width="1024"
+/>
+
+Don’t forget to click “Save Changes”. Then you should be able to reload the tab with your StackBlitz project, and hopefully everything should work!
 
 ## Brave: enabling Service Workers {#brave-service-workers}
 
@@ -85,7 +117,7 @@ Microsoft Edge disables usage of [WebAssembly][MDN_WEB_ASSEMBLY] when you set it
 
 To allow StackBlitz projects to run, either set this option to “Balanced” or add exceptions for a couple domains used by StackBlitz projects.
 
-1. Go to [edge://settings/privacy](edge://settings/privacy) → “Enhance your security on the web”.
+1. Go to `edge://settings/privacy` → “Enhance your security on the web”.
 
 <img alt="Edge privacy settings showing the “Enhance your security on the web” section." src="./assets/edge-settings-enhanced-security-1.png" width="800" />
 

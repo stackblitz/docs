@@ -226,7 +226,7 @@ sdk.embedProject(
     description: 'A basic Node.js project',
     template: 'node',
     files: {
-      'index.js': `console.log('Hello World!)';`,
+      'index.js': `console.log('Hello World!');`,
       'package.json': `{
       "name": "my-project",
       "scripts": { "hello": "node index.js", "start": "serve node_modules" },

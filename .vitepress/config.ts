@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 /* @ts-expect-error */
 import mdFootnote from 'markdown-it-footnote';
 import { defineConfig, type HeadConfig } from 'vitepress';
-import * as data from '../docs/data';
+import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
 
@@ -11,7 +11,7 @@ export default defineConfig({
   outDir: 'build',
 
   // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
-  cleanUrls: 'without-subfolders',
+  cleanUrls: true,
 
   // Prevent builds when content has dead links
   ignoreDeadLinks: false,
@@ -33,59 +33,18 @@ export default defineConfig({
       text: 'Edit this page',
     },
     nav: [
-      { text: 'Guides', link: data.userGuideLinks[0].link },
-      { text: 'Codeflow', link: data.codeflow[0].link },
-      { text: 'API', link: data.apiLinks[0].link },
-      { text: 'WebContainers', link: data.webcontainersLinks[0].link },
-      { text: 'Enterprise', link: data.enterpriseLinks[0].link! },
+      { text: 'Guides', link: defaultGroupLink('userGuide') },
+      { text: 'Codeflow', link: defaultGroupLink('codeflow') },
+      { text: 'API', link: defaultGroupLink('api') },
+      { text: 'WebContainers', link: defaultGroupLink('webcontainers') },
+      { text: 'Enterprise', link: defaultGroupLink('enterprise') },
     ],
     sidebar: {
-      '/guides/': [
-        {
-          text: 'User Guide',
-          collapsible: true,
-          collapsed: false,
-          items: data.userGuideLinks,
-        },
-        {
-          text: 'Integration Guide',
-          collapsible: true,
-          collapsed: false,
-          items: data.integrationGuideLinks,
-        },
-      ],
-      '/codeflow/': [
-        {
-          text: 'Codeflow',
-          collapsible: false,
-          collapsed: false,
-          items: data.codeflow,
-        },
-      ],
-      '/platform/api/': [
-        {
-          text: 'StackBlitz API',
-          collapsible: true,
-          collapsed: false,
-          items: data.apiLinks,
-        },
-      ],
-      '/platform/webcontainers/': [
-        {
-          text: 'WebContainers',
-          collapsible: true,
-          collapsed: false,
-          items: data.webcontainersLinks,
-        },
-      ],
-      '/enterprise/': [
-        {
-          text: 'Enterprise Edition',
-          collapsible: false,
-          collapsed: false,
-          items: data.enterpriseLinks,
-        },
-      ],
+      '/guides/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
+      '/codeflow/': sidebarLinks('main', ['codeflow']),
+      '/platform/api/': sidebarLinks('main', ['api']),
+      '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),
+      '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
     },
   },
 
