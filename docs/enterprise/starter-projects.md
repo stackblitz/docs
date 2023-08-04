@@ -124,3 +124,5 @@ Navigate to the kots dashboard and click on the Troubleshoot tab at the top.
 
 ![Screenshot of the 'Generate a support bundle' button in the kots dashboard under the Troubleshoot tab. ](./assets/supportbundlebutton.png)
 
+Once generated, send this to your Customer Success Engineer or enterprise@stackblitz.com to be looked at for troubleshooting.
+

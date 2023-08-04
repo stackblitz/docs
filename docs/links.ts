@@ -86,7 +86,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'Setting up SSO', link: '/enterprise/sso' },
     { text: 'Setting up SSO with Okta', link: '/enterprise/okta-sso' },
     { text: 'Setting up SSO with ADFS', link: '/enterprise/adfs-sso' },
-    { text: 'Connect NPM Registry', link: '/enterprise/npm' },
+    { text: 'Connect npm Registry', link: '/enterprise/npm' },
     { text: 'Starter Projects', link: '/enterprise/starter-projects' },
     { text: 'User Management', link: '/enterprise/user-management' },
     { text: 'Aggregating Logs', link: '/enterprise/log-aggregation' },
