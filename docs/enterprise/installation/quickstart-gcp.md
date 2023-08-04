@@ -61,3 +61,7 @@ Once this step completes, you will be presented with EE site configuration scree
 ![EE Console](../assets/ee-console-config.png)
 
 After filling out the configuration fields, click "Continue". Your StackBlitz EE instance is now booted and ready for DNS configuration.
+
+::: tip Need more than one instance?
+With your StackBlitz Enterprise license, you can operate more than one instance at a time. This may be helpful if you want a separate cluster for staging, testing, etc.
+:::
