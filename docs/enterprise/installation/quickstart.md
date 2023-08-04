@@ -32,6 +32,10 @@ Getting started on bare metal (no existing Kubernetes cluster):
   - 6443
 - Run the kots intaller command: `curl -sSL https://k8s.kurl.sh/stackblitz | sudo bash`.
 
+:::tip Using load balancers?
+Ports 80 and 443 should be forwarded from the load balancer. The remaining ports are for inbound rules on the security group.
+:::
+
 :::warning
 Copy the generated password from the terminal output after installation. It's required for accessing the Admin Console and won't be shown again.
 :::
