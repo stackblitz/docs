@@ -111,3 +111,20 @@ Here you can provide the certificate to be used for domain on which you are host
 #### Kubernetes settings 
 
 Here you can define the namespace in which you installed the application. For embedded installs, the default should be fine. For 'existing cluster' installs, you should provide the namespace.
+
+# StackBlitz Admin Dashboard
+Here's how to navigate through the StackBlitz admin dashbord:
+
+![Screenshot of the StackBlitz Admin Dashboard for admins.](../assets/sb_adminconsole.png)
+
+You'll already be familiar with the Installation, Setup Authentication, and Setup NPM cards, so let's cover Manage Users and Edit Starter Projects.
+
+**Manage Users:** This allows you to manage all your users, including the ability to enable the admin role, delete users, and see what projects they've created.
+
+**Edit Starter Projects:** Each organization can create a unique collection of Starter Projects that allows their users to choose template projects so they're not having to start from scratch. As an admin, you have the ability to edit this collection with your preferred starter projects.
+
+### Other Links:
+
+**Analytics:** This feature allows you to see metrics of your users, such as # of active users within the past 90 days, # of new users created, etc. 
+
+**Manage:** This link is another way for an admin to manager users, like the Manage Users card.

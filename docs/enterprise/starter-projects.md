@@ -111,3 +111,18 @@ You should now have a project with the `polymer` preset and whose slug is `polym
 You can add this project to the list of starters on `https://{your-instance}/starters`.
 
 If you want to use a different project slug than `polymer-base`, for example `static-html`, so that forked projects are named `static-html-yzn94i` rather than `polymer-yzn94i`, we recommend forking the `polymer-base` project, naming the fork `static-html`, and using that fork in the starters list instead of the `polymer-base` project.
+
+
+## How to generate a support bundle
+
+:::warning Having trouble loading a project? Need to create a support bundle?
+
+A support bundle provides specific logs and analysis that helps our team to troubleshoot to better assist you. We recommending following the steps outline in [Replicated's "Generating Support Bundles" docs](https://docs.replicated.com/enterprise/troubleshooting-an-app) to generate a support bundle via the kots dashboard.
+:::
+
+Navigate to the kots dashboard and click on the Troubleshoot tab at the top.
+
+![Screenshot of the 'Generate a support bundle' button in the kots dashboard under the Troubleshoot tab. ](./assets/supportbundlebutton.png)
+
+Once generated, send this to your Customer Success Engineer or enterprise@stackblitz.com to be looked at for troubleshooting.
+
