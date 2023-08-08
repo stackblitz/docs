@@ -8,6 +8,7 @@ import feathersLogo from './feathers.svg';
 import hydrogenLogo from './hydrogen.svg';
 import ladleLogo from './ladle.svg';
 import nativescriptLogo from './nativescript.svg';
+import needleEngineLogo from './needle-engine.png';
 import nextjsLogo from './nextjs.svg';
 import nodeLogo from './node.svg';
 import nodemonLogo from './nodemon.svg';
@@ -103,6 +104,11 @@ export const dotNewLinks = [
     title: 'NativeScript Vue',
     link: 'https://nativescript.new/vue',
     icon: nativescriptLogo,
+  },
+  {
+    title: 'Needle Engine',
+    link: 'https://engine.needle.tools/new/',
+    icon: needleEngineLogo,
   },
   {
     title: 'Next.js',
