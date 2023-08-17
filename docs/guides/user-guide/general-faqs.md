@@ -98,18 +98,18 @@ We do offer [WebContainer API](webcontainers.io) licenses for organizations want
 
 # Technology FAQs
 
-## Classic Editor (Engineblock projects)
+## Classic Editor (EngineBlock projects)
 
-### What is the Classic Editor for Engineblock projects?
+### What is the Classic Editor for EngineBlock projects?
 
-Different projects that use the Classic Editor utilize Engineblock technology to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+Different projects that use the Classic Editor utilize EngineBlock technology to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
 
-Engineblock projects are distinguishable from WebContainer-based projects as they do not have a terminal.
+EngineBlock projects are distinguishable from WebContainer-based projects as they do not have a terminal.
 
 
 ### How do I create code snippets?
 
-Code snippets are available in our Classic Editor for both Engineblock and WebContainer projects. Click on the Settings icon in the activity bar to the left of your screen. The Settings sidebar will pop open and you will see User snippets and Workspace snippets. User snippets are available for any of your projects. Workspace snippets are only available in the current project you create them in.
+Code snippets are available in our Classic Editor for both EngineBlock and WebContainer projects. Click on the Settings icon in the activity bar to the left of your screen. The Settings sidebar will pop open and you will see User snippets and Workspace snippets. User snippets are available for any of your projects. Workspace snippets are only available in the current project you create them in.
 
 
 ### Can I change the TypeScript version in my project?
@@ -144,7 +144,7 @@ Please note that the terminal is only available for WebContainer-based projects.
 
 You can use [Jasmine](https://jasmine.github.io/), a unit testing tool for JavaScript.
 
-It is also possible to run Angular unit tests inside WebContainer-based projects, but not Engineblock-based projects. The easiest way to start is by navigating to node.new, which creates a WebContainer-based project automatically!
+It is also possible to run Angular unit tests inside WebContainer-based projects, but not EngineBlock-based projects. The easiest way to start is by navigating to node.new, which creates a WebContainer-based project automatically!
 
 ### Can I develop ElectronJS apps on StackBlitz?
 
