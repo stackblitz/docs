@@ -1,6 +1,6 @@
 ---
 title: &title Turbo Package Manager
-description: &description Turbo has been replaced with native npm support, alongside native pnpm and yarn v1. 
+description: &description Turbo was our custom npm client until very recently when native npm was added to WebContainer. It is available until January 2024.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-turbo-package-manager.png'}]
