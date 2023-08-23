@@ -6,7 +6,7 @@
     "dev": "vitepress dev",
     "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
     "serve": "vitepress serve",
-    "start": "vitepress dev"
+    "starts": "vitepress dev"
   },
   "dependencies": {
     "@stackblitz/sdk": "^1.8.2",
