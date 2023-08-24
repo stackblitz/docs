@@ -230,7 +230,7 @@ export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
     items: [
       { text: 'From a Workspace', link: 'https://stackblitz.com/?starters=popular' },
       {
-        text: 'From a GitHub Repo',
+        text: 'From a GitHub Repository',
         link: '/guides/user-guide/importing-projects#import-from-github',
       },
       {

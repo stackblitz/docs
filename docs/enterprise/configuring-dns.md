@@ -28,7 +28,7 @@ For TLS, your certificate should have `stackblitz.example.com` as the Common Nam
 
 ### TLS Certificate Renewal
 
-Having trouble updating your TLS cert in StackBlitz? Follow these instructions (extracted from [this gist](https://gist.github.com/vaxinate/6388e56f08b9dc710133ef82d1d78e95)):
+Having trouble updating your TLS cert in StackBlitz? Follow these instructions:
 
 1. SSH into your StackBlitz host VM
 2. Retrieve the existing StackBlitz application certificate and key via `​kubectl get secret -o jsonpath={.data} stackblitz-tls-secret`
