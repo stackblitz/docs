@@ -38,6 +38,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'Using pr.new', link: '/codeflow/using-pr-new' },
     { text: 'Working in Codeflow IDE', link: '/codeflow/working-in-codeflow-ide' },
     { text: 'Integrating CodeflowApp bot', link: '/codeflow/integrating-codeflowapp-bot' },
+    { text: 'Environment Variables', link: '/codeflow/environment-variables' },
     {
       text: 'Content updates with Web Publisher',
       link: '/codeflow/content-updates-with-web-publisher',
