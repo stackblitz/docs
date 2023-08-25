@@ -21,7 +21,9 @@ A form will appear asking you to add:
  - The key 
  - The value  
 
+ _The key-value pair must follow [`Dotenv`](https://hexdocs.pm/dotenvy/0.7.0/dotenv-file-format.html) guidelines_
+
 <img lang="en" src="./assets/add-new-scope.gif" alt="Add new environment scope" />
 
-_The key-value pair must follow [`Dotenv`](https://hexdocs.pm/dotenvy/0.7.0/dotenv-file-format.html) guidelines_
+
 
