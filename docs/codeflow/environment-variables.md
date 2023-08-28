@@ -25,5 +25,10 @@ A form will appear asking you to add:
 
 <img lang="en" src="./assets/add-new-scope.gif" alt="Add new environment scope" />
 
+:::tip Tip
+You can copy paste key-value pairs from your `.env` files
 
+<img lang="en" src="./assets/copy-paste-env.gif" alt="Copying and pasting key-value pair from an existing .env file" />
+
+:::
 
