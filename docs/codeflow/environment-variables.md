@@ -29,6 +29,11 @@ A form will appear asking you to add:
 You can copy paste key-value pairs from your `.env` files
 
 <img lang="en" src="./assets/copy-paste-env.gif" alt="Copying and pasting key-value pair from an existing .env file" />
-
 :::
 
+After creating a scope for your repository, you can add and remove variables from it. It is important to note that:
+ - Adding an existent variable will replace the older one with the new entered value
+ - Removing all variables will also remove the entire scope
+
+<img lang="en" src="./assets/updating-variables-scope.gif" alt="Editing an existent scope, adding a new variable, removing the new entry and all of others. The scope is deleted after all variables deletions." />
+ 
