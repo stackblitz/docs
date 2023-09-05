@@ -20,6 +20,8 @@ On every repo, in the root of your project you will find a special `.env` file. 
 Existing secrets will automatically be obfuscated while editing this file, but they can be revealed by clicking the __Reveal secrets__ link at the top, or by placing the cursor inside the value.
 :::
 
+<img lang="en" src="./assets/adding-dotenv-variables.gif" alt="Adding variables to .env" />
+
 
 ### Configuring on settings page (alternative method)
 
