@@ -14,7 +14,7 @@ One way to handle reusable configuration data, such as sensitive data, is to use
 
 ### Configuring inside editor (recommended)
 
-On every repo, in the root of your project you will find a special `.env` file. This file can be modified to add new variables or update existing ones, using the [syntax from the dotenv](https://npmjs.com/package/dotenv) package. Changes will be automatically encrypted & synced to the [StackBlitz settings page](#configuring-on-settings-page-alternative).
+On every repo, in the root of your project you will find a special `.env` file. This file can be modified to add new variables or update existing ones, using the [syntax from the dotenv](https://npmjs.com/package/dotenv) package. Changes will be automatically encrypted & synced to the [StackBlitz settings page](#configuring-on-settings-page-alternative-method).
 
 :::tip Tip
 Existing secrets will automatically be obfuscated while editing this file, but they can be revealed by clicking the __Reveal secrets__ link at the top, or by placing the cursor inside the value.
