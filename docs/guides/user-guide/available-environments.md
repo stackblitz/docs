@@ -59,7 +59,7 @@ Our [Codeflow IDE](/codeflow/what-is-codeflow) runs on the WebContainers runtime
 
 # Determining Which Environment You Are Using
 
-The simplest way to determine if you're using EngineBlock vs WebContainers is the presence of a terminal, as shown below. Currently, the terminal is only available in projects which use the WebContainers execution environment. 
+The simplest way to determine if you're using EngineBlock vs WebContainers is the presence of a terminal, as shown below. Currently, the terminal is only available in projects which use the WebContainers execution environment.
 
 ![Screenshot of the terminal in a StackBlitz WebContainer project](./assets/stackblitz_terminal.png)
 
@@ -72,3 +72,6 @@ You can also check in the project settings in the left pane of any StackBlitz pr
 
 ⬇️ Project settings for an EngineBlock Project:
 ![Screenshot of the project settings for an EngineBlock project](./assets/engineblock_settings_devserver.png)
+
+⬇️ One of the handful of indicators that you're using the Codeflow editor is the gear icon at the bottom of the left pane where you'll find general editor settings.
+![Screenshot of the general settings for the Codeflow editor](./assets/codefloweditor_gearicon.png)
