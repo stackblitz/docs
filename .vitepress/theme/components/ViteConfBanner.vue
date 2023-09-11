@@ -27,7 +27,7 @@ function onCloseClick() {
   <div class="viteconf-banner" :class="[!shouldViteConfBannerBeShown && 'hide']">
     <div class="container">
       <ViteConfLogo class="logo" />
-      <span class="text">ViteConf 2023 {{ shouldViteConfBannerBeShown }}</span>
+      <span class="text">ViteConf 2023</span>
       <a class="link" :href="href" target="_blank"> Get your free ticket! </a>
     </div>
     <button class="close-button" @click="onCloseClick"><CloseIcon /></button>
