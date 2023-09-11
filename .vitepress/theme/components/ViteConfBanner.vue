@@ -8,18 +8,18 @@ const href =
 
 const key = 'shouldViteConfBannerBeShown';
 
-const shouldViteConfBannerBeShown = ref(
-  window ? window.localStorage.getItem(key) !== 'false' : false
-);
+let shouldViteConfBannerBeShown = ref(false);
 
 onMounted(() => {
+  shouldViteConfBannerBeShown.value = window.localStorage.getItem(key) !== 'false';
   if (shouldViteConfBannerBeShown.value) {
     document.querySelector('.VPNav')?.classList.add('with-banner');
   }
 });
 
 function onCloseClick() {
-  window.localStorage.setItem(key, 'false');
+  localStorage.setItem(key, 'false');
+
   document.querySelector('.VPNav')?.classList.remove('with-banner');
   shouldViteConfBannerBeShown.value = false;
 }
