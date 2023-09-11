@@ -128,11 +128,22 @@ function onCloseClick() {
 }
 
 .close-button {
-  width: 10px;
-  height: 16px;
   position: absolute;
-  top: 16px;
-  right: 25px;
+  top: 6px;
+  right: 15px;
   z-index: 1;
+  padding: 10px;
+
+  > svg {
+    fill: #fff;
+    width: 10px;
+    height: 16px;
+  }
+
+  &:hover {
+    > svg {
+      opacity: 0.5;
+    }
+  }
 }
 </style>
