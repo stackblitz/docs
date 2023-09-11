@@ -1,3 +1,17 @@
+// ViteConfBanner related
+// Only show it in big screen for now
+.VPNav.with-banner {
+  @media (min-width: 960px) {
+    --vp-layout-top-height: 48px;
+  }
+}
+
+.VPContent .VPDoc {
+  @media (min-width: 960px) {
+    padding: 90px 32px 0;
+  }
+}
+
 // Remove nav border
 .VPNavBar {
   border-bottom: none !important;
@@ -34,12 +48,12 @@
 
 // We would like to have single pages in the sidebar (e.g. API Reference, Enterprise).
 // VitPress expects to have you section title text + items and when you only have one item it looks like there are extra spacing.
-// These styles are to adjust spacing between groups. 
+// These styles are to adjust spacing between groups.
 #VPSidebarNav .group {
   padding-bottom: 11px;
 }
 
-#VPSidebarNav .group+.group {
+#VPSidebarNav .group + .group {
   margin-top: 0px;
 }
 
@@ -241,6 +255,7 @@
   --active-indicator-padding: 16px;
   --vp-sidebar-width: 308px;
   --vp-new-padding: calc(32px - var(--active-indicator-padding));
+  --vp-nav-height: 90px;
   padding-left: var(--vp-new-padding) !important;
   padding-right: var(--vp-new-padding) !important;
   padding-bottom: 32px !important;
@@ -261,8 +276,8 @@
 #VPSidebarNav.nav {
   margin-top: 8px;
 }
-  // Hide extraneous visual elements when parent group is collapsed
-// without messing with individual elements themselves. 
+// Hide extraneous visual elements when parent group is collapsed
+// without messing with individual elements themselves.
 .VPSidebarGroup.collapsed .items {
   opacity: 0;
 }
@@ -300,8 +315,8 @@
         transition-duration: 0.1s;
         transition-property: opacity;
         :root:not(.dark) & {
-        left: -14px;
-      }
+          left: -14px;
+        }
       }
     }
     .VPSidebarItem.has-active.level-1 > .item > & {
@@ -397,7 +412,6 @@
   transition-duration: 0.1s;
 }
 
-
 // --------------------------------
 // Custom Blocks
 
@@ -407,8 +421,7 @@
   padding-left: 76px;
   border: none;
   border-radius: 8px;
-  box-shadow:
-    inset 0 0 0 1px var(--block-border-color);
+  box-shadow: inset 0 0 0 1px var(--block-border-color);
 
   @media (max-width: 500px) {
     padding-left: 18px;
@@ -427,8 +440,7 @@
     --vp-custom-block-tip-text: hsl(165 100% 60%);
     --vp-custom-block-tip-border: hsl(172, 100%, 19%);
     --vp-custom-block-warning-text: rgb(255, 183, 0);
-    box-shadow:
-      inset 0 0 0 1px var(--block-border-color);
+    box-shadow: inset 0 0 0 1px var(--block-border-color);
     background-color: var(--vp-c-bg-alt);
   }
 
@@ -467,7 +479,7 @@ h2 + .custom-block {
   margin: 2px 0 0;
   font-size: 14px;
   line-height: 1.8;
-  
+
   &.custom-block-title {
     position: relative;
     margin-bottom: 8px;
@@ -487,13 +499,13 @@ h2 + .custom-block {
   height: 24px;
   background-color: var(--block-icon-color);
   -webkit-mask-image: var(--block-icon-url);
-          mask-image: var(--block-icon-url);
+  mask-image: var(--block-icon-url);
   -webkit-mask-position: center;
-          mask-position: center;
+  mask-position: center;
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-          mask-size: contain;
+  mask-size: contain;
   @media (max-width: 500px) {
     left: -40px;
   }
@@ -612,14 +624,14 @@ h2 + .custom-block {
     width: var(--twitter-icon-mask-size);
     height: var(--twitter-icon-mask-size);
     transition: background-color 0.14s ease;
-    background-color: #1DA1F2;
+    background-color: #1da1f2;
     -webkit-mask-image: var(--twitter-icon-img);
-            mask-image: var(--twitter-icon-img);
+    mask-image: var(--twitter-icon-img);
     -webkit-mask-position: center;
-            mask-position: center;
+    mask-position: center;
     -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     -webkit-mask-size: cover;
-            mask-size: cover;
+    mask-size: cover;
   }
 }
