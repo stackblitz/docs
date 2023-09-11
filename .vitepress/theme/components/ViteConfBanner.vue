@@ -8,7 +8,9 @@ const href =
 
 const key = 'shouldViteConfBannerBeShown';
 
-const shouldViteConfBannerBeShown = ref(localStorage.getItem(key) !== 'false');
+const shouldViteConfBannerBeShown = ref(
+  window ? window.localStorage.getItem(key) !== 'false' : false
+);
 
 onMounted(() => {
   if (shouldViteConfBannerBeShown.value) {
@@ -17,7 +19,7 @@ onMounted(() => {
 });
 
 function onCloseClick() {
-  localStorage.setItem(key, 'false');
+  window.localStorage.setItem(key, 'false');
   document.querySelector('.VPNav')?.classList.remove('with-banner');
   shouldViteConfBannerBeShown.value = false;
 }
