@@ -1,14 +1,16 @@
 // ViteConfBanner related
 // Only show it in big screen for now
-.VPNav.with-banner {
+.Layout.with-banner {
   @media (min-width: 960px) {
-    --vp-layout-top-height: 48px;
-  }
-}
-
-.VPContent .VPDoc {
-  @media (min-width: 960px) {
-    padding: 90px 32px 0;
+    .VPNav {
+      --vp-layout-top-height: 48px;
+    }
+    .VPContent .VPDoc {
+      padding: 90px 32px 0;
+    }
+    .VPSidebar {
+      --vp-nav-height: 90px;
+    }
   }
 }
 
@@ -255,7 +257,6 @@
   --active-indicator-padding: 16px;
   --vp-sidebar-width: 308px;
   --vp-new-padding: calc(32px - var(--active-indicator-padding));
-  --vp-nav-height: 90px;
   padding-left: var(--vp-new-padding) !important;
   padding-right: var(--vp-new-padding) !important;
   padding-bottom: 32px !important;

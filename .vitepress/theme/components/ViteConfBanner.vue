@@ -6,27 +6,27 @@ import { computed, ref, onMounted } from 'vue';
 const href =
   'https://viteconf.org/?utm_campaign=stackblitz-on-page&utm_source=docs&utm_medium=nav-button';
 
-const key = 'shouldViteConfBannerBeShown';
+const key = 'shouldShowViteConfTopBanner';
 
-let shouldViteConfBannerBeShown = ref(false);
+let shouldShowViteConfTopBanner = ref(false);
 
 onMounted(() => {
-  shouldViteConfBannerBeShown.value = window.localStorage.getItem(key) !== 'false';
-  if (shouldViteConfBannerBeShown.value) {
-    document.querySelector('.VPNav')?.classList.add('with-banner');
+  shouldShowViteConfTopBanner.value = localStorage.getItem(key) !== 'false';
+  if (shouldShowViteConfTopBanner.value) {
+    document.querySelector('.Layout')?.classList.add('with-banner');
   }
 });
 
 function onCloseClick() {
   localStorage.setItem(key, 'false');
 
-  document.querySelector('.VPNav')?.classList.remove('with-banner');
-  shouldViteConfBannerBeShown.value = false;
+  document.querySelector('.Layout')?.classList.remove('with-banner');
+  shouldShowViteConfTopBanner.value = false;
 }
 </script>
 
 <template>
-  <div class="viteconf-banner" :class="[!shouldViteConfBannerBeShown && 'hide']">
+  <div class="viteconf-banner" :class="[!shouldShowViteConfTopBanner && 'hide']">
     <div class="container">
       <ViteConfLogo class="logo" />
       <span class="text">ViteConf 2023</span>
