@@ -67,7 +67,7 @@ Codeflow Editor projects always use WebContainer, as indicated by the WebContain
 
 ![Screenshot of bottom left of the Codeflow Editor with an orange arrow pointing to the 'WebContainer' text](./assets/codeflow_webcontainerbar.png)
 
-Otherwise, if you are still unsure what your current environment is, you can check in the left pane's project settings of any StackBlitz project. When you click the gear icon, the top of the settings pane will display "WebContainers" for WebContainer-based projects or "Dev Server" for EngineBlock projects. 
+Otherwise, if you are still unsure what your current environment is, you can check in the left pane's project settings. When you click the gear icon, the top of the settings pane will display "WebContainers" for WebContainer-based projects or "Dev Server" for EngineBlock projects. 
 
 **⚠️ Note: This settings menu is not available in Codeflow Editor projects.**
 
