@@ -57,21 +57,22 @@ WebContainers are currently supported by Chromium-based browsers and [in Firefox
 
 Our [Codeflow IDE](/codeflow/what-is-codeflow) runs on the WebContainers runtime.
 
-# Determining Which Environment You Are Using
+# How to Determine Which Environment You're Using
 
-The simplest way to determine if you're using EngineBlock vs WebContainers is the presence of a terminal, as shown below. Currently, the terminal is only available in projects which use the WebContainers execution environment.
+The simplest way to determine if you're using EngineBlock or WebContainers is if there's the presence of a terminal, as shown below. Currently, the terminal is only available in projects which use the WebContainers execution environment.
 
 ![Screenshot of the terminal in a StackBlitz WebContainer project](./assets/stackblitz_terminal.png)
 
-You can also check in the project settings in the left pane of any StackBlitz project. When you click the gear icon, the top of the settings pane will display "WebContainers" for WebContainer-based projects or "Dev Server" for EngineBlock projects. 
+Codeflow Editor projects always use WebContainer, as indicated by the WebContainer label in the bottom left of the editor.
 
-**⚠️ Note: You can only check these settings in our Classic Editor and not the Codeflow Editor.**
+![Screenshot of bottom left of the Codeflow Editor with an orange arrow pointing to the 'WebContainer' text](./assets/codeflow_webcontainerbar.png)
+
+Otherwise, if you are still unsure what your current environment is, you can check in the left pane's project settings of any StackBlitz project. When you click the gear icon, the top of the settings pane will display "WebContainers" for WebContainer-based projects or "Dev Server" for EngineBlock projects. 
+
+**⚠️ Note: This settings menu is not available in Codeflow Editor projects.**
 
 ⬇️ Project settings for a WebContainer Project: 
 ![Screenshot of the project settings for a WebContainer project](./assets/webcontainer_settings.png)
 
 ⬇️ Project settings for an EngineBlock Project:
 ![Screenshot of the project settings for an EngineBlock project](./assets/engineblock_settings_devserver.png)
-
-⬇️ One of the handful of indicators that you're using the Codeflow editor is the gear icon at the bottom of the left pane where you'll find general editor settings.
-![Screenshot of the general settings for the Codeflow editor](./assets/codefloweditor_gearicon.png)
