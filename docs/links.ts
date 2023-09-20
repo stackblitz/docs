@@ -246,7 +246,7 @@ export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
       { text: 'Docs', link: 'https://developer.stackblitz.com/' },
       { text: 'Enterprise', link: 'https://stackblitz.com/enterprise' },
       { text: 'Pricing', link: 'https://stackblitz.com/membership' },
-      { text: 'Case Studies', link: 'https://stackblitz.com/case-studies/google' },
+      { text: 'Case Studies', link: 'https://stackblitz.com/case-studies' },
     ],
   },
   {
