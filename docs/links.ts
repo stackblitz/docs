@@ -203,7 +203,7 @@ export const homeExternalLinks = [
     title: 'Community',
     description:
       'Join our supportive community on Discord, ask questions, and share your StackBlitz projects.',
-    url: 'https://discord.com/invite/EQ7uJQxC',
+    url: 'https://discord.gg/stackblitz',
     large: true,
     bgImgLight: '/img/theme/link-bg-squares-light.png',
     bgImgDark: '/img/theme/link-bg-squares-dark.png',
