@@ -12,6 +12,16 @@ This page outlines commonly asked questions and answers about StackBlitz.
 
 # General FAQs
 
+### Why do I have to Re-Authorize to access GitHub repositories?
+As of September 27th, 2023 we've begun a gradual migration from GitHub's OAuth app to their GitHub App. We received a lot of feedback from users saying that they didn't like the *all* or nothing approach that GitHub's OAuth app takes so we've started switching over to the GitHub app itself which allows per organization granularity.
+
+In order to make this migration as smooth as possible we converted our "Codeflow bot" app to just a "StackBlitz" app. We also had to adjust the permissions to enable us to:
+- Create repositories and manage
+- Import teams to StackBlitz
+- Login to StackBlitz
+
+if you have any questions about this proccess feel free to reach out to [support@stackblitz.com](mailto:support@stackblitz.com)
+
 ### Can I make code snippets?
 
 Yes, you can! Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) featured on Twitter that shows you how to create and use code snippets in StackBlitz.
