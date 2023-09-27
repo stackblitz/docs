@@ -13,7 +13,7 @@ This page outlines commonly asked questions and answers about StackBlitz.
 # General FAQs
 
 ### Why do I have to Re-Authorize to access GitHub repositories?
-As of September 27th, 2023 we started migrating from GitHub's OAuth app to their GitHub App. We received a lot of feedback from users saying that they didn't like the "*all* or nothing" approach that GitHub's OAuth app takes so we've started switching over to the GitHub app itself which allows granularity on a per-organization basis.
+As of September 27th, 2023 we started migrating from GitHub's OAuth app to their GitHub App. We received a lot of feedback from users saying that they didn't like the "*all* or nothing" approach that GitHub's OAuth app takes so we've started switching over to the GitHub app itself which allows granularity on a per-repository basis.
 
 To ensure a smooth migration, we converted our "Codeflow bot" app into a "StackBlitz" app. Additionally, we made necessary adjustments to the permissions to enable us to:
 - Create repositories and manage
