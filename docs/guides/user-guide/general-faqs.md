@@ -20,7 +20,7 @@ In order to make this migration as smooth as possible we converted our "Codeflow
 - Import teams to StackBlitz
 - Login to StackBlitz
 
-if you have any questions about this proccess feel free to reach out to [support@stackblitz.com](mailto:support@stackblitz.com)
+If you have any questions about this process feel free to reach out to [support@stackblitz.com](mailto:support@stackblitz.com)
 
 ### Can I make code snippets?
 
