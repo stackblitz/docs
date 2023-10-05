@@ -10,7 +10,7 @@ head:
 Each StackBlitz Team must be linked in a 1:1 relationship with a corresponding [Github Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations). 
 
 :::tip
-In the future we plan to support additional version control providers & Teams creation pathways. If linking to a Github Org doesn’t work for you, please reach out and let us know how we can meet your team’s needs!
+In the future we plan to support additional version control providers & Teams creation pathways. If linking to a Github Org doesn’t work for you, please [reach out](mailto:hello@stackblitz.com) and let us know how we can meet your team’s needs!
 :::
 
 To create a StackBlitz Team:
@@ -21,11 +21,13 @@ To create a StackBlitz Team:
 5. Either: Start a 14 day free trial OR Skip trial and checkout
 
 :::tip 
-If you opt for the free trial, you will need to add a payment method before the trial expires to continue using the paid Teams features. To do so click “Update Billing” on the trial banner:  
+If you opt for the free trial, you will need to add a payment method before the trial expires to continue using the paid Teams features. To do so: 
 
-Click “Change billing method”:
+1. Click “Update Billing” on the trial banner
 
-Add a payment method:
+2. Click “Change billing method”
+
+3. Add a payment method
 
 Your StackBlitz Team will now automatically renew as a paid Teams plan at the end of your free trial!
 :::

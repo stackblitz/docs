@@ -48,12 +48,12 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },
   ],
   teams: [
+    { text: 'What is StackBlitz Teams', link: '/teams/what-is-stackblitz-teams.md' },
+    { text: 'Setting Up Your Team', link: '/teams/setting-up-your-team' },
     { text: 'Collaboration and Access Control', link: '/teams/collaboration-and-access-control' },
+    { text: 'Pull Request Review Integration', link: '/teams/pull-request-review-integration' },
     { text: 'Environment Variables', link: '/teams/environment-variables' },
     { text: 'Private NPM Registry Integration', link: '/teams/private-npm-registry-integration' },
-    { text: 'Pull Request Review Integration', link: '/teams/pull-request-review-integration' },
-    { text: 'Setting Up Your Team', link: '/teams/setting-up-your-team' },
-    { text: 'What is StackBlitz Teams', link: '/teams/what-is-stackblitz-teams.md' },
   ],
   api: [
     {
@@ -191,7 +191,7 @@ export const homeTopLinks = [
     title: 'Teams',
     description:
       'With stackBlitz Teams you create a secure, private workspace for you and your teammates.',
-    url: '/enterprise/overview',
+    url: '/teams/what-is-stackblitz-teams',
   },
   {
     icon: '/icons/fa-users.svg',
