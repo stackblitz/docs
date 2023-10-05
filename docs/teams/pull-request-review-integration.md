@@ -1,0 +1,14 @@
+---
+title: &title Pull Request Review Integration
+head:
+  - ['meta', {property: 'og:title', content: *title}] 
+  - ['meta', {name: 'twitter:title', content: *title}]
+---
+
+# {{ $frontmatter.title }}
+
+To add one-click pull request reviews to your team, you will need to install the CodeflowApp bot into your Github organization and select which repos you want it to integrate with. Navigate to the installation page here to initiate the installation process. 
+
+Once installed, it will comment on every PR with a link to instantly run and review it:
+
+For more information & troubleshooting you can checkout the [CodeflowApp documentation here](https://developer.stackblitz.com/codeflow/integrating-codeflowapp-bot).
