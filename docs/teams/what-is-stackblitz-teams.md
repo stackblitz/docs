@@ -35,4 +35,4 @@ StackBlitz Teams allows you to add environment variables to your workspace, offe
 Experience a fully-featured, VS Code based editing environment complete with an in-browser Node.js environment, terminal, and support for package management and VS Code extensions. Currently in beta, this feature provides a production grade editing environment already familiar to your dev team.
 
 ## Getting Started
-Starting with StackBlitz Teams is straightforward—simply connect it to your GitHub organization and you're ready to collaborate! We even offer a 14-day free trial to get you started.
+Starting with StackBlitz Teams is straightforward—simply connect it to your GitHub organization and you're ready to collaborate! We even offer [a 14-day free trial to get you started](https://stackblitz.com/pricing).
