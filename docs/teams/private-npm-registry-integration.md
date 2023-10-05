@@ -21,5 +21,7 @@ If you can ping/access your registry without a proxy or firewall then you can fo
     - [Sonatype Nexus Documentation](https://help.sonatype.com/repomanager3)
 2. Navigate to `https://stackblitz.com/orgs/github/[YOUR_ORG_NAME]/settings` and scroll to the bottom of the page
 3. Click “Add new registry”
+![Add registry](./assets/add-registry.png)
 4. Enter the URL and Access Token, and click “Add registry”
+![Add registry](./assets/registry-credentials.png)
 5. All package installations for your team will now run through your private registry
