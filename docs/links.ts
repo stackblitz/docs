@@ -21,7 +21,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
     { text: 'Getting started', link: '/guides/user-guide/getting-started' },
     { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
-    { text: 'Available environments', link: '/guides/user-guide/available-environments' },
+    { text: 'Compute environments', link: '/guides/user-guide/available-environments' },
     { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
     { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
     { text: 'Collections', link: '/guides/user-guide/collections' },
