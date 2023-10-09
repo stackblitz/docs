@@ -25,13 +25,6 @@ defineProps<{
 <style scoped lang="scss">
 @import '../styles/vars.scss';
 
-// for viteconf banner
-:root {
-  @media (min-width: 960px) {
-    --vp-layout-top-height: 30px;
-  }
-}
-
 .top-section {
   padding-bottom: 60px;
 }
