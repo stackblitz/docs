@@ -80,4 +80,4 @@ Lastly, StackBlitz is capable of running Node.js inside the browser so you can u
 - Join our supportive community on [the Discord server](https://discord.gg/22zTzrwQrU)!
 - Read our [blog](https://blog.stackblitz.com/) and see what we have been up to in our [monthly update posts](https://blog.stackblitz.com/categories/monthly-updates/)!
 - Share how you use Codeflow on [Twitter](https://twitter.com/stackblitz)!
-- Reach out to our DevRel team via [email](mailto:devrel@stackblitz.com) with your Codeflow ideas, dreams, and wishes!
+- Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@stackblitz.com) with your Codeflow ideas, dreams, and wishes!
