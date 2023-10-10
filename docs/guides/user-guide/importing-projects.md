@@ -21,17 +21,17 @@ With your desired StackBlitz project open, drag and drop any files or a folder y
 
 ## Import from GitHub
 
-You can run any public GitHub repository on StackBlitz by adding the username and repository name to the URL like so:
+You can run any public GitHub repository on StackBlitz by adding the username and repo name to the URL like so:
 
-`stackblitz.com/github/{GH_USERNAME}/{REPOSITORY_NAME}`
+`stackblitz.com/github/{GH_USERNAME}/{REPO_NAME}`
 
-![Public GitHub Repository](./assets/github-public-repo.png)
+![Public GitHub Repo](./assets/github-public-repo.png)
 
-![Public Repository Import from GitHub](./assets/import-from-github.png)
+![Public Repo Import from GitHub](./assets/import-from-github.png)
 
 If you want, you can also specify a branch, tag, or commit:
 
-`.../github/{GH_USERNAME}/{REPOSITORY_NAME}/tree/{TAG|BRANCH|COMMIT}`
+`.../github/{GH_USERNAME}/{REPO_NAME}/tree/{TAG|BRANCH|COMMIT}`
 
 Whenever you push commits to GitHub, the corresponding StackBlitz project automatically updates with the latest changes ensuring that the code in your GitHub repository remains the source of truth.
 
@@ -47,7 +47,7 @@ Usually, these kinds of commands exist in the `scripts` section of your project'
 
 Using StackBlitz, you can provide an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) to run automatically when the editor opens with the `startScript` query parameter:
 
-`stackblitz.com/fork/github/{gh_username}/{repository_name}?startScript={npm_script_name}`
+`stackblitz.com/fork/github/{gh_username}/{repo_name}?startScript={npm_script_name}`
 
 :::tip Example
 The following URL will open the `vitesse` repository of the `antfu` user, install the npm dependencies, and run `npm run dev` command in the terminal:
@@ -63,7 +63,7 @@ When importing a project from GitHub, the project title will default to the GitH
 
 You can customize the title of the imported project by adding the `title` query parameter to the URL like so:
 
-`stackblitz.com/fork/github/{gh_username}/{repository_name}?title={custom title}`
+`stackblitz.com/fork/github/{gh_username}/{repo_name}?title={custom title}`
 
 For instance, the URL from the previous section would now become:
 
@@ -89,13 +89,13 @@ Importing private GitHub repos is a feature available with our memberships. If y
 
 **3.** Click on the 'importing from an existing repository' link.
 
-![Connect and import GitHub repository](./assets/connect-to-existing-repo.png)
+![Connect and import GitHub repo](./assets/connect-to-existing-repo.png)
 
-**4.** Paste your full GitHub repository URL.
+**4.** Paste your full GitHub repo URL.
 
-![Paste GitHub repository URL to import](./assets/import-existing-repo.png)
+![Paste GitHub repo URL to import](./assets/import-existing-repo.png)
 
-The video below outlines a workaround to edit collaboratively in a private repository:
+The video below outlines a workaround to edit collaboratively in a private repo:
 
 <iframe src="https://www.loom.com/embed/54c9f65e05494b00b6aa1bb9e0bbe7ab" style="width: 100%; height: 400px;"></iframe>
 

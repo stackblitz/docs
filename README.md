@@ -36,7 +36,7 @@ There are numerous ways to contribute to docs:
 
 Thank you for making our docs better!
 
-### What makes a good issue
+### What makes good issue
 
 When creating an issue, please include:
 - a descriptive title,
@@ -58,6 +58,7 @@ If what you want to say doesn't really fall into actionable "problem" or "improv
 - Could we split this page into multiple smaller steps?
 - This navigation item doesn't fit where it is - could we move it somewhere else?
 - How could we make the docs site more (adjective)?
+
 
 ---
 
@@ -83,7 +84,7 @@ Use StackBlitz Codeflow for bigger content updates. Codeflow will spin up the en
 
 To access it, [click this button](https://stackblitz.com/~/github.com/stackblitz/docs).
 
-Alternatively, add “pr.new” to the beginning of this GitHub repository URL.
+Alternatively, add “pr.new” to the beginning of this GitHub repo URL.
 
 ### Developing locally
 You can also explore and develop this site locally.
@@ -124,5 +125,5 @@ VITE_GTM_ID='******'
 - [Join our Discord](https://discord.gg/EQ7uJQxC)
 - Read our [blog](https://blog.stackblitz.com/) and see what we have been up to in our [monthly update posts](https://blog.stackblitz.com/categories/monthly-updates/)!
 - Share your StackBlitz projects on [Twitter](https://twitter.com/stackblitz)!
-- Reach out to our DevRel team via [email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!
+- Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!
 

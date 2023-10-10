@@ -76,7 +76,7 @@ On the **right side**, you'll find two buttons:
    2. **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
    3. **"Edit on Github"** which redirects to the file "edit" page on GitHub.
    4. **"Documentation"** which redirects to [StackBlitz docs page](https://developer.stackblitz.com/).
-   5. **"See a bug? File an issue"** which redirects to [WebContainer core repository](https://github.com/stackblitz/webcontainer-core/issues/new/choose) where you can file an issue describing the bug.
+   5. **"See a bug? File an issue"** which redirects to [WebContainer core repo](https://github.com/stackblitz/webcontainer-core/issues/new/choose) where you can file an issue describing the bug.
 
 <img lang="en" src="./assets/wp-profile-dropdown.png" alt="Profile dropdown" style="width: 400px"/>
 
