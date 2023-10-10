@@ -170,7 +170,7 @@ The Codeflow Editor brings VSC code into the browser. This editor is capable of 
 
 Our Codeflow editor is built on top of VS Code so you can enable the VIM extension:
 
-1. Open a github repository in Codeflow (like this: pr.new/vitejs/vite)
+1. Open a GitHub repository in Codeflow (like this: pr.new/vitejs/vite)
 2. Navigate to the "Extensions" pane
 3. Search for "Vim"
 4. Click on the VIM extension and then click the "enable" button.

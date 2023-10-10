@@ -22,8 +22,8 @@ Would you like your contribution to be celebrated? Please check all that apply:
 
 - [ ] I would like to be featured on the future contributors list in the README. If so, please tell us:
   - what name you'd like to be shown there?
-  - we usually link github profile pic -- is that ok? If not, provide another url: 
-  - we usually link your github profile but if you have a portfolio page, provide a link:
+  - we usually link GitHub profile pic -- is that ok? If not, provide another url: 
+  - we usually link your GitHub profile but if you have a portfolio page, provide a link:
 
 - [ ] I would like to get a shoutout in the next monthly updates post. If so, please provide your twitter handle (or we will link to your GitHub profile).
 
