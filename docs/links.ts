@@ -4,6 +4,7 @@
 type LinkGroup =
   | 'api'
   | 'codeflow'
+  | 'teams'
   | 'enterprise'
   | 'integrationGuide'
   | 'userGuide'
@@ -25,6 +26,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
     { text: 'Collections', link: '/guides/user-guide/collections' },
     { text: 'Keyboard shortcuts', link: '/guides/user-guide/keyboard-shortcuts' },
+    { text: 'General FAQs', link: '/guides/user-guide/general-faqs' },
   ],
   integrationGuide: [
     { text: 'Embedding projects', link: '/guides/integration/embedding' },
@@ -37,12 +39,21 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'Using pr.new', link: '/codeflow/using-pr-new' },
     { text: 'Working in Codeflow IDE', link: '/codeflow/working-in-codeflow-ide' },
     { text: 'Integrating CodeflowApp bot', link: '/codeflow/integrating-codeflowapp-bot' },
+    { text: 'Environment Variables', link: '/codeflow/environment-variables' },
     {
       text: 'Content updates with Web Publisher',
       link: '/codeflow/content-updates-with-web-publisher',
     },
     { text: 'Integrating Web Publisher', link: '/codeflow/integrating-web-publisher' },
     { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },
+  ],
+  teams: [
+    { text: 'What is StackBlitz Teams', link: '/teams/what-is-stackblitz-teams.md' },
+    { text: 'Setting Up Your Team', link: '/teams/setting-up-your-team' },
+    { text: 'Collaboration and Access Control', link: '/teams/collaboration-and-access-control' },
+    { text: 'Pull Request Review Integration', link: '/teams/pull-request-review-integration' },
+    { text: 'Environment Variables', link: '/teams/environment-variables' },
+    { text: 'Private NPM Registry Integration', link: '/teams/private-npm-registry-integration' },
   ],
   api: [
     {
@@ -87,7 +98,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'Setting up SSO', link: '/enterprise/sso' },
     { text: 'Setting up SSO with Okta', link: '/enterprise/okta-sso' },
     { text: 'Setting up SSO with ADFS', link: '/enterprise/adfs-sso' },
-    { text: 'Connect NPM registry', link: '/enterprise/npm' },
+    { text: 'Connect npm Registry', link: '/enterprise/npm' },
     { text: 'Starter Projects', link: '/enterprise/starter-projects' },
     { text: 'User Management', link: '/enterprise/user-management' },
     { text: 'Aggregating Logs', link: '/enterprise/log-aggregation' },
@@ -107,6 +118,10 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
   codeflow: {
     text: 'Codeflow',
     items: groupLinks.codeflow,
+  },
+  teams: {
+    text: 'Teams',
+    items: groupLinks.teams,
   },
   api: {
     text: 'StackBlitz API',
@@ -166,18 +181,18 @@ export const homeTopLinks = [
     url: '/platform/api/javascript-sdk',
   },
   {
-    icon: '/icons/fa-gear.svg',
-    title: 'WebContainers',
-    description:
-      'Learn about browser support, package managers, project config, performance, and troubleshooting.',
-    url: '/platform/webcontainers/browser-support',
-  },
-  {
     icon: '/icons/fa-life-ring.svg',
     title: 'Integrating StackBlitz',
     description:
       'Follow guides on building interactive playgrounds, improving bug repros, and using StackBlitz for tech education.',
     url: '/guides/integration/open-from-github',
+  },
+  {
+    icon: '/icons/fa-users.svg',
+    title: 'Teams',
+    description:
+      'With StackBlitz Teams you create a secure, private workspace for you and your teammates.',
+    url: '/teams/what-is-stackblitz-teams',
   },
   {
     icon: '/icons/fa-users.svg',
@@ -202,7 +217,7 @@ export const homeExternalLinks = [
     title: 'Community',
     description:
       'Join our supportive community on Discord, ask questions, and share your StackBlitz projects.',
-    url: 'https://discord.com/invite/EQ7uJQxC',
+    url: 'https://discord.gg/stackblitz',
     large: true,
     bgImgLight: '/img/theme/link-bg-squares-light.png',
     bgImgDark: '/img/theme/link-bg-squares-dark.png',
@@ -245,7 +260,7 @@ export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
       { text: 'Docs', link: 'https://developer.stackblitz.com/' },
       { text: 'Enterprise', link: 'https://stackblitz.com/enterprise' },
       { text: 'Pricing', link: 'https://stackblitz.com/membership' },
-      { text: 'Case Studies', link: 'https://stackblitz.com/case-studies/google' },
+      { text: 'Case Studies', link: 'https://stackblitz.com/case-studies' },
     ],
   },
   {

@@ -32,6 +32,10 @@ Getting started on bare metal (no existing Kubernetes cluster):
   - 6443
 - Run the kots intaller command: `curl -sSL https://k8s.kurl.sh/stackblitz | sudo bash`.
 
+:::tip Using load balancers?
+Ports 80 and 443 should be forwarded from the load balancer. The remaining ports are for inbound rules on the security group.
+:::
+
 :::warning
 Copy the generated password from the terminal output after installation. It's required for accessing the Admin Console and won't be shown again.
 :::
@@ -56,3 +60,7 @@ Once this step completes, you will be presented with EE site configuration scree
 ![EE Console](../assets/ee-console-config.png)
 
 After filling out the configuration fields, click "Continue". Your StackBlitz EE instance is now booted and ready for **[DNS configuration](/enterprise/configuring-dns)**.
+
+::: tip Need more than one instance?
+With your StackBlitz Enterprise license, you can operate more than one instance at a time. This may be helpful if you want a separate cluster for staging, testing, etc.
+:::
