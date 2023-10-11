@@ -25,3 +25,18 @@ For TLS, your certificate should have `stackblitz.example.com` as the Common Nam
 - `stackblitz.example.com`
 - `*.stackblitz.example.com`
 - `*.preview.stackblitz.example.com`
+
+### TLS Certificate Renewal
+
+Having trouble renewing your TLS cert? Follow these instructions (extracted from [this gist](https://gist.github.com/vaxinate/6388e56f08b9dc710133ef82d1d78e95)):
+
+1. SSH into your StackBlitz host VM
+2. Retrieve the existing StackBlitz application certificate and key via `​kubectl get secret -o jsonpath={.data} stackblitz-tls-secret`
+3. Create a new yaml file on the host VM called new-kotsadm-tls.yaml based on [this template](https://gist.github.com/vaxinate/ff4b143b8363a9f68f8f4cba400d9508).
+4. Replace the stringData.hostname field with your existing stackblitz hosted zone (ex: `stackblitz.[COMPANY].com`). This DNS name should already be configured properly for your instance.
+5. Replace the data."tls.crt" and data."tls.key" with the values you retrieved in step 2. Be sure to copy these values exactly as single lines without adding additional whitespace.
+6. Save new-kotsadm-tls.yaml
+7. Back up the existing self-signed cert via `kubectl get secret -o yaml kotsadm-tls > old-kotsadm-tls.yaml`.
+8. Delete the old self-signed certificate via `kubectl delete secret kotsadm-tls`.
+9. Apply the new cert via `kubectl apply -f new-kotsadm-tls.yaml`.
+10. Visit the dashboard by navigating to the hostname you entered in step 4 on port 8800 (ex: `https://stackblitz.COMPANY.com:8800`).
