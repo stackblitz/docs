@@ -7,6 +7,7 @@ import fakerLogo from './faker.svg';
 import feathersLogo from './feathers.svg';
 import hydrogenLogo from './hydrogen.svg';
 import ladleLogo from './ladle.svg';
+import markoLogo from './marko.svg';
 import nativescriptLogo from './nativescript.svg';
 import needleEngineLogo from './needle-engine.png';
 import nextjsLogo from './nextjs.svg';
@@ -74,6 +75,11 @@ export const dotNewLinks = [
     link: 'https://ladle.dev/new',
     icon: ladleLogo,
     iconInvert: true,
+  },
+  {
+    title: 'Marko',
+    link: 'https://marko.run/new',
+    icon: markoLogo,
   },
   {
     title: 'NativeScript (TS)',
