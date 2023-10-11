@@ -28,9 +28,9 @@ Web Publisher allows you to edit a single page.
 
 However, some edits require modifying a few files. In this case, you can switch to the Codeflow IDE environment, which will run the whole repository.
 
-To do so, click on the "..." icon in the top right corner of the Editor panel, which will show a popup with "Open in Codeflow IDE" button:
+To do so, click on the your profile picture icon in the top right corner of the Editor panel, which will show a popup with "Open in Codeflow IDE" button:
 
-<img lang="en" src="./assets/wp-open-in-ide-popup.png" alt="Nav Bar" style="width: 300px"/>
+<img lang="en" src="./assets/wp-profile-dropdown.png" alt="Profile dropdown" style="width: 400px"/>
 
 You will be redirected to the Web Studio editor and you can continue your work.
 

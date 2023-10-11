@@ -37,11 +37,13 @@ export default defineConfig({
       { text: 'Codeflow', link: defaultGroupLink('codeflow') },
       { text: 'API', link: defaultGroupLink('api') },
       { text: 'WebContainers', link: defaultGroupLink('webcontainers') },
+      { text: 'Teams', link: defaultGroupLink('teams') },
       { text: 'Enterprise', link: defaultGroupLink('enterprise') },
     ],
     sidebar: {
       '/guides/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
       '/codeflow/': sidebarLinks('main', ['codeflow']),
+      '/teams/': sidebarLinks('main', ['teams']),
       '/platform/api/': sidebarLinks('main', ['api']),
       '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),
       '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
