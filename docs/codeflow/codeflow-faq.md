@@ -99,6 +99,6 @@ If your company is interested in using Codeflow, reach out to our [Enterprise Te
 
 Yes, only during the beta. Starting Q1 2023, you'll be able to open public repos without being logged in.
 
-### To open a repository in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
+### To open a repo in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
 
 You need to sign in to [StackBlitz](https://stackblitz.com) *using* GitHub.
