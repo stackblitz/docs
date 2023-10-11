@@ -6,8 +6,9 @@ interface GtagEvent {
 }
 
 export function sendEvent({ eventName, pagePath, value }: GtagEvent) {
-  if (typeof window.gtag === 'function') {
-    window.gtag('event', eventName, {
+  const gtag: any = (window as any).gtag;
+  if (typeof gtag === 'function') {
+    gtag('event', eventName, {
       page_path: pagePath,
       value,
     });

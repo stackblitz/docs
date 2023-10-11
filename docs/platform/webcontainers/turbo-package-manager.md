@@ -1,6 +1,6 @@
 ---
 title: &title Turbo Package Manager
-description: &description WebContainers-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. 
+description: &description Turbo was our custom npm client until very recently when native npm was added to WebContainer. It is available until January 2024.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-turbo-package-manager.png'}]
@@ -9,6 +9,14 @@ head:
 ---
 
 # {{ $frontmatter.title }}
+
+:::warning
+Starting on January 1, 2024, turbo will no longer be supported and will be removed. We now offer built-in support for npm, pnpm, and yarn v1.
+
+Support for native package managers out-of-the-box offers a lot of benefits. All features of your favorite package manager will be immediately available.
+
+See our [announcement post](https://blog.stackblitz.com/posts/announcing-native-package-manager-support/) for more information.
+:::
 
 WebContainers-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. For many commands, you can invoke `npm` or `yarn` directly and they will work as usual:
 

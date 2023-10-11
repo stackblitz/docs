@@ -21,7 +21,7 @@ Depending on the environment, StackBlitz IDE includes slightly different feature
 | Feature | EngineBlock | WebContainers |
 | --- | --- | --- |
 | Supported frameworks | <SupportIcon value="star-half" label="" /> Front-end | <SupportIcon value="star" label="" /> Front-end & back-end |
-| Supported package managers | <SupportIcon value="star-half" label="" /> Turbo v1 | <SupportIcon value="star" label="" /> Turbo v2, pnpm, yarn v1 |
+| Supported package managers | <SupportIcon value="star-half" label="" /> Turbo v1 | <SupportIcon value="star" label="" /> npm, pnpm, yarn v1 |
 | Full Node.js environment | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 | Classic editor | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
 | [Codeflow IDE](/codeflow/working-in-codeflow-ide) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
