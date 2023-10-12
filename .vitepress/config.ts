@@ -23,6 +23,12 @@ export default defineConfig({
     'Discover how to use StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
   head: getHeadTags(process.env),
 
+  // Sitemap
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://developer.stackblitz.com'
+  },
+
   // Theme
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
