@@ -9,6 +9,8 @@ head:
 
 StackBlitz Teams is designed to allow you to build the web with the web; collaboratively! Built on top of the time-tested StackBlitz platform, Teams creates a secure, private workspace for you and your teammates, making it easier to code together, review each other’s pull requests, and manage your projects and shared templates.
 
+> 💡 [Read the Teams announcement blog post here](https://blog.stackblitz.com/posts/introducing-teams/)
+
 ## Why StackBlitz Teams?
 
 ### Collaboration Made Easy

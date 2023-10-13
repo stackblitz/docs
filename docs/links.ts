@@ -190,7 +190,7 @@ export const homeTopLinks = [
     icon: '/icons/fa-users.svg',
     title: 'Teams',
     description:
-      'With stackBlitz Teams you create a secure, private workspace for you and your teammates.',
+      'With StackBlitz Teams you create a secure, private workspace for you and your teammates.',
     url: '/teams/what-is-stackblitz-teams',
   },
   {
