@@ -3,7 +3,7 @@ title: &title Available environments
 description: &description "There are two kinds of environments that run projects in StackBlitz: EngineBlock and WebContainers. Each project in StackBlitz is tied to one or the other."
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/available-environments.png'}]
+  - ['meta', {property: 'og:image', content: '/img/og/available-environments.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -18,9 +18,9 @@ There are two underlying compute environments that can be used to power a StackB
 
 :::tip
 The compute environments being discussed on this page refer to the behind the scenes tech powering the project and NOT the editor/visual user interface. As of Q1 2024 StackBlitz has 3 distinct editors, and you can learn more about them at the links below:<br>
-:link: [StackBlitz Classic Editor](https://developer.stackblitz.com/guides/user-guide/getting-started)<br>
-:link: [Stackblitz Codeflow](https://developer.stackblitz.com/codeflow/what-is-codeflow)<br>
-:link: [Stackblitz Web Publisher](https://developer.stackblitz.com/codeflow/integrating-web-publisher)
+:link: [StackBlitz Classic Editor](/guides/user-guide/getting-started)<br>
+:link: [Stackblitz Codeflow](/codeflow/what-is-codeflow)<br>
+:link: [Stackblitz Web Publisher](/codeflow/integrating-web-publisher)
 :::
 
 Depending on the compute environment and choice of editor, StackBlitz will have slightly different features and User Interface elements. See an overview of both compute environments in the table below - and you can directly consult the section on [EngineBlock](#engineblock) or [WebContainers](#webcontainers) for more specifics on each.
@@ -34,7 +34,7 @@ Depending on the compute environment and choice of editor, StackBlitz will have 
 | [Console](/guides/user-guide/ide-whats-on-your-screen#console) | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
 | [Terminal](/guides/user-guide/ide-whats-on-your-screen#terminal) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 | ***Editor Support*** |  |  |
-| [Classic Editor](https://developer.stackblitz.com/guides/user-guide/getting-started) | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
+| [Classic Editor](/guides/user-guide/getting-started) | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
 | [Codeflow](/codeflow/working-in-codeflow-ide) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 | [Web Publisher](/codeflow/content-updates-with-web-publisher) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 
@@ -43,7 +43,7 @@ To explore these differences in practice, we took a React project in the Classic
 - [a React project running on EngineBlock](https://stackblitz.com/fork/react)
 - [a React project running on WebContainers](https://vite.new/react) (powered by [Vite](https://vitejs.dev/))
 
-### EngineBlock
+## EngineBlock
 EngineBlock is StackBlitz's original compute environment, developed in 2017. It operates as a lightweight custom runtime built on top of [SystemJS](https://github.com/systemjs/systemjs#systemjs) and is tailored for CodePen++ type use-cases. Unlike WebContainers, EngineBlock is focused solely on supporting popular front-end frameworks and libraries and does not support full Node.js applications. EngineBlock's main strength is how easily it can be embedded in blogs, documentation, and other web-based mediums, making it an excellent tool for tutorials, demos, and code samples.
 
 **Technical Characteristics** <br>
@@ -57,7 +57,7 @@ EngineBlock supports Turbo v1 for package management, a custom package manager d
 **Editor Support** <br> 
 EngineBlock is only available in the StackBlitz Classic Editor.
 
-### WebContainers
+## WebContainers
 WebContainers is StackBlitz's next-generation compute environment, launched in May 2021. Unlike EngineBlock, it provides a native Node.js environment, enabling a more flexible and powerful development experience. It's particularly well-suited for running full-stack web applications and provides a broader range of capabilities, including Node.js back-end development. One of its standout features is the inclusion of a fully functional terminal, similar to what you'd expect in a local development environment.
 
 > 💡 [Read the WebContainers announcement blog post here](https://blog.stackblitz.com/posts/introducing-webcontainers/)
@@ -72,11 +72,11 @@ With WebContainers, you gain the flexibility to work with virtually any front-en
 WebContainers natively support all the major package managers including [npm, pnpm, and yarn v1](https://blog.stackblitz.com/posts/announcing-native-package-manager-support/), just like a local development environment. This offers a more production grade approach to managing dependencies compared to EngineBlock's Turbo v1.
 
 **Editor Support** <br>
-WebContainers are available in all StackBlitz editors: [Classic Editor](https://developer.stackblitz.com/guides/user-guide/getting-started), [Codeflow](/codeflow/working-in-codeflow-ide), and [Web Publisher](/codeflow/content-updates-with-web-publisher).
+WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/user-guide/getting-started), [Codeflow](/codeflow/working-in-codeflow-ide), and [Web Publisher](/codeflow/content-updates-with-web-publisher).
 
-# Which Compute Environment Are You using?
+## Which Compute Environment Are You using?
 
-The [Classic Editor](https://developer.stackblitz.com/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, wheras the [Codeflow](/codeflow/working-in-codeflow-ide) and [Web Publisher](/codeflow/content-updates-with-web-publisher) editors only support WebContainers.
+The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, wheras the [Codeflow](/codeflow/working-in-codeflow-ide) and [Web Publisher](/codeflow/content-updates-with-web-publisher) editors only support WebContainers.
 
 If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Codeflow editor** an therefore using **WebContainers**:
 
