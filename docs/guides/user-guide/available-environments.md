@@ -1,5 +1,5 @@
 ---
-title: &title Compute environments
+title: &title Available environments
 description: &description "There are two kinds of environments that run projects in StackBlitz: EngineBlock and WebContainers. Each project in StackBlitz is tied to one or the other."
 head:
   - ['meta', {property: 'og:title', content: *title}] 
