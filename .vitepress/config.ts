@@ -33,7 +33,10 @@ export default defineConfig({
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
     logo: '/img/theme/docs-logo.svg',
-    algolia: getAlgoliaConfig(process.env),
+    search: {
+      provider: 'algolia',
+      options: getAlgoliaConfig(process.env),
+    },
     editLink: {
       pattern: 'https://pr.new/stackblitz/docs/edit/main/docs/:path',
       text: 'Edit this page',
@@ -90,9 +93,14 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
 function getAlgoliaConfig(env: NodeJS.ProcessEnv) {
   if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
     return {
-      indexName: 'stackblitz',
+      indexName: 'webcontainers',
       appId: env.VITE_ALGOLIA_ID,
       apiKey: env.VITE_ALGOLIA_KEY,
     };
   }
+  return {
+    indexName: '',
+    appId: '',
+    apiKey: '',
+  };
 }
