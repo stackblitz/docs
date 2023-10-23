@@ -132,7 +132,7 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
     items: groupLinks.webcontainers,
   },
   enterprise: {
-    text: 'Enterprise Edition',
+    text: 'Enterprise Server',
     items: groupLinks.enterprise,
   },
 };
@@ -196,7 +196,7 @@ export const homeTopLinks = [
   },
   {
     icon: '/icons/fa-users.svg',
-    title: 'Enterprise Edition',
+    title: 'Enterprise Server',
     description:
       'Run StackBlitz behind your firewall, on new or existing Kubernetes clusters, with options for air gapping and SSO.',
     url: '/enterprise/overview',
@@ -245,7 +245,7 @@ export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
     items: [
       { text: 'From a Workspace', link: 'https://stackblitz.com/?starters=popular' },
       {
-        text: 'From a GitHub Repo',
+        text: 'From a GitHub Repository',
         link: '/guides/user-guide/importing-projects#import-from-github',
       },
       {

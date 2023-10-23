@@ -15,7 +15,7 @@ head:
 
 Unlock the full potential of your frontend development team with StackBlitz Enterprise Server. Designed specifically for large teams in high-security environments, this premium offering provides an unparalleled browser-based IDE experience— on your own infrastructure, behind the corporate firewall/VPN.
 
-**Key Features:**
+## Key Features
 
 - **Private NPM Registry Integration:** Incorporate your proprietary npm packages into the development process
 - **Custom SSO Integration:** Integrate with your existing Single Sign-On solution for streamlined, secure access
@@ -23,13 +23,12 @@ Unlock the full potential of your frontend development team with StackBlitz Ente
 - **Dedicated Customer Success Engineer:** Benefit from the personalized support of a dedicated Customer Success Engineer and specialized DevOps support to ensure you're getting the most out of your investment
 - **Multi-Channel Support:** Stay connected and resolve issues quickly with Zoom, phone, and email support options
 
-**Beta Features:**
+## Beta Features
 - **WebContainers for Node.js Toolchains:** Full node.js dev server and terminal running locally in the browser
 - **Codeflow:** Elevate your code editing capabilities with our in-browser VS Code based editor, with extension support
 - **Enterprise Git Provider Integration:** Leverage your existing version control systems for even more streamlined workflows.
 
-**Popular Use Cases:**
-
+## Popular Use Cases
 - Live code examples for your design system documentation
 - Prototype rapidly in-browser without any setup
 - Reproduce and resolve bugs efficiently
