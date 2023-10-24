@@ -1,6 +1,6 @@
 ---
-title: &title What is Codeflow?
-description: &description Codeflow is a one-click integration with GitHub for seamless coding workflows.
+title: &title Who is Chris?
+description: &description Chris Carrow Interview
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/what-is-codeflow.png'}]
