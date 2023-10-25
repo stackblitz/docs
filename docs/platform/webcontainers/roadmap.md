@@ -23,10 +23,15 @@ If you have a feature request, please check [our github issue tracker](https://g
 This roadmap only includes large features. Minor bug fixes or features will not be reflected here.
 :::
 
+## ✅ Shipped
+
+ * **Node 18**
+ * **WASI** (Blog post: https://blog.stackblitz.com/posts/announcing-wasi/)
+
 ## 🚧 In Development
 
- * **Node 18** (Github: https://github.com/stackblitz/webcontainer-core/issues/560)
- * **WASI** (Github: https://github.com/stackblitz/webcontainer-core/issues/705)
+ * **Supporting multiple Node.js versions** (Github: https://github.com/stackblitz/webcontainer-core/issues/560)
+ * **CORS Proxy** (Github: https://github.com/stackblitz/webcontainer-core/issues?q=is%3Aissue+is%3Aopen+CORS)
  * **Reducing memory usage** (Github: https://github.com/stackblitz/webcontainer-core/issues/1120)
  * **Private / Custom Registries** (Github: https://github.com/stackblitz/webcontainer-core/issues/21)
 
@@ -34,3 +39,4 @@ This roadmap only includes large features. Minor bug fixes or features will not 
 
  * **Node 20** (Github: https://github.com/stackblitz/webcontainer-core/issues/560)
  * **Remote Databases** (Github: https://github.com/stackblitz/webcontainer-core/issues/679, https://github.com/stackblitz/webcontainer-core/issues/1106)
+ * **More CLI utilities** (Github: https://github.com/stackblitz/webcontainer-core/issues/1165, https://github.com/stackblitz/webcontainer-core/issues/452, https://github.com/stackblitz/webcontainer-core/issues/1013)
