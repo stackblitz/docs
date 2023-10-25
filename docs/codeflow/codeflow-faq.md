@@ -47,6 +47,10 @@ This is perhaps the most frequently-asked question with regards to StackBlitz fe
 
 <!--@include: ./parts/persistance.md-->
 
+### Can I change the Node version?
+
+The Node version is locked so currently, there is no ability to change the Node version.
+
 ### Which repos can/not be opened in Codeflow IDE?
 
 Codeflow IDE should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
@@ -95,6 +99,6 @@ If your company is interested in using Codeflow, reach out to our [Enterprise Te
 
 Yes, only during the beta. Starting Q1 2023, you'll be able to open public repos without being logged in.
 
-### To open a repo in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
+### To open a repository in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
 
 You need to sign in to [StackBlitz](https://stackblitz.com) *using* GitHub.

@@ -1,3 +1,19 @@
+// ViteConfBanner related
+// Only show it in big screen for now
+.Layout.with-banner {
+  @media (min-width: 960px) {
+    .VPNav {
+      --vp-layout-top-height: 48px;
+    }
+    .VPContent .VPDoc {
+      padding: 90px 32px 0;
+    }
+    .VPSidebar {
+      --vp-nav-height: 90px;
+    }
+  }
+}
+
 // Remove nav border
 .VPNavBar {
   border-bottom: none !important;
@@ -6,12 +22,6 @@
 // No content-body transition (background-color fix)
 .VPNavBar .content-body {
   transition: none !important;
-}
-
-// Correct max logo height
-.VPNavBarTitle img.logo {
-  height: 20px;
-  margin-inline-end: 12px;
 }
 
 // Fix enormous line-height of navbar items
@@ -34,27 +44,67 @@
 
 // We would like to have single pages in the sidebar (e.g. API Reference, Enterprise).
 // VitPress expects to have you section title text + items and when you only have one item it looks like there are extra spacing.
-// These styles are to adjust spacing between groups. 
+// These styles are to adjust spacing between groups.
 #VPSidebarNav .group {
-  padding-bottom: 11px;
+  padding-top: 0;
 }
 
-#VPSidebarNav .group+.group {
-  margin-top: 0px;
-}
-
-.VPSidebarGroup.collapsed {
-  margin-bottom: 11px;
+.VPSidebarItem.collapsible {
+  padding-top: 8px;
 }
 
 .VPSidebarGroup.collapsible.collapsed .items {
   margin-bottom: -14px;
 }
 
+.VPSidebarItem .items {
+  margin-top: 8px;
+}
+
 // Move search away from logo
 .VPNavBarSearch.search {
   justify-content: flex-end;
   margin-right: 32px;
+}
+
+//  Post 1.0.0-rc.20
+
+.VPSidebarItem {
+  margin: 0 -14px;
+}
+
+.VPSidebarItem.link {
+  transition-duration: 0.1s;
+  transition-property: opacity, box-shadow;
+}
+
+.VPSidebarItem.level-0 {
+  padding-bottom: 8px !important;
+}
+
+.VPSidebarItem.is-active {
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  background-color: #fff;
+
+  .text {
+    color: var(--vp-c-text-1) !important;
+  }
+
+  :root.dark & {
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+    background-color: var(--vp-c-bg);
+  }
+}
+
+.VPSidebarItem.level-0 {
+  font-size: 13px;
+  margin: 0 4px;
+  &:hover:not(.is-active) {
+    opacity: 1;
+    color: var(--vp-c-text-1);
+  }
 }
 
 // --------------------------------
@@ -91,7 +141,7 @@
   }
 }
 
-// Body styles
+// New body styles
 .vp-doc p,
 .vp-doc li {
   font-size: 15px;
@@ -101,8 +151,14 @@
   margin: 24px 0;
 }
 
+.vp-doc a {
+  transition: 0.1s ease;
+}
+
 .vp-doc p a {
   display: inline-block;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 .vp-doc p > img,
@@ -113,6 +169,10 @@
 
 .vp-doc pre code {
   font-size: 12.5px !important;
+}
+
+.vp-doc :not(pre) > code {
+  color: var(--vp-text-code);
 }
 
 .vp-code-group .tabs label {
@@ -188,6 +248,15 @@
   max-width: unset;
 }
 
+// // Semi-transparent background above content
+// .VPNavBar .content-body {
+//   background-color: rgba(255,255,255,0.8) !important;
+//   backdrop-filter: blur(6px);
+//   :root.dark & {
+//     background-color: rgba(7,8,11,0.8) !important;
+//   }
+// }
+
 // Size according to Sidebar width to limit zone affected by nav overlay
 .VPNavBar.has-sidebar .content {
   --vp-sidebar-width: 320px;
@@ -259,10 +328,10 @@
   }
 }
 #VPSidebarNav.nav {
-  margin-top: 8px;
+  margin-top: 24px;
 }
   // Hide extraneous visual elements when parent group is collapsed
-// without messing with individual elements themselves. 
+// without messing with individual elements themselves.
 .VPSidebarGroup.collapsed .items {
   opacity: 0;
 }
@@ -283,88 +352,22 @@
     margin: 0;
     padding: 9px var(--active-indicator-padding) !important;
     transition-duration: 0.1s;
-    transition-property: background-color;
-    // Only customize top-level active links
-    .VPSidebarItem.level-1 > .item > & {
-      &::before {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        top: 0;
-        left: -14px;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-        background-color: var(--vp-c-brand);
-        opacity: 0;
-        transition-duration: 0.1s;
-        transition-property: opacity;
-        :root:not(.dark) & {
-        left: -14px;
-      }
-      }
-    }
-    .VPSidebarItem.has-active.level-1 > .item > & {
-      position: relative;
-      border-radius: 6px;
-      background-color: #fff;
-      :root.dark & {
-        background-color: var(--vp-c-bg);
-      }
-      &::before {
-        opacity: 1;
-      }
-    }
-    .text {
-      padding: 0;
-      font-size: 13px;
-      line-height: 1.32;
-      transition: none !important;
-      .VPSidebarItem.is-active > .item & {
-        color: var(--vp-c-text-1) !important;
-      }
-    }
-    &:hover .text {
-      color: var(--vp-c-text-1) !important;
-    }
+    transition-property: background-color, box-shadow, color;
   }
 }
-.link-text {
+
+//  Post 1.0.0-rc.20
+
+.VPLink .text {
+  padding: 0;
   font-size: 13px !important;
   line-height: 1.32 !important;
+  transition-duration: 0.1s;
+  transition-property: color, opacity;
 }
 
-.VPSidebarItem.level-0:not(.collapsed) .item + .items {
-  margin-block-start: 8px;
-}
-.VPSidebarItem.level-0:not(.collapsed) > .item + .items {
-  margin-block-start: 12px;
-}
-
-.VPSidebarItem.level-0 {
-  padding-bottom: 12px !important;
-  &.collapsed {
-    padding: 0 !important;
-  }
-}
-
-// Link section heading alignment
-.VPSidebarItem .item h2.text {
-  padding-left: 16px;
-  color: var(--vp-c-text-2) !important;
-  transition: none;
-}
-.VPSidebarItem .item:hover h2.text,
-.VPSidebarItem:not(.collapsed) .item h2.text {
+.VPLink:hover .text {
   color: var(--vp-c-text-1) !important;
-}
-
-// Smaller, quicker caret
-.VPSidebarItem .caret {
-  transform: scale(0.8);
-}
-.VPSidebarItem .caret-icon {
-  transition-duration: 0.16s !important;
 }
 
 // --------------------------------
@@ -372,6 +375,8 @@
 
 // Widen aside
 .VPDoc .aside {
+  max-width: 300px !important;
+  position: relative;
   padding-left: 0;
   @media (min-width: 1380px) {
     max-width: 248px;
@@ -382,6 +387,13 @@
   @media (min-width: 1600px) {
     max-width: 328px;
   }
+}
+.aside-container {
+  width: 300px !important;
+  max-width: 300px;
+}
+.aside-content {
+  padding-top: 56px;
 }
 
 // Add gap between title and list, but account for hardcoded `outline-marker` `top`
@@ -402,13 +414,14 @@
 // Custom Blocks
 
 .vp-doc .custom-block {
-  margin: 48px 0;
+  margin: 44px 0;
   padding: 32px 32px;
   padding-left: 76px;
   border: none;
   border-radius: 8px;
   box-shadow:
-    inset 0 0 0 1px var(--block-border-color);
+    inset 0 0 0 1px var(--block-border-color),
+    inset 40px 92px 64px -40px rgba(255,255,255,0.6);
 
   @media (max-width: 500px) {
     padding-left: 18px;
@@ -424,11 +437,13 @@
     --vp-custom-block-warning-bg: rgba(255, 200, 0, 0.032);
   }
   :root.dark & {
+    --vp-custom-block-tip-bg: var(--vp-c-green-dim-1);
     --vp-custom-block-tip-text: hsl(165 100% 60%);
     --vp-custom-block-tip-border: hsl(172, 100%, 19%);
     --vp-custom-block-warning-text: rgb(255, 183, 0);
     box-shadow:
-      inset 0 0 0 1px var(--block-border-color);
+      inset 0 0 0 1px var(--block-border-color),
+      inset 40px 92px 84px -40px rgba(0,0,0,0.6);
     background-color: var(--vp-c-bg-alt);
   }
 
@@ -463,11 +478,15 @@ h2 + .custom-block {
   margin-top: 32px !important;
 }
 
+.vp-doc h2 {
+  padding-top: 0;
+}
+
 .vp-doc .custom-block p {
   margin: 2px 0 0;
   font-size: 14px;
   line-height: 1.8;
-  
+
   &.custom-block-title {
     position: relative;
     margin-bottom: 8px;
@@ -475,27 +494,26 @@ h2 + .custom-block {
       margin-left: 42px;
       margin-bottom: 14px;
     }
-  }
-}
-.vp-doc .custom-block p.custom-block-title::before,
-.vp-doc .custom-block summary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -44px;
-  width: 24px;
-  height: 24px;
-  background-color: var(--block-icon-color);
-  -webkit-mask-image: var(--block-icon-url);
-          mask-image: var(--block-icon-url);
-  -webkit-mask-position: center;
-          mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  @media (max-width: 500px) {
-    left: -40px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -44px;
+      width: 24px;
+      height: 24px;
+      background-color: var(--block-icon-color);
+      -webkit-mask-image: var(--block-icon-url);
+              mask-image: var(--block-icon-url);
+      -webkit-mask-position: center;
+              mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+              mask-size: contain;
+      @media (max-width: 500px) {
+        left: -40px;
+      }
+    }
   }
 }
 
@@ -511,6 +529,14 @@ h2 + .custom-block {
 
 .vp-doc .custom-block a {
   transition-duration: 0.1s;
+}
+
+.vp-doc .custom-block code {
+  color: var(--vp-c-text-1);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  :root.dark & {
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.16);
+  }
 }
 
 .vp-doc .custom-block ul {

@@ -124,3 +124,15 @@ kubectl kots upstream upgrade stackblitz \
 This will create a new release in the Admin Panel, where you can review the changes and update any configuration if necessary before deplying.
 
 Optionally, the `--deploy` flag can be added to the previous command to deploy the release automatically.
+
+## Troubleshooting an Expired StackBlitz License
+
+![Screenshot of the error when your StackBlitz Enterprise license is expired.](../assets/expired_sblicense.png)
+
+If you see an error message that says your StackBlitz license is expired, follow the steps below to update it:
+
+1. Double-check with your admin or Customer Success Engineer to confirm if your license is actually expired or not.
+
+2. If your license is not expired, go to the kots dashboard and click the sync button on your license tab. If the sync button does not give you access, go to the 'Version history' tab and deploy the new version that gets created after syncing your license. You’ll want to make sure you’re installing the latest “license changes” and deploy the new license.
+
+![Screenshot of the Version history tab in the kots dashboard with an arrow that points from the Version History tab to the Deploy button.](../assets/kotsdashboard_redeploy.png)
