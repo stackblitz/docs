@@ -8,7 +8,7 @@ dotenv.config();
 
 export default defineConfig({
   srcDir: 'docs',
-  outDir: 'build',
+  outDir: 'build/docs',
 
   // For hosting under `/docs/` path
   base: '/docs/',
