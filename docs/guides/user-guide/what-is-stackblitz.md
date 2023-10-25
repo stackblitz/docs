@@ -1,6 +1,6 @@
 ---
 title: &title What is StackBlitz?
-description: &description StackBlitz is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by WebContainers, the first WebAssembly-based operating system which boots Node.js environment in milliseconds, securely within your browser tab.
+description: &description StackBlitz is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by WebContainers, the first WebAssembly-based operating system which boots the Node.js environment in milliseconds, securely within your browser tab.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/what-is-stackblitz.png'}]
@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-StackBlitz is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+StackBlitz is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots the Node.js environment in milliseconds**, securely within your browser tab.
 
 Now you can use the web to build the web.
 
@@ -23,7 +23,7 @@ There is no greater buzzkill than having to fiddle with the deployment and build
 ### Key features:
 
 - **unmatched security**: all development is happening in your browser tab, including running Node.js and git
-- **surprisingly fast**: the entire dev environment spins up in miliseconds - even reinstalling `node_modules` is as simple as refreshing the page
+- **surprisingly fast**: the entire dev environment spins up in milliseconds - even reinstalling `node_modules` is as simple as refreshing the page
 - **works online and offline**: continue your work even when you lose the Internet connection midway
 - **your apps are always online**: your apps never go to sleep and have no bandwidth limits - share the URL with as many friends, colleagues, and communities as you’d like!
 - **seamless debugging** with Chrome Dev Tools for both front- and backend apps!
@@ -68,7 +68,7 @@ Speed up your entire development process with **realtime hot-reloading in the fa
 
 Unlike StackBlitz, legacy online IDEs run on remote servers and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
 
-**StackBlitz solves these problems by doing all compute inside your browser**. This leverages decades of speed and security innovations and also **unlocks key development and debugging benefits**.
+**StackBlitz solves these problems by doing all computing inside your browser**. This leverages decades of speed and security innovations and also **unlocks key development and debugging benefits**.
 
 ## Get involved
 
