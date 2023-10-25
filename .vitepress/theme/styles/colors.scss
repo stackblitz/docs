@@ -17,6 +17,13 @@
   // Contrast fixes
   --vp-custom-block-info-text: hsl(220 10% 36%);
   --vp-custom-block-warning-text: hsl(45, 90%, 28%);
+
+  // Greys
+  --vp-c-gray-dark-2: rgb(186, 194, 210);
+
+  // rc.20
+  --vp-c-brand-1: var(--vp-c-brand);
+  --vp-c-brand-2: var(--vp-c-brand-light);
 }
 
 :root.dark {

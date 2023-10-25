@@ -99,3 +99,7 @@ Drag and drop your license file onto the webpage to upload it. Once this step co
 ![EE Console](../assets/ee-console-config.png)
 
 See the [Config Options in the Administrator Guide](/enterprise/installation/administrator-guide#config-options) for more details on each configuration option. After filling out the configuration fields, click "Continue". Your configuration will be saved. The Admin Console will deploy your configuration and begin to pull and run the images for StackBlitz. After your instance is up and running, you will need to [Configure DNS Settings](/enterprise/configuring-dns) to point your DNS zones at the IP/CNAME of your ingress.
+
+::: tip Need more than one instance?
+With your StackBlitz Enterprise license, you can operate more than one instance at a time. This may be helpful if you want a separate cluster for staging, testing, etc.
+:::

@@ -121,7 +121,7 @@ The Terminal allows you to run commands, such as `ls`, `mkdir`, `npm start`, `no
   <figcaption>Screenshot: Preview</figcaption>
 </figure>
 
-The Preview displays the application or webside that you are building in the [Editor](#editor). It is like a mini browser inside your browser: it includes an address bar which displays the URL of your app, the actual app (rendered inside an iframe) and, in the [EngineBlock][] projects, a JavaScript [Console](#console).
+The Preview displays the application or website that you are building in the [Editor](#editor). It is like a mini browser inside your browser: it includes an address bar which displays the URL of your app, the actual app (rendered inside an iframe) and, in the [EngineBlock][] projects, a JavaScript [Console](#console).
 
 If you prefer to view your app in a separate window, you can use the "Open in New Window" button located above the Preview. It will close the Preview and open your app in a separate browser tab instead.
 
@@ -134,7 +134,7 @@ If you prefer to view your app in a separate window, you can use the "Open in Ne
   <figcaption>Screenshot: Console</figcaption>
 </figure>
 
-In the [EngineBlock][] projects the [Preview](#preview) includes a Console. The Console outputs JavaScript errors and messages from `console.log` methods in your app. It is meant as a lightweight replacement of browser's [DevTools](https://developer.chrome.com/docs/devtools/overview/#console). It is also useful if you are sharing a project and you want to make sure that people see these JavaScript output messages without having to tell them to open the actual DevTools.
+In the [EngineBlock][] projects the [Preview](#preview) includes a Console. The Console outputs JavaScript errors and messages from `console.log` methods in your app. It is meant as a lightweight replacement for the browser's [DevTools](https://developer.chrome.com/docs/devtools/overview/#console). It is also useful if you are sharing a project and you want to make sure that people see these JavaScript output messages without having to tell them to open the actual DevTools.
 
 As an example, see how the RxJS starter project [uses the Console to display a "Hello, World!" message](https://stackblitz.com/edit/rxjs?devtoolsheight=60).
 

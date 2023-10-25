@@ -44,11 +44,11 @@ Some frameworks also provide short URLs that you can use to create new StackBlit
 
 ## Importing code for quick demos
 
-Alternatively, you can also use StackBlitz classic editor to [open an existing GitHub repository](/guides/user-guide/importing-projects). This option is suitable for the situations when there is no starter project for your favorite framework featured on the dashboard and you'd like to prepare a demo nevertheless.
+Alternatively, you can also use StackBlitz classic editor to [open an existing GitHub repository](/guides/user-guide/importing-projects). This option is suitable for situations when there is no starter project for your favorite framework featured on the dashboard and you'd like to prepare a demo nevertheless.
 
 ## Grouping your projects into Collections
 
-If you'd like to group projects together, you could [create a Collection](/guides/user-guide/collections). This feature is helpful when you like to create a list of your demos or inspirational projects you've forked or can be used as your developer portfolio.
+If you'd like to group projects, you could [create a Collection](/guides/user-guide/collections). This feature is helpful when you like to create a list of your demos or inspirational projects you've forked or can be used as your developer portfolio.
 
 ## Managing projects on your Dashboard
 
