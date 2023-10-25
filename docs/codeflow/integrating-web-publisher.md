@@ -28,9 +28,9 @@ Web Publisher allows you to edit a single page.
 
 However, some edits require modifying a few files. In this case, you can switch to the Codeflow IDE environment, which will run the whole repository.
 
-To do so, click on the "..." icon in the top right corner of the Editor panel, which will show a popup with "Open in Codeflow IDE" button:
+To do so, click on the your profile picture icon in the top right corner of the Editor panel, which will show a popup with "Open in Codeflow IDE" button:
 
-<img lang="en" src="./assets/wp-open-in-ide-popup.png" alt="Nav Bar" style="width: 300px"/>
+<img lang="en" src="./assets/wp-profile-dropdown.png" alt="Profile dropdown" style="width: 400px"/>
 
 You will be redirected to the Web Studio editor and you can continue your work.
 
@@ -38,23 +38,23 @@ You will be redirected to the Web Studio editor and you can continue your work.
 
 This section will guide you step by step through integrating Web Publisher to your docs.
 
-### 1. Repo compatibility check
+### 1. Repository compatibility check
 
 Before you begin, verify your toolchain works in WebContainers. To do this, add `pr.new` to the beginning of your docs repository GitHub URL. 
 
 :::info Example
-This is the GitHub address of the StackBlitz docs repo:
+This is the GitHub address of the StackBlitz docs repository:
 
 `https://github.com/stackblitz/docs/`
 
-To check if this repo runs in WebContainers, we'll add `pr.new` to the beginning of the URL:
+To check if this repository runs in WebContainers, we'll add `pr.new` to the beginning of the URL:
 
 `https://pr.new/github.com/stackblitz/docs/`
 :::
 
-If you see that **the preview loads correctly** (see below), this means that your dev server runs properly in WebContainers and your repo is compatible.
+If you see that **the preview loads correctly** (see below), this means that your dev server runs properly in WebContainers and your repository is compatible.
 
-<img lang="en" src="./assets/codeflow-ide-opening-repo.gif" alt="Opening a repo in Codeflow IDE" />
+<img lang="en" src="./assets/codeflow-ide-opening-repo.gif" alt="Opening a repository in Codeflow IDE" />
 
 ### 2. Specify the Web Publisher editing link
 
@@ -69,7 +69,7 @@ Alternatively, you can use the **Web Publisher link generator** to compose your 
 Web Publisher links follow this pattern:
 
 
-`https://pr.new/github.com/{repo-owner's-username}/{repo}/edit/{branch}/{file-path-in-the-repo}`
+`https://pr.new/github.com/{repository-owner's-username}/{repository}/edit/{branch}/{file-path-in-the-repository}`
 
 
 For example, here is a Web Publisher link to our docs page:
@@ -113,7 +113,7 @@ To enable edits on the sites created via generators, you need to change the defa
 
 ## "Edit in Web Publisher" button
 
-To help your users easily find their way to Web Publisher on your site or repo, you can add a CTA (call-to-action) button on your website or in the README file. 
+To help your users easily find their way to Web Publisher on your site or repository, you can add a CTA (call-to-action) button on your website or in the README file. 
 
 | Button preview | Direct URL |
 | --- | --- |
