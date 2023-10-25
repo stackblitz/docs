@@ -27,13 +27,13 @@ This roadmap only includes large features. Minor bug fixes or features will not 
 
  * **Node 18**
  * **WASI** (Blog post: https://blog.stackblitz.com/posts/announcing-wasi/)
+ * **Private / Custom Registries** (Blog post: https://blog.stackblitz.com/posts/introducing-teams/)
 
 ## 🚧 In Development
 
  * **Supporting multiple Node.js versions** (Github: https://github.com/stackblitz/webcontainer-core/issues/560)
  * **CORS Proxy** (Github: https://github.com/stackblitz/webcontainer-core/issues?q=is%3Aissue+is%3Aopen+CORS)
  * **Reducing memory usage** (Github: https://github.com/stackblitz/webcontainer-core/issues/1120)
- * **Private / Custom Registries** (Github: https://github.com/stackblitz/webcontainer-core/issues/21)
 
 ## 🦄 Future
 
