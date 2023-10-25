@@ -10,6 +10,9 @@ export default defineConfig({
   srcDir: 'docs',
   outDir: 'build',
 
+  // For hosting under `/docs/` path
+  base: '/docs/',
+
   // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
   cleanUrls: true,
 
