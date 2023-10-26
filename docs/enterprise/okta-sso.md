@@ -52,7 +52,7 @@ On the next page, you'll need to fill out a few options using values from the Au
 
 ![Configure SAML Integration in Okta](./assets/okta-sso/okta-integration-3.png)
 
-Proceed to create the SAML integration. YOu'll be prompted with the screen below. You'll need to use the values from this screen to configure the SAML integration within StackBlitz.
+Proceed to create the SAML integration. You'll be prompted with the screen below. You'll need to use the values from this screen to configure the SAML integration within StackBlitz.
 
 ![Okta SAML config for StackBlitz](./assets/okta-sso/okta-integration-4.png)
 
