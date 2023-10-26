@@ -22,7 +22,7 @@ For the air gapped installations, you will need:
 
 ## Downloading Releases for Installation
 
-You will need to download a the following from your StackBlitz Enterprise license page:
+You will need to download the following from your StackBlitz Enterprise license page:
 
 - a StackBlitz Enterprise Edition License,
 - Kots CLI (if not already installed),
@@ -121,7 +121,7 @@ kubectl kots upstream upgrade stackblitz \
   -n <admin console namespace>
 ```
 
-This will create a new release in the Admin Panel, where you can review the changes and update any configuration if necessary before deplying.
+This will create a new release in the Admin Panel, where you can review the changes and update any configuration if necessary before deploying.
 
 Optionally, the `--deploy` flag can be added to the previous command to deploy the release automatically.
 
