@@ -17,7 +17,7 @@ Air gapped installs will not require outbound network access, but application an
 
 For the air gapped installations, you will need:
 
-- the access to a container image registry where images from the air gapped bundled will be mirrored and re-tagged, 
+- the access to a container image registry where images from the air gapped bundle will be mirrored and re-tagged, 
 - an enterprise license with air gapping enabled; contact [enterprise@stackblitz.com](mailto:enterprise@stackblitz.com) if you need one.
 
 ## Downloading Releases for Installation
