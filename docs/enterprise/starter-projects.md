@@ -117,7 +117,7 @@ If you want to use a different project slug than `polymer-base`, for example `st
 
 :::warning Having trouble loading a project? Need to create a support bundle?
 
-A support bundle provides specific logs and analysis that helps our team to troubleshoot to better assist you. We recommending following the steps outline in [Replicated's "Generating Support Bundles" docs](https://docs.replicated.com/enterprise/troubleshooting-an-app) to generate a support bundle via the kots dashboard.
+A support bundle provides specific logs and analysis that helps our team to troubleshoot to better assist you. We recommend following the steps outlined in [Replicated's "Generating Support Bundles" docs](https://docs.replicated.com/enterprise/troubleshooting-an-app) to generate a support bundle via the kots dashboard.
 :::
 
 Navigate to the kots dashboard and click on the Troubleshoot tab at the top.
