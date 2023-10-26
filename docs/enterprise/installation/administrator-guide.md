@@ -39,7 +39,7 @@ If you have an existing cluster, you can run the following command from a workst
 
 This will install the kots (Kubernetes off-the-shelf software) plugin on the workstation, then install the StackBlitz admin console on the cluster, and set up a port forward on the ClusterIP to enable you to access the admin from `http://localhost:8800`. From here, you’ll be walked through the preflight checks, configuration, and initial deployment of the application.
 
-Please please see our advanced existing cluster installation instructions if you need to use your existing deployment pipeline (for instance, internal image registry, version control system), make custom configuration tweaks and/or deploy to multiple or remote environments.
+Please see our advanced existing cluster installation instructions if you need to use your existing deployment pipeline (for instance, internal image registry, version control system), make custom configuration tweaks and/or deploy to multiple or remote environments.
 
 # Troubleshooting
 
