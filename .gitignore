@@ -1,6 +1,13 @@
-build
+# Dependencies
 node_modules
+
+# Build & dev artifacts
+build
 .vitepress/cache
+
+# IDE config
+.vscode/*
+!.vscode/extensions.json
 
 # Local env
 .env
