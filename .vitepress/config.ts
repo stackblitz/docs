@@ -6,9 +6,14 @@ import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
 
+const BASE_URL = '/';
+const SITEMAP_BASE_URL = `https://developer.stackblitz.com${BASE_URL}`;
+
 export default defineConfig({
   srcDir: 'docs',
   outDir: 'build',
+  assetsDir: 'assets',
+  base: BASE_URL,
 
   // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
   cleanUrls: true,
@@ -26,7 +31,7 @@ export default defineConfig({
   // Sitemap
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://developer.stackblitz.com',
+    hostname: SITEMAP_BASE_URL,
   },
 
   // Theme
@@ -65,7 +70,7 @@ export default defineConfig({
 
 function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
   const tags: HeadConfig[] = [
-    ['link', { rel: 'icon', type: 'image/png', href: '/img/theme/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${BASE_URL}img/theme/favicon.png` }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
