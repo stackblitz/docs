@@ -7,7 +7,9 @@ const { Layout } = DefaultTheme;
 <template>
   <Layout>
     <template #doc-footer-before>
-      <Feedback />
+      <ClientOnly>
+        <Feedback />
+      </ClientOnly>
     </template>
   </Layout>
 </template>
