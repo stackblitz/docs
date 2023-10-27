@@ -54,8 +54,8 @@ To help your users quickly spin up the entire environment with your project, you
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in Codeflow" src="/img/open_in_codeflow.svg" /> | <a href="/img/open_in_codeflow.svg" target="_blank">open_in_codeflow.svg</a> |
-| <img alt="Open in Codeflow" src="/img/open_in_codeflow_small.svg" /> | <a href="/img/open_in_codeflow_small.svg" target="_blank">open_in_codeflow_small.svg</a> |
+| <img alt="Open in Codeflow" src="https://developer.stackblitz.com/img/open_in_codeflow.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_codeflow.svg" target="_blank">open_in_codeflow.svg</a> |
+| <img alt="Open in Codeflow" src="https://developer.stackblitz.com/img/open_in_codeflow_small.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_codeflow_small.svg" target="_blank">open_in_codeflow_small.svg</a> |
 
 ::: tip
 You can either host the images on your servers or directly use our image URLs.

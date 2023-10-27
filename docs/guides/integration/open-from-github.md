@@ -25,8 +25,8 @@ One of the ways to make your code example stand out in your docs or your reposit
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz.svg" /> | <a href="/img/open_in_stackblitz.svg" target="_blank">open_in_stackblitz.svg</a> |
-| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz_small.svg" /> | <a href="/img/open_in_stackblitz_small.svg" target="_blank">open_in_stackblitz_small.svg</a> |
+| <img alt="Open in StackBlitz" src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_stackblitz.svg" target="_blank">open_in_stackblitz.svg</a> |
+| <img alt="Open in StackBlitz" src="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" target="_blank">open_in_stackblitz_small.svg</a> |
 
 ::: tip
 You can either host on your servers or use our image URLs directly.
