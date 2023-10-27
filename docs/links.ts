@@ -210,8 +210,7 @@ export const homeExternalLinks = [
       'Stay up to date with our news, read tech posts from our engineers, and join in celebrating our community.',
     url: 'https://blog.stackblitz.com/',
     large: true,
-    bgImgLight: '/img/theme/link-bg-bolt-light.jpg',
-    bgImgDark: '/img/theme/link-bg-bolt-dark.jpg',
+    bgImg: 'bolt',
   },
   {
     title: 'Community',
@@ -219,8 +218,7 @@ export const homeExternalLinks = [
       'Join our supportive community on Discord, ask questions, and share your StackBlitz projects.',
     url: 'https://discord.gg/stackblitz',
     large: true,
-    bgImgLight: '/img/theme/link-bg-squares-light.png',
-    bgImgDark: '/img/theme/link-bg-squares-dark.png',
+    bgImg: 'squares',
   },
 ];
 

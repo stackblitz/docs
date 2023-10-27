@@ -2,10 +2,10 @@
 import { computed } from 'vue';
 
 import SvgIcon from '@theme/components/Icons/SvgIcon.vue';
+import { linkBackgrounds, type LinkBackgroundId } from '@theme/img';
 
 const props = defineProps<{
-  bgImgLight?: string;
-  bgImgDark?: string;
+  bgImg?: LinkBackgroundId;
   description: string;
   icon?: string;
   large?: boolean;
@@ -13,18 +13,21 @@ const props = defineProps<{
   url: string;
 }>();
 
-const hasBackgroundImage = computed(() => Boolean(props.bgImgDark && props.bgImgLight));
-
-const imageStyle = computed(() => ({
-  '--bg-dark': props.bgImgDark ? `url(${props.bgImgDark})` : undefined,
-  '--bg-light': props.bgImgLight ? `url(${props.bgImgLight})` : undefined,
-}));
+const backgroundStyle = computed(() => {
+  if (props.bgImg && linkBackgrounds[props.bgImg]) {
+    const { dark, light } = linkBackgrounds[props.bgImg];
+    return {
+      '--bg-dark': `url('${dark}')`,
+      '--bg-light': `url('${light}')`,
+    }
+  }
+});
 </script>
 
 <template>
   <a
-    :class="{ link: true, link_large: large, link_bg: hasBackgroundImage }"
-    :style="hasBackgroundImage ? imageStyle : undefined"
+    :class="{ link: true, link_large: large, link_bg: Boolean(backgroundStyle) }"
+    :style="backgroundStyle"
     :href="url"
   >
     <strong class="title">
