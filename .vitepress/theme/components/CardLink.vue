@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress';
 import { computed } from 'vue';
 
 import SvgIcon from '@theme/components/Icons/SvgIcon.vue';
@@ -28,7 +29,7 @@ const backgroundStyle = computed(() => {
   <a
     :class="{ link: true, link_large: large, link_bg: Boolean(backgroundStyle) }"
     :style="backgroundStyle"
-    :href="url"
+    :href="withBase(url)"
   >
     <strong class="title">
       <SvgIcon v-if="icon" :icon="icon" class="icon" />

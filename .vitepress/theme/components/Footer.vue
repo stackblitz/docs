@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress';
 import type { FooterSection } from '@theme/data/types';
 
 defineProps<{ sections: FooterSection[] }>();
@@ -13,7 +14,7 @@ const year = new Date().getFullYear();
         <h4>{{ section.title }}</h4>
         <ul>
           <li v-for="link of section.items">
-            <a :href="link.link">{{ link.text }}</a>
+            <a :href="withBase(link.link)">{{ link.text }}</a>
           </li>
         </ul>
       </div>
