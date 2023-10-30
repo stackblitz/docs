@@ -15,7 +15,7 @@ StackBlitz EE is built on Kubernetes and PostgreSQL, which makes shipping your S
 
 ## Splunk
 
-Splunk offers 2 official plugins that are compatible with your embedded StackBlitz EE installtion:
+Splunk offers two official plugins that are compatible with your embedded StackBlitz EE installation:
 
 ### Splunk DB Connect (DBX)
 

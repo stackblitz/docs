@@ -26,17 +26,14 @@ export default defineConfig({
   // Sitemap
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://developer.stackblitz.com'
+    hostname: 'https://developer.stackblitz.com',
   },
 
   // Theme
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
     logo: '/img/theme/docs-logo.svg',
-    search: {
-      provider: 'algolia',
-      options: getAlgoliaConfig(process.env),
-    },
+    search: getSearchConfig(process.env),
     editLink: {
       pattern: 'https://pr.new/stackblitz/docs/edit/main/docs/:path',
       text: 'Edit this page',
@@ -90,17 +87,15 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
   return tags;
 }
 
-function getAlgoliaConfig(env: NodeJS.ProcessEnv) {
+function getSearchConfig(env: NodeJS.ProcessEnv) {
   if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
     return {
-      indexName: 'webcontainers',
-      appId: env.VITE_ALGOLIA_ID,
-      apiKey: env.VITE_ALGOLIA_KEY,
+      provider: 'algolia',
+      options: {
+        indexName: 'stackblitz',
+        appId: env.VITE_ALGOLIA_ID,
+        apiKey: env.VITE_ALGOLIA_KEY,
+      },
     };
   }
-  return {
-    indexName: '',
-    appId: '',
-    apiKey: '',
-  };
 }
