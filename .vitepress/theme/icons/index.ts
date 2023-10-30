@@ -12,8 +12,3 @@ export const iconsUrls: Record<string, string> = Object.fromEntries(
     return [nameMatches ? nameMatches[1] : path, url];
   })
 );
-
-export function iconsUrlsStylesheet(): string {
-  const lines = Object.entries(iconsUrls).map(([name, url]) => `--icon-${name}: url('${url}');`);
-  return `:root {\n${lines.join('\n')}\n}`;
-}

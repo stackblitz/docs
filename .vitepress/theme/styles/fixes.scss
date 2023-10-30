@@ -450,27 +450,27 @@
   &.info {
     --block-border-color: var(--vp-custom-block-info-border);
     --block-icon-color: var(--vp-custom-block-info-text);
-    --block-icon-url: var(--icon-fa-books-light);
+    --block-icon-url: url('@theme/icons/fa-books-light.svg');
   }
   &.tip {
     --block-border-color: var(--vp-custom-block-tip-border);
     --block-icon-color: var(--vp-custom-block-tip-text);
-    --block-icon-url: var(--icon-fa-sparkles-regular);
+    --block-icon-url: url('@theme/icons/fa-sparkles-regular.svg');
   }
   &.warning {
     --block-border-color: var(--vp-custom-block-warning-border);
     --block-icon-color: var(--vp-custom-block-warning-text);
-    --block-icon-url: var(--icon-fa-triangle-exclamation-regular);
+    --block-icon-url: url('@theme/icons/fa-triangle-exclamation-regular.svg');
   }
   &.danger {
     --block-border-color: var(--vp-custom-block-danger-border);
     --block-icon-color: var(--vp-custom-block-danger-text);
-    --block-icon-url: var(--icon-fa-triangle-exclamation-regular);
+    --block-icon-url: url('@theme/icons/fa-triangle-exclamation-regular.svg');
   }
   &.details {
     --block-border-color: var(--vp-custom-block-details-border);
     --block-icon-color: var(--vp-custom-block-details-text);
-    --block-icon-url: var(--icon-fa-gear);
+    --block-icon-url: url('@theme/icons/fa-gear.svg');
   }
 }
 
@@ -630,7 +630,7 @@ h2 + .custom-block {
 
   &::before {
     --twitter-icon-mask-size: 26px;
-    --twitter-icon-img: var(--icon-fa-twitter);
+    --block-icon-url: url('@theme/icons/fa-twitter.svg');
     content: '';
     position: absolute;
     top: 16px;
