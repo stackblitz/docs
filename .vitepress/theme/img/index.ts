@@ -7,7 +7,7 @@ import stepsLight from './link-bg-steps-light.png';
 
 export type LinkBackgroundId = 'bolt' | 'squares' | 'steps';
 
-export const linkBackgrounds: Record<LinkBackgroundId, { dark: string; light: string }> = {
+export const linkBackgrounds: Record<string, { dark: string; light: string }> = {
   bolt: { dark: boltDark, light: boltLight },
   squares: { dark: squaresDark, light: squaresLight },
   steps: { dark: stepsDark, light: stepsLight },

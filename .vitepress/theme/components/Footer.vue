@@ -1,10 +1,7 @@
 <script setup lang="ts">
-interface Section {
-  title: string;
-  items: { text: string; link: string }[];
-}
+import type { FooterSection } from '@theme/data/types';
 
-defineProps<{ sections: Section[] }>();
+defineProps<{ sections: FooterSection[] }>();
 
 const year = new Date().getFullYear();
 </script>

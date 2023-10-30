@@ -2,10 +2,10 @@
 import { computed } from 'vue';
 
 import SvgIcon from '@theme/components/Icons/SvgIcon.vue';
-import { linkBackgrounds, type LinkBackgroundId } from '@theme/img';
+import { linkBackgrounds } from '@theme/img';
 
 const props = defineProps<{
-  bgImg?: LinkBackgroundId;
+  bgImg?: string;
   description: string;
   icon?: string;
   large?: boolean;
@@ -19,7 +19,7 @@ const backgroundStyle = computed(() => {
     return {
       '--bg-dark': `url('${dark}')`,
       '--bg-light': `url('${light}')`,
-    }
+    };
   }
 });
 </script>

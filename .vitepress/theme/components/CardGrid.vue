@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import CardLink from './CardLink.vue';
+import CardLink from '@theme/components/CardLink.vue';
+import type { CardLink as CardLinkProps } from '@theme/data/types';
 
-defineProps<{ links: any[] }>();
+defineProps<{ links: CardLinkProps[] }>();
 </script>
 
 <template>

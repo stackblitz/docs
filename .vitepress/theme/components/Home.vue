@@ -3,10 +3,12 @@ import Footer from './Footer.vue';
 import CardGrid from './CardGrid.vue';
 import HomeIntro from './HomeIntro.vue';
 
+import type { CardLink, FooterSection } from '@theme/data/types';
+
 defineProps<{
-  topLinks: any[];
-  externalLinks: any[];
-  footerSections: any[];
+  topLinks: CardLink[];
+  externalLinks: CardLink[];
+  footerSections: FooterSection[];
 }>();
 </script>
 

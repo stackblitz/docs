@@ -1,22 +1,9 @@
+import type { CardLink, FooterSection, MenuLinkGroup, MenuLinkItem } from '@theme/data/types';
+
 // --------------------------------
 // Link Groups / Sidebar
 
-type LinkGroup =
-  | 'api'
-  | 'codeflow'
-  | 'teams'
-  | 'enterprise'
-  | 'integrationGuide'
-  | 'userGuide'
-  | 'webcontainers';
-
-interface LinkItem {
-  text: string;
-  link: string;
-  items?: LinkItem[];
-}
-
-const groupLinks: Record<LinkGroup, LinkItem[]> = {
+const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
   userGuide: [
     { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
     { text: 'Getting started', link: '/guides/user-guide/getting-started' },
@@ -106,7 +93,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
   ],
 };
 
-const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
+const linkGroups: Record<MenuLinkGroup, { text: string; items: MenuLinkItem[] }> = {
   userGuide: {
     text: 'User Guide',
     items: groupLinks.userGuide,
@@ -137,11 +124,11 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
   },
 };
 
-export const defaultGroupLink = (linkGroup: LinkGroup) => groupLinks[linkGroup][0].link;
+export const defaultGroupLink = (linkGroup: MenuLinkGroup) => groupLinks[linkGroup][0].link;
 
 export const sidebarLinks = (
   sidebar: 'main' | 'enterprise',
-  activeLinkGroups: LinkGroup[] = []
+  activeLinkGroups: MenuLinkGroup[] = []
 ) => {
   if (sidebar === 'enterprise') {
     return [linkGroups.enterprise];
@@ -151,14 +138,14 @@ export const sidebarLinks = (
     .filter(([key]) => key !== 'enterprise')
     .map(([key, data]) => ({
       ...data,
-      collapsed: !activeLinkGroups.includes(key as LinkGroup),
+      collapsed: !activeLinkGroups.includes(key as MenuLinkGroup),
     }));
 };
 
 // --------------------------------
 // Home
 
-export const homeTopLinks = [
+export const homeTopLinks: CardLink[] = [
   {
     icon: 'fa-file-import',
     title: 'Get Started',
@@ -203,7 +190,7 @@ export const homeTopLinks = [
   },
 ];
 
-export const homeExternalLinks = [
+export const homeExternalLinks: CardLink[] = [
   {
     title: 'StackBlitz Blog',
     description:
@@ -225,7 +212,7 @@ export const homeExternalLinks = [
 // --------------------------------
 // Footer
 
-export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
+export const footerSections: FooterSection[] = [
   {
     title: 'Workspaces',
     items: [
