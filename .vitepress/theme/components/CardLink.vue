@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
+import SvgIcon from '@theme/components/Icons/SvgIcon.vue';
+
 const props = defineProps<{
   bgImgLight?: string;
   bgImgDark?: string;
@@ -14,7 +16,6 @@ const props = defineProps<{
 const hasBackgroundImage = computed(() => Boolean(props.bgImgDark && props.bgImgLight));
 
 const imageStyle = computed(() => ({
-  '--icon': props.icon ? `url(${props.icon})` : undefined,
   '--bg-dark': props.bgImgDark ? `url(${props.bgImgDark})` : undefined,
   '--bg-light': props.bgImgLight ? `url(${props.bgImgLight})` : undefined,
 }));
@@ -23,11 +24,11 @@ const imageStyle = computed(() => ({
 <template>
   <a
     :class="{ link: true, link_large: large, link_bg: hasBackgroundImage }"
-    :style="hasBackgroundImage || icon ? imageStyle : undefined"
+    :style="hasBackgroundImage ? imageStyle : undefined"
     :href="url"
   >
     <strong class="title">
-      <span v-if="icon" :src="icon" class="icon"></span>
+      <SvgIcon v-if="icon" :icon="icon" class="icon" />
       {{ title }}
     </strong>
     <span class="description">
@@ -37,8 +38,6 @@ const imageStyle = computed(() => ({
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars';
-
 .link {
   --icon-color: var(--sb-foreground-highlight);
   --card-padding-base: 20px 24px 24px;
@@ -58,14 +57,14 @@ const imageStyle = computed(() => ({
   transition: box-shadow 0.1s ease, transform 0.1s ease;
   transform: translateZ(0); // fixes opacity flicker when other elements are hovered :|
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: 680px) {
     --card-padding-base: 28px 36px 32px;
     --card-padding-large: 28px 36px 32px;
   }
-  @media (min-width: $bp-large) {
+  @media (min-width: 960px) {
     --card-padding-large: 44px 60px;
   }
-  @media (min-width: $bp-xlarge) {
+  @media (min-width: 1200px) {
     --card-padding-base: 32px 48px 36px;
     --card-padding-large: 60px 72px;
     border-radius: 12px;
@@ -112,16 +111,10 @@ const imageStyle = computed(() => ({
 }
 
 .icon {
-  display: block;
-  flex: none;
-  width: 18px;
-  height: 18px;
   margin-left: -2px;
   margin-right: 12px;
-  background-color: var(--icon-color, currentColor);
-  transition: background-color 0.1s ease, opacity 0.1s ease;
-  -webkit-mask: var(--icon) center/contain no-repeat;
-  mask: var(--icon) center/contain no-repeat;
+  color: var(--icon-color, currentColor);
+  transition: color 0.1s ease;
 }
 
 .description {
@@ -142,7 +135,7 @@ const imageStyle = computed(() => ({
 
 // Specific style for large cards,
 // on large screens only
-@media (min-width: $bp-large) {
+@media (min-width: 960px) {
   .link_large {
     padding: var(--card-padding-large);
 

@@ -160,42 +160,42 @@ export const sidebarLinks = (
 
 export const homeTopLinks = [
   {
-    icon: '/icons/fa-file-import.svg',
+    icon: 'fa-file-import',
     title: 'Get Started',
     description:
       'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
     url: '/guides/user-guide/what-is-stackblitz',
   },
   {
-    icon: '/icons/fa-browser.svg',
+    icon: 'fa-browser',
     title: 'Codeflow',
     description:
       'One click opens a full in-browser IDE for your repos, issues, and PRs. No more cloning, installing, stashing!',
     url: '/codeflow/what-is-codeflow',
   },
   {
-    icon: '/icons/fa-brackets-curly.svg',
+    icon: 'fa-brackets-curly',
     title: 'API Reference',
     description:
       'Embed GitHub repos, create new projects, build educational experiences, all programmatically with our SDK.',
     url: '/platform/api/javascript-sdk',
   },
   {
-    icon: '/icons/fa-life-ring.svg',
+    icon: 'fa-life-ring',
     title: 'Integrating StackBlitz',
     description:
       'Follow guides on building interactive playgrounds, improving bug repros, and using StackBlitz for tech education.',
     url: '/guides/integration/open-from-github',
   },
   {
-    icon: '/icons/fa-users.svg',
+    icon: 'fa-users',
     title: 'Teams',
     description:
       'With StackBlitz Teams you create a secure, private workspace for you and your teammates.',
     url: '/teams/what-is-stackblitz-teams',
   },
   {
-    icon: '/icons/fa-users.svg',
+    icon: 'fa-server',
     title: 'Enterprise Server',
     description:
       'Run StackBlitz behind your firewall, on new or existing Kubernetes clusters, with options for air gapping and SSO.',

@@ -450,27 +450,27 @@
   &.info {
     --block-border-color: var(--vp-custom-block-info-border);
     --block-icon-color: var(--vp-custom-block-info-text);
-    --block-icon-url: url('/icons/fa-books-light.svg');
+    --block-icon-url: var(--icon-fa-books-light);
   }
   &.tip {
     --block-border-color: var(--vp-custom-block-tip-border);
     --block-icon-color: var(--vp-custom-block-tip-text);
-    --block-icon-url: url('/icons/fa-sparkles-regular.svg');
+    --block-icon-url: var(--icon-fa-sparkles-regular);
   }
   &.warning {
     --block-border-color: var(--vp-custom-block-warning-border);
     --block-icon-color: var(--vp-custom-block-warning-text);
-    --block-icon-url: url('/icons/fa-triangle-exclamation-regular.svg');
+    --block-icon-url: var(--icon-fa-triangle-exclamation-regular);
   }
   &.danger {
     --block-border-color: var(--vp-custom-block-danger-border);
     --block-icon-color: var(--vp-custom-block-danger-text);
-    --block-icon-url: url('/icons/fa-triangle-exclamation-regular.svg');
+    --block-icon-url: var(--icon-fa-triangle-exclamation-regular);
   }
   &.details {
     --block-border-color: var(--vp-custom-block-details-border);
     --block-icon-color: var(--vp-custom-block-details-text);
-    --block-icon-url: url('/icons/fa-gear.svg');
+    --block-icon-url: var(--icon-fa-gear);
   }
 }
 
@@ -630,7 +630,7 @@ h2 + .custom-block {
 
   &::before {
     --twitter-icon-mask-size: 26px;
-    --twitter-icon-img: url('/icons/fa-twitter.svg');
+    --twitter-icon-img: var(--icon-fa-twitter);
     content: '';
     position: absolute;
     top: 16px;

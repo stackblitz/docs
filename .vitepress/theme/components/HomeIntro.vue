@@ -14,8 +14,6 @@ import BooksIcon from './BooksIcon.vue';
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars';
-
 header {
   position: relative;
   display: flex;
@@ -45,7 +43,7 @@ header .icon {
     display: none;
   }
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: 680px) {
     width: 200px;
     height: 200px;
   }

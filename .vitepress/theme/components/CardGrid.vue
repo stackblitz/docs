@@ -13,8 +13,6 @@ defineProps<{ links: any[] }>();
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars';
-
 .grid {
   display: grid;
   max-width: 1280px;
@@ -23,14 +21,14 @@ defineProps<{ links: any[] }>();
   gap: 24px;
   list-style: none;
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: 680px) {
     grid-template-columns: 1fr 1fr;
 
     .item > a {
       height: 100%;
     }
   }
-  @media (min-width: $bp-large) {
+  @media (min-width: 960px) {
     grid-template-columns: repeat(6, 1fr);
     .item {
       grid-column: span 2;

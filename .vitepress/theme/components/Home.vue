@@ -23,8 +23,6 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
-
 .top-section {
   padding-bottom: 60px;
 }
@@ -46,7 +44,7 @@ defineProps<{
     font-weight: 600;
   }
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: 680px) {
     padding-top: 20px;
     padding-bottom: 80px;
     h2 {

@@ -26,8 +26,6 @@ const year = new Date().getFullYear();
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars';
-
 footer {
   color: #fff;
   background-color: #131519;

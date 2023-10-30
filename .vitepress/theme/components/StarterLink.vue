@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import SvgIcon from '@theme/components/Icons/SvgIcon.vue';
 
 const props = defineProps<{
   icon: string;
@@ -19,8 +20,16 @@ const subtitle = computed(() => {
 
 <template>
   <a class="link" :href="link" rel="noopener" target="_blank">
-    <img v-if="icon" alt="" :src="icon" class="icon" :class="{ icon_invert: iconInvert }" />
-    <span v-else class="default-icon"></span>
+    <img
+      v-if="icon"
+      alt=""
+      class="icon"
+      :class="{ icon_invert: iconInvert }"
+      height="24"
+      width="24"
+      :src="icon"
+    />
+    <SvgIcon v-else icon="fa-link" size="24px" />
     <span class="text">
       <span class="title">{{ title }}</span>
       <span class="subtitle">{{ subtitle }}</span>
@@ -29,10 +38,7 @@ const subtitle = computed(() => {
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars';
-
 .link {
-  --default-icon: url(/icons/fa-link.svg);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -61,23 +67,12 @@ const subtitle = computed(() => {
 
 .icon {
   flex: none;
-  width: 24px;
-  height: 24px;
   object-fit: contain;
   object-position: center;
 }
 
 :root.dark .icon_invert {
   filter: invert(1) hue-rotate(0.5turn);
-}
-
-.default-icon {
-  flex: none;
-  width: 24px;
-  height: 24px;
-  background-color: currentColor;
-  -webkit-mask: var(--default-icon) center/contain no-repeat;
-  mask: var(--default-icon) center/contain no-repeat;
 }
 
 .text {

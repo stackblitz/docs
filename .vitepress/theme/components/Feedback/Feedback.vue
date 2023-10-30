@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { watch, ref, nextTick } from 'vue';
 import { useRoute } from 'vitepress';
-import LoadingIcon from '@theme/components/Icons/LoadingIcon.vue';
-import { sendEvent } from '@theme/scripts/gtag';
+
 import CardSingle from '@theme/components/CardLists/CardSingle.vue';
+import LoadingIcon from '@theme/components/Icons/LoadingIcon.vue';
+import SvgIcon from '@theme/components/Icons/SvgIcon.vue';
+import { sendEvent } from '@theme/scripts/gtag';
 
 enum FeedbackState {
   START = 'START',
@@ -82,78 +84,93 @@ watch(
 </script>
 
 <template>
-    <div class="feedbackContainer">
+  <div class="feedbackContainer">
+    <form name="webcontainer-api-doc-feedback" data-netlify="true" hidden>
+      <textarea name="feedback"></textarea>
+      <input name="wasHelpful" />
+      <input name="page" />
+    </form>
 
-      <form name="webcontainer-api-doc-feedback" data-netlify="true" hidden>
-        <textarea name="feedback"></textarea>
-        <input name="wasHelpful" />
-        <input name="page" />
-      </form>
-
-        <p class="title">Was this page helpful?</p>
-        <div class="buttonContainer">
-
-          <CardSingle :link="![FeedbackState.NO].includes(currentState)">
-            <button class="button"
-              :class="
-                [FeedbackState.YES].includes(currentState) && 'active',
-                [FeedbackState.NO].includes(currentState) && 'deselected'
-              "
-              @click="onButtonClick(FeedbackState.YES)"
-            >
-              <span class="icon thumbsUp"></span> Yes
-            </button>
-          </CardSingle>
-
-          <CardSingle :link="![FeedbackState.YES].includes(currentState)">
-            <button class="button"
-              :class="
-                [FeedbackState.NO].includes(currentState) && 'active',
-                [FeedbackState.YES].includes(currentState) && 'deselected'
-              "
-              @click="onButtonClick(FeedbackState.NO)"
-            >
-              <span class="icon thumbsDown"></span> No
-            </button>
-          </CardSingle>
-
-          <button v-if="[FeedbackState.YES, FeedbackState.NO].includes(currentState)" class="cancel" @click="cancelForm">Cancel</button>
-        </div>
-
-      <template v-if="[FeedbackState.YES, FeedbackState.NO].includes(currentState)">
-        <form
-          class="form"
-          name="doc-feedback"
-          method="post"
-          @submit.prevent="submitForm"
-          data-netlify="true"
+    <p class="title">Was this page helpful?</p>
+    <div class="buttonContainer">
+      <CardSingle :link="![FeedbackState.NO].includes(currentState)">
+        <button
+          class="button"
+          :class="
+            ([FeedbackState.YES].includes(currentState) && 'active',
+            [FeedbackState.NO].includes(currentState) && 'deselected')
+          "
+          @click="onButtonClick(FeedbackState.YES)"
         >
-          <input type="hidden" name="form-name" value="doc-feedback" />
-          <label class="title label" for="feedback">
-            <template v-if="currentState === FeedbackState.YES"><span class="icon thumbsUp"></span> What did you find most helpful? </template>
-            <template v-else><span class="icon thumbsDown"></span> What should we improve? </template>
-          </label>
-          <textarea
-            id="feedback"
-            name="feedback"
-            class="textarea"
-            v-model="feedback"
-            ref="feedbackTextarea"
-            autofocus
-          ></textarea>
-          <button class="button submit" type="submit" :disabled="feedback.length === 0">
-            <LoadingIcon v-if="isSending" :size="11" />Submit
-          </button>
-          <p v-if="hasError" class="error">Sorry, something went wrong. Please try it again later.</p>
-        </form>
-      </template>
+          <SvgIcon class="thumbsUp" icon="fa-thumbs-up" size="12px" />
+          Yes
+        </button>
+      </CardSingle>
 
-      <template v-else-if="currentState === FeedbackState.END">
-        <p class="end">Thank you for helping improve our documentation! <span class="red">&#9829;</span></p>
-      </template>
+      <CardSingle :link="![FeedbackState.YES].includes(currentState)">
+        <button
+          class="button"
+          :class="
+            ([FeedbackState.NO].includes(currentState) && 'active',
+            [FeedbackState.YES].includes(currentState) && 'deselected')
+          "
+          @click="onButtonClick(FeedbackState.NO)"
+        >
+          <SvgIcon class="thumbsDown" icon="fa-thumbs-down" size="12px" />
+          No
+        </button>
+      </CardSingle>
 
+      <button
+        v-if="[FeedbackState.YES, FeedbackState.NO].includes(currentState)"
+        class="cancel"
+        @click="cancelForm"
+      >
+        Cancel
+      </button>
     </div>
-  </template>
+
+    <template v-if="[FeedbackState.YES, FeedbackState.NO].includes(currentState)">
+      <form
+        class="form"
+        name="doc-feedback"
+        method="post"
+        @submit.prevent="submitForm"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="doc-feedback" />
+        <label class="title label" for="feedback">
+          <template v-if="currentState === FeedbackState.YES">
+            <SvgIcon class="thumbsUp" icon="fa-thumbs-up" size="12px" />
+            What did you find most helpful?
+          </template>
+          <template v-else>
+            <SvgIcon class="thumbsDown" icon="fa-thumbs-down" size="12px" />
+            What should we improve?
+          </template>
+        </label>
+        <textarea
+          id="feedback"
+          name="feedback"
+          class="textarea"
+          v-model="feedback"
+          ref="feedbackTextarea"
+          autofocus
+        ></textarea>
+        <button class="button submit" type="submit" :disabled="feedback.length === 0">
+          <LoadingIcon v-if="isSending" :size="11" />Submit
+        </button>
+        <p v-if="hasError" class="error">Sorry, something went wrong. Please try it again later.</p>
+      </form>
+    </template>
+
+    <template v-else-if="currentState === FeedbackState.END">
+      <p class="end">
+        Thank you for helping improve our documentation! <span class="red">&#9829;</span>
+      </p>
+    </template>
+  </div>
+</template>
 
 <style scoped lang="scss">
 .feedbackContainer {
@@ -217,7 +234,7 @@ watch(
   &.active,
   &:hover:not(.deselected):not(.submit:disabled) {
     color: var(--vp-c-text-1);
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
   }
   &.active {
     cursor: default;
@@ -238,31 +255,21 @@ watch(
   }
 }
 
-.icon {
-  display: block;
-  width: 12px;
-  height: 12px;
-  background-color: var(--vp-c-text-3);
+.thumbsUp,
+.thumbsDown {
+  color: var(--vp-c-text-3);
 }
 
-.thumbsUp {
-  -webkit-mask: url('/icons/fa-thumbs-up.svg') center/contain no-repeat;
-  mask: url('/icons/fa-thumbs-up.svg') center/contain no-repeat;
-}
 .title.label .thumbsUp,
 .button.active .thumbsUp,
 .button:hover:not(.deselected) .thumbsUp {
-  background-color: var(--icon-color-green);
+  color: var(--icon-color-green);
 }
 
-.thumbsDown {
-  -webkit-mask: url('/icons/fa-thumbs-down.svg') center/contain no-repeat;
-  mask: url('/icons/fa-thumbs-down.svg') center/contain no-repeat;
-}
 .title.label .thumbsDown,
 .button.active .thumbsDown,
 .button:hover:not(.deselected) .thumbsDown {
-  background-color: var(--icon-color-red);
+  color: var(--icon-color-red);
 }
 
 .form {
@@ -290,7 +297,7 @@ watch(
   font-size: 12.5px;
   font-weight: 600;
   border-radius: 24px;
-  box-shadow: inset  0 0 0 1px var(--vp-c-bg-soft);
+  box-shadow: inset 0 0 0 1px var(--vp-c-bg-soft);
 }
 
 .error {
