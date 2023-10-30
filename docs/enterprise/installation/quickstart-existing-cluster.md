@@ -63,7 +63,7 @@ Then, install the Admin Console for StackBlitz by running:
 kubectl kots install stackblitz
 ```
 
-You will be prompted for a namespace in your cluster in which StackBlitz will be installed. By default, the namespace is `stackblitz`. Then Yyu will be prompted to set a password for the Admin Console:
+You will be prompted for a namespace in your cluster in which StackBlitz will be installed. By default, the namespace is `stackblitz`. Then you will be prompted to set a password for the Admin Console:
 
 ```sh
 Enter the namespace to deploy to: stackblitz
