@@ -1,7 +1,7 @@
 ---
 layout: page
 title: StackBlitz Docs
-og_image: index
+og_image: index.png
 ---
 
 <script setup lang="ts">

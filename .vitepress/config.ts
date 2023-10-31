@@ -7,6 +7,7 @@ import { defaultGroupLink, sidebarLinks } from '../docs/links';
 dotenv.config();
 
 const BASE = '/';
+const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE}`;
 
 export default defineConfig({
   srcDir: './docs',
@@ -33,7 +34,7 @@ export default defineConfig({
   // Sitemap
   lastUpdated: true,
   sitemap: {
-    hostname: `https://developer.stackblitz.com${BASE}`,
+    hostname: BASE_WITH_ORIGIN,
   },
 
   /**
@@ -45,7 +46,7 @@ export default defineConfig({
     // Get the raw title and description from frontmatter,
     // rather than the title which has the site suffix
     const { title, description, og_image } = pageData.frontmatter;
-    const isHome = page === 'index.md';
+    const og_type = page === 'index.md' ? 'website' : 'article';
 
     // Check what meta tags we already have, so we don't override them
     const metas: Record<string, string> = {};
@@ -59,12 +60,12 @@ export default defineConfig({
     const tags: HeadConfig[] = [];
 
     // Add opengraph tags
-    tags.push(['meta', { property: 'og:type', content: isHome ? 'website' : 'article' }]);
+    tags.push(['meta', { property: 'og:type', content: og_type }]);
     if (title && !metas['og:title']) {
       tags.push(['meta', { property: 'og:title', content: title }]);
     }
     if (og_image && !metas['og:image']) {
-      const url = `https://developer.stackblitz.com/img/og/${og_image}`;
+      const url = `${BASE_WITH_ORIGIN}img/og/${og_image}`;
       tags.push(['meta', { property: 'og:image', content: url }]);
     }
 
