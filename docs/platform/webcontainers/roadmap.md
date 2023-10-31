@@ -1,11 +1,7 @@
 ---
-title: &title Roadmap
-description: &description "Get insights into our current and future plans for features in WebContainer. Let us know what you think!"
-head:
-  - ['meta', {property: 'og:title', content: *title}]
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-project-configuration.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Roadmap
+description: "Get insights into our current and future plans for features in WebContainer. Let us know what you think!"
+og_image: webcontainer-project-configuration.png
 ---
 
 # {{ $frontmatter.title }}

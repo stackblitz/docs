@@ -1,11 +1,7 @@
 ---
-title: &title Managing dependencies with the SDK
-description: &description When creating new projects with the `sdk.openProject` and `sdk.embedProject` methods, you can specify which npm dependencies should be installed on startup.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-managing-dependencies.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Managing dependencies with the SDK
+description: When creating new projects with the `sdk.openProject` and `sdk.embedProject` methods, you can specify which npm dependencies should be installed on startup.
+og_image: sdk-managing-dependencies.png
 ---
 
 # {{ $frontmatter.title }}
