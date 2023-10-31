@@ -1,10 +1,8 @@
 <script setup lang="ts">
-interface Section {
-  title: string;
-  items: { text: string; link: string }[];
-}
+import { withBase } from 'vitepress';
+import type { FooterSection } from '@theme/data/types';
 
-defineProps<{ sections: Section[] }>();
+defineProps<{ sections: FooterSection[] }>();
 
 const year = new Date().getFullYear();
 </script>
@@ -16,7 +14,7 @@ const year = new Date().getFullYear();
         <h4>{{ section.title }}</h4>
         <ul>
           <li v-for="link of section.items">
-            <a :href="link.link">{{ link.text }}</a>
+            <a :href="withBase(link.link)">{{ link.text }}</a>
           </li>
         </ul>
       </div>
@@ -26,8 +24,6 @@ const year = new Date().getFullYear();
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars';
-
 footer {
   color: #fff;
   background-color: #131519;

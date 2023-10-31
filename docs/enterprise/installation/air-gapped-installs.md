@@ -17,12 +17,12 @@ Air gapped installs will not require outbound network access, but application an
 
 For the air gapped installations, you will need:
 
-- the access to a container image registry where images from the air gapped bundled will be mirrored and re-tagged, 
+- the access to a container image registry where images from the air gapped bundle will be mirrored and re-tagged, 
 - an enterprise license with air gapping enabled; contact [enterprise@stackblitz.com](mailto:enterprise@stackblitz.com) if you need one.
 
 ## Downloading Releases for Installation
 
-You will need to download a the following from your StackBlitz Enterprise license page:
+You will need to download the following from your StackBlitz Enterprise license page:
 
 - a StackBlitz Enterprise Edition License,
 - Kots CLI (if not already installed),
@@ -121,7 +121,7 @@ kubectl kots upstream upgrade stackblitz \
   -n <admin console namespace>
 ```
 
-This will create a new release in the Admin Panel, where you can review the changes and update any configuration if necessary before deplying.
+This will create a new release in the Admin Panel, where you can review the changes and update any configuration if necessary before deploying.
 
 Optionally, the `--deploy` flag can be added to the previous command to deploy the release automatically.
 

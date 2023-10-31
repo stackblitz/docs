@@ -1,22 +1,9 @@
+import type { CardLink, FooterSection, MenuLinkGroup, MenuLinkItem } from '@theme/data/types';
+
 // --------------------------------
 // Link Groups / Sidebar
 
-type LinkGroup =
-  | 'api'
-  | 'codeflow'
-  | 'teams'
-  | 'enterprise'
-  | 'integrationGuide'
-  | 'userGuide'
-  | 'webcontainers';
-
-interface LinkItem {
-  text: string;
-  link: string;
-  items?: LinkItem[];
-}
-
-const groupLinks: Record<LinkGroup, LinkItem[]> = {
+const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
   userGuide: [
     { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
     { text: 'Getting started', link: '/guides/user-guide/getting-started' },
@@ -106,7 +93,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
   ],
 };
 
-const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
+const linkGroups: Record<MenuLinkGroup, { text: string; items: MenuLinkItem[] }> = {
   userGuide: {
     text: 'User Guide',
     items: groupLinks.userGuide,
@@ -137,11 +124,11 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
   },
 };
 
-export const defaultGroupLink = (linkGroup: LinkGroup) => groupLinks[linkGroup][0].link;
+export const defaultGroupLink = (linkGroup: MenuLinkGroup) => groupLinks[linkGroup][0].link;
 
 export const sidebarLinks = (
   sidebar: 'main' | 'enterprise',
-  activeLinkGroups: LinkGroup[] = []
+  activeLinkGroups: MenuLinkGroup[] = []
 ) => {
   if (sidebar === 'enterprise') {
     return [linkGroups.enterprise];
@@ -151,51 +138,51 @@ export const sidebarLinks = (
     .filter(([key]) => key !== 'enterprise')
     .map(([key, data]) => ({
       ...data,
-      collapsed: !activeLinkGroups.includes(key as LinkGroup),
+      collapsed: !activeLinkGroups.includes(key as MenuLinkGroup),
     }));
 };
 
 // --------------------------------
 // Home
 
-export const homeTopLinks = [
+export const homeTopLinks: CardLink[] = [
   {
-    icon: '/icons/fa-file-import.svg',
+    icon: 'fa-file-import',
     title: 'Get Started',
     description:
       'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
     url: '/guides/user-guide/what-is-stackblitz',
   },
   {
-    icon: '/icons/fa-browser.svg',
+    icon: 'fa-browser',
     title: 'Codeflow',
     description:
       'One click opens a full in-browser IDE for your repos, issues, and PRs. No more cloning, installing, stashing!',
     url: '/codeflow/what-is-codeflow',
   },
   {
-    icon: '/icons/fa-brackets-curly.svg',
+    icon: 'fa-brackets-curly',
     title: 'API Reference',
     description:
       'Embed GitHub repos, create new projects, build educational experiences, all programmatically with our SDK.',
     url: '/platform/api/javascript-sdk',
   },
   {
-    icon: '/icons/fa-life-ring.svg',
+    icon: 'fa-life-ring',
     title: 'Integrating StackBlitz',
     description:
       'Follow guides on building interactive playgrounds, improving bug repros, and using StackBlitz for tech education.',
     url: '/guides/integration/open-from-github',
   },
   {
-    icon: '/icons/fa-users.svg',
+    icon: 'fa-users',
     title: 'Teams',
     description:
       'With StackBlitz Teams you create a secure, private workspace for you and your teammates.',
     url: '/teams/what-is-stackblitz-teams',
   },
   {
-    icon: '/icons/fa-users.svg',
+    icon: 'fa-server',
     title: 'Enterprise Server',
     description:
       'Run StackBlitz behind your firewall, on new or existing Kubernetes clusters, with options for air gapping and SSO.',
@@ -203,15 +190,14 @@ export const homeTopLinks = [
   },
 ];
 
-export const homeExternalLinks = [
+export const homeExternalLinks: CardLink[] = [
   {
     title: 'StackBlitz Blog',
     description:
       'Stay up to date with our news, read tech posts from our engineers, and join in celebrating our community.',
     url: 'https://blog.stackblitz.com/',
     large: true,
-    bgImgLight: '/img/theme/link-bg-bolt-light.jpg',
-    bgImgDark: '/img/theme/link-bg-bolt-dark.jpg',
+    bgImg: 'bolt',
   },
   {
     title: 'Community',
@@ -219,15 +205,14 @@ export const homeExternalLinks = [
       'Join our supportive community on Discord, ask questions, and share your StackBlitz projects.',
     url: 'https://discord.gg/stackblitz',
     large: true,
-    bgImgLight: '/img/theme/link-bg-squares-light.png',
-    bgImgDark: '/img/theme/link-bg-squares-dark.png',
+    bgImg: 'squares',
   },
 ];
 
 // --------------------------------
 // Footer
 
-export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
+export const footerSections: FooterSection[] = [
   {
     title: 'Workspaces',
     items: [

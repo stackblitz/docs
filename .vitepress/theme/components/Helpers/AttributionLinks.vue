@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import type { Person } from '@theme/data/people';
+  import type { Person } from '@theme/data/types';
   import AttributionLink from '@theme/components/Helpers/AttributionLink.vue';
 
   defineProps<{
