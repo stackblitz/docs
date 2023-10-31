@@ -1,8 +1,5 @@
 ---
-title: &title Environment Variables
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {name: 'twitter:title', content: *title}]
+title: Environment Variables
 ---
 
 # {{ $frontmatter.title }}

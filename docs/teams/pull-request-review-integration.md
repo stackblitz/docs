@@ -1,8 +1,5 @@
 ---
-title: &title Pull Request Review Integration
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {name: 'twitter:title', content: *title}]
+title: Pull Request Review Integration
 ---
 
 # {{ $frontmatter.title }}

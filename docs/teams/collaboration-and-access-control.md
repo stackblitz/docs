@@ -1,8 +1,5 @@
 ---
-title: &title Collaboration and Access Control
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {name: 'twitter:title', content: *title}]
+title: Collaboration and Access Control
 ---
 
 # {{ $frontmatter.title }}
