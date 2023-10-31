@@ -14,6 +14,8 @@ enum FeedbackState {
   END = 'END',
 }
 
+const netlifyFormName = 'stackblitz-doc-feedback';
+
 const route = useRoute();
 const currentState = ref(FeedbackState.START);
 const feedback = ref('');
@@ -53,7 +55,7 @@ function submitForm() {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: encode({
-      'form-name': 'stackblitz-doc-feedback',
+      'form-name': netlifyFormName,
       page: route.path,
       wasHelpful: currentState.value,
       feedback: feedback.value,
@@ -85,7 +87,7 @@ watch(
 
 <template>
   <div class="feedbackContainer">
-    <form name="stackblitz-doc-feedback" data-netlify="true" hidden>
+    <form :name="netlifyFormName" data-netlify="true" hidden>
       <textarea name="feedback"></textarea>
       <input name="wasHelpful" />
       <input name="page" />
