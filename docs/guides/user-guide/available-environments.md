@@ -9,7 +9,7 @@ head:
 ---
 
 <script setup lang="ts">
-  import SupportIcon from '@theme/components/SupportIcon.vue';
+  import SupportIcon from '@theme/components/Icons/SupportIcon.vue';
 </script>
 
 # {{ $frontmatter.title }}
