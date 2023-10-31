@@ -85,7 +85,7 @@ watch(
 
 <template>
   <div class="feedbackContainer">
-    <form name="webcontainer-api-doc-feedback" data-netlify="true" hidden>
+    <form name="stackblitz-doc-feedback" data-netlify="true" hidden>
       <textarea name="feedback"></textarea>
       <input name="wasHelpful" />
       <input name="page" />
