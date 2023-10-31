@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CardSingle from '@theme/components/CardLists/CardSingle.vue';
-import type { Person } from '@theme/data/people';
+import type { Person } from '@theme/data/types';
 
 defineProps<{
   attribution: Person;
