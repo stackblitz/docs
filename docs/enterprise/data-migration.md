@@ -1,12 +1,8 @@
 ---
-title: &title Migrating StackBlitz Data
+title: Migrating StackBlitz Data
 sidebar_label: Data Migration
-description: &description By default, StackBlitz Enterprise Edition (EE) will deploy a basic PostgreSQL container instance for persisting user and project data. This provides trial users with the fastest possible deployment experience but is not well-suited for production use.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-data-migration.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+description: By default, StackBlitz Enterprise Edition (EE) will deploy a basic PostgreSQL container instance for persisting user and project data. This provides trial users with the fastest possible deployment experience but is not well-suited for production use.
+og_image: enterprise-data-migration.png
 ---
 
 # {{ $frontmatter.title }}

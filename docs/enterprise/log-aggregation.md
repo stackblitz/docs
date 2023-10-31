@@ -1,12 +1,8 @@
 ---
-title: &title Aggregating Logs
+title: Aggregating Logs
 sidebar_label: Aggregating Logs
-description: &description StackBlitz EE is built on Kubernetes and PostgreSQL, which makes shipping your StackBlitz EE logs to your existing logging infrastructure relatively simple.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-aggregating-logs.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+description: StackBlitz EE is built on Kubernetes and PostgreSQL, which makes shipping your StackBlitz EE logs to your existing logging infrastructure relatively simple.
+og_image: enterprise-aggregating-logs.png
 ---
 
 # {{ $frontmatter.title }}

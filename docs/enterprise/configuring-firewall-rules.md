@@ -1,11 +1,7 @@
 ---
-title: &title Configuring Firewall Rules
-description: &description Depending on the network configuration, some installs need to have a complete list of expected outbound network traffic (in order to open ports in firewalls) and allowed hosts and IP addresses for outbound connectivity.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-configuring-firewall-rules.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Configuring Firewall Rules
+description: Depending on the network configuration, some installs need to have a complete list of expected outbound network traffic (in order to open ports in firewalls) and allowed hosts and IP addresses for outbound connectivity.
+og_image: enterprise-configuring-firewall-rules.png
 ---
 
 # {{ $frontmatter.title }}
