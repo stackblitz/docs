@@ -8,7 +8,9 @@ import Feedback from '@theme/components/Feedback/Feedback.vue';
 <template>
   <Layout>
     <template #doc-footer-before>
-      <Feedback />
+      <ClientOnly>
+        <Feedback />
+      </ClientOnly>
     </template>
   </Layout>
 </template>
