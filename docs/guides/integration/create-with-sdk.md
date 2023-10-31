@@ -1,11 +1,7 @@
 ---
-title: &title Creating projects with the SDK
-description: &description This page will guide you through the SDK setup and available options.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/creating-projects-with-the-sdk.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Creating projects with the SDK
+description: This page will guide you through the SDK setup and available options.
+og_image: creating-projects-with-the-sdk.png
 ---
 
 <script setup lang="ts">

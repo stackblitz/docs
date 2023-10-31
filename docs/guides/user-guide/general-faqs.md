@@ -1,11 +1,7 @@
 ---
-title: &title General FAQs (Frequently Asked Questions)
-description: &description This page outlines commonly asked questions and answers about StackBlitz.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/general-faqs.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: General FAQs (Frequently Asked Questions)
+description: This page outlines commonly asked questions and answers about StackBlitz.
+og_image: general-faqs.png
 ---
 
 This page outlines commonly asked questions and answers about StackBlitz.

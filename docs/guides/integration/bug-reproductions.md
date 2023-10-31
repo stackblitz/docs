@@ -1,11 +1,7 @@
 ---
-title: &title Bug reproductions
-description: &description A well-described issue is immensely helpful when developing a software product, and a minimal reproduction is one of the most useful part of the conversation.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/bug-reproductions.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Bug reproductions
+description: A well-described issue is immensely helpful when developing a software product, and a minimal reproduction is one of the most useful part of the conversation.
+og_image: bug-reproductions.png
 ---
 
 # {{ $frontmatter.title }}
