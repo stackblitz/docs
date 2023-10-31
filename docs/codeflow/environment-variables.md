@@ -1,11 +1,7 @@
 ---
-title: &title Environment Variables
-description: &description 'How to work with sensitive data using Codeflow'
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/environment-variables.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Environment Variables
+description: 'How to work with sensitive data using Codeflow'
+og_image: environment-variables.png
 ---
 
 # {{ $frontmatter.title }}

@@ -64,7 +64,7 @@ export default defineConfig({
       tags.push(['meta', { property: 'og:title', content: title }]);
     }
     if (og_image && !metas['og:image']) {
-      const url = `https://developer.stackblitz.com/img/og/${og_image}.png`;
+      const url = `https://developer.stackblitz.com/img/og/${og_image}`;
       tags.push(['meta', { property: 'og:image', content: url }]);
     }
 

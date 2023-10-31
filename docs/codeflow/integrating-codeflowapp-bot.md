@@ -1,11 +1,7 @@
 ---
-title: &title Integrating CodeflowApp Bot
-description: &description This page covers integrating CodeflowApp Bot into your GitHub repositories.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/integrating-codeflowapp-bot.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Integrating CodeflowApp Bot
+description: This page covers integrating CodeflowApp Bot into your GitHub repositories.
+og_image: integrating-codeflowapp-bot.png
 ---
 
 # {{ $frontmatter.title }}

@@ -1,11 +1,7 @@
 ---
-title: &title Working in Codeflow IDE
-description: &description Are you ready to make Codeflow your workflow? This page covers what to expect when using Codeflow IDE.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/working-in-codeflow-ide.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Working in Codeflow IDE
+description: Are you ready to make Codeflow your workflow? This page covers what to expect when using Codeflow IDE.
+og_image: working-in-codeflow-ide.png
 ---
 
 # {{ $frontmatter.title }}
