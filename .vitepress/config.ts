@@ -42,29 +42,19 @@ export default defineConfig({
    * Note: this does not run when using the development server,
    * so it must be tested by doing a full build with `npm run build`.
    */
-  transformHead({ head, pageData, page }) {
+  transformHead({ pageData, page }) {
     // Get the raw title and description from frontmatter,
     // rather than the title which has the site suffix
     const { title, description, og_image } = pageData.frontmatter;
     const og_type = page === 'index.md' ? 'website' : 'article';
-
-    // Check what meta tags we already have, so we don't override them
-    const metas: Record<string, string> = {};
-    for (const [tag, attrs] of head) {
-      if (tag === 'meta') {
-        metas[attrs.name ?? attrs.property] = metas.content;
-      }
-    }
 
     // New meta tags to add to the <head>
     const tags: HeadConfig[] = [];
 
     // Add opengraph tags
     tags.push(['meta', { property: 'og:type', content: og_type }]);
-    if (title && !metas['og:title']) {
-      tags.push(['meta', { property: 'og:title', content: title }]);
-    }
-    if (og_image && !metas['og:image']) {
+    tags.push(['meta', { property: 'og:title', content: title }]);
+    if (og_image) {
       const url = `${BASE_WITH_ORIGIN}img/og/${og_image}`;
       tags.push(['meta', { property: 'og:image', content: url }]);
     }
@@ -72,10 +62,8 @@ export default defineConfig({
     // Add twitter tags
     tags.push(['meta', { name: 'twitter:site', content: '@StackBlitz' }]);
     tags.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }]);
-    if (title && !metas['twitter:title']) {
-      tags.push(['meta', { name: 'twitter:title', content: title }]);
-    }
-    if (description && !metas['twitter:description']) {
+    tags.push(['meta', { name: 'twitter:title', content: title }]);
+    if (description) {
       tags.push(['meta', { name: 'twitter:description', content: description }]);
     }
 
@@ -107,6 +95,10 @@ export default defineConfig({
       '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),
       '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
     },
+  },
+
+  postRender(context) {
+    context.teleports;
   },
 
   markdown: {
