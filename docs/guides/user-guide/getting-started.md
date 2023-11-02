@@ -1,11 +1,7 @@
 ---
-title: &title Getting started
-description: &description This page outlines how you can start using our StackBlitz editor.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/getting-started.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Getting started
+description: This page outlines how you can start using our StackBlitz editor.
+og_image: getting-started.png
 ---
 
 # {{ $frontmatter.title }}

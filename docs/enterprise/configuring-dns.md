@@ -1,11 +1,7 @@
 ---
-title: &title Configuring DNS & TLS
-description: &description Based off the root DNS zone set in EE Site Configuration (for instance, `stackblitz.example.com`), set the following DNS `A` records to point at your instance's IP.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-configuring-dns-tls.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Configuring DNS & TLS
+description: Based off the root DNS zone set in EE Site Configuration (for instance, `stackblitz.example.com`), set the following DNS `A` records to point at your instance's IP.
+og_image: enterprise-configuring-dns-tls.png
 ---
 
 # {{ $frontmatter.title }}

@@ -1,11 +1,7 @@
 ---
-title: &title WebContainer API
-description: &description WebContainer API allows for running WebContainers headlessly.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-api.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: WebContainer API
+description: WebContainer API allows for running WebContainers headlessly.
+og_image: webcontainer-api.png
 ---
 
 # {{ $frontmatter.title }}

@@ -1,8 +1,5 @@
 ---
-title: &title Setting Up Your Team
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {name: 'twitter:title', content: *title}]
+title: Setting Up Your Team
 ---
 
 # {{ $frontmatter.title }}

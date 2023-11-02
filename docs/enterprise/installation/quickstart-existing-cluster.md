@@ -1,11 +1,7 @@
 ---
-title: &title Quickstart (Existing Cluster)
-description: &description StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-existing-cluster.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Quickstart (Existing Cluster)
+description: StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
+og_image: enterprise-installation-quickstart-on-existing-cluster.png
 ---
 
 # {{ $frontmatter.title }}

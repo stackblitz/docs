@@ -7,6 +7,7 @@ import { defaultGroupLink, sidebarLinks } from '../docs/links';
 dotenv.config();
 
 const BASE = '/';
+const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE}`;
 
 export default defineConfig({
   srcDir: './docs',
@@ -25,12 +26,48 @@ export default defineConfig({
   title: 'StackBlitz Docs',
   description:
     'Discover how to use StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
-  head: getHeadTags(process.env),
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}img/theme/favicon.png` }],
+    ...getAnalyticsTags(process.env),
+  ],
 
   // Sitemap
   lastUpdated: true,
   sitemap: {
-    hostname: `https://developer.stackblitz.com${BASE}`,
+    hostname: BASE_WITH_ORIGIN,
+  },
+
+  /**
+   * Generate social media metadata tags at build time.
+   * Note: this does not run when using the development server,
+   * so it must be tested by doing a full build with `npm run build`.
+   */
+  transformHead({ pageData, page }) {
+    // Get the raw title and description from frontmatter,
+    // rather than the title which has the site suffix
+    const { title, description, og_image } = pageData.frontmatter;
+    const og_type = page === 'index.md' ? 'website' : 'article';
+
+    // New meta tags to add to the <head>
+    const tags: HeadConfig[] = [];
+
+    // Add opengraph tags
+    tags.push(['meta', { property: 'og:type', content: og_type }]);
+    tags.push(['meta', { property: 'og:title', content: title }]);
+    if (og_image) {
+      const url = `${BASE_WITH_ORIGIN}img/og/${og_image}`;
+      tags.push(['meta', { property: 'og:image', content: url }]);
+    }
+
+    // Add twitter tags
+    tags.push(['meta', { name: 'twitter:site', content: '@StackBlitz' }]);
+    tags.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }]);
+    tags.push(['meta', { name: 'twitter:title', content: title }]);
+    if (description) {
+      tags.push(['meta', { name: 'twitter:description', content: description }]);
+    }
+
+    return tags;
   },
 
   // Theme
@@ -60,6 +97,10 @@ export default defineConfig({
     },
   },
 
+  postRender(context) {
+    context.teleports;
+  },
+
   markdown: {
     config: (md) => {
       md.use(mdFootnote);
@@ -67,28 +108,21 @@ export default defineConfig({
   },
 });
 
-function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
-  const tags: HeadConfig[] = [
-    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}img/theme/favicon.png` }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
-    ['meta', { name: 'twitter:site', content: '@StackBlitz' }],
-  ];
-
-  if (env.VITE_GTM_ID) {
-    tags.push([
+function getAnalyticsTags(env: NodeJS.ProcessEnv): HeadConfig[] {
+  if (!env.VITE_GTM_ID) {
+    return [];
+  }
+  return [
+    [
       'script',
       { src: `https://www.googletagmanager.com/gtag/js?id=${env.VITE_GTM_ID}`, async: '' },
-    ]);
-    tags.push([
+    ],
+    [
       'script',
       {},
       `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag('js',new Date),gtag('config','${env.VITE_GTM_ID}',{anonymize_ip:true})`,
-    ]);
-  }
-
-  return tags;
+    ],
+  ];
 }
 
 function getSearchConfig(env: NodeJS.ProcessEnv) {

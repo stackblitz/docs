@@ -1,11 +1,7 @@
 ---
-title: &title Content Updates with Web Publisher
-description: &description Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/content-updates-with-web_publisher.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Content Updates with Web Publisher
+description: Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
+og_image: content-updates-with-web-publisher.png
 ---
 
 # {{ $frontmatter.title }}

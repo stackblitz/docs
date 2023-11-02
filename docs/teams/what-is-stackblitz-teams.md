@@ -1,8 +1,5 @@
 ---
-title: &title What is StackBlitz Teams
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {name: 'twitter:title', content: *title}]
+title: What is StackBlitz Teams
 ---
 
 # {{ $frontmatter.title }}

@@ -1,11 +1,7 @@
 ---
-title: &title Configuring your browser to run WebContainers
-description: &description Some browser settings can stop WebContainers from running correctly. You can work around those issues by adding exceptions for StackBlitz domains in your browser’s settings.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-configuration.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Configuring your browser to run WebContainers
+description: Some browser settings can stop WebContainers from running correctly. You can work around those issues by adding exceptions for StackBlitz domains in your browser’s settings.
+og_image: webcontainer-browser-configuration.png
 ---
 
 # {{ $frontmatter.title }}
