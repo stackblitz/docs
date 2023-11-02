@@ -3,10 +3,12 @@ import Footer from './Footer.vue';
 import CardGrid from './CardGrid.vue';
 import HomeIntro from './HomeIntro.vue';
 
+import type { CardLink, FooterSection } from '@theme/data/types';
+
 defineProps<{
-  topLinks: any[];
-  externalLinks: any[];
-  footerSections: any[];
+  topLinks: CardLink[];
+  externalLinks: CardLink[];
+  footerSections: FooterSection[];
 }>();
 </script>
 
@@ -23,8 +25,6 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-@import '../styles/vars.scss';
-
 .top-section {
   padding-bottom: 60px;
 }
@@ -46,7 +46,7 @@ defineProps<{
     font-weight: 600;
   }
 
-  @media (min-width: $bp-medium) {
+  @media (min-width: 680px) {
     padding-top: 20px;
     padding-bottom: 80px;
     h2 {

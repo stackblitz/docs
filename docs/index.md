@@ -1,8 +1,7 @@
 ---
 layout: page
-head:
-  - ['meta', {property: 'og:title', content: 'StackBlitz Docs'}]
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/theme/docs-social.png'}]
+title: StackBlitz Docs
+og_image: index.png
 ---
 
 <script setup lang="ts">

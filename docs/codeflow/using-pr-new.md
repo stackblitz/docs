@@ -1,11 +1,7 @@
 ---
-title: &title Using pr.new
-description: &description This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/using-pr_new.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Using pr.new
+description: This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
+og_image: using-pr-new.png
 ---
 
 # {{ $frontmatter.title }}
@@ -54,8 +50,8 @@ To help your users quickly spin up the entire environment with your project, you
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in Codeflow" src="/img/open_in_codeflow.svg" /> | <a href="/img/open_in_codeflow.svg" target="_blank">open_in_codeflow.svg</a> |
-| <img alt="Open in Codeflow" src="/img/open_in_codeflow_small.svg" /> | <a href="/img/open_in_codeflow_small.svg" target="_blank">open_in_codeflow_small.svg</a> |
+| <img alt="Open in Codeflow" src="https://developer.stackblitz.com/img/open_in_codeflow.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_codeflow.svg" target="_blank">open_in_codeflow.svg</a> |
+| <img alt="Open in Codeflow" src="https://developer.stackblitz.com/img/open_in_codeflow_small.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_codeflow_small.svg" target="_blank">open_in_codeflow_small.svg</a> |
 
 ::: tip
 You can either host the images on your servers or directly use our image URLs.

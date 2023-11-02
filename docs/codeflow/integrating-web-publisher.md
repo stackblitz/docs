@@ -1,11 +1,7 @@
 ---
-title: &title Web Publisher docs integration
-description: &description This page covers integrating Web Publisher into your docs to lower the barrier for contributing to documentations.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/integrating-web_publisher.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Web Publisher docs integration
+description: This page covers integrating Web Publisher into your docs to lower the barrier for contributing to documentations.
+og_image: integrating-web-publisher.png
 ---
 
 # {{ $frontmatter.title }}
@@ -117,8 +113,8 @@ To help your users easily find their way to Web Publisher on your site or reposi
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Edit in Web Publisher" src="/img/edit_in_web_publisher.svg" /> | <a href="/img/edit_in_web_publisher.svg" target="_blank">edit_in_web_publisher.svg</a> |
-| <img alt="Edit in Web Publisher" src="/img/edit_in_web_publisher_small.svg" /> | <a href="/img/edit_in_web_publisher_small.svg" target="_blank">edit_in_web_publisher_small.svg</a> |
+| <img alt="Edit in Web Publisher" src="https://developer.stackblitz.com/img/edit_in_web_publisher.svg" /> | <a href="https://developer.stackblitz.com/img/edit_in_web_publisher.svg" target="_blank">edit_in_web_publisher.svg</a> |
+| <img alt="Edit in Web Publisher" src="https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg" /> | <a href="https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg" target="_blank">edit_in_web_publisher_small.svg</a> |
 
 ::: tip
 You can either host the images on your servers or directly use our image URLs.

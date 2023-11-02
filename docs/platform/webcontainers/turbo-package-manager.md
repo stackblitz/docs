@@ -1,11 +1,7 @@
 ---
-title: &title Turbo Package Manager
-description: &description Turbo was our custom npm client until very recently when native npm was added to WebContainer. It is available until January 2024.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-turbo-package-manager.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Turbo Package Manager
+description: Turbo was our custom npm client until very recently when native npm was added to WebContainer. It is available until January 2024.
+og_image: webcontainer-turbo-package-manager.png
 ---
 
 # {{ $frontmatter.title }}

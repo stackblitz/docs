@@ -1,11 +1,7 @@
 ---
-title: &title Quickstart on GCP (Non-GKE)
-description: &description StackBlitz Enterprise is a Kubernetes application. You can install the software on an existing cluster or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-gcp.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Quickstart on GCP (Non-GKE)
+description: StackBlitz Enterprise is a Kubernetes application. You can install the software on an existing cluster or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.
+og_image: enterprise-installation-quickstart-on-gcp.png
 ---
 
 # {{ $frontmatter.title }}

@@ -1,11 +1,7 @@
 ---
-title: &title Setting up SSO
-description: &description StackBlitz is excited to offer SAML-based Single Sign-on (SSO) to organizations using StackBlitz Enterprise Edition (EE).
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-setting-up-sso.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Setting up SSO
+description: StackBlitz is excited to offer SAML-based Single Sign-on (SSO) to organizations using StackBlitz Enterprise Edition (EE).
+og_image: enterprise-setting-up-sso.png
 ---
 
 # {{ $frontmatter.title }}
@@ -54,7 +50,7 @@ Admins can choose to map attributes that will send user information to StackBlit
 | Display name | `name`         | The display name of the user (first and last or other) |
 | Email        | `email`        | The email of the user                                  |
 
-:::warning Please note: These attributes are case-sensitive and and must be entered exactly as you see here.
+:::warning Please note: These attributes are case-sensitive and must be entered exactly as you see here.
 :::
 
 Please ensure that the email addresses in the IdP are what your users will be using to log into StackBlitz.

@@ -1,11 +1,7 @@
 ---
-title: &title WebContainers Browser Support
-description: &description WebContainers are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
-head:
-  - ['meta', {property: 'og:title', content: *title}]
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-support.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: WebContainers Browser Support
+description: WebContainers are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
+og_image: webcontainer-browser-support.png
 ---
 
 # {{ $frontmatter.title }}

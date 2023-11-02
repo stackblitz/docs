@@ -1,11 +1,7 @@
 ---
-title: &title Quickstart (Existing Cluster)
-description: &description StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-existing-cluster.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Quickstart (Existing Cluster)
+description: StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
+og_image: enterprise-installation-quickstart-on-existing-cluster.png
 ---
 
 # {{ $frontmatter.title }}
@@ -63,7 +59,7 @@ Then, install the Admin Console for StackBlitz by running:
 kubectl kots install stackblitz
 ```
 
-You will be prompted for a namespace in your cluster in which StackBlitz will be installed. By default, the namespace is `stackblitz`. Then Yyu will be prompted to set a password for the Admin Console:
+You will be prompted for a namespace in your cluster in which StackBlitz will be installed. By default, the namespace is `stackblitz`. Then you will be prompted to set a password for the Admin Console:
 
 ```sh
 Enter the namespace to deploy to: stackblitz

@@ -1,11 +1,7 @@
 ---
-title: &title Content Updates with Web Publisher
-description: &description Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/content-updates-with-web_publisher.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Content Updates with Web Publisher
+description: Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
+og_image: content-updates-with-web-publisher.png
 ---
 
 # {{ $frontmatter.title }}
@@ -28,7 +24,7 @@ To edit a page, you need to find its corresponding file on GitHub. You can do it
 ### "Edit in Web Publisher" button
 
 <a href="https://pr.new/stackblitz/docs/edit/main/docs/codeflow/content-updates-with-web-publisher.md"> 
-<img lang="en" class="float-left" src="/img/edit_in_web_publisher.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/> 
+<img lang="en" class="float-left" src="https://developer.stackblitz.com/img/edit_in_web_publisher.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/> 
 </a>
 
 If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕

@@ -6,12 +6,14 @@ import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
 
-export default defineConfig({
-  srcDir: 'docs',
-  outDir: 'build/docs',
+const BASE = '/docs/';
+const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE}`;
 
-  // For hosting under `/docs/` path
-  base: '/docs/',
+export default defineConfig({
+  srcDir: './docs',
+  outDir: `./build${BASE}`,
+  assetsDir: 'assets',
+  base: BASE,
 
   // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
   cleanUrls: true,
@@ -24,22 +26,55 @@ export default defineConfig({
   title: 'StackBlitz Docs',
   description:
     'Discover how to use StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
-  head: getHeadTags(process.env),
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}img/theme/favicon.png` }],
+    ...getAnalyticsTags(process.env),
+  ],
 
   // Sitemap
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://developer.stackblitz.com'
+    hostname: BASE_WITH_ORIGIN,
+  },
+
+  /**
+   * Generate social media metadata tags at build time.
+   * Note: this does not run when using the development server,
+   * so it must be tested by doing a full build with `npm run build`.
+   */
+  transformHead({ pageData, page }) {
+    // Get the raw title and description from frontmatter,
+    // rather than the title which has the site suffix
+    const { title, description, og_image } = pageData.frontmatter;
+    const og_type = page === 'index.md' ? 'website' : 'article';
+
+    // New meta tags to add to the <head>
+    const tags: HeadConfig[] = [];
+
+    // Add opengraph tags
+    tags.push(['meta', { property: 'og:type', content: og_type }]);
+    tags.push(['meta', { property: 'og:title', content: title }]);
+    if (og_image) {
+      const url = `${BASE_WITH_ORIGIN}img/og/${og_image}`;
+      tags.push(['meta', { property: 'og:image', content: url }]);
+    }
+
+    // Add twitter tags
+    tags.push(['meta', { name: 'twitter:site', content: '@StackBlitz' }]);
+    tags.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }]);
+    tags.push(['meta', { name: 'twitter:title', content: title }]);
+    if (description) {
+      tags.push(['meta', { name: 'twitter:description', content: description }]);
+    }
+
+    return tags;
   },
 
   // Theme
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
     logo: '/img/theme/docs-logo.svg',
-    search: {
-      provider: 'algolia',
-      options: getAlgoliaConfig(process.env),
-    },
+    search: getSearchConfig(process.env),
     editLink: {
       pattern: 'https://pr.new/stackblitz/docs/edit/main/docs/:path',
       text: 'Edit this page',
@@ -62,6 +97,10 @@ export default defineConfig({
     },
   },
 
+  postRender(context) {
+    context.teleports;
+  },
+
   markdown: {
     config: (md) => {
       md.use(mdFootnote);
@@ -69,41 +108,32 @@ export default defineConfig({
   },
 });
 
-function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
-  const tags: HeadConfig[] = [
-    ['link', { rel: 'icon', type: 'image/png', href: '/img/theme/favicon.png' }],
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'StackBlitz Docs' }],
-    ['meta', { name: 'twitter:site', content: '@StackBlitz' }],
-  ];
-
-  if (env.VITE_GTM_ID) {
-    tags.push([
+function getAnalyticsTags(env: NodeJS.ProcessEnv): HeadConfig[] {
+  if (!env.VITE_GTM_ID) {
+    return [];
+  }
+  return [
+    [
       'script',
       { src: `https://www.googletagmanager.com/gtag/js?id=${env.VITE_GTM_ID}`, async: '' },
-    ]);
-    tags.push([
+    ],
+    [
       'script',
       {},
       `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag('js',new Date),gtag('config','${env.VITE_GTM_ID}',{anonymize_ip:true})`,
-    ]);
-  }
-
-  return tags;
+    ],
+  ];
 }
 
-function getAlgoliaConfig(env: NodeJS.ProcessEnv) {
+function getSearchConfig(env: NodeJS.ProcessEnv) {
   if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
     return {
-      indexName: 'webcontainers',
-      appId: env.VITE_ALGOLIA_ID,
-      apiKey: env.VITE_ALGOLIA_KEY,
+      provider: 'algolia',
+      options: {
+        indexName: 'stackblitz',
+        appId: env.VITE_ALGOLIA_ID,
+        apiKey: env.VITE_ALGOLIA_KEY,
+      },
     };
   }
-  return {
-    indexName: '',
-    appId: '',
-    apiKey: '',
-  };
 }

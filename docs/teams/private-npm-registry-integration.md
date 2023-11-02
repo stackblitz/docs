@@ -1,8 +1,5 @@
 ---
-title: &title Private NPM Registry Integration
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {name: 'twitter:title', content: *title}]
+title: Private NPM Registry Integration
 ---
 
 # {{ $frontmatter.title }}

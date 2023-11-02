@@ -1,12 +1,8 @@
 ---
-title: &title StackBlitz Enterprise Server
-description: &description Welcome! Let's get started setting up StackBlitz Enterprise Server.
+title: StackBlitz Enterprise Server
+description: Welcome! Let's get started setting up StackBlitz Enterprise Server.
 sidebar_label: Overview
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-overview.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+og_image: enterprise-overview.png
 ---
 
 # {{ $frontmatter.title }}

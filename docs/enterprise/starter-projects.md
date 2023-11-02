@@ -1,11 +1,7 @@
 ---
-title: &title Starter Projects
-description: &description When working on a team, you'll likely want to customize the default starter projects that show up on the StackBlitz dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
-head:
-  - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-starter-projects.png'}]
-  - ['meta', {name: 'twitter:title', content: *title}]
-  - ['meta', {name: 'twitter:description', content: *description}]
+title: Starter Projects
+description: When working on a team, you'll likely want to customize the default starter projects that show up on the StackBlitz dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
+og_image: enterprise-starter-projects.png
 ---
 
 # {{ $frontmatter.title }}
@@ -117,7 +113,7 @@ If you want to use a different project slug than `polymer-base`, for example `st
 
 :::warning Having trouble loading a project? Need to create a support bundle?
 
-A support bundle provides specific logs and analysis that helps our team to troubleshoot to better assist you. We recommending following the steps outline in [Replicated's "Generating Support Bundles" docs](https://docs.replicated.com/enterprise/troubleshooting-an-app) to generate a support bundle via the kots dashboard.
+A support bundle provides specific logs and analysis that helps our team to troubleshoot to better assist you. We recommend following the steps outlined in [Replicated's "Generating Support Bundles" docs](https://docs.replicated.com/enterprise/troubleshooting-an-app) to generate a support bundle via the kots dashboard.
 :::
 
 Navigate to the kots dashboard and click on the Troubleshoot tab at the top.
