@@ -153,7 +153,7 @@ This is how the title and description look inside a StackBlitz project:
 
 To further customize your project, you can provide a second argument to the `StackBlitzSDK.openProject` method. The argument is an object that allows you to provide optional adjustments:
 
-- **`openFile`** – StackBlitz displays a file in the editor on page load - depending on a project, that would usually be a readme or the index file. You can specify the featured file:
+- **`openFile`** – StackBlitz displays a file in the editor on page load - depending on the project, that would usually be a readme or the index file. You can specify the featured file:
     ```js
     {
       openFile: 'src/app/index.tsx'
