@@ -1,7 +1,7 @@
 
 # Contributor Manual
 
-We welcome contributions from folks from all skill levels and expertise. We are especially welcoming to new programmers and to those with a keen interest in growing as technical writers or DocOps engineers.
+We welcome contributions from folks from all skill levels and expertise. We are especially welcoming to new programmers and to those withdchange a keen interest in growing as technical writers or DocOps engineers.
 
 ---
 
