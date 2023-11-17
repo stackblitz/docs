@@ -100,7 +100,7 @@ Check out the [Enterprise page](https://stackblitz.com/enterprise) for details a
 
 Bringing WebContainers to Enterprise Server is in the works, but not currently available. You can reach out to enterprise@stackblitz.com for details.
 
-We do offer [WebContainer API](webcontainers.io) licenses for organizations wanting to use WebContainer technology for production usage in a for-profit setting. Check out [webcontainers.io](webcontainers.io/enterprise) for more information!
+We do offer [WebContainer API](https://webcontainers.io) licenses for organizations wanting to use WebContainer technology for production usage in a for-profit setting. Check out [webcontainers.io](https://webcontainers.io/enterprise) for more information!
 
 # Technology FAQs
 
