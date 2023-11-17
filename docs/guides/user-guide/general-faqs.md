@@ -100,7 +100,7 @@ Check out the [Enterprise page](https://stackblitz.com/enterprise) for details a
 
 Bringing WebContainers to Enterprise Server is in the works, but not currently available. You can reach out to enterprise@stackblitz.com for details.
 
-We do offer [WebContainer API](webcontainers.io) licenses for organizations wanting to use WebContainer technology for production usage in a for-profit setting. Check out [webcontainers.io](webcontainers.io) for more information!
+We do offer [WebContainer API](webcontainers.io) licenses for organizations wanting to use WebContainer technology for production usage in a for-profit setting. Check out [webcontainers.io](webcontainers.io/enterprise) for more information!
 
 # Technology FAQs
 
@@ -175,7 +175,7 @@ Our Codeflow editor is built on top of VS Code so you can enable the VIM extensi
 
 ### What is Web Publisher?
 
-Web Publisher is a single file editor and publishing tools that can be used for smaller or text-based changes such as editiong documentation or blogs. Web Publisher uses Codeflow technology that allows users to create, push, and publish changes all in their browser. The GitHub integration creates a seamless workflow that's fit for developers and non-coding folks alike!
+Web Publisher is a single file editor and publishing tool that can be used for smaller or text-based changes such as editing documentation or blogs. Web Publisher uses Codeflow technology that allows users to create, push, and publish changes all in their browser. The GitHub integration creates a seamless workflow that's fit for developers and non-coding folks alike!
 
 This environment is ideal for:
 - No-tech or low-tech users
@@ -188,7 +188,7 @@ You can learn more about Web Publisher [here](https://developer.stackblitz.com/c
 
 ### What is the Classic Editor SDK?
 
-Our JavaScript SDK (software development kit) allows users to create Classic Editor projects to be opened in a new window or embedded in your docs, example pages, or blog posts. The SDK can be used to control the UI of an embedded StackBlitz project, change the currently open file(s), and read and write files frmo the project's virtual filesystem.
+Our JavaScript SDK (software development kit) allows users to create Classic Editor projects to be opened in a new window or embedded in your docs, example pages, or blog posts. The SDK can be used to control the UI of an embedded StackBlitz project, change the currently open file(s), and read and write files from the project's virtual filesystem.
 
 Details on embed options can be found [here](https://developer.stackblitz.com/platform/api/javascript-sdk).
 
@@ -203,7 +203,7 @@ Organizations wanting to use the API for production usage in a for-profit settin
 - Higher API rate limits
 - Direct access to the StackBlitz dev team to optimize performance, prioritize bug fixes, and influence the API roadmap.
 
-This product is ideal for organizations wanting to build completely custom user interfaces powered by Node.js without needed in use virtual machines, servers, or docker containers.
+This product is ideal for organizations wanting to build completely custom user interfaces powered by Node.js without needing to use virtual machines, servers, or docker containers.
 
 WebContainer API docs can be found [here](https://webcontainers.io/).
 
