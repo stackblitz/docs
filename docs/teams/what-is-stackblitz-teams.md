@@ -14,7 +14,7 @@ StackBlitz Teams is designed to allow you to build the web with the web; collabo
 Traditionally, collaborating on coding projects required setting up complex repositories in local development environments, a high friction, low security process that introduces the classic “it works on my machine” style issues into the code collaboration process. StackBlitz Teams eliminates all of these issues by providing a consistent, performant and secure in-browser development environment where team members can collaborate seamlessly. 
 
 ### Integrated with your GitHub Organization
-StackBlitz Teams seamlessly integrates with your existing GitHub organization and all it’s existing permissions settings. This means that team members can easily access the workspace and collaborate on both public and private GitHub repositories without any additional configuration.
+StackBlitz Teams seamlessly integrates with your existing GitHub organization and all its existing permissions settings. This means that team members can easily access the workspace and collaborate on both public and private GitHub repositories without any additional configuration.
 
 ### One-click Pull Request Reviews
 Say goodbye to the cumbersome process of local code reviews. With StackBlitz Teams, you can directly jump into any pull request with a single click.  Our in-browser staging server makes the review process swift and efficient and ensures the code is actually executed (not just read over) before being pushed to production.
