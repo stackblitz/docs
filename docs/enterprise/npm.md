@@ -4,6 +4,8 @@ description: StackBlitz is excited to offer custom npm registry support to organ
 og_image: enterprise-connect-npm-registry.png
 ---
 
+
+I'm making a bunch of changes here
 # {{ $frontmatter.title }}
 
 StackBlitz is excited to offer custom npm registry support to organizations using StackBlitz Enterprise Edition (EE). To enable this feature, you need to be logged in as an admin. If your npm registry requires authentication, you may need to coordinate with the manager of your npm administration before proceeding.
