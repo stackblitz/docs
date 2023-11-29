@@ -95,6 +95,10 @@ export default defineConfig({
       '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),
       '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
     },
+    chatlio: {
+      allowedRoutes: ["teams\/.*", "enterprise\/.*"],
+      id: process.env.CHATLIO_ID || '4a1fa067-d628-4bd7-6378-ca95c8c51d22',
+    }
   },
 
   postRender(context) {
@@ -105,6 +109,16 @@ export default defineConfig({
     config: (md) => {
       md.use(mdFootnote);
     },
+  },
+
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => {
+          return ["chatlio-widget"].includes(tag.toLowerCase());
+        }
+      }
+    }
   },
 });
 
