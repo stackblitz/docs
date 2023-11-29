@@ -49,50 +49,9 @@ function onCloseClick() {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #920f4e;
   display: flex;
   justify-content: center;
-
-  --banner-fade-left-1-hsl: 184, 100%, 28%;
-  --banner-fade-left-2-hsl: 202, 100%, 77%;
-  --banner-fade-right-1-hsl: 202, 100%, 77%;
-  --banner-fade-right-2-hsl: 191, 63%, 38%;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: var(--sbdocs-top-banner-height);
-    top: 0;
-    mix-blend-mode: hard-light;
-  }
-
-  &::before {
-    left: 0;
-    background: radial-gradient(
-        58% 296% at 12% 122%,
-        hsl(var(--banner-fade-left-1-hsl)) 16%,
-        hsla(var(--banner-fade-left-1-hsl), 0) 100%
-    ), radial-gradient(
-        54% 296% at 38% 78%,
-        hsl(var(--banner-fade-left-2-hsl)) 0%,
-        hsla(var(--banner-fade-left-2-hsl), 0) 100%
-    );
-  }
-
-  &::after {
-    right: 0;
-    background: radial-gradient(
-        50% 190% at 90% 100%,
-        hsl(var(--banner-fade-right-1-hsl)) 0%,
-        hsla(var(--banner-fade-right-1-hsl), 0) 100%
-    ), radial-gradient(
-        52% 250% at 60% 70%,
-        hsl(var(--banner-fade-right-2-hsl)) 0%,
-        hsla(var(--banner-fade-right-2-hsl), 0) 100%
-    );
-  }
 }
 
 .icon {
@@ -142,26 +101,22 @@ function onCloseClick() {
 }
 
 .link {
-  background-color: #000;
+  background-color: #fff;
   padding: 10px 16px;
   font-size: 11.5px;
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
   border-radius: 6px;
-  border: 1px solid hsl(210 98% 53%);
+
+  color: #000;
+  &:hover {
+    opacity: 0.9;
+  }
+
   z-index: 1;
   cursor: pointer;
   white-space: nowrap;
-
-  &:hover {
-    background: hsl(210 98% 53%);
-  }
-
-  &:focus-within {
-    outline: solid 2px var(--sb-control-border-focus);
-    outline-offset: -2px;
-  }
 
   @media (max-width: 600px) {
     padding: 8px 12px;
