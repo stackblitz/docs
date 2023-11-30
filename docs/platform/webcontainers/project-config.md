@@ -139,7 +139,7 @@ The `view` option allows you to configure the layout the editor uses at startup.
 The available settings are:
 
 - `"default"` (default): Editor & Preview side-by-side
-- `"editor"`: Just the editor, no preview
+- `"editor"`: Just the Editor, no preview
 
 You can also specify this option under the key `pullRequests` or `issues` to make it different when opening respectively.
 
