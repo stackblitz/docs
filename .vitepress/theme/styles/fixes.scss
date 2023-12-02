@@ -1,19 +1,16 @@
-// MaintenanceBanner related
+// ViteConfBanner related
 // Only show it in big screen for now
 .Layout.with-banner {
-  --sbdocs-top-banner-height: 48px;
-  .VPNav {
-    --vp-layout-top-height: var(--sbdocs-top-banner-height);
-  }
-  .VPContent .VPDoc {
-    padding: 90px 32px 0;
-  }
-  .VPSidebar {
-    --vp-nav-height: 90px;
-  }
-
-  @media (max-width: 600px) {
-    --sbdocs-top-banner-height: 60px;
+  @media (min-width: 960px) {
+    .VPNav {
+      --vp-layout-top-height: 48px;
+    }
+    .VPContent .VPDoc {
+      padding: 90px 32px 0;
+    }
+    .VPSidebar {
+      --vp-nav-height: 90px;
+    }
   }
 }
 
