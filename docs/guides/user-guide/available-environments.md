@@ -44,7 +44,8 @@ EngineBlock is StackBlitz's original compute environment, developed in 2017. It 
 
 **Technical Characteristics** <br>
 EngineBlock uses polyfills linked to browser service workers to emulate various system functions. Due to this polyfilled architecture, it requires custom configurations to support different front-end frameworks. For instance, you can't run a React project using an Angular template in this environment.
-**Framework Support**
+
+**Framework Support** <br>
 While EngineBlock is capable of running popular front-end frameworks, it does so with specific limitations dictated by its polyfill-based architecture. Each framework requires custom settings under the hood to function correctly and full Node.js servers are not supported.
 
 **Package Manager Compatibility** <br>
@@ -74,7 +75,7 @@ WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/
 
 The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, wheras the [Codeflow](/codeflow/working-in-codeflow-ide) and [Web Publisher](/codeflow/content-updates-with-web-publisher) editors only support WebContainers.
 
-If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Codeflow editor** an therefore using **WebContainers**:
+If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Codeflow editor** and therefore using **WebContainers**:
 
 ![Screenshot of the Codeflow settings pane](./assets/codeflow-settings.png)
 
