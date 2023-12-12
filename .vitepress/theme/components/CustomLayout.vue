@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme';
-import MaintenanceBanner from './MaintenanceBanner.vue';
 
 const { Layout } = DefaultTheme;
 
@@ -10,9 +9,6 @@ import Chatlio from '@theme/components/Chatlio.vue';
 
 <template>
   <Layout>
-    <template #layout-top>
-      <MaintenanceBanner />
-    </template>
     <template #doc-footer-before>
       <ClientOnly>
         <Feedback />
