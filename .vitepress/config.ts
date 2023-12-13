@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 /* @ts-expect-error */
 import mdFootnote from 'markdown-it-footnote';
-import { defineConfig, type HeadConfig } from 'vitepress';
+import { defineConfigWithTheme, type DefaultTheme, type HeadConfig } from 'vitepress';
 import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
@@ -9,7 +9,14 @@ dotenv.config();
 const BASE = '/';
 const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE}`;
 
-export default defineConfig({
+interface ThemeConfig extends DefaultTheme.Config {
+  chatlio: {
+    id: string | undefined,
+    allowedRoutes: (RegExp|string)[],
+  }
+}
+
+export default defineConfigWithTheme<ThemeConfig>({
   srcDir: './docs',
   outDir: `./build${BASE}`,
   assetsDir: 'assets',
@@ -96,8 +103,8 @@ export default defineConfig({
       '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
     },
     chatlio: {
-      allowedRoutes: ["teams\/.*", "enterprise\/.*"],
-      id: process.env.CHATLIO_ID,
+      allowedRoutes: [`^${BASE}teams/.*`, `^${BASE}enterprise/.*`],
+      id: process.env.VITE_CHATLIO_ID,
     }
   },
 
