@@ -130,18 +130,18 @@ export default defineConfigWithTheme<ThemeConfig>({
 });
 
 function getAnalyticsTags(env: NodeJS.ProcessEnv): HeadConfig[] {
-  if (!env.VITE_GTM_ID) {
+  if (!env.VITE_GTAG_ID) {
     return [];
   }
   return [
     [
       'script',
-      { src: `https://www.googletagmanager.com/gtag/js?id=${env.VITE_GTM_ID}`, async: '' },
+      { src: `https://www.googletagmanager.com/gtag/js?id=${env.VITE_GTAG_ID}`, async: '' },
     ],
     [
       'script',
       {},
-      `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag('js',new Date),gtag('config','${env.VITE_GTM_ID}',{anonymize_ip:true})`,
+      `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag('js',new Date),gtag('config','${env.VITE_GTAG_ID}',{anonymize_ip:true})`,
     ],
   ];
 }
