@@ -6,7 +6,7 @@ import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
 
-const BASE = '/';
+const BASE = '/docs/';
 const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE}`;
 
 interface ThemeConfig extends DefaultTheme.Config {
