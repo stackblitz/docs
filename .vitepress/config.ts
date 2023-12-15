@@ -6,21 +6,21 @@ import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
 
-const BASE = '/';
-const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE}`;
+const BASE_PATH = '/';
+const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE_PATH}`;
 
 interface ThemeConfig extends DefaultTheme.Config {
   chatlio: {
-    id: string | undefined,
-    allowedRoutes: (RegExp|string)[],
-  }
+    id: string | undefined;
+    allowedRoutes: (RegExp | string)[];
+  };
 }
 
 export default defineConfigWithTheme<ThemeConfig>({
   srcDir: './docs',
-  outDir: `./build${BASE}`,
+  outDir: `./build${BASE_PATH}`,
   assetsDir: 'assets',
-  base: BASE,
+  base: BASE_PATH,
 
   // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
   cleanUrls: true,
@@ -34,7 +34,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   description:
     'Discover how to use StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}img/theme/favicon.png` }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${BASE_PATH}img/theme/favicon.png` }],
     ...getAnalyticsTags(process.env),
   ],
 
@@ -103,9 +103,9 @@ export default defineConfigWithTheme<ThemeConfig>({
       '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
     },
     chatlio: {
-      allowedRoutes: [`^${BASE}teams/.*`, `^${BASE}enterprise/.*`],
+      allowedRoutes: [`^${BASE_PATH}teams/.*`, `^${BASE_PATH}enterprise/.*`],
       id: process.env.VITE_CHATLIO_ID,
-    }
+    },
   },
 
   postRender(context) {
@@ -122,31 +122,64 @@ export default defineConfigWithTheme<ThemeConfig>({
     template: {
       compilerOptions: {
         isCustomElement: (tag) => {
-          return ["chatlio-widget"].includes(tag.toLowerCase());
-        }
-      }
-    }
+          return ['chatlio-widget'].includes(tag.toLowerCase());
+        },
+      },
+    },
   },
 });
 
-function getAnalyticsTags(env: NodeJS.ProcessEnv): HeadConfig[] {
-  if (!env.VITE_GTAG_ID) {
-    return [];
+function getAnalyticsTags({
+  VITE_GTM_ID = '',
+  VITE_GTAG_ID = '',
+}: NodeJS.ProcessEnv): HeadConfig[] {
+  // Fail the build if we have a defined but malformed analytics id
+  const idPattern = /^(G|GTM)-[A-Z\d]+$/;
+  for (const [name, value] of Object.entries({ VITE_GTM_ID, VITE_GTAG_ID })) {
+    if (value && !idPattern.test(value)) {
+      throw new Error(`Invalid ${name} value: '${value}'`);
+    }
   }
-  return [
-    [
-      'script',
-      { src: `https://www.googletagmanager.com/gtag/js?id=${env.VITE_GTAG_ID}`, async: '' },
-    ],
-    [
-      'script',
-      {},
-      `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag('js',new Date),gtag('config','${env.VITE_GTAG_ID}',{anonymize_ip:true})`,
-    ],
-  ];
+
+  const tags: HeadConfig[] = [];
+
+  if (VITE_GTAG_ID) {
+    const source = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments) }
+      gtag('js', new Date);
+      gtag('config', '${VITE_GTAG_ID}', { anonymize_ip: true });
+    `;
+    tags.push(['script', {}, source]);
+    if (!VITE_GTM_ID) {
+      const url = `https://www.googletagmanager.com/gtag/js?id=${VITE_GTAG_ID}`;
+      tags.push(['script', { async: '', src: url }]);
+    }
+  }
+
+  // We're migrating from gtag.js to gtm.js, but using both as we verify this change.
+  // According to https://support.google.com/tagmanager/answer/6103696 this should be
+  // inserted after any script declaring a dataLayer.
+  if (VITE_GTM_ID) {
+    const source = `
+      (function(w, d, s, l, i){
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        let f = d.getElementsByTagName(s)[0];
+        let j = d.createElement(s);
+        let dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.before(j);
+      })(window, document, 'script', 'dataLayer', '${VITE_GTM_ID}');
+    `;
+    tags.push(['script', {}, source]);
+  }
+
+  return tags;
 }
 
-function getSearchConfig(env: NodeJS.ProcessEnv) {
+function getSearchConfig(env: NodeJS.ProcessEnv): ThemeConfig['search'] {
   if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
     return {
       provider: 'algolia',

@@ -105,14 +105,16 @@ For production, the docs expect the following environment variables to be define
 
 - `VITE_ALGOLIA_ID`: Algolia `appId`.
 - `VITE_ALGOLIA_KEY`: Algolia `apiKey`.
+- `VITE_GTM_ID`: Google Tag Manager id.
 - `VITE_GTAG_ID`: Google Analytics id.
 
-They can be defined in CI server configuration, or in a `.env` file:
+They can be defined in CI configuration, or in a `.env` file:
 
 ```sh
 # .env
 VITE_ALGOLIA_ID='******'
 VITE_ALGOLIA_KEY='******'
+VITE_GTM_ID='******'
 VITE_GTAG_ID='******'
 ```
 
