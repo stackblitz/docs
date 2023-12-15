@@ -144,34 +144,36 @@ function getAnalyticsTags({
   const tags: HeadConfig[] = [];
 
   if (VITE_GTAG_ID) {
-    const url = `https://www.googletagmanager.com/gtag/js?id=${VITE_GTAG_ID}`;
-    tags.push(['script', { async: '', src: url }]);
     const source = `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments)}
-gtag('js', new Date);
-gtag('config', '${VITE_GTAG_ID}', {anonymize_ip:true});
-`;
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments) }
+      gtag('js', new Date);
+      gtag('config', '${VITE_GTAG_ID}', { anonymize_ip: true });
+    `;
     tags.push(['script', {}, source]);
+    if (!VITE_GTM_ID) {
+      const url = `https://www.googletagmanager.com/gtag/js?id=${VITE_GTAG_ID}`;
+      tags.push(['script', { async: '', src: url }]);
+    }
   }
 
   // We're migrating from gtag.js to gtm.js, but using both as we verify this change.
   // According to https://support.google.com/tagmanager/answer/6103696 this should be
   // inserted after any script declaring a dataLayer.
   if (VITE_GTM_ID) {
-    const js = `
-(function(w, d, s, l, i){
-  w[l] = w[l] || [];
-  w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-  let f = d.getElementsByTagName(s)[0];
-  let j = d.createElement(s);
-  let dl = l != 'dataLayer' ? '&l=' + l : '';
-  j.async = true;
-  j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-  f.before(j);
-})(window, document, 'script', 'dataLayer', '${VITE_GTM_ID}');
-`;
-    tags.push(['script', {}, js]);
+    const source = `
+      (function(w, d, s, l, i){
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        let f = d.getElementsByTagName(s)[0];
+        let j = d.createElement(s);
+        let dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.before(j);
+      })(window, document, 'script', 'dataLayer', '${VITE_GTM_ID}');
+    `;
+    tags.push(['script', {}, source]);
   }
 
   return tags;
