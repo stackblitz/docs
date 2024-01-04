@@ -15,7 +15,7 @@ Figma supports a [number of plugins]() that extend the functionality and integra
 The plugin is compatible with all Figma plans.
 :::
 
-# About the StackBlitz plugin for Figma
+## About the StackBlitz plugin for Figma
 
 With [StackBlitz’s Figma plugin](https://www.figma.com/community/plugin/1287113487428429346), Dev Mode users can open components in StackBlitz directly from Figma. 
 
@@ -27,25 +27,24 @@ After configuring the plugin, you will be able to:
 - Preview any changes live within StackBlitz
 - Commit edits back to the repository or open a pull request
 
-# **Installing the plugin**
+## **Installing the plugin**
 
 To use the StackBlitz plugin, add it to a Figma file from either:
 
 - **The [plugins directory](https://www.figma.com/community/plugin/1287113487428429346)** by clicking “Open in…” and then selecting the name of the file.
     
-    ![Screenshot 2024-01-02 at 2.14.02 PM.png](How%20to%20install%20and%20use%20the%20StackBlitz%20plugin%20for%20F%20ceff398383624cea82ed9c9d89bce479/Screenshot_2024-01-02_at_2.14.02_PM.png)
+    ![Figma plugin directory](./assets/figma-plugin-directory.png)
     
 
-- **The resources menu within your Figma file** (⇧+I) and searching for `StackBlitz` under `Plugins`
+- **The resources menu within your Figma file** (`Shift` + `I`) and searching for "StackBlitz" under *Plugins*
     
-    ![Screenshot 2024-01-02 at 2.13.46 PM.png](How%20to%20install%20and%20use%20the%20StackBlitz%20plugin%20for%20F%20ceff398383624cea82ed9c9d89bce479/Screenshot_2024-01-02_at_2.13.46_PM.png)
-    
+    ![Figma toolbar with plugin menu](./assets/figma-plugin-toolbar.png)
 
-# Using **the plugin**
+## Using the StackBlitz plugin with Dev Mode
 
 Once you have added the plugin to your Figma file,
 
-- Enable [Dev Mode](https://www.figma.com/dev-mode/) is on (⇧+D)
+- Enable [Dev Mode](https://www.figma.com/dev-mode/) is on (`Shift` + `D`)
 - Select a layer
 - Open in the StackBlitz plugin and paste a URL of a repository with the code of your project.
     - You can also use the URL of a specific file within this repository: typically, a component file, for instance: https://github.com/stackblitz/docs/blob/main/.vitepress/theme/components/CardLists/CardList.vue
@@ -55,7 +54,7 @@ The link is now added to the layer's Dev resources.
 
 When you click it, a new tab will open with the full IDE loaded with your project. If your link included a file, this file will already be open in the editor.
 
-## **When to use it?**
+### Recommended uses for the plugin
 
 We suggest providing instant environment links, especially for the essential components in your app. The components that might need adjustments in future are good candidates as well.
 
