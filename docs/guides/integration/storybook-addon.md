@@ -97,7 +97,7 @@ export const Primary: Story = {
 
 After successful installation, you will see a new “Open in StackBlitz” button in the navigation. When clicked, this will open the current story in StackBlitz in a new tab.
 
-![Screenshot 2024-01-02 at 1.40.05 PM.png](How%20to%20install%20and%20use%20the%20StackBlitz%20addon%20for%20St%20e6ba2a5f76b14582a58534c001184f8e/Screenshot_2024-01-02_at_1.40.05_PM.png)
+![Screenshot 2024-01-02 at 1.40.05 PM.png]()
 
 For more information, [view the StackBlitz addon on Storybook’s integrations page](https://storybook.js.org/addons/@stackblitz/storybook-addon-stackblitz/) and refer to the [Storybook documentation](https://storybook.js.org/docs/).
 
