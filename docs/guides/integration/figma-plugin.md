@@ -8,7 +8,7 @@ og_image: bug-reproductions.png
 
 [Figma](https://www.figma.com/) is a collaborative UI/UX design tool. Figma’s [Dev Mode](https://www.figma.com/dev-mode/) enables developers to inspect designs, extract code, and access design details, streamlining the design-to-production process.
 
-Figma supports a [number of plugins]() that extend the functionality and integrate additional tools with the platform.
+Figma supports a [number of plugins](https://www.figma.com/community/category/development/plugins) that extend the functionality and integrate additional tools with the platform.
 
 ::: tip Available with all StackBlitz plans including **Personal**, **Personal+**, **Teams**, and **Enterprise**.
 
