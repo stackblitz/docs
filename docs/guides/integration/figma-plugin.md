@@ -1,7 +1,7 @@
 ---
 title: How to install and use the StackBlitz plugin for Figma
 description: With StackBlitz’s Figma plugin, Dev Mode users can open components in StackBlitz directly from Figma. 
-og_image: bug-reproductions.png
+og_image: figma-plugin.png
 ---
 
 # {{ $frontmatter.title }}
