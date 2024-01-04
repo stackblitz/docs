@@ -6,16 +6,11 @@ og_image: bug-reproductions.png
 
 # {{ $frontmatter.title }}
 
-[[toc]]
-
-# How to install and use the StackBlitz addon for Storybook
-
 [Storybook](https://storybook.js.org/) is a widely used open-source tool for building UI components in isolation. It allows developers to create and test UI components interactively, separate from the main application, facilitating easier documentation, debugging, and visual testing of different states and edge cases.
 
 Storybook supports a number of [addons](https://storybook.js.org/docs/addons) that extend the functionality and integrate additional tools.
 
-::: info
-The StackBlitz addon for Storybook is available with all StackBlitz plans including **Personal**, **Personal+**, **Teams**, and **Enterprise**.
+::: tip Available with all StackBlitz plans including **Personal**, **Personal+**, **Teams**, and **Enterprise**.
 
 The addon is compatible with all Storybook deployments including for Chromatic customers.
 :::
