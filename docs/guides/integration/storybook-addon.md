@@ -19,6 +19,8 @@ The addon is compatible with all Storybook deployments including for Chromatic c
 
 With StackBlitz’s addon, Storybook users can open stories in StackBlitz directly from Storybook.
 
+![Open Storybook stories in StackBlitz](./assets/storybook-addon.gif)
+
 After installation, you will be able to:
 
 - Open an instant, browser-based development environment directly from Storybook
@@ -91,8 +93,6 @@ export const Primary: Story = {
 ## Using the addon
 
 After successful installation, you will see a new “Open in StackBlitz” button in the navigation. When clicked, this will open the current story in StackBlitz in a new tab.
-
-![Open Storybook stories in StackBlitz](./assets/storybook-addon.png)
 
 For more information, [view the StackBlitz addon on Storybook’s integrations page](https://storybook.js.org/addons/@stackblitz/storybook-addon-stackblitz/) and refer to the [Storybook documentation](https://storybook.js.org/docs/).
 

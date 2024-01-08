@@ -19,6 +19,8 @@ The plugin is compatible with all Figma plans.
 
 With [StackBlitz’s Figma plugin](https://www.figma.com/community/plugin/1287113487428429346), Dev Mode users can open components in StackBlitz directly from Figma. 
 
+![StackBlitz's Plugin for Figma Dev Mode](./assets/figma-use.gif)
+
 After configuring the plugin, you will be able to:
 
 - Link layers in Figma to specific components in your design system
@@ -33,12 +35,11 @@ To use the StackBlitz plugin, add it to a Figma file from either:
 
 - **The [plugins directory](https://www.figma.com/community/plugin/1287113487428429346)** by clicking “Open in…” and then selecting the name of the file.
     
-    ![Figma plugin directory](./assets/figma-plugin-directory.png)
-    
+    ![Figma plugin directory](./assets/figma-installation.gif)
+    *Initialize the StackBlitz plugin from within Dev Mode.*
 
-- **The resources menu within your Figma file** (`Shift` + `I`) and searching for "StackBlitz" under *Plugins*
-    
-    ![Figma toolbar with plugin menu](./assets/figma-plugin-toolbar.png)
+
+- **Dev Mode within your Figma file** by searching for "StackBlitz" under *Plugins*
 
 ## Using the StackBlitz plugin with Dev Mode
 
