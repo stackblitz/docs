@@ -20,6 +20,8 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Launching projects from GitHub', link: '/guides/integration/open-from-github' },
     { text: 'Creating projects with the SDK', link: '/guides/integration/create-with-sdk' },
     { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
+    { text: 'Integrating with Storybook', link: '/guides/integration/storybook-addon' },
+    { text: 'Integrating with Figma', link: '/guides/integration/figma-plugin' },
   ],
   codeflow: [
     { text: 'What is Codeflow?', link: '/codeflow/what-is-codeflow' },
