@@ -17,7 +17,7 @@ The addon is compatible with all Storybook deployments including for Chromatic c
 
 ## About the StackBlitz addon for Storybook
 
-With StackBlitz’s addon, Storybook users can open stories in StackBlitz directly from Storybook.
+With StackBlitz’s [addon](https://storybook.js.org/addons/@stackblitz/storybook-addon-stackblitz), Storybook users can open stories in StackBlitz directly from Storybook.
 
 ![Open Storybook stories in StackBlitz](./assets/storybook-addon.gif)
 

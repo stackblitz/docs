@@ -34,22 +34,23 @@ After configuring the plugin, you will be able to:
 To use the StackBlitz plugin, add it to a Figma file from either:
 
 - **The [plugins directory](https://www.figma.com/community/plugin/1287113487428429346)** by clicking “Open in…” and then selecting the name of the file.
+
+
+- **Dev Mode within your Figma file** by searching for "StackBlitz" under *Plugins*
     
     ![Figma plugin directory](./assets/figma-installation.gif)
     *Initialize the StackBlitz plugin from within Dev Mode.*
 
 
-- **Dev Mode within your Figma file** by searching for "StackBlitz" under *Plugins*
-
 ## Using the StackBlitz plugin with Dev Mode
 
 Once you have added the plugin to your Figma file,
 
-- Enable [Dev Mode](https://www.figma.com/dev-mode/) is on (`Shift` + `D`)
-- Select a layer
-- Open in the StackBlitz plugin and paste a URL of a repository with the code of your project.
+1. Enable [Dev Mode](https://www.figma.com/dev-mode/) is on (`Shift` + `D`)
+1. Select a layer
+1. Open in the StackBlitz plugin and paste a URL of a repository with the code of your project.
     - You can also use the URL of a specific file within this repository: typically, a component file, for instance: https://github.com/stackblitz/docs/blob/main/.vitepress/theme/components/CardLists/CardList.vue
-- Click the "Create instant environment link" button to have the link generated for the selected layer.
+1. Click the "Create instant environment link" button to have the link generated for the selected layer.
 
 The link is now added to the layer's Dev resources.
 
