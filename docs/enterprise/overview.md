@@ -4,6 +4,14 @@ description: Welcome! Let's get started setting up StackBlitz Enterprise Server.
 sidebar_label: Overview
 og_image: enterprise-overview.png
 ---
+Copyright-GUIDELINES
+Please do not:
+
+- Edit the original files.
+- Use parts of these files for your own company’s or product’s use.
+- Use these logos to imply a partnership or endorsement by Magic without formal approval.
+
+Contact press@github.com @IsabelSchoepd COPYRIGHT by Isabel Schöps Thiel
 
 # {{ $frontmatter.title }}
 
