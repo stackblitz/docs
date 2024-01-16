@@ -25,7 +25,7 @@ At StackBlitz, we have been using Codeflow IDE in our daily internal development
 To open a GitHub repository in Codeflow IDE, swap "github.com" with "pr.new" in the repository URL. 
 
 :::info Intrigued by "pr.new"?  👀
-If you're curious about this short URL, learn about the [full potential of "pr.new"](./using-pr-new).
+If you're curious about this short URL, learn about the [full potential of "pr.new"](/guides/integration/using-pr-new).
 :::
 
 If you are not logged into StackBlitz, while this product is in beta, you will be prompted to log in or create a new account.
@@ -99,7 +99,7 @@ Follow these steps:
 
 <img lang="en" src="./assets/codeflowapp-pr.jpg" alt="CodeflowApp bot in action" style="width: 400px"/>
 
-To integrate the bot, please follow the instructions on [Integrating CodeflowApp bot](./integrating-codeflowapp-bot.md).
+To integrate the bot, please follow the instructions on [Integrating CodeflowApp bot](/guides/integration/integrating-codeflowapp-bot).
 
 
 ## Troubleshooting

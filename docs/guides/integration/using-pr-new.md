@@ -26,7 +26,7 @@ To open a GitHub repository with pr.new, visit it on GitHub and in the browser's
 
 > <a href="https://pr.new/github.com/stackblitz/docs" target="_blank" rel="noopener noreferrer"><b>pr.new/</b>github.com/stackblitz/docs</a>
 
-You will be redirected to [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor) where you can work to [submit a PR](/guides/user-guide/working-in-codeflow-ide#submitting-a-pr) or just explore the codebase.
+You will be redirected to [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor) where you can work to [submit a PR](/guides/user-guide/working-in-stackblitz-editor#submitting-a-pr) or just explore the codebase.
 
 ### Opening a specific branch 
 
@@ -42,7 +42,7 @@ To review a PR with pr.new, visit the submitted pull request on GitHub and in th
 
 > <a href="https://pr.new/github.com/stackblitz/docs/pull/33" target="_blank" rel="noopener noreferrer"><b>pr.new/</b>github.com/stackblitz/docs/pull/33</a>
 
-You will be redirected to [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor) in the ["PR review mode"](/guides/user-guide/working-in-codeflow-ide#reviewing-a-pr-with-codeflow-ide) where you will see diffs. You can switch to the standard file view by choosing the "file" icon in the left vertical nav bar.
+You will be redirected to [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor) in the ["PR review mode"](/guides/user-guide/working-in-stackblitz-editor#reviewing-a-pr-with-codeflow-ide) where you will see diffs. You can switch to the standard file view by choosing the "file" icon in the left vertical nav bar.
 
 ## "Open in Codeflow" button
 
@@ -82,4 +82,4 @@ To edit a single file with pr.new, visit it in the GitHub repository and click t
 
 > <a href="https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md" target="_blank" rel="noopener noreferrer"><b>pr.new/</b>github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md</a>
 
-You will be redirected to [Web Publisher](./content-updates-with-web-publisher) for a more pleasant editing experience. If you prefer to work in a full environment, click on the "Open in IDE" button and you will be redirected to [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor).
+You will be redirected to [Web Publisher](/guides/user-guide/content-updates-with-web-publisher) for a more pleasant editing experience. If you prefer to work in a full environment, click on the "Open in IDE" button and you will be redirected to [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor).

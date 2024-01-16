@@ -101,7 +101,7 @@ To specify the first parameter, add `?` at the end of the base link. Connect the
 
 <!--@include: ./parts/installing-codeflowapp.md-->
 
-Follow [this integration guide](./integrating-codeflowapp-bot.md) to integrate CodeflowApp bot into your project.
+Follow [this integration guide](/guides/integration/integrating-codeflowapp-bot) to integrate CodeflowApp bot into your project.
 
 <!-- ### 5. Configure "edit this page"
 

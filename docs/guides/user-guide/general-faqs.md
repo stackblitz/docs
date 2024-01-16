@@ -32,7 +32,7 @@ We support four pathways:
 
 1. If you are in any non-Codeflow StackBlitz project, you can download the project to your local machine by clicking the button right underneath the "Share" dialogue and deploy manually.
 
-2. If you are using an EngineBlock project, you can deploy directly via our [Firebase integration](https://developer.stackblitz.com/guides/user-guide/ide-whats-on-your-screen#firebase-sidebar).
+2. If you are using an EngineBlock project, you can deploy directly via our [Firebase integration](https://developer.stackblitz.com/guides/user-guide/user-interface#firebase-sidebar).
 
 3. If you are using the Classic Editor, you can click the Connnect Repository button on the top left to easily connect with your desired repository.
 
@@ -247,7 +247,7 @@ This environment is ideal for:
 - Text or formatting changes in documentation or blogs
 - Quick fixes that don't require dependency or compilation changes
 
-You can learn more about Web Publisher [here](https://developer.stackblitz.com/codeflow/content-updates-with-web-publisher).
+You can learn more about Web Publisher [here](https://developer.stackblitz.com/guides/user-guide/content-updates-with-web-publisher).
 
 ## Classic Editor SDK
 
@@ -261,7 +261,7 @@ Details on embed options can be found [here](https://developer.stackblitz.com/pl
 
 ### What is the WebContainer API?
 
-The WebContainer API allows developers to create fullstack Node.js environments in the browser with WebContainer technology. WebContainer technology powers StackBlitz products like Codeflow and [Web Publisher](https://developer.stackblitz.com/codeflow/content-updates-with-web-publisher).
+The WebContainer API allows developers to create fullstack Node.js environments in the browser with WebContainer technology. WebContainer technology powers StackBlitz products like Codeflow and [Web Publisher](https://developer.stackblitz.com/codeflow/guides/user-guide/content-updates-with-web-publisher).
 
 Organizations wanting to use the API for production usage in a for-profit setting are required to purchase a WebContainer API License. With this license, organizations have access to:
 

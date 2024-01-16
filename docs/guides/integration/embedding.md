@@ -69,5 +69,5 @@ You can use the following URL query parameters to customize the appearance and f
 Alternatively, you can use our [JavaScript SDK methods](/platform/api/javascript-sdk) for embedding StackBlitz projects in pages to avoid creating and configuring iframes.
 
 
-[ui_docs]: /guides/user-guide/ide-whats-on-your-screen
+[ui_docs]: /guides/user-guide/user-interface
 [available_env_docs]: /guides/user-guide/available-environments

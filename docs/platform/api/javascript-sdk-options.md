@@ -209,7 +209,7 @@ This only declares an _intent_, and the available values may behave differently 
 | `'editor'` | Shows the Editor only (embed and standard layouts) |
 
 [available_env_docs]: /guides/user-guide/available-environments
-[ui_docs]:  /guides/user-guide/ide-whats-on-your-screen
+[ui_docs]:  /guides/user-guide/user-interface
 
 [embedoptions]: #embedoptions
 [openfileoption]: #openfileoption

@@ -102,7 +102,7 @@ This should create a temporary project (not yet saved to the database) using the
 4. Edit the forked project's slug to: `polymer-base`.
 5. Finally, go to `https://{your-instance}/admin/projects/polymer-base/edit` and change the value of the “Preset” field from `esm` to `polymer`, and save the project.
 
-You should now have a project with the `polymer` preset and whose slug is `polymer-base`. Don't touch this project in the future (you can make it “frozen” in the [project settings](/guides/user-guide/ide-whats-on-your-screen#settings-sidebar) in the editor to prevent accidental changes) to make sure the SDK functionality works well.
+You should now have a project with the `polymer` preset and whose slug is `polymer-base`. Don't touch this project in the future (you can make it “frozen” in the [project settings](/guides/user-guide/user-interface#settings-sidebar) in the editor to prevent accidental changes) to make sure the SDK functionality works well.
 
 You can add this project to the list of starters on `https://{your-instance}/starters`.
 

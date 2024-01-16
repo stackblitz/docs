@@ -9,4 +9,4 @@ To add one-click pull request reviews to your team, you will need to install the
 Once installed, it will comment on every PR with a link to instantly run and review it:
 ![Trial banner](./assets/codeflowapp.jpg)
 
-For more information & troubleshooting you can checkout the [CodeflowApp documentation here](https://developer.stackblitz.com/codeflow/integrating-codeflowapp-bot).
+For more information & troubleshooting you can checkout the [CodeflowApp documentation here](https://developer.stackblitz.com/guides/integration/integrating-codeflowapp-bot).

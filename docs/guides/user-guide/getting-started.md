@@ -79,8 +79,8 @@ If you’re writing a blog, maintaining a documentation site or an open source p
 2. [Add “Open in StackBlitz” buttons](/guides/integration/open-from-github) to your READMEs and docs.
 3. [Generate custom projects on the fly](/guides/integration/create-with-sdk) with our JavaScript SDK.
 4. [Use StackBlitz reproductions in GitHub](/guides/integration/bug-reproductions) bug issue templates!
-5. [Make PR reviews safer and faster](https://developer.stackblitz.com/codeflow/integrating-codeflowapp-bot) with CodeflowApp bot.
-6. [Help your users edit your docs with live preview](https://developer.stackblitz.com/codeflow/content-updates-with-web-publisher) using Web Publisher.
-7. [Provide a one-click environment with Codeflow IDE](https://developer.stackblitz.com/codeflow/using-pr-new) so other developers can submit bug fixes without setting up the local environment.
+5. [Make PR reviews safer and faster](https://developer.stackblitz.com/guides/integration/integrating-codeflowapp-bot) with CodeflowApp bot.
+6. [Help your users edit your docs with live preview](https://developer.stackblitz.com/guides/user-guide/content-updates-with-web-publisher) using Web Publisher.
+7. [Provide a one-click environment with Codeflow IDE](https://developer.stackblitz.com/guides/integration/using-pr-new) so other developers can submit bug fixes without setting up the local environment.
 
 Happy coding!
