@@ -54,6 +54,70 @@ If you need your invoice for Enterprise Server, please contact your Customer Suc
 
 # Product FAQs
 
+## Editor
+
+### Which runtime does Stackblitz support?
+
+Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which currently support **Node.js 16**.
+
+### Does any company use Stackblitz IDE for their daily development work?
+
+At StackBlitz, we do! We use Stackblitz IDE for our internal dev work, including PR reviews. In fact, this docs page has been built in Stackblitz IDE.
+
+It's a new product that has **just** been released so check back here in a few months.
+
+### Which repos can/not be opened in Stackblitz IDE?
+
+Stackblitz IDE should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
+
+### Does my code persist between sessions?
+
+<!--@include: ./parts/persistance.md-->
+
+
+
+## Runtime Environment
+
+### Can I change the Node version?
+
+The Node version is locked so currently, there is no ability to change the Node version.
+
+
+## Git & GitHub 
+
+### To open a repository in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
+
+You need to sign in to [StackBlitz](https://stackblitz.com) *using* GitHub.
+
+### Can I run private repositories?
+
+Yes. Private repositories are available for free during beta through 2022. Starting Q1 '23 private repositories will require a subscription. Contact us if you’re interested in learning more about pricing.
+
+### Can I run any Git repository?
+
+At this moment we only support GitHub.com repositories.
+
+## Security
+
+### I would like to use Stackblitz but I'm not sure if it's secure.
+
+Since we’re executing the code entirely in the browser's sandbox, the Stackblitz IDE is actually more secure than running locally. We also use expiring oAuth tokens for interactions with git.
+
+## Package managers
+
+### Which package managers do you support?
+
+<!--@include: ./parts/supported-packages.md-->
+
+
+## Capabilities & Limitations
+
+### Can I run Vim?
+
+This is perhaps the most frequently-asked question with regards to StackBlitz features - and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3). We have good news: you can run Vim in Codeflow IDE by enabling the extension! 🥳
+
+
+# Plans
 ## Personal Plan
 
 ### What is the Personal Plan?
@@ -156,6 +220,7 @@ It is also possible to run Angular unit tests inside WebContainer-based projects
 
 Since Electron is a native app, this cannot be supported since StackBlitz runs entirely within the browser.
 
+
 ## Codeflow Editor
 
 ### What is the Codeflow Editor?
@@ -211,3 +276,10 @@ WebContainer API docs can be found [here](https://webcontainers.io/).
 ### I see that WebContainer API is free to use, but a license is required. Can I use the WebContainer API for commercial purposes?
 
 We are thrilled to offer free access for most users! For those with high levels of commercial usage, we do apply a nominal charge for API requests beyond 10,000 per month. If interested, [please reach out to sales](https://docs.google.com/forms/d/e/1FAIpQLSertiZLl-za0ZHxsWbd2IrISVft2OpPglykEHpEllPSfnZIUg/viewform) for more information!
+
+## Web Publisher
+
+### Which files can be opened in Web Publisher?
+
+Any file type can be opened in Web Publisher.
+
