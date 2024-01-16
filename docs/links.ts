@@ -6,7 +6,6 @@ import type { CardLink, FooterSection, MenuLinkGroup, MenuLinkItem } from '@them
 const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
   userGuide: [
     { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
-    { text: 'What is Codeflow?', link: '/guides/user-guide/what-is-codeflow' },
     { text: 'Getting started', link: '/guides/user-guide/getting-started' },
     { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
     { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
@@ -30,8 +29,8 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
     { text: 'Integrating with Storybook', link: '/guides/integration/storybook-addon' },
     { text: 'Integrating with Figma', link: '/guides/integration/figma-plugin' },
-    { text: 'Integrating CodeflowApp bot', link: '//guides/integration/integrating-codeflowapp-bot' },
-    { text: 'Integrating Web Publisher', link: '//guides/integration/integrating-web-publisher' },
+    { text: 'Integrating CodeflowApp bot', link: '/guides/integration/integrating-codeflowapp-bot' },
+    { text: 'Integrating Web Publisher', link: '/guides/integration/integrating-web-publisher' },
     { text: 'Using pr.new', link: '//guides/integration/using-pr-new' },
   ],
   teams: [
