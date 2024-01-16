@@ -1,9 +1,9 @@
 ---
-name: "New Extension Request for Stackblitz editor \U0001F9E9"
-about: Your favorite extension is missing from Stackblitz editor? Let us bring it over!
+name: "New Extension Request for Stackblitz \U0001F9E9"
+about: Your favorite extension is missing from Stackblitz? Let us bring it over!
 title: 'EXTENSION REQUEST:'
 labels: ''
-assignees: sylwiavargas
+assignees: HeyGarrison
 
 ---
 
