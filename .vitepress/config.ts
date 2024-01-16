@@ -88,7 +88,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
     nav: [
       { text: 'Guides', link: defaultGroupLink('userGuide') },
-      { text: 'Codeflow', link: defaultGroupLink('codeflow') },
       { text: 'API', link: defaultGroupLink('api') },
       { text: 'WebContainers', link: defaultGroupLink('webcontainers') },
       { text: 'Teams', link: defaultGroupLink('teams') },
@@ -96,7 +95,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
     sidebar: {
       '/guides/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
-      '/codeflow/': sidebarLinks('main', ['codeflow']),
       '/teams/': sidebarLinks('main', ['teams']),
       '/platform/api/': sidebarLinks('main', ['api']),
       '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),

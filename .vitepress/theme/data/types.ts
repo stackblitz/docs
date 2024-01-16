@@ -1,6 +1,5 @@
 export type MenuLinkGroup =
   | 'api'
-  | 'codeflow'
   | 'teams'
   | 'enterprise'
   | 'integrationGuide'

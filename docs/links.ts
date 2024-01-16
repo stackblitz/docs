@@ -14,6 +14,14 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Collections', link: '/guides/user-guide/collections' },
     { text: 'Keyboard shortcuts', link: '/guides/user-guide/keyboard-shortcuts' },
     { text: 'General FAQs', link: '/guides/user-guide/general-faqs' },
+    { text: 'What is Codeflow?', link: '/codeflow/what-is-codeflow' },
+    { text: 'Working in Codeflow IDE', link: '/codeflow/working-in-codeflow-ide' },
+    { text: 'Environment Variables', link: '/codeflow/environment-variables' },
+    {
+      text: 'Content updates with Web Publisher',
+      link: '/codeflow/content-updates-with-web-publisher',
+    },
+    { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },    
   ],
   integrationGuide: [
     { text: 'Embedding projects', link: '/guides/integration/embedding' },
@@ -22,19 +30,9 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
     { text: 'Integrating with Storybook', link: '/guides/integration/storybook-addon' },
     { text: 'Integrating with Figma', link: '/guides/integration/figma-plugin' },
-  ],
-  codeflow: [
-    { text: 'What is Codeflow?', link: '/codeflow/what-is-codeflow' },
-    { text: 'Using pr.new', link: '/codeflow/using-pr-new' },
-    { text: 'Working in Codeflow IDE', link: '/codeflow/working-in-codeflow-ide' },
     { text: 'Integrating CodeflowApp bot', link: '/codeflow/integrating-codeflowapp-bot' },
-    { text: 'Environment Variables', link: '/codeflow/environment-variables' },
-    {
-      text: 'Content updates with Web Publisher',
-      link: '/codeflow/content-updates-with-web-publisher',
-    },
     { text: 'Integrating Web Publisher', link: '/codeflow/integrating-web-publisher' },
-    { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },
+    { text: 'Using pr.new', link: '/codeflow/using-pr-new' },
   ],
   teams: [
     { text: 'What is StackBlitz Teams', link: '/teams/what-is-stackblitz-teams.md' },
@@ -103,10 +101,6 @@ const linkGroups: Record<MenuLinkGroup, { text: string; items: MenuLinkItem[] }>
   integrationGuide: {
     text: 'Integration Guide',
     items: groupLinks.integrationGuide,
-  },
-  codeflow: {
-    text: 'Codeflow',
-    items: groupLinks.codeflow,
   },
   teams: {
     text: 'Teams',
