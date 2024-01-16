@@ -60,15 +60,15 @@ If you need your invoice for Enterprise Server, please contact your Customer Suc
 
 Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which currently support **Node.js 16**.
 
-### Does any company use Stackblitz IDE for their daily development work?
+### Does any company use Stackblitz editor for their daily development work?
 
-At StackBlitz, we do! We use Stackblitz IDE for our internal dev work, including PR reviews. In fact, this docs page has been built in Stackblitz IDE.
+At StackBlitz, we do! We use the Stackblitz editor for our internal dev work, including PR reviews. In fact, this docs page has been built in the Stackblitz editor.
 
 It's a new product that has **just** been released so check back here in a few months.
 
-### Which repos can/not be opened in Stackblitz IDE?
+### Which repos can/not be opened in Stackblitz editor?
 
-Stackblitz IDE should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
+The Stackblitz editor should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
 
 ### Does my code persist between sessions?
 

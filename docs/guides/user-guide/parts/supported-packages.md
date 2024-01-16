@@ -1,1 +1,1 @@
-Currently, Stackblitz IDE supports multiple package managers including pnpm, npm, and Yarn.
+Currently, the Stackblitz editor supports multiple package managers including pnpm, npm, and Yarn.
