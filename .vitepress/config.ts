@@ -16,6 +16,8 @@ interface ThemeConfig extends DefaultTheme.Config {
   };
 }
 
+
+
 export default defineConfigWithTheme<ThemeConfig>({
   srcDir: './docs',
   outDir: `./build${BASE_PATH}`,
