@@ -55,7 +55,7 @@ Selecting multiple projects allows you to add them all to an existing [Collectio
 
 ## Opening a GitHub repository in Codeflow IDE
 
-If you'd like to do more work or use VS Code extensions (or Vim), you can use [StackBlitz Codeflow IDE](https://developer.stackblitz.com/codeflow/what-is-codeflow), which spins up a whole dev environment with one click. To do so, click on the "Open GitHub repository" button on your dashboard:
+If you'd like to do more work or use VS Code extensions (or Vim), just use the [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor), which spins up a whole dev environment with one click. To do so, click on the "Open GitHub repository" button on your dashboard:
 
 !["Open GitHub repository" button is highlighted](./assets/dashboard-chosen-new-github-repository.png)
 

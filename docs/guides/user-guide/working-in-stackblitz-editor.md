@@ -1,6 +1,6 @@
 ---
-title: Working in Codeflow IDE
-description: Are you ready to make Codeflow your workflow? This page covers what to expect when using Codeflow IDE.
+title: Working in Stackblitz editor
+description:This page covers what to expect when using Stackblitz editor.
 og_image: working-in-codeflow-ide.png
 ---
 

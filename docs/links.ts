@@ -9,8 +9,8 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Getting started', link: '/guides/user-guide/getting-started' },
     { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
     { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
+    { text: 'Working in Stackblitz editor', link: '/guides/user-guide/working-in-stackblitz-editor' },
     { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
-    { text: 'Working in Codeflow IDE', link: '/guides/user-guide/working-in-codeflow-ide' },
     {
       text: 'Content updates with Web Publisher',
       link: '/guides/user-guide/content-updates-with-web-publisher',
