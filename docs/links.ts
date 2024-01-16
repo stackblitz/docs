@@ -30,7 +30,7 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Integrating with Figma', link: '/guides/integration/figma-plugin' },
     { text: 'Integrating CodeflowApp bot', link: '/guides/integration/integrating-codeflowapp-bot' },
     { text: 'Integrating Web Publisher', link: '/guides/integration/integrating-web-publisher' },
-    { text: 'Using pr.new', link: '//guides/integration/using-pr-new' },
+    { text: 'Using pr.new', link: '/guides/integration/using-pr-new' },
   ],
   teams: [
     { text: 'What is StackBlitz Teams', link: '/teams/what-is-stackblitz-teams.md' },
