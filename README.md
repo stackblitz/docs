@@ -9,9 +9,9 @@ StackBlitz is an **instant fullstack web IDE for the JavaScript ecosystem**. It'
 
 Now you can use the web to build the web.
 
-In fact, why not edit this docs in Codeflow IDE?
+In fact, why not edit this docs in Stackblitz?
 
-<a href="https://stackblitz.com/~/github.com/stackblitz/docs"><img style="display:inline" src="https://developer.stackblitz.com/img/open_in_codeflow.svg" alt="Open in Codeflow"></a>
+<a href="https://stackblitz.com/~/github.com/stackblitz/docs"><img style="display:inline" src="https://developer.stackblitz.com/img/open_in_codeflow.svg" alt="Open in Stackblitz"></a>
 
 ---
 
@@ -65,7 +65,7 @@ If what you want to say doesn't really fall into actionable "problem" or "improv
 
 There are three ways to interact with this repository:
 - For **a small content update**, you can use [Web Publisher](#content-updates-with-web-publisher). 
-- If you want **to explore and develop** this site, use [StackBlitz Codeflow](#developing-with-stackblitz-codeflow). 
+- If you want **to explore and develop** this site, use [StackBlitz](#developing-with-stackblitz). 
 - Alternatively, you can [run the docs locally](#developing-locally).
 
 ### Content updates with Web Publisher
@@ -78,8 +78,8 @@ Use Web Publisher for small content updates for a pleasant editing experience:
 4. You will be redirected to a GitHub PR template page prepared for you to submit a PR.
 
 
-### Developing with StackBlitz Codeflow
-Use StackBlitz Codeflow for bigger content updates. Codeflow will spin up the entire dev environment with a running dev server. When using Codeflow, please remember to commit and push your changes frequently.
+### Developing with StackBlitz
+Use StackBlitz for bigger content updates. StackBlitz will spin up the entire dev environment with a running dev server. When using StackBlitz, please remember to commit and push your changes frequently.
 
 To access it, [click this button](https://stackblitz.com/~/github.com/stackblitz/docs).
 

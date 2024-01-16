@@ -69,7 +69,7 @@ Except for small typo fixes and content updaets, the starting point for contribu
 **If you don't have any specific issue you'd like to work on**, you can browse available ones. Please note that we use [issue labels](#issue-labels-we-use) so you can modify your search. After you've found an issue you'd like to work on, leave a comment and tell us when you have time to do that. A docs team member will assign you.
 
 ### 2. **Work on the issue**
-Once assigned to an issue, choose [the right tool for the job](README.md#development) - you may want to use Web Publisher, Codeflow, or develop locally. We have no preference.
+Once assigned to an issue, choose [the right tool for the job](README.md#development) - you may want to use Web Publisher, Stackblitz, or develop locally. We have no preference.
 
 Whenever in doubt or whenever you feel stuck, please ask clarifying questions in the issue thread or on our [Discord](https://discord.gg/EQ7uJQxC). We are here to support you!
 
