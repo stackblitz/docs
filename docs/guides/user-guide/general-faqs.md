@@ -8,6 +8,8 @@ og_image: general-faqs.png
 
 This page outlines commonly asked questions and answers about StackBlitz. If you have questions that aren't addressed on this page, contact us at [hello@stackblitz.com](mailto:hello@stackblitz.com).
 
+[[toc]]
+
 ## General FAQs
 
 ### What is the difference between the legacy and next-generation editors?

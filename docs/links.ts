@@ -141,18 +141,18 @@ export const sidebarLinks = (
 
 export const homeTopLinks: CardLink[] = [
   {
-    icon: 'fa-file-import',
-    title: 'Get Started',
+    icon: 'fa-bolt',
+    title: 'What is StackBlitz?',
     description:
-      'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
+      'Learn how StackBlitz works and how you can use it for everything from rapid prototyping to full stack development.',
     url: '/guides/user-guide/what-is-stackblitz',
   },
   {
     icon: 'fa-browser',
-    title: 'Codeflow',
+    title: 'Getting Started',
     description:
-      'One click opens a full in-browser IDE for your repos, issues, and PRs. No more cloning, installing, stashing!',
-    url: '/codeflow/what-is-codeflow',
+    'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
+    url: '/guides/user-guide/getting-started',
   },
   {
     icon: 'fa-brackets-curly',

@@ -12,13 +12,6 @@ og_image: available-environments.png
 
 There are two underlying compute environments that can be used to power a StackBlitz project: **EngineBlock** or **WebContainers**. Each project in StackBlitz runs on one of these compute environments. This docs page is designed to describe some of the technical differences between the environments and help you [determine which compute environment you are using](#which-compute-environment-are-you-using).
 
-:::tip
-The compute environments being discussed on this page refer to the behind the scenes tech powering the project and NOT the editor/visual user interface. As of Q1 2024 StackBlitz has 3 distinct editors, and you can learn more about them at the links below:<br>
-:link: [Stackblitz editor](/guides/user-guide/working-in-stackblitz-editor<br>
-:link: [StackBlitz Classic Editor](/guides/user-guide/getting-started)<br>
-:link: [Stackblitz Web Publisher](/guides/integration/integrating-web-publisher)
-:::
-
 Depending on the compute environment and choice of editor, StackBlitz will have slightly different features and User Interface elements. See an overview of both compute environments in the table below - and you can directly consult the section on [EngineBlock](#engineblock) or [WebContainers](#webcontainers) for more specifics on each.
 
 | Feature | EngineBlock | WebContainers |
