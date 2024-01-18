@@ -1,164 +1,174 @@
 ---
-title: General FAQs (Frequently Asked Questions)
+title: FAQs (Frequently Asked Questions)
 description: This page outlines commonly asked questions and answers about StackBlitz.
 og_image: general-faqs.png
 ---
 
-This page outlines commonly asked questions and answers about StackBlitz.
+# Frequently asked questions
 
-# General FAQs
+This page outlines commonly asked questions and answers about StackBlitz. If you have questions that aren't addressed on this page, contact us at [hello@stackblitz.com](mailto:hello@stackblitz.com).
 
-### Why do I have to Re-Authorize to access GitHub repositories?
-As of September 27th, 2023 we started migrating from GitHub's OAuth app to their GitHub App. We received a lot of feedback from users saying that they didn't like the "*all* or nothing" approach that GitHub's OAuth app takes so we've started switching over to the GitHub app itself which allows granularity on a per-repository basis.
+## General FAQs
+
+### What is the difference between the legacy and next-generation editors?
+
+StackBlitz's classic editor is the original StackBlitz interface. The legacy editor includes a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+
+The legacy editor is compatible with both EngineBlock and WebContainers compute environments.
+
+StackBlitz's next-generation, WebContainers-backed editor enables you to use your VS Code extensions, keybindings, and customizations in a familiar interface. WebContainers also enables a full terminal and Node 18 development environment.
+
+### How do I change the editor my project opens in?
+
+
+### How do I select my default editor?
+
+
+### Why can't I see my terminal?
+
+Please note that the terminal is only available for WebContainer-based projects. You can use the keyboard binding `^` `` ` `` (the caret and the back quote keys) to toggle the terminal. 
+
+If you are unsure which envronment you are using, review our documentation on the [environments available in StackBlitz](https://developer.stackblitz.com/guides/user-guide/available-environments).
+
+### What is the difference between EngineBlock and WebContainers?
+
+[EngineBlock](https://developer.stackblitz.com/guides/user-guide/available-environments#engineblock) is StackBlitz's legacy compute environment, first introduced in 2017. It operates as a lightweight custom runtime built on top of SystemJS and is focused solely on supporting popular front-end frameworks and libraries.
+
+Projects using EngineBlock can be embedded in blogs, documentation, and other web-based mediums, making it an excellent tool for tutorials, demos, and code samples.
+
+EngineBlock is only available in StackBlitz's legacy editor.
+
+[WebContainers](https://developer.stackblitz.com/guides/user-guide/available-environments#webcontainers) is our next-generation compute environment, launched in May 2021. 
+
+Unlike EngineBlock, WebContainers provides a full Node.js environment, capable of running full-stack web applications. WebContainers is the default runtime for all new StackBlitz projects. 
+
+For more information on the differences between each compute environment, including how to determine which environment your project is using, refer to the documentation on [available environments](https://developer.stackblitz.com/guides/user-guide/available-environments).
+
+### Why do I have to re-authorize StackBlitz to access GitHub repositories?
+
+As of September 27th, 2023, we started migrating from GitHub's OAuth app to their GitHub App. We received a lot of feedback from users saying that they didn't like the "*all* or nothing" approach that GitHub's OAuth app takes so we've started switching over to the GitHub app itself which allows granularity on a per-repository basis.
 
 To ensure a smooth migration, we converted our "Codeflow bot" app into a "StackBlitz" app. Additionally, we made necessary adjustments to the permissions to enable us to:
 - Create repositories and manage
 - Import teams to StackBlitz
 - Login to StackBlitz
 
-If you have any questions about this process feel free to reach out to [support@stackblitz.com](mailto:support@stackblitz.com)
+If you have any questions about this process feel free to reach out to [hello@stackblitz.com](mailto:hello@stackblitz.com)
 
-### Can I make code snippets?
-
-Yes, you can! Here's a [handy video](https://twitter.com/sulco/status/1275039159611203585) featured on Twitter that shows you how to create and use code snippets in StackBlitz.
-
-### Can I use Postman or something similar for testing?
-
-[Postman](https://www.postman.com/automated-testing/) and similar tools will not work since the server is unreachable outside of the browser. As an alternative, you could run a node program that makes requests for testing.
-
-### What are the deploy options available on StackBlitz? 
-
-We support four pathways:
-
-1. If you are in any non-Codeflow StackBlitz project, you can download the project to your local machine by clicking the button right underneath the "Share" dialogue and deploy manually.
-
-2. If you are using an EngineBlock project, you can deploy directly via our [Firebase integration](https://developer.stackblitz.com/guides/user-guide/user-interface#firebase-sidebar).
-
-3. If you are using the Classic Editor, you can click the Connnect Repository button on the top left to easily connect with your desired repository.
-
-![Connect repository button on StackBlitz editor](./assets/stackblitz_connecttorepobutton.png)
-
-4. If you are using Codeflow, you can push code directly into GitHub and then use the [Netlify](https://github.com/apps/netlify) or [Vercel](https://vercel.com/docs/concepts/git/vercel-for-github) GitHub bots to deploy your site.
-
-### Are MongoDB, Mongoose, Postgres or MySQL supported?
-
-Currently, direct TCP database connections are not supported. However,  an API based database provider like [Neon](https://neon.tech/) (a serverless Postgres DB, accessible via API calls) may provide an alternative approach.
-
-### How do I view my invoice?
-
-You can go directly to https://stackblitz.com/settings/membership and click the 'View Invoices' button to view your invoice history.
-
-If you need your invoice for Enterprise Server, please contact your Customer Success Engineer for details.
-<!--- Need to figure out what plugin is needed in VitePress to add videos (./assets/view-invoice.mp4). Add this sentence once confirmed:  You can view [this video](./assets/view-invoice.mp4) to see how it's done!
- -->
-
-# Product FAQs
-
-## Editor
-
-### Which runtime does Stackblitz support?
-
-Codeflow runs on top of [WebContainers](/guides/user-guide/available-environments#webcontainers), which currently support **Node.js 16**.
-
-### Does any company use Stackblitz editor for their daily development work?
-
-At StackBlitz, we do! We use the Stackblitz editor for our internal dev work, including PR reviews. In fact, this docs page has been built in the Stackblitz editor.
-
-It's a new product that has **just** been released so check back here in a few months.
-
-### Which repos can/not be opened in Stackblitz editor?
-
-The Stackblitz editor should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
-
-### Does my code persist between sessions?
-
-<!--@include: ./parts/persistance.md-->
-
-
-
-## Runtime Environment
-
-### Can I change the Node version?
-
-The Node version is locked so currently, there is no ability to change the Node version.
-
-
-## Git & GitHub 
-
-### To open a repository in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
-
-You need to sign in to [StackBlitz](https://stackblitz.com) *using* GitHub.
-
-### Can I run private repositories?
-
-Yes. Private repositories are available for free during beta through 2022. Starting Q1 '23 private repositories will require a subscription. Contact us if you’re interested in learning more about pricing.
-
-### Can I run any Git repository?
-
-At this moment we only support GitHub.com repositories.
-
-## Security
-
-### I would like to use Stackblitz but I'm not sure if it's secure.
-
-Since we’re executing the code entirely in the browser's sandbox, the Stackblitz IDE is actually more secure than running locally. We also use expiring oAuth tokens for interactions with git.
-
-## Package managers
+## Integrations and compatibility
 
 ### Which package managers do you support?
 
 <!--@include: ./parts/supported-packages.md-->
 
-
-## Capabilities & Limitations
-
 ### Can I run Vim?
 
-This is perhaps the most frequently-asked question with regards to StackBlitz features - and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3). We have good news: you can run Vim in Codeflow IDE by enabling the extension! 🥳
+Previously our most-requested features and [one of the oldest issues on our repository](https://github.com/stackblitz/core/issues/3), Vim is now supported in our next-generation editor by adding it using the "Extensions" menu.
+
+### Can I open private GitHub repositories in StackBlitz?
+
+Yes. Private repositories can be opened in StackBlitz. 
+
+You can open and edit private repositories owned by your GitHub user with any StackBlitz plan. However, to collaborate on private repositories you do not own or to access private repositories owned by your GitHub organization, you will need a [paid StackBlitz plan](https://stackblitz.com/pricing/).
+
+If you experience issues accessing a repository in StackBlitz, ensure your GitHub user has permission to access the repository in the repository's settings in GitHub.
+
+### Which git providers does StackBlitz support?
+
+All StackBlitz users can use GitHub. StackBlitz Enterprise customers can integrate with GitHub, GitLab, and Bitbucket.
+
+### What type of repositories can be opened in StackBlitz?
+
+You can open any repository in StackBlitz. However, StackBlitz's WebContainers compute envronment can only *run* repositories compatible with Node.js. 
+
+### Can I use tools like Postman for testing?
+
+[Postman](https://www.postman.com/automated-testing/) and similar tools will not work since the server is unreachable outside of the browser. As an alternative, you could run a node program that makes requests for testing.
+
+### What are the deploy options available on StackBlitz? 
+
+There are multiple options for deploying projects in StackBlitz:
+
+*Recommended:*
+
+If you are using StackBlitz's next-generation editor, you can sync code directly with GitHub and then use tools like [Netlify](https://github.com/apps/netlify) or [Vercel](https://vercel.com/docs/concepts/git/vercel-for-github) to deploy your site from GitHub.
+
+*For StackBlitz projects using the legacy editor:*
+
+1. Download the project to your local machine by clicking the button right underneath the "Share" dialogue. From there, you can deploy manually.
+
+2. For projects using EngineBlock, you can deploy to Firebase using the [Firebase integration](https://developer.stackblitz.com/guides/user-guide/user-interface#firebase-sidebar).
+
+3. Create a GitHub repository witn the code from your StackBlitz project using the "Create a repository" button.
+![Connect repository button on StackBlitz editor](./assets/stackblitz_connecttorepobutton.png)
+
+### Are MongoDB, Mongoose, Postgres, or MySQL supported?
+
+Currently, direct TCP database connections are not supported. However, API-based database providers like [Neon](https://neon.tech/) can be used with StackBlitz.
+
+### Can I run unit tests in StackBlitz?
+
+WebContainer-based projects can run any Node compatible testing tooling.
+
+### Can I develop ElectronJS apps on StackBlitz?
+
+No, since Electron is a native app, it is not supported by StackBlitz's browser-based compute model.
+
+## Security
+
+### I would like to use Stackblitz but I'm not sure if it's secure.
+
+StackBlitz is regarded as more secure than local development as all code is executed entirely within the browser. If you have specific questions about StackBlitz's security design and practices, [contact us directly](mailto:hello@stackblitz.com).
 
 
-# Plans
-## Personal Plan
+## Plans and billing
 
-### What is the Personal Plan?
+### How do I view my invoice?
 
-The Personal Plan is a free account that allows you to create unlimited public projects in both Classic and Codeflow editors. All you need to do is sign in with your GitHub account!
+You can view your past invoices and other billing information in your [Billing settings](https://stackblitz.com/settings/billing).
 
-## Personal+ Plan
+::: tip
+**StackBlitz Enterprise customers:** Contact your account manager for billing inquiries.
+:::
 
-### What is the Personal+ Plan?
+### What is StackBlitz Personal?
 
-The Personal+ Plan (formerly known as the Astronaut Plan) allows users to create unlimited private projects in both Classic and Codeflow editors, as well as unlimited file uploads. Personal+ users can also use Codeflow technology for private repositories.
+StackBlitz Personal is StackBlitz's free tier. With a Personal plan, you can create unlimited public projects. Additionally, you can create private projects for your personal use. Personal users can access public GitHub repositories. 
 
-This plan is ideal for individual contributors, students, or developers working on singular projects, or engineering candidates. Users focusing on bug reproductions, fast prototyping, and sharing projects will find this plan sufficient.
+When you log into StackBlitz for the first time using your GitHub account, you are automatically on a Personal plan.
 
-## Teams Plan
+### What is StackBlitz Personal+?
 
-### What is the Teams plan?
+StackBlitz Personal+ (formerly known as the Astronaut Plan) includes all of the capabilities of the Personal plan and also includes:
+- unlimited file uploads
+- shareable private projects
 
-The Teams plan (currently in Beta) is a paid membership offering that allows users to share features amongst members of their GitHub organization. Features and highlights of this plan include:
+This plan is ideal for individual contributors, students, or developers working on singular projects, or engineering candidates. 
 
-- Codeflow access for all users in the GitHub organization (in-browser VS Code)
-- Instant integration with your GitHub organization’s repos for seamless in-browser editing
-    - Utilizing GitHub organization makes it super easy for all users in the organization to use the Codeflow editor and Codeflow bot to create and review pull requests.
-- A unified security model for sharing StackBlitz projects and GitHub repos
-- User management and billing linked to your GitHub organization
-    - Easy to use interface within the StackBlitz dashboard (easy to toggle users for access/no access, all-in-one monthly payment).
+### What is StackBlitz Teams?
 
-If you're interested in Teams Beta, come onboard with us for a private technology preview of this plan! You can sign up [here](https://stackblitz.com/beta-teams-signup).
+[StackBlitz Teams](/teams/what-is-stackblitz-teams) allows users to share features amongst members of their GitHub organization. 
 
-## Enterprise Server
+Features and highlights of this plan include:
+- Collaborate on projects and collections
+- Open and collaborate on your organization’s GitHub repositories
+- Integrate with private NPM registries, Artifactory, and Nexus
+- Sync user permissions from your GitHub organization
+- Team management and billing console
 
-### What is the Enterprise Server offering?
+To try StackBlitz Teams, [start a 14-day free trial](https://stackblitz.com/pricing). You will not be required to add a payment method until you are ready to upgrade.
 
-Enterprise Server is a membership offering that's best fit for organizations who want to use StackBlitz behind their firewall. Benefits include:
+### What is StackBlitz Enterprise Server?
 
+Enterprise Server is a fully self-hosted build of StackBlitz, enabling organizations to run StackBlitz behind their firewall. 
+
+StackBlitz Enteprise subscriptions include:
 - Private NPM registry integration
 - Custom SSO integration
 - On-prem installation support
-- Dedicated Customer Success Engineer
+- Dedicated account manager
 
-Check out the [Enterprise page](https://stackblitz.com/enterprise) for details and set up a call with our Enterprise team!
+[Learn more about StackBlitz Enterprise](https://stackblitz.com/enterprise). For pricing information and details specific to your organization, set up a call with our team.
 
 ### I want to purchase the enterprise edition for WebContainers. Where can I do that?
 
@@ -166,21 +176,15 @@ Bringing WebContainers to Enterprise Server is in the works, but not currently a
 
 We do offer [WebContainer API](https://webcontainers.io) licenses for organizations wanting to use WebContainer technology for production usage in a for-profit setting. Check out [webcontainers.io](https://webcontainers.io/enterprise) for more information!
 
-# Technology FAQs
-
-## Classic Editor (EngineBlock projects)
-
-### What is the Classic Editor for EngineBlock projects?
-
-Different projects that use the Classic Editor utilize EngineBlock technology to run. As the original StackBlitz interface, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
-
-EngineBlock projects are distinguishable from WebContainer-based projects as they do not have a terminal.
-
+## Technical FAQs
 
 ### How do I create code snippets?
 
 Code snippets are available in our Classic Editor for both EngineBlock and WebContainer projects. Click on the Settings icon in the activity bar to the left of your screen. The Settings sidebar will pop open and you will see User snippets and Workspace snippets. User snippets are available for any of your projects. Workspace snippets are only available in the current project you create them in.
 
+### Can I change the Node version in my project?
+
+WebContainers currently runs Node 18. [In future, we plan to support multiple Node versions.](https://developer.stackblitz.com/platform/webcontainers/roadmap)
 
 ### Can I change the TypeScript version in my project?
 
@@ -188,53 +192,30 @@ The current TypeScript starter uses EngineBlock technology, which has a fixed Ty
 
 WebContainers, however, do run Node.js itself in the browser and do not have this limitation. You can simply `npm install` any TypeScript version as you would locally.
 
-## Classic Editor (WebContainers projects)
+### Does my code persist between sessions?
 
-### What is the Classic Editor for WebContainers projects?
+<!--@include: ./parts/persistance.md-->
 
-Different projects that use the Classic Editor utilize WebContainers technology to run. As the original StackBlitz UI, the Classic Editor has a file tree, an npm package manager, and a light dev server and preview pane that allows you to see your app as you code.
+### What is the StackBlitz SDK?
 
-Since WebContainers technology allows Node.js to run inside the browser, WebContainers projects will always have a terminal available. To learn about WebContainers, visit our docs [here](https://developer.stackblitz.com/platform/webcontainers/browser-support).
+Our [JavaScript SDK (software development kit)](https://developer.stackblitz.com/platform/api/javascript-sdk) allows users to create Classic Editor projects to be opened in a new window or embedded in your docs, example pages, or blog posts. The SDK can be used to control the UI of an embedded StackBlitz project, change the currently open file(s), and read and write files from the project's virtual filesystem.
 
-### How do I know if my project is WebContainers-based?
+Details on embed options can be found [here](https://developer.stackblitz.com/platform/api/javascript-sdk).
 
-All WebContainers projects will have a terminal in the project. You can find what environments are available for EngineBlock and WebContainers projects in our [docs](https://developer.stackblitz.com/guides/user-guide/available-environments).
+## WebContainers
 
-Any projects in `https://stackblitz.com/?starters=fullstack`, `..?starters=backend`, `..?starters=vite` will be WebContainer/Node projects with a terminal.
+### What is the WebContainer API?
 
-### Can I change the Node version in my project?
+The [WebContainer API](https://webcontainers.io/api) allows developers to create fullstack Node.js environments in the browser.
 
-The current state of Codeflow does not support users being able to set their own Node version.
+### Can I use the WebContainers API for commercial purposes?
 
-### Why can't I see my terminal?
+Using the WebContainers API for commercial purposes requires a paid StackBlitz subscription.
 
-Please note that the terminal is only available for WebContainer-based projects. You can use the keyboard binding `^` `` ` `` (the caret and the back quote keys) to toggle the terminal.
+All StackBlitz Teams and Enterprise plans include 10,000 WebContainers API calls per month. Use in excess of this limit requires a dedicated WebContainers API license. For more information, refer to our [terms of service](https://stackblitz.com/terms-of-service).
 
-### Can I run unit tests in StackBlitz?
+If you are considering using the WebContainers API, [please reach out to our team](https://docs.google.com/forms/d/e/1FAIpQLSertiZLl-za0ZHxsWbd2IrISVft2OpPglykEHpEllPSfnZIUg/viewform) to discuss your project.
 
-You can use [Jasmine](https://jasmine.github.io/), a unit testing tool for JavaScript.
-
-It is also possible to run Angular unit tests inside WebContainer-based projects, but not EngineBlock-based projects. The easiest way to start is by navigating to node.new, which creates a WebContainer-based project automatically!
-
-### Can I develop ElectronJS apps on StackBlitz?
-
-Since Electron is a native app, this cannot be supported since StackBlitz runs entirely within the browser.
-
-
-## Codeflow Editor
-
-### What is the Codeflow Editor?
-
-The Codeflow Editor brings VSC code into the browser. This editor is capable of running full development workflows, including pushing commits and creating pull requests to GitHub. Other features of the Codeflow editor include a terminal, npm package manager, and the ability to add extensions. This bypasses the need to clone a repository or install dependencies on your local machine. If you haven't already, you can check out Codeflow [here](https://stackblitz.com/codeflow)!
-
-### Can I use Vim bindings?
-
-Our Codeflow editor is built on top of VS Code so you can enable the VIM extension:
-
-1. Open a GitHub repository in Codeflow (like this: pr.new/vitejs/vite)
-2. Navigate to the "Extensions" pane
-3. Search for "Vim"
-4. Click on the VIM extension and then click the "enable" button.
 
 ## Web Publisher
 
@@ -249,37 +230,6 @@ This environment is ideal for:
 
 You can learn more about Web Publisher [here](https://developer.stackblitz.com/guides/user-guide/content-updates-with-web-publisher).
 
-## Classic Editor SDK
-
-### What is the Classic Editor SDK?
-
-Our JavaScript SDK (software development kit) allows users to create Classic Editor projects to be opened in a new window or embedded in your docs, example pages, or blog posts. The SDK can be used to control the UI of an embedded StackBlitz project, change the currently open file(s), and read and write files from the project's virtual filesystem.
-
-Details on embed options can be found [here](https://developer.stackblitz.com/platform/api/javascript-sdk).
-
-## WebContainer API
-
-### What is the WebContainer API?
-
-The WebContainer API allows developers to create fullstack Node.js environments in the browser with WebContainer technology. WebContainer technology powers StackBlitz products like Codeflow and [Web Publisher](https://developer.stackblitz.com/codeflow/guides/user-guide/content-updates-with-web-publisher).
-
-Organizations wanting to use the API for production usage in a for-profit setting are required to purchase a WebContainer API License. With this license, organizations have access to:
-
-- Higher API rate limits
-- Direct access to the StackBlitz dev team to optimize performance, prioritize bug fixes, and influence the API roadmap.
-
-This product is ideal for organizations wanting to build completely custom user interfaces powered by Node.js without needing to use virtual machines, servers, or docker containers.
-
-WebContainer API docs can be found [here](https://webcontainers.io/).
-
-
-### I see that WebContainer API is free to use, but a license is required. Can I use the WebContainer API for commercial purposes?
-
-We are thrilled to offer free access for most users! For those with high levels of commercial usage, we do apply a nominal charge for API requests beyond 10,000 per month. If interested, [please reach out to sales](https://docs.google.com/forms/d/e/1FAIpQLSertiZLl-za0ZHxsWbd2IrISVft2OpPglykEHpEllPSfnZIUg/viewform) for more information!
-
-## Web Publisher
-
 ### Which files can be opened in Web Publisher?
 
 Any file type can be opened in Web Publisher.
-

@@ -1,1 +1,1 @@
-Currently, the Stackblitz editor supports multiple package managers including pnpm, npm, and Yarn.
+StackBlitz supports multiple package managers including pnpm, npm, and yarn. Legacy projects using the EngineBlock runtime include an npm package manager.
