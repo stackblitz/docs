@@ -20,8 +20,8 @@ For installing StackBlitz in environments with restricted network access, see [A
 
 Minimum Cluster Requirements:
 
-- 8 vCPU,
-- 32 GB Memory,
+- 16 vCPU,
+- 64 GB Memory,
 - 200 GB Storage,
 - `kubectl` access to the cluster,
 - Internet access from the cluster (see [Configuring Firewall Rules](/enterprise/configuring-firewall-rules) for the list of hostnames/ips that require internet access for installation, updates and licensing),
