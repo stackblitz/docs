@@ -18,7 +18,7 @@ If you don’t have a cluster, then our install scripts can provide one. The min
 
 Getting started on GCP (no GKE, no existing cluster):
 
-- Launch an n1-standard-16 instance or larger on GCP with Ubuntu as the OS with 200 GB disk space.
+- Launch a n1-standard-16 instance or larger on GCP with Ubuntu as the OS with 200 GB disk space.
 - Make sure ports the following TCP ports are allowed through the firewall:
   - 22
   - 80
