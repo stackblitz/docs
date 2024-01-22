@@ -1,0 +1,49 @@
+<template>
+    <div class="container">
+        <a href="https://stackblitz.com/sign_in" class="link">Sign in</a>
+        <a href="https://stackblitz.com/sign_in" class="link accent">Register</a>
+    </div>
+</template>
+
+<style scoped lang="scss">
+.container {
+    margin-inline-start: 40px;
+    display: flex;
+    gap: 8px;
+}
+
+.link {
+  --outline-color-hsl: 0, 0%, 100%;
+  --outline-opacity: 0.08;
+  --text-strong-color: #fff;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 20px;
+  border-radius: 8px;
+  color: var(--text-strong-color);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px hsla(var(--outline-color-hsl), var(--outline-opacity));
+  background-color: hsla(224, 32%, 28%, 0.24);
+  backdrop-filter: blur(8px);
+  transition: 0.1s ease;
+  transition-property: background-color, box-shadow, color;
+  &:hover {
+    --outline-opacity: 0.14;
+    color: var(--text-strong-color);
+    background-color: hsla(224, 32%, 28%, 0.54);
+  }
+}
+
+.accent {
+  --outline-opacity: 0.14;
+  color: var(--text-strong-color);
+  background-color: hsl(214, 87%, 51%);
+  &:hover {
+    --outline-opacity: 0.24;
+    background-color: hsl(208, 100%, 53%);
+  }
+}
+</style>
