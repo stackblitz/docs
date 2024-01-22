@@ -43,16 +43,15 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
   api: [
     {
       text: 'JavaScript SDK',
-      link: '/platform/api/javascript-sdk',
+      link: '/platform/api/quick-start',
       items: [
-        { text: 'SDK overview', link: '/platform/api/javascript-sdk' },
-        { text: 'Options reference', link: '/platform/api/javascript-sdk-options' },
+        { text: 'Quick start', link: '/platform/api/quick-start' },
         { text: 'Controlling embeds', link: '/platform/api/javascript-sdk-vm' },
         { text: 'Managing dependencies', link: '/platform/api/javascript-sdk-dependencies' },
+        { text: 'Options reference', link: '/platform/api/javascript-sdk-options' },
       ],
     },
-    { text: 'POST API', link: '/platform/api/post-api' },
-    { text: 'WebContainer API', link: '/platform/api/webcontainer-api' },
+    { text: 'HTTP POST', link: '/platform/api/http-post' },
   ],
   webcontainers: [
     { text: 'Roadmap', link: '/platform/webcontainers/roadmap' },
@@ -61,6 +60,7 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Project configuration', link: '/platform/webcontainers/project-config' },
     { text: 'Turbo package manager', link: '/platform/webcontainers/turbo-package-manager' },
     { text: 'Troubleshooting', link: '/platform/webcontainers/troubleshooting-webcontainers' },
+    { text: 'WebContainer API', link: '/platform/webcontainers/webcontainer-api' },
   ],
   enterprise: [
     { text: 'Overview', link: '/enterprise/overview' },

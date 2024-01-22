@@ -1,12 +1,12 @@
 ---
-title: POST API
+title: HTTP POST
 description: Create new projects by POSTing the desired project data from a form. This method is useful when you don't or can't use our JavaScript SDK.
 og_image: post-api.png
 ---
 
-# Creating a project with a POST request
+# Creating a project with a HTTP POST request
 
-Create new projects by POSTing the desired project data from a form. This method is useful when you don't or can't use our JavaScript SDK.
+Create new projects by sending a HTTP POST request with the desired project data. This method is useful when you want a simple way to generate StackBlitz projects without using our official JavaScript SDK.
 
 This page will guide you through the setup. You can also take a look at [the demo project](#demo) at the end.
 

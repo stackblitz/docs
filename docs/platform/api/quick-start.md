@@ -1,5 +1,5 @@
 ---
-title: JavaScript SDK
+title: Quick Start
 description: The StackBlitz JavaScript SDK lets you programmatically create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts.
 og_image: javascript-sdk.png
 ---
