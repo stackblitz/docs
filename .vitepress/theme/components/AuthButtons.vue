@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <a href="https://stackblitz.com/sign_in" class="link">Sign in</a>
+        <a href="https://stackblitz.com/sign_in" class="link light">Sign in</a>
         <a href="https://stackblitz.com/sign_in" class="link accent">Register</a>
     </div>
 </template>
@@ -30,12 +30,25 @@
   backdrop-filter: blur(8px);
   transition: 0.1s ease;
   transition-property: background-color, box-shadow, color;
+}
+
+.light {
   &:hover {
     --outline-opacity: 0.14;
     color: var(--text-strong-color);
     background-color: hsla(224, 32%, 28%, 0.54);
   }
-}
+  :root:not(.dark) & {
+    --outline-color-hsl: 224, 32%, 28%;
+    --outline-opacity: 0.1;
+    color: hsl(240, 6%, 23%);
+    background-color: hsla(224, 32%, 28%, 0.1);
+    &:hover {
+      --outline-opacity: 0.2;
+      background-color: transparent;
+    }
+  }
+}  
 
 .accent {
   --outline-opacity: 0.14;
