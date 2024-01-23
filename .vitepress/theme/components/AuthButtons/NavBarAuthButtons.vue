@@ -12,10 +12,12 @@
     margin-inline-start: 40px;
     display: flex;
     gap: 8px;
+    // this is when we hide top nav
     @media screen and (max-width: 768px) {
       margin-inline-start: 0px;
     }
-    @media screen and (max-width: 375px) {
+    // we show the buttons inside the hamburger menu when on smaller screen
+    @media screen and (max-width: 400px) {
       display: none;
     }
 }
@@ -24,11 +26,6 @@
     @media screen and (max-width: 500px) {
       height: 30px;
       padding: 0 10px;
-    }
-  
-    // We show the buttons inside the hamburger menu
-    @media screen and (max-width: 400px) {
-      display: none;
     }
 }
 </style>
