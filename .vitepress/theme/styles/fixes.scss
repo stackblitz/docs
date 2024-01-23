@@ -68,6 +68,10 @@
 .VPNavBarSearch.search {
   justify-content: flex-end;
   margin-right: 32px;
+
+  @media screen and (max-width: 500px) {
+    margin-right: 10px;
+  }
 }
 
 //  Post 1.0.0-rc.20

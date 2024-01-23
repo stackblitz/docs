@@ -5,20 +5,24 @@ const { Layout } = DefaultTheme;
 
 import Feedback from '@theme/components/Feedback/Feedback.vue';
 import Chatlio from '@theme/components/Chatlio.vue';
-import AuthButtons from '@theme/components/AuthButtons.vue';
+import NavBarAuthButtons from '@theme/components/AuthButtons/NavBarAuthButtons.vue';
+import NavScreenAuthButtons from './AuthButtons/NavScreenAuthButtons.vue';
 
 </script>
 
 <template>
   <Layout>
     <template #nav-bar-content-after>
-      <AuthButtons />
+      <NavBarAuthButtons />
     </template>
     <template #doc-footer-before>
       <ClientOnly>
         <Feedback />
         <Chatlio />
       </ClientOnly>
+    </template>
+    <template #nav-screen-content-after>
+      <NavScreenAuthButtons />
     </template>
   </Layout>
 </template>
