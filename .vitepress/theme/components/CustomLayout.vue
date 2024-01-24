@@ -6,8 +6,7 @@ const { Layout } = DefaultTheme;
 import Feedback from '@theme/components/Feedback/Feedback.vue';
 import Chatlio from '@theme/components/Chatlio.vue';
 import NavBarAuthButtons from '@theme/components/AuthButtons/NavBarAuthButtons.vue';
-import NavScreenAuthButtons from './AuthButtons/NavScreenAuthButtons.vue';
-
+import NavScreenAuthButtons from '@theme/components/AuthButtons/NavScreenAuthButtons.vue';
 </script>
 
 <template>
