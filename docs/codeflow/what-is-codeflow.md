@@ -1,6 +1,6 @@
 ---
 title: What is Codeflow?
-description: Codeflow is a one-click integration with GitHub for seamless coding workflows.
+description: Codeflow is awesome
 og_image: what-is-codeflow.png
 ---
 

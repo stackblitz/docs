@@ -10,7 +10,7 @@ This page addresses the frequently asked questions concerning: current features,
 
 [[toc]]
 
-## General
+## General Tips and Tricks
 
 ### What is Codeflow?
 
