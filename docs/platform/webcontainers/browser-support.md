@@ -64,6 +64,8 @@ We have beta support for Firefox. Please try it and [share feedback with us](htt
 
 Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
+If you are using Firefox Private Browsing, it's not possible to run a webserver. The reason is that we need to be able to install a ServiceWorker which is not possible in a private window.
+
 Because Firefox and Node.js use different JavaScript engines (SpiderMonkey and V8, respectively), there is a small risk of running into [JS engine differences](#js-engine-differences).
 
 ## Safari
