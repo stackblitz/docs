@@ -57,6 +57,11 @@ Note that the list of blocked domains might look different for you. In particula
 
 When Firefox’s Enhanced Tracking Protection is configured in “Custom” mode with the cookie blocking option set to “All cross-site cookies”, Firefox will block the Service Workers used by WebContainers.
 
+:::warning Limitations of Firefox Private Browsing mode
+
+If you are using Firefox Private Browsing, it's not possible to run a webserver. The reason is that we need to be able to install a ServiceWorker which is not possible in a private window.
+:::
+
 You can work around this issue in a couple ways:
 
 1. Use the “Strict” mode instead of “Custom” mode. It’s important to note that it's slightly more permissive than “Custom” mode with very strict options. If this is not something you'd like to allow, you can...
