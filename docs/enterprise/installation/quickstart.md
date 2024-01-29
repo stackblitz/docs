@@ -14,7 +14,7 @@ StackBlitz Enterprise is a Kubernetes application. You can install the software 
 
 ## Getting started on bare metal (embedded)
 
-If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this is 8 vCPUs, 32 GB memory, and 200 GB storage running Ubuntu LTS.
+If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this is 16 vCPUs, 32 GB memory, and 200 GB storage running Ubuntu LTS.
 
 Getting started on bare metal (no existing Kubernetes cluster):
 
