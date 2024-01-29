@@ -4,6 +4,8 @@ description: Modify your StackBlitz project with SDK options.
 og_image: sdk-options-reference.png
 ---
 
+<!-- @include: ./parts/environments.md -->
+
 # {{ $frontmatter.title }}
 
 ## <var>Project</var> {#project}
