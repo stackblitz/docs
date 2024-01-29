@@ -62,7 +62,7 @@ Learn [how to configure Brave to run WebContainers](/platform/webcontainers/brow
 
 We have beta support for Firefox. Please try it and [share feedback with us](https://github.com/stackblitz/webcontainer-core/issues/new/choose)!
 
-Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
+Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within StackBlitz. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
 Because Firefox and Node.js use different JavaScript engines (SpiderMonkey and V8, respectively), there is a small risk of running into [JS engine differences](#js-engine-differences).
 
@@ -70,7 +70,7 @@ Because Firefox and Node.js use different JavaScript engines (SpiderMonkey and V
 
 We have beta support for Safari on macOS, starting with Safari 16.4. Please try it and [report issues here](https://github.com/stackblitz/webcontainer-core/issues/new/choose).
 
-Safari does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
+Safari does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within StackBlitz. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
 Because Safari and Node.js use different JavaScript engines (JavaScriptCore and V8, respectively), there is a small risk of running into [JS engine differences](#js-engine-differences).
 

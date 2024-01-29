@@ -102,7 +102,7 @@ If you are using StackBlitz's next-generation editor, you can sync code directly
 2. For projects using EngineBlock, you can deploy to Firebase using the [Firebase integration](https://developer.stackblitz.com/guides/user-guide/user-interface#firebase-sidebar).
 
 3. Create a GitHub repository witn the code from your StackBlitz project using the "Create a repository" button.
-![Connect repository button on StackBlitz editor](./assets/stackblitz_connecttorepobutton.png)
+![Connect repository button on StackBlitz](./assets/stackblitz_connecttorepobutton.png)
 
 ### Are MongoDB, Mongoose, Postgres, or MySQL supported?
 

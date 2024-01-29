@@ -69,7 +69,7 @@ On the **right side**, you'll find two buttons:
 - **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
 - **Your Profile picture**, which opens a dropdown list with some usefull links:
    1. **"Your profile"** which opens a new browser tab with your StackBlitz profile page.
-   2. **"Open in StackBlitz editor"** button which redirects to [StackBlitz editor](/guides/user-guide/working-in-stackblitz-editor) - it is helpful when you want to add images or work on a few files.
+   2. **"Open in StackBlitz"** button which redirects to [StackBlitz](/guides/user-guide/working-in-stackblitz-editor) - it is helpful when you want to add images or work on a few files.
    3. **"Edit on Github"** which redirects to the file "edit" page on GitHub.
    4. **"Documentation"** which redirects to [StackBlitz docs page](https://developer.stackblitz.com/).
    5. **"See a bug? File an issue"** which redirects to [WebContainer core repository](https://github.com/stackblitz/webcontainer-core/issues/new/choose) where you can file an issue describing the bug.

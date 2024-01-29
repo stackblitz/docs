@@ -62,11 +62,11 @@ With WebContainers, you gain the flexibility to work with virtually any front-en
 WebContainers natively support all the major package managers including [npm, pnpm, and yarn v1](https://blog.stackblitz.com/posts/announcing-native-package-manager-support/), just like a local development environment. This offers a more production grade approach to managing dependencies compared to EngineBlock's Turbo v1.
 
 **Editor Support** <br>
-WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/user-guide/getting-started), [StackBlitz editor](/guides/user-guide/working-in-stackblitz-editor), and [Web Publisher](/guides/user-guide/content-updates-with-web-publisher).
+WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/user-guide/getting-started), [StackBlitz](/guides/user-guide/working-in-stackblitz-editor), and [Web Publisher](/guides/user-guide/content-updates-with-web-publisher).
 
 ## Which Compute Environment Are You using?
 
-The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, wheras the [StackBlitz editor](/guides/user-guide/working-in-stackblitz-editor) and [Web Publisher](/guides/user-guide/content-updates-with-web-publisher) editors only support WebContainers.
+The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, whereas [StackBlitz's next gen editor](/guides/user-guide/working-in-stackblitz-editor) and [Web Publisher](/guides/user-guide/content-updates-with-web-publisher) editors only support WebContainers.
 
 If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Codeflow editor** and therefore using **WebContainers**:
 

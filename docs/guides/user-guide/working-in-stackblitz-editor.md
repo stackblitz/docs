@@ -6,9 +6,9 @@ og_image: working-in-codeflow-ide.png
 
 # {{ $frontmatter.title }}
 
-This page covers what to expect when using the StackBlitz editor.
+This page covers what to expect when using StackBlitz.
 
-## What is StackBlitz editor?
+## What is StackBlitz?
 
 <!-- @include: ./parts/codeflow-ide.md -->
 
@@ -108,7 +108,7 @@ To integrate the bot, please follow the instructions on [Integrating CodeflowApp
 
 It may happen that having a few Codeflow IDE or StackBlitz projects open at the same time may cause your browser to run out of memory. In this case, you will see the following popup:
 
-<img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have Codeflow IDE, Web Publisher or StackBlitz editor open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
+<img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have Codeflow IDE, Web Publisher or StackBlitz open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
 
 <!-- @include: ../parts/error-out-of-memory.md -->
 

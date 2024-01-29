@@ -1,6 +1,6 @@
 ---
 title: Getting started
-description: This page outlines how you can start using our StackBlitz editor.
+description: This page outlines how you can start using our StackBlitz.
 og_image: getting-started.png
 ---
 
@@ -45,13 +45,13 @@ Alternatively, you can open an existing project (created by you or shared with y
 
 ![Projects](./assets/projects-view.png)
 
-By selecting a starter or existing project, you will be taken to the StackBlitz editor where you can start coding!
+By selecting a starter or existing project, you will be taken to StackBlitz where you can start coding!
 
 :::tip Create a project with a simple URL
 Some frameworks also provide short URLs that you can use to create new StackBlitz projects. Check out [the list of “.new domains” here](/guides/user-guide/starter-projects#new-domains).
 :::
 
-## Customizing the StackBlitz editor
+## Customizing StackBlitz
 
 StackBlitz's next-generation editor is based on VS Code and is compatible with VS Code extensions, themes, and other customizations. 
 
@@ -119,7 +119,7 @@ Next, you will see a modal prompting you to provide a GitHub repository URL:
 
 ![GitHub URL prompt](./assets/github-repository-prompt-modal.png)
 
-After you provide the URL, click on the "Open repository" button, which will redirect you to the StackBlitz editor.
+After you provide the URL, click on the "Open repository" button, which will redirect you to StackBlitz.
 
 ![Codeflow](./assets/codeflow-view.png)
 

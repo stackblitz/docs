@@ -59,7 +59,7 @@ Opens an existing StackBlitz project in a new tab (or in the current window).
 | Argument | Required | Type | Description |
 | --- | --- | --- | --- |
 | `projectId` | Yes | String | The ID of the project to open. |
-| `openOptions` | No | [OpenOptions][] (Object) | Display options for the StackBlitz editor. |
+| `openOptions` | No | [OpenOptions][] (Object) | Display options for StackBlitz. |
 
 Example:
 
@@ -111,7 +111,7 @@ Opens a project from GitHub in StackBlitz (in a new tab or in the current window
 | Argument | Required | Type | Description |
 | --- | --- | --- | --- |
 | `repoPath` | Yes | String | The repository path (with optional branch/tag/commit/folder). |
-| `openOptions` | No | [OpenOptions][] (Object) | Display options for the StackBlitz editor. |
+| `openOptions` | No | [OpenOptions][] (Object) | Display options for StackBlitz. |
 
 Example:
 
@@ -171,7 +171,7 @@ Creates a new project and opens it in a new tab (or in the current window).
 | Argument | Required | Type | Description |
 | --- | --- | --- | --- |
 | `project` | Yes | [Project][] (Object) | Project data and settings. |
-| `openOptions` | No | [OpenOptions][] (Object) | Display options for the StackBlitz editor. |
+| `openOptions` | No | [OpenOptions][] (Object) | Display options for the StackBlitz. |
 
 Example:
 

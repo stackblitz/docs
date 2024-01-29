@@ -11,7 +11,7 @@ og_image: importing-projects.png
 With your desired StackBlitz project open, drag and drop any files or a folder you want to import:
 
 <img
-  alt="Animation of dragging files from a local folder onto the StackBlitz editor sidebar"
+  alt="Animation of dragging files from a local folder onto the StackBlitz sidebar"
   src="./assets/import-drag-and-drop-files.gif"
 />
 

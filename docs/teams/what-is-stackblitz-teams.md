@@ -30,7 +30,7 @@ StackBlitz Teams is not just limited to public npm packages. With our integratio
 ### Environment Secrets
 StackBlitz Teams allows you to add environment variables to your workspace, offering a secure way to connect to external services without exposing sensitive information.
 
-### StackBlitz editor
+### Next Gen Editor
 Experience a fully-featured, VS Code based editing environment complete with an in-browser Node.js environment, terminal, and support for package management and VS Code extensions. Currently in beta, this feature provides a production grade editing environment already familiar to your dev team.
 
 ## Getting Started
