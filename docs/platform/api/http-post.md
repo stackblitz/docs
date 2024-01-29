@@ -4,6 +4,8 @@ description: Create new projects by POSTing the desired project data from a form
 og_image: post-api.png
 ---
 
+<!-- @include: ./parts/environments.md -->
+
 # Creating a project with a HTTP POST request
 
 Create new projects by sending a HTTP POST request with the desired project data. This method is useful when you want a simple way to generate StackBlitz projects without using our official JavaScript SDK.
