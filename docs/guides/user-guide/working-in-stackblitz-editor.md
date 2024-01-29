@@ -1,14 +1,14 @@
 ---
-title: Working in Stackblitz editor
-description: This page covers what to expect when using Stackblitz editor.
+title: Working in StackBlitz editor
+description: This page covers what to expect when using StackBlitz editor.
 og_image: working-in-codeflow-ide.png
 ---
 
 # {{ $frontmatter.title }}
 
-This page covers what to expect when using the Stackblitz editor.
+This page covers what to expect when using the StackBlitz editor.
 
-## What is Stackblitz editor?
+## What is StackBlitz editor?
 
 <!-- @include: ./parts/codeflow-ide.md -->
 

@@ -118,7 +118,7 @@ No, since Electron is a native app, it is not supported by StackBlitz's browser-
 
 ## Security
 
-### I would like to use Stackblitz but I'm not sure if it's secure.
+### I would like to use StackBlitz but I'm not sure if it's secure.
 
 StackBlitz is regarded as more secure than local development as all code is executed entirely within the browser. If you have specific questions about StackBlitz's security design and practices, [contact us directly](mailto:hello@stackblitz.com).
 
