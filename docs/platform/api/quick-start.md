@@ -4,11 +4,11 @@ description: The StackBlitz JavaScript SDK lets you programmatically create Stac
 og_image: javascript-sdk.png
 ---
 
+<!-- @include: ./parts/environments.md -->
+
 # {{ $frontmatter.title }}
 
 The StackBlitz JavaScript <abbr title="Software Development Kit">SDK</abbr> lets you programmatically create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts. Once embedded, the projects can be controlled by using [the SDK’s VM interface][sdk_vm_docs].
-
-<!-- @include: ./parts/environments.md -->
 
 ## Install the SDK
 

@@ -1,5 +1,5 @@
 ---
-title: Embedding projects
+title: Manually embedding projects
 description: Embedding is one way to display StackBlitz in a documentation page, a blog post, or any other page. This page covers manual embedding in iframes. 
 og_image: embedding-projects.png
 ---

@@ -22,7 +22,7 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Environment Variables', link: '/guides/user-guide/environment-variables' },
   ],
   integrationGuide: [
-    { text: 'Embedding projects', link: '/guides/integration/embedding' },
+    { text: 'Manually embedding projects', link: '/guides/integration/embedding' },
     { text: 'Launching projects from GitHub', link: '/guides/integration/open-from-github' },
     { text: 'Creating projects with the SDK', link: '/guides/integration/create-with-sdk' },
     { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
@@ -46,7 +46,7 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
       link: '/platform/api/quick-start',
       items: [
         { text: 'Quick start', link: '/platform/api/quick-start' },
-        { text: 'Controlling embeds', link: '/platform/api/javascript-sdk-vm' },
+        { text: 'Controlling your SDK embeds', link: '/platform/api/javascript-sdk-vm' },
         { text: 'Managing dependencies', link: '/platform/api/javascript-sdk-dependencies' },
         { text: 'Options reference', link: '/platform/api/javascript-sdk-options' },
       ],
@@ -97,7 +97,7 @@ const linkGroups: Record<MenuLinkGroup, { text: string; items: MenuLinkItem[] }>
     items: groupLinks.userGuide,
   },
   integrationGuide: {
-    text: 'Integration Guide',
+    text: 'Integrations',
     items: groupLinks.integrationGuide,
   },
   teams: {
