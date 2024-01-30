@@ -29,7 +29,7 @@ defineProps<{ place: 'navScreen' | 'navBar' }>();
   }
 
   .link {
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       height: 30px;
       padding: 0 10px;
     }
