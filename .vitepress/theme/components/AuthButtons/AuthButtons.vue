@@ -24,7 +24,7 @@ defineProps<{ place: 'navScreen' | 'navBar' }>();
   @media screen and (max-width: 768px) {
     margin-inline-start: 0px;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 430px) {
     display: none;
   }
 
