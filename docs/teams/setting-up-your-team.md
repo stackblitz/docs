@@ -1,5 +1,5 @@
 ---
-title: Setting Up Your Team
+title: Managing your Team
 ---
 
 # {{ $frontmatter.title }}
@@ -9,6 +9,8 @@ Each StackBlitz Team must be linked in a 1:1 relationship with a corresponding [
 :::tip
 In the future we plan to support additional version control providers & Teams creation pathways. If linking to a Github Org doesn’t work for you, please [reach out](mailto:hello@stackblitz.com) and let us know how we can meet your team’s needs!
 :::
+
+## Creating a Team
 
 To create a StackBlitz Team:
 1. Navigate to https://stackblitz.com/pricing 
@@ -22,7 +24,7 @@ To create a StackBlitz Team:
 
 7. Enjoy frictionless collaboration with your team!
 
-:::tip 
+## Upgrading during or after your free trial
 If you opt for the free trial, you will need to add a payment method before the trial expires to continue using the paid Teams features. To do so: 
 
 1. Click “Update Billing” on the trial banner
@@ -33,4 +35,17 @@ If you opt for the free trial, you will need to add a payment method before the 
 ![Payment Method](./assets/payment-method.png)
 
 Your StackBlitz Team will now automatically renew as a paid Teams plan at the end of your free trial!
+
+## Deleting a Team
+:::danger  This action cannot be undone.
+All the projects and collections belonging to this organization will be deleted. Connected GitHub organization will remain intact.
 :::
+
+To permanently delete your Team:
+1. Navigate to [Settings](https://stackblitz.com/settings/billing)
+2. Select the Team you want to remove from list labeled "Your teams"
+3. Navigate to the `Profile` tab
+4. Click `Delete team` under "Delete this organization" and confirm by clicking the prompt.
+
+
+
