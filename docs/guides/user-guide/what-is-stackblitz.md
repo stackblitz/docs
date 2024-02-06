@@ -14,20 +14,21 @@ Now you can use the web to build the web.
 
 StackBlitz is secure, shareable, and satisfying.
 
-There is no greater buzzkill than having to fiddle with the deployment and build tools config before you can start coding. **StackBlitz takes care of all of the setup**: from forking and installing dependencies to configuring build tools and hot reloading. Working on StackBlitz feels exactly like working on your local dev environment - minus the frustrating parts.
+There is no greater buzzkill than having to fiddle with the cloning and installing before you can start coding. **StackBlitz takes care of all of the setup**: from instantly cloning and installing dependencies to configuring build tools and hot reloading. The beauty of StackBlitz is that it just works.
 
 ### Key features:
 
-- 🔒 **unmatched security**: all development is happening in your browser tab, including running Node.js, git, package managers (npm, yarn, pnpm), and local extensions.
-- ⚡️ **shockingly fast**: the entire dev environment spins up in milliseconds - even reinstalling `node_modules` is as simple as refreshing the page, with pnpm running up to four times as fast as locally!
-- 💻 **works online and offline**: continue your work even when you lose the Internet connection midway.
-- 🔥 **your environment is always online**: your apps never go to sleep and have no bandwidth limits - share the URL with as many friends, colleagues, and communities as you’d like!
-- 🆓 **always free for Open Source**: you're the future of the web development and we love you.
-- **seamless debugging** with Chrome Dev Tools for both front- and backend apps!
+- ⚡️ **Shockingly fast**: The entire dev environment spins up in milliseconds - even reinstalling `node_modules` is as simple as refreshing the page, with pnpm running up to four times as fast as locally!
+- 📍 **It's just in your browser**: All development is happening directly in your browser. We're running Node.js, git, package managers (npm, yarn, pnpm), and local extensions all right from your browser. It's like local, but better.
+- 🔒 **Secured by browser sandboxing**: Backed by the most battle tested and trusted environment in the world.
+- 💻 **Works online and offline**: Continue your work even when you lose the Internet connection midway.
+- 🔥 **Your environment is always online**: Your apps never go to sleep and have no bandwidth limits - share the URL with as many friends andcolleagues as you’d like!
+- 🐞 **Seamless debugging**: With Chrome Dev Tools for both front- and backend apps!
+- 🆓 **Always free for Open Source**: You're the future of the web development and we love you.
 
 ![Preview & debug](./assets/what-is-sb-intro.gif)
 
-## What is StackBlitz used for?
+## How can you use StackBlitz?
 
 ### Delightful docs
 
@@ -41,10 +42,6 @@ Create a [project starter](/guides/user-guide/starter-projects) or boilerplate c
 
 Working on a blog post or a conference talk? [Create a StackBlitz project that you can quickly share](/guides/integration/embedding). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
 
-### Entire programming workflow
-
-One click and our Codeflow IDE spins up a whole code editor with git integration and hot-reloading preview. Now all you need for your dev work is just a browser.
-
 ### Straightforward docs editing
 
 Every project deserves collaborative documentation. Typo fixes have never been easier - click, see what you edit as you edit, and submit a PR when you’re satisfied. All in the browser, thanks to Web Publisher.
@@ -53,32 +50,28 @@ Every project deserves collaborative documentation. Typo fixes have never been e
 
 Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its [own StackBlitz reproduction](/guides/integration/bug-reproductions) so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
 
-### Build whole educational experiences
-
-You like the idea of running Node.js in the browser and feel inspired to build your own editor? No worries. Our [WebContainers API](/platform/api/webcontainer-api) allows you to use our technology to power your own playgrounds.
-
 ### Rapid prototyping
 
 Speed up your entire development process with **realtime hot-reloading in the fastest dev environment ever made**. Collaborate remotely on different devices, send and receive instant feedback, and **get to market faster**.
 
+### Entire programming workflow
 
-## Components of StackBlitz
+One click and our Next Gen IDE auto clones your repository, installs your dependencies and starts your dev server. It's an unparalelled workflow.
 
-StackBlitz now helps you switch contexts seamlessly:
-- <!--@include: ./parts/codeflow-ide.md-->
-- <!--@include: ./parts/web-publisher.md-->
-- <!--@include: ./parts/pr-new.md-->
-- <!--@include: ./parts/codeflowapp-bot.md-->
+### Build whole educational experiences
 
+You like the idea of running Node.js in the browser and feel inspired to build your own editor? No worries. Our [WebContainers API](/platform/api/webcontainer-api) allows you to use our technology to power your own playgrounds.
 
 ## What about other online IDEs?
 
-Unlike StackBlitz, legacy online IDEs run on remote servers and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
+Unlike StackBlitz, legacy online IDEs run on remote servers (or VMs) and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
 
 **StackBlitz solves these problems by doing all computing inside your browser**. This leverages decades of speed and security innovations and also **unlocks key development and debugging benefits**.
 
-Lastly, StackBlitz is capable of running Node.js inside the browser so you can use the web to build the web.
+StackBlitz runs Node.js in the browser so you can use the web to build the web.
 
+
+<!-- @HeyGarrison: is this necessary? -->
 ## Get involved
 
 We love our community! Please do stay in touch and:
