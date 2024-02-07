@@ -4,11 +4,14 @@ description: StackBlitz is an instant fullstack web IDE for the JavaScript ecosy
 og_image: what-is-stackblitz.png
 ---
 
+
+
 # {{ $frontmatter.title }}
 
-StackBlitz is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots the Node.js environment in milliseconds**, securely within your browser tab.
+<!-- @include: ./parts/stackblitz-description.md -->
 
-Now you can use the web to build the web.
+:::tip Just want to try it out? Skip to the [Quickstart](./getting-started).
+:::
 
 ## Why should I use StackBlitz?
 
@@ -56,7 +59,7 @@ Speed up your entire development process with **realtime hot-reloading in the fa
 
 ### Entire programming workflow
 
-One click and our Next Gen IDE auto clones your repository, installs your dependencies and starts your dev server. It's an unparalelled workflow.
+One click and our next-generation editor auto clones your repository, installs your dependencies and starts your dev server. It's an unparalelled workflow.
 
 ### Build whole educational experiences
 
@@ -64,14 +67,12 @@ You like the idea of running Node.js in the browser and feel inspired to build y
 
 ## What about other online IDEs?
 
-Unlike StackBlitz, legacy online IDEs run on remote servers (or VMs) and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
+Unlike StackBlitz, legacy online IDEs run on remote servers (or virtual machines) and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
 
 **StackBlitz solves these problems by doing all computing inside your browser**. This leverages decades of speed and security innovations and also **unlocks key development and debugging benefits**.
 
 StackBlitz runs Node.js in the browser so you can use the web to build the web.
 
-
-<!-- @HeyGarrison: is this necessary? -->
 ## Get involved
 
 We love our community! Please do stay in touch and:
