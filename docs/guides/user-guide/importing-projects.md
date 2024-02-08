@@ -6,15 +6,6 @@ og_image: importing-projects.png
 
 # {{ $frontmatter.title }}
 
-## Upload from your computer
-
-With your desired StackBlitz project open, drag and drop any files or a folder you want to import:
-
-<img
-  alt="Animation of dragging files from a local folder onto the StackBlitz sidebar"
-  src="./assets/import-drag-and-drop-files.gif"
-/>
-
 ## Import from GitHub
 
 You can run any public GitHub repository on StackBlitz by adding the username and repository name to the URL like so:
@@ -71,29 +62,14 @@ You can chain the URL query parameters by adding the `&` sign between them, for 
 [stackblitz.com/github/antfu/vitesse?title=Hello](https://stackblitz.com/github/antfu/vitesse?title=Hello&startScript=dev)
 :::
 
-## Importing private projects
+## Upload from your computer
 
-:::info Note
-Importing private GitHub repos is a feature available with our memberships. If you're interested in becoming a member, check details on our [StackBlitz Membership](https://stackblitz.com/membership) page.
-:::
+With your desired StackBlitz project open, drag and drop any files or a folder you want to import:
 
-**1.** Go to your dashboard and open a new JavaScript blank project.
-
-![Dashboard for JavaScript Blank Project](./assets/private-repo-starter.png)
-
-**2.** Click on 'Connect repository' on the top left.
-
-**3.** Click on the 'importing from an existing repository' link.
-
-![Connect and import GitHub repository](./assets/connect-to-existing-repo.png)
-
-**4.** Paste your full GitHub repository URL.
-
-![Paste GitHub repository URL to import](./assets/import-existing-repo.png)
-
-The video below outlines a workaround to edit collaboratively in a private repository:
-
-<iframe src="https://www.loom.com/embed/54c9f65e05494b00b6aa1bb9e0bbe7ab" style="width: 100%; height: 400px;"></iframe>
+<img
+  alt="Animation of dragging files from a local folder onto the StackBlitz sidebar"
+  src="./assets/import-drag-and-drop-files.gif"
+/>
 
 ## Importing or creating projects with StackBlitz API
 

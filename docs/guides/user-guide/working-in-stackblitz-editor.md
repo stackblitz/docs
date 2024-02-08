@@ -1,5 +1,5 @@
 ---
-title: Working in StackBlitz editor
+title: Using our next gen editor
 description: This page covers what to expect when using StackBlitz editor.
 og_image: working-in-codeflow-ide.png
 ---
@@ -8,17 +8,7 @@ og_image: working-in-codeflow-ide.png
 
 This page covers what to expect when using StackBlitz.
 
-## What is StackBlitz?
-
-<!-- @include: ./parts/codeflow-ide.md -->
-
-It is designed for enabling you to quickly spin up the entire environment without the hassle of cloning and installing dependencies.
-
-:::tip Fun fact
-
-At StackBlitz, we have been using Codeflow IDE in our daily internal development, including PR reviews. This docs site was also built on Codeflow IDE and Web Publisher!
-
-:::
+<hr>
 
 ## Opening GitHub repositories in Codeflow IDE
 

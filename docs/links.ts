@@ -5,10 +5,16 @@ import type { CardLink, FooterSection, MenuLinkGroup, MenuLinkItem } from '@them
 
 const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
   userGuide: [
-    { text: 'What is StackBlitz?', link: '/guides/user-guide/what-is-stackblitz' },
-    { text: 'Getting started', link: '/guides/user-guide/getting-started' },
-    { text: 'Create a new project', link: '/guides/user-guide/create-a-new-project' },
-    { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
+    {
+      text: 'Getting started',
+      link: '/guides/user-guide/getting-started',
+      items: [
+        { text: 'Quick start', link: '/guides/user-guide/getting-started' },
+        { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
+        { text: 'Create a new project', link: '/guides/user-guide/create-a-new-project' },
+        { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
+      ]
+    },
     { text: 'Working in StackBlitz', link: '/guides/user-guide/working-in-stackblitz-editor' },
     { text: 'User interface', link: '/guides/user-guide/user-interface' },
     {
