@@ -68,7 +68,7 @@ WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/
 
 The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, whereas [StackBlitz's next gen editor](/guides/user-guide/working-in-stackblitz-editor) and [Web Publisher](/guides/user-guide/content-updates-with-web-publisher) editors only support WebContainers.
 
-If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Codeflow editor** and therefore using **WebContainers**:
+If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Next-generation editor** and therefore using **WebContainers**:
 
 ![Screenshot of the Codeflow settings pane](./assets/codeflow-settings.png)
 

@@ -21,7 +21,7 @@ Unlock the full potential of your frontend development team with StackBlitz Ente
 
 ## Beta Features
 - **WebContainers for Node.js Toolchains:** Full node.js dev server and terminal running locally in the browser
-- **Codeflow:** Elevate your code editing capabilities with our in-browser VS Code based editor, with extension support
+- **Next-generation editor:** Elevate your code editing capabilities with our in-browser VS Code based editor, with extension support
 - **Enterprise Git Provider Integration:** Leverage your existing version control systems for even more streamlined workflows.
 
 ## Popular Use Cases

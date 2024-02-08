@@ -15,7 +15,7 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
         { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
       ]
     },
-    { text: 'Working in StackBlitz', link: '/guides/user-guide/working-in-stackblitz-editor' },
+    { text: 'Using the editor', link: '/guides/user-guide/working-in-stackblitz-editor' },
     { text: 'User interface', link: '/guides/user-guide/user-interface' },
     {
       text: 'Content updates with Web Publisher',

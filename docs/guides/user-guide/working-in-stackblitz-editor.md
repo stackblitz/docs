@@ -1,5 +1,5 @@
 ---
-title: Using our next gen editor
+title: Using the editor
 description: This page covers what to expect when using StackBlitz editor.
 og_image: working-in-codeflow-ide.png
 ---
@@ -10,20 +10,18 @@ This page covers what to expect when using StackBlitz.
 
 <hr>
 
-## Opening GitHub repositories in Codeflow IDE
+## Opening GitHub repositories in StackBlitz
 
-To open a GitHub repository in Codeflow IDE, swap "github.com" with "pr.new" in the repository URL. 
+To open a GitHub repository in StackBlitz, swap "github.com" with "pr.new" in the repository URL. 
 
 :::info Intrigued by "pr.new"?  👀
 If you're curious about this short URL, learn about the [full potential of "pr.new"](/guides/integration/using-pr-new).
 :::
 
-If you are not logged into StackBlitz, while this product is in beta, you will be prompted to log in or create a new account.
 
+## Migrating your local VSCode settings to StackBlitz
 
-## Migrating your local VSCode settings to Codeflow IDE
-
-To migrate the settings from your local VSCode to Codeflow IDE, follow these steps:
+To migrate the settings from your local VSCode to StackBlitz, follow these steps:
 
 1. In VSCode open the Settings tab (`cmd` + `,` on MacOS or `alt` + `,` on Windows and Linux).
 2. Click on the "Open Settings (JSON)" button, located on the top right side of the view:
@@ -34,7 +32,7 @@ To migrate the settings from your local VSCode to Codeflow IDE, follow these ste
 
 ![Settings view in JSON](./assets/settings-json.png)
 
-4. Repeat these actions in [Codeflow](https://pr.new): open the settings tab (you can use `cmd` + `,` key binding on MacOS or `alt` + `,` on Windows or Linux), open the JSON view, and paste the copied settings - if you want, you can replace the default settings with the ones you copied from your local environment.
+4. Repeat these actions in [pr.new](https://pr.new): open the settings tab (you can use `cmd` + `,` key binding on MacOS or `alt` + `,` on Windows or Linux), open the JSON view, and paste the copied settings - if you want, you can replace the default settings with the ones you copied from your local environment.
 
 The gif below demonstrates these steps:
 
@@ -49,14 +47,8 @@ Whenever a file is changed, you will see a white dot next to its tab in the edit
 
 Moreover, you will also see that dot on the tab in your browser to remind you that you have unsaved changes.
 
-:::warning
 
-<!--@include: ./parts/persistance.md-->
-
-:::
-
-
-## Making a PR with Codeflow IDE
+## Making a PR with StackBlitz
 
 Let's add a file to [ilovecodeflow.com](https://github.com/stackblitz/ilovecodeflow.com).
 
@@ -72,18 +64,18 @@ Follow these steps:
 6. Click on "Commit & Push" to send the changes to GitHub.
 6. Finally, you can submit your pull request by clicking on the "Open New PR" button 🥳
 
-## Reviewing a PR with Codeflow IDE 
+## Reviewing a PR with StackBlitz 
 
 Let's look at [this suspicious PR](https://github.com/stackblitz/docs/pull/40).
 
 Follow these steps:
 1. [Open the link](https://github.com/stackblitz/docs/pull/40) in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
-2. Codeflow IDE will spin up in the "PR Review mode". Open the Preview by clicking on the popup notification in the bottom right corner.
+2. StackBlitz will spin up in the "PR Review mode". Open the Preview by clicking on the popup notification in the bottom right corner.
 3. Compare suggested changes with the original file. You can also see the edits rendered in the Preview panel if you navigate to the edited page - in this case, the "What is StackBlitz" page.
 4. You can add comments by clicking on the "+" icons, read other comments, or start a review.
 5. If you no longer want to see the changes in the "PR Review mode", close the relevant files.
 
-## Using the CodeflowApp bot
+## Using the StackBlitz bot
 
 <!--@include: ./parts/codeflowapp-bot.md-->
 
@@ -96,9 +88,9 @@ To integrate the bot, please follow the instructions on [Integrating CodeflowApp
 
 ### Out of memory error
 
-It may happen that having a few Codeflow IDE or StackBlitz projects open at the same time may cause your browser to run out of memory. In this case, you will see the following popup:
+It may happen that having a few StackBlitz or StackBlitz projects open at the same time may cause your browser to run out of memory. In this case, you will see the following popup:
 
-<img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have Codeflow IDE, Web Publisher or StackBlitz open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
+<img lang="en" src="./assets/error-out-of-memory-popup.png" alt="It seems that your browser is running our of memory. Have StackBlitz, Web Publisher or StackBlitz open in other tabs or windows? Close a few and refresh the page." style="width: 400px"/>
 
 <!-- @include: ../parts/error-out-of-memory.md -->
 

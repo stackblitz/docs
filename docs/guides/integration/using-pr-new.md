@@ -1,12 +1,12 @@
 ---
 title: Using pr.new
-description: This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
+description: This page covers using pr.new to open, view, and contribute to any project through our Next-generation editor.
 og_image: using-pr-new.png
 ---
 
 # {{ $frontmatter.title }}
 
-This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
+This page covers using pr.new to open, view, and contribute to any project through our next-generation editor.
 
 Built to make open source contributions as easy as possible. 🥰
 
@@ -75,11 +75,3 @@ Or, in HTML:
 ```
 
 If the user is logged in at GitHub and StackBlitz (in beta), Codeflow IDE will open up. No further configuration is needed. 
-
-## Opening a single file
-
-To edit a single file with pr.new, visit it in the GitHub repository and click the "Edit" icon (a pencil). Now, in the browser's address tab, add `pr.new` to the beginning of the URL, for example:
-
-> <a href="https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md" target="_blank" rel="noopener noreferrer"><b>pr.new/</b>github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md</a>
-
-You will be redirected to [Web Publisher](/guides/user-guide/content-updates-with-web-publisher) for a more pleasant editing experience. If you prefer to work in a full environment, click on the "Open in IDE" button and you will be redirected to [StackBlitz](/guides/user-guide/working-in-stackblitz-editor).

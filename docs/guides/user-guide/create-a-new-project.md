@@ -50,7 +50,7 @@ StackBlitz's next-generation editor is based on VS Code and is compatible with V
 
 ### Import settings from VS Code
 
-To migrate the settings from your local VSCode to Codeflow IDE, follow these steps:
+To migrate the settings from your local VSCode to next-generation editor, follow these steps:
 
 1. In VSCode open the Settings tab (`cmd` + `,` on MacOS or `alt` + `,` on Windows and Linux).
 2. Click on the "Open Settings (JSON)" button, located on the top right side of the view:

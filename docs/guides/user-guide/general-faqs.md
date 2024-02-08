@@ -223,7 +223,7 @@ If you are considering using the WebContainers API, [please reach out to our tea
 
 ### What is Web Publisher?
 
-Web Publisher is a single file editor and publishing tool that can be used for smaller or text-based changes such as editing documentation or blogs. Web Publisher uses Codeflow technology that allows users to create, push, and publish changes all in their browser. The GitHub integration creates a seamless workflow that's fit for developers and non-coding folks alike!
+Web Publisher is a single file editor and publishing tool that can be used for smaller or text-based changes such as editing documentation or blogs. Web Publisher uses webcontainers and allows users to create, push, and publish changes all in their browser. The GitHub integration creates a seamless workflow that's fit for developers and non-coding folks alike!
 
 This environment is ideal for:
 - No-tech or low-tech users

@@ -1,6 +1,6 @@
 ---
 title: Environment Variables
-description: 'How to work with sensitive data using Codeflow'
+description: 'How to work with sensitive data using StackBlitz'
 og_image: environment-variables.png
 ---
 
