@@ -17,7 +17,7 @@ defineProps<{ links: any[] }>();
   display: grid;
   margin: 24px 0;
   padding: 0;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px;
   list-style: none;
 }

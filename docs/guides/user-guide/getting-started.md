@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: Quick start
 description: Starter projects are online playgrounds, typically built by the core team of a given project and run on StackBlitz.
 og_image: starter-projects.png
 ---
