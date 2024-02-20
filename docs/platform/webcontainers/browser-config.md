@@ -18,11 +18,11 @@ In some browsers, this feature is blocked by “third-party cookie” or “thir
 
 ## Chrome
 
-With chrome's defaults starting with version 118 or later, you should get a pretty good experience out of the box.
+With chrome's defaults, starting with version 118 or later, you should get a pretty good experience out of the box.
 
 If you run into issues or want to have an even smoother experience, read-on.
 
-Previews that are opened in a separate tab will require you that you connect them to the editor. You usually get prompted to click on a button to do that. However with Chrome [memory saver][CHROME_MEMORY_SAVER], you might find yourself doing this more frequently than what is to be expected. To avoid that, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
+Previews that are opened in a separate tab will require you that you connect them to the editor. You usually get prompted to click on a button to do that. However with Chrome [memory saver][CHROME_MEMORY_SAVER], you might find yourself doing that more frequently than expected. To avoid it, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
 
 ```
 https://stackblitz.com
@@ -34,7 +34,7 @@ Once done you should see something similar to this:
 
 ### Enabling Service Workers {#chrome-service-workers}
 
-If you use the “Block Third Party Cookies” option in Chrome and you have "Third-party Storage Partitioning" disabled, you will need to either:
+If you use the “Block Third Party Cookies” option in Chrome and you have “Third-party Storage Partitioning” disabled, you will need to either:
 
  - Enable Storage partitioning
  - Or add exceptions for StackBlitz projects.
