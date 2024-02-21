@@ -18,7 +18,21 @@ In some browsers, this feature is blocked by “third-party cookie” or “thir
 
 ## Chrome: enabling Service Workers {#chrome-service-workers}
 
-If you use the “Block Third Party Cookies” option in Chrome, you will need to add exceptions for StackBlitz projects.
+If you use the “Block Third Party Cookies” option in Chrome and you have "Third-party Storage Partitioning" disabled, you will need to either:
+
+ - Enable Storage partitioning
+ - Or add exceptions for StackBlitz projects.
+
+The first option should be preferred because this is a [new feature][GOOGLE_SP] of Chrome which improves your privacy when you visit websites that embed third-party sites.
+
+### Enable Storage partitioning
+
+Visit `chrome://flags/#third-party-storage-partitioning` and choose `Enabled` in the drop down. In recent version of Chrome, choosing the `Default` value should work too.
+
+<img alt="Chrome flags showing the third-party Storage Partitioning option enabled." src="./assets/chrome-enable-sp.png" width="800" />
+
+
+### Or add exceptions for Stackblitz
 
 To allow all StackBlitz projects to use Service Workers, go to your browser’s cookie preferences, and add exceptions for the following URL patterns:
 
@@ -62,7 +76,7 @@ You can work around this issue in a couple ways:
 1. Use the “Strict” mode instead of “Custom” mode. It’s important to note that it's slightly more permissive than “Custom” mode with very strict options. If this is not something you'd like to allow, you can...
 2. Add exceptions to cookie blocking for the domains used to run StackBlitz projects.
 
-To do so, visit `about:preferences#privacy` to check what your current settings look like. 
+To do so, visit `about:preferences#privacy` to check what your current settings look like.
 
 <img
   alt="The Firefox “Privacy & Security” settings page showing that Enhanced Tracking Protection is set to “Custom”, and to “Cookies: All cross-site cookies (may cause websites to break)”."
@@ -129,3 +143,4 @@ stackblitz.com
 
 [MDN_SERVICE_WORKER]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [MDN_WEB_ASSEMBLY]: https://developer.mozilla.org/en-US/docs/WebAssembly
+[GOOGLE_SP]: https://developers.google.com/privacy-sandbox/3pcd/storage-partitioning
