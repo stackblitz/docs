@@ -18,17 +18,17 @@ In some browsers, this feature is blocked by “third-party cookie” or “thir
 
 ## Chrome
 
-With chrome's defaults, starting with version 118 or later, you should get a pretty good experience out of the box.
+With Chrome's defaults, starting with version 118 or later, you should get a pretty good experience out of the box.
 
-If you run into issues or want to have an even smoother experience, read-on.
+Read on if you run into issues or want an even smoother experience.
 
-Previews that are opened in a separate tab will require you that you connect them to the editor. You usually get prompted to click on a button to do that. However with Chrome [memory saver][CHROME_MEMORY_SAVER], you might find yourself doing that more frequently than expected. To avoid it, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
+Previews opened in a separate tab will require you to connect them to the editor. You usually get prompted to click on a button to do that. However, you might do that more frequently than expected with Chrome's [memory saver][CHROME_MEMORY_SAVER]. To avoid it, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
 
 ```
 https://stackblitz.com
 ```
 
-Once done you should see something similar to this:
+Once done, you should see something similar to this:
 
 <img alt="Chrome performance settings showing the memory saver section with an exception for stackblitz.com" src="./assets/chrome-memory-saver.png" width="800" />
 
