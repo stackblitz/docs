@@ -16,23 +16,39 @@ WebContainers use a combination of browser technologies, such as [Service Worker
 
 In some browsers, this feature is blocked by “third-party cookie” or “third-party storage” restrictions. These are legitimate restrictions when the third-party domain is an ad server or a tracking server, but in the case of WebContainers the third-party domain is where your project code runs.
 
-## Chrome: enabling Service Workers {#chrome-service-workers}
+## Chrome
 
-If you use the “Block Third Party Cookies” option in Chrome and you have "Third-party Storage Partitioning" disabled, you will need to either:
+With Chrome's defaults, starting with version 118 or later, you should get a pretty good experience out of the box.
+
+Read on if you run into issues or want an even smoother experience.
+
+Previews opened in a separate tab will require you to connect them to the editor. You usually get prompted to click on a button to do that. However, you might do that more frequently than expected with Chrome's [memory saver][CHROME_MEMORY_SAVER]. To avoid it, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
+
+```
+https://stackblitz.com
+```
+
+Once done, you should see something similar to this:
+
+<img alt="Chrome performance settings showing the memory saver section with an exception for stackblitz.com" src="./assets/chrome-memory-saver.png" width="800" />
+
+### Enabling Service Workers {#chrome-service-workers}
+
+If you use the “Block Third Party Cookies” option in Chrome and you have “Third-party Storage Partitioning” disabled, you will need to either:
 
  - Enable Storage partitioning
  - Or add exceptions for StackBlitz projects.
 
 The first option should be preferred because this is a [new feature][GOOGLE_SP] of Chrome which improves your privacy when you visit websites that embed third-party sites.
 
-### Enable Storage partitioning
+#### Enable Storage partitioning
 
 Visit `chrome://flags/#third-party-storage-partitioning` and choose `Enabled` in the drop down. In recent version of Chrome, choosing the `Default` value should work too.
 
 <img alt="Chrome flags showing the third-party Storage Partitioning option enabled." src="./assets/chrome-enable-sp.png" width="800" />
 
 
-### Or add exceptions for Stackblitz
+#### Or add exceptions for Stackblitz
 
 To allow all StackBlitz projects to use Service Workers, go to your browser’s cookie preferences, and add exceptions for the following URL patterns:
 
@@ -144,3 +160,4 @@ stackblitz.com
 [MDN_SERVICE_WORKER]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [MDN_WEB_ASSEMBLY]: https://developer.mozilla.org/en-US/docs/WebAssembly
 [GOOGLE_SP]: https://developers.google.com/privacy-sandbox/3pcd/storage-partitioning
+[CHROME_MEMORY_SAVER]: https://support.google.com/chrome/answer/12929150
