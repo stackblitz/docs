@@ -136,9 +136,9 @@ Don’t forget to click “Save Changes”. Then you should be able to reload th
 
 ### Previews in a separate tab {#firefox-preview-separate-tab}
 
-Previews opened in a separate tab are not connected by default to the editor and require an extra step. You usually get prompted to click a button to do that.
+Previews opened in a separate tab are not connected by default to the editor and require an extra step. To complete this step, you are usually prompted to click a button.
 
-You can have it done automatically by modifying your popups settings, [about:preferences#privacy](about:preferences#privacy), with the following exception:
+This can happen automatically if your popups settings, [about:preferences#privacy](about:preferences#privacy), are adjusted with the following exception:
 
 ```
 https://webcontainer.io
