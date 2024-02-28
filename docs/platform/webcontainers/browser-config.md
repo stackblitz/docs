@@ -16,23 +16,54 @@ WebContainers use a combination of browser technologies, such as [Service Worker
 
 In some browsers, this feature is blocked by “third-party cookie” or “third-party storage” restrictions. These are legitimate restrictions when the third-party domain is an ad server or a tracking server, but in the case of WebContainers the third-party domain is where your project code runs.
 
-## Chrome: enabling Service Workers {#chrome-service-workers}
+## Chrome
 
-If you use the “Block Third Party Cookies” option in Chrome and you have "Third-party Storage Partitioning" disabled, you will need to either:
+With Chrome's defaults, starting with version 118 or later, you should get a pretty good experience out of the box.
+
+Read on if you run into issues or want an even smoother experience.
+
+### Previews in a separate tab {#chrome-preview-separate-tab}
+
+Previews opened in a separate tab are not connected by default to the editor and require an extra step. To complete this step, you are usually prompted to click a button.
+
+This can happen automatically if your popups settings, [chrome://settings/content/popups](chrome://settings/content/popups), are adjusted with the following exception:
+
+```
+https://[*.]webcontainer.io
+```
+
+<img class="mx-auto" alt="Chrome popups settings showing the *.webcontainer.io origins as exceptions" src="./assets/chrome-settings-popups.png" width="800" height="502.37" />
+
+Once done, whenever the preview needs to reconnect to the editor, it will open a popup that gets immediately closed.
+
+Lastly, if Chrome's [memory saver][CHROME_MEMORY_SAVER] is turned on, this step might be necessary more often than required. To avoid it, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
+
+```
+https://webcontainer.io
+https://stackblitz.com
+```
+
+Your performance settings should be similar to this:
+
+<img class="mx-auto" alt="Chrome performance settings showing the memory saver section with an exception for stackblitz.com" src="./assets/chrome-memory-saver.png" width="800" height="502.37" />
+
+### Enabling Service Workers {#chrome-service-workers}
+
+If you use the “Block Third Party Cookies” option in Chrome and you have “Third-party Storage Partitioning” disabled, you will need to either:
 
  - Enable Storage partitioning
  - Or add exceptions for StackBlitz projects.
 
 The first option should be preferred because this is a [new feature][GOOGLE_SP] of Chrome which improves your privacy when you visit websites that embed third-party sites.
 
-### Enable Storage partitioning
+#### Enable Storage partitioning
 
 Visit `chrome://flags/#third-party-storage-partitioning` and choose `Enabled` in the drop down. In recent version of Chrome, choosing the `Default` value should work too.
 
-<img alt="Chrome flags showing the third-party Storage Partitioning option enabled." src="./assets/chrome-enable-sp.png" width="800" />
+<img alt="Chrome flags showing the third-party Storage Partitioning option enabled." src="./assets/chrome-enable-sp.png" width="800" height="234.56" />
 
 
-### Or add exceptions for Stackblitz
+#### Or add exceptions for Stackblitz
 
 To allow all StackBlitz projects to use Service Workers, go to your browser’s cookie preferences, and add exceptions for the following URL patterns:
 
@@ -43,11 +74,11 @@ https://[*.]webcontainer.io
 
 For instance, in Chrome, go to `chrome://settings/cookies` and add those exceptions in the “Sites that can always use cookies” section.
 
-<img alt="Chrome cookie settings with an empty list of “Sites that can always use cookies”." src="./assets/chrome-settings-cookies-1.png" width="800" />
+<img alt="Chrome cookie settings with an empty list of “Sites that can always use cookies”." src="./assets/chrome-settings-cookies-1.png" width="800" height="600" />
 
-<img alt="Chrome cookie settings showing a modal dialog for adding a site to list of third-party cookie exceptions." src="./assets/chrome-settings-cookies-2.png" width="800" />
+<img alt="Chrome cookie settings showing a modal dialog for adding a site to list of third-party cookie exceptions." src="./assets/chrome-settings-cookies-2.png" width="800" height="600" />
 
-<img alt="Chrome cookie settings with exceptions for stackblitz.io and local.webcontainer.io domains." src="./assets/chrome-settings-cookies-3.png" width="800" />
+<img alt="Chrome cookie settings with exceptions for stackblitz.io and local.webcontainer.io domains." src="./assets/chrome-settings-cookies-3.png" width="800" height="600" />
 
 :::details Advanced: enabling Service Workers for a single project
 
@@ -67,7 +98,9 @@ Note that the list of blocked domains might look different for you. In particula
 
 :::
 
-## Firefox: enabling Service Workers {#firefox-service-workers}
+## Firefox
+
+### Enabling Service Workers {#firefox-service-workers}
 
 When Firefox’s Enhanced Tracking Protection is configured in “Custom” mode with the cookie blocking option set to “All cross-site cookies”, Firefox will block the Service Workers used by WebContainers.
 
@@ -81,7 +114,8 @@ To do so, visit `about:preferences#privacy` to check what your current settings 
 <img
   alt="The Firefox “Privacy & Security” settings page showing that Enhanced Tracking Protection is set to “Custom”, and to “Cookies: All cross-site cookies (may cause websites to break)”."
   src="./assets/firefox-settings-cookies-1.png"
-  width="1024"
+  width="820"
+  height="661"
 />
 
 To add exceptions for StackBlitz, scroll down to the “Cookies and Site Data” section, click on “Manage Exceptions…”, and add exceptions for the following sites:
@@ -94,10 +128,24 @@ https://webcontainer.io
 <img
   alt="The Cookies and site data exceptions management window in Firefox settings. It shows a couple entries for stackblitz.io and webcontainer.io, both with the value “Allow”."
   src="./assets/firefox-settings-cookies-2.png"
-  width="1024"
+  width="820"
+  height="645"
 />
 
 Don’t forget to click “Save Changes”. Then you should be able to reload the tab with your StackBlitz project, and hopefully everything should work!
+
+### Previews in a separate tab {#firefox-preview-separate-tab}
+
+Previews opened in a separate tab are not connected by default to the editor and require an extra step. To complete this step, you are usually prompted to click a button.
+
+This can happen automatically if your popups settings, [about:preferences#privacy](about:preferences#privacy), are adjusted with the following exception:
+
+```
+https://webcontainer.io
+```
+
+<img alt="Firefox popups settings showing the webcontainer.io site allowed as an exception" src="./assets/firefox-settings-popups.png" width="800" height="649" />
+
 
 ## Brave: enabling Service Workers {#brave-service-workers}
 
@@ -107,19 +155,19 @@ To allow WebContainers to run in Brave, you will need to add an exception for St
 
 1. Visit a WebContainers-based project, for instance https://stackblitz.com/edit/nextjs. The project’s boot sequence might stay stuck on the “Running start command” step:
 
-![Screenshot of Brave on a WebContainers project with the Brave Shields feature on. Loading the project’s web server is stuck on the last step.](./assets/brave-stuck-project.png)
+<img alt="Screenshot of Brave on a WebContainers project with the Brave Shields feature on. Loading the project’s web server is stuck on the last step" src="./assets/brave-stuck-project.png" width="820" height="500"/>
 
 2. Click on the “Shields” icon at the right of the address bar, then click on “Advanced View”.
 
-<img alt="Screenshot showing the Shields configuration popup for stackblitz.com." src="./assets/brave-shields-popup.png" width="380" />
+<img alt="Screenshot showing the Shields configuration popup for stackblitz.com." src="./assets/brave-shields-popup.png" width="380" height="358" />
 
 3. In the advanced view, change the “Cross-site cookies blocked” option to “All cookies allowed”.
 
-![Screenshot showing the advanced view of the Shields configuration popup, with a drop-down selector for cross-site cookie permissions.](./assets/brave-shields-details.png)
+<img alt="Screenshot showing the advanced view of the Shields configuration popup, with a drop-down selector for cross-site cookie permissions." src="./assets/brave-shields-details.png" width="820" height="559" />
 
 Brave will reload the page, and you should get a working project:
 
-![Screenshot of Brave on a WebContainers project with the Brave Shields feature tweaked to allow third-party cookies and Service Workers. Loading the web server works, and shows the default page for Next.js’s starter project.](./assets/brave-working-project.png)
+<img alt="Screenshot of Brave on a WebContainers project with the Brave Shields feature tweaked to allow third-party cookies and Service Workers. Loading the web server works, and shows the default page for Next.js’s starter project." src="./assets/brave-working-project.png" width="820" height="500"/>
 
 ## Edge: enabling WebAssembly {#edge-webassembly}
 
@@ -144,3 +192,4 @@ stackblitz.com
 [MDN_SERVICE_WORKER]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 [MDN_WEB_ASSEMBLY]: https://developer.mozilla.org/en-US/docs/WebAssembly
 [GOOGLE_SP]: https://developers.google.com/privacy-sandbox/3pcd/storage-partitioning
+[CHROME_MEMORY_SAVER]: https://support.google.com/chrome/answer/12929150
