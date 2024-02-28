@@ -1,1 +1,0 @@
-Currently, Codeflow IDE supports multiple package managers including pnpm, npm, and Yarn.

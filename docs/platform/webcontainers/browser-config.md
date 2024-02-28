@@ -84,7 +84,7 @@ For instance, in Chrome, go to `chrome://settings/cookies` and add those excepti
 
 If you don’t want to allow Service Workers and third-party cookies for all StackBlitz projects, you can add exceptions for individual projects instead.
 
-Note that this may not be very practical, because the exact domain for a project can change between sessions, especially in [Codeflow IDE](/codeflow/working-in-codeflow-ide).
+Note that this may not be very practical, because the exact domain for a project can change between sessions, especially in [StackBlitz Editor](/guides/user-guide/working-in-stackblitz-editor).
 
 In Chrome, click the lock icon in the navigation bar:
 

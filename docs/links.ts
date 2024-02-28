@@ -5,36 +5,38 @@ import type { CardLink, FooterSection, MenuLinkGroup, MenuLinkItem } from '@them
 
 const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
   userGuide: [
-    { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
-    { text: 'Getting started', link: '/guides/user-guide/getting-started' },
-    { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
-    { text: 'Available environments', link: '/guides/user-guide/available-environments' },
-    { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
-    { text: 'IDE: what’s on your screen', link: '/guides/user-guide/ide-whats-on-your-screen' },
+    {
+      text: 'Getting started',
+      link: '/guides/user-guide/what-is-stackblitz',
+      items: [
+        { text: 'What is StackBlitz', link: '/guides/user-guide/what-is-stackblitz' },
+        { text: 'Quick start', link: '/guides/user-guide/getting-started' },
+        { text: 'Create a new project', link: '/guides/user-guide/create-a-new-project' },
+        { text: 'Importing projects', link: '/guides/user-guide/importing-projects' },
+      ]
+    },
+    { text: 'Using the editor', link: '/guides/user-guide/working-in-stackblitz-editor' },
+    { text: 'User interface', link: '/guides/user-guide/user-interface' },
+    {
+      text: 'Content updates with Web Publisher',
+      link: '/guides/user-guide/content-updates-with-web-publisher',
+    },    
     { text: 'Collections', link: '/guides/user-guide/collections' },
     { text: 'Keyboard shortcuts', link: '/guides/user-guide/keyboard-shortcuts' },
-    { text: 'General FAQs', link: '/guides/user-guide/general-faqs' },
+    { text: 'General FAQs', link: '/guides/user-guide/general-faqs' }, 
+    { text: 'Available environments', link: '/guides/user-guide/available-environments' },
+    { text: 'Environment Variables', link: '/guides/user-guide/environment-variables' },
   ],
   integrationGuide: [
-    { text: 'Embedding projects', link: '/guides/integration/embedding' },
+    { text: 'Manually embedding projects', link: '/guides/integration/embedding' },
     { text: 'Launching projects from GitHub', link: '/guides/integration/open-from-github' },
     { text: 'Creating projects with the SDK', link: '/guides/integration/create-with-sdk' },
     { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
     { text: 'Integrating with Storybook', link: '/guides/integration/storybook-addon' },
     { text: 'Integrating with Figma', link: '/guides/integration/figma-plugin' },
-  ],
-  codeflow: [
-    { text: 'What is Codeflow?', link: '/codeflow/what-is-codeflow' },
-    { text: 'Using pr.new', link: '/codeflow/using-pr-new' },
-    { text: 'Working in Codeflow IDE', link: '/codeflow/working-in-codeflow-ide' },
-    { text: 'Integrating CodeflowApp bot', link: '/codeflow/integrating-codeflowapp-bot' },
-    { text: 'Environment Variables', link: '/codeflow/environment-variables' },
-    {
-      text: 'Content updates with Web Publisher',
-      link: '/codeflow/content-updates-with-web-publisher',
-    },
-    { text: 'Integrating Web Publisher', link: '/codeflow/integrating-web-publisher' },
-    { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },
+    { text: 'Integrating CodeflowApp bot', link: '/guides/integration/integrating-codeflowapp-bot' },
+    { text: 'Integrating Web Publisher', link: '/guides/integration/integrating-web-publisher' },
+    { text: 'Using pr.new', link: '/guides/integration/using-pr-new' },
   ],
   teams: [
     { text: 'What is StackBlitz Teams', link: '/teams/what-is-stackblitz-teams.md' },
@@ -47,16 +49,15 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
   api: [
     {
       text: 'JavaScript SDK',
-      link: '/platform/api/javascript-sdk',
+      link: '/platform/api/quick-start',
       items: [
-        { text: 'SDK overview', link: '/platform/api/javascript-sdk' },
-        { text: 'Options reference', link: '/platform/api/javascript-sdk-options' },
-        { text: 'Controlling embeds', link: '/platform/api/javascript-sdk-vm' },
+        { text: 'Quick start', link: '/platform/api/quick-start' },
+        { text: 'Controlling your SDK embeds', link: '/platform/api/javascript-sdk-vm' },
         { text: 'Managing dependencies', link: '/platform/api/javascript-sdk-dependencies' },
+        { text: 'Options reference', link: '/platform/api/javascript-sdk-options' },
       ],
     },
-    { text: 'POST API', link: '/platform/api/post-api' },
-    { text: 'WebContainer API', link: '/platform/api/webcontainer-api' },
+    { text: 'HTTP POST', link: '/platform/api/http-post' },
   ],
   webcontainers: [
     { text: 'Roadmap', link: '/platform/webcontainers/roadmap' },
@@ -65,6 +66,7 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
     { text: 'Project configuration', link: '/platform/webcontainers/project-config' },
     { text: 'Turbo package manager', link: '/platform/webcontainers/turbo-package-manager' },
     { text: 'Troubleshooting', link: '/platform/webcontainers/troubleshooting-webcontainers' },
+    { text: 'WebContainer API', link: '/platform/webcontainers/webcontainer-api' },
   ],
   enterprise: [
     { text: 'Overview', link: '/enterprise/overview' },
@@ -101,12 +103,8 @@ const linkGroups: Record<MenuLinkGroup, { text: string; items: MenuLinkItem[] }>
     items: groupLinks.userGuide,
   },
   integrationGuide: {
-    text: 'Integration Guide',
+    text: 'Integrations',
     items: groupLinks.integrationGuide,
-  },
-  codeflow: {
-    text: 'Codeflow',
-    items: groupLinks.codeflow,
   },
   teams: {
     text: 'Teams',
@@ -149,18 +147,18 @@ export const sidebarLinks = (
 
 export const homeTopLinks: CardLink[] = [
   {
-    icon: 'fa-file-import',
-    title: 'Get Started',
+    icon: 'fa-browser',
+    title: 'Getting started',
     description:
-      'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
-    url: '/guides/user-guide/what-is-stackblitz',
+    'Explore the full potential of StackBlitz: from writing code or spinning quick demos to making your docs delightful.',
+    url: '/guides/user-guide/getting-started',
   },
   {
-    icon: 'fa-browser',
-    title: 'Codeflow',
+    icon: 'fa-bolt',
+    title: 'What is StackBlitz?',
     description:
-      'One click opens a full in-browser IDE for your repos, issues, and PRs. No more cloning, installing, stashing!',
-    url: '/codeflow/what-is-codeflow',
+      'Learn how StackBlitz works and how you can use it for everything from rapid prototyping to full stack development.',
+    url: '/guides/user-guide/what-is-stackblitz',
   },
   {
     icon: 'fa-brackets-curly',

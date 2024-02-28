@@ -4,6 +4,8 @@ description: When creating new projects with the `sdk.openProject` and `sdk.embe
 og_image: sdk-managing-dependencies.png
 ---
 
+<!-- @include: ./parts/environments.md -->
+
 # {{ $frontmatter.title }}
 
 When creating new projects with the [`sdk.openProject`](/platform/api/javascript-sdk#openproject) and [`sdk.embedProject`](/platform/api/javascript-sdk#embedproject) methods, you can specify which npm dependencies should be installed on startup.

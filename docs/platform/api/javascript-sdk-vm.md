@@ -1,8 +1,9 @@
 ---
-title: Controlling embeds with the SDK’s VM interface
+title: Controlling your SDK embeds
 description: All of the embed methods of the StackBlitz JS SDK automatically connect to the embedded StackBlitz VM, giving you programmatic access to the embedded project.
 og_image: sdk-controlling-embeds.png
 ---
+<!-- @include: ./parts/environments.md -->
 
 # {{ $frontmatter.title }}
 
@@ -10,7 +11,7 @@ og_image: sdk-controlling-embeds.png
 These methods only apply to projects embedded on a page.
 :::
 
-All of the embed methods of the [StackBlitz JS SDK][sdk_docs] automatically connect to the embedded StackBlitz <abbr title="Virtual Machine">VM</abbr>, giving you programmatic access to the embedded project.
+All of the embed methods of the [StackBlitz JS SDK](/platform/api/quick-start) automatically connect to the embedded StackBlitz <abbr title="Virtual Machine">VM</abbr>, giving you programmatic access to the embedded project.
 
 Use the VM to:
 

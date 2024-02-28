@@ -1,22 +1,22 @@
 ---
-title: Embedding projects
-description: Embedding is one way to display a StackBlitz editor in a documentation page, a blog post, or any other page. This page covers manual embedding in iframes. 
+title: Manually embedding projects
+description: Embedding is one way to display StackBlitz in a documentation page, a blog post, or any other page. This page covers manual embedding in iframes. 
 og_image: embedding-projects.png
 ---
 
 # {{ $frontmatter.title }}
 
-Embedding is one way to display a StackBlitz editor in a documentation page, a blog post, or any other page. This page covers manual embedding in iframes. You can also do it [programmatically by using our SDK](/guides/integration/create-with-sdk).
+Embedding is one way to display StackBlitz in a documentation page, a blog post, or any other page. This page covers manual embedding in iframes. You can also do it [programmatically by using our SDK](/guides/integration/create-with-sdk).
 
 ## Embedding StackBlitz project on a page
 
 **1.** Open a project of your choosing and click the "Share" button in the top left navigation bar:
 
-![Share Button in StackBlitz Editor](./assets/project-share-button.png)
+![Share Button in StackBlitz](./assets/project-share-button.png)
 
 **2.** In the popup window, choose the "Embed" tab. Customize your embed by choosing appropriate options from the panel on the right and check the preview on the bottom to see how your embed will look. If you're satisfied, copy the embed URL.
 
-![Embed and Preview tabs in StackBlitz Editor](./assets/embed-project.png)
+![Embed and Preview tabs in StackBlitz](./assets/embed-project.png)
 
 :::tip
 You can customize your embed further by adding suitable [query parameters](#embed-url-options).
@@ -69,5 +69,5 @@ You can use the following URL query parameters to customize the appearance and f
 Alternatively, you can use our [JavaScript SDK methods](/platform/api/javascript-sdk) for embedding StackBlitz projects in pages to avoid creating and configuring iframes.
 
 
-[ui_docs]: /guides/user-guide/ide-whats-on-your-screen
+[ui_docs]: /guides/user-guide/user-interface
 [available_env_docs]: /guides/user-guide/available-environments

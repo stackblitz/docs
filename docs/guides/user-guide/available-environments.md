@@ -12,13 +12,6 @@ og_image: available-environments.png
 
 There are two underlying compute environments that can be used to power a StackBlitz project: **EngineBlock** or **WebContainers**. Each project in StackBlitz runs on one of these compute environments. This docs page is designed to describe some of the technical differences between the environments and help you [determine which compute environment you are using](#which-compute-environment-are-you-using).
 
-:::tip
-The compute environments being discussed on this page refer to the behind the scenes tech powering the project and NOT the editor/visual user interface. As of Q1 2024 StackBlitz has 3 distinct editors, and you can learn more about them at the links below:<br>
-:link: [StackBlitz Classic Editor](/guides/user-guide/getting-started)<br>
-:link: [Stackblitz Codeflow](/codeflow/what-is-codeflow)<br>
-:link: [Stackblitz Web Publisher](/codeflow/integrating-web-publisher)
-:::
-
 Depending on the compute environment and choice of editor, StackBlitz will have slightly different features and User Interface elements. See an overview of both compute environments in the table below - and you can directly consult the section on [EngineBlock](#engineblock) or [WebContainers](#webcontainers) for more specifics on each.
 
 | Feature | EngineBlock | WebContainers |
@@ -27,12 +20,12 @@ Depending on the compute environment and choice of editor, StackBlitz will have 
 | Supported package managers | <SupportIcon value="star-half" label="" /> Turbo v1 | <SupportIcon value="star" label="" /> npm, pnpm, yarn v1 |
 | Full Node.js environment | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 | Shareable preview URL | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
-| [Console](/guides/user-guide/ide-whats-on-your-screen#console) | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
-| [Terminal](/guides/user-guide/ide-whats-on-your-screen#terminal) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| [Console](/guides/user-guide/user-interface#console) | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="no" label="Not available" /> |
+| [Terminal](/guides/user-guide/user-interface#terminal) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 | ***Editor Support*** |  |  |
 | [Classic Editor](/guides/user-guide/getting-started) | <SupportIcon value="yes" label="Available" /> | <SupportIcon value="yes" label="Available" /> |
-| [Codeflow](/codeflow/working-in-codeflow-ide) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
-| [Web Publisher](/codeflow/content-updates-with-web-publisher) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| [StackBlitz Editor](/guides/user-guide/working-in-stackblitz-editor) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
+| [Web Publisher](/guides/user-guide/content-updates-with-web-publisher) (beta) | <SupportIcon value="no" label="Not available" /> | <SupportIcon value="yes" label="Available" /> |
 
 To explore these differences in practice, we took a React project in the Classic Editor and turned it into:
 
@@ -69,13 +62,13 @@ With WebContainers, you gain the flexibility to work with virtually any front-en
 WebContainers natively support all the major package managers including [npm, pnpm, and yarn v1](https://blog.stackblitz.com/posts/announcing-native-package-manager-support/), just like a local development environment. This offers a more production grade approach to managing dependencies compared to EngineBlock's Turbo v1.
 
 **Editor Support** <br>
-WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/user-guide/getting-started), [Codeflow](/codeflow/working-in-codeflow-ide), and [Web Publisher](/codeflow/content-updates-with-web-publisher).
+WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/user-guide/getting-started), [StackBlitz](/guides/user-guide/working-in-stackblitz-editor), and [Web Publisher](/guides/user-guide/content-updates-with-web-publisher).
 
 ## Which Compute Environment Are You using?
 
-The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, wheras the [Codeflow](/codeflow/working-in-codeflow-ide) and [Web Publisher](/codeflow/content-updates-with-web-publisher) editors only support WebContainers.
+The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, whereas [StackBlitz's next gen editor](/guides/user-guide/working-in-stackblitz-editor) and [Web Publisher](/guides/user-guide/content-updates-with-web-publisher) editors only support WebContainers.
 
-If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Codeflow editor** and therefore using **WebContainers**:
+If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Next-generation editor** and therefore using **WebContainers**:
 
 ![Screenshot of the Codeflow settings pane](./assets/codeflow-settings.png)
 

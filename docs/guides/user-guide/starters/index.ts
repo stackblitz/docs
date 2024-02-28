@@ -28,6 +28,16 @@ import vueLogo from './vue.svg';
 
 export const dotNewLinks = [
   {
+    title: 'Vite',
+    link: 'https://vite.new/',
+    icon: viteLogo,
+  },
+  {
+    title: 'Node.js',
+    link: 'https://node.new/',
+    icon: nodeLogo,
+  },
+  {
     title: 'Analog.js',
     link: 'https://analogjs.org/new',
     icon: analogjsLogo,
@@ -123,11 +133,6 @@ export const dotNewLinks = [
     iconInvert: true,
   },
   {
-    title: 'Node.js',
-    link: 'https://node.new/',
-    icon: nodeLogo,
-  },
-  {
     title: 'Nodemon',
     link: 'https://node.new/nodemon',
     icon: nodemonLogo,
@@ -178,11 +183,6 @@ export const dotNewLinks = [
     title: 'SvelteKit',
     link: 'https://sveltekit.new',
     icon: svelteLogo,
-  },
-  {
-    title: 'Vite',
-    link: 'https://vite.new/',
-    icon: viteLogo,
   },
   {
     title: 'VitePress',
