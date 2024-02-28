@@ -24,9 +24,9 @@ Read on if you run into issues or want an even smoother experience.
 
 ### Previews in a separate tab {#chrome-preview-separate-tab}
 
-Previews opened in a separate tab are not connected by default to the editor and require an extra step. You usually get prompted to click a button to do that.
+Previews opened in a separate tab are not connected by default to the editor and require an extra step. To complete this step, you are usually prompted to click a button.
 
-You can have it done automatically by modifying your popups settings, [chrome://settings/content/popups](chrome://settings/content/popups), with the following exception:
+This can happen automatically if your popups settings, [chrome://settings/content/popups](chrome://settings/content/popups), are adjusted with the following exception:
 
 ```
 https://[*.]webcontainer.io
