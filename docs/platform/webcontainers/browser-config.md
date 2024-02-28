@@ -24,7 +24,7 @@ Read on if you run into issues or want an even smoother experience.
 
 ### Previews in a separate tab {#chrome-preview-separate-tab}
 
-Previews that are opened in a separate tab are not connected by default to the editor and require an extra step. You usually get prompted to click a button to do that.
+Previews opened in a separate tab are not connected by default to the editor and require an extra step. You usually get prompted to click a button to do that.
 
 You can have it done automatically by modifying your popups settings, [chrome://settings/content/popups](chrome://settings/content/popups), with the following exception:
 
@@ -34,9 +34,9 @@ https://[*.]webcontainer.io
 
 <img class="mx-auto" alt="Chrome popups settings showing the *.webcontainer.io origins as exceptions" src="./assets/chrome-settings-popups.png" width="800" height="502.37" />
 
-Once done, whenever the preview need to reconnect to the editor, it will open a popup that gets immediately closed.
+Once done, whenever the preview needs to reconnect to the editor, it will open a popup that gets immediately closed.
 
-Lastly, if you have Chrome's [memory saver][CHROME_MEMORY_SAVER] turned on, this step might be neccessary more often than required. To avoid it, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
+Lastly, if Chrome's [memory saver][CHROME_MEMORY_SAVER] is turned on, this step might be necessary more often than required. To avoid it, you can add the following exception in [chrome://settings/performance](chrome://settings/performance):
 
 ```
 https://webcontainer.io
@@ -136,7 +136,7 @@ Don’t forget to click “Save Changes”. Then you should be able to reload th
 
 ### Previews in a separate tab {#firefox-preview-separate-tab}
 
-Previews that are opened in a separate tab are not connected by default to the editor and require an extra step. You usually get prompted to click a button to do that.
+Previews opened in a separate tab are not connected by default to the editor and require an extra step. You usually get prompted to click a button to do that.
 
 You can have it done automatically by modifying your popups settings, [about:preferences#privacy](about:preferences#privacy), with the following exception:
 
