@@ -1,5 +1,5 @@
 ---
-title: How to install and use StackBlitz Web Publisher
+title: How to install and use StackBli Publisher
 description: With StackBlitz’s addon, Storybook users can open stories in StackBlitz directly from Storybook.
 og_image: storybook-addon.png
 ---
