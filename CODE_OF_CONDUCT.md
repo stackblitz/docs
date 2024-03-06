@@ -5,7 +5,7 @@ We welcome contributions from folks from all skill levels and expertise. We are 
 
 We are a community that prioritizes a harassment-free experience for everyone.
 
-## Our Standards
+## Our Standardsqsdf
 Examples of behavior that contributes to **fostering a positive environment** include:
 - Using welcoming and inclusive language
 - Being respectful of differing viewpoints and experiences
