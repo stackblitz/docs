@@ -60,9 +60,9 @@ You like the idea of running Node.js in the browser and feel inspired to build y
 
 Speed up your entire development process with **realtime hot-reloading in the fastest dev environment ever made**. Collaborate remotely on different devices, send and receive instant feedback, and **get to market faster**.
 
-### Coding Interviews
+### Coding interviews
 
-Asking candidates to setup new local environments slows down the hiring process. With StackBlitz you can create starter projects for candidates to fork and instantly get them coding.
+Asking candidates to set up new local environments slows down the hiring process. With StackBlitz, you can create starter projects to assess candidates' skills without needing to set up a local environment.
 
 ## What about other online IDEs?
 
