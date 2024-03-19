@@ -60,6 +60,10 @@ You like the idea of running Node.js in the browser and feel inspired to build y
 
 Speed up your entire development process with **realtime hot-reloading in the fastest dev environment ever made**. Collaborate remotely on different devices, send and receive instant feedback, and **get to market faster**.
 
+### Coding Interviews
+
+Asking candidates to setup new local environments slows down the hiring process. With StackBlitz you can create starter projects for candidates to fork and instantly get candidates doing coding interviews.
+
 ## What about other online IDEs?
 
 Unlike StackBlitz, legacy online IDEs run on remote servers and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
