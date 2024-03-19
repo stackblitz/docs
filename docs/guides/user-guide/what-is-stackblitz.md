@@ -62,7 +62,7 @@ Speed up your entire development process with **realtime hot-reloading in the fa
 
 ### Coding Interviews
 
-Asking candidates to setup new local environments slows down the hiring process. With StackBlitz you can create starter projects for candidates to fork and instantly get candidates doing coding interviews.
+Asking candidates to setup new local environments slows down the hiring process. With StackBlitz you can create starter projects for candidates to fork and instantly get them coding.
 
 ## What about other online IDEs?
 
