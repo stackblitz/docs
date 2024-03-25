@@ -129,38 +129,14 @@ export default defineConfigWithTheme<ThemeConfig>({
   },
 });
 
-function getAnalyticsTags({
-  VITE_GTM_ID = '',
-  VITE_GTAG_ID = '',
-}: NodeJS.ProcessEnv): HeadConfig[] {
-  // Fail the build if we have a defined but malformed analytics id
-  const idPattern = /^(G|GTM)-[A-Z\d]+$/;
-  for (const [name, value] of Object.entries({ VITE_GTM_ID, VITE_GTAG_ID })) {
-    if (value && !idPattern.test(value)) {
-      throw new Error(`Invalid ${name} value: '${value}'`);
-    }
-  }
-
+function getAnalyticsTags({ VITE_GTM_ID = '' }: NodeJS.ProcessEnv): HeadConfig[] {
+  const idPattern = /^GTM-[A-Z\d]+$/;
   const tags: HeadConfig[] = [];
 
-  if (VITE_GTAG_ID) {
-    const source = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments) }
-      gtag('js', new Date);
-      gtag('config', '${VITE_GTAG_ID}', { anonymize_ip: true });
-    `;
-    tags.push(['script', {}, source]);
-    if (!VITE_GTM_ID) {
-      const url = `https://www.googletagmanager.com/gtag/js?id=${VITE_GTAG_ID}`;
-      tags.push(['script', { async: '', src: url }]);
-    }
-  }
-
-  // We're migrating from gtag.js to gtm.js, but using both as we verify this change.
-  // According to https://support.google.com/tagmanager/answer/6103696 this should be
-  // inserted after any script declaring a dataLayer.
   if (VITE_GTM_ID) {
+    if (!idPattern.test(VITE_GTM_ID)) {
+      throw new Error(`Invalid VITE_GTM_ID value: '${VITE_GTM_ID}'`);
+    }
     const source = `
       (function(w, d, s, l, i){
         w[l] = w[l] || [];
