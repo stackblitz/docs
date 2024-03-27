@@ -11,7 +11,6 @@ Based off the root DNS zone set in EE Site Configuration (for instance, `stackbl
 ```
 A stackblitz.example.com 172.16.4.20
 A *.stackblitz.example.com 172.16.4.20
-A *.preview.stackblitz.example.com 172.16.4.20
 ```
 
 ## TLS
