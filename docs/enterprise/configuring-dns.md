@@ -20,7 +20,6 @@ For TLS, your certificate should have `stackblitz.example.com` as the Common Nam
 
 - `stackblitz.example.com`
 - `*.stackblitz.example.com`
-- `*.preview.stackblitz.example.com`
 
 ### TLS Certificate Renewal
 
