@@ -1,0 +1,94 @@
+// --------------------------------
+// -- Top
+
+// Remove nav border
+.VPNavBar > .divider {
+  display: none !important;
+}
+
+// Remove extraneous fade elements
+.VPNavBar .curtain {
+  display: none;
+}
+
+// Correct width on non-docs pages
+.VPNavBar .container {
+  max-width: unset;
+}
+
+// No content-body transition (background-color fix)
+.VPNavBar .content-body {
+  transition: none !important;
+}
+
+// // Semi-transparent background above content
+// .VPNavBar .content-body {
+//   background-color: rgba(255,255,255,0.8) !important;
+//   backdrop-filter: blur(6px);
+//   :root.dark & {
+//     background-color: rgba(7,8,11,0.8) !important;
+//   }
+// }
+
+// Size according to Sidebar width to limit zone affected by nav overlay
+.VPNavBar.has-sidebar .content {
+  --vp-sidebar-width: 320px;
+  padding-left: var(--vp-sidebar-width) !important;
+  padding-right: 32px !important;
+  @media (max-width: 960px) {
+    --vp-sidebar-width: 32px;
+    padding-right: 0 !important;
+  }
+}
+
+// Position title/logo to hug left
+.VPNavBar.has-sidebar .title {
+  padding-left: 16px !important;
+  border-bottom: none;
+  @media (max-width: 960px) {
+    padding-left: 0 !important;
+  }
+}
+
+// Move search away from logo
+.VPNavBarSearch.search {
+  justify-content: flex-end;
+  margin-right: 32px;
+
+  @media screen and (max-width: 500px) {
+    margin-right: 10px;
+  }
+}
+
+// Restyle top NavBarMenu links
+.VPNavBarMenu.menu {
+  height: calc(100% - 16px);
+}
+
+.VPNavBarMenu.menu a {
+  font-size: 13px;
+  margin: 0 4px;
+  opacity: 0.8;
+  transition-duration: 0.1s;
+  transition-property: color, opacity, box-shadow;
+  opacity: 0.7;
+  &:hover:not(.active) {
+    opacity: 1;
+    color: var(--vp-c-text-1);
+  }
+}
+
+// Fix enormous line-height of navbar items
+.VPNavBarMenu .VPNavBarMenuLink {
+  min-height: var(--vp-nav-height-mobile);
+  line-height: 1.32;
+  @media (min-width: 960px) {
+    min-height: var(--vp-nav-height-desktop);
+  }
+}
+
+.VPNavBarMenuLink.active {
+  color: var(--vp-c-text-1) !important;
+  box-shadow: inset 0 -1px 0 0 var(--vp-c-brand);
+  opacity: 1 !important;
+}

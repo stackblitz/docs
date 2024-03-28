@@ -130,7 +130,7 @@ export const defaultGroupLink = (linkGroup: MenuLinkGroup) => groupLinks[linkGro
 
 export const sidebarLinks = (
   sidebar: 'main' | 'enterprise',
-  activeLinkGroups: MenuLinkGroup[] = []
+  activeLinkGroups: MenuLinkGroup[] = [],
 ) => {
   if (sidebar === 'enterprise') {
     return [linkGroups.enterprise];

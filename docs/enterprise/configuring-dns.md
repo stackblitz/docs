@@ -11,7 +11,6 @@ Based off the root DNS zone set in EE Site Configuration (for instance, `stackbl
 ```
 A stackblitz.example.com 172.16.4.20
 A *.stackblitz.example.com 172.16.4.20
-A *.preview.stackblitz.example.com 172.16.4.20
 ```
 
 ## TLS
@@ -20,7 +19,6 @@ For TLS, your certificate should have `stackblitz.example.com` as the Common Nam
 
 - `stackblitz.example.com`
 - `*.stackblitz.example.com`
-- `*.preview.stackblitz.example.com`
 
 ### TLS Certificate Renewal
 

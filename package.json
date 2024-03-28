@@ -5,7 +5,7 @@
   "scripts": {
     "build": "vitepress build",
     "dev": "vitepress dev",
-    "format": "prettier --write '**/*.{js,ts,vue,css,scss}'",
+    "format": "prettier --write '**/*.{js,ts,css,scss}'",
     "serve": "vitepress serve",
     "start": "vitepress dev"
   },
@@ -13,13 +13,13 @@
     "@stackblitz/sdk": "^1.9.0"
   },
   "devDependencies": {
-    "@types/node": "^20.8.9",
-    "@vue/tsconfig": "^0.4.0",
-    "dotenv": "^16.3.1",
+    "@types/node": "^20.11.30",
+    "@vue/tsconfig": "^0.5.1",
+    "dotenv": "^16.4.5",
     "markdown-it-footnote": "^3.0.3",
-    "prettier": "^3.0.3",
-    "sass": "^1.69.5",
-    "vitepress": "^1.0.0-rc.24"
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
+    "vitepress": "~1.0.1"
   },
   "prettier": {
     "printWidth": 100,

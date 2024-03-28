@@ -1,0 +1,47 @@
+// --------------------------------
+// -- Aside / Table of Contents
+
+// Widen aside
+.VPDoc .aside {
+  max-width: 300px !important;
+  position: relative;
+  padding-left: 0;
+  @media (min-width: 1380px) {
+    max-width: 248px;
+  }
+  @media (min-width: 1500px) {
+    max-width: 300px;
+  }
+  @media (min-width: 1600px) {
+    max-width: 328px;
+  }
+}
+.aside-container {
+  width: 300px !important;
+  max-width: 300px;
+}
+.aside-content {
+  padding-top: 56px;
+}
+
+// Add gap between title and list, but account for hardcoded `outline-marker` `top`
+.VPDocAside .outline-title {
+  margin-block-end: -1px;
+  transform: translateY(-6px);
+}
+
+// Space out links without affecting `outline-marker` too much
+.VPDocAside .outline-link {
+  padding: 6px 0;
+  font-size: 12.5px;
+  transition-duration: 0.1s;
+}
+
+// Don't clip text in the outline
+.VPDocAsideOutline .outline-link {
+  white-space: normal;
+  text-overflow: initial;
+  padding: 5px 0;
+  font-size: 13px;
+  line-height: 18px;
+}

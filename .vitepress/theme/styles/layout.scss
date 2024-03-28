@@ -1,0 +1,52 @@
+// MaintenanceBanner related
+// Only show it in big screen for now
+.Layout.with-banner {
+  --sbdocs-top-banner-height: 48px;
+  .VPNav {
+    --vp-layout-top-height: var(--sbdocs-top-banner-height);
+  }
+  .VPContent .VPDoc {
+    padding: 90px 32px 0;
+  }
+  .VPSidebar {
+    --vp-nav-height: 90px;
+  }
+
+  @media (max-width: 600px) {
+    --sbdocs-top-banner-height: 60px;
+  }
+}
+
+// --------------------------------
+// Customize Navs
+// --------------------------------
+// -- Content
+
+// Reduce .VPContent's dependency on calculated sizes
+.VPContent.has-sidebar {
+  @media (min-width: 960px) {
+    padding-left: calc(var(--vp-sidebar-width) + 16px) !important;
+  }
+  @media (min-width: 1440px) {
+    padding-right: 0 !important;
+  }
+}
+
+// Fill in space to accommodate Sidebar's width changes
+.VPDoc.has-sidebar.has-aside {
+  @media (min-width: 960px) and (max-width: 1500px) {
+    padding-left: 0;
+  }
+}
+
+// Increase body content width if space available.
+.VPDoc.has-aside .content-container {
+  max-width: 820px !important;
+}
+
+.VPDoc.has-sidebar.has-aside .container > .content {
+  @media (min-width: 1500px) {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+}
