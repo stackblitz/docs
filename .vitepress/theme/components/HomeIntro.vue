@@ -31,14 +31,11 @@ header {
   }
 }
 
-$icon-mask: linear-gradient(to bottom, #fff9 10%, #fffa 30%, #fff0 74%);
-
 header .icon {
   width: 160px;
   height: 160px;
   color: var(--sb-foreground-highlight);
-  -webkit-mask-image: $icon-mask;
-  mask-image: $icon-mask;
+  mask-image: linear-gradient(to bottom, #fff9 10%, #fffa 30%, #fff0 74%);
 
   @media (prefers-contrast: more) {
     display: none;
