@@ -86,13 +86,9 @@
       width: 24px;
       height: 24px;
       background-color: var(--block-icon-color);
-      -webkit-mask-image: var(--block-icon-url);
       mask-image: var(--block-icon-url);
-      -webkit-mask-position: center;
       mask-position: center;
-      -webkit-mask-repeat: no-repeat;
       mask-repeat: no-repeat;
-      -webkit-mask-size: contain;
       mask-size: contain;
       @media (max-width: 500px) {
         left: -40px;

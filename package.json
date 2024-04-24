@@ -19,7 +19,7 @@
     "markdown-it-footnote": "^3.0.3",
     "prettier": "^3.2.5",
     "sass": "^1.72.0",
-    "vitepress": "~1.0.1"
+    "vitepress": "~1.0.2"
   },
   "prettier": {
     "printWidth": 100,
