@@ -72,7 +72,7 @@ There are three ways to interact with this repository:
 
 Use Web Publisher for small content updates for a pleasant editing experience:
 
-1. Open the page on our [docs site](developer.stackblitz.com), scroll down, and click "edit this page".
+1. Open the page on our [docs site](https://developer.stackblitz.com), scroll down, and click "edit this page".
 2. Update the document in the editor on the left and see the rendered change in the preview window on the right.
 3. Once you're done, in the top right corner click on the green button that says "Propose changes".
 4. You will be redirected to a GitHub PR template page prepared for you to submit a PR.
