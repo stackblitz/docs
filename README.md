@@ -30,7 +30,7 @@ There are numerous ways to contribute to docs:
 - **Create demos**
   - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read our [contributing guide](CONTRIBUTING.md) and reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
 - **Fix an issue**
-  - You see an issue you'd like to worn on? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
+  - You see an issue you'd like to work on? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
 - **Reviews**
   - Please feel free to check existing PRs and issues. Share your loving feedback, help the other contributor approach the task in a better way, spot lurking bugs, errors, and mistakes. You can use pr.new to that end - in the URL of the issue or PR, swap "github.com" with "pr.new" to spin up the environment and the preview.
 
@@ -72,7 +72,7 @@ There are three ways to interact with this repository:
 
 Use Web Publisher for small content updates for a pleasant editing experience:
 
-1. Open the page on our [docs site](developer.stackblitz.com), scroll down, and click "edit this page".
+1. Open any page on our docs site ([Like this one](https://developer.stackblitz.com/guides/user-guide/what-is-stackblitz)), scroll down, and click "edit this page".
 2. Update the document in the editor on the left and see the rendered change in the preview window on the right.
 3. Once you're done, in the top right corner click on the green button that says "Propose changes".
 4. You will be redirected to a GitHub PR template page prepared for you to submit a PR.
