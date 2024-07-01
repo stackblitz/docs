@@ -16,7 +16,7 @@ If you can ping/access your registry without a proxy or firewall then you can fo
     These items can be found in your private npm registry server settings. 
     - [Jfrog Artifactory Documentation](https://jfrog.com/help/r/jfrog-artifactory-documentation/jfrog-artifactory)
     - [Sonatype Nexus Documentation](https://help.sonatype.com/repomanager3)
-2. Navigate to `https://stackblitz.com/orgs/github/[YOUR_ORG_NAME]/settings` and scroll to the bottom of the page
+2. Navigate to `https://stackblitz.com/orgs/github/[YOUR_ORG_NAME]/npm_registries` and scroll to the bottom of the page
 3. Click “Add new registry”
 ![Add registry](./assets/add-registry.png)
 4. Enter the URL and Access Token, and click “Add registry”
