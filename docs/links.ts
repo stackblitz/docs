@@ -33,6 +33,10 @@ const groupLinks: Record<MenuLinkGroup, MenuLinkItem[]> = {
       text: 'Content updates with Web Publisher',
       link: '/codeflow/content-updates-with-web-publisher',
     },
+    {
+      text: 'Git projects and persistence',
+      link: '/codeflow/git-persistence',
+    },
     { text: 'Integrating Web Publisher', link: '/codeflow/integrating-web-publisher' },
     { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },
   ],
