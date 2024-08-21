@@ -12,6 +12,12 @@ By default, all StackBlitz projects created within a Team are publicly viewable 
 
 ![Sharing settings](./assets/sharing-settings.png)
 
+### Team settings
+When collaborating inside a StackBlitz Team, you have these additional controls:
+- Allow or disallow members to invite external users to collaborate on projects
+- Select the highest level of visibility (private, secret, public) allowed for projects
+- Default a members role to co-owner, editor, and viewer
+
 :::tip
 Currently it is not possible to hide projects (or remove edit access) from other members within the StackBlitz Team. Selecting Visibility: Private will only hide the project from users NOT in the Team. [Let us know](mailto:hello@stackblitz.com) if additional configurability here is important to you.
 :::
