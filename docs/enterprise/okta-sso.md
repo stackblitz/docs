@@ -43,7 +43,7 @@ Next, fill out the `App name` for the SAML integration. This is what the App wil
 On the next page, you'll need to fill out a few options using values from the Auth Settings page in the StackBlitz admin dashboard.
 
 - For the `Single sign on URL`, use the `Assertion Customer Service URL` from the StackBlitz Auth Settings page.
-- For `Audience URI (SP Entity ID)`, choose an identifier for the SAML application. We recommend using `stackblitz`. Use the same value in your StackBlitz SAML settings for `Issuer (Service Provider Entity ID)`.
+- For `Audience URI (SP Entity ID)`, choose an identifier for the SAML application. We recommend using `stackblitz`. Use the same value in your StackBlitz SAML settings for `Client ID (Service Provider Entity ID / Issuer)`.
 - In the `Attribute Statements (optional)` section, you must configure the `email` and `name` attributes for your users. We recommend using `user.email` for the `email` attribute, and `user.firstName + " " + user.lastName` for the `name` attribute.
 
 ![Configure SAML Integration in Okta](./assets/okta-sso/okta-integration-3.png)
