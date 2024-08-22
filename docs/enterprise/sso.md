@@ -17,6 +17,11 @@ StackBlitz SAML integration relies on a user-level token. To ensure consistent d
 - StackBlitz offers just-in-time provisioning. This means that if a user logs into StackBlitz for the first time using SSO, an account will automatically be created.
 :::
 
+
+:::warn Admin User E-Mail
+Each user account (including the Admin User) must have a unique email address. Use a service account email address (like IT@yourcompany.com) to ensure that the admin account doesn't cause email collisions for SSO users. If your admin email address matches an SSO user's email address, said SSO user will receive an "invalid login or password" error when signing in.
+:::
+
 ### Configure your IdP
 
 :::warning IMPORTANT: 
