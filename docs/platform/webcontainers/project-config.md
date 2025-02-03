@@ -121,6 +121,29 @@ The default `"auto"` setting enables showing changes as user types, which may pr
 
 A map of default environment variables that will be set in each top-level shell process.
 
+### <var>view</var>
+
+<table>
+  <tr>
+    <td>Type</td>
+    <td><code>"default" | "editor"</code></td>
+  </tr>
+  <tr>
+    <td>Default</td>
+    <td><code>"default"</code></td>
+  </tr>
+</table>
+
+The `view` option allows you to configure the layout the editor uses at startup.
+
+The available settings are:
+
+- `"default"` (default): Editor & Preview side-by-side
+- `"editor"`: Just the Editor, no preview
+
+You can also specify this option under the key `pullRequests` or `issues` to make it different when opening respectively.
+
+
 ## With URL parameters
 
 ### <var>startScript</var>
@@ -144,3 +167,7 @@ You can also run several scripts sequentially using comma-separated values. For 
 ```
 https://stackblitz.com/edit/project-id?startScript=build,serve
 ```
+
+### <var>view</var>
+
+Use the `view` parameter to configure the layout the editor uses at startup. Either `default` or `editor`
