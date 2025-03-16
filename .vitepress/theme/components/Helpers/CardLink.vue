@@ -102,8 +102,7 @@ export default {
     min-width: 100px;
     height: 64px;
     &:not(.has-bg)::before {
-      -webkit-mask-size: 32px;
-              mask-size: 32px;
+      mask-size: 32px;
     }
   }
 
@@ -120,14 +119,10 @@ export default {
     height: 100%;
     transition: background-color 0.14s ease;
     background-color: var(--vp-c-text-3);
-    -webkit-mask-image: var(--icon-img);
-            mask-image: var(--icon-img);
-    -webkit-mask-position: center;
-            mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-size: var(--icon-mask-size);
-            mask-size: var(--icon-mask-size);
+    mask-image: var(--icon-img);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: var(--icon-mask-size);
     .card-body:hover & {
       background-color: var(--vp-c-text-2);
     }
@@ -149,8 +144,7 @@ export default {
     min-width: 84px;
     height: 48px;
     &::before {
-      -webkit-mask-size: 28px;
-              mask-size: 28px;
+      mask-size: 28px;
     }
   }
   &.is-podcast.small,
@@ -159,7 +153,6 @@ export default {
     min-width: 64px;
     height: 48px;
     &::before {
-      -webkit-mask-size: 24px;
       mask-size: 24px;
     }
   }
