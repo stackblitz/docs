@@ -28,7 +28,7 @@ Getting started on GCP (no GKE, no existing cluster):
   - 8080
   - 6443
 - Run the kots intaller command: `curl -sSL https://k8s.kurl.sh/stackblitz | sudo bash`.
-  - **Note:** The KURL installer may prompt some packages for manual installtion. 
+  - **Note:** The KURL installer may prompt some packages for manual installation. 
   See: [Host Package Requirements](https://kurl.sh/docs/add-ons/kubernetes#host-package-requirements).
 
 :::tip Using load balancers?
