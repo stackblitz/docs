@@ -88,7 +88,7 @@ Using pnpm override, you can fix a bug and immediately try it out in the reprodu
 To set up pnpm overrides, follow these steps:
 1. In the project's root directory, create `.stackblitz` directory.
 2. Inside it, create a file called `codeflow.json`.
-3. In the file, specify the overrides by providing a key-vaue pair of the dependency to override and the folder where it is located. Please note that the location is relative to the root of the project.
+3. In the file, specify the overrides by providing a key-value pair of the dependency to override and the folder where it is located. Please note that the location is relative to the root of the project.
 
 ```json
 // .stackblitz/codeflow.json
