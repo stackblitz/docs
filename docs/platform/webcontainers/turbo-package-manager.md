@@ -7,7 +7,7 @@ og_image: webcontainer-turbo-package-manager.png
 # {{ $frontmatter.title }}
 
 :::warning
-Starting on January 1, 2024, turbo will no longer be supported and will be removed. We now offer built-in support for npm, pnpm, and yarn v1.
+Starting on April 2024, turbo ceased to be supported and was removed. We offer built-in support for npm, pnpm, and yarn v1.
 
 Support for native package managers out-of-the-box offers a lot of benefits. All features of your favorite package manager will be immediately available.
 

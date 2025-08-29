@@ -1,11 +1,81 @@
+.vp-doc a {
+  transition: 0.1s ease;
+}
+
+.vp-doc p > strong > a,
+.vp-doc p > a,
+.vp-doc li > strong > a,
+.vp-doc li > a,
+.vp-doc td > strong > a,
+.vp-doc td > a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: 0.1s ease;
+  transition-property: color, text-underline-offset;
+  :root.dark & {
+    color: rgb(131, 222, 255);
+  }
+  &:hover,
+  :root.dark &:hover {
+    color: var(--vp-c-text-1);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+  width: max-content;
+  max-width: 100%;
+}
+
+.vp-doc .header-anchor {
+  @media (min-width: 960px) {
+    position: absolute;
+    left: -28px;
+    padding: 0 18px;
+    transform: scale(0.94);
+  }
+}
+
+.vp-doc h1 + p,
+.vp-doc h2 + p {
+  margin-top: 0;
+}
+
 .vp-doc h1 {
   margin-bottom: 24px;
 }
 
 .vp-doc h2 {
   margin: 44px 0 24px;
+  padding-top: 16px !important;
   border-top: 1px solid var(--vp-c-divider-light);
-  padding-top: 32px;
+}
+
+.vp-doc h2 .header-anchor {
+  top: 16px;
+}
+
+.vp-doc h3 {
+  margin-top: 40px !important;
+}
+
+.vp-doc pre code {
+  font-size: 13px !important;
+}
+
+.vp-doc :not(pre) > code {
+  color: var(--vp-text-code);
+}
+
+.vp-doc div[class*='language-'] {
+  margin: 32px 0 40px;
 }
 
 // Wrap code examples
@@ -14,6 +84,15 @@
   white-space: pre-wrap;
   // break contiguous strings if there was no break opportunity (e.g. whitespace, hyphens or slashes)
   word-break: break-word;
+}
+
+.vp-doc p,
+.vp-doc li {
+  font-size: 15px;
+  line-height: 1.8;
+}
+.vp-doc p {
+  margin: 24px 0;
 }
 
 .vp-doc td,
@@ -29,8 +108,20 @@
   cursor: default;
 }
 
+.vp-doc p a {
+  display: inline-block;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
 .vp-doc img {
   margin: 8px 0;
+}
+
+.vp-doc p > img,
+.vp-doc > div > img {
+  margin: 40px 0;
+  border-radius: 6px;
 }
 
 .vp-doc figure {
@@ -75,6 +166,11 @@
   }
 }
 
+.vp-code-group .tabs label {
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
 .vp-doc .footnotes-sep {
   margin: 44px 0 32px;
   border-top: 1px solid var(--vp-c-divider-light);
@@ -95,4 +191,89 @@
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+// --------------------------------
+// Community Projects
+
+.community-project-screenshot {
+  width: 100%;
+  max-width: 760px;
+  border-radius: 12px;
+  overflow: hidden;
+  img {
+    max-width: min(100%, 800px);
+    margin: 0 !important;
+  }
+  @media screen and (max-height: 768px) {
+    max-width: 680px;
+    max-height: 352px;
+  }
+  @media screen and (max-width: 960px) {
+    max-width: 680px;
+    max-height: 352px;
+  }
+}
+
+// --------------------------------
+// Twitter Tweet Embed
+
+.twitter-tweet {
+  position: relative;
+  display: block;
+  max-width: 640px;
+  padding: 64px 32px 16px !important;
+  margin: 52px 0 !important;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  @media screen and (max-width: 960px) {
+    padding: 64px 24px 16px !important;
+    padding-right: 0 !important;
+  }
+
+  & > p {
+    margin-bottom: 16px !important;
+    color: var(--vp-c-text-1) !important;
+    font-size: 16px;
+    @media screen and (max-width: 500px) {
+      font-size: 14px !important;
+    }
+  }
+
+  &::before {
+    --twitter-icon-mask-size: 26px;
+    --block-icon-url: url('@theme/icons/fa-twitter.svg');
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 32px;
+    width: var(--twitter-icon-mask-size);
+    height: var(--twitter-icon-mask-size);
+    transition: background-color 0.14s ease;
+    background-color: #1da1f2;
+    mask-image: var(--twitter-icon-img);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+  }
+}
+
+// --------------------------------
+// Footer / Above Footer
+
+.VPLink.link.edit-link-button {
+  gap: 4px;
+  font-size: 13px;
+  svg {
+    transform: scale(0.92);
+  }
+}
+
+.content-container footer.VPDocFooter .edit-info {
+  margin-top: 20px;
+}
+
+.edit-info {
+  padding-bottom: 24px !important;
 }

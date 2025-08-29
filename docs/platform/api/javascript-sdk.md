@@ -8,6 +8,11 @@ og_image: javascript-sdk.png
 
 The StackBlitz JavaScript <abbr title="Software Development Kit">SDK</abbr> lets you programmatically create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts. Once embedded, the projects can be controlled by using [the SDK’s VM interface][sdk_vm_docs].
 
+:::tip Interactive Tutorial
+In addition to this guide, you can also play with our _interactive_ StackBlitz SDK tutorial (build with [TutorialKit](https://tutorialkit.dev/)): [StackBlitz SDK Tutorial](https://stackblitz-sdk-tutorial.pages.dev/)
+:::
+
+
 ## Install the SDK
 
 The SDK is _3kB gzipped_ and can be installed from npm:
