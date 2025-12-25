@@ -30,6 +30,7 @@ This can happen automatically if your popups settings, [chrome://settings/conten
 
 ```
 https://[*.]webcontainer.io
+https://[*.]webcontainer-api.io
 ```
 
 <img class="mx-auto" alt="Chrome popups settings showing the *.webcontainer.io origins as exceptions" src="./assets/chrome-settings-popups.png" width="800" height="502.37" />
@@ -40,6 +41,7 @@ Lastly, if Chrome's [memory saver][CHROME_MEMORY_SAVER] is turned on, this step 
 
 ```
 https://webcontainer.io
+https://webcontainer-api.io
 https://stackblitz.com
 ```
 
@@ -70,6 +72,7 @@ To allow all StackBlitz projects to use Service Workers, go to your browser’s 
 ```
 https://[*.]stackblitz.io
 https://[*.]webcontainer.io
+https://[*.]webcontainer-api.io
 ```
 
 For instance, in Chrome, go to `chrome://settings/cookies` and add those exceptions in the “Sites that can always use cookies” section.
@@ -123,6 +126,7 @@ To add exceptions for StackBlitz, scroll down to the “Cookies and Site Data”
 ```
 https://stackblitz.io
 https://webcontainer.io
+https://webcontainer-api.io
 ```
 
 <img
@@ -142,6 +146,7 @@ This can happen automatically if your popups settings, [about:preferences#privac
 
 ```
 https://webcontainer.io
+https://webcontainer-api.io
 ```
 
 <img alt="Firefox popups settings showing the webcontainer.io site allowed as an exception" src="./assets/firefox-settings-popups.png" width="800" height="649" />
