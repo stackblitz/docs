@@ -1,5 +1,7 @@
 ---
 title: Quickstart (Existing Cluster)
+description: StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
+og_image: enterprise-installation-quickstart-on-existing-cluster.png
 ---
 
 # {{ $frontmatter.title }}
@@ -18,7 +20,7 @@ For installing StackBlitz in environments with restricted network access, see [A
 
 Minimum Cluster Requirements:
 
-- 8 vCPU,
+- 16 vCPU,
 - 32 GB Memory,
 - 200 GB Storage,
 - `kubectl` access to the cluster,
@@ -57,7 +59,7 @@ Then, install the Admin Console for StackBlitz by running:
 kubectl kots install stackblitz
 ```
 
-You will be prompted for a namespace in your cluster in which StackBlitz will be installed. By default, the namespace is `stackblitz`. Then Yyu will be prompted to set a password for the Admin Console:
+You will be prompted for a namespace in your cluster in which StackBlitz will be installed. By default, the namespace is `stackblitz`. Then you will be prompted to set a password for the Admin Console:
 
 ```sh
 Enter the namespace to deploy to: stackblitz
@@ -93,3 +95,7 @@ Drag and drop your license file onto the webpage to upload it. Once this step co
 ![EE Console](../assets/ee-console-config.png)
 
 See the [Config Options in the Administrator Guide](/enterprise/installation/administrator-guide#config-options) for more details on each configuration option. After filling out the configuration fields, click "Continue". Your configuration will be saved. The Admin Console will deploy your configuration and begin to pull and run the images for StackBlitz. After your instance is up and running, you will need to [Configure DNS Settings](/enterprise/configuring-dns) to point your DNS zones at the IP/CNAME of your ingress.
+
+::: tip Need more than one instance?
+With your StackBlitz Enterprise license, you can operate more than one instance at a time. This may be helpful if you want a separate cluster for staging, testing, etc.
+:::

@@ -1,5 +1,7 @@
 ---
 title: Content Updates with Web Publisher
+description: Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
+og_image: content-updates-with-web-publisher.png
 ---
 
 # {{ $frontmatter.title }}
@@ -16,12 +18,14 @@ This page covers using Web Publisher to update your blog posts, docs, or wiki pa
 
 To edit a page, you need to find its corresponding file on GitHub. You can do it in three ways: 
 - ["Edit in Web Publisher"](#edit-in-web-publisher-button) button,
-- ["Edit this page on GitHub"](#edit-this-page-on-github) link,
+- ["Edit this page on GitHub"](#edit-this-page-on-github-link) link,
 - [through a GitHub repository](#through-github).
 
 ### "Edit in Web Publisher" button
 
-<img lang="en" class="float-left" src="./assets/button-edit-in-web-publisher-medium.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/>
+<a href="https://pr.new/stackblitz/docs/edit/main/docs/codeflow/content-updates-with-web-publisher.md"> 
+<img lang="en" class="float-left" src="https://developer.stackblitz.com/img/edit_in_web_publisher.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/> 
+</a>
 
 If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕
 
@@ -63,7 +67,15 @@ On the **left side**, you'll find the information about which file you're editin
 
 On the **right side**, you'll find two buttons:
 - **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
-- **Your Profile**, which opens a new browser tab with your StackBlitz profile page.
+- **Your Profile picture**, which opens a dropdown list with some usefull links:
+   1. **"Your profile"** which opens a new browser tab with your StackBlitz profile page.
+   2. **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
+   3. **"Edit on Github"** which redirects to the file "edit" page on GitHub.
+   4. **"Documentation"** which redirects to [StackBlitz docs page](https://developer.stackblitz.com/).
+   5. **"See a bug? File an issue"** which redirects to [WebContainer core repository](https://github.com/stackblitz/webcontainer-core/issues/new/choose) where you can file an issue describing the bug.
+
+<img lang="en" src="./assets/wp-profile-dropdown.png" alt="Profile dropdown" style="width: 400px"/>
+
 
 ### Editor
 
@@ -74,12 +86,6 @@ Note that it is possible to specify in the link that Web Publisher will load wit
 <img lang="en" src="./assets/wp-editor-view.png" alt="Editor window" style="width: 600px"/>
 
 In the **top left corner**, you will see the name of the file you're editing.
-
-<img lang="en" src="./assets/wp-open-in-ide-popup.png" alt="Editor window" style="width: 200px"/>
-
-In the **top right corner**, you will see two icons:
-- the "..." icon which opens a popup with the **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
-- an icon of a two-pointed arrow that either expands the Editor view or switches back to split screen.
 
 ### Live Preview
 
@@ -115,7 +121,7 @@ Before you send the changes to the owner of the page, please double check the te
 **Ready to submit? Follow these steps:**
 
 1. In the top right corner, click on the green button that reads "Propose changes".
-2. In the dropdown window, click on "Commit proposed changes". Web Publisher will "push changes", which means that your edits are being sent to GitHub. In fact, Web Publisher first creates "a fork" (which means "a copy") of the GitHub repository, saves the changes and only them sends them to GitHub.
+2. In the dropdown window, click on "Commit proposed changes". Web Publisher will "push changes", which means that your edits are being sent to GitHub. In fact, Web Publisher first creates "a fork" (which means "a copy") of the GitHub repository, saves the changes, and only then sends them to GitHub.
 3. A new browser tab will open with a form to "Open a pull request" (which means "suggest changes to the owner of the page"). Fill it out, including the description of the changes you made and explanation of your reasoning and motivation behind it. Please keep the information that the pull request was made with Web Publisher (already pre-filled).
 
 Congratulations! You've submitted the edits 🥳

@@ -1,12 +1,14 @@
 ---
 title: Bug reproductions
+description: A well-described issue is immensely helpful when developing a software product, and a minimal reproduction is one of the most useful parts of the conversation.
+og_image: bug-reproductions.png
 ---
 
 # {{ $frontmatter.title }}
 
 ## Issue-reporting workflow
 
-> A well-described issue is immensely helpful when developing a software product, and a minimal reproduction is one of the most useful part of the conversation.
+> A well-described issue is immensely helpful when developing a software product, and a minimal reproduction is one of the most useful parts of the conversation.
 
 How can we encourage users to provide bug reproductions in a smart way?
 

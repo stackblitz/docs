@@ -1,6 +1,7 @@
 ---
 title: Keyboard shortcuts
 description: A “keyboard shortcut” or “keybinding” is combination of keys on your keyboard which allows you to perform  common actions such as saving a file, modifying the view, or copying a line of code. In the StackBlitz editor this set of shortcuts is predefined and, currently, non-customizable.
+og_image: keyboard-shortcuts.png
 ---
 
 # {{ $frontmatter.title }}

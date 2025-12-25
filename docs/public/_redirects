@@ -8,6 +8,9 @@
 /platform/api   /platform/api/javascript-sdk
 /platform/webcontainers   /platform/webcontainers/browser-support
 
+# Pages recently removed or renamed
+/platform/webcontainers/browser-config-brave   /platform/webcontainers/browser-config#brave-service-workers
+
 # Redirect old URL patterns
 /docs/enterprise   /enterprise/overview
 /docs/enterprise/adfs-sso/   /enterprise/adfs-sso

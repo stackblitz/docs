@@ -1,11 +1,13 @@
 ---
 layout: page
+title: StackBlitz Docs
+og_image: index.png
 ---
 
 <script setup lang="ts">
 import Home from '@theme/components/Home.vue';
 
-import { homeTopLinks, homeExternalLinks, footerSections } from './data';
+import { homeTopLinks, homeExternalLinks, footerSections } from './links';
 </script>
 
 <Home

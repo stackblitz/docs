@@ -1,5 +1,7 @@
 ---
 title: Quickstart on GCP (Non-GKE)
+description: StackBlitz Enterprise is a Kubernetes application. You can install the software on an existing cluster or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.
+og_image: enterprise-installation-quickstart-on-gcp.png
 ---
 
 # {{ $frontmatter.title }}
@@ -12,11 +14,11 @@ StackBlitz Enterprise is a Kubernetes application. You can install the software 
 
 ## Getting started on GCP (embedded)
 
-If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this on GCP is n1-standard-8 (8 vCPUs, 30 GB memory).
+If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this on GCP is n1-standard-16 (16 vCPUs, 60 GB memory).
 
 Getting started on GCP (no GKE, no existing cluster):
 
-- Launch an n1-standard-4 instance or larger on GCP with Ubuntu as the OS with 200gb disk space.
+- Launch a n1-standard-16 instance or larger on GCP with Ubuntu as the OS with 200 GB disk space.
 - Make sure ports the following TCP ports are allowed through the firewall:
   - 22
   - 80
@@ -26,6 +28,12 @@ Getting started on GCP (no GKE, no existing cluster):
   - 8080
   - 6443
 - Run the kots intaller command: `curl -sSL https://k8s.kurl.sh/stackblitz | sudo bash`.
+  - **Note:** The KURL installer may prompt some packages for manual installation. 
+  See: [Host Package Requirements](https://kurl.sh/docs/add-ons/kubernetes#host-package-requirements).
+
+:::tip Using load balancers?
+Ports 80 and 443 should be forwarded from the load balancer. The remaining ports are for inbound rules on the security group.
+:::
 
 :::warning
 Copy the generated password from the terminal output after installation. It's required for accessing the Admin Console and won't be shown again.
@@ -51,3 +59,7 @@ Once this step completes, you will be presented with EE site configuration scree
 ![EE Console](../assets/ee-console-config.png)
 
 After filling out the configuration fields, click "Continue". Your StackBlitz EE instance is now booted and ready for DNS configuration.
+
+::: tip Need more than one instance?
+With your StackBlitz Enterprise license, you can operate more than one instance at a time. This may be helpful if you want a separate cluster for staging, testing, etc.
+:::

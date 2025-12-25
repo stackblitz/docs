@@ -1,5 +1,7 @@
 ---
 title: Launching projects from GitHub
+description: When providing an example for your users to open, there are several things to consider.
+og_image: launching-projects-from-github.png
 ---
 
 # {{ $frontmatter.title }}
@@ -19,8 +21,8 @@ One of the ways to make your code example stand out in your docs or your reposit
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz.svg" /> | <a href="/img/open_in_stackblitz.svg" target="_blank">open_in_stackblitz.svg</a> |
-| <img alt="Open in StackBlitz" src="/img/open_in_stackblitz_small.svg" /> | <a href="/img/open_in_stackblitz_small.svg" target="_blank">open_in_stackblitz_small.svg</a> |
+| <img alt="Open in StackBlitz" src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_stackblitz.svg" target="_blank">open_in_stackblitz.svg</a> |
+| <img alt="Open in StackBlitz" src="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_stackblitz_small.svg" target="_blank">open_in_stackblitz_small.svg</a> |
 
 ::: tip
 You can either host on your servers or use our image URLs directly.
@@ -52,6 +54,12 @@ Projects loaded from GitHub follow this URL template: “stackblitz.com” + “
 
 ![Opening a GitHub project visual schema](./assets/Opening_a_Github_Project.png)
 
+::: tip
+These are equivalent.  
+https://stackblitz.com/github/USERNAME/REPOSITORY_NAME  
+https://stackblitz.com/github.com/USERNAME/REPOSITORY_NAME
+:::
+
 ### Open directly or fork?
 
 Depending on the _“action”_ specified in the import URL (see the section above), the importer will either open the repository or make a fresh copy.
@@ -67,7 +75,7 @@ In this case, StackBlitz imports the repository but does not give the _write_ ac
 To save users from seeing the page reload, we recommend always providing the link that will already load a fresh copy by including the `/fork` before the GitHub part of the URL:
 
 ```md
-[https://stackblitz.com/fork/github/astro-js/astro-theme-starter](https://stackblitz.com/github/astro-js/astro-theme-starter)
+[https://stackblitz.com/fork/github/astro-js/astro-theme-starter](https://stackblitz.com/fork/github/astro-js/astro-theme-starter)
 ```
 
 ### Organizing the project in your repository
@@ -107,28 +115,37 @@ https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world?ti
 
 ### Launching a script on project load
 
-Usually, in your project’s `package.json` file there is a script that you would instruct your users to run in order to, for instance, launch a development server. Suppose your `package.json` includes such `dev` script:
+StackBlitz will look in your project’s `package.json` file for a [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) to run on project load. By default, it looks for a script named `"dev"` first, then for a script named `"start"`.
+
+We recommend setting up your project’s `package.json` to use the `"dev"` or `"start"` script to launch a development server:
 
 ```json
 {
-	"scripts": {
-		"dev": "vite"
-	}
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  }
 }
 ```
 
-In order to run an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts) automatically when the editor opens, you can either:
+If you want to run a different script or command, you can use one of the following methods:
 
-- provide the `terminal` query parameter:
+- When linking to your project on StackBlitz, use the `startScript` query parameter:
   ```
-  ?terminal=dev
+  ?startScript=build
   ```
-- create the `.stackblitzrc` file with the `startCommand` option:
+
+- Or create a `.stackblitzrc` file with the `startCommand` option:
   ```json
   {
-    "startCommand": "npm run dev"
+    "startCommand": "npm run build"
   }
   ```
+
+If your project has multiple folders with their own `package.json` files, you can specify which folder should open by using the `configPath` query parameter:
+```
+?configPath=packages/docs
+```
 
 ## Tips & best practices
 
@@ -137,8 +154,6 @@ In order to run an [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts)
 Make sure you keep the `package-lock.json` file in your project to optimize the launching speed.
 
 If the `package-lock.json` file exists in the imported project, a package manager doesn't have to do the work needed to resolve dependencies, which takes significant amount of time during the installation process.
-
-Make sure you keep the `package-lock.json` file in your project to optimize the launching speed.
 
 ### Set up the main starter URL
 
@@ -159,6 +174,7 @@ Either `awesome-lib.new` or `awesome-lib.com/new` are both quite handy ways to h
 
 Here are some examples of how others are doing it:
 
+- [astro.new](https://astro.new/); for example: [astro.new/blog?on=stackblitz](https://astro.new/blog?on=stackblitz)
 - [sveltekit.new](https://sveltekit.new/)
 - [vitest.new](https://vitest.new/)
 - [vite.new](https://vite.new) + some variations: [vite.new/react](https://vite.new/react), [vite.new/vue](https://vite.new/vue), etc.

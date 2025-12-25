@@ -1,5 +1,7 @@
 ---
 title: SDK Options Reference
+description: Modify your StackBlitz project with SDK options.
+og_image: sdk-options-reference.png
 ---
 
 # {{ $frontmatter.title }}
@@ -87,6 +89,7 @@ Check this demo showcasing all available open options:
 | --- | --- | --- | --- |
 | `clickToLoad` | Boolean | Shows a UI dialog asking users to run the project. | `false` |
 | `devToolsHeight` | Number | Sets the [Console][ui_docs] height (from `0` to `100`). [EngineBlock][available_env_docs] only. | - |
+| `forceEmbedLayout` | Boolean | Whether to use the embed layout or the full editor layout. *This option is deprecated and will be removed in a future release.* | `false` |
 | `hideDevTools` | Boolean | Hides the [Console][ui_docs] completely. [EngineBlock][available_env_docs] only. | `false` |
 | `hideExplorer` | Boolean | Hides the [ActivityBar][ui_docs]. | `false` |
 | `newWindow` | Boolean | Opens the project in a new tab. | `true` |
@@ -112,6 +115,7 @@ Check this demo showcasing all available embed options:
 | --- | --- | --- | --- |
 | `clickToLoad` | Boolean | Shows a UI dialog asking users to run the project. | `false` |
 | `devToolsHeight` | Number | Sets [Console][ui_docs] height (from `0` to `100`). [EngineBlock][available_env_docs] only. | - |
+| `forceEmbedLayout` | Boolean | Whether to use the embed layout or the full editor layout. *This option is deprecated and will be removed in a future release.* | `true` |
 | `height` | Number | Sets the height of the embed iframe. | `300` |
 | `hideDevTools` | Boolean | Hides the [Console][ui_docs] completely. [EngineBlock][available_env_docs] only. | `false` |
 | `hideExplorer` | Boolean | Hides the [ActivityBar][ui_docs]. | `false` |

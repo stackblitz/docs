@@ -1,5 +1,7 @@
 ---
 title: Managing dependencies with the SDK
+description: When creating new projects with the `sdk.openProject` and `sdk.embedProject` methods, you can specify which npm dependencies should be installed on startup.
+og_image: sdk-managing-dependencies.png
 ---
 
 # {{ $frontmatter.title }}
@@ -14,7 +16,7 @@ Projects created with the `template: 'node'` option will use the WebContainers e
 
 ## With WebContainers
 
-For WebContainers project, our [Turbo package manager](/platform/webcontainers/turbo-package-manager) will install `dependencies` and `devDependencies` from the project’s `package.json` file, much like `npm`, `pnpm` or `yarn` would.
+For WebContainers project, npm will install `dependencies` and `devDependencies` from the project’s `package.json` file.
 
 For those projects, you can provide your dependencies directly in the `package.json` file, and ignore the `project.dependencies` option. Here’s an example:
 

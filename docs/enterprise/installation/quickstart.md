@@ -1,5 +1,7 @@
 ---
 title: Quickstart on Bare Metal
+description: StackBlitz Enterprise is a Kubernetes application. You can install the software on an existing cluster or use our installer that has an embedded, production-ready Kubernetes distribution packaged with it.
+og_image: enterprise-installation-quickstart-on-bare-metal.png
 ---
 
 # {{ $frontmatter.title }}
@@ -12,7 +14,7 @@ StackBlitz Enterprise is a Kubernetes application. You can install the software 
 
 ## Getting started on bare metal (embedded)
 
-If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this is 8 vCPUs, 32 GB memory, and 200 GB storage running Ubuntu LTS.
+If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this is 16 vCPUs, 32 GB memory, and 200 GB storage running Ubuntu LTS.
 
 Getting started on bare metal (no existing Kubernetes cluster):
 
@@ -25,6 +27,12 @@ Getting started on bare metal (no existing Kubernetes cluster):
   - 8080
   - 6443
 - Run the kots intaller command: `curl -sSL https://k8s.kurl.sh/stackblitz | sudo bash`.
+  - **Note:** The KURL installer may prompt some packages for manual installation. 
+  See: [Host Package Requirements](https://kurl.sh/docs/add-ons/kubernetes#host-package-requirements).
+
+:::tip Using load balancers?
+Ports 80 and 443 should be forwarded from the load balancer. The remaining ports are for inbound rules on the security group.
+:::
 
 :::warning
 Copy the generated password from the terminal output after installation. It's required for accessing the Admin Console and won't be shown again.
@@ -50,3 +58,7 @@ Once this step completes, you will be presented with EE site configuration scree
 ![EE Console](../assets/ee-console-config.png)
 
 After filling out the configuration fields, click "Continue". Your StackBlitz EE instance is now booted and ready for **[DNS configuration](/enterprise/configuring-dns)**.
+
+::: tip Need more than one instance?
+With your StackBlitz Enterprise license, you can operate more than one instance at a time. This may be helpful if you want a separate cluster for staging, testing, etc.
+:::

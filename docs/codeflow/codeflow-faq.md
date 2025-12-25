@@ -1,5 +1,7 @@
 ---
 title: Codeflow FAQ
+description: 'This page addresses the frequently asked questions concerning: current features, security, planned features, pricing and access.'
+og_image: codeflow-faq.png
 ---
 
 # {{ $frontmatter.title }}
@@ -8,7 +10,7 @@ This page addresses the frequently asked questions concerning: current features,
 
 [[toc]]
 
-## General
+## General FAQs
 
 ### What is Codeflow?
 
@@ -41,6 +43,10 @@ This is perhaps the most frequently-asked question with regards to StackBlitz fe
 
 <!--@include: ./parts/persistance.md-->
 
+### Can I change the Node version?
+
+The Node version is locked so currently, there is no ability to change the Node version.
+
 ### Which repos can/not be opened in Codeflow IDE?
 
 Codeflow IDE should be able to open any repository. When it comes to *running* it, your toolchain needs to be compatible with WebContainers.
@@ -48,6 +54,10 @@ Codeflow IDE should be able to open any repository. When it comes to *running* i
 ### Can I run private repositories?
 
 Yes. Private repositories are available for free during beta through 2022. Starting Q1 '23 private repositories will require a subscription. Contact us if you’re interested in learning more about pricing.
+
+### Can I run any Git repository?
+
+At this moment we only support GitHub.com repositories.
 
 ### Which files can be opened in Web Publisher?
 
@@ -85,6 +95,6 @@ If your company is interested in using Codeflow, reach out to our [Enterprise Te
 
 Yes, only during the beta. Starting Q1 2023, you'll be able to open public repos without being logged in.
 
-### To open a repo in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
+### To open a repository in Codeflow IDE, do I need to be signed in both on StackBlitz and GitHub? Or only one of them?
 
 You need to sign in to [StackBlitz](https://stackblitz.com) *using* GitHub.

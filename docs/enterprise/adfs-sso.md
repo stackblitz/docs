@@ -1,5 +1,7 @@
 ---
 title: Setting up SSO with ADFS
+description: StackBlitz is excited to offer SAML-based Single Sign-on (SSO) to organizations using Active Directory Federation Service (ADFS).
+og_image: enterprise-setting-up-sso-with-adfs.png
 ---
 
 # {{ $frontmatter.title }}
@@ -15,6 +17,15 @@ StackBlitz is excited to offer SAML-based Single Sign-on (SSO) to organizations 
 :::
 
 ## StackBlitz Admin Panel Auth Settings Page
+
+:::warning IMPORTANT: 
+Each user account (including the Admin User) must have a unique email address. Use a service account email address (like IT@yourcompany.com) to ensure that the admin account doesn't cause email collisions for SSO users. If your admin email address matches an SSO user's email address, said SSO user will receive an "invalid login or password" error when signing in.  
+\
+&nbsp;
+Should this happen, we recommend the following steps:
+  - Log in as admin
+  - Navigate to `https://editor.stackblitz.[COMPANY.COM]/users/edit` to change your email address to a different one. It will show the same screen as the changing email/password when first logging in as an admin, but you only need to change your email.
+:::
 
 Begin by logging into your StackBlitz admin account and click on "Setup Authentication". This will take you to the "Auth Settings" page:
 

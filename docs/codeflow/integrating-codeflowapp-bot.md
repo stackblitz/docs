@@ -1,5 +1,7 @@
 ---
 title: Integrating CodeflowApp Bot
+description: This page covers integrating CodeflowApp Bot into your GitHub repositories.
+og_image: integrating-codeflowapp-bot.png
 ---
 
 # {{ $frontmatter.title }}
@@ -19,7 +21,7 @@ Once integrated, it will comment on every PR with a link to instantly run and re
 
 Whenever an issue is opened, CodeflowApp checks if a stackblitz.com bug reproduction URL is present in the comment text.
 
-If reproduction URL is present, CodeflowApp will comment with a "Fix this issue" button that allows you to start a new pull request with the bug reproduction mounted in a sibling folder next to your repo directory for live testing:
+If reproduction URL is present, CodeflowApp will comment with a "Fix this issue" button that allows you to start a new pull request with the bug reproduction mounted in a sibling folder next to your repository directory for live testing:
 
 <img lang="en" src="./assets/codeflowapp-issue.jpg" alt="CodeflowApp bot in action" style="max-width: 550px"/>
 

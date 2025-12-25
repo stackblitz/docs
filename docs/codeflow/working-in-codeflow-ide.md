@@ -1,5 +1,7 @@
 ---
 title: Working in Codeflow IDE
+description: Are you ready to make Codeflow your workflow? This page covers what to expect when using Codeflow IDE.
+og_image: working-in-codeflow-ide.png
 ---
 
 # {{ $frontmatter.title }}
@@ -24,11 +26,31 @@ At StackBlitz, we have been using Codeflow IDE in our daily internal development
 
 To open a GitHub repository in Codeflow IDE, swap "github.com" with "pr.new" in the repository URL. 
 
-:::details Intrigued by "pr.new"?  👀
+:::info Intrigued by "pr.new"?  👀
 If you're curious about this short URL, learn about the [full potential of "pr.new"](./using-pr-new).
 :::
 
-If you are not logged into StackBlitz, while this product is in beta, you will be prompted to login or create a new account.
+If you are not logged into StackBlitz, while this product is in beta, you will be prompted to log in or create a new account.
+
+
+## Migrating your local VSCode settings to Codeflow IDE
+
+To migrate the settings from your local VSCode to Codeflow IDE, follow these steps:
+
+1. In VSCode open the Settings tab (`cmd` + `,` on MacOS or `alt` + `,` on Windows and Linux).
+2. Click on the "Open Settings (JSON)" button, located on the top right side of the view:
+
+![Settings view](./assets/settings-view-json-highlightened.png)
+
+3. This tab contains your VSCode settings. Copy its contents:
+
+![Settings view in JSON](./assets/settings-json.png)
+
+4. Repeat these actions in [Codeflow](https://pr.new): open the settings tab (you can use `cmd` + `,` key binding on MacOS or `alt` + `,` on Windows or Linux), open the JSON view, and paste the copied settings - if you want, you can replace the default settings with the ones you copied from your local environment.
+
+The gif below demonstrates these steps:
+
+![Migrating settings](./assets/vsc-to-sb-settings.webp)
 
 ## Saving changes
 
@@ -64,10 +86,10 @@ Follow these steps:
 
 ## Reviewing a PR with Codeflow IDE 
 
-Let's look at [this suspicious PR](https://pr.new/stackblitz/docs/pull/40).
+Let's look at [this suspicious PR](https://github.com/stackblitz/docs/pull/40).
 
 Follow these steps:
-1. Open the link in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
+1. [Open the link](https://github.com/stackblitz/docs/pull/40) in a new tab. In the GitHub URL of the repository, replace "github.com" with "pr.new".
 2. Codeflow IDE will spin up in the "PR Review mode". Open the Preview by clicking on the popup notification in the bottom right corner.
 3. Compare suggested changes with the original file. You can also see the edits rendered in the Preview panel if you navigate to the edited page - in this case, the "What is StackBlitz" page.
 4. You can add comments by clicking on the "+" icons, read other comments, or start a review.

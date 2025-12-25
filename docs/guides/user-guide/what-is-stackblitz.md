@@ -1,11 +1,14 @@
 ---
 title: What is StackBlitz? Hello!
 description: StackBlitz is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by WebContainers, the first WebAssembly-based operating system which boots Node.js environment in milliseconds, securely within your browser tab.
+title: What is StackBlitz?
+description: StackBlitz is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by WebContainers, the first WebAssembly-based operating system which boots the Node.js environment in milliseconds, securely within your browser tab.
+og_image: what-is-stackblitz.png
 ---
 
 # {{ $frontmatter.title }}
 
-StackBlitz is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+StackBlitz is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots the Node.js environment in milliseconds**, securely within your browser tab.
 
 Now you can use the web to build the web.
 
@@ -18,7 +21,7 @@ There is no greater buzzkill than having to fiddle with the deployment and build
 ### Key features:
 
 - **unmatched security**: all development is happening in your browser tab, including running Node.js and git
-- **surprisingly fast**: the entire dev environment spins up in miliseconds - even reinstalling `node_modules` is as simple as refreshing the page
+- **surprisingly fast**: the entire dev environment spins up in milliseconds - even reinstalling `node_modules` is as simple as refreshing the page
 - **works online and offline**: continue your work even when you lose the Internet connection midway
 - **your apps are always online**: your apps never go to sleep and have no bandwidth limits - share the URL with as many friends, colleagues, and communities as you’d like!
 - **seamless debugging** with Chrome Dev Tools for both front- and backend apps!
@@ -59,11 +62,15 @@ You like the idea of running Node.js in the browser and feel inspired to build y
 
 Speed up your entire development process with **realtime hot-reloading in the fastest dev environment ever made**. Collaborate remotely on different devices, send and receive instant feedback, and **get to market faster**.
 
+### Coding interviews
+
+Asking candidates to set up new local environments slows down the hiring process. With StackBlitz, you can create starter projects to assess candidates' skills without needing to set up a local environment.
+
 ## What about other online IDEs?
 
 Unlike StackBlitz, legacy online IDEs run on remote servers and stream the results back to your browser. This approach yields **few security benefits** and **provides a worse experience** than your local machine in nearly every way.
 
-**StackBlitz solves these problems by doing all compute inside your browser**. This leverages decades of speed and security innovations and also **unlocks key development and debugging benefits**.
+**StackBlitz solves these problems by doing all computing inside your browser**. This leverages decades of speed and security innovations and also **unlocks key development and debugging benefits**.
 
 ## Get involved
 
@@ -72,4 +79,4 @@ We love our community! Please do stay in touch and:
 - Join our supportive community on [the Discord server](https://discord.gg/22zTzrwQrU)!
 - Read our [blog](https://blog.stackblitz.com/) and see what we have been up to in our [monthly update posts](https://blog.stackblitz.com/categories/monthly-updates/)!
 - Share your StackBlitz projects on [Twitter](https://twitter.com/stackblitz)!
-- Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!
+- Reach out to our DevRel team via [email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!

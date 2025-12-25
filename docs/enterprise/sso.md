@@ -1,5 +1,7 @@
 ---
 title: Setting up SSO
+description: StackBlitz is excited to offer SAML-based Single Sign-on (SSO) to organizations using StackBlitz Enterprise Edition (EE).
+og_image: enterprise-setting-up-sso.png
 ---
 
 # {{ $frontmatter.title }}
@@ -15,7 +17,18 @@ StackBlitz SAML integration relies on a user-level token. To ensure consistent d
 - StackBlitz offers just-in-time provisioning. This means that if a user logs into StackBlitz for the first time using SSO, an account will automatically be created.
 :::
 
+
+
 ### Configure your IdP
+
+:::warning IMPORTANT: 
+Each user account (including the Admin User) must have a unique email address. Use a service account email address (like IT@yourcompany.com) to ensure that the admin account doesn't cause email collisions for SSO users. If your admin email address matches an SSO user's email address, said SSO user will receive an "invalid login or password" error when signing in.  
+\
+&nbsp;
+Should this happen, we recommend the following steps:
+  - Log in as admin
+  - Navigate to `https://editor.stackblitz.[COMPANY.COM]/users/edit` to change your email address to a different one. It will show the same screen as the changing email/password when first logging in as an admin, but you only need to change your email.
+:::
 
 Begin by logging into your StackBlitz admin account and then click on "Setup Authentication". This will take you to the "Auth Settings" page:
 
@@ -42,14 +55,10 @@ Admins can choose to map attributes that will send user information to StackBlit
 | Display name | `name`         | The display name of the user (first and last or other) |
 | Email        | `email`        | The email of the user                                  |
 
-:::warning
-Please note: these attributes are case-sensitive and and must be entered exactly as you see here.
+:::warning Please note: These attributes are case-sensitive and must be entered exactly as you see here.
 :::
 
-### Best Practices
-
-- StackBlitz offers "Just-in-time" provisioning. If a user logs into StackBlitz for the first time using SSO, an account will automatically be created as long as that email address does not already exist in StackBlitz.
-- Please ensure that the email addresses in the IdP are what your users will be using to log into StackBlitz.
+Please ensure that the email addresses in the IdP are what your users will be using to log into StackBlitz.
 
 ### Troubleshooting
 

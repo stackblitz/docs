@@ -1,10 +1,17 @@
 ---
 title: JavaScript SDK
+description: The StackBlitz JavaScript SDK lets you programmatically create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts.
+og_image: javascript-sdk.png
 ---
 
 # {{ $frontmatter.title }}
 
 The StackBlitz JavaScript <abbr title="Software Development Kit">SDK</abbr> lets you programmatically create StackBlitz projects to be opened in a new window or embedded in your docs, example pages, or blog posts. Once embedded, the projects can be controlled by using [the SDK’s VM interface][sdk_vm_docs].
+
+:::tip Interactive Tutorial
+In addition to this guide, you can also play with our _interactive_ StackBlitz SDK tutorial (build with [TutorialKit](https://tutorialkit.dev/)): [StackBlitz SDK Tutorial](https://stackblitz-sdk-tutorial.pages.dev/)
+:::
+
 
 ## Install the SDK
 
@@ -220,7 +227,7 @@ sdk.embedProject(
     description: 'A basic Node.js project',
     template: 'node',
     files: {
-      'index.js': `console.log('Hello World!)';`,
+      'index.js': `console.log('Hello World!');`,
       'package.json': `{
       "name": "my-project",
       "scripts": { "hello": "node index.js", "start": "serve node_modules" },

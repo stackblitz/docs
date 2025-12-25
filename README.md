@@ -5,9 +5,13 @@ Welcome to the home of the [StackBlitz documentation site](https://developer.sta
 Our docs site was built with [VitePress](https://vitepress.vuejs.org/) 💙
 
 ## What is StackBlitz?
-StackBlitz is an **instant fullstack web IDE for the JavaScript ecosystem**. It's powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+StackBlitz is an **instant fullstack web IDE for the JavaScript ecosystem**. It is powered by [WebContainers](https://blog.stackblitz.com/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
 
 Now you can use the web to build the web.
+
+In fact, why not edit this docs in Codeflow IDE?
+
+<a href="https://stackblitz.com/~/github.com/stackblitz/docs"><img style="display:inline" src="https://developer.stackblitz.com/img/open_in_codeflow.svg" alt="Open in Codeflow"></a>
 
 ---
 
@@ -26,13 +30,13 @@ There are numerous ways to contribute to docs:
 - **Create demos**
   - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read our [contributing guide](CONTRIBUTING.md) and reach out to us on [GitHub discussions](https://github.com/stackblitz/docs/discussions).
 - **Fix an issue**
-  - You see an issue you'd like to worn on? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
+  - You see an issue you'd like to work on? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
 - **Reviews**
   - Please feel free to check existing PRs and issues. Share your loving feedback, help the other contributor approach the task in a better way, spot lurking bugs, errors, and mistakes. You can use pr.new to that end - in the URL of the issue or PR, swap "github.com" with "pr.new" to spin up the environment and the preview.
 
 Thank you for making our docs better!
 
-### What makes good issue
+### What makes a good issue
 
 When creating an issue, please include:
 - a descriptive title,
@@ -55,7 +59,6 @@ If what you want to say doesn't really fall into actionable "problem" or "improv
 - This navigation item doesn't fit where it is - could we move it somewhere else?
 - How could we make the docs site more (adjective)?
 
-
 ---
 
 ## Development
@@ -69,7 +72,7 @@ There are three ways to interact with this repository:
 
 Use Web Publisher for small content updates for a pleasant editing experience:
 
-1. Open the page on our [docs site](developer.stackblitz.com), scroll down, and click "edit this page".
+1. Open any page on our docs site ([Like this one](https://developer.stackblitz.com/guides/user-guide/what-is-stackblitz)), scroll down, and click "edit this page".
 2. Update the document in the editor on the left and see the rendered change in the preview window on the right.
 3. Once you're done, in the top right corner click on the green button that says "Propose changes".
 4. You will be redirected to a GitHub PR template page prepared for you to submit a PR.
@@ -80,7 +83,7 @@ Use StackBlitz Codeflow for bigger content updates. Codeflow will spin up the en
 
 To access it, [click this button](https://stackblitz.com/~/github.com/stackblitz/docs).
 
-Alternatively, add “pr.new” to the beginning of this GitHub repo URL.
+Alternatively, add “pr.new” to the beginning of this GitHub repository URL.
 
 ### Developing locally
 You can also explore and develop this site locally.
@@ -104,7 +107,7 @@ For production, the docs expect the following environment variables to be define
 - `VITE_ALGOLIA_KEY`: Algolia `apiKey`.
 - `VITE_GTM_ID`: Google Tag Manager id.
 
-They can be defined in CI server configuration, or in a `.env` file:
+They can be defined in CI configuration, or in a `.env` file:
 
 ```sh
 # .env
@@ -121,5 +124,5 @@ VITE_GTM_ID='******'
 - [Join our Discord](https://discord.gg/EQ7uJQxC)
 - Read our [blog](https://blog.stackblitz.com/) and see what we have been up to in our [monthly update posts](https://blog.stackblitz.com/categories/monthly-updates/)!
 - Share your StackBlitz projects on [Twitter](https://twitter.com/stackblitz)!
-- Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!
+- Reach out to our DevRel team via [email](mailto:devrel@stackblitz.com) with your StackBlitz ideas, dreams, and wishes!
 

@@ -1,12 +1,14 @@
 ---
 title: Using pr.new
+description: This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
+og_image: using-pr-new.png
 ---
 
 # {{ $frontmatter.title }}
 
-Open Source contributions have never been easier 🥰 
-
 This page covers using pr.new to open, view, and contribute to any project through our Codeflow IDE or Web Publisher.
+
+Built to make open source contributions as easy as possible. 🥰
 
 ## What is pr.new?
 
@@ -14,9 +16,7 @@ This page covers using pr.new to open, view, and contribute to any project throu
 
 ## How does pr.new work?
 
-This short URL enables magical experiences by choosing just the right tools for the job.
-
-Below you will learn what to expect in different scenarios.
+Behind the scenes, this short URL will choose different tools in different scenarios:
 
 <!-- TODO: graph -->
 
@@ -50,8 +50,8 @@ To help your users quickly spin up the entire environment with your project, you
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in Codeflow" src="./assets/button-open-in-codeflow-medium.svg" /> | <a href="./assets/button-open-in-codeflow-medium.svg" target="_blank">button-open-in-codeflow-medium.svg</a> |
-| <img alt="Open in Codeflow" src="./assets/button-open-in-codeflow-small.svg" /> | <a href="./assets/button-open-in-codeflow-small.svg" target="_blank">button-open-in-codeflow-small.svg</a> |
+| <img alt="Open in Codeflow" src="https://developer.stackblitz.com/img/open_in_codeflow.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_codeflow.svg" target="_blank">open_in_codeflow.svg</a> |
+| <img alt="Open in Codeflow" src="https://developer.stackblitz.com/img/open_in_codeflow_small.svg" /> | <a href="https://developer.stackblitz.com/img/open_in_codeflow_small.svg" target="_blank">open_in_codeflow_small.svg</a> |
 
 ::: tip
 You can either host the images on your servers or directly use our image URLs.
@@ -60,7 +60,7 @@ You can either host the images on your servers or directly use our image URLs.
 In order to display the button in a **Markdown file**, use the following code - remember to update the last URL with the project repository path:
 
 ```md
-[![Open in Codeflow](https://developer.stackblitz.com/codeflow/assets/button-open-in-codeflow-medium.svg)](https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___)
+[![Open in Codeflow](https://developer.stackblitz.com/img/open_in_codeflow.svg)](https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___)
 ```
 
 Or, in HTML:
@@ -69,7 +69,7 @@ Or, in HTML:
 <a href="https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___">
   <img
     alt="Open in Codeflow"
-    src="https://developer.stackblitz.com/codeflow/assets/button-open-in-codeflow-medium.svg"
+    src="https://developer.stackblitz.com/img/open_in_codeflow.svg"
   />
 </a>
 ```

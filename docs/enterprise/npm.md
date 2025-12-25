@@ -1,5 +1,7 @@
 ---
-title: Connect npm registry
+title: Connect npm Registry
+description: StackBlitz is excited to offer custom npm registry support to organizations using StackBlitz Enterprise Edition (EE).
+og_image: enterprise-connect-npm-registry.png
 ---
 
 # {{ $frontmatter.title }}

@@ -1,5 +1,7 @@
 ---
 title: POST API
+description: Create new projects by POSTing the desired project data from a form. This method is useful when you don't or can't use our JavaScript SDK.
+og_image: post-api.png
 ---
 
 # Creating a project with a POST request
