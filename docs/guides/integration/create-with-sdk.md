@@ -28,7 +28,7 @@ function openProjectDemo() {
 
 # {{ $frontmatter.title }}
 
-Sometimes, instead of keeping a set of example project in a GitHub repository, it is more convenient to create them dynamically on the fly. This is often the case when you maintain a documentation with code snippets that you want your users to open in a live environment.
+Sometimes, instead of keeping a set of example projects in a GitHub repository, it is more convenient to create them dynamically on the fly. This is often the case when you maintain a documentation with code snippets that you want your users to open in a live environment.
 
 In order to create a project on-demand, use our [SDK](https://www.npmjs.com/package/@stackblitz/sdk). It is a small package (just 2kb gzipped) intended to help in communication between your code and StackBlitz.
 
@@ -94,7 +94,7 @@ Let’s take a look at some of the most crucial parts of the payload first.
 ### Files
 
 `files` is a flat JavaScript object where each key represents a path, and each value is the file's contents.
-For example: in order to create a project with a `readme.md` file and `src` folder that contains `index.js` file inside, your `files` would look something like this:
+For example: in order to create a project with a `readme.md` file and `src` folder that contains an `index.js` file inside, your `files` would look something like this:
 
 ```js
 {
@@ -151,9 +151,9 @@ This is how the title and description look inside a StackBlitz project:
 
 ## Options: Customizing your project
 
-To further customize your project, you can provide a second argument to the `StackBlitzSDK.openProject` method. The argument is an object that allows to provide optional adjustments:
+To further customize your project, you can provide a second argument to the `StackBlitzSDK.openProject` method. The argument is an object that allows you to provide optional adjustments:
 
-- **`openFile`** – StackBlitz displays a file in the editor on page load - depending on a project, that would usually be a readme or the index file. You can specify the featured file:
+- **`openFile`** – StackBlitz displays a file in the editor on page load - depending on the project, that would usually be a readme or the index file. You can specify the featured file:
     ```js
     {
       openFile: 'src/app/index.tsx'

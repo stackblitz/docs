@@ -1,19 +1,26 @@
 import dotenv from 'dotenv';
 /* @ts-expect-error */
 import mdFootnote from 'markdown-it-footnote';
-import { defineConfig, type HeadConfig } from 'vitepress';
+import { defineConfigWithTheme, type DefaultTheme, type HeadConfig } from 'vitepress';
 import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
 
-const BASE = '/';
-const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE}`;
+const BASE_PATH = '/';
+const BASE_WITH_ORIGIN = `https://developer.stackblitz.com${BASE_PATH}`;
 
-export default defineConfig({
+interface ThemeConfig extends DefaultTheme.Config {
+  chatlio: {
+    id: string | undefined;
+    allowedRoutes: (RegExp | string)[];
+  };
+}
+
+export default defineConfigWithTheme<ThemeConfig>({
   srcDir: './docs',
-  outDir: `./build${BASE}`,
+  outDir: `./build${BASE_PATH}`,
   assetsDir: 'assets',
-  base: BASE,
+  base: BASE_PATH,
 
   // Generate files as `/path/to/page.html` and URLs as `/path/to/page`
   cleanUrls: true,
@@ -27,7 +34,7 @@ export default defineConfig({
   description:
     'Discover how to use StackBlitz, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}img/theme/favicon.png` }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${BASE_PATH}img/theme/favicon.png` }],
     ...getAnalyticsTags(process.env),
   ],
 
@@ -95,6 +102,10 @@ export default defineConfig({
       '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),
       '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
     },
+    chatlio: {
+      allowedRoutes: [`^${BASE_PATH}teams/.*`, `^${BASE_PATH}enterprise/.*`],
+      id: process.env.VITE_CHATLIO_ID,
+    },
   },
 
   postRender(context) {
@@ -106,26 +117,45 @@ export default defineConfig({
       md.use(mdFootnote);
     },
   },
+
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => {
+          return ['chatlio-widget'].includes(tag.toLowerCase());
+        },
+      },
+    },
+  },
 });
 
-function getAnalyticsTags(env: NodeJS.ProcessEnv): HeadConfig[] {
-  if (!env.VITE_GTM_ID) {
-    return [];
+function getAnalyticsTags({ VITE_GTM_ID = '' }: NodeJS.ProcessEnv): HeadConfig[] {
+  const idPattern = /^GTM-[A-Z\d]+$/;
+  const tags: HeadConfig[] = [];
+
+  if (VITE_GTM_ID) {
+    if (!idPattern.test(VITE_GTM_ID)) {
+      throw new Error(`Invalid VITE_GTM_ID value: '${VITE_GTM_ID}'`);
+    }
+    const source = `
+      (function(w, d, s, l, i){
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        let f = d.getElementsByTagName(s)[0];
+        let j = d.createElement(s);
+        let dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.before(j);
+      })(window, document, 'script', 'dataLayer', '${VITE_GTM_ID}');
+    `;
+    tags.push(['script', {}, source]);
   }
-  return [
-    [
-      'script',
-      { src: `https://www.googletagmanager.com/gtag/js?id=${env.VITE_GTM_ID}`, async: '' },
-    ],
-    [
-      'script',
-      {},
-      `function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag('js',new Date),gtag('config','${env.VITE_GTM_ID}',{anonymize_ip:true})`,
-    ],
-  ];
+
+  return tags;
 }
 
-function getSearchConfig(env: NodeJS.ProcessEnv) {
+function getSearchConfig(env: NodeJS.ProcessEnv): ThemeConfig['search'] {
   if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
     return {
       provider: 'algolia',

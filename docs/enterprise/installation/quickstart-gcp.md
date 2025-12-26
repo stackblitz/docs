@@ -14,11 +14,11 @@ StackBlitz Enterprise is a Kubernetes application. You can install the software 
 
 ## Getting started on GCP (embedded)
 
-If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this on GCP is n1-standard-8 (8 vCPUs, 30 GB memory).
+If you don’t have a cluster, then our install scripts can provide one. The minimum requirements for this on GCP is n1-standard-16 (16 vCPUs, 60 GB memory).
 
 Getting started on GCP (no GKE, no existing cluster):
 
-- Launch an n1-standard-4 instance or larger on GCP with Ubuntu as the OS with 200gb disk space.
+- Launch a n1-standard-16 instance or larger on GCP with Ubuntu as the OS with 200 GB disk space.
 - Make sure ports the following TCP ports are allowed through the firewall:
   - 22
   - 80
@@ -28,6 +28,8 @@ Getting started on GCP (no GKE, no existing cluster):
   - 8080
   - 6443
 - Run the kots intaller command: `curl -sSL https://k8s.kurl.sh/stackblitz | sudo bash`.
+  - **Note:** The KURL installer may prompt some packages for manual installation. 
+  See: [Host Package Requirements](https://kurl.sh/docs/add-ons/kubernetes#host-package-requirements).
 
 :::tip Using load balancers?
 Ports 80 and 443 should be forwarded from the load balancer. The remaining ports are for inbound rules on the security group.
