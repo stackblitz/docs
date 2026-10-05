@@ -81,7 +81,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   themeConfig: {
     siteTitle: 'StackBlitz Docs',
     logo: '/img/theme/docs-logo.svg',
-    search: getSearchConfig(process.env),
+    search: await getSearchConfig(process.env),
     editLink: {
       pattern: 'https://pr.new/stackblitz/docs/edit/main/docs/:path',
       text: 'Edit this page',
@@ -155,15 +155,50 @@ function getAnalyticsTags({ VITE_GTM_ID = '' }: NodeJS.ProcessEnv): HeadConfig[]
   return tags;
 }
 
-function getSearchConfig(env: NodeJS.ProcessEnv): ThemeConfig['search'] {
-  if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
-    return {
-      provider: 'algolia',
-      options: {
-        indexName: 'stackblitz',
-        appId: env.VITE_ALGOLIA_ID,
-        apiKey: env.VITE_ALGOLIA_KEY,
-      },
-    };
+async function getSearchConfig(env: NodeJS.ProcessEnv): Promise<ThemeConfig['search']> {
+  // Vite inlines every VITE_* variable into the client bundle, even unused ones.
+  if (env.VITE_ALGOLIA_KEY) {
+    throw new Error(
+      'VITE_ALGOLIA_KEY must not be set: it is shipped in the bundle. Use VITE_ALGOLIA_SEARCH_KEY.',
+    );
+  }
+
+  const { VITE_ALGOLIA_ID: appId, VITE_ALGOLIA_SEARCH_KEY: apiKey } = env;
+  if (!appId || !apiKey) {
+    return;
+  }
+
+  await assertSearchOnlyKey(appId, apiKey);
+
+  return {
+    provider: 'algolia',
+    options: {
+      indexName: env.VITE_ALGOLIA_INDEX || 'stackblitz',
+      appId,
+      apiKey,
+    },
+  };
+}
+
+/**
+ * The key is shipped to every visitor, so it must only grant the `search` ACL.
+ * Algolia lets any key read its own permissions, so this request is read-only.
+ */
+async function assertSearchOnlyKey(appId: string, apiKey: string) {
+  const res = await fetch(`https://${appId}-dsn.algolia.net/1/keys/${apiKey}`, {
+    headers: {
+      'X-Algolia-Application-Id': appId,
+      'X-Algolia-API-Key': apiKey,
+    },
+  });
+  if (!res.ok) {
+    throw new Error(`Could not verify VITE_ALGOLIA_SEARCH_KEY permissions (HTTP ${res.status}).`);
+  }
+
+  const { acl } = (await res.json()) as { acl?: unknown };
+  if (!Array.isArray(acl) || acl.length !== 1 || acl[0] !== 'search') {
+    throw new Error(
+      `VITE_ALGOLIA_SEARCH_KEY must have only the "search" ACL, got ${JSON.stringify(acl)}.`,
+    );
   }
 }
