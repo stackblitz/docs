@@ -156,6 +156,13 @@ function getAnalyticsTags({ VITE_GTM_ID = '' }: NodeJS.ProcessEnv): HeadConfig[]
 }
 
 async function getSearchConfig(env: NodeJS.ProcessEnv): Promise<ThemeConfig['search']> {
+  // Vite inlines every VITE_* variable into the client bundle, even unused ones.
+  if (env.VITE_ALGOLIA_KEY) {
+    throw new Error(
+      'VITE_ALGOLIA_KEY must not be set: it is shipped in the bundle. Use VITE_ALGOLIA_SEARCH_KEY.',
+    );
+  }
+
   const { VITE_ALGOLIA_ID: appId, VITE_ALGOLIA_SEARCH_KEY: apiKey } = env;
   if (!appId || !apiKey) {
     return;
