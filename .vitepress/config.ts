@@ -157,10 +157,13 @@ function getAnalyticsTags({ VITE_GTM_ID = '' }: NodeJS.ProcessEnv): HeadConfig[]
 
 async function getSearchConfig(env: NodeJS.ProcessEnv): Promise<ThemeConfig['search']> {
   // Vite inlines every VITE_* variable into the client bundle, even unused ones.
+  // Scrub the legacy write-capable key so it cannot ship; a follow-up will turn
+  // this back into a hard failure once the variable is deleted from Netlify.
   if (env.VITE_ALGOLIA_KEY) {
-    throw new Error(
-      'VITE_ALGOLIA_KEY must not be set: it is shipped in the bundle. Use VITE_ALGOLIA_SEARCH_KEY.',
+    console.warn(
+      'VITE_ALGOLIA_KEY is set: ignoring it and excluding it from the bundle. Use VITE_ALGOLIA_SEARCH_KEY and delete the old variable.',
     );
+    delete env.VITE_ALGOLIA_KEY;
   }
 
   const { VITE_ALGOLIA_ID: appId, VITE_ALGOLIA_SEARCH_KEY: apiKey } = env;
