@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 /* @ts-expect-error */
 import mdFootnote from 'markdown-it-footnote';
 import { defineConfigWithTheme, type DefaultTheme, type HeadConfig } from 'vitepress';
+import { CLIENT_SAFE_ACLS, isClientSafeSearchAcl } from './client-safe-acl';
 import { defaultGroupLink, sidebarLinks } from '../docs/links';
 
 dotenv.config();
@@ -157,13 +158,10 @@ function getAnalyticsTags({ VITE_GTM_ID = '' }: NodeJS.ProcessEnv): HeadConfig[]
 
 async function getSearchConfig(env: NodeJS.ProcessEnv): Promise<ThemeConfig['search']> {
   // Vite inlines every VITE_* variable into the client bundle, even unused ones.
-  // Scrub the legacy write-capable key so it cannot ship; a follow-up will turn
-  // this back into a hard failure once the variable is deleted from Netlify.
   if (env.VITE_ALGOLIA_KEY) {
-    console.warn(
-      'VITE_ALGOLIA_KEY is set: ignoring it and excluding it from the bundle. Use VITE_ALGOLIA_SEARCH_KEY and delete the old variable.',
+    throw new Error(
+      'VITE_ALGOLIA_KEY must not be set: it is shipped in the bundle. Use VITE_ALGOLIA_SEARCH_KEY.',
     );
-    delete env.VITE_ALGOLIA_KEY;
   }
 
   const { VITE_ALGOLIA_ID: appId, VITE_ALGOLIA_SEARCH_KEY: apiKey } = env;
@@ -171,7 +169,7 @@ async function getSearchConfig(env: NodeJS.ProcessEnv): Promise<ThemeConfig['sea
     return;
   }
 
-  await assertSearchOnlyKey(appId, apiKey);
+  await assertClientSafeSearchKey(appId, apiKey);
 
   return {
     provider: 'algolia',
@@ -184,10 +182,12 @@ async function getSearchConfig(env: NodeJS.ProcessEnv): Promise<ThemeConfig['sea
 }
 
 /**
- * The key is shipped to every visitor, so it must only grant the `search` ACL.
+ * The key is shipped to every visitor. Allow read ACLs that are safe in the
+ * browser (`search`, `listIndexes`, `settings`). `search` is required.
+ * Write ACLs (`addObject`, `deleteIndex`, `editSettings`, …) fail the build.
  * Algolia lets any key read its own permissions, so this request is read-only.
  */
-async function assertSearchOnlyKey(appId: string, apiKey: string) {
+async function assertClientSafeSearchKey(appId: string, apiKey: string) {
   const res = await fetch(`https://${appId}-dsn.algolia.net/1/keys/${apiKey}`, {
     headers: {
       'X-Algolia-Application-Id': appId,
@@ -199,9 +199,9 @@ async function assertSearchOnlyKey(appId: string, apiKey: string) {
   }
 
   const { acl } = (await res.json()) as { acl?: unknown };
-  if (!Array.isArray(acl) || acl.length !== 1 || acl[0] !== 'search') {
+  if (!isClientSafeSearchAcl(acl)) {
     throw new Error(
-      `VITE_ALGOLIA_SEARCH_KEY must have only the "search" ACL, got ${JSON.stringify(acl)}.`,
+      `VITE_ALGOLIA_SEARCH_KEY must include "search" and only client-safe ACLs (${[...CLIENT_SAFE_ACLS].join(', ')}), got ${JSON.stringify(acl)}.`,
     );
   }
 }

@@ -104,10 +104,10 @@ We have already equipped this repository with the suggested extension ([Vue Lang
 For production, the docs expect the following environment variables to be defined:
 
 - `VITE_ALGOLIA_ID`: Algolia `appId`.
-- `VITE_ALGOLIA_SEARCH_KEY`: Algolia search-only `apiKey`. This key is public in the site bundle. The build fails if the key has any ACL other than `search`.
+- `VITE_ALGOLIA_SEARCH_KEY`: Algolia `apiKey` shipped in the site bundle. The build fails unless the key includes `search` and every ACL is one of `search`, `listIndexes`, or `settings`.
 - `VITE_ALGOLIA_INDEX` (optional): Algolia index name. Default: `stackblitz`.
 
-Vite puts every `VITE_*` variable in the client bundle, so never give a `VITE_*` variable a secret value. If the old `VITE_ALGOLIA_KEY` variable is set, the build ignores it and strips it from the bundle — delete it from the environment.
+Vite puts every `VITE_*` variable in the client bundle, so never give a `VITE_*` variable a secret value. The build fails if the old `VITE_ALGOLIA_KEY` variable is set.
 - `VITE_GTM_ID`: Google Tag Manager id.
 
 They can be defined in CI configuration, or in a `.env` file:
