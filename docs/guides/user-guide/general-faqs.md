@@ -34,7 +34,7 @@ We support four pathways:
 
 2. If you are using an EngineBlock project, you can deploy directly via our [Firebase integration](https://developer.stackblitz.com/guides/user-guide/ide-whats-on-your-screen#firebase-sidebar).
 
-3. If you are using the Classic Editor, you can click the Connnect Repository button on the top left to easily connect with your desired repository.
+3. If you are using the Classic Editor, you can click the Connect Repository button on the top left to easily connect with your desired repository.
 
 ![Connect repository button on StackBlitz editor](./assets/stackblitz_connecttorepobutton.png)
 

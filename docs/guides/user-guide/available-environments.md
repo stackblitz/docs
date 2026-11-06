@@ -63,7 +63,7 @@ WebContainers is StackBlitz's next-generation compute environment, launched in M
 WebContainers offer a native Node.js environment in the browser, making it possible to run both front-end and back-end web frameworks without the limitations associated with polyfills/EngineBlock. For more details on the challenges encountered by our engineering team while developing WebContainers, check out the [Engineering category of our blog here](https://blog.stackblitz.com/categories/engineering/). The WebContainers compute environment can also be consumed headlessly using the [WebContainer API](https://blog.stackblitz.com/posts/webcontainer-api-is-here/), allowing you to develop completely custom UIs on top of this powerful in-browser compute environment.
 
 **Framework Support**  
-With WebContainers, you gain the flexibility to work with virtually any front-end or back-end web framework including Webpack and Vite based variants, a big advantage over the limited framework support of EngineBlock. For applications requiring data storage, you can run a simple database right inside WebContainers using [SQLite3](https://blog.stackblitz.com/posts/introducing-sqlite3-webcontainers-support/). Advanced in-browser image processing can be accomplished [using Sharp](https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/). With the more [recent addition of WASI support](https://blog.stackblitz.com/posts/announcing-wasi/),WebContainers now also support a variety of traditionaly native desktop languages & tools, including Python, WordPress plugin development, and jq. With much more to come in the future, WebContainers are the recommended StackBlitz compute environment for most present and future workloads.
+With WebContainers, you gain the flexibility to work with virtually any front-end or back-end web framework including Webpack and Vite based variants, a big advantage over the limited framework support of EngineBlock. For applications requiring data storage, you can run a simple database right inside WebContainers using [SQLite3](https://blog.stackblitz.com/posts/introducing-sqlite3-webcontainers-support/). Advanced in-browser image processing can be accomplished [using Sharp](https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/). With the more [recent addition of WASI support](https://blog.stackblitz.com/posts/announcing-wasi/),WebContainers now also support a variety of traditionally native desktop languages & tools, including Python, WordPress plugin development, and jq. With much more to come in the future, WebContainers are the recommended StackBlitz compute environment for most present and future workloads.
 
 **Package Manager Compatibility** <br>
 WebContainers natively support all the major package managers including [npm, pnpm, and yarn v1](https://blog.stackblitz.com/posts/announcing-native-package-manager-support/), just like a local development environment. This offers a more production grade approach to managing dependencies compared to EngineBlock's Turbo v1.
@@ -73,9 +73,9 @@ WebContainers are available in all StackBlitz editors: [Classic Editor](/guides/
 
 ## Which Compute Environment Are You using?
 
-The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, wheras the [Codeflow](/codeflow/working-in-codeflow-ide) and [Web Publisher](/codeflow/content-updates-with-web-publisher) editors only support WebContainers.
+The [Classic Editor](/guides/user-guide/getting-started) supports both EngineBlock and WebContainers compute environments, whereas the [Codeflow](/codeflow/working-in-codeflow-ide) and [Web Publisher](/codeflow/content-updates-with-web-publisher) editors only support WebContainers.
 
-If clicking the project settings gear opens the VS Code settings dialouge shown below, you are in the **Codeflow editor** and therefore using **WebContainers**:
+If clicking the project settings gear opens the VS Code settings dialogue shown below, you are in the **Codeflow editor** and therefore using **WebContainers**:
 
 ![Screenshot of the Codeflow settings pane](./assets/codeflow-settings.png)
 
@@ -91,6 +91,6 @@ _Project settings for a Classic Editor, WebContainer Project:_
 _Project settings for a Classic Editor, EngineBlock Project:_
 ![Screenshot of the project settings for an EngineBlock project](./assets/engineblock_settings_devserver.png)
 
-And finally, if you see the simplified editing interface pitcured below, you are using the **Web Publisher** editor and therefore the **WebContainers** compute environment:
+And finally, if you see the simplified editing interface pictured below, you are using the **Web Publisher** editor and therefore the **WebContainers** compute environment:
 
 ![Screenshot of StackBlitz Web Publisher](./assets/wp-whole.png)
